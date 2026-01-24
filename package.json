@@ -1,16 +1,15 @@
 {
   "name": "clawdbot-health-dashboard",
   "version": "1.0.0",
-  "description": "Clawdbot Real-time Health Monitoring Dashboard",
+  "description": "Clawdbot Health Monitoring Dashboard",
   "type": "module",
-  "main": "services/health-dashboard.mjs",
   "scripts": {
     "start": "node services/health-dashboard.mjs"
   },
-  "engines": {
-    "node": ">=20.0.0"
-  },
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }

@@ -32,5 +32,39 @@
         "system": 14492
       }
     }
+  },
+  {
+    "timestamp": "2026-01-24T19:07:05.373Z",
+    "hostname": "sn-69-16.tll07.zoneas.eu",
+    "uptime": 20807265.81,
+    "load_average": [
+      12.35,
+      12.7,
+      11.72
+    ],
+    "memory": {
+      "total": 540536676352,
+      "free": 418182668288,
+      "used_percentage": 22.635653308439426
+    },
+    "disk": {
+      "total": 9992798208,
+      "free": 8110858240,
+      "used_percentage": 15
+    },
+    "process": {
+      "pid": 11586,
+      "memory_usage": {
+        "rss": 52690944,
+        "heapTotal": 6352896,
+        "heapUsed": 4811768,
+        "external": 1893080,
+        "arrayBuffers": 10674
+      },
+      "cpu_usage": {
+        "user": 30548,
+        "system": 15310
+      }
+    }
   }
 ]

@@ -3,9 +3,9 @@ builder = "nixpacks"
 buildCommand = "npm install"
 
 [deploy]
-startCommand = "node services/health-dashboard.mjs"
-healthcheckPath = "/"
+startCommand = "npm start"
+healthcheckPath = "/api/system-metrics"
 healthcheckTimeout = 100
 
 [env]
-PORT = "3030"
+PORT = "3000"
