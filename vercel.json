@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "services/health-dashboard.mjs",
+      "src": "api/*.mjs",
       "use": "@vercel/node"
     },
     {
@@ -13,11 +13,11 @@
   "routes": [
     {
       "src": "/api/system-metrics",
-      "dest": "services/health-dashboard.mjs"
+      "dest": "api/system-metrics.mjs"
     },
     {
       "src": "/(.*)",
-      "dest": "public/index.html"
+      "dest": "public/$1"
     }
   ]
 }
