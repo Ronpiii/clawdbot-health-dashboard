@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-01-24T18:50:58.847Z",
+    "system": {
+      "hostname": "sn-69-16.tll07.zoneas.eu",
+      "platform": "linux",
+      "uptime": 20806299.28,
+      "load_average": [
+        9.59,
+        9.69,
+        10.55
+      ],
+      "memory": {
+        "total": 540536676352,
+        "free": 416134918144,
+        "used_percentage": 23.01448979328629
+      },
+      "disk": {
+        "total": 9992798208,
+        "free": 8110854144,
+        "used_percentage": 15
+      }
+    },
+    "runtime": {
+      "node_version": "v24.13.0",
+      "active_sessions": 0,
+      "session_types": {},
+      "model_usage": {
+        "current_model": "unknown",
+        "model_switches": 0
+      }
+    },
+    "services": {
+      "gateway_status": "running",
+      "active_skills": [],
+      "recent_errors": {
+        "count": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install"
+
+[deploy]
+startCommand = "node services/health-dashboard.mjs"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+
+[env]
+PORT = "3030"

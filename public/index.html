@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clawdbot Health Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: #f4f4f4; 
+        }
+        .metric-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .alert { color: red; }
+    </style>
+</head>
+<body>
+    <h1>🤖 Clawdbot Health Dashboard</h1>
+    <div id="system-metrics"></div>
+    <h2>Recent Alerts</h2>
+    <div id="recent-alerts"></div>
+
+    <script>
+        async function updateDashboard() {
+            try {
+                const [metricsResponse, alertsResponse] = await Promise.all([
+                    fetch('/api/system-metrics'),
+                    fetch('/api/alerts')
+                ]);
+                
+                const metrics = await metricsResponse.json();
+                const alerts = await alertsResponse.json();
+
+                // Update system metrics
+                const metricsContainer = document.getElementById('system-metrics');
+                metricsContainer.innerHTML = `
+                    <div class="metric-card">
+                        <h3>System Overview</h3>
+                        <p>Hostname: ${metrics.hostname}</p>
+                        <p>Uptime: ${(metrics.uptime / 3600).toFixed(2)} hours</p>
+                        <p>Load Average: ${metrics.load_average.join(', ')}</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Memory Usage</h3>
+                        <p>Total: ${(metrics.memory.total / (1024 * 1024 * 1024)).toFixed(2)} GB</p>
+                        <p>Free: ${(metrics.memory.free / (1024 * 1024 * 1024)).toFixed(2)} GB</p>
+                        <p>Used: ${metrics.memory.used_percentage.toFixed(2)}%</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Disk Usage</h3>
+                        <p>Total: ${(metrics.disk.total / (1024 * 1024 * 1024)).toFixed(2)} GB</p>
+                        <p>Free: ${(metrics.disk.free / (1024 * 1024 * 1024)).toFixed(2)} GB</p>
+                        <p>Used: ${metrics.disk.used_percentage.toFixed(2)}%</p>
+                    </div>
+                `;
+
+                // Update alerts
+                const alertsContainer = document.getElementById('recent-alerts');
+                alertsContainer.innerHTML = alerts.map(alert => `
+                    <div class="metric-card alert">
+                        <p>${new Date(alert.timestamp).toLocaleString()}: ${alert.message}</p>
+                    </div>
+                `).join('') || '<p>No recent alerts</p>';
+            } catch (error) {
+                console.error('Dashboard update failed:', error);
+            }
+        }
+
+        // Initial update
+        updateDashboard();
+
+        // Periodic updates
+        setInterval(updateDashboard, 60000);
+    </script>
+</body>
+</html>
+    
