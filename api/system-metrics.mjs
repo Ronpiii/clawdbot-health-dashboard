@@ -11,7 +11,7 @@ export default async function handler(req, res) {
       return new Promise((resolve, reject) => {
         exec('df -h /', (err, stdout) => {
           if (err) {
-            resolve({ total: 0, free: 0, usedPercentage: 0 });
+            resolve({ total: '0GB', free: '0GB', usedPercentage: 0 });
             return;
           }
 
