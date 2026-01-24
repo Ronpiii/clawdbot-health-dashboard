@@ -8,20 +8,29 @@ export default async function handler(req, res) {
     
     // Promisify disk usage check
     const getDiskUsage = () => {
-      return new Promise((resolve, reject) => {
-        exec('df -h /', (err, stdout) => {
-          if (err) {
-            resolve({ total: '0GB', free: '0GB', usedPercentage: 0 });
+      return new Promise((resolve) => {
+        exec('df -h / 2>/dev/null', (err, stdout) => {
+          if (err || !stdout) {
+            resolve({ total: 'N/A', free: 'N/A', usedPercentage: 0 });
             return;
           }
 
-          const lines = stdout.split('\n');
-          const diskInfo = lines[1].split(/\s+/);
-          resolve({
-            total: diskInfo[1],
-            free: diskInfo[3],
-            usedPercentage: Number(diskInfo[4].replace('%', ''))
-          });
+          try {
+            const lines = stdout.trim().split('\n');
+            if (lines.length < 2) {
+              resolve({ total: 'N/A', free: 'N/A', usedPercentage: 0 });
+              return;
+            }
+            const diskInfo = lines[1].split(/\s+/);
+            const usedPercent = parseInt(diskInfo[4]?.replace('%', '') || '0', 10);
+            resolve({
+              total: diskInfo[1] || 'N/A',
+              free: diskInfo[3] || 'N/A',
+              usedPercentage: isNaN(usedPercent) ? 0 : usedPercent
+            });
+          } catch (e) {
+            resolve({ total: 'N/A', free: 'N/A', usedPercentage: 0 });
+          }
         });
       });
     };
