@@ -3,82 +3,752 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise System Health Monitoring</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Clawdbot Health Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
     <style>
-        /* Previous CSS remains the same */
-        .upgrade-banner {
-            background-color: #3182ce;
+        :root {
+            --bg-primary: #0D0D0D;
+            --bg-surface: #141414;
+            --bg-surface-hover: #1A1A1A;
+            --bg-muted: #1F1F1F;
+            --border-primary: #2A2A2A;
+            --border-muted: #333333;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A0A0A0;
+            --text-muted: #6B6B6B;
+            --accent-info: #3B82F6;
+            --accent-success: #22C55E;
+            --accent-warning: #F59E0B;
+            --accent-error: #EF4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            background-color: var(--bg-surface);
+            border-right: 1px solid var(--border-primary);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+        }
+
+        .sidebar-header {
+            height: 72px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid var(--border-primary);
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background-color: var(--accent-info);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding: 1rem;
-            text-align: center;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-size: 18px;
             font-weight: 600;
+        }
+
+        .sidebar-nav {
+            padding: 16px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .nav-item {
+            height: 44px;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .nav-item:hover {
+            background-color: var(--bg-surface-hover);
+        }
+
+        .nav-item.active {
+            background-color: var(--bg-surface-hover);
+        }
+
+        .nav-item.active .nav-icon {
+            color: var(--accent-info);
+        }
+
+        .nav-item.active .nav-label {
+            color: var(--text-primary);
+        }
+
+        .nav-icon {
+            font-size: 20px;
+            color: var(--text-muted);
+        }
+
+        .nav-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 260px;
+            flex: 1;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* Header */
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .upgrade-cta {
-            background-color: white;
-            color: #3182ce;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            text-decoration: none;
+        .header-left h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .header-left p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .last-update {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #1A3A1A;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        .status-badge.warning {
+            background-color: #3A2F1A;
+        }
+
+        .status-badge.error {
+            background-color: #3A1A1A;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--accent-success);
+        }
+
+        .status-badge.warning .status-dot {
+            background-color: var(--accent-warning);
+        }
+
+        .status-badge.error .status-dot {
+            background-color: var(--accent-error);
+        }
+
+        .status-text {
+            font-size: 14px;
             font-weight: 600;
-            transition: background-color 0.3s;
+            color: var(--accent-success);
         }
 
-        .upgrade-cta:hover {
-            background-color: #f0f4f8;
+        .status-badge.warning .status-text {
+            color: var(--accent-warning);
         }
 
-        .pro-badge {
-            background-color: #48bb78;
-            color: white;
-            padding: 0.25rem 0.5rem;
+        .status-badge.error .status-text {
+            color: var(--accent-error);
+        }
+
+        /* System ID Card */
+        .system-id-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-primary);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            gap: 32px;
+        }
+
+        .system-id-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .system-id-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .system-id-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .system-id-value.success {
+            color: var(--accent-success);
+        }
+
+        .system-id-value.info {
+            color: var(--accent-info);
+        }
+
+        .system-id-divider {
+            width: 1px;
+            height: 40px;
+            background-color: var(--border-primary);
+            align-self: center;
+        }
+
+        /* Metrics Section */
+        .metrics-section-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+        }
+
+        .metrics-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .metrics-row-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        /* Metric Card */
+        .metric-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-primary);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .metric-header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .metric-icon {
+            font-size: 24px;
+        }
+
+        .metric-icon.info {
+            color: var(--accent-info);
+        }
+
+        .metric-icon.warning {
+            color: var(--accent-warning);
+        }
+
+        .metric-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .metric-badge {
+            padding: 4px 8px;
             border-radius: 4px;
-            font-size: 0.75rem;
-            margin-left: 0.5rem;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .metric-badge.success {
+            background-color: #1A3A1A;
+            color: var(--accent-success);
+        }
+
+        .metric-badge.warning {
+            background-color: #3A2F1A;
+            color: var(--accent-warning);
+        }
+
+        /* CPU Metrics */
+        .cpu-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .cpu-metric-box {
+            background-color: var(--bg-muted);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .cpu-metric-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .cpu-metric-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Memory/Disk Content */
+        .gauge-content {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .gauge {
+            width: 120px;
+            height: 120px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gauge-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 8px solid var(--border-muted);
+            position: absolute;
+        }
+
+        .gauge-value {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .gauge-percent {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .gauge-percent.info {
+            color: var(--accent-info);
+        }
+
+        .gauge-percent.warning {
+            color: var(--accent-warning);
+        }
+
+        .gauge-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .details-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .detail-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .detail-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .detail-value.success {
+            color: var(--accent-success);
+        }
+
+        .detail-value.warning {
+            color: var(--accent-warning);
+        }
+
+        .detail-value.info {
+            color: var(--accent-info);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+            .metrics-row-2 {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="upgrade-banner">
-        Unlock Full Enterprise Monitoring Capabilities
-        <a href="#" class="upgrade-cta">Upgrade to Pro</a>
-    </div>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-icon">
+                <i class="lucide-bot"></i>
+            </div>
+            <span class="logo-text">Clawdbot</span>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-item active">
+                <i class="lucide-activity nav-icon"></i>
+                <span class="nav-label">Dashboard</span>
+            </div>
+            <div class="nav-item">
+                <i class="lucide-server nav-icon"></i>
+                <span class="nav-label">Servers</span>
+            </div>
+            <div class="nav-item">
+                <i class="lucide-bell nav-icon"></i>
+                <span class="nav-label">Alerts</span>
+            </div>
+            <div class="nav-item">
+                <i class="lucide-settings nav-icon"></i>
+                <span class="nav-label">Settings</span>
+            </div>
+        </nav>
+    </aside>
 
-    <div class="container">
-        <header class="dashboard-header">
-            <h1 class="dashboard-title">Enterprise System Health Monitor 
-                <span class="pro-badge">PRO PREVIEW</span>
-            </h1>
-            <p class="dashboard-subtitle">Advanced real-time infrastructure monitoring</p>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1>System Health Dashboard</h1>
+                <p>Real-time infrastructure monitoring for Clawdbot</p>
+            </div>
+            <div class="header-right">
+                <div class="last-update">
+                    <i class="lucide-refresh-cw"></i>
+                    <span id="lastUpdate">Last updated: --</span>
+                </div>
+                <div id="statusBadge" class="status-badge">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Loading...</span>
+                </div>
+            </div>
         </header>
 
-        <!-- Existing dashboard content remains the same -->
-
-        <div class="system-overview">
-            <h3>Enterprise Features Coming Soon</h3>
-            <ul>
-                <li>✓ Multi-host Monitoring</li>
-                <li>✓ Machine Learning Anomaly Detection</li>
-                <li>✓ Customizable Alerting</li>
-                <li>✓ Comprehensive Performance Analytics</li>
-            </ul>
+        <!-- System ID Card -->
+        <div class="system-id-card" id="systemIdCard">
+            <div class="system-id-section">
+                <span class="system-id-label">HOSTNAME</span>
+                <span class="system-id-value" id="hostname">--</span>
+            </div>
+            <div class="system-id-divider"></div>
+            <div class="system-id-section">
+                <span class="system-id-label">PLATFORM</span>
+                <span class="system-id-value" id="platform">--</span>
+            </div>
+            <div class="system-id-divider"></div>
+            <div class="system-id-section">
+                <span class="system-id-label">UPTIME</span>
+                <span class="system-id-value success" id="uptime">--</span>
+            </div>
+            <div class="system-id-divider"></div>
+            <div class="system-id-section">
+                <span class="system-id-label">API ENDPOINT</span>
+                <span class="system-id-value info">/api/system-metrics</span>
+            </div>
         </div>
-    </div>
+
+        <!-- Metrics Section -->
+        <div class="metrics-section">
+            <span class="metrics-section-title">PERFORMANCE METRICS</span>
+        </div>
+
+        <!-- CPU Card -->
+        <div class="metrics-row">
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-header-left">
+                        <i class="lucide-cpu metric-icon info"></i>
+                        <span class="metric-title">CPU Load Average</span>
+                    </div>
+                    <span id="cpuBadge" class="metric-badge success">Normal</span>
+                </div>
+                <div class="cpu-metrics">
+                    <div class="cpu-metric-box">
+                        <span class="cpu-metric-label">1 MIN</span>
+                        <span class="cpu-metric-value" id="cpu1min">--</span>
+                    </div>
+                    <div class="cpu-metric-box">
+                        <span class="cpu-metric-label">5 MIN</span>
+                        <span class="cpu-metric-value" id="cpu5min">--</span>
+                    </div>
+                    <div class="cpu-metric-box">
+                        <span class="cpu-metric-label">15 MIN</span>
+                        <span class="cpu-metric-value" id="cpu15min">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Memory & Disk Cards -->
+        <div class="metrics-row-2">
+            <!-- Memory Card -->
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-header-left">
+                        <i class="lucide-hard-drive metric-icon warning"></i>
+                        <span class="metric-title">Memory Usage</span>
+                    </div>
+                    <span id="memBadge" class="metric-badge success">Normal</span>
+                </div>
+                <div class="gauge-content">
+                    <div class="gauge">
+                        <div class="gauge-circle"></div>
+                        <div class="gauge-value">
+                            <span class="gauge-percent info" id="memPercent">--%</span>
+                            <span class="gauge-label">USED</span>
+                        </div>
+                    </div>
+                    <div class="details-list">
+                        <div class="detail-row">
+                            <span class="detail-label">Total Memory</span>
+                            <span class="detail-value" id="memTotal">--</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Free Memory</span>
+                            <span class="detail-value success" id="memFree">--</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Used Memory</span>
+                            <span class="detail-value warning" id="memUsed">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disk Card -->
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-header-left">
+                        <i class="lucide-database metric-icon info"></i>
+                        <span class="metric-title">Disk Usage</span>
+                    </div>
+                    <span id="diskBadge" class="metric-badge success">Healthy</span>
+                </div>
+                <div class="gauge-content">
+                    <div class="gauge">
+                        <div class="gauge-circle"></div>
+                        <div class="gauge-value">
+                            <span class="gauge-percent info" id="diskPercent">--%</span>
+                            <span class="gauge-label">USED</span>
+                        </div>
+                    </div>
+                    <div class="details-list">
+                        <div class="detail-row">
+                            <span class="detail-label">Total Space</span>
+                            <span class="detail-value" id="diskTotal">--</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Free Space</span>
+                            <span class="detail-value success" id="diskFree">--</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Used Space</span>
+                            <span class="detail-value info" id="diskUsed">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script>
-        // Existing JavaScript remains the same
-        
-        // Additional enterprise feature simulation
-        function simulateEnterpriseFeatures() {
-            console.log('Simulating advanced enterprise monitoring capabilities...');
-            // Placeholder for future machine learning anomaly detection
+        function formatUptime(seconds) {
+            const days = Math.floor(seconds / 86400);
+            const hours = Math.floor((seconds % 86400) / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            return `${days}d ${hours}h ${minutes}m`;
         }
 
-        simulateEnterpriseFeatures();
+        function formatBytes(bytes) {
+            const gb = bytes / (1024 * 1024 * 1024);
+            return gb.toFixed(1) + ' GB';
+        }
+
+        async function fetchMetrics() {
+            try {
+                const response = await fetch('/api/system-metrics');
+                const data = await response.json();
+
+                // Update last update time
+                document.getElementById('lastUpdate').textContent = 
+                    'Last updated: ' + new Date().toLocaleTimeString();
+
+                // Update system ID
+                document.getElementById('hostname').textContent = data.hostname;
+                document.getElementById('platform').textContent = data.platform;
+                document.getElementById('uptime').textContent = formatUptime(data.uptime);
+
+                // Update CPU
+                document.getElementById('cpu1min').textContent = data.loadAverage[0].toFixed(2);
+                document.getElementById('cpu5min').textContent = data.loadAverage[1].toFixed(2);
+                document.getElementById('cpu15min').textContent = data.loadAverage[2].toFixed(2);
+
+                const cpuBadge = document.getElementById('cpuBadge');
+                if (data.loadAverage[0] > 10) {
+                    cpuBadge.className = 'metric-badge warning';
+                    cpuBadge.textContent = 'High';
+                } else {
+                    cpuBadge.className = 'metric-badge success';
+                    cpuBadge.textContent = 'Normal';
+                }
+
+                // Update Memory
+                const memUsedBytes = data.memory.total - data.memory.free;
+                document.getElementById('memPercent').textContent = data.memory.usedPercentage.toFixed(0) + '%';
+                document.getElementById('memTotal').textContent = formatBytes(data.memory.total);
+                document.getElementById('memFree').textContent = formatBytes(data.memory.free);
+                document.getElementById('memUsed').textContent = formatBytes(memUsedBytes);
+
+                const memBadge = document.getElementById('memBadge');
+                const memPercent = document.getElementById('memPercent');
+                if (data.memory.usedPercentage > 80) {
+                    memBadge.className = 'metric-badge warning';
+                    memBadge.textContent = 'High';
+                    memPercent.className = 'gauge-percent warning';
+                } else {
+                    memBadge.className = 'metric-badge success';
+                    memBadge.textContent = 'Normal';
+                    memPercent.className = 'gauge-percent info';
+                }
+
+                // Update Disk
+                if (data.disk) {
+                    document.getElementById('diskPercent').textContent = data.disk.usedPercentage + '%';
+                    document.getElementById('diskTotal').textContent = data.disk.total;
+                    document.getElementById('diskFree').textContent = data.disk.free;
+                    
+                    const diskUsedPercent = data.disk.usedPercentage;
+                    const diskBadge = document.getElementById('diskBadge');
+                    const diskPercent = document.getElementById('diskPercent');
+                    
+                    if (diskUsedPercent > 80) {
+                        diskBadge.className = 'metric-badge warning';
+                        diskBadge.textContent = 'High';
+                        diskPercent.className = 'gauge-percent warning';
+                    } else {
+                        diskBadge.className = 'metric-badge success';
+                        diskBadge.textContent = 'Healthy';
+                        diskPercent.className = 'gauge-percent info';
+                    }
+                }
+
+                // Update status badge
+                const statusBadge = document.getElementById('statusBadge');
+                const statusText = statusBadge.querySelector('.status-text');
+                
+                if (data.loadAverage[0] > 10 || data.memory.usedPercentage > 90) {
+                    statusBadge.className = 'status-badge warning';
+                    statusText.textContent = 'Degraded';
+                } else {
+                    statusBadge.className = 'status-badge';
+                    statusText.textContent = 'Operational';
+                }
+
+            } catch (error) {
+                console.error('Failed to fetch metrics:', error);
+                const statusBadge = document.getElementById('statusBadge');
+                const statusText = statusBadge.querySelector('.status-text');
+                statusBadge.className = 'status-badge error';
+                statusText.textContent = 'Error';
+            }
+        }
+
+        // Initial fetch
+        fetchMetrics();
+
+        // Refresh every 60 seconds
+        setInterval(fetchMetrics, 60000);
     </script>
 </body>
 </html>

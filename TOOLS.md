@@ -10,7 +10,7 @@
 - anything requiring deep analysis
 
 **switch command:** `session_status(model="anthropic/claude-opus-4-5")`
-**switch back:** `session_status(model="anthropic/claude-3-5-haiku-latest")`
+**switch back:** `session_status(model="anthropic/claude-opus-4-5-20251101")`
 
 ---
 
