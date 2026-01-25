@@ -42,15 +42,21 @@ const STOPWORDS = new Set([
 
 // simple synonyms for common terms
 const SYNONYMS = {
-  'api': ['endpoint', 'service', 'rest'],
-  'db': ['database', 'postgres', 'sql'],
-  'ui': ['interface', 'frontend', 'dashboard'],
-  'error': ['bug', 'issue', 'problem', 'fail'],
-  'config': ['configuration', 'settings', 'setup'],
-  'auth': ['authentication', 'login', 'credentials'],
-  'deploy': ['deployment', 'release', 'ship'],
-  'test': ['testing', 'spec', 'check'],
-  'docs': ['documentation', 'readme', 'guide'],
+  'api': ['endpoint', 'service', 'rest', 'route'],
+  'db': ['database', 'postgres', 'sql', 'neon'],
+  'ui': ['interface', 'frontend', 'dashboard', 'page'],
+  'error': ['bug', 'issue', 'problem', 'fail', 'fix'],
+  'config': ['configuration', 'settings', 'setup', 'env'],
+  'auth': ['authentication', 'login', 'credentials', 'key'],
+  'deploy': ['deployment', 'release', 'ship', 'vercel', 'railway'],
+  'test': ['testing', 'spec', 'check', 'verify'],
+  'docs': ['documentation', 'readme', 'guide', 'reference'],
+  'task': ['todo', 'backlog', 'work', 'item'],
+  'memory': ['context', 'recall', 'remember', 'store'],
+  'search': ['find', 'query', 'lookup', 'index'],
+  'script': ['tool', 'utility', 'automation'],
+  'webhook': ['hook', 'callback', 'notify'],
+  'project': ['repo', 'codebase', 'workspace'],
 };
 
 // extract terms from text
