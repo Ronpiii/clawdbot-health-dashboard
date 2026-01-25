@@ -1190,6 +1190,12 @@
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
+      },
+      {
         "file": "tasks/active.md",
         "line": 12,
         "freq": 1,
@@ -3150,6 +3156,12 @@
         "line": 29,
         "freq": 1,
         "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       }
     ],
     "persistent": [
@@ -12180,6 +12192,12 @@
         "line": 76,
         "freq": 1,
         "context": "- scripts created: 14 (full toolkit + tests + goals)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       }
     ],
     "service": [
@@ -12390,6 +12408,12 @@
         "line": 29,
         "freq": 1,
         "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -14734,6 +14758,40 @@
         "line": 141,
         "freq": 1,
         "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
+      }
+    ],
+    "pitch": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
+      }
+    ],
+    "share": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 122,
+        "freq": 1,
+        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 93,
+        "freq": 1,
+        "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 94,
+        "freq": 1,
+        "context": "3. [ ] create Stripe account → share API keys (test + live)"
       }
     ],
     "structure": [
@@ -18242,26 +18300,6 @@
         "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
       }
     ],
-    "share": [
-      {
-        "file": "AGENTS.md",
-        "line": 122,
-        "freq": 1,
-        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 93,
-        "freq": 1,
-        "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 94,
-        "freq": 1,
-        "context": "3. [ ] create Stripe account → share API keys (test + live)"
-      }
-    ],
     "their": [
       {
         "file": "AGENTS.md",
@@ -21616,60 +21654,60 @@
   "files": {
     "MEMORY.md": {
       "lines": 129,
-      "updated": "2026-01-25T11:59:50.864Z"
+      "updated": "2026-01-25T12:00:01.756Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:59:50.866Z"
+      "updated": "2026-01-25T12:00:01.758Z"
     },
     "memory/2026-01-25.md": {
-      "lines": 86,
-      "updated": "2026-01-25T11:59:50.866Z"
+      "lines": 87,
+      "updated": "2026-01-25T12:00:01.759Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:59:50.867Z"
+      "updated": "2026-01-25T12:00:01.760Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T11:59:50.867Z"
+      "updated": "2026-01-25T12:00:01.760Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:59:50.868Z"
+      "updated": "2026-01-25T12:00:01.760Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:59:50.868Z"
+      "updated": "2026-01-25T12:00:01.761Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-25T11:59:50.868Z"
+      "updated": "2026-01-25T12:00:01.761Z"
     },
     "GOALS.md": {
       "lines": 66,
-      "updated": "2026-01-25T11:59:50.868Z"
+      "updated": "2026-01-25T12:00:01.761Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T11:59:50.868Z"
+      "updated": "2026-01-25T12:00:01.762Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:59:50.870Z"
+      "updated": "2026-01-25T12:00:01.763Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:59:50.870Z"
+      "updated": "2026-01-25T12:00:01.763Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:59:50.871Z"
+      "updated": "2026-01-25T12:00:01.764Z"
     },
     "scripts/README.md": {
       "lines": 159,
-      "updated": "2026-01-25T11:59:50.871Z"
+      "updated": "2026-01-25T12:00:01.764Z"
     }
   },
-  "built": "2026-01-25T11:59:50.863Z"
+  "built": "2026-01-25T12:00:01.755Z"
 }
