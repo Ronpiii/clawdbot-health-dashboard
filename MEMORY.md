@@ -90,10 +90,28 @@
 ---
 
 ## quick recall
-- **msearch:** `./scripts/msearch <query>` — local keyword search
-- **rebuild index:** `node scripts/memory-index.mjs build`
-- **tasks:** tasks/active.md for current work
-- **discord webhook:** TOOLS.md has urls
+- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface
+- **search:** `./scripts/arc search <query>` — 673 terms with synonyms
+- **status:** `./scripts/arc status` — workspace health
+- **note:** `./scripts/arc note "text"` — quick capture
+- **tasks:** `./scripts/arc task list` — task management
+- **summary:** `./scripts/arc summary` — daily summary
+- **maintain:** `./scripts/arc maintain` — auto-maintenance
+- **discord:** TOOLS.md has webhook urls
+
+## toolkit built 2026-01-25
+| script | purpose |
+|--------|---------|
+| arc | unified CLI wrapper |
+| memory-index.mjs | keyword search with synonyms |
+| status.mjs | workspace health overview |
+| heartbeat-check.mjs | heartbeat automation |
+| auto-maintenance.mjs | routine maintenance |
+| task.mjs | task management + discord |
+| note.mjs | quick note capture |
+| daily-summary.mjs | end-of-day summary |
+| compress-logs.mjs | log compression |
+| discord-post.mjs | webhook posting |
 
 ---
 
