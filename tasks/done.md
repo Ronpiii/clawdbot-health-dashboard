@@ -2,6 +2,7 @@
 
 ## 2026-01-25
 
+- [x] continuous self-learning loop
 - [x] create heartbeat-check script
 - [x] create workspace status script
 - [x] restructure MEMORY.md
