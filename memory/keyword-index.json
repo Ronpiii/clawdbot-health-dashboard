@@ -174,6 +174,12 @@
         "context": "- `scripts/msearch` — quick wrapper for memory search"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
+      },
+      {
         "file": "tasks/active.md",
         "line": 8,
         "freq": 1,
@@ -187,13 +193,13 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- [ ] context memory: python SDK"
       },
       {
         "file": "tasks/active.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- [ ] context memory: self-hosted option"
       },
@@ -529,13 +535,13 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 18,
         "freq": 1,
         "context": "- [ ] slash commands for discord (/status, /remind, /search)"
       },
@@ -1026,6 +1032,12 @@
         "context": "- ron tasked: continuous self-learning loop focused on context memory"
       },
       {
+        "file": "tasks/active.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- [~] continuous self-learning loop"
+      },
+      {
         "file": "tasks/ideas.md",
         "line": 7,
         "freq": 1,
@@ -1199,13 +1211,13 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- [ ] context memory: python SDK"
       },
       {
         "file": "tasks/active.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- [ ] context memory: self-hosted option"
       },
@@ -1481,7 +1493,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 18,
         "freq": 1,
         "context": "- [ ] slash commands for discord (/status, /remind, /search)"
       },
@@ -1833,7 +1845,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 18,
         "freq": 1,
         "context": "- [ ] slash commands for discord (/status, /remind, /search)"
       },
@@ -3403,7 +3415,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       }
@@ -3414,6 +3426,18 @@
         "line": 45,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- [11:27] testing note capture script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
       }
     ],
     "shows": [
@@ -3883,7 +3907,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       },
@@ -3921,7 +3945,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       },
@@ -3967,7 +3991,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       }
@@ -3997,7 +4021,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       }
@@ -4051,7 +4075,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       },
@@ -4071,7 +4095,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       }
@@ -4359,7 +4383,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 18,
+        "line": 19,
         "freq": 1,
         "context": "- [ ] auto-threading in #dev for long conversations"
       },
@@ -4839,7 +4863,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 18,
         "freq": 1,
         "context": "- [ ] slash commands for discord (/status, /remind, /search)"
       },
@@ -4859,7 +4883,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 18,
         "freq": 1,
         "context": "- [ ] slash commands for discord (/status, /remind, /search)"
       },
@@ -4891,7 +4915,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 19,
+        "line": 20,
         "freq": 1,
         "context": "- [ ] email/calendar integration for heartbeat checks"
       },
@@ -4923,7 +4947,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 19,
+        "line": 20,
         "freq": 1,
         "context": "- [ ] email/calendar integration for heartbeat checks"
       }
@@ -4943,7 +4967,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 19,
+        "line": 20,
         "freq": 1,
         "context": "- [ ] email/calendar integration for heartbeat checks"
       },
@@ -4981,7 +5005,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- [ ] context memory: python SDK"
       },
@@ -5001,7 +5025,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- [ ] context memory: python SDK"
       }
@@ -5024,6 +5048,12 @@
         "line": 23,
         "freq": 1,
         "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 56,
+        "freq": 1,
+        "context": "## Learnings"
       }
     ],
     "gateway": [
@@ -5129,7 +5159,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 19,
+        "line": 20,
         "freq": 1,
         "context": "- [ ] email/calendar integration for heartbeat checks"
       }
@@ -5290,6 +5320,12 @@
         "line": 33,
         "freq": 1,
         "context": "- `scripts/msearch` — quick wrapper for memory search"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
       }
     ],
     "recall": [
@@ -6304,6 +6340,12 @@
         "line": 4,
         "freq": 1,
         "context": "- ron tasked: continuous self-learning loop focused on context memory"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- [~] continuous self-learning loop"
       }
     ],
     "loop": [
@@ -6312,6 +6354,12 @@
         "line": 4,
         "freq": 1,
         "context": "- ron tasked: continuous self-learning loop focused on context memory"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- [~] continuous self-learning loop"
       }
     ],
     "focused": [
@@ -6502,6 +6550,18 @@
         "line": 12,
         "freq": 1,
         "context": "- daily logs = raw capture (ephemeral)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- [11:27] testing note capture script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
       }
     ],
     "ephemeral": [
@@ -6746,6 +6806,12 @@
         "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- [11:27] testing note capture script"
+      },
+      {
         "file": "tasks/done.md",
         "line": 5,
         "freq": 1,
@@ -6819,7 +6885,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 19,
+        "line": 20,
         "freq": 1,
         "context": "- [ ] email/calendar integration for heartbeat checks"
       }
@@ -7260,6 +7326,38 @@
         "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
       }
     ],
+    "testing": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- [11:27] testing note capture script"
+      }
+    ],
+    "makes": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
+      }
+    ],
+    "logging": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
+      }
+    ],
+    "easier": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
+      }
+    ],
     "tracking": [
       {
         "file": "tasks/README.md",
@@ -7517,7 +7615,7 @@
     "remind": [
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 18,
         "freq": 1,
         "context": "- [ ] slash commands for discord (/status, /remind, /search)"
       }
@@ -7525,7 +7623,7 @@
     "auto-threading": [
       {
         "file": "tasks/active.md",
-        "line": 18,
+        "line": 19,
         "freq": 1,
         "context": "- [ ] auto-threading in #dev for long conversations"
       }
@@ -7533,7 +7631,7 @@
     "long": [
       {
         "file": "tasks/active.md",
-        "line": 18,
+        "line": 19,
         "freq": 1,
         "context": "- [ ] auto-threading in #dev for long conversations"
       }
@@ -7541,7 +7639,7 @@
     "conversations": [
       {
         "file": "tasks/active.md",
-        "line": 18,
+        "line": 19,
         "freq": 1,
         "context": "- [ ] auto-threading in #dev for long conversations"
       }
@@ -7549,7 +7647,7 @@
     "self-hosted": [
       {
         "file": "tasks/active.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- [ ] context memory: self-hosted option"
       },
@@ -7563,7 +7661,7 @@
     "option": [
       {
         "file": "tasks/active.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- [ ] context memory: self-hosted option"
       },
@@ -9922,44 +10020,44 @@
   "files": {
     "MEMORY.md": {
       "lines": 101,
-      "updated": "2026-01-25T11:27:33.734Z"
+      "updated": "2026-01-25T11:30:24.873Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:27:33.736Z"
+      "updated": "2026-01-25T11:30:24.875Z"
     },
     "memory/2026-01-25.md": {
-      "lines": 54,
-      "updated": "2026-01-25T11:27:33.736Z"
+      "lines": 58,
+      "updated": "2026-01-25T11:30:24.875Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:27:33.737Z"
+      "updated": "2026-01-25T11:30:24.876Z"
     },
     "tasks/active.md": {
-      "lines": 22,
-      "updated": "2026-01-25T11:27:33.737Z"
+      "lines": 23,
+      "updated": "2026-01-25T11:30:24.876Z"
     },
     "tasks/done.md": {
       "lines": 19,
-      "updated": "2026-01-25T11:27:33.737Z"
+      "updated": "2026-01-25T11:30:24.877Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:27:33.738Z"
+      "updated": "2026-01-25T11:30:24.877Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:27:33.738Z"
+      "updated": "2026-01-25T11:30:24.877Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:27:33.738Z"
+      "updated": "2026-01-25T11:30:24.877Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:27:33.739Z"
+      "updated": "2026-01-25T11:30:24.878Z"
     }
   },
-  "built": "2026-01-25T11:27:33.733Z"
+  "built": "2026-01-25T11:30:24.872Z"
 }
