@@ -70,6 +70,14 @@ node scripts/auto-maintenance.mjs
 ./scripts/arc maintain
 ```
 
+### search-analytics.mjs
+Analyze search patterns (common queries, gaps in memory).
+
+```bash
+node scripts/search-analytics.mjs
+./scripts/arc analytics
+```
+
 ## Tasks
 
 ### task.mjs
@@ -115,6 +123,7 @@ node scripts/discord-post.mjs tasks "task update"
 | `status.mjs` | Workspace status overview |
 | `heartbeat-check.mjs` | Heartbeat action items |
 | `auto-maintenance.mjs` | Automated workspace maintenance |
+| `search-analytics.mjs` | Search pattern analysis |
 | `task.mjs` | Task management CLI |
 | `daily-summary.mjs` | End-of-day summary generator |
 | `discord-post.mjs` | Discord webhook posting |
