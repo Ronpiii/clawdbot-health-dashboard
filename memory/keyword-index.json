@@ -3,17 +3,31 @@
     "100": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 84,
+        "line": 82,
+        "freq": 1,
+        "context": "- milestone: 100 commits on first day"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 85,
         "freq": 1,
         "context": "- [11:47] approaching 100 commits - toolkit complete and stable"
       }
     ],
-    "112": [
+    "106": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 75,
+        "freq": 1,
+        "context": "- commits: 106+"
+      }
+    ],
+    "120": [
       {
         "file": "memory/2026-01-25.md",
         "line": 79,
         "freq": 1,
-        "context": "- work logged: 112+ items"
+        "context": "- work logged: 120+ items"
       }
     ],
     "127": [
@@ -81,13 +95,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 77,
-        "freq": 1,
-        "context": "- memory index: 1054 terms from 14 files (20 synonym groups)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
@@ -96,6 +104,14 @@
         "line": 5,
         "freq": 1,
         "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
+      }
+    ],
+    "1060": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 77,
+        "freq": 1,
+        "context": "- memory index: 1060+ terms from 14 files (20 synonym groups)"
       }
     ],
     "3000": [
@@ -293,7 +309,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1054 terms from 14 files (20 synonym groups)"
+        "context": "- memory index: 1060+ terms from 14 files (20 synonym groups)"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -303,7 +319,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 85,
+        "line": 86,
         "freq": 1,
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
       },
@@ -1185,13 +1201,13 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 85,
+        "line": 86,
         "freq": 1,
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 86,
+        "line": 87,
         "freq": 1,
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       },
@@ -1484,6 +1500,12 @@
         "line": 8,
         "freq": 1,
         "context": "- **first boot:** 2026-01-24"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 82,
+        "freq": 1,
+        "context": "- milestone: 100 commits on first day"
       },
       {
         "file": "AGENTS.md",
@@ -2185,7 +2207,7 @@
         "file": "memory/2026-01-25.md",
         "line": 79,
         "freq": 1,
-        "context": "- work logged: 112+ items"
+        "context": "- work logged: 120+ items"
       },
       {
         "file": "QUICKREF.md",
@@ -2497,7 +2519,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 85,
+        "line": 86,
         "freq": 1,
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
       },
@@ -3031,13 +3053,13 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 84,
+        "line": 85,
         "freq": 1,
         "context": "- [11:47] approaching 100 commits - toolkit complete and stable"
       }
@@ -3159,7 +3181,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 86,
+        "line": 87,
         "freq": 1,
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       }
@@ -4065,7 +4087,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
@@ -4449,7 +4471,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1054 terms from 14 files (20 synonym groups)"
+        "context": "- memory index: 1060+ terms from 14 files (20 synonym groups)"
       },
       {
         "file": "tasks/done.md",
@@ -8109,7 +8131,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
@@ -8135,7 +8157,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       }
@@ -8569,7 +8591,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1054 terms from 14 files (20 synonym groups)"
+        "context": "- memory index: 1060+ terms from 14 files (20 synonym groups)"
       },
       {
         "file": "GOALS.md",
@@ -9115,7 +9137,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
@@ -9763,11 +9785,11 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1054 terms from 14 files (20 synonym groups)"
+        "context": "- memory index: 1060+ terms from 14 files (20 synonym groups)"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
@@ -9867,7 +9889,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
@@ -10185,7 +10207,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
@@ -10259,7 +10281,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
@@ -10547,13 +10569,13 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 84,
+        "line": 85,
         "freq": 1,
         "context": "- [11:47] approaching 100 commits - toolkit complete and stable"
       },
@@ -12195,7 +12217,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 86,
+        "line": 87,
         "freq": 1,
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       }
@@ -12289,7 +12311,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       }
@@ -12411,7 +12433,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 86,
+        "line": 87,
         "freq": 1,
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       },
@@ -13003,7 +13025,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1054 terms from 14 files (20 synonym groups)"
+        "context": "- memory index: 1060+ terms from 14 files (20 synonym groups)"
       },
       {
         "file": "QUICKREF.md",
@@ -13687,11 +13709,17 @@
         "file": "memory/2026-01-25.md",
         "line": 75,
         "freq": 1,
-        "context": "- commits: 95+"
+        "context": "- commits: 106+"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 84,
+        "line": 82,
+        "freq": 1,
+        "context": "- milestone: 100 commits on first day"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 85,
         "freq": 1,
         "context": "- [11:47] approaching 100 commits - toolkit complete and stable"
       },
@@ -14493,7 +14521,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1054 terms from 14 files (20 synonym groups)"
+        "context": "- memory index: 1060+ terms from 14 files (20 synonym groups)"
       },
       {
         "file": "GOALS.md",
@@ -14513,7 +14541,7 @@
         "file": "memory/2026-01-25.md",
         "line": 79,
         "freq": 1,
-        "context": "- work logged: 112+ items"
+        "context": "- work logged: 120+ items"
       }
     ],
     "items": [
@@ -14521,7 +14549,7 @@
         "file": "memory/2026-01-25.md",
         "line": 79,
         "freq": 1,
-        "context": "- work logged: 112+ items"
+        "context": "- work logged: 120+ items"
       },
       {
         "file": "QUICKREF.md",
@@ -14583,7 +14611,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 83,
+        "line": 84,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
@@ -14600,10 +14628,56 @@
         "context": "**status:** ✅ achieved"
       }
     ],
-    "tried": [
+    "milestone": [
       {
         "file": "memory/2026-01-25.md",
         "line": 82,
+        "freq": 1,
+        "context": "- milestone: 100 commits on first day"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 78,
+        "freq": 1,
+        "context": "| day | milestone |"
+      }
+    ],
+    "day": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 82,
+        "freq": 1,
+        "context": "- milestone: 100 commits on first day"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 43,
+        "freq": 1,
+        "context": "### End of day"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 167,
+        "freq": 1,
+        "context": "**Things to check (rotate through these, 2-4 times per day):**"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 212,
+        "freq": 1,
+        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 78,
+        "freq": 1,
+        "context": "| day | milestone |"
+      }
+    ],
+    "tried": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       }
@@ -14611,7 +14685,7 @@
     "set": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
@@ -14637,7 +14711,7 @@
     "scheduled": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
@@ -14663,7 +14737,7 @@
     "via": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
@@ -14689,7 +14763,7 @@
     "cron": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
@@ -14703,7 +14777,7 @@
     "having": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 82,
+        "line": 83,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       }
@@ -14711,7 +14785,7 @@
     "approaching": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 84,
+        "line": 85,
         "freq": 1,
         "context": "- [11:47] approaching 100 commits - toolkit complete and stable"
       }
@@ -14719,7 +14793,7 @@
     "stable": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 84,
+        "line": 85,
         "freq": 1,
         "context": "- [11:47] approaching 100 commits - toolkit complete and stable"
       }
@@ -14727,7 +14801,7 @@
     "pitched": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 85,
+        "line": 86,
         "freq": 1,
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
       }
@@ -14735,7 +14809,7 @@
     "sharing": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 85,
+        "line": 86,
         "freq": 1,
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
       },
@@ -14749,7 +14823,7 @@
     "friends": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 85,
+        "line": 86,
         "freq": 1,
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
       },
@@ -14763,7 +14837,7 @@
     "pitch": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 86,
+        "line": 87,
         "freq": 1,
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       }
@@ -14771,7 +14845,7 @@
     "share": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 86,
+        "line": 87,
         "freq": 1,
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       },
@@ -16066,32 +16140,6 @@
         "line": 43,
         "freq": 1,
         "context": "### End of day"
-      }
-    ],
-    "day": [
-      {
-        "file": "QUICKREF.md",
-        "line": 43,
-        "freq": 1,
-        "context": "### End of day"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 167,
-        "freq": 1,
-        "context": "**Things to check (rotate through these, 2-4 times per day):**"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 212,
-        "freq": 1,
-        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 78,
-        "freq": 1,
-        "context": "| day | milestone |"
       }
     ],
     "--post": [
@@ -21038,14 +21086,6 @@
         "context": "- cost: ~$0.0001 per 1k tokens (very cheap)"
       }
     ],
-    "milestone": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 78,
-        "freq": 1,
-        "context": "| day | milestone |"
-      }
-    ],
     "schema": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -21654,60 +21694,60 @@
   "files": {
     "MEMORY.md": {
       "lines": 129,
-      "updated": "2026-01-25T12:00:01.756Z"
+      "updated": "2026-01-25T12:00:32.234Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T12:00:01.758Z"
+      "updated": "2026-01-25T12:00:32.236Z"
     },
     "memory/2026-01-25.md": {
-      "lines": 87,
-      "updated": "2026-01-25T12:00:01.759Z"
+      "lines": 88,
+      "updated": "2026-01-25T12:00:32.236Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T12:00:01.760Z"
+      "updated": "2026-01-25T12:00:32.237Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T12:00:01.760Z"
+      "updated": "2026-01-25T12:00:32.238Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T12:00:01.760Z"
+      "updated": "2026-01-25T12:00:32.238Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T12:00:01.761Z"
+      "updated": "2026-01-25T12:00:32.238Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-25T12:00:01.761Z"
+      "updated": "2026-01-25T12:00:32.238Z"
     },
     "GOALS.md": {
       "lines": 66,
-      "updated": "2026-01-25T12:00:01.761Z"
+      "updated": "2026-01-25T12:00:32.238Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T12:00:01.762Z"
+      "updated": "2026-01-25T12:00:32.239Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T12:00:01.763Z"
+      "updated": "2026-01-25T12:00:32.240Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T12:00:01.763Z"
+      "updated": "2026-01-25T12:00:32.240Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T12:00:01.764Z"
+      "updated": "2026-01-25T12:00:32.241Z"
     },
     "scripts/README.md": {
       "lines": 159,
-      "updated": "2026-01-25T12:00:01.764Z"
+      "updated": "2026-01-25T12:00:32.241Z"
     }
   },
-  "built": "2026-01-25T12:00:01.755Z"
+  "built": "2026-01-25T12:00:32.233Z"
 }
