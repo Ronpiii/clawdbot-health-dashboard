@@ -97,6 +97,7 @@
 - **tasks:** `./scripts/arc task list` — task management
 - **summary:** `./scripts/arc summary` — daily summary
 - **maintain:** `./scripts/arc maintain` — auto-maintenance
+- **analytics:** `./scripts/arc analytics` — search patterns
 - **discord:** TOOLS.md has webhook urls
 
 ## toolkit built 2026-01-25
@@ -107,6 +108,7 @@
 | status.mjs | workspace health overview |
 | heartbeat-check.mjs | heartbeat automation |
 | auto-maintenance.mjs | routine maintenance |
+| search-analytics.mjs | search pattern analysis |
 | task.mjs | task management + discord |
 | note.mjs | quick note capture |
 | daily-summary.mjs | end-of-day summary |
