@@ -18,6 +18,12 @@
         "line": 1,
         "freq": 1,
         "context": "# Milestone: 100 commits on 2026-01-25"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 69,
+        "freq": 1,
+        "context": "| Pro | $12/mo | 10 | 100,000 |"
       }
     ],
     "126": [
@@ -357,13 +363,13 @@
         "file": "tasks/active.md",
         "line": 21,
         "freq": 1,
-        "context": "- [ ] context memory: python SDK"
+        "context": "- [x] context memory: python SDK"
       },
       {
         "file": "tasks/active.md",
         "line": 22,
         "freq": 1,
-        "context": "- [ ] context memory: self-hosted option"
+        "context": "- [x] context memory: self-hosted option"
       },
       {
         "file": "tasks/done.md",
@@ -579,7 +585,25 @@
         "file": "projects/context-memory/README.md",
         "line": 1,
         "freq": 1,
-        "context": "# Context Memory API"
+        "context": "# Context Memory"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 3,
+        "freq": 1,
+        "context": "Persistent memory for AI workflows — never lose context again."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
       },
       {
         "file": "projects/context-memory/PITCH.md",
@@ -591,19 +615,25 @@
         "file": "projects/context-memory/PITCH.md",
         "line": 4,
         "freq": 1,
-        "context": "Persistent memory for AI workflows — never lose context again."
+        "context": "Shared memory for AI workflows — when local files aren't enough."
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 44,
+        "line": 7,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 53,
+        "line": 25,
         "freq": 1,
-        "context": "**Context Memory is the assembled product.**"
+        "context": "A simple API for persistent, searchable AI memory."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 40,
+        "freq": 1,
+        "context": "| Feature | Files | Context Memory |"
       },
       {
         "file": "scripts/README.md",
@@ -1749,7 +1779,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 68,
+        "line": 67,
         "freq": 1,
         "context": "---"
       },
@@ -1940,12 +1970,6 @@
         "line": 115,
         "freq": 1,
         "context": "**Ask first:**"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 19,
-        "freq": 1,
-        "context": "# or just ask naturally"
       }
     ],
     "direction": [
@@ -1992,12 +2016,6 @@
     ],
     "over": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 2,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
-      },
-      {
         "file": "MEMORY.md",
         "line": 14,
         "freq": 1,
@@ -2014,6 +2032,12 @@
         "line": 91,
         "freq": 1,
         "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- **Apps** that need semantic search over history"
       }
     ],
     "breadth": [
@@ -2226,6 +2250,12 @@
         "line": 3,
         "freq": 1,
         "context": "Persistent task tracking for Ventok."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 77,
+        "freq": 1,
+        "context": "git clone https://github.com/ventok/context-memory"
       }
     ],
     "infrastructure": [
@@ -2267,19 +2297,25 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 3,
+        "line": 114,
         "freq": 1,
-        "context": "## Infrastructure Setup"
+        "context": "Production-ready API. Waiting on hosted infrastructure (coming soon)."
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 47,
+        "line": 7,
         "freq": 1,
-        "context": "- Infrastructure setup"
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       },
       {
         "file": "projects/context-memory/PITCH.md",
         "line": 60,
+        "freq": 1,
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 65,
         "freq": 1,
         "context": "Code complete. Waiting on infrastructure (domain + hosting)."
       }
@@ -2418,6 +2454,24 @@
         "line": 212,
         "freq": 1,
         "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**No shame in files. They're simple and they work.**"
       }
     ],
     "mode": [
@@ -2698,10 +2752,16 @@
         "context": "3. **sticky** — once your context is there, you don't leave"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 40,
+        "file": "projects/context-memory/README.md",
+        "line": 110,
         "freq": 1,
-        "context": "2. **Sticky** — once your context is there, you don't leave"
+        "context": "If files solve your problem, use files. We're for when they don't."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- Don't need semantic search"
       }
     ],
     "wait": [
@@ -2791,13 +2851,13 @@
         "file": "tasks/active.md",
         "line": 21,
         "freq": 1,
-        "context": "- [ ] context memory: python SDK"
+        "context": "- [x] context memory: python SDK"
       },
       {
         "file": "tasks/active.md",
         "line": 22,
         "freq": 1,
-        "context": "- [ ] context memory: self-hosted option"
+        "context": "- [x] context memory: self-hosted option"
       },
       {
         "file": "GOALS.md",
@@ -2887,7 +2947,31 @@
         "file": "projects/context-memory/README.md",
         "line": 1,
         "freq": 1,
-        "context": "# Context Memory API"
+        "context": "# Context Memory"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 3,
+        "freq": 1,
+        "context": "Persistent memory for AI workflows — never lose context again."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 61,
+        "freq": 1,
+        "context": "| **TTL** | Auto-expire temporary context |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
       },
       {
         "file": "projects/context-memory/PITCH.md",
@@ -2897,53 +2981,47 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 4,
-        "freq": 1,
-        "context": "Persistent memory for AI workflows — never lose context again."
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
         "line": 7,
         "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 28,
+        "line": 13,
         "freq": 1,
-        "context": "- **TTL** — auto-expire temporary context"
+        "context": "- **Teams** sharing context across members"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 39,
+        "line": 20,
         "freq": 1,
-        "context": "1. **Solves real pain** — every AI user hits context limits"
+        "context": "- Data fits in context"
       },
       {
         "file": "projects/context-memory/PITCH.md",
         "line": 40,
         "freq": 1,
-        "context": "2. **Sticky** — once your context is there, you don't leave"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 53,
-        "freq": 1,
-        "context": "**Context Memory is the assembled product.**"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 66,
-        "freq": 1,
-        "context": "- Anyone tired of re-explaining context"
+        "context": "| Feature | Files | Context Memory |"
       }
     ],
     "api": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 86,
+        "freq": 3,
+        "context": "See [docs/api.md](docs/api.md) for full API documentation."
+      },
       {
         "file": "MEMORY.md",
         "line": 30,
         "freq": 2,
         "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 123,
+        "freq": 2,
+        "context": "- docs/api.md — complete API reference"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -3004,6 +3082,12 @@
         "line": 50,
         "freq": 1,
         "context": "- added synonym expansion (db→database, api→endpoint, etc.)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- high-level API: set(), get(), search(), delete()"
       },
       {
         "file": "tasks/active.md",
@@ -3073,45 +3157,51 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 1,
+        "line": 7,
         "freq": 1,
-        "context": "# Context Memory API"
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 24,
+        "line": 11,
         "freq": 1,
-        "context": "- Railway (for API deployment)"
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 32,
+        "line": 16,
         "freq": 1,
-        "context": "- [x] Basic API routes"
+        "context": "curl -X POST https://api.ctxmem.dev/v1/search \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 84,
+        "freq": 1,
+        "context": "## API Reference"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 99,
+        "freq": 1,
+        "context": "Auth: `x-api-key` header with your API key."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "Production-ready API. Waiting on hosted infrastructure (coming soon)."
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 10,
+        "line": 12,
         "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions."
+        "context": "- **Hosted/API agents** without filesystem access"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 29,
+        "line": 25,
         "freq": 1,
-        "context": "- **Simple auth** — API keys, no complexity"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 50,
-        "freq": 1,
-        "context": "- API development"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
+        "context": "A simple API for persistent, searchable AI memory."
       }
     ],
     "priority": [
@@ -3292,8 +3382,14 @@
         "context": "- Check on projects (git status, etc.)"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 112,
+        "freq": 1,
+        "context": "## Status"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 59,
+        "line": 64,
         "freq": 1,
         "context": "## Status"
       },
@@ -3381,7 +3477,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 60,
+        "line": 65,
         "freq": 1,
         "context": "Code complete. Waiting on infrastructure (domain + hosting)."
       }
@@ -3418,8 +3514,26 @@
         "context": "- [11:47] approaching 100 commits - toolkit complete and stable"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 111,
+        "freq": 1,
+        "context": "## python SDK complete"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 121,
+        "freq": 1,
+        "context": "## self-hosted docs complete"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 123,
+        "freq": 1,
+        "context": "- docs/api.md — complete API reference"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 60,
+        "line": 65,
         "freq": 1,
         "context": "Code complete. Waiting on infrastructure (domain + hosting)."
       }
@@ -3456,8 +3570,14 @@
         "context": "**blockers:** waiting on infra (domain, railway, stripe)"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "Production-ready API. Waiting on hosted infrastructure (coming soon)."
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 60,
+        "line": 65,
         "freq": 1,
         "context": "Code complete. Waiting on infrastructure (domain + hosting)."
       }
@@ -3586,6 +3706,18 @@
         "line": 109,
         "freq": 1,
         "context": "- [12:06] context-memory counter-pitch: existing solutions are building blocks, we're the assembled "
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 77,
+        "freq": 1,
+        "context": "git clone https://github.com/ventok/context-memory"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 78,
+        "freq": 1,
+        "context": "cd context-memory"
       }
     ],
     "persistent": [
@@ -3620,10 +3752,16 @@
         "context": "# context — persistent memory for AI workflows"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 4,
+        "file": "projects/context-memory/README.md",
+        "line": 3,
         "freq": 1,
         "context": "Persistent memory for AI workflows — never lose context again."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 25,
+        "freq": 1,
+        "context": "A simple API for persistent, searchable AI memory."
       }
     ],
     "store": [
@@ -3640,13 +3778,31 @@
         "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 10,
+        "freq": 1,
+        "context": "# Store"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 13,
+        "line": 28,
         "freq": 1,
         "context": "# store something"
       }
     ],
     "agents": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 108,
+        "freq": 2,
+        "context": "- **Hosted agents** — API-based agents without filesystem access"
+      },
       {
         "file": "MEMORY.md",
         "line": 27,
@@ -3684,19 +3840,43 @@
         "context": "- context sharing between agents"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 10,
+        "file": "projects/context-memory/README.md",
+        "line": 7,
         "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions."
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 63,
+        "line": 7,
         "freq": 1,
-        "context": "- AI developers building agents"
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Hosted/API agents** without filesystem access"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 48,
+        "freq": 1,
+        "context": "| Works in hosted agents | ✗ | ✓ |"
       }
     ],
     "namespaces": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 92,
+        "freq": 2,
+        "context": "| `/v1/namespaces` | GET | List namespaces |"
+      },
       {
         "file": "MEMORY.md",
         "line": 27,
@@ -3722,14 +3902,38 @@
         "context": "| team | $49/mo | unlimited namespaces, 1M entries, priority support |"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 25,
+        "file": "projects/context-memory/README.md",
+        "line": 11,
         "freq": 1,
-        "context": "- **Namespaces** — organize by project, agent, or whatever"
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 58,
+        "freq": 1,
+        "context": "| **Namespaces** | Organize by project, agent, or workflow |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 66,
+        "freq": 1,
+        "context": "| Tier | Price | Namespaces | Entries |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 93,
+        "freq": 1,
+        "context": "| `/v1/namespaces` | POST | Create namespace |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 94,
+        "freq": 1,
+        "context": "| `/v1/namespaces/:ns/entries` | POST | Create entry |"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 35,
+        "line": 54,
         "freq": 1,
         "context": "| Pro | $12/mo | 10 namespaces, 100k entries |"
       }
@@ -3772,14 +3976,38 @@
         "context": "- auto-summarization of old entries"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 11,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 62,
+        "freq": 1,
+        "context": "| **Tags** | Filter and categorize entries |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 66,
+        "freq": 1,
+        "context": "| Tier | Price | Namespaces | Entries |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 94,
+        "freq": 1,
+        "context": "| `/v1/namespaces/:ns/entries` | POST | Create entry |"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 34,
+        "line": 53,
         "freq": 1,
         "context": "| Free | $0 | 1 namespace, 1k entries |"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 35,
+        "line": 54,
         "freq": 1,
         "context": "| Pro | $12/mo | 10 namespaces, 100k entries |"
       }
@@ -3804,10 +4032,52 @@
         "context": "| 3 | semantic search (embeddings) |"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 26,
+        "file": "projects/context-memory/README.md",
+        "line": 15,
         "freq": 1,
-        "context": "- **Semantic search** — find by meaning, not just keywords"
+        "context": "# Semantic search"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 59,
+        "freq": 1,
+        "context": "| **Semantic search** | Find by meaning, not just keywords |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 95,
+        "freq": 1,
+        "context": "| `/v1/search` | POST | Semantic search |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- **Apps** that need semantic search over history"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- Don't need semantic search"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 34,
+        "freq": 1,
+        "context": "# semantic search"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 45,
+        "freq": 1,
+        "context": "| Semantic search | ✗ | ✓ |"
       }
     ],
     "search": [
@@ -3834,6 +4104,18 @@
         "line": 31,
         "freq": 2,
         "context": "./scripts/arc search \"query\"   # search memory (670+ terms, synonyms)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 95,
+        "freq": 2,
+        "context": "| `/v1/search` | POST | Semantic search |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 96,
+        "freq": 2,
+        "context": "| `/v1/search/text` | POST | Text search |"
       },
       {
         "file": "scripts/README.md",
@@ -3936,6 +4218,12 @@
         "line": 108,
         "freq": 1,
         "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- high-level API: set(), get(), search(), delete()"
       },
       {
         "file": "tasks/active.md",
@@ -4046,16 +4334,76 @@
         "context": "| 3 | semantic search (embeddings) |"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 15,
+        "freq": 1,
+        "context": "# Semantic search"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 16,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/search \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 35,
+        "freq": 1,
+        "context": "results = ctx.search(\"what database?\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 49,
+        "freq": 1,
+        "context": "ctx search \"what database\""
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 59,
+        "freq": 1,
+        "context": "| **Semantic search** | Find by meaning, not just keywords |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 20,
+        "line": 14,
+        "freq": 1,
+        "context": "- **Apps** that need semantic search over history"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- Don't need semantic search"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 34,
+        "freq": 1,
+        "context": "# semantic search"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 35,
         "freq": 1,
         "context": "ctx search \"what database should i use\""
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 26,
+        "line": 45,
         "freq": 1,
-        "context": "- **Semantic search** — find by meaning, not just keywords"
+        "context": "| Semantic search | ✗ | ✓ |"
       },
       {
         "file": "scripts/README.md",
@@ -4324,14 +4672,38 @@
         "context": "- **option C:** DigitalOcean — $6/mo droplet + $15/mo managed postgres"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 13,
+        "freq": 1,
+        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 19,
+        "freq": 1,
+        "context": "# → [94% match] \"use postgres for the database\""
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 34,
+        "freq": 1,
+        "context": "ctx.set(\"project\", \"decision\", \"use postgres\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 47,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres\""
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 14,
+        "line": 29,
         "freq": 1,
         "context": "ctx set myproject decision \"use postgres for the db\""
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 21,
+        "line": 36,
         "freq": 1,
         "context": "→ [94% match] \"use postgres for the db\""
       }
@@ -4348,18 +4720,6 @@
         "line": 31,
         "freq": 1,
         "context": "| database | PostgreSQL + pgvector | reliable, embeddings built-in |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 11,
-        "freq": 1,
-        "context": "- pgvector support ✓"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 16,
-        "freq": 1,
-        "context": "3. Enable pgvector extension"
       }
     ],
     "openai": [
@@ -4398,18 +4758,6 @@
         "line": 95,
         "freq": 1,
         "context": "4. [ ] confirm i can use existing OpenAI key or provide separate one"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 28,
-        "freq": 1,
-        "context": "- OpenAI (embeddings)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 34,
-        "freq": 1,
-        "context": "- [x] OpenAI key"
       }
     ],
     "embeddings": [
@@ -4448,12 +4796,6 @@
         "line": 82,
         "freq": 1,
         "context": "| 3 | semantic search (embeddings) |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 28,
-        "freq": 1,
-        "context": "- OpenAI (embeddings)"
       }
     ],
     "components": [
@@ -4462,6 +4804,12 @@
         "line": 29,
         "freq": 1,
         "context": "- **components:**"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 58,
+        "freq": 1,
+        "context": "You can. The components exist (vector DBs, auth, APIs)."
       }
     ],
     "full": [
@@ -4490,6 +4838,18 @@
         "context": "- scripts created: 14 (full toolkit)"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- httpx-based client with full type hints"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 16,
         "freq": 1,
@@ -4506,6 +4866,24 @@
         "line": 39,
         "freq": 1,
         "context": "./scripts/arc help             # full help"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 38,
+        "freq": 1,
+        "context": "See [sdk-python/](sdk-python/) for full docs."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 52,
+        "freq": 1,
+        "context": "See [cli/](cli/) for full docs."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 86,
+        "freq": 1,
+        "context": "See [docs/api.md](docs/api.md) for full API documentation."
       },
       {
         "file": "scripts/README.md",
@@ -4540,12 +4918,6 @@
         "line": 80,
         "freq": 1,
         "context": "| 1 | database schema, core API routes |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 32,
-        "freq": 1,
-        "context": "- [x] Basic API routes"
       }
     ],
     "services": [
@@ -4608,6 +4980,12 @@
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 117,
+        "freq": 1,
+        "context": "- tests with respx mocking"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 15,
         "freq": 1,
@@ -4645,6 +5023,12 @@
       }
     ],
     "cli": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 52,
+        "freq": 2,
+        "context": "See [cli/](cli/) for full docs."
+      },
       {
         "file": "MEMORY.md",
         "line": 31,
@@ -4742,6 +5126,18 @@
         "context": "| 2 | CLI tool, auth system |"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 40,
+        "freq": 1,
+        "context": "### CLI"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 43,
+        "freq": 1,
+        "context": "npm install -g @ctxmem/cli"
+      },
+      {
         "file": "scripts/README.md",
         "line": 7,
         "freq": 1,
@@ -4780,20 +5176,56 @@
         "context": "- cli/ — `ctx` command-line tool"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 33,
+        "freq": 1,
+        "context": "ctx = ContextMemory(api_key=\"your-key\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 34,
+        "freq": 1,
+        "context": "ctx.set(\"project\", \"decision\", \"use postgres\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 35,
+        "freq": 1,
+        "context": "results = ctx.search(\"what database?\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 47,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres\""
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 48,
+        "freq": 1,
+        "context": "ctx get myproject decision"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 49,
+        "freq": 1,
+        "context": "ctx search \"what database\""
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 14,
+        "line": 29,
         "freq": 1,
         "context": "ctx set myproject decision \"use postgres for the db\""
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 17,
+        "line": 32,
         "freq": 1,
         "context": "ctx get myproject decision"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 20,
+        "line": 35,
         "freq": 1,
         "context": "ctx search \"what database should i use\""
       }
@@ -4840,6 +5272,18 @@
         "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 74,
+        "freq": 2,
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 86,
+        "freq": 2,
+        "context": "See [docs/api.md](docs/api.md) for full API documentation."
+      },
+      {
         "file": "MEMORY.md",
         "line": 32,
         "freq": 1,
@@ -4864,6 +5308,24 @@
         "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 121,
+        "freq": 1,
+        "context": "## self-hosted docs complete"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 123,
+        "freq": 1,
+        "context": "- docs/api.md — complete API reference"
+      },
+      {
         "file": "tasks/active.md",
         "line": 8,
         "freq": 1,
@@ -4886,6 +5348,18 @@
         "line": 83,
         "freq": 1,
         "context": "| 4 | landing page, docs |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 38,
+        "freq": 1,
+        "context": "See [sdk-python/](sdk-python/) for full docs."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 52,
+        "freq": 1,
+        "context": "See [cli/](cli/) for full docs."
       }
     ],
     "comprehensive": [
@@ -4944,6 +5418,12 @@
         "line": 199,
         "freq": 1,
         "context": "- Update documentation"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 86,
+        "freq": 1,
+        "context": "See [docs/api.md](docs/api.md) for full API documentation."
       }
     ],
     "landing": [
@@ -5136,12 +5616,6 @@
         "line": 6,
         "freq": 1,
         "context": "- Built comprehensive workspace toolkit (14 scripts)"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 41,
-        "freq": 1,
-        "context": "3. **Dogfooded** — built by an AI, for AI workflows"
       }
     ],
     "memory-manager": [
@@ -5253,13 +5727,13 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 7,
+        "line": 68,
         "freq": 1,
-        "context": "- Free tier supports:"
+        "context": "| Free | $0 | 1 | 1,000 |"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 34,
+        "line": 53,
         "freq": 1,
         "context": "| Free | $0 | 1 namespace, 1k entries |"
       }
@@ -5284,8 +5758,14 @@
         "context": "| pro | $12/mo | 10 namespaces, 100k entries, unlimited requests |"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 69,
+        "freq": 1,
+        "context": "| Pro | $12/mo | 10 | 100,000 |"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 35,
+        "line": 54,
         "freq": 1,
         "context": "| Pro | $12/mo | 10 namespaces, 100k entries |"
       }
@@ -5310,8 +5790,14 @@
         "context": "| team | $49/mo | unlimited namespaces, 1M entries, priority support |"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 70,
+        "freq": 1,
+        "context": "| Team | $49/mo | Unlimited | Unlimited |"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 36,
+        "line": 55,
         "freq": 1,
         "context": "| Team | $49/mo | unlimited |"
       }
@@ -5371,7 +5857,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 60,
+        "line": 65,
         "freq": 1,
         "context": "Code complete. Waiting on infrastructure (domain + hosting)."
       }
@@ -5424,12 +5910,6 @@
         "line": 93,
         "freq": 1,
         "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 24,
-        "freq": 1,
-        "context": "- Railway (for API deployment)"
       }
     ],
     "account": [
@@ -5438,6 +5918,12 @@
         "line": 36,
         "freq": 2,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 97,
+        "freq": 2,
+        "context": "| `/v1/account` | GET | Account info & usage |"
       },
       {
         "file": "monetization-plan.md",
@@ -5474,12 +5960,6 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 14,
-        "freq": 1,
-        "context": "1. Create Neon account"
       }
     ],
     "stripe": [
@@ -5488,12 +5968,6 @@
         "line": 96,
         "freq": 2,
         "context": "- stripe analogy: payments existed, but stripe won on ease"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 2,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       },
       {
         "file": "MEMORY.md",
@@ -5542,24 +6016,6 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 29,
-        "freq": 1,
-        "context": "- Stripe (payments)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 35,
-        "freq": 1,
-        "context": "- [x] Stripe key"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 37,
-        "freq": 1,
-        "context": "- [ ] Stripe webhook secret"
       }
     ],
     "key": [
@@ -5619,15 +6075,21 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 34,
+        "line": 7,
         "freq": 1,
-        "context": "- [x] OpenAI key"
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 35,
+        "line": 13,
         "freq": 1,
-        "context": "- [x] Stripe key"
+        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 99,
+        "freq": 1,
+        "context": "Auth: `x-api-key` header with your API key."
       },
       {
         "file": "scripts/README.md",
@@ -5699,9 +6161,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 40,
+        "line": 7,
         "freq": 1,
-        "context": "2. **Sticky** — once your context is there, you don't leave"
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       }
     ],
     "available": [
@@ -5754,6 +6216,18 @@
         "context": "- `scripts/README.md` — documentation for all scripts"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 119,
+        "freq": 1,
+        "context": "- readme with usage examples"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 125,
+        "freq": 1,
+        "context": "- README.md rewritten for users (not internal dev notes)"
+      },
+      {
         "file": "GOALS.md",
         "line": 55,
         "freq": 1,
@@ -5786,10 +6260,28 @@
         "context": "- `QUICKREF.md` — quick reference card for workflows"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 123,
+        "freq": 1,
+        "context": "- docs/api.md — complete API reference"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 1,
         "freq": 1,
         "context": "# Quick Reference"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 84,
+        "freq": 1,
+        "context": "## API Reference"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 88,
+        "freq": 1,
+        "context": "### Quick Reference"
       }
     ],
     "clawdbot": [
@@ -6078,6 +6570,24 @@
         "context": "Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, "
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 4,
+        "freq": 1,
+        "context": "Shared memory for AI workflows — when local files aren't enough."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
         "file": "scripts/README.md",
         "line": 26,
         "freq": 1,
@@ -6166,6 +6676,24 @@
         "line": 155,
         "freq": 1,
         "context": "- **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 11,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 16,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/search \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 77,
+        "freq": 1,
+        "context": "git clone https://github.com/ventok/context-memory"
       }
     ],
     "clawdbot-health-dashboard": [
@@ -6238,6 +6766,12 @@
         "line": 41,
         "freq": 1,
         "context": "- github for repo monitoring"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 77,
+        "freq": 1,
+        "context": "git clone https://github.com/ventok/context-memory"
       }
     ],
     "com": [
@@ -6258,6 +6792,12 @@
         "line": 155,
         "freq": 1,
         "context": "- **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 77,
+        "freq": 1,
+        "context": "git clone https://github.com/ventok/context-memory"
       }
     ],
     "ronpiii": [
@@ -6332,12 +6872,6 @@
         "line": 114,
         "freq": 1,
         "context": "1. **solves real pain** — every AI user hits context limits"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 39,
-        "freq": 1,
-        "context": "1. **Solves real pain** — every AI user hits context limits"
       }
     ],
     "server": [
@@ -6584,6 +7118,12 @@
         "line": 23,
         "freq": 1,
         "context": "- Vercel deployment shows Vercel's container metrics, not actual server"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 60,
+        "freq": 1,
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
       }
     ],
     "issue": [
@@ -6636,6 +7176,18 @@
         "line": 86,
         "freq": 1,
         "context": "- **DO NOT load in shared contexts** (Discord, group chats, sessions with other people)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 4,
+        "freq": 1,
+        "context": "Shared memory for AI workflows — when local files aren't enough."
       }
     ],
     "host": [
@@ -6704,12 +7256,6 @@
         "line": 46,
         "freq": 1,
         "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
       }
     ],
     "curl": [
@@ -6718,6 +7264,18 @@
         "line": 46,
         "freq": 1,
         "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 11,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 16,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/search \\"
       }
     ],
     "connect": [
@@ -7163,7 +7721,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 9,
+        "line": 24,
         "freq": 1,
         "context": "## The Solution"
       }
@@ -7204,6 +7762,12 @@
         "line": 65,
         "freq": 1,
         "context": "- needs to be under your name/entity initially"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 62,
+        "freq": 1,
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       }
     ],
     "different": [
@@ -7246,14 +7810,8 @@
         "context": "### 2. hosting account"
       },
       {
-        "file": "projects/context-memory/README.md",
-        "line": 23,
-        "freq": 1,
-        "context": "### Hosting"
-      },
-      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 60,
+        "line": 65,
         "freq": 1,
         "context": "Code complete. Waiting on infrastructure (domain + hosting)."
       }
@@ -7664,6 +8222,12 @@
         "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 125,
+        "freq": 1,
+        "context": "- README.md rewritten for users (not internal dev notes)"
+      },
+      {
         "file": "tasks/active.md",
         "line": 6,
         "freq": 1,
@@ -7686,6 +8250,18 @@
         "line": 36,
         "freq": 1,
         "context": "- auto-threading in #dev"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 11,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 16,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/search \\"
       }
     ],
     "webhooks": [
@@ -7790,6 +8366,30 @@
         "line": 201,
         "freq": 1,
         "context": "- **Review and update MEMORY.md** (see below)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 38,
+        "freq": 1,
+        "context": "See [sdk-python/](sdk-python/) for full docs."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 52,
+        "freq": 1,
+        "context": "See [cli/](cli/) for full docs."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 74,
+        "freq": 1,
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 86,
+        "freq": 1,
+        "context": "See [docs/api.md](docs/api.md) for full API documentation."
       }
     ],
     "tools": [
@@ -8190,10 +8790,22 @@
         "context": "- Disk usage gauge with breakdown"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 119,
+        "freq": 1,
+        "context": "- readme with usage examples"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 117,
         "freq": 1,
         "context": "4. **compounds** — more usage = better understanding of what matters"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 97,
+        "freq": 1,
+        "context": "| `/v1/account` | GET | Account info & usage |"
       }
     ],
     "8gb": [
@@ -8768,12 +9380,6 @@
         "line": 104,
         "freq": 1,
         "context": "- MCP integration (model context protocol)"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "python": [
@@ -8784,16 +9390,34 @@
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 111,
+        "freq": 1,
+        "context": "## python SDK complete"
+      },
+      {
         "file": "tasks/active.md",
         "line": 21,
         "freq": 1,
-        "context": "- [ ] context memory: python SDK"
+        "context": "- [x] context memory: python SDK"
       },
       {
         "file": "projects/context-memory/PLAN.md",
         "line": 103,
         "freq": 1,
         "context": "- SDKs (python, node, rust)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 24,
+        "freq": 1,
+        "context": "### Python"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 30,
+        "freq": 1,
+        "context": "```python"
       }
     ],
     "sdk": [
@@ -8804,10 +9428,16 @@
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 111,
+        "freq": 1,
+        "context": "## python SDK complete"
+      },
+      {
         "file": "tasks/active.md",
         "line": 21,
         "freq": 1,
-        "context": "- [ ] context memory: python SDK"
+        "context": "- [x] context memory: python SDK"
       }
     ],
     "learnings": [
@@ -9088,6 +9718,18 @@
         "line": 69,
         "freq": 1,
         "context": "### 4. openai API access"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- **Hosted agents** — API-based agents without filesystem access"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Hosted/API agents** without filesystem access"
       }
     ],
     "sub-agent": [
@@ -9244,6 +9886,12 @@
         "line": 154,
         "freq": 1,
         "context": "- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 60,
+        "freq": 1,
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
       }
     ],
     "deployments": [
@@ -9361,15 +10009,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 44,
+        "line": 10,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 49,
-        "freq": 1,
-        "context": "- Auth systems"
+        "context": "- **Multi-agent systems** sharing state"
       }
     ],
     "synonym": [
@@ -9712,6 +10354,24 @@
         "line": 212,
         "freq": 1,
         "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- **Hosted agents** — API-based agents without filesystem access"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Hosted/API agents** without filesystem access"
       }
     ],
     "manual": [
@@ -9726,6 +10386,18 @@
         "line": 72,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 46,
+        "freq": 1,
+        "context": "| Versioning/rollback | manual | ✓ |"
       }
     ],
     "intervention": [
@@ -9786,6 +10458,12 @@
         "context": "- [11:28] quick note capture makes memory logging easier"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 1,
         "freq": 1,
@@ -9802,6 +10480,12 @@
         "line": 34,
         "freq": 1,
         "context": "./scripts/arc note \"text\"      # quick note capture"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 88,
+        "freq": 1,
+        "context": "### Quick Reference"
       },
       {
         "file": "scripts/README.md",
@@ -10650,6 +11334,12 @@
         "context": "node scripts/memory-index.mjs search \"query terms\""
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 18,
+        "freq": 1,
+        "context": "-d '{\"query\": \"what database should I use?\"}'"
+      },
+      {
         "file": "scripts/README.md",
         "line": 10,
         "freq": 1,
@@ -10749,6 +11439,12 @@
       }
     ],
     "files": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 110,
+        "freq": 2,
+        "context": "If files solve your problem, use files. We're for when they don't."
+      },
       {
         "file": "MEMORY.md",
         "line": 98,
@@ -10850,6 +11546,54 @@
         "line": 210,
         "freq": 1,
         "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 101,
+        "freq": 1,
+        "context": "## Why Not Just Use Files?"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 4,
+        "freq": 1,
+        "context": "Shared memory for AI workflows — when local files aren't enough."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 16,
+        "freq": 1,
+        "context": "## Who Should Just Use Files"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**No shame in files. They're simple and they work.**"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 40,
+        "freq": 1,
+        "context": "| Feature | Files | Context Memory |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 62,
+        "freq": 1,
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       },
       {
         "file": "scripts/README.md",
@@ -11108,6 +11852,12 @@
     ],
     "text": [
       {
+        "file": "projects/context-memory/README.md",
+        "line": 96,
+        "freq": 2,
+        "context": "| `/v1/search/text` | POST | Text search |"
+      },
+      {
         "file": "MEMORY.md",
         "line": 102,
         "freq": 1,
@@ -11232,6 +11982,12 @@
         "context": "./scripts/arc task list        # task management"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 92,
+        "freq": 1,
+        "context": "| `/v1/namespaces` | GET | List namespaces |"
+      },
+      {
         "file": "scripts/README.md",
         "line": 113,
         "freq": 1,
@@ -11262,6 +12018,12 @@
         "line": 87,
         "freq": 1,
         "context": "4. **task management** — with Discord notifications"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- namespace management"
       },
       {
         "file": "GOALS.md",
@@ -11654,12 +12416,6 @@
         "context": "- Webhook integrations"
       },
       {
-        "file": "projects/context-memory/README.md",
-        "line": 37,
-        "freq": 1,
-        "context": "- [ ] Stripe webhook secret"
-      },
-      {
         "file": "scripts/README.md",
         "line": 158,
         "freq": 1,
@@ -11805,7 +12561,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 70,
+        "line": 69,
         "freq": 1,
         "context": "*Last updated: 2026-01-25*"
       }
@@ -11900,8 +12656,14 @@
         "context": "|------|-------|--------|"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 91,
+        "freq": 1,
+        "context": "|----------|--------|-------------|"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 33,
+        "line": 52,
         "freq": 1,
         "context": "|------|-------|--------|"
       },
@@ -11924,6 +12686,24 @@
         "line": 21,
         "freq": 1,
         "context": "|------|---------|"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 57,
+        "freq": 1,
+        "context": "|---------|-------------|"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 67,
+        "freq": 1,
+        "context": "|------|-------|------------|---------|"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 41,
+        "freq": 1,
+        "context": "|---------|-------|----------------|"
       },
       {
         "file": "scripts/README.md",
@@ -12664,12 +13444,6 @@
         "context": "### 🔄 Memory Maintenance (During Heartbeats)"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 51,
-        "freq": 1,
-        "context": "- Ongoing maintenance"
-      },
-      {
         "file": "scripts/README.md",
         "line": 68,
         "freq": 1,
@@ -13309,7 +14083,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 70,
+        "line": 69,
         "freq": 1,
         "context": "*Last updated: 2026-01-25*"
       }
@@ -13335,7 +14109,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 70,
+        "line": 69,
         "freq": 1,
         "context": "*Last updated: 2026-01-25*"
       }
@@ -13380,6 +14154,12 @@
         "line": 15,
         "freq": 1,
         "context": "- logs = debug/error output (reference only)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- error handling (auth, rate limit, not found, limits)"
       }
     ],
     "recovery": [
@@ -13458,6 +14238,12 @@
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 112,
+        "freq": 1,
+        "context": "- created sdk-python/ctxmem package"
+      },
+      {
         "file": "CHANGELOG.md",
         "line": 7,
         "freq": 1,
@@ -13518,16 +14304,10 @@
         "context": "- tested: \"database issue\" correctly finds vector dimension fix"
       },
       {
-        "file": "projects/context-memory/README.md",
-        "line": 18,
-        "freq": 1,
-        "context": "CREATE EXTENSION vector;"
-      },
-      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 57,
+        "line": 58,
         "freq": 1,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
+        "context": "You can. The components exist (vector DBs, auth, APIs)."
       }
     ],
     "dimension": [
@@ -13597,31 +14377,37 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 5,
+        "line": 13,
         "freq": 1,
-        "context": "### Database"
+        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 25,
+        "line": 18,
         "freq": 1,
-        "context": "- Neon (for database)"
+        "context": "-d '{\"query\": \"what database should I use?\"}'"
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 33,
+        "line": 19,
         "freq": 1,
-        "context": "- [x] Database schema"
+        "context": "# → [94% match] \"use postgres for the database\""
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 36,
+        "line": 35,
         "freq": 1,
-        "context": "- [ ] Database setup"
+        "context": "results = ctx.search(\"what database?\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 49,
+        "freq": 1,
+        "context": "ctx search \"what database\""
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 20,
+        "line": 35,
         "freq": 1,
         "context": "ctx search \"what database should i use\""
       }
@@ -13658,12 +14444,6 @@
         "line": 193,
         "freq": 1,
         "context": "- Nothing new since last check"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 15,
-        "freq": 1,
-        "context": "2. Create new project"
       }
     ],
     "project": [
@@ -13699,21 +14479,21 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
-        "context": "- 1 project"
+        "context": "ctx.set(\"project\", \"decision\", \"use postgres\")"
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 15,
+        "line": 58,
         "freq": 1,
-        "context": "2. Create new project"
+        "context": "| **Namespaces** | Organize by project, agent, or workflow |"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 25,
+        "line": 60,
         "freq": 1,
-        "context": "- **Namespaces** — organize by project, agent, or whatever"
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
       }
     ],
     "real-time": [
@@ -13840,6 +14620,12 @@
         "line": 50,
         "freq": 1,
         "context": "- added synonym expansion (db→database, api→endpoint, etc.)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 90,
+        "freq": 1,
+        "context": "| Endpoint | Method | Description |"
       }
     ],
     "cpu": [
@@ -13966,6 +14752,12 @@
         "line": 24,
         "freq": 1,
         "context": "- Local instance monitors real Clawdbot infrastructure"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 74,
+        "freq": 1,
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
       }
     ],
     "running": [
@@ -13982,6 +14774,12 @@
         "line": 22,
         "freq": 1,
         "context": "## Notes"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 125,
+        "freq": 1,
+        "context": "- README.md rewritten for users (not internal dev notes)"
       },
       {
         "file": "QUICKREF.md",
@@ -14032,18 +14830,6 @@
         "line": 23,
         "freq": 1,
         "context": "- Vercel deployment shows Vercel's container metrics, not actual server"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 24,
-        "freq": 1,
-        "context": "- Railway (for API deployment)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 38,
-        "freq": 1,
-        "context": "- [ ] Deployment configuration"
       }
     ],
     "rather": [
@@ -14138,6 +14924,12 @@
         "line": 21,
         "freq": 1,
         "context": "- 1-year data retention"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- Data fits in context"
       }
     ],
     "tier": [
@@ -14173,13 +14965,13 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 7,
+        "line": 66,
         "freq": 1,
-        "context": "- Free tier supports:"
+        "context": "| Tier | Price | Namespaces | Entries |"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 32,
+        "line": 51,
         "freq": 1,
         "context": "| Tier | Price | Limits |"
       }
@@ -14352,6 +15144,12 @@
         "context": "4. Remove outdated info from MEMORY.md that's no longer relevant"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 97,
+        "freq": 1,
+        "context": "| `/v1/account` | GET | Account info & usage |"
+      },
+      {
         "file": "scripts/README.md",
         "line": 35,
         "freq": 1,
@@ -14510,6 +15308,18 @@
         "line": 14,
         "freq": 1,
         "context": "- json files = structured state (machine-readable)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Multi-agent systems** sharing state"
       }
     ],
     "machine-readable": [
@@ -14600,6 +15410,24 @@
         "line": 216,
         "freq": 1,
         "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 116,
+        "freq": 1,
+        "context": "Self-hosting works now."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 48,
+        "freq": 1,
+        "context": "| Works in hosted agents | ✗ | ✓ |"
       }
     ],
     "multi-term": [
@@ -14852,6 +15680,12 @@
         "context": "- Check on projects (git status, etc.)"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 77,
+        "freq": 1,
+        "context": "git clone https://github.com/ventok/context-memory"
+      },
+      {
         "file": "scripts/README.md",
         "line": 54,
         "freq": 1,
@@ -14918,6 +15752,12 @@
         "line": 29,
         "freq": 1,
         "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- error handling (auth, rate limit, not found, limits)"
       },
       {
         "file": "AGENTS.md",
@@ -15052,6 +15892,42 @@
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 11,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 16,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/search \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 93,
+        "freq": 1,
+        "context": "| `/v1/namespaces` | POST | Create namespace |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 94,
+        "freq": 1,
+        "context": "| `/v1/namespaces/:ns/entries` | POST | Create entry |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 95,
+        "freq": 1,
+        "context": "| `/v1/search` | POST | Semantic search |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 96,
+        "freq": 1,
+        "context": "| `/v1/search/text` | POST | Text search |"
+      },
+      {
         "file": "scripts/README.md",
         "line": 127,
         "freq": 1,
@@ -15158,22 +16034,28 @@
         "context": "# context — persistent memory for AI workflows"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 4,
+        "file": "projects/context-memory/README.md",
+        "line": 3,
         "freq": 1,
         "context": "Persistent memory for AI workflows — never lose context again."
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 41,
+        "line": 4,
         "freq": 1,
-        "context": "3. **Dogfooded** — built by an AI, for AI workflows"
+        "context": "Shared memory for AI workflows — when local files aren't enough."
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 65,
+        "line": 11,
         "freq": 1,
-        "context": "- Teams with complex AI workflows"
+        "context": "- **Cross-device workflows** (phone + desktop + cloud)"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- Local-only workflows"
       }
     ],
     "improvements": [
@@ -15300,12 +16182,6 @@
         "line": 54,
         "freq": 1,
         "context": "## next steps"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 13,
-        "freq": 1,
-        "context": "### Setup Steps"
       }
     ],
     "separate": [
@@ -15414,6 +16290,12 @@
         "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 80,
+        "freq": 1,
+        "context": "# Add your OPENAI_API_KEY"
+      },
+      {
         "file": "scripts/README.md",
         "line": 114,
         "freq": 1,
@@ -15500,10 +16382,10 @@
         "context": "- webhooks on context changes"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 27,
+        "file": "projects/context-memory/README.md",
+        "line": 60,
         "freq": 1,
-        "context": "- **Versioning** — history of changes, rollback when needed"
+        "context": "| **Versioning** | History of changes, rollback support |"
       }
     ],
     "completion": [
@@ -15696,6 +16578,12 @@
         "line": 7,
         "freq": 1,
         "context": "- Created local keyword search (1055+ terms, no external APIs)"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 58,
+        "freq": 1,
+        "context": "You can. The components exist (vector DBs, auth, APIs)."
       }
     ],
     "session": [
@@ -15940,6 +16828,12 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
       }
     ],
     "counter": [
@@ -15968,12 +16862,6 @@
         "line": 95,
         "freq": 1,
         "context": "4. [ ] confirm i can use existing OpenAI key or provide separate one"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 43,
-        "freq": 1,
-        "context": "## \"But existing solutions exist...\""
       }
     ],
     "solutions": [
@@ -15994,12 +16882,6 @@
         "line": 33,
         "freq": 1,
         "context": "2. White-Label Solutions"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 43,
-        "freq": 1,
-        "context": "## \"But existing solutions exist...\""
       }
     ],
     "building": [
@@ -16023,15 +16905,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 44,
+        "line": 7,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 63,
-        "freq": 1,
-        "context": "- AI developers building agents"
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       }
     ],
     "blocks": [
@@ -16046,12 +16922,6 @@
         "line": 109,
         "freq": 1,
         "context": "- [12:06] context-memory counter-pitch: existing solutions are building blocks, we're the assembled "
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 44,
-        "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
       }
     ],
     "assembled": [
@@ -16069,9 +16939,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 53,
+        "line": 60,
         "freq": 1,
-        "context": "**Context Memory is the assembled product.**"
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
       }
     ],
     "product": [
@@ -16089,9 +16959,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 53,
+        "line": 60,
         "freq": 1,
-        "context": "**Context Memory is the assembled product.**"
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
       }
     ],
     "analogy": [
@@ -16114,18 +16984,6 @@
         "line": 96,
         "freq": 1,
         "context": "- stripe analogy: payments existed, but stripe won on ease"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 29,
-        "freq": 1,
-        "context": "- Stripe (payments)"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "existed": [
@@ -16134,12 +16992,6 @@
         "line": 96,
         "freq": 1,
         "context": "- stripe analogy: payments existed, but stripe won on ease"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "won": [
@@ -16154,12 +17006,6 @@
         "line": 7,
         "freq": 1,
         "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "ease": [
@@ -16254,6 +17100,12 @@
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- high-level API: set(), get(), search(), delete()"
+      },
+      {
         "file": "tasks/active.md",
         "line": 5,
         "freq": 1,
@@ -16267,13 +17119,19 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 20,
+        "line": 34,
         "freq": 1,
-        "context": "4. Run `schema.sql` to set up tables"
+        "context": "ctx.set(\"project\", \"decision\", \"use postgres\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 47,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres\""
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 14,
+        "line": 29,
         "freq": 1,
         "context": "ctx set myproject decision \"use postgres for the db\""
       }
@@ -16388,6 +17246,18 @@
         "line": 106,
         "freq": 1,
         "context": "- context sharing between agents"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Multi-agent systems** sharing state"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Teams** sharing context across members"
       }
     ],
     "friends": [
@@ -16430,6 +17300,644 @@
         "line": 109,
         "freq": 1,
         "context": "- [12:06] context-memory counter-pitch: existing solutions are building blocks, we're the assembled "
+      }
+    ],
+    "sdk-python": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 38,
+        "freq": 2,
+        "context": "See [sdk-python/](sdk-python/) for full docs."
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 112,
+        "freq": 1,
+        "context": "- created sdk-python/ctxmem package"
+      }
+    ],
+    "ctxmem": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 112,
+        "freq": 1,
+        "context": "- created sdk-python/ctxmem package"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- **preferred:** `ctxmem.dev` or `usectx.dev` or `getctx.dev`"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 11,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 16,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/search \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 27,
+        "freq": 1,
+        "context": "pip install ctxmem"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 31,
+        "freq": 1,
+        "context": "from ctxmem import ContextMemory"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 43,
+        "freq": 1,
+        "context": "npm install -g @ctxmem/cli"
+      }
+    ],
+    "package": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 112,
+        "freq": 1,
+        "context": "- created sdk-python/ctxmem package"
+      }
+    ],
+    "httpx-based": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- httpx-based client with full type hints"
+      }
+    ],
+    "client": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- httpx-based client with full type hints"
+      }
+    ],
+    "type": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- httpx-based client with full type hints"
+      }
+    ],
+    "hints": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- httpx-based client with full type hints"
+      }
+    ],
+    "high-level": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- high-level API: set(), get(), search(), delete()"
+      }
+    ],
+    "get": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- high-level API: set(), get(), search(), delete()"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **CLI** — `ctx get`, `ctx set`, `ctx search`, `ctx forget`"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 48,
+        "freq": 1,
+        "context": "ctx get myproject decision"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 92,
+        "freq": 1,
+        "context": "| `/v1/namespaces` | GET | List namespaces |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 97,
+        "freq": 1,
+        "context": "| `/v1/account` | GET | Account info & usage |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 32,
+        "freq": 1,
+        "context": "ctx get myproject decision"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 39,
+        "freq": 1,
+        "context": "## What You Get"
+      }
+    ],
+    "delete": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- high-level API: set(), get(), search(), delete()"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
+      }
+    ],
+    "namespace": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- namespace management"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 44,
+        "freq": 1,
+        "context": "| free | $0 | 1 namespace, 1k entries, 10k requests/mo |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 93,
+        "freq": 1,
+        "context": "| `/v1/namespaces` | POST | Create namespace |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 53,
+        "freq": 1,
+        "context": "| Free | $0 | 1 namespace, 1k entries |"
+      }
+    ],
+    "handling": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- error handling (auth, rate limit, not found, limits)"
+      }
+    ],
+    "auth": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- error handling (auth, rate limit, not found, limits)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **API** — REST, simple auth via API keys"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 32,
+        "freq": 1,
+        "context": "| auth | API keys (hashed) | simple, stateless |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 81,
+        "freq": 1,
+        "context": "| 2 | CLI tool, auth system |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 99,
+        "freq": 1,
+        "context": "Auth: `x-api-key` header with your API key."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 58,
+        "freq": 1,
+        "context": "You can. The components exist (vector DBs, auth, APIs)."
+      }
+    ],
+    "rate": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- error handling (auth, rate limit, not found, limits)"
+      }
+    ],
+    "limit": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- error handling (auth, rate limit, not found, limits)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 165,
+        "freq": 1,
+        "context": "You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it small to limit toke"
+      }
+    ],
+    "limits": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- error handling (auth, rate limit, not found, limits)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 42,
+        "freq": 1,
+        "context": "| tier | price | limits |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 114,
+        "freq": 1,
+        "context": "1. **solves real pain** — every AI user hits context limits"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 51,
+        "freq": 1,
+        "context": "| Tier | Price | Limits |"
+      }
+    ],
+    "respx": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 117,
+        "freq": 1,
+        "context": "- tests with respx mocking"
+      }
+    ],
+    "mocking": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 117,
+        "freq": 1,
+        "context": "- tests with respx mocking"
+      }
+    ],
+    "pyproject": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 118,
+        "freq": 1,
+        "context": "- pyproject.toml for pip install"
+      }
+    ],
+    "toml": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 118,
+        "freq": 1,
+        "context": "- pyproject.toml for pip install"
+      }
+    ],
+    "pip": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 118,
+        "freq": 1,
+        "context": "- pyproject.toml for pip install"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 27,
+        "freq": 1,
+        "context": "pip install ctxmem"
+      }
+    ],
+    "install": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 118,
+        "freq": 1,
+        "context": "- pyproject.toml for pip install"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 27,
+        "freq": 1,
+        "context": "pip install ctxmem"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 43,
+        "freq": 1,
+        "context": "npm install -g @ctxmem/cli"
+      }
+    ],
+    "examples": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 119,
+        "freq": 1,
+        "context": "- readme with usage examples"
+      }
+    ],
+    "self-hosted": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 121,
+        "freq": 1,
+        "context": "## self-hosted docs complete"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- [x] context memory: self-hosted option"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- self-hosted option"
+      }
+    ],
+    "selfhost": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 74,
+        "freq": 2,
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      }
+    ],
+    "self-hosting": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 72,
+        "freq": 1,
+        "context": "## Self-Hosting"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 116,
+        "freq": 1,
+        "context": "Self-hosting works now."
+      }
+    ],
+    "guide": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      }
+    ],
+    "docker": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 81,
+        "freq": 1,
+        "context": "docker compose up -d"
+      }
+    ],
+    "k8s": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 122,
+        "freq": 1,
+        "context": "- docs/SELFHOST.md — full self-hosting guide (docker, k8s, manual)"
+      }
+    ],
+    "env": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 79,
+        "freq": 2,
+        "context": "cp .env.example .env"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 124,
+        "freq": 1,
+        "context": "- .env.example — configuration template"
+      }
+    ],
+    "example": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 124,
+        "freq": 1,
+        "context": "- .env.example — configuration template"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 155,
+        "freq": 1,
+        "context": "- **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 79,
+        "freq": 1,
+        "context": "cp .env.example .env"
+      }
+    ],
+    "configuration": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 124,
+        "freq": 1,
+        "context": "- .env.example — configuration template"
+      }
+    ],
+    "template": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 124,
+        "freq": 1,
+        "context": "- .env.example — configuration template"
+      }
+    ],
+    "rewritten": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 125,
+        "freq": 1,
+        "context": "- README.md rewritten for users (not internal dev notes)"
+      }
+    ],
+    "users": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 125,
+        "freq": 1,
+        "context": "- README.md rewritten for users (not internal dev notes)"
+      }
+    ],
+    "internal": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 125,
+        "freq": 1,
+        "context": "- README.md rewritten for users (not internal dev notes)"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- [x] set up discord internal comms hub"
+      },
+      {
+        "file": "tasks/done.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- [x] internal comms hub channels (#tasks, #logs, #dev)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 108,
+        "freq": 1,
+        "context": "## External vs Internal"
+      }
+    ],
+    "covers": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 60,
+        "freq": 1,
+        "context": "The index covers MEMORY.md + memory/*.md files. Scores results by term frequency and multi-term matc"
+      }
+    ],
+    "start": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 32,
+        "freq": 1,
+        "context": "### Start of session"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 33,
+        "freq": 1,
+        "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 36,
+        "freq": 1,
+        "context": "estimated infra cost: ~$20-50/month to start"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 97,
+        "freq": 1,
+        "context": "once i have these, i start building."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 5,
+        "freq": 1,
+        "context": "## Quick Start"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 116,
+        "freq": 1,
+        "context": "node scripts/task.mjs start \"partial match\""
+      }
+    ],
+    "scaling": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      }
+    ],
+    "backup": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      }
+    ],
+    "embedding": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      }
+    ],
+    "alternatives": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 126,
+        "freq": 1,
+        "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
       }
     ],
     "structure": [
@@ -16490,6 +17998,12 @@
         "line": 9,
         "freq": 1,
         "context": "- custom slash commands per workflow"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 58,
+        "freq": 1,
+        "context": "| **Namespaces** | Organize by project, agent, or workflow |"
       }
     ],
     "visibility": [
@@ -16572,26 +18086,6 @@
         "context": "## High Priority"
       }
     ],
-    "internal": [
-      {
-        "file": "tasks/active.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- [x] set up discord internal comms hub"
-      },
-      {
-        "file": "tasks/done.md",
-        "line": 18,
-        "freq": 1,
-        "context": "- [x] internal comms hub channels (#tasks, #logs, #dev)"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 108,
-        "freq": 1,
-        "context": "## External vs Internal"
-      }
-    ],
     "comms": [
       {
         "file": "tasks/active.md",
@@ -16657,21 +18151,15 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 14,
+        "line": 93,
         "freq": 1,
-        "context": "1. Create Neon account"
+        "context": "| `/v1/namespaces` | POST | Create namespace |"
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 15,
+        "line": 94,
         "freq": 1,
-        "context": "2. Create new project"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 18,
-        "freq": 1,
-        "context": "CREATE EXTENSION vector;"
+        "context": "| `/v1/namespaces/:ns/entries` | POST | Create entry |"
       }
     ],
     "configure": [
@@ -16724,20 +18212,12 @@
         "line": 19,
         "freq": 1,
         "context": "- [ ] auto-threading in #dev for long conversations"
-      }
-    ],
-    "self-hosted": [
-      {
-        "file": "tasks/active.md",
-        "line": 22,
-        "freq": 1,
-        "context": "- [ ] context memory: self-hosted option"
       },
       {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 108,
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
         "freq": 1,
-        "context": "- self-hosted option"
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       }
     ],
     "option": [
@@ -16745,7 +18225,7 @@
         "file": "tasks/active.md",
         "line": 22,
         "freq": 1,
-        "context": "- [ ] context memory: self-hosted option"
+        "context": "- [x] context memory: self-hosted option"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -16815,7 +18295,7 @@
         "file": "projects/context-memory/PITCH.md",
         "line": 57,
         "freq": 1,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
+        "context": "## \"Why not build it myself?\""
       },
       {
         "file": "scripts/README.md",
@@ -16932,12 +18412,6 @@
         "line": 118,
         "freq": 1,
         "context": "5. **i'm the first user** — i'll dogfood it immediately"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 39,
-        "freq": 1,
-        "context": "1. **Solves real pain** — every AI user hits context limits"
       }
     ],
     "pairing": [
@@ -16972,30 +18446,6 @@
         "line": 31,
         "freq": 1,
         "context": "- Custom monitoring setup"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 3,
-        "freq": 1,
-        "context": "## Infrastructure Setup"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 13,
-        "freq": 1,
-        "context": "### Setup Steps"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 36,
-        "freq": 1,
-        "context": "- [ ] Database setup"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 47,
-        "freq": 1,
-        "context": "- Infrastructure setup"
       }
     ],
     "channel": [
@@ -17124,6 +18574,18 @@
         "line": 8,
         "freq": 1,
         "context": "- mobile node pairing (phone camera/location access)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Cross-device workflows** (phone + desktop + cloud)"
       }
     ],
     "camera": [
@@ -17212,8 +18674,38 @@
         "context": "```bash"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 9,
+        "freq": 1,
+        "context": "```bash"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 26,
+        "freq": 1,
+        "context": "```bash"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 42,
+        "freq": 1,
+        "context": "```bash"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 46,
+        "freq": 1,
+        "context": "```bash"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 76,
+        "freq": 1,
+        "context": "```bash"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 12,
+        "line": 27,
         "freq": 1,
         "context": "```bash"
       },
@@ -17411,9 +18903,9 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 20,
+        "line": 74,
         "freq": 1,
-        "context": "4. Run `schema.sql` to set up tables"
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
       },
       {
         "file": "scripts/README.md",
@@ -17468,8 +18960,14 @@
         "context": "|------|-------|--------|"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 67,
+        "freq": 1,
+        "context": "|------|-------|------------|---------|"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 33,
+        "line": 52,
         "freq": 1,
         "context": "|------|-------|--------|"
       }
@@ -17504,44 +19002,6 @@
         "line": 205,
         "freq": 1,
         "context": "1. Read through recent `memory/YYYY-MM-DD.md` files"
-      }
-    ],
-    "start": [
-      {
-        "file": "QUICKREF.md",
-        "line": 32,
-        "freq": 1,
-        "context": "### Start of session"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 33,
-        "freq": 1,
-        "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 36,
-        "freq": 1,
-        "context": "estimated infra cost: ~$20-50/month to start"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 97,
-        "freq": 1,
-        "context": "once i have these, i start building."
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 5,
-        "freq": 1,
-        "context": "## Quick Start"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 116,
-        "freq": 1,
-        "context": "node scripts/task.mjs start \"partial match\""
       }
     ],
     "read": [
@@ -17962,12 +19422,6 @@
         "line": 23,
         "freq": 1,
         "context": "### Context Memory API (ongoing)"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 51,
-        "freq": 1,
-        "context": "- Ongoing maintenance"
       }
     ],
     "launch": [
@@ -18036,12 +19490,6 @@
         "line": 40,
         "freq": 1,
         "context": "- Webhook integrations"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 27,
-        "freq": 1,
-        "context": "### Integrations"
       }
     ],
     "track": [
@@ -18338,16 +19786,40 @@
         "context": "3. **sticky** — once your context is there, you don't leave"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
+        "file": "projects/context-memory/README.md",
+        "line": 74,
         "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 80,
+        "freq": 1,
+        "context": "# Add your OPENAI_API_KEY"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 99,
+        "freq": 1,
+        "context": "Auth: `x-api-key` header with your API key."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 110,
+        "freq": 1,
+        "context": "If files solve your problem, use files. We're for when they don't."
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 40,
+        "line": 60,
         "freq": 1,
-        "context": "2. **Sticky** — once your context is there, you don't leave"
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 62,
+        "freq": 1,
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       }
     ],
     "folder": [
@@ -18478,14 +19950,6 @@
         "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
       }
     ],
-    "delete": [
-      {
-        "file": "AGENTS.md",
-        "line": 7,
-        "freq": 1,
-        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
-      }
-    ],
     "again": [
       {
         "file": "AGENTS.md",
@@ -18494,8 +19958,8 @@
         "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 4,
+        "file": "projects/context-memory/README.md",
+        "line": 3,
         "freq": 1,
         "context": "Persistent memory for AI workflows — never lose context again."
       }
@@ -18633,7 +20097,7 @@
         "file": "projects/context-memory/PITCH.md",
         "line": 7,
         "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       }
     ],
     "continuity": [
@@ -18656,12 +20120,6 @@
         "line": 60,
         "freq": 1,
         "context": "The index covers MEMORY.md + memory/*.md files. Scores results by term frequency and multi-term matc"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 27,
-        "freq": 1,
-        "context": "- **Versioning** — history of changes, rollback when needed"
       }
     ],
     "happened": [
@@ -18720,12 +20178,6 @@
         "line": 167,
         "freq": 1,
         "context": "**Things to check (rotate through these, 2-4 times per day):**"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
       }
     ],
     "remember": [
@@ -18748,10 +20200,10 @@
         "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 10,
+        "file": "projects/context-memory/README.md",
+        "line": 7,
         "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions."
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
       }
     ],
     "skip": [
@@ -18854,20 +20306,74 @@
         "context": "4. [ ] confirm i can use existing OpenAI key or provide separate one"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 13,
+        "freq": 1,
+        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 18,
+        "freq": 1,
+        "context": "-d '{\"query\": \"what database should I use?\"}'"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 19,
+        "freq": 1,
+        "context": "# → [94% match] \"use postgres for the database\""
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 34,
+        "freq": 1,
+        "context": "ctx.set(\"project\", \"decision\", \"use postgres\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 47,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres\""
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 101,
+        "freq": 1,
+        "context": "## Why Not Just Use Files?"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 110,
+        "freq": 1,
+        "context": "If files solve your problem, use files. We're for when they don't."
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 14,
+        "line": 16,
+        "freq": 1,
+        "context": "## Who Should Just Use Files"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 29,
         "freq": 1,
         "context": "ctx set myproject decision \"use postgres for the db\""
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 20,
+        "line": 35,
         "freq": 1,
         "context": "ctx search \"what database should i use\""
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 21,
+        "line": 36,
         "freq": 1,
         "context": "→ [94% match] \"use postgres for the db\""
       },
@@ -18921,7 +20427,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 13,
+        "line": 28,
         "freq": 1,
         "context": "# store something"
       },
@@ -18978,14 +20484,6 @@
         "context": "Automated workspace maintenance (index rebuild, auto-commit routine files)."
       }
     ],
-    "covers": [
-      {
-        "file": "AGENTS.md",
-        "line": 60,
-        "freq": 1,
-        "context": "The index covers MEMORY.md + memory/*.md files. Scores results by term frequency and multi-term matc"
-      }
-    ],
     "scores": [
       {
         "file": "AGENTS.md",
@@ -19000,6 +20498,12 @@
         "line": 60,
         "freq": 1,
         "context": "The index covers MEMORY.md + memory/*.md files. Scores results by term frequency and multi-term matc"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 35,
+        "freq": 1,
+        "context": "results = ctx.search(\"what database?\")"
       }
     ],
     "term": [
@@ -19334,10 +20838,10 @@
         "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 10,
+        "file": "projects/context-memory/README.md",
+        "line": 7,
         "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions."
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
       }
     ],
     "security": [
@@ -19602,6 +21106,12 @@
         "line": 94,
         "freq": 1,
         "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 74,
+        "freq": 1,
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
       }
     ],
     "survive": [
@@ -19888,10 +21398,10 @@
         "context": "- Read and organize memory files"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 25,
+        "file": "projects/context-memory/README.md",
+        "line": 58,
         "freq": 1,
-        "context": "- **Namespaces** — organize by project, agent, or whatever"
+        "context": "| **Namespaces** | Organize by project, agent, or workflow |"
       }
     ],
     "web": [
@@ -19984,6 +21494,12 @@
         "line": 23,
         "freq": 1,
         "context": "- Machine learning anomaly detection"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- Single agent, single machine"
       }
     ],
     "uncertain": [
@@ -20044,12 +21560,6 @@
         "line": 210,
         "freq": 1,
         "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "speak": [
@@ -20204,6 +21714,12 @@
         "line": 129,
         "freq": 1,
         "context": "- You can add genuine value (info, insight, help)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 13,
+        "freq": 1,
+        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
       }
     ],
     "insight": [
@@ -20242,6 +21758,12 @@
         "line": 130,
         "freq": 1,
         "context": "- Something witty/funny fits naturally"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- Data fits in context"
       }
     ],
     "naturally": [
@@ -20250,12 +21772,6 @@
         "line": 130,
         "freq": 1,
         "context": "- Something witty/funny fits naturally"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 19,
-        "freq": 1,
-        "context": "# or just ask naturally"
       }
     ],
     "correcting": [
@@ -20368,12 +21884,6 @@
         "line": 136,
         "freq": 1,
         "context": "- Someone already answered the question"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "answered": [
@@ -20420,12 +21930,6 @@
         "line": 138,
         "freq": 1,
         "context": "- The conversation is flowing fine without you"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
       }
     ],
     "flowing": [
@@ -20442,6 +21946,12 @@
         "line": 138,
         "freq": 1,
         "context": "- The conversation is flowing fine without you"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       }
     ],
     "interrupt": [
@@ -20469,6 +21979,12 @@
       }
     ],
     "single": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 17,
+        "freq": 2,
+        "context": "- Single agent, single machine"
+      },
       {
         "file": "AGENTS.md",
         "line": 141,
@@ -20604,12 +22120,6 @@
         "line": 95,
         "freq": 1,
         "context": "4. [ ] confirm i can use existing OpenAI key or provide separate one"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "thoughtful": [
@@ -20830,12 +22340,6 @@
         "line": 154,
         "freq": 1,
         "context": "- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 20,
-        "freq": 1,
-        "context": "4. Run `schema.sql` to set up tables"
       }
     ],
     "bullet": [
@@ -20879,14 +22383,6 @@
       }
     ],
     "embeds": [
-      {
-        "file": "AGENTS.md",
-        "line": 155,
-        "freq": 1,
-        "context": "- **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`"
-      }
-    ],
-    "example": [
       {
         "file": "AGENTS.md",
         "line": 155,
@@ -21030,23 +22526,9 @@
         "line": 165,
         "freq": 1,
         "context": "You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it small to limit toke"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 31,
-        "freq": 1,
-        "context": "## Development Checklist"
       }
     ],
     "reminders": [
-      {
-        "file": "AGENTS.md",
-        "line": 165,
-        "freq": 1,
-        "context": "You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it small to limit toke"
-      }
-    ],
-    "limit": [
       {
         "file": "AGENTS.md",
         "line": 165,
@@ -21252,6 +22734,12 @@
         "line": 186,
         "freq": 1,
         "context": "- Calendar event coming up (&lt;2h)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "Production-ready API. Waiting on hosted infrastructure (coming soon)."
       }
     ],
     "interesting": [
@@ -21520,12 +23008,6 @@
         "line": 6,
         "freq": 1,
         "context": "- Basic system metrics"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 32,
-        "freq": 1,
-        "context": "- [x] Basic API routes"
       }
     ],
     "community": [
@@ -21563,9 +23045,9 @@
       },
       {
         "file": "projects/context-memory/README.md",
-        "line": 11,
+        "line": 60,
         "freq": 1,
-        "context": "- pgvector support ✓"
+        "context": "| **Versioning** | History of changes, rollback support |"
       }
     ],
     "month": [
@@ -21614,6 +23096,12 @@
     ],
     "unlimited": [
       {
+        "file": "projects/context-memory/README.md",
+        "line": 70,
+        "freq": 2,
+        "context": "| Team | $49/mo | Unlimited | Unlimited |"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 19,
         "freq": 1,
@@ -21633,7 +23121,7 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 36,
+        "line": 55,
         "freq": 1,
         "context": "| Team | $49/mo | unlimited |"
       }
@@ -21882,8 +23370,14 @@
         "context": "- **option B:** Fly.io — similar pricing"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 64,
+        "freq": 1,
+        "context": "## Pricing"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 31,
+        "line": 50,
         "freq": 1,
         "context": "## Pricing"
       }
@@ -21910,12 +23404,6 @@
         "line": 43,
         "freq": 1,
         "context": "## Target Markets"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 62,
-        "freq": 1,
-        "context": "## Target Users"
       }
     ],
     "markets": [
@@ -21932,6 +23420,18 @@
         "line": 44,
         "freq": 1,
         "context": "- Cloud infrastructure providers"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Cross-device workflows** (phone + desktop + cloud)"
       }
     ],
     "saas": [
@@ -21975,9 +23475,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 65,
+        "line": 13,
         "freq": 1,
-        "context": "- Teams with complex AI workflows"
+        "context": "- **Teams** sharing context across members"
       }
     ],
     "lightweight": [
@@ -22004,10 +23504,22 @@
         "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 10,
+        "file": "projects/context-memory/README.md",
+        "line": 7,
         "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions."
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Teams** sharing context across members"
       }
     ],
     "compaction": [
@@ -22016,12 +23528,6 @@
         "line": 5,
         "freq": 1,
         "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
       }
     ],
     "scope": [
@@ -22060,8 +23566,8 @@
         "context": "- no team/collaboration features"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 24,
+        "file": "projects/context-memory/README.md",
+        "line": 54,
         "freq": 1,
         "context": "## Features"
       }
@@ -22090,10 +23596,16 @@
         "context": "- **namespaces** — isolated memory spaces per project/agent"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 25,
+        "file": "projects/context-memory/README.md",
+        "line": 58,
         "freq": 1,
-        "context": "- **Namespaces** — organize by project, agent, or whatever"
+        "context": "| **Namespaces** | Organize by project, agent, or workflow |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- Single agent, single machine"
       }
     ],
     "key-value": [
@@ -22126,6 +23638,12 @@
         "line": 13,
         "freq": 1,
         "context": "- **entries** — key-value with metadata (timestamps, tags, ttl)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 62,
+        "freq": 1,
+        "context": "| **Tags** | Filter and categorize entries |"
       }
     ],
     "ttl": [
@@ -22136,10 +23654,16 @@
         "context": "- **entries** — key-value with metadata (timestamps, tags, ttl)"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 28,
+        "file": "projects/context-memory/README.md",
+        "line": 61,
         "freq": 1,
-        "context": "- **TTL** — auto-expire temporary context"
+        "context": "| **TTL** | Auto-expire temporary context |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 47,
+        "freq": 1,
+        "context": "| TTL/auto-expire | ✗ | ✓ |"
       }
     ],
     "full-text": [
@@ -22158,10 +23682,16 @@
         "context": "- **versioning** — history of changes, rollback"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 27,
+        "file": "projects/context-memory/README.md",
+        "line": 60,
         "freq": 1,
-        "context": "- **Versioning** — history of changes, rollback when needed"
+        "context": "| **Versioning** | History of changes, rollback support |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 46,
+        "freq": 1,
+        "context": "| Versioning/rollback | manual | ✓ |"
       }
     ],
     "history": [
@@ -22172,16 +23702,16 @@
         "context": "- **versioning** — history of changes, rollback"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
+        "file": "projects/context-memory/README.md",
+        "line": 60,
         "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
+        "context": "| **Versioning** | History of changes, rollback support |"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 27,
+        "line": 14,
         "freq": 1,
-        "context": "- **Versioning** — history of changes, rollback when needed"
+        "context": "- **Apps** that need semantic search over history"
       }
     ],
     "rollback": [
@@ -22192,10 +23722,16 @@
         "context": "- **versioning** — history of changes, rollback"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 27,
+        "file": "projects/context-memory/README.md",
+        "line": 60,
         "freq": 1,
-        "context": "- **Versioning** — history of changes, rollback when needed"
+        "context": "| **Versioning** | History of changes, rollback support |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 46,
+        "freq": 1,
+        "context": "| Versioning/rollback | manual | ✓ |"
       }
     ],
     "simple": [
@@ -22212,54 +23748,40 @@
         "context": "| auth | API keys (hashed) | simple, stateless |"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 10,
+        "file": "projects/context-memory/README.md",
+        "line": 7,
         "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions."
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 29,
+        "line": 22,
         "freq": 1,
-        "context": "- **Simple auth** — API keys, no complexity"
+        "context": "**No shame in files. They're simple and they work.**"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 25,
+        "freq": 1,
+        "context": "A simple API for persistent, searchable AI memory."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 42,
+        "freq": 1,
+        "context": "| Simple storage | ✓ | ✓ |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 62,
+        "freq": 1,
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       },
       {
         "file": "scripts/README.md",
         "line": 110,
         "freq": 1,
         "context": "Simple task management CLI."
-      }
-    ],
-    "auth": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 16,
-        "freq": 1,
-        "context": "- **API** — REST, simple auth via API keys"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 32,
-        "freq": 1,
-        "context": "| auth | API keys (hashed) | simple, stateless |"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 81,
-        "freq": 1,
-        "context": "| 2 | CLI tool, auth system |"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 29,
-        "freq": 1,
-        "context": "- **Simple auth** — API keys, no complexity"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 49,
-        "freq": 1,
-        "context": "- Auth systems"
       }
     ],
     "keys": [
@@ -22280,26 +23802,6 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 29,
-        "freq": 1,
-        "context": "- **Simple auth** — API keys, no complexity"
-      }
-    ],
-    "get": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 17,
-        "freq": 1,
-        "context": "- **CLI** — `ctx get`, `ctx set`, `ctx search`, `ctx forget`"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 17,
-        "freq": 1,
-        "context": "ctx get myproject decision"
       }
     ],
     "forget": [
@@ -22340,12 +23842,6 @@
         "line": 22,
         "freq": 1,
         "context": "- no complex permissions"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 65,
-        "freq": 1,
-        "context": "- Teams with complex AI workflows"
       }
     ],
     "permissions": [
@@ -22464,12 +23960,6 @@
         "line": 31,
         "freq": 1,
         "context": "| database | PostgreSQL + pgvector | reliable, embeddings built-in |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 6,
-        "freq": 1,
-        "context": "- Using Neon (serverless PostgreSQL)"
       }
     ],
     "reliable": [
@@ -22524,12 +24014,6 @@
         "line": 33,
         "freq": 1,
         "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
-        "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
       }
     ],
     "scales": [
@@ -22586,6 +24070,12 @@
         "line": 34,
         "freq": 1,
         "context": "| embeddings | OpenAI ada-002 | cheap, good enough |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 4,
+        "freq": 1,
+        "context": "Shared memory for AI workflows — when local files aren't enough."
       }
     ],
     "estimated": [
@@ -22632,36 +24122,16 @@
         "context": "| tier | price | limits |"
       },
       {
+        "file": "projects/context-memory/README.md",
+        "line": 66,
+        "freq": 1,
+        "context": "| Tier | Price | Namespaces | Entries |"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 32,
+        "line": 51,
         "freq": 1,
         "context": "| Tier | Price | Limits |"
-      }
-    ],
-    "limits": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 42,
-        "freq": 1,
-        "context": "| tier | price | limits |"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 114,
-        "freq": 1,
-        "context": "1. **solves real pain** — every AI user hits context limits"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 32,
-        "freq": 1,
-        "context": "| Tier | Price | Limits |"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 39,
-        "freq": 1,
-        "context": "1. **Solves real pain** — every AI user hits context limits"
       }
     ],
     "-------": [
@@ -22672,24 +24142,22 @@
         "context": "|------|-------|--------|"
       },
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 33,
+        "file": "projects/context-memory/README.md",
+        "line": 67,
         "freq": 1,
-        "context": "|------|-------|--------|"
-      }
-    ],
-    "namespace": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 44,
-        "freq": 1,
-        "context": "| free | $0 | 1 namespace, 1k entries, 10k requests/mo |"
+        "context": "|------|-------|------------|---------|"
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 34,
+        "line": 41,
         "freq": 1,
-        "context": "| Free | $0 | 1 namespace, 1k entries |"
+        "context": "|---------|-------|----------------|"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 52,
+        "freq": 1,
+        "context": "|------|-------|--------|"
       }
     ],
     "10k": [
@@ -22723,17 +24191,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 35,
+        "line": 54,
         "freq": 1,
         "context": "| Pro | $12/mo | 10 namespaces, 100k entries |"
-      }
-    ],
-    "ctxmem": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 53,
-        "freq": 1,
-        "context": "- **preferred:** `ctxmem.dev` or `usectx.dev` or `getctx.dev`"
       }
     ],
     "usectx": [
@@ -22909,15 +24369,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 16,
+        "line": 31,
         "freq": 1,
         "context": "# retrieve it later"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 57,
-        "freq": 1,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
       }
     ],
     "0001": [
@@ -22942,18 +24396,6 @@
         "line": 80,
         "freq": 1,
         "context": "| 1 | database schema, core API routes |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 20,
-        "freq": 1,
-        "context": "4. Run `schema.sql` to set up tables"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 33,
-        "freq": 1,
-        "context": "- [x] Database schema"
       }
     ],
     "live": [
@@ -22979,9 +24421,9 @@
       },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 57,
+        "line": 60,
         "freq": 1,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
       }
     ],
     "action": [
@@ -23058,6 +24500,12 @@
         "line": 103,
         "freq": 1,
         "context": "- SDKs (python, node, rust)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 22,
+        "freq": 1,
+        "context": "## SDKs"
       }
     ],
     "rust": [
@@ -23098,12 +24546,6 @@
         "line": 112,
         "freq": 1,
         "context": "## why this wins"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 38,
-        "freq": 1,
-        "context": "## Why It Wins"
       }
     ],
     "solves": [
@@ -23112,12 +24554,6 @@
         "line": 114,
         "freq": 1,
         "context": "1. **solves real pain** — every AI user hits context limits"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 39,
-        "freq": 1,
-        "context": "1. **Solves real pain** — every AI user hits context limits"
       }
     ],
     "pain": [
@@ -23126,12 +24562,6 @@
         "line": 114,
         "freq": 1,
         "context": "1. **solves real pain** — every AI user hits context limits"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 39,
-        "freq": 1,
-        "context": "1. **Solves real pain** — every AI user hits context limits"
       }
     ],
     "hits": [
@@ -23140,12 +24570,6 @@
         "line": 114,
         "freq": 1,
         "context": "1. **solves real pain** — every AI user hits context limits"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 39,
-        "freq": 1,
-        "context": "1. **Solves real pain** — every AI user hits context limits"
       }
     ],
     "surface": [
@@ -23178,12 +24602,6 @@
         "line": 116,
         "freq": 1,
         "context": "3. **sticky** — once your context is there, you don't leave"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 40,
-        "freq": 1,
-        "context": "2. **Sticky** — once your context is there, you don't leave"
       }
     ],
     "leave": [
@@ -23192,12 +24610,6 @@
         "line": 116,
         "freq": 1,
         "context": "3. **sticky** — once your context is there, you don't leave"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 40,
-        "freq": 1,
-        "context": "2. **Sticky** — once your context is there, you don't leave"
       }
     ],
     "compounds": [
@@ -23240,284 +24652,172 @@
         "context": "let's build it."
       }
     ],
-    "using": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 6,
-        "freq": 1,
-        "context": "- Using Neon (serverless PostgreSQL)"
-      }
-    ],
-    "neon": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 6,
-        "freq": 1,
-        "context": "- Using Neon (serverless PostgreSQL)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 14,
-        "freq": 1,
-        "context": "1. Create Neon account"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 25,
-        "freq": 1,
-        "context": "- Neon (for database)"
-      }
-    ],
-    "serverless": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 6,
-        "freq": 1,
-        "context": "- Using Neon (serverless PostgreSQL)"
-      }
-    ],
-    "supports": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 7,
-        "freq": 1,
-        "context": "- Free tier supports:"
-      }
-    ],
-    "3gb": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- 3GB storage"
-      }
-    ],
-    "storage": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- 3GB storage"
-      }
-    ],
-    "branching": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 10,
-        "freq": 1,
-        "context": "- Branching"
-      }
-    ],
-    "enable": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 16,
-        "freq": 1,
-        "context": "3. Enable pgvector extension"
-      }
-    ],
-    "extension": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 16,
-        "freq": 1,
-        "context": "3. Enable pgvector extension"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 18,
-        "freq": 1,
-        "context": "CREATE EXTENSION vector;"
-      }
-    ],
-    "sql": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 17,
-        "freq": 1,
-        "context": "```sql"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 20,
-        "freq": 1,
-        "context": "4. Run `schema.sql` to set up tables"
-      }
-    ],
-    "copy": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 21,
-        "freq": 1,
-        "context": "5. Copy connection string to `.env`"
-      }
-    ],
-    "connection": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 21,
-        "freq": 1,
-        "context": "5. Copy connection string to `.env`"
-      }
-    ],
-    "string": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 21,
-        "freq": 1,
-        "context": "5. Copy connection string to `.env`"
-      }
-    ],
-    "env": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 21,
-        "freq": 1,
-        "context": "5. Copy connection string to `.env`"
-      }
-    ],
-    "development": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 31,
-        "freq": 1,
-        "context": "## Development Checklist"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 50,
-        "freq": 1,
-        "context": "- API development"
-      }
-    ],
-    "secret": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 37,
-        "freq": 1,
-        "context": "- [ ] Stripe webhook secret"
-      }
-    ],
-    "configuration": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 38,
-        "freq": 1,
-        "context": "- [ ] Deployment configuration"
-      }
-    ],
-    "one-liner": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 3,
-        "freq": 1,
-        "context": "## One-liner"
-      }
-    ],
     "never": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 4,
+        "file": "projects/context-memory/README.md",
+        "line": 3,
         "freq": 1,
         "context": "Persistent memory for AI workflows — never lose context again."
       }
     ],
     "lose": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 4,
+        "file": "projects/context-memory/README.md",
+        "line": 3,
         "freq": 1,
         "context": "Persistent memory for AI workflows — never lose context again."
       }
     ],
-    "problem": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 6,
-        "freq": 1,
-        "context": "## The Problem"
-      }
-    ],
-    "gets": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
-      }
-    ],
-    "lost": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
-      }
-    ],
-    "explain": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
-      }
-    ],
-    "kills": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "Every AI conversation starts fresh. Context gets lost. You explain the same things over and over. Co"
-      }
-    ],
     "lets": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 10,
+        "file": "projects/context-memory/README.md",
+        "line": 7,
         "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions."
-      }
-    ],
-    "myproject": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 14,
-        "freq": 1,
-        "context": "ctx set myproject decision \"use postgres for the db\""
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 17,
-        "freq": 1,
-        "context": "ctx get myproject decision"
-      }
-    ],
-    "decision": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 14,
-        "freq": 1,
-        "context": "ctx set myproject decision \"use postgres for the db\""
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 17,
-        "freq": 1,
-        "context": "ctx get myproject decision"
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
       }
     ],
     "retrieve": [
       {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
-        "line": 16,
+        "line": 31,
         "freq": 1,
         "context": "# retrieve it later"
       }
     ],
-    "match": [
+    "semantically": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      }
+    ],
+    "myproject": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 11,
+        "freq": 1,
+        "context": "curl -X POST https://api.ctxmem.dev/v1/namespaces/myproject/entries \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 47,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres\""
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 48,
+        "freq": 1,
+        "context": "ctx get myproject decision"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 21,
+        "line": 29,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres for the db\""
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 32,
+        "freq": 1,
+        "context": "ctx get myproject decision"
+      }
+    ],
+    "x-api-key": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 12,
+        "freq": 1,
+        "context": "-H \"x-api-key: $API_KEY\" \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 17,
+        "freq": 1,
+        "context": "-H \"x-api-key: $API_KEY\" \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 99,
+        "freq": 1,
+        "context": "Auth: `x-api-key` header with your API key."
+      }
+    ],
+    "api_key": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 12,
+        "freq": 1,
+        "context": "-H \"x-api-key: $API_KEY\" \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 17,
+        "freq": 1,
+        "context": "-H \"x-api-key: $API_KEY\" \\"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 33,
+        "freq": 1,
+        "context": "ctx = ContextMemory(api_key=\"your-key\")"
+      }
+    ],
+    "decision": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 13,
+        "freq": 1,
+        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 34,
+        "freq": 1,
+        "context": "ctx.set(\"project\", \"decision\", \"use postgres\")"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 47,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres\""
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 48,
+        "freq": 1,
+        "context": "ctx get myproject decision"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 29,
+        "freq": 1,
+        "context": "ctx set myproject decision \"use postgres for the db\""
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 32,
+        "freq": 1,
+        "context": "ctx get myproject decision"
+      }
+    ],
+    "match": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 19,
+        "freq": 1,
+        "context": "# → [94% match] \"use postgres for the database\""
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 36,
         "freq": 1,
         "context": "→ [94% match] \"use postgres for the db\""
       },
@@ -23540,186 +24840,602 @@
         "context": "node scripts/task.mjs block \"partial match\""
       }
     ],
-    "whatever": [
+    "import": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 31,
+        "freq": 1,
+        "context": "from ctxmem import ContextMemory"
+      }
+    ],
+    "contextmemory": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 31,
+        "freq": 1,
+        "context": "from ctxmem import ContextMemory"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 33,
+        "freq": 1,
+        "context": "ctx = ContextMemory(api_key=\"your-key\")"
+      }
+    ],
+    "your-key": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 33,
+        "freq": 1,
+        "context": "ctx = ContextMemory(api_key=\"your-key\")"
+      }
+    ],
+    "npm": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 43,
+        "freq": 1,
+        "context": "npm install -g @ctxmem/cli"
+      }
+    ],
+    "feature": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 56,
+        "freq": 1,
+        "context": "| Feature | Description |"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
-        "context": "- **Namespaces** — organize by project, agent, or whatever"
+        "context": "| Feature | Files | Context Memory |"
+      }
+    ],
+    "description": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 56,
+        "freq": 1,
+        "context": "| Feature | Description |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 90,
+        "freq": 1,
+        "context": "| Endpoint | Method | Description |"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "node scripts/task.mjs add \"task description\" [--high]"
+      }
+    ],
+    "-------------": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 57,
+        "freq": 1,
+        "context": "|---------|-------------|"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 91,
+        "freq": 1,
+        "context": "|----------|--------|-------------|"
       }
     ],
     "find": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 26,
+        "file": "projects/context-memory/README.md",
+        "line": 59,
         "freq": 1,
-        "context": "- **Semantic search** — find by meaning, not just keywords"
+        "context": "| **Semantic search** | Find by meaning, not just keywords |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
       }
     ],
     "meaning": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 26,
+        "file": "projects/context-memory/README.md",
+        "line": 59,
         "freq": 1,
-        "context": "- **Semantic search** — find by meaning, not just keywords"
+        "context": "| **Semantic search** | Find by meaning, not just keywords |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
       }
     ],
     "keywords": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 26,
+        "file": "projects/context-memory/README.md",
+        "line": 59,
         "freq": 1,
-        "context": "- **Semantic search** — find by meaning, not just keywords"
+        "context": "| **Semantic search** | Find by meaning, not just keywords |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
       }
     ],
     "auto-expire": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 28,
+        "file": "projects/context-memory/README.md",
+        "line": 61,
         "freq": 1,
-        "context": "- **TTL** — auto-expire temporary context"
+        "context": "| **TTL** | Auto-expire temporary context |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 47,
+        "freq": 1,
+        "context": "| TTL/auto-expire | ✗ | ✓ |"
       }
     ],
     "temporary": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 28,
+        "file": "projects/context-memory/README.md",
+        "line": 61,
         "freq": 1,
-        "context": "- **TTL** — auto-expire temporary context"
+        "context": "| **TTL** | Auto-expire temporary context |"
       }
     ],
-    "complexity": [
+    "filter": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 29,
+        "file": "projects/context-memory/README.md",
+        "line": 62,
         "freq": 1,
-        "context": "- **Simple auth** — API keys, no complexity"
+        "context": "| **Tags** | Filter and categorize entries |"
       }
     ],
-    "dogfooded": [
+    "categorize": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 41,
+        "file": "projects/context-memory/README.md",
+        "line": 62,
         "freq": 1,
-        "context": "3. **Dogfooded** — built by an AI, for AI workflows"
+        "context": "| **Tags** | Filter and categorize entries |"
       }
     ],
-    "exist": [
+    "------------": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 67,
+        "freq": 1,
+        "context": "|------|-------|------------|---------|"
+      }
+    ],
+    "000": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 68,
+        "freq": 1,
+        "context": "| Free | $0 | 1 | 1,000 |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 69,
+        "freq": 1,
+        "context": "| Pro | $12/mo | 10 | 100,000 |"
+      }
+    ],
+    "clone": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 77,
+        "freq": 1,
+        "context": "git clone https://github.com/ventok/context-memory"
+      }
+    ],
+    "openai_api_key": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 80,
+        "freq": 1,
+        "context": "# Add your OPENAI_API_KEY"
+      }
+    ],
+    "compose": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 81,
+        "freq": 1,
+        "context": "docker compose up -d"
+      }
+    ],
+    "method": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 90,
+        "freq": 1,
+        "context": "| Endpoint | Method | Description |"
+      }
+    ],
+    "----------": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 91,
+        "freq": 1,
+        "context": "|----------|--------|-------------|"
+      }
+    ],
+    "entry": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 94,
+        "freq": 1,
+        "context": "| `/v1/namespaces/:ns/entries` | POST | Create entry |"
+      }
+    ],
+    "header": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 99,
+        "freq": 1,
+        "context": "Auth: `x-api-key` header with your API key."
+      }
+    ],
+    "single-agent": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 43,
+        "line": 7,
         "freq": 1,
-        "context": "## \"But existing solutions exist...\""
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "setups": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "great": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      }
+    ],
+    "multi-agent": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Multi-agent systems** sharing state"
       },
       {
         "file": "projects/context-memory/PITCH.md",
         "line": 44,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
+        "context": "| Multi-agent coordination | messy | ✓ |"
       }
     ],
-    "yes": [
+    "coordination": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
         "line": 44,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
+        "context": "| Multi-agent coordination | messy | ✓ |"
       }
     ],
-    "pinecone": [
+    "race": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      }
+    ],
+    "conditions": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      }
+    ],
+    "cross-device": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 44,
+        "line": 11,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
-      }
-    ],
-    "weaviate": [
+        "context": "- **Cross-device workflows** (phone + desktop + cloud)"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 44,
+        "line": 43,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
+        "context": "| Cross-device sync | ✗ | ✓ |"
       }
     ],
-    "langchain": [
+    "sync": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 44,
+        "line": 43,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
+        "context": "| Cross-device sync | ✗ | ✓ |"
       }
     ],
-    "rag": [
+    "desktop": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 44,
+        "line": 11,
         "freq": 1,
-        "context": "Yes — **building blocks** exist. Pinecone, Weaviate, LangChain memory, RAG systems."
+        "context": "- **Cross-device workflows** (phone + desktop + cloud)"
       }
     ],
-    "require": [
+    "exact": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
+      }
+    ],
+    "hosted": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- **Hosted agents** — API-based agents without filesystem access"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "Production-ready API. Waiting on hosted infrastructure (coming soon)."
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 46,
+        "line": 12,
         "freq": 1,
-        "context": "But those require:"
-      }
-    ],
-    "embedding": [
+        "context": "- **Hosted/API agents** without filesystem access"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
         "line": 48,
         "freq": 1,
-        "context": "- Embedding pipelines"
+        "context": "| Works in hosted agents | ✗ | ✓ |"
       }
     ],
-    "pipelines": [
+    "api-based": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 48,
+        "file": "projects/context-memory/README.md",
+        "line": 108,
         "freq": 1,
-        "context": "- Embedding pipelines"
+        "context": "- **Hosted agents** — API-based agents without filesystem access"
       }
     ],
-    "because": [
+    "filesystem": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
+        "file": "projects/context-memory/README.md",
+        "line": 108,
         "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
-      }
-    ],
-    "call": [
+        "context": "- **Hosted agents** — API-based agents without filesystem access"
+      },
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 55,
+        "line": 12,
         "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
+        "context": "- **Hosted/API agents** without filesystem access"
       }
     ],
-    "weeks": [
+    "solve": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 55,
+        "file": "projects/context-memory/README.md",
+        "line": 110,
         "freq": 1,
-        "context": "Think Stripe: \"payments already existed\" — but Stripe won because it was *easy*. One API call vs wee"
+        "context": "If files solve your problem, use files. We're for when they don't."
       }
     ],
-    "competing": [
+    "problem": [
       {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 57,
-        "freq": 2,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
-      }
-    ],
-    "dbs": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 57,
+        "file": "projects/context-memory/README.md",
+        "line": 110,
         "freq": 1,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
+        "context": "If files solve your problem, use files. We're for when they don't."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 6,
+        "freq": 1,
+        "context": "## The Problem"
+      }
+    ],
+    "production-ready": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "Production-ready API. Waiting on hosted infrastructure (coming soon)."
+      }
+    ],
+    "soon": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "Production-ready API. Waiting on hosted infrastructure (coming soon)."
+      }
+    ],
+    "license": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 118,
+        "freq": 1,
+        "context": "## License"
+      }
+    ],
+    "mit": [
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 120,
+        "freq": 1,
+        "context": "MIT"
+      }
+    ],
+    "one-liner": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## One-liner"
+      }
+    ],
+    "aren": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 4,
+        "freq": 1,
+        "context": "Shared memory for AI workflows — when local files aren't enough."
+      }
+    ],
+    "gets": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "lost": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "devices": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "apps": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- **Apps** that need semantic search over history"
+      }
+    ],
+    "members": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Teams** sharing context across members"
+      }
+    ],
+    "local-only": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- Local-only workflows"
+      }
+    ],
+    "shame": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**No shame in files. They're simple and they work.**"
+      }
+    ],
+    "searchable": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 25,
+        "freq": 1,
+        "context": "A simple API for persistent, searchable AI memory."
+      }
+    ],
+    "----------------": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 41,
+        "freq": 1,
+        "context": "|---------|-------|----------------|"
+      }
+    ],
+    "storage": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 42,
+        "freq": 1,
+        "context": "| Simple storage | ✓ | ✓ |"
+      }
+    ],
+    "messy": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 44,
+        "freq": 1,
+        "context": "| Multi-agent coordination | messy | ✓ |"
       }
     ],
     "myself": [
@@ -23727,85 +25443,79 @@
         "file": "projects/context-memory/PITCH.md",
         "line": 57,
         "freq": 1,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
+        "context": "## \"Why not build it myself?\""
       }
     ],
-    "winning": [
+    "exist": [
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 57,
+        "line": 58,
         "freq": 1,
-        "context": "We're not competing with vector DBs. We're competing with \"I'll build it myself later\" — and winning"
+        "context": "You can. The components exist (vector DBs, auth, APIs)."
       }
     ],
-    "users": [
+    "dbs": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 58,
+        "freq": 1,
+        "context": "You can. The components exist (vector DBs, auth, APIs)."
+      }
+    ],
+    "spend": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 60,
+        "freq": 1,
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
+      }
+    ],
+    "week": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 60,
+        "freq": 1,
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
+      }
+    ],
+    "maintained": [
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 60,
+        "freq": 1,
+        "context": "But you'll spend a week on infrastructure instead of your actual project. We're the assembled produc"
+      }
+    ],
+    "win": [
       {
         "file": "projects/context-memory/PITCH.md",
         "line": 62,
         "freq": 1,
-        "context": "## Target Users"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 64,
-        "freq": 1,
-        "context": "- Power users of ChatGPT/Claude"
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       }
     ],
-    "developers": [
+    "save": [
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 63,
+        "line": 62,
         "freq": 1,
-        "context": "- AI developers building agents"
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       }
     ],
-    "power": [
+    "yak": [
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 64,
+        "line": 62,
         "freq": 1,
-        "context": "- Power users of ChatGPT/Claude"
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       }
     ],
-    "chatgpt": [
+    "shave": [
       {
         "file": "projects/context-memory/PITCH.md",
-        "line": 64,
+        "line": 62,
         "freq": 1,
-        "context": "- Power users of ChatGPT/Claude"
-      }
-    ],
-    "claude": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 64,
-        "freq": 1,
-        "context": "- Power users of ChatGPT/Claude"
-      }
-    ],
-    "anyone": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 66,
-        "freq": 1,
-        "context": "- Anyone tired of re-explaining context"
-      }
-    ],
-    "tired": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 66,
-        "freq": 1,
-        "context": "- Anyone tired of re-explaining context"
-      }
-    ],
-    "re-explaining": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 66,
-        "freq": 1,
-        "context": "- Anyone tired of re-explaining context"
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
       }
     ],
     "utility": [
@@ -23900,14 +25610,6 @@
         "context": "Run smoke tests on all toolkit scripts."
       }
     ],
-    "description": [
-      {
-        "file": "scripts/README.md",
-        "line": 114,
-        "freq": 1,
-        "context": "node scripts/task.mjs add \"task description\" [--high]"
-      }
-    ],
     "--high": [
       {
         "file": "scripts/README.md",
@@ -23950,68 +25652,68 @@
   "files": {
     "MEMORY.md": {
       "lines": 130,
-      "updated": "2026-01-25T12:14:56.162Z"
+      "updated": "2026-01-25T12:51:04.806Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T12:14:56.166Z"
+      "updated": "2026-01-25T12:51:04.808Z"
     },
     "memory/2026-01-25.md": {
-      "lines": 110,
-      "updated": "2026-01-25T12:14:56.166Z"
+      "lines": 127,
+      "updated": "2026-01-25T12:51:04.808Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T12:14:56.168Z"
+      "updated": "2026-01-25T12:51:04.810Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T12:14:56.168Z"
+      "updated": "2026-01-25T12:51:04.810Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T12:14:56.168Z"
+      "updated": "2026-01-25T12:51:04.810Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T12:14:56.168Z"
+      "updated": "2026-01-25T12:51:04.810Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-25T12:14:56.169Z"
+      "updated": "2026-01-25T12:51:04.810Z"
     },
     "GOALS.md": {
       "lines": 66,
-      "updated": "2026-01-25T12:14:56.169Z"
+      "updated": "2026-01-25T12:51:04.811Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-25T12:14:56.169Z"
+      "updated": "2026-01-25T12:51:04.811Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T12:14:56.169Z"
+      "updated": "2026-01-25T12:51:04.812Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T12:14:56.171Z"
+      "updated": "2026-01-25T12:51:04.813Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T12:14:56.171Z"
+      "updated": "2026-01-25T12:51:04.813Z"
     },
     "projects/context-memory/README.md": {
-      "lines": 38,
-      "updated": "2026-01-25T12:14:56.172Z"
+      "lines": 121,
+      "updated": "2026-01-25T12:51:04.813Z"
     },
     "projects/context-memory/PITCH.md": {
-      "lines": 71,
-      "updated": "2026-01-25T12:14:56.172Z"
+      "lines": 70,
+      "updated": "2026-01-25T12:51:04.814Z"
     },
     "scripts/README.md": {
       "lines": 159,
-      "updated": "2026-01-25T12:14:56.172Z"
+      "updated": "2026-01-25T12:51:04.815Z"
     }
   },
-  "built": "2026-01-25T12:14:56.160Z"
+  "built": "2026-01-25T12:51:04.805Z"
 }
