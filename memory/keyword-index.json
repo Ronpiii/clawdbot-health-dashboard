@@ -74,6 +74,12 @@
         "line": 82,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 5,
+        "freq": 1,
+        "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
       }
     ],
     "3000": [
@@ -137,7 +143,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 21,
+        "line": 24,
         "freq": 2,
         "context": "| MEMORY.md | long-term memory |"
       },
@@ -325,17 +331,17 @@
         "file": "QUICKREF.md",
         "line": 5,
         "freq": 1,
-        "context": "./scripts/arc search \"query\"   # search memory"
+        "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
       },
       {
         "file": "QUICKREF.md",
-        "line": 22,
+        "line": 26,
         "freq": 1,
         "context": "| memory/YYYY-MM-DD.md | daily logs |"
       },
       {
         "file": "QUICKREF.md",
-        "line": 31,
+        "line": 35,
         "freq": 1,
         "context": "3. Read MEMORY.md (main session)"
       },
@@ -577,9 +583,15 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 21,
+        "line": 24,
         "freq": 1,
         "context": "| MEMORY.md | long-term memory |"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 25,
+        "freq": 1,
+        "context": "| GOALS.md | long-term goals |"
       },
       {
         "file": "GOALS.md",
@@ -741,7 +753,7 @@
         "file": "QUICKREF.md",
         "line": 5,
         "freq": 1,
-        "context": "./scripts/arc search \"query\"   # search memory"
+        "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
       },
       {
         "file": "QUICKREF.md",
@@ -771,77 +783,95 @@
         "file": "QUICKREF.md",
         "line": 10,
         "freq": 1,
-        "context": "./scripts/arc summary          # daily summary"
+        "context": "./scripts/arc goals            # goal status"
       },
       {
         "file": "QUICKREF.md",
         "line": 11,
         "freq": 1,
-        "context": "./scripts/arc maintain         # auto-maintenance"
+        "context": "./scripts/arc summary          # daily summary"
       },
       {
         "file": "QUICKREF.md",
         "line": 12,
         "freq": 1,
-        "context": "./scripts/arc reflect          # self-review"
+        "context": "./scripts/arc maintain         # auto-maintenance"
       },
       {
         "file": "QUICKREF.md",
         "line": 13,
         "freq": 1,
+        "context": "./scripts/arc analytics        # search patterns"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 14,
+        "freq": 1,
+        "context": "./scripts/arc reflect          # self-review"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 15,
+        "freq": 1,
+        "context": "./scripts/arc test             # run tests (12)"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 16,
+        "freq": 1,
         "context": "./scripts/arc help             # full help"
-      },
-      {
-        "file": "QUICKREF.md",
-        "line": 32,
-        "freq": 1,
-        "context": "4. Run `./scripts/arc check`"
-      },
-      {
-        "file": "QUICKREF.md",
-        "line": 35,
-        "freq": 1,
-        "context": "- Note captures: `./scripts/arc note \"thought\"`"
       },
       {
         "file": "QUICKREF.md",
         "line": 36,
         "freq": 1,
-        "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
+        "context": "4. Run `./scripts/arc check`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 37,
+        "line": 39,
         "freq": 1,
-        "context": "- Search recall: `./scripts/arc search \"query\"`"
+        "context": "- Note captures: `./scripts/arc note \"thought\"`"
       },
       {
         "file": "QUICKREF.md",
         "line": 40,
         "freq": 1,
-        "context": "- Summary: `./scripts/arc summary --post`"
+        "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
       },
       {
         "file": "QUICKREF.md",
         "line": 41,
         "freq": 1,
-        "context": "- Reflect: `./scripts/arc reflect`"
+        "context": "- Search recall: `./scripts/arc search \"query\"`"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- Summary: `./scripts/arc summary --post`"
       },
       {
         "file": "QUICKREF.md",
         "line": 45,
         "freq": 1,
+        "context": "- Reflect: `./scripts/arc reflect`"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 49,
+        "freq": 1,
         "context": "- Run: `./scripts/arc check`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 50,
+        "line": 54,
         "freq": 1,
         "context": "- logs: `./scripts/arc post logs \"msg\"`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
       },
@@ -1355,7 +1385,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 49,
+        "line": 53,
         "freq": 1,
         "context": "## Discord"
       },
@@ -2025,7 +2055,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 24,
+        "line": 28,
         "freq": 1,
         "context": "| TOOLS.md | infrastructure notes |"
       },
@@ -2119,13 +2149,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 23,
+        "line": 27,
         "freq": 1,
         "context": "| tasks/active.md | current work |"
       },
       {
         "file": "QUICKREF.md",
-        "line": 34,
+        "line": 38,
         "freq": 1,
         "context": "### During work"
       },
@@ -2822,6 +2852,12 @@
         "context": "./scripts/arc status           # workspace health"
       },
       {
+        "file": "QUICKREF.md",
+        "line": 10,
+        "freq": 1,
+        "context": "./scripts/arc goals            # goal status"
+      },
+      {
         "file": "GOALS.md",
         "line": 6,
         "freq": 1,
@@ -3243,11 +3279,11 @@
         "file": "QUICKREF.md",
         "line": 5,
         "freq": 2,
-        "context": "./scripts/arc search \"query\"   # search memory"
+        "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
       },
       {
         "file": "QUICKREF.md",
-        "line": 37,
+        "line": 41,
         "freq": 2,
         "context": "- Search recall: `./scripts/arc search \"query\"`"
       },
@@ -3358,6 +3394,12 @@
         "line": 10,
         "freq": 1,
         "context": "- [x] improve memory search relevance"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 13,
+        "freq": 1,
+        "context": "./scripts/arc analytics        # search patterns"
       },
       {
         "file": "GOALS.md",
@@ -3859,7 +3901,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 13,
+        "line": 16,
         "freq": 1,
         "context": "./scripts/arc help             # full help"
       },
@@ -3968,6 +4010,12 @@
         "line": 82,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 15,
+        "freq": 1,
+        "context": "./scripts/arc test             # run tests (12)"
       },
       {
         "file": "GOALS.md",
@@ -4831,7 +4879,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 16,
+        "line": 19,
         "freq": 1,
         "context": "## Key Files"
       },
@@ -5623,7 +5671,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 35,
+        "line": 39,
         "freq": 2,
         "context": "- Note captures: `./scripts/arc note \"thought\"`"
       },
@@ -5671,7 +5719,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 47,
+        "line": 51,
         "freq": 1,
         "context": "- If items: address or note"
       },
@@ -6349,7 +6397,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 23,
+        "line": 27,
         "freq": 1,
         "context": "| tasks/active.md | current work |"
       }
@@ -6505,7 +6553,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 23,
+        "line": 27,
         "freq": 1,
         "context": "| tasks/active.md | current work |"
       },
@@ -6549,7 +6597,7 @@
     "tasks": [
       {
         "file": "QUICKREF.md",
-        "line": 51,
+        "line": 55,
         "freq": 2,
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
       },
@@ -6651,7 +6699,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 23,
+        "line": 27,
         "freq": 1,
         "context": "| tasks/active.md | current work |"
       },
@@ -6695,7 +6743,7 @@
     "logs": [
       {
         "file": "QUICKREF.md",
-        "line": 50,
+        "line": 54,
         "freq": 2,
         "context": "- logs: `./scripts/arc post logs \"msg\"`"
       },
@@ -6749,13 +6797,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 22,
+        "line": 26,
         "freq": 1,
         "context": "| memory/YYYY-MM-DD.md | daily logs |"
       },
       {
         "file": "QUICKREF.md",
-        "line": 30,
+        "line": 34,
         "freq": 1,
         "context": "2. Read today + yesterday logs"
       },
@@ -7025,7 +7073,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 24,
+        "line": 28,
         "freq": 1,
         "context": "| TOOLS.md | infrastructure notes |"
       },
@@ -7395,7 +7443,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 36,
+        "line": 40,
         "freq": 2,
         "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
       },
@@ -7609,7 +7657,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 36,
+        "line": 40,
         "freq": 1,
         "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
       },
@@ -8567,7 +8615,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 11,
+        "line": 12,
         "freq": 1,
         "context": "./scripts/arc maintain         # auto-maintenance"
       },
@@ -8821,7 +8869,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- Search recall: `./scripts/arc search \"query\"`"
       },
@@ -9005,7 +9053,7 @@
         "file": "QUICKREF.md",
         "line": 5,
         "freq": 1,
-        "context": "./scripts/arc search \"query\"   # search memory"
+        "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
       },
       {
         "file": "QUICKREF.md",
@@ -9035,77 +9083,95 @@
         "file": "QUICKREF.md",
         "line": 10,
         "freq": 1,
-        "context": "./scripts/arc summary          # daily summary"
+        "context": "./scripts/arc goals            # goal status"
       },
       {
         "file": "QUICKREF.md",
         "line": 11,
         "freq": 1,
-        "context": "./scripts/arc maintain         # auto-maintenance"
+        "context": "./scripts/arc summary          # daily summary"
       },
       {
         "file": "QUICKREF.md",
         "line": 12,
         "freq": 1,
-        "context": "./scripts/arc reflect          # self-review"
+        "context": "./scripts/arc maintain         # auto-maintenance"
       },
       {
         "file": "QUICKREF.md",
         "line": 13,
         "freq": 1,
+        "context": "./scripts/arc analytics        # search patterns"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 14,
+        "freq": 1,
+        "context": "./scripts/arc reflect          # self-review"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 15,
+        "freq": 1,
+        "context": "./scripts/arc test             # run tests (12)"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 16,
+        "freq": 1,
         "context": "./scripts/arc help             # full help"
-      },
-      {
-        "file": "QUICKREF.md",
-        "line": 32,
-        "freq": 1,
-        "context": "4. Run `./scripts/arc check`"
-      },
-      {
-        "file": "QUICKREF.md",
-        "line": 35,
-        "freq": 1,
-        "context": "- Note captures: `./scripts/arc note \"thought\"`"
       },
       {
         "file": "QUICKREF.md",
         "line": 36,
         "freq": 1,
-        "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
+        "context": "4. Run `./scripts/arc check`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 37,
+        "line": 39,
         "freq": 1,
-        "context": "- Search recall: `./scripts/arc search \"query\"`"
+        "context": "- Note captures: `./scripts/arc note \"thought\"`"
       },
       {
         "file": "QUICKREF.md",
         "line": 40,
         "freq": 1,
-        "context": "- Summary: `./scripts/arc summary --post`"
+        "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
       },
       {
         "file": "QUICKREF.md",
         "line": 41,
         "freq": 1,
-        "context": "- Reflect: `./scripts/arc reflect`"
+        "context": "- Search recall: `./scripts/arc search \"query\"`"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- Summary: `./scripts/arc summary --post`"
       },
       {
         "file": "QUICKREF.md",
         "line": 45,
         "freq": 1,
+        "context": "- Reflect: `./scripts/arc reflect`"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 49,
+        "freq": 1,
         "context": "- Run: `./scripts/arc check`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 50,
+        "line": 54,
         "freq": 1,
         "context": "- logs: `./scripts/arc post logs \"msg\"`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
       },
@@ -9553,11 +9619,11 @@
         "file": "QUICKREF.md",
         "line": 5,
         "freq": 1,
-        "context": "./scripts/arc search \"query\"   # search memory"
+        "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
       },
       {
         "file": "QUICKREF.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- Search recall: `./scripts/arc search \"query\"`"
       },
@@ -9636,6 +9702,12 @@
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
       },
       {
+        "file": "QUICKREF.md",
+        "line": 5,
+        "freq": 1,
+        "context": "./scripts/arc search \"query\"   # search memory (1054+ terms)"
+      },
+      {
         "file": "GOALS.md",
         "line": 9,
         "freq": 1,
@@ -9694,6 +9766,12 @@
         "context": "- **goals:** see GOALS.md for long-term tracking"
       },
       {
+        "file": "QUICKREF.md",
+        "line": 25,
+        "freq": 2,
+        "context": "| GOALS.md | long-term goals |"
+      },
+      {
         "file": "GOALS.md",
         "line": 1,
         "freq": 2,
@@ -9716,6 +9794,12 @@
         "line": 82,
         "freq": 1,
         "context": "- [11:45] toolkit complete: 14 scripts, 12 tests, 1054 terms, 2 goals achieved"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 10,
+        "freq": 1,
+        "context": "./scripts/arc goals            # goal status"
       },
       {
         "file": "GOALS.md",
@@ -9989,13 +10073,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 10,
+        "line": 11,
         "freq": 2,
         "context": "./scripts/arc summary          # daily summary"
       },
       {
         "file": "QUICKREF.md",
-        "line": 40,
+        "line": 44,
         "freq": 2,
         "context": "- Summary: `./scripts/arc summary --post`"
       },
@@ -10117,13 +10201,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 10,
+        "line": 11,
         "freq": 1,
         "context": "./scripts/arc summary          # daily summary"
       },
       {
         "file": "QUICKREF.md",
-        "line": 22,
+        "line": 26,
         "freq": 1,
         "context": "| memory/YYYY-MM-DD.md | daily logs |"
       },
@@ -10197,7 +10281,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 11,
+        "line": 12,
         "freq": 1,
         "context": "./scripts/arc maintain         # auto-maintenance"
       },
@@ -10232,6 +10316,12 @@
         "line": 17,
         "freq": 2,
         "context": "./scripts/arc analytics          # search analytics"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 13,
+        "freq": 1,
+        "context": "./scripts/arc analytics        # search patterns"
       },
       {
         "file": "GOALS.md",
@@ -10270,6 +10360,12 @@
         "line": 11,
         "freq": 1,
         "context": "## patterns identified"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 13,
+        "freq": 1,
+        "context": "./scripts/arc analytics        # search patterns"
       },
       {
         "file": "GOALS.md",
@@ -10507,7 +10603,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 17,
+        "line": 20,
         "freq": 1,
         "context": "| File | Purpose |"
       },
@@ -10553,7 +10649,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 18,
+        "line": 21,
         "freq": 1,
         "context": "|------|---------|"
       },
@@ -11335,7 +11431,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 36,
+        "line": 40,
         "freq": 1,
         "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
       },
@@ -11369,7 +11465,7 @@
     "reflect": [
       {
         "file": "QUICKREF.md",
-        "line": 41,
+        "line": 45,
         "freq": 2,
         "context": "- Reflect: `./scripts/arc reflect`"
       },
@@ -11387,7 +11483,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 12,
+        "line": 14,
         "freq": 1,
         "context": "./scripts/arc reflect          # self-review"
       },
@@ -11526,6 +11622,12 @@
         "context": "- `scripts/test-toolkit.mjs` — toolkit test suite (11 tests)"
       },
       {
+        "file": "QUICKREF.md",
+        "line": 15,
+        "freq": 1,
+        "context": "./scripts/arc test             # run tests (12)"
+      },
+      {
         "file": "GOALS.md",
         "line": 56,
         "freq": 1,
@@ -11582,6 +11684,12 @@
         "line": 119,
         "freq": 1,
         "context": "| goals.mjs | goal status display |"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 10,
+        "freq": 1,
+        "context": "./scripts/arc goals            # goal status"
       },
       {
         "file": "GOALS.md",
@@ -12495,7 +12603,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 24,
+        "line": 28,
         "freq": 1,
         "context": "| TOOLS.md | infrastructure notes |"
       },
@@ -12799,7 +12907,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 16,
+        "line": 19,
         "freq": 1,
         "context": "## Key Files"
       },
@@ -13437,7 +13545,7 @@
     "git": [
       {
         "file": "QUICKREF.md",
-        "line": 42,
+        "line": 46,
         "freq": 2,
         "context": "- Commit: `git add . && git commit -m \"msg\"`"
       },
@@ -13527,7 +13635,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 30,
+        "line": 34,
         "freq": 1,
         "context": "2. Read today + yesterday logs"
       },
@@ -13625,13 +13733,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 50,
+        "line": 54,
         "freq": 1,
         "context": "- logs: `./scripts/arc post logs \"msg\"`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
       },
@@ -13713,7 +13821,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 26,
+        "line": 30,
         "freq": 1,
         "context": "## Workflows"
       },
@@ -13945,7 +14053,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 42,
+        "line": 46,
         "freq": 1,
         "context": "- Commit: `git add . && git commit -m \"msg\"`"
       },
@@ -13999,7 +14107,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 17,
+        "line": 20,
         "freq": 1,
         "context": "| File | Purpose |"
       },
@@ -14225,13 +14333,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 28,
+        "line": 32,
         "freq": 1,
         "context": "### Start of session"
       },
       {
         "file": "QUICKREF.md",
-        "line": 31,
+        "line": 35,
         "freq": 1,
         "context": "3. Read MEMORY.md (main session)"
       },
@@ -14311,7 +14419,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 47,
+        "line": 51,
         "freq": 1,
         "context": "- If items: address or note"
       },
@@ -14917,13 +15025,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 19,
+        "line": 22,
         "freq": 1,
         "context": "| SOUL.md | who i am |"
       },
       {
         "file": "QUICKREF.md",
-        "line": 29,
+        "line": 33,
         "freq": 1,
         "context": "1. Read SOUL.md, USER.md"
       },
@@ -14949,13 +15057,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 20,
+        "line": 23,
         "freq": 1,
         "context": "| USER.md | who i help |"
       },
       {
         "file": "QUICKREF.md",
-        "line": 29,
+        "line": 33,
         "freq": 1,
         "context": "1. Read SOUL.md, USER.md"
       },
@@ -15351,13 +15459,13 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 32,
+        "line": 36,
         "freq": 1,
         "context": "4. Run `./scripts/arc check`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 45,
+        "line": 49,
         "freq": 1,
         "context": "- Run: `./scripts/arc check`"
       },
@@ -15413,15 +15521,59 @@
     "self-review": [
       {
         "file": "QUICKREF.md",
-        "line": 12,
+        "line": 14,
         "freq": 1,
         "context": "./scripts/arc reflect          # self-review"
+      }
+    ],
+    "run": [
+      {
+        "file": "QUICKREF.md",
+        "line": 15,
+        "freq": 1,
+        "context": "./scripts/arc test             # run tests (12)"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 36,
+        "freq": 1,
+        "context": "4. Run `./scripts/arc check`"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- Run: `./scripts/arc check`"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 5,
+        "freq": 1,
+        "context": "## First Run"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- Don't run destructive commands without asking."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 20,
+        "freq": 1,
+        "context": "4. Run `schema.sql` to set up tables"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 92,
+        "freq": 1,
+        "context": "Run smoke tests on all toolkit scripts."
       }
     ],
     "help": [
       {
         "file": "QUICKREF.md",
-        "line": 13,
+        "line": 16,
         "freq": 2,
         "context": "./scripts/arc help             # full help"
       },
@@ -15439,7 +15591,7 @@
       },
       {
         "file": "QUICKREF.md",
-        "line": 20,
+        "line": 23,
         "freq": 1,
         "context": "| USER.md | who i help |"
       },
@@ -15453,7 +15605,7 @@
     "------": [
       {
         "file": "QUICKREF.md",
-        "line": 18,
+        "line": 21,
         "freq": 1,
         "context": "|------|---------|"
       },
@@ -15467,7 +15619,7 @@
     "yyyy-mm-dd": [
       {
         "file": "QUICKREF.md",
-        "line": 22,
+        "line": 26,
         "freq": 1,
         "context": "| memory/YYYY-MM-DD.md | daily logs |"
       },
@@ -15499,7 +15651,7 @@
     "start": [
       {
         "file": "QUICKREF.md",
-        "line": 28,
+        "line": 32,
         "freq": 1,
         "context": "### Start of session"
       },
@@ -15537,19 +15689,19 @@
     "read": [
       {
         "file": "QUICKREF.md",
-        "line": 29,
+        "line": 33,
         "freq": 1,
         "context": "1. Read SOUL.md, USER.md"
       },
       {
         "file": "QUICKREF.md",
-        "line": 30,
+        "line": 34,
         "freq": 1,
         "context": "2. Read today + yesterday logs"
       },
       {
         "file": "QUICKREF.md",
-        "line": 31,
+        "line": 35,
         "freq": 1,
         "context": "3. Read MEMORY.md (main session)"
       },
@@ -15623,7 +15775,7 @@
     "yesterday": [
       {
         "file": "QUICKREF.md",
-        "line": 30,
+        "line": 34,
         "freq": 1,
         "context": "2. Read today + yesterday logs"
       },
@@ -15643,7 +15795,7 @@
     "main": [
       {
         "file": "QUICKREF.md",
-        "line": 31,
+        "line": 35,
         "freq": 1,
         "context": "3. Read MEMORY.md (main session)"
       },
@@ -15666,48 +15818,10 @@
         "context": "- You can **read, edit, and update** MEMORY.md freely in main sessions"
       }
     ],
-    "run": [
-      {
-        "file": "QUICKREF.md",
-        "line": 32,
-        "freq": 1,
-        "context": "4. Run `./scripts/arc check`"
-      },
-      {
-        "file": "QUICKREF.md",
-        "line": 45,
-        "freq": 1,
-        "context": "- Run: `./scripts/arc check`"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 5,
-        "freq": 1,
-        "context": "## First Run"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 104,
-        "freq": 1,
-        "context": "- Don't run destructive commands without asking."
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 20,
-        "freq": 1,
-        "context": "4. Run `schema.sql` to set up tables"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 92,
-        "freq": 1,
-        "context": "Run smoke tests on all toolkit scripts."
-      }
-    ],
     "during": [
       {
         "file": "QUICKREF.md",
-        "line": 34,
+        "line": 38,
         "freq": 1,
         "context": "### During work"
       },
@@ -15721,7 +15835,7 @@
     "captures": [
       {
         "file": "QUICKREF.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- Note captures: `./scripts/arc note \"thought\"`"
       }
@@ -15729,7 +15843,7 @@
     "thought": [
       {
         "file": "QUICKREF.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- Note captures: `./scripts/arc note \"thought\"`"
       },
@@ -15743,7 +15857,7 @@
     "updates": [
       {
         "file": "QUICKREF.md",
-        "line": 36,
+        "line": 40,
         "freq": 1,
         "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
       }
@@ -15751,7 +15865,7 @@
     "end": [
       {
         "file": "QUICKREF.md",
-        "line": 39,
+        "line": 43,
         "freq": 1,
         "context": "### End of day"
       }
@@ -15759,7 +15873,7 @@
     "day": [
       {
         "file": "QUICKREF.md",
-        "line": 39,
+        "line": 43,
         "freq": 1,
         "context": "### End of day"
       },
@@ -15785,7 +15899,7 @@
     "--post": [
       {
         "file": "QUICKREF.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- Summary: `./scripts/arc summary --post`"
       },
@@ -15799,7 +15913,7 @@
     "commit": [
       {
         "file": "QUICKREF.md",
-        "line": 42,
+        "line": 46,
         "freq": 2,
         "context": "- Commit: `git add . && git commit -m \"msg\"`"
       },
@@ -15813,19 +15927,19 @@
     "msg": [
       {
         "file": "QUICKREF.md",
-        "line": 42,
+        "line": 46,
         "freq": 1,
         "context": "- Commit: `git add . && git commit -m \"msg\"`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 50,
+        "line": 54,
         "freq": 1,
         "context": "- logs: `./scripts/arc post logs \"msg\"`"
       },
       {
         "file": "QUICKREF.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
       }
@@ -15833,7 +15947,7 @@
     "heartbeats": [
       {
         "file": "QUICKREF.md",
-        "line": 44,
+        "line": 48,
         "freq": 1,
         "context": "### Heartbeats"
       },
@@ -15865,7 +15979,7 @@
     "heartbeat_ok": [
       {
         "file": "QUICKREF.md",
-        "line": 46,
+        "line": 50,
         "freq": 1,
         "context": "- If HEARTBEAT_OK: nothing to report"
       },
@@ -15903,7 +16017,7 @@
     "nothing": [
       {
         "file": "QUICKREF.md",
-        "line": 46,
+        "line": 50,
         "freq": 1,
         "context": "- If HEARTBEAT_OK: nothing to report"
       },
@@ -15923,7 +16037,7 @@
     "report": [
       {
         "file": "QUICKREF.md",
-        "line": 46,
+        "line": 50,
         "freq": 1,
         "context": "- If HEARTBEAT_OK: nothing to report"
       }
@@ -15931,7 +16045,7 @@
     "address": [
       {
         "file": "QUICKREF.md",
-        "line": 47,
+        "line": 51,
         "freq": 1,
         "context": "- If items: address or note"
       }
@@ -21378,60 +21492,60 @@
   "files": {
     "MEMORY.md": {
       "lines": 129,
-      "updated": "2026-01-25T11:46:27.682Z"
+      "updated": "2026-01-25T11:46:59.140Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:46:27.684Z"
+      "updated": "2026-01-25T11:46:59.142Z"
     },
     "memory/2026-01-25.md": {
       "lines": 83,
-      "updated": "2026-01-25T11:46:27.684Z"
+      "updated": "2026-01-25T11:46:59.142Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:46:27.685Z"
+      "updated": "2026-01-25T11:46:59.144Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T11:46:27.685Z"
+      "updated": "2026-01-25T11:46:59.144Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:46:27.685Z"
+      "updated": "2026-01-25T11:46:59.144Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:46:27.685Z"
+      "updated": "2026-01-25T11:46:59.144Z"
     },
     "QUICKREF.md": {
-      "lines": 52,
-      "updated": "2026-01-25T11:46:27.686Z"
+      "lines": 56,
+      "updated": "2026-01-25T11:46:59.144Z"
     },
     "GOALS.md": {
       "lines": 66,
-      "updated": "2026-01-25T11:46:27.686Z"
+      "updated": "2026-01-25T11:46:59.145Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T11:46:27.686Z"
+      "updated": "2026-01-25T11:46:59.145Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:46:27.687Z"
+      "updated": "2026-01-25T11:46:59.147Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:46:27.688Z"
+      "updated": "2026-01-25T11:46:59.147Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:46:27.688Z"
+      "updated": "2026-01-25T11:46:59.147Z"
     },
     "scripts/README.md": {
       "lines": 159,
-      "updated": "2026-01-25T11:46:27.688Z"
+      "updated": "2026-01-25T11:46:59.148Z"
     }
   },
-  "built": "2026-01-25T11:46:27.681Z"
+  "built": "2026-01-25T11:46:59.139Z"
 }
