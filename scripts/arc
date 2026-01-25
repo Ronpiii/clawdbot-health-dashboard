@@ -1,0 +1,112 @@
+#!/usr/bin/env node
+/**
+ * arc - unified CLI for workspace tools
+ * 
+ * usage:
+ *   arc search <query>     - search memory
+ *   arc status             - workspace status
+ *   arc check              - heartbeat check
+ *   arc note <text>        - quick note
+ *   arc task <cmd> [args]  - task management
+ *   arc summary [--post]   - daily summary
+ *   arc post <channel> <msg> - discord post
+ *   arc compress [days]    - analyze old logs
+ *   arc index              - rebuild search index
+ */
+
+import { spawn } from 'child_process';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const SCRIPTS = {
+  search: 'memory-index.mjs',
+  status: 'status.mjs',
+  check: 'heartbeat-check.mjs',
+  note: 'note.mjs',
+  task: 'task.mjs',
+  summary: 'daily-summary.mjs',
+  post: 'discord-post.mjs',
+  compress: 'compress-logs.mjs',
+  index: 'memory-index.mjs'
+};
+
+const HELP = `
+arc - unified CLI for workspace tools
+
+Commands:
+  search <query>        Search memory (keyword index)
+  status                Show workspace status
+  check                 Run heartbeat checks
+  note <text>           Quick note to today's log
+  task <cmd> [args]     Task management (list/add/done/start/block)
+  summary [--post]      Generate daily summary
+  post <channel> <msg>  Post to Discord (logs/tasks)
+  compress [days]       Analyze old logs for compression
+  index                 Rebuild search index
+
+Examples:
+  arc search "database issue"
+  arc note "figured out the bug"
+  arc task done "memory search"
+  arc summary --post
+`;
+
+function run(script, args = []) {
+  const scriptPath = join(__dirname, script);
+  const proc = spawn('node', [scriptPath, ...args], {
+    stdio: 'inherit',
+    cwd: process.cwd()
+  });
+  
+  proc.on('close', (code) => {
+    process.exit(code || 0);
+  });
+}
+
+// CLI
+const [,, cmd, ...args] = process.argv;
+
+if (!cmd || cmd === 'help' || cmd === '--help' || cmd === '-h') {
+  console.log(HELP);
+  process.exit(0);
+}
+
+// special handling for some commands
+switch (cmd) {
+  case 'search':
+    run(SCRIPTS.search, ['search', ...args]);
+    break;
+    
+  case 'index':
+    run(SCRIPTS.index, ['build']);
+    break;
+    
+  case 'status':
+  case 'check':
+  case 'summary':
+    run(SCRIPTS[cmd], args);
+    break;
+    
+  case 'note':
+    run(SCRIPTS.note, args);
+    break;
+    
+  case 'task':
+    run(SCRIPTS.task, args);
+    break;
+    
+  case 'post':
+    run(SCRIPTS.post, args);
+    break;
+    
+  case 'compress':
+    run(SCRIPTS.compress, args);
+    break;
+    
+  default:
+    console.log(`unknown command: ${cmd}`);
+    console.log('run "arc help" for usage');
+    process.exit(1);
+}
