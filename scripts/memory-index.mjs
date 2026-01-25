@@ -40,6 +40,19 @@ const STOPWORDS = new Set([
   'very', 'just', 'also', 'now', 'here', 'there', 'then', 'if', 'else'
 ]);
 
+// simple synonyms for common terms
+const SYNONYMS = {
+  'api': ['endpoint', 'service', 'rest'],
+  'db': ['database', 'postgres', 'sql'],
+  'ui': ['interface', 'frontend', 'dashboard'],
+  'error': ['bug', 'issue', 'problem', 'fail'],
+  'config': ['configuration', 'settings', 'setup'],
+  'auth': ['authentication', 'login', 'credentials'],
+  'deploy': ['deployment', 'release', 'ship'],
+  'test': ['testing', 'spec', 'check'],
+  'docs': ['documentation', 'readme', 'guide'],
+};
+
 // extract terms from text
 function tokenize(text) {
   return text
@@ -142,6 +155,25 @@ async function buildIndex() {
   return index;
 }
 
+// expand query with synonyms
+function expandWithSynonyms(terms) {
+  const expanded = new Set(terms);
+  for (const term of terms) {
+    // check if term is a synonym key
+    if (SYNONYMS[term]) {
+      SYNONYMS[term].forEach(syn => expanded.add(syn));
+    }
+    // check if term is in any synonym list
+    for (const [key, syns] of Object.entries(SYNONYMS)) {
+      if (syns.includes(term)) {
+        expanded.add(key);
+        syns.forEach(syn => expanded.add(syn));
+      }
+    }
+  }
+  return [...expanded];
+}
+
 // search index
 async function search(query, maxResults = 10) {
   if (!existsSync(INDEX_PATH)) {
@@ -157,17 +189,29 @@ async function search(query, maxResults = 10) {
     return [];
   }
 
+  // expand with synonyms
+  const expandedTerms = expandWithSynonyms(queryTerms);
+  const originalTerms = new Set(queryTerms);
+
   // score each file:line by matching terms
   const scores = new Map(); // "file:line" -> {score, context, file, line, matchedTerms}
 
-  for (const term of queryTerms) {
+  for (const term of expandedTerms) {
     const matches = index.terms[term] || [];
+    const isSynonym = !originalTerms.has(term);
     
-    // also check partial matches
+    // also check partial matches (only for terms 4+ chars, require significant overlap)
     const partialMatches = [];
-    for (const indexTerm of Object.keys(index.terms)) {
-      if (indexTerm.includes(term) || term.includes(indexTerm)) {
-        partialMatches.push(...index.terms[indexTerm].map(m => ({ ...m, partial: true })));
+    if (term.length >= 4) {
+      for (const indexTerm of Object.keys(index.terms)) {
+        // require at least 70% overlap
+        const shorter = Math.min(term.length, indexTerm.length);
+        const longer = Math.max(term.length, indexTerm.length);
+        if (shorter / longer >= 0.7) {
+          if (indexTerm.includes(term) || term.includes(indexTerm)) {
+            partialMatches.push(...index.terms[indexTerm].map(m => ({ ...m, partial: true })));
+          }
+        }
       }
     }
 
@@ -181,8 +225,9 @@ async function search(query, maxResults = 10) {
         matchedTerms: []
       };
       
-      // full match = freq * 2, partial = freq * 0.5
-      const weight = match.partial ? 0.5 : 2;
+      // full match = freq * 2, partial = freq * 0.5, synonym = freq * 1
+      let weight = match.partial ? 0.5 : 2;
+      if (isSynonym) weight *= 0.5; // synonyms count less
       existing.score += match.freq * weight;
       
       if (!existing.matchedTerms.includes(term)) {
