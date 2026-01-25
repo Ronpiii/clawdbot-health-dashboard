@@ -3712,6 +3712,12 @@
         "context": "- most impactful: local keyword search enables memory recall without external APIs"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
+      },
+      {
         "file": "tasks/active.md",
         "line": 18,
         "freq": 1,
@@ -4448,6 +4454,12 @@
         "line": 32,
         "freq": 1,
         "context": "- `scripts/arc` — unified CLI wrapper for all tools"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
       },
       {
         "file": "tasks/active.md",
@@ -8856,6 +8868,12 @@
         "context": "- most impactful: local keyword search enables memory recall without external APIs"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
+      },
+      {
         "file": "tasks/done.md",
         "line": 9,
         "freq": 1,
@@ -9186,6 +9204,12 @@
         "line": 72,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
       },
       {
         "file": "QUICKREF.md",
@@ -10178,6 +10202,12 @@
         "line": 32,
         "freq": 1,
         "context": "- `scripts/arc` — unified CLI wrapper for all tools"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
       },
       {
         "file": "AGENTS.md",
@@ -15028,6 +15058,12 @@
         "line": 70,
         "freq": 1,
         "context": "- most impactful: local keyword search enables memory recall without external APIs"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
       }
     ],
     "enables": [
@@ -15534,6 +15570,26 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
+      }
+    ],
+    "reflection": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- daily summaries, reflection prompts"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 84,
+        "freq": 1,
+        "context": "Generate reflection prompts for self-improvement."
       }
     ],
     "structure": [
@@ -17022,20 +17078,6 @@
         "line": 9,
         "freq": 1,
         "context": "- 1044+ terms indexed from 13 files"
-      }
-    ],
-    "reflection": [
-      {
-        "file": "GOALS.md",
-        "line": 20,
-        "freq": 1,
-        "context": "- daily summaries, reflection prompts"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 84,
-        "freq": 1,
-        "context": "Generate reflection prompts for self-improvement."
       }
     ],
     "ongoing": [
@@ -22932,68 +22974,68 @@
   "files": {
     "MEMORY.md": {
       "lines": 129,
-      "updated": "2026-01-25T12:00:57.235Z"
+      "updated": "2026-01-25T12:01:40.887Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T12:00:57.239Z"
+      "updated": "2026-01-25T12:01:40.889Z"
     },
     "memory/2026-01-25.md": {
-      "lines": 88,
-      "updated": "2026-01-25T12:00:57.240Z"
+      "lines": 89,
+      "updated": "2026-01-25T12:01:40.889Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T12:00:57.241Z"
+      "updated": "2026-01-25T12:01:40.891Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T12:00:57.241Z"
+      "updated": "2026-01-25T12:01:40.891Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T12:00:57.241Z"
+      "updated": "2026-01-25T12:01:40.891Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T12:00:57.241Z"
+      "updated": "2026-01-25T12:01:40.891Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-25T12:00:57.241Z"
+      "updated": "2026-01-25T12:01:40.891Z"
     },
     "GOALS.md": {
       "lines": 66,
-      "updated": "2026-01-25T12:00:57.242Z"
+      "updated": "2026-01-25T12:01:40.892Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-25T12:00:57.242Z"
+      "updated": "2026-01-25T12:01:40.892Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T12:00:57.242Z"
+      "updated": "2026-01-25T12:01:40.892Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T12:00:57.243Z"
+      "updated": "2026-01-25T12:01:40.894Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T12:00:57.243Z"
+      "updated": "2026-01-25T12:01:40.894Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T12:00:57.244Z"
+      "updated": "2026-01-25T12:01:40.895Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 55,
-      "updated": "2026-01-25T12:00:57.244Z"
+      "updated": "2026-01-25T12:01:40.895Z"
     },
     "scripts/README.md": {
       "lines": 159,
-      "updated": "2026-01-25T12:00:57.244Z"
+      "updated": "2026-01-25T12:01:40.895Z"
     }
   },
-  "built": "2026-01-25T12:00:57.234Z"
+  "built": "2026-01-25T12:01:40.886Z"
 }
