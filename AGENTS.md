@@ -48,6 +48,19 @@ The index covers MEMORY.md + memory/*.md files. Scores results by term frequency
 - Recent context (today/yesterday's logs)
 - You know exactly which file has it
 
+### 📦 Log Compression
+Periodically compress old daily logs into MEMORY.md:
+
+```bash
+# analyze logs older than N days (default 7)
+node scripts/compress-logs.mjs 7
+
+# analyze all logs
+node scripts/compress-logs.mjs 0
+```
+
+Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with anything worth keeping long-term.
+
 ### 🧠 MEMORY.md - Your Long-Term Memory
 - **ONLY load in main session** (direct chats with your human)
 - **DO NOT load in shared contexts** (Discord, group chats, sessions with other people)
