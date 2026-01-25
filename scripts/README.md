@@ -13,6 +13,8 @@ Use the unified `arc` CLI:
 ./scripts/arc note "text"        # quick note
 ./scripts/arc task list          # list tasks
 ./scripts/arc summary            # daily summary
+./scripts/arc maintain           # auto-maintenance
+./scripts/arc analytics          # search analytics
 ./scripts/arc help               # full help
 ```
 
