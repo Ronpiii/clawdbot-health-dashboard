@@ -96,6 +96,14 @@ node scripts/test-toolkit.mjs
 ./scripts/arc test
 ```
 
+### goals.mjs
+Show goal status from GOALS.md.
+
+```bash
+node scripts/goals.mjs
+./scripts/arc goals
+```
+
 ## Tasks
 
 ### task.mjs
@@ -144,6 +152,7 @@ node scripts/discord-post.mjs tasks "task update"
 | `search-analytics.mjs` | Search pattern analysis |
 | `reflect.mjs` | Self-improvement prompts |
 | `test-toolkit.mjs` | Toolkit test suite |
+| `goals.mjs` | Goal status display |
 | `task.mjs` | Task management CLI |
 | `daily-summary.mjs` | End-of-day summary generator |
 | `discord-post.mjs` | Discord webhook posting |
