@@ -18,5 +18,5 @@
 - [ ] slash commands for discord (/status, /remind, /search)
 - [ ] auto-threading in #dev for long conversations
 - [ ] email/calendar integration for heartbeat checks
-- [ ] context memory: python SDK
+- [x] context memory: python SDK
 - [ ] context memory: self-hosted option
