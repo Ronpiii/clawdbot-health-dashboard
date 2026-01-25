@@ -29,7 +29,8 @@ const SCRIPTS = {
   summary: 'daily-summary.mjs',
   post: 'discord-post.mjs',
   compress: 'compress-logs.mjs',
-  index: 'memory-index.mjs'
+  index: 'memory-index.mjs',
+  maintain: 'auto-maintenance.mjs'
 };
 
 const HELP = `
@@ -45,6 +46,7 @@ Commands:
   post <channel> <msg>  Post to Discord (logs/tasks)
   compress [days]       Analyze old logs for compression
   index                 Rebuild search index
+  maintain              Run auto-maintenance
 
 Examples:
   arc search "database issue"
@@ -103,6 +105,11 @@ switch (cmd) {
     
   case 'compress':
     run(SCRIPTS.compress, args);
+    break;
+    
+  case 'maintain':
+  case 'maintenance':
+    run(SCRIPTS.maintain, args);
     break;
     
   default:
