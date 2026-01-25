@@ -19,4 +19,4 @@
 - [ ] auto-threading in #dev for long conversations
 - [ ] email/calendar integration for heartbeat checks
 - [x] context memory: python SDK
-- [ ] context memory: self-hosted option
+- [x] context memory: self-hosted option
