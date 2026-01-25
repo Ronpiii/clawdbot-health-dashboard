@@ -272,6 +272,18 @@ switch (cmd) {
       process.exit(1);
     }
     const results = await search(query);
+    
+    // log search for analytics
+    try {
+      const { appendFile } = await import('fs/promises');
+      const logEntry = JSON.stringify({
+        ts: new Date().toISOString(),
+        q: query,
+        n: results.length
+      }) + '\n';
+      await appendFile(join(WORKSPACE, 'memory', 'search-log.jsonl'), logEntry);
+    } catch {}
+    
     if (results.length === 0) {
       console.log('no results');
     } else {
