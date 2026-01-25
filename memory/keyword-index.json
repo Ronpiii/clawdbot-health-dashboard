@@ -3,7 +3,7 @@
     "127": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -16,18 +16,18 @@
         "context": "### Enterprise Tier ($199/month/host)"
       }
     ],
-    "240": [
+    "607": [
       {
         "file": "memory/2026-01-25.md",
         "line": 19,
         "freq": 1,
-        "context": "- ✓ indexed 240 terms from 3 files"
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
       }
     ],
     "1006": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -35,7 +35,7 @@
     "3000": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 43,
         "freq": 1,
         "context": "- **local:** port 3000 (monitors real server)"
       },
@@ -49,7 +49,7 @@
     "18789": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -71,7 +71,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 25,
+        "line": 32,
         "freq": 2,
         "context": "- consider memory categories as separate files (memory/projects.md, etc.)"
       },
@@ -89,13 +89,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 69,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 77,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
@@ -140,6 +140,24 @@
         "line": 13,
         "freq": 1,
         "context": "- MEMORY.md = curated knowledge (durable)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
       },
       {
         "file": "tasks/active.md",
@@ -218,6 +236,12 @@
         "context": "- identity, working style, projects, infrastructure, learnings, preferences"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
+      },
+      {
         "file": "tasks/done.md",
         "line": 5,
         "freq": 1,
@@ -239,6 +263,12 @@
       }
     ],
     "arc": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 27,
+        "freq": 2,
+        "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
+      },
       {
         "file": "MEMORY.md",
         "line": 4,
@@ -277,7 +307,7 @@
         "file": "MEMORY.md",
         "line": 24,
         "freq": 1,
-        "context": "- **status:** MVP ready, waiting on infra from ron"
+        "context": "- **status:** MVP code complete, waiting on infra from ron"
       },
       {
         "file": "memory/2026-01-24.md",
@@ -333,7 +363,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 30,
+        "line": 37,
         "freq": 1,
         "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
       },
@@ -385,7 +415,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 58,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
@@ -419,27 +449,33 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 43,
+        "line": 49,
         "freq": 1,
         "context": "### discord voice bot"
       },
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 55,
         "freq": 1,
         "context": "### discord hub (ventok)"
       },
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
       {
         "file": "MEMORY.md",
-        "line": 89,
+        "line": 95,
         "freq": 1,
         "context": "- **discord webhook:** TOOLS.md has urls"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
       },
       {
         "file": "tasks/README.md",
@@ -541,31 +577,31 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 61,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 65,
+        "line": 71,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 80,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 83,
+        "line": 89,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 91,
+        "line": 97,
         "freq": 1,
         "context": "---"
       },
@@ -721,7 +757,13 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 25,
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 32,
         "freq": 1,
         "context": "- consider memory categories as separate files (memory/projects.md, etc.)"
       }
@@ -877,9 +919,15 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 55,
         "freq": 1,
         "context": "### discord hub (ventok)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
       },
       {
         "file": "tasks/README.md",
@@ -897,7 +945,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 63,
         "freq": 1,
         "context": "## infrastructure"
       },
@@ -935,13 +983,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 77,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 84,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
@@ -959,7 +1007,13 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 31,
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 38,
         "freq": 1,
         "context": "- email/calendar access not configured in heartbeat context"
       },
@@ -1038,6 +1092,12 @@
     ],
     "api": [
       {
+        "file": "MEMORY.md",
+        "line": 29,
+        "freq": 2,
+        "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 16,
         "freq": 2,
@@ -1051,7 +1111,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 31,
+        "freq": 1,
+        "context": "- docs/ — comprehensive API documentation"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -1066,6 +1138,18 @@
         "line": 14,
         "freq": 1,
         "context": "- System ID card (hostname, platform, uptime, API endpoint)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
       },
       {
         "file": "tasks/active.md",
@@ -1168,26 +1252,32 @@
     ],
     "status": [
       {
-        "file": "MEMORY.md",
-        "line": 24,
-        "freq": 1,
-        "context": "- **status:** MVP ready, waiting on infra from ron"
+        "file": "memory/2026-01-25.md",
+        "line": 25,
+        "freq": 2,
+        "context": "- ✓ created workspace status script (scripts/status.mjs)"
       },
       {
         "file": "MEMORY.md",
-        "line": 34,
+        "line": 24,
+        "freq": 1,
+        "context": "- **status:** MVP code complete, waiting on infra from ron"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 40,
         "freq": 1,
         "context": "- **status:** deployed but local preferred"
       },
       {
         "file": "MEMORY.md",
-        "line": 44,
+        "line": 50,
         "freq": 1,
         "context": "- **status:** scaffolded, blocked"
       },
       {
         "file": "MEMORY.md",
-        "line": 50,
+        "line": 56,
         "freq": 1,
         "context": "- **status:** active"
       },
@@ -1196,6 +1286,12 @@
         "line": 18,
         "freq": 1,
         "context": "- Status badges and color-coded indicators"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
       },
       {
         "file": "tasks/README.md",
@@ -1215,11 +1311,11 @@
         "file": "MEMORY.md",
         "line": 24,
         "freq": 1,
-        "context": "- **status:** MVP ready, waiting on infra from ron"
+        "context": "- **status:** MVP code complete, waiting on infra from ron"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 77,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
@@ -1242,24 +1338,26 @@
         "context": "MVP live in ~5 days once infra is ready."
       }
     ],
-    "ready": [
+    "code": [
       {
         "file": "MEMORY.md",
         "line": 24,
         "freq": 1,
-        "context": "- **status:** MVP ready, waiting on infra from ron"
-      },
+        "context": "- **status:** MVP code complete, waiting on infra from ron"
+      }
+    ],
+    "complete": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 24,
         "freq": 1,
-        "context": "- **timeline:** 5 days once infra ready"
+        "context": "- **status:** MVP code complete, waiting on infra from ron"
       },
       {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 86,
+        "file": "memory/2026-01-25.md",
+        "line": 29,
         "freq": 1,
-        "context": "MVP live in ~5 days once infra is ready."
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
       }
     ],
     "waiting": [
@@ -1267,11 +1365,11 @@
         "file": "MEMORY.md",
         "line": 24,
         "freq": 1,
-        "context": "- **status:** MVP ready, waiting on infra from ron"
+        "context": "- **status:** MVP code complete, waiting on infra from ron"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 77,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
@@ -1287,19 +1385,25 @@
         "file": "MEMORY.md",
         "line": 24,
         "freq": 1,
-        "context": "- **status:** MVP ready, waiting on infra from ron"
+        "context": "- **status:** MVP code complete, waiting on infra from ron"
       },
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 36,
         "freq": 1,
-        "context": "- **timeline:** 5 days once infra ready"
+        "context": "- **timeline:** deploy-ready once infra available"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 77,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
       },
       {
         "file": "tasks/active.md",
@@ -1329,7 +1433,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 45,
+        "line": 51,
         "freq": 1,
         "context": "- **location:** discord-voice-bot/"
       },
@@ -1346,6 +1450,12 @@
         "line": 25,
         "freq": 1,
         "context": "- **location:** projects/context-memory/"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
       }
     ],
     "persistent": [
@@ -1501,7 +1611,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 86,
+        "line": 92,
         "freq": 1,
         "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
       },
@@ -1565,13 +1675,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 66,
         "freq": 1,
         "context": "- **node:** v24.13.0"
       },
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 93,
         "freq": 1,
         "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
       },
@@ -1657,13 +1767,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 1,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       },
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -1742,18 +1852,426 @@
         "context": "- OpenAI (embeddings)"
       }
     ],
-    "monetization": [
+    "components": [
       {
         "file": "MEMORY.md",
         "line": 28,
+        "freq": 1,
+        "context": "- **components:**"
+      }
+    ],
+    "full": [
+      {
+        "file": "MEMORY.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      }
+    ],
+    "rest": [
+      {
+        "file": "MEMORY.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **API** — REST, simple auth via API keys"
+      }
+    ],
+    "routes": [
+      {
+        "file": "MEMORY.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| 1 | database schema, core API routes |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- [x] Basic API routes"
+      }
+    ],
+    "services": [
+      {
+        "file": "MEMORY.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 28,
+        "freq": 1,
+        "context": "1. Consulting Services"
+      }
+    ],
+    "validation": [
+      {
+        "file": "MEMORY.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- api/ — full REST API (routes, services, validation, tests)"
+      }
+    ],
+    "tests": [
+      {
+        "file": "MEMORY.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- api/ — full REST API (routes, services, validation, tests)"
+      }
+    ],
+    "cli": [
+      {
+        "file": "MEMORY.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- cli/ — `ctx` command-line tool"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- [x] context memory MVP — api, cli, docs, marketing"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **CLI** — `ctx get`, `ctx set`, `ctx search`, `ctx forget`"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- no fancy UI (CLI + API only)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 62,
+        "freq": 1,
+        "context": "recommendation: **Railway** (simplest, i can deploy directly via CLI)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 81,
+        "freq": 1,
+        "context": "| 2 | CLI tool, auth system |"
+      }
+    ],
+    "ctx": [
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 17,
+        "freq": 4,
+        "context": "- **CLI** — `ctx get`, `ctx set`, `ctx search`, `ctx forget`"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- cli/ — `ctx` command-line tool"
+      }
+    ],
+    "command-line": [
+      {
+        "file": "MEMORY.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- cli/ — `ctx` command-line tool"
+      }
+    ],
+    "tool": [
+      {
+        "file": "MEMORY.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- cli/ — `ctx` command-line tool"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 81,
+        "freq": 1,
+        "context": "| 2 | CLI tool, auth system |"
+      }
+    ],
+    "docs": [
+      {
+        "file": "MEMORY.md",
+        "line": 37,
+        "freq": 2,
+        "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- docs/ — comprehensive API documentation"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- ✓ updated AGENTS.md with search docs"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- [x] context memory MVP — api, cli, docs, marketing"
+      },
+      {
+        "file": "tasks/ideas.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- notion integration for docs/knowledge base"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 83,
+        "freq": 1,
+        "context": "| 4 | landing page, docs |"
+      }
+    ],
+    "comprehensive": [
+      {
+        "file": "MEMORY.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- docs/ — comprehensive API documentation"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
+      }
+    ],
+    "documentation": [
+      {
+        "file": "MEMORY.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- docs/ — comprehensive API documentation"
+      }
+    ],
+    "landing": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- landing/ — marketing page (index.html)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 83,
+        "freq": 1,
+        "context": "| 4 | landing page, docs |"
+      }
+    ],
+    "marketing": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- landing/ — marketing page (index.html)"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- [x] context memory MVP — api, cli, docs, marketing"
+      }
+    ],
+    "page": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- landing/ — marketing page (index.html)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 83,
+        "freq": 1,
+        "context": "| 4 | landing page, docs |"
+      }
+    ],
+    "index": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- landing/ — marketing page (index.html)"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 93,
+        "freq": 1,
+        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- add index auto-rebuild (watch for file changes?)"
+      }
+    ],
+    "html": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- landing/ — marketing page (index.html)"
+      }
+    ],
+    "built": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
+      }
+    ],
+    "memory-manager": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery"
+      }
+    ],
+    "dynamic-tagger": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery"
+      }
+    ],
+    "incremental-embedding": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery"
+      }
+    ],
+    "error-recovery": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery"
+      }
+    ],
+    "monetization": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49)"
       },
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 46,
         "freq": 1,
         "context": "- **monetization:** tiered enterprise model in monetization-plan.md"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
       },
       {
         "file": "monetization-plan.md",
@@ -1771,19 +2289,19 @@
     "free": [
       {
         "file": "MEMORY.md",
-        "line": 28,
+        "line": 34,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49)"
       },
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 68,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       },
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 69,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       },
@@ -1815,7 +2333,7 @@
     "pro": [
       {
         "file": "MEMORY.md",
-        "line": 28,
+        "line": 34,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49)"
       },
@@ -1835,7 +2353,7 @@
     "team": [
       {
         "file": "MEMORY.md",
-        "line": 28,
+        "line": 34,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49)"
       },
@@ -1855,7 +2373,7 @@
     "tiers": [
       {
         "file": "MEMORY.md",
-        "line": 28,
+        "line": 34,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49)"
       }
@@ -1863,7 +2381,7 @@
     "blocking": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 1,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       }
@@ -1871,7 +2389,7 @@
     "domain": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 1,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       },
@@ -1897,7 +2415,7 @@
     "railway": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 1,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       },
@@ -1941,7 +2459,7 @@
     "account": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 2,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       },
@@ -1991,7 +2509,7 @@
     "stripe": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 1,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       },
@@ -2041,19 +2559,19 @@
     "key": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 1,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 77,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -2085,7 +2603,7 @@
     "confirmation": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 35,
         "freq": 1,
         "context": "- **blocking:** domain, railway account, stripe account, openai key confirmation"
       }
@@ -2093,9 +2611,9 @@
     "timeline": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 36,
         "freq": 1,
-        "context": "- **timeline:** 5 days once infra ready"
+        "context": "- **timeline:** deploy-ready once infra available"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -2104,26 +2622,20 @@
         "context": "## timeline"
       }
     ],
-    "days": [
+    "deploy-ready": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 36,
         "freq": 1,
-        "context": "- **timeline:** 5 days once infra ready"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 86,
-        "freq": 1,
-        "context": "MVP live in ~5 days once infra is ready."
+        "context": "- **timeline:** deploy-ready once infra available"
       }
     ],
     "once": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 36,
         "freq": 1,
-        "context": "- **timeline:** 5 days once infra ready"
+        "context": "- **timeline:** deploy-ready once infra available"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -2144,66 +2656,62 @@
         "context": "3. **sticky** — once your context is there, you don't leave"
       }
     ],
-    "docs": [
+    "available": [
       {
         "file": "MEMORY.md",
-        "line": 31,
+        "line": 36,
         "freq": 1,
-        "context": "- **docs:** PLAN.md has full spec"
+        "context": "- **timeline:** deploy-ready once infra available"
       },
       {
-        "file": "memory/2026-01-25.md",
-        "line": 22,
+        "file": "MEMORY.md",
+        "line": 52,
         "freq": 1,
-        "context": "- ✓ updated AGENTS.md with search docs"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- [x] context memory MVP — api, cli, docs, marketing"
-      },
-      {
-        "file": "tasks/ideas.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- notion integration for docs/knowledge base"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 83,
-        "freq": 1,
-        "context": "| 4 | landing page, docs |"
+        "context": "- **blocker:** UDP not available on current server"
       }
     ],
     "plan": [
       {
         "file": "MEMORY.md",
-        "line": 31,
+        "line": 37,
         "freq": 1,
-        "context": "- **docs:** PLAN.md has full spec"
-      }
-    ],
-    "full": [
-      {
-        "file": "MEMORY.md",
-        "line": 31,
-        "freq": 1,
-        "context": "- **docs:** PLAN.md has full spec"
+        "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
       }
     ],
     "spec": [
       {
         "file": "MEMORY.md",
-        "line": 31,
+        "line": 37,
         "freq": 1,
-        "context": "- **docs:** PLAN.md has full spec"
+        "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
+      }
+    ],
+    "readme": [
+      {
+        "file": "MEMORY.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
+      }
+    ],
+    "reference": [
+      {
+        "file": "MEMORY.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- **docs:** PLAN.md has full spec, docs/README.md has API reference"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- logs = debug/error output (reference only)"
       }
     ],
     "clawdbot": [
       {
         "file": "MEMORY.md",
-        "line": 33,
+        "line": 39,
         "freq": 1,
         "context": "### clawdbot health dashboard"
       },
@@ -2235,7 +2743,7 @@
     "health": [
       {
         "file": "MEMORY.md",
-        "line": 33,
+        "line": 39,
         "freq": 1,
         "context": "### clawdbot health dashboard"
       },
@@ -2264,6 +2772,12 @@
         "context": "- identified issues: gateway websocket flaky, express missing for health dashboard"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 1,
         "freq": 1,
@@ -2273,7 +2787,7 @@
     "dashboard": [
       {
         "file": "MEMORY.md",
-        "line": 33,
+        "line": 39,
         "freq": 1,
         "context": "### clawdbot health dashboard"
       },
@@ -2296,6 +2810,12 @@
         "context": "- identified issues: gateway websocket flaky, express missing for health dashboard"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 1,
         "freq": 1,
@@ -2311,7 +2831,7 @@
     "deployed": [
       {
         "file": "MEMORY.md",
-        "line": 34,
+        "line": 40,
         "freq": 1,
         "context": "- **status:** deployed but local preferred"
       },
@@ -2325,25 +2845,25 @@
     "local": [
       {
         "file": "MEMORY.md",
-        "line": 34,
+        "line": 40,
         "freq": 1,
         "context": "- **status:** deployed but local preferred"
       },
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 43,
         "freq": 1,
         "context": "- **local:** port 3000 (monitors real server)"
       },
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
       {
         "file": "MEMORY.md",
-        "line": 86,
+        "line": 92,
         "freq": 1,
         "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
       },
@@ -2369,7 +2889,7 @@
     "preferred": [
       {
         "file": "MEMORY.md",
-        "line": 34,
+        "line": 40,
         "freq": 1,
         "context": "- **status:** deployed but local preferred"
       },
@@ -2383,7 +2903,7 @@
     "vercel": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 41,
         "freq": 2,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
@@ -2401,13 +2921,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 44,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 87,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       }
@@ -2415,13 +2935,13 @@
     "https": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 41,
         "freq": 1,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 42,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -2441,13 +2961,13 @@
     "clawdbot-health-dashboard": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 41,
         "freq": 1,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 42,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -2467,7 +2987,7 @@
     "app": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 41,
         "freq": 1,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
@@ -2487,7 +3007,7 @@
     "github": [
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 42,
         "freq": 2,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -2507,7 +3027,7 @@
     "com": [
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 42,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -2521,7 +3041,7 @@
     "ronpiii": [
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 42,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -2535,7 +3055,7 @@
     "port": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 43,
         "freq": 1,
         "context": "- **local:** port 3000 (monitors real server)"
       },
@@ -2549,7 +3069,7 @@
     "monitors": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 43,
         "freq": 1,
         "context": "- **local:** port 3000 (monitors real server)"
       },
@@ -2563,7 +3083,7 @@
     "real": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 43,
         "freq": 1,
         "context": "- **local:** port 3000 (monitors real server)"
       },
@@ -2589,25 +3109,31 @@
     "server": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 43,
         "freq": 1,
         "context": "- **local:** port 3000 (monitors real server)"
       },
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 44,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
       {
         "file": "MEMORY.md",
-        "line": 46,
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 52,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       },
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 53,
         "freq": 1,
         "context": "- **solution:** needs different server or hosting"
       },
@@ -2633,7 +3159,7 @@
     "note": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 44,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       }
@@ -2641,7 +3167,7 @@
     "shows": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 44,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
@@ -2655,13 +3181,13 @@
     "container": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 44,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 87,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       },
@@ -2675,13 +3201,13 @@
     "metrics": [
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 87,
         "freq": 2,
         "context": "- vercel deployments show container metrics not host metrics"
       },
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 44,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
@@ -2719,7 +3245,7 @@
     "actual": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 44,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
@@ -2733,93 +3259,131 @@
     "issue": [
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 45,
         "freq": 1,
-        "context": "- **issue:** express package missing in services/health-dashboard.mjs"
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
       }
     ],
-    "express": [
+    "localhost": [
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 45,
         "freq": 1,
-        "context": "- **issue:** express package missing in services/health-dashboard.mjs"
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      }
+    ],
+    "binding": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      }
+    ],
+    "restrictions": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      }
+    ],
+    "shared": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      }
+    ],
+    "host": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
       },
       {
-        "file": "memory/2026-01-25.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- identified issues: gateway websocket flaky, express missing for health dashboard"
-      }
-    ],
-    "package": [
-      {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 64,
         "freq": 1,
-        "context": "- **issue:** express package missing in services/health-dashboard.mjs"
-      }
-    ],
-    "missing": [
-      {
-        "file": "MEMORY.md",
-        "line": 39,
-        "freq": 1,
-        "context": "- **issue:** express package missing in services/health-dashboard.mjs"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- identified issues: gateway websocket flaky, express missing for health dashboard"
-      }
-    ],
-    "services": [
-      {
-        "file": "MEMORY.md",
-        "line": 39,
-        "freq": 1,
-        "context": "- **issue:** express package missing in services/health-dashboard.mjs"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 28,
-        "freq": 1,
-        "context": "1. Consulting Services"
-      }
-    ],
-    "health-dashboard": [
-      {
-        "file": "MEMORY.md",
-        "line": 39,
-        "freq": 1,
-        "context": "- **issue:** express package missing in services/health-dashboard.mjs"
-      }
-    ],
-    "mjs": [
-      {
-        "file": "MEMORY.md",
-        "line": 39,
-        "freq": 1,
-        "context": "- **issue:** express package missing in services/health-dashboard.mjs"
+        "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       },
       {
         "file": "MEMORY.md",
         "line": 87,
         "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+        "context": "- vercel deployments show container metrics not host metrics"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- Single host monitoring"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 11,
+        "freq": 1,
+        "context": "### Pro Tier ($49/month/host)"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 18,
+        "freq": 1,
+        "context": "### Enterprise Tier ($199/month/host)"
+      }
+    ],
+    "express": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 18,
+        "line": 9,
         "freq": 1,
-        "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
+        "context": "- identified issues: gateway websocket flaky, express missing for health dashboard"
+      }
+    ],
+    "installed": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      }
+    ],
+    "starts": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      }
+    ],
+    "curl": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
+      }
+    ],
+    "connect": [
+      {
+        "file": "MEMORY.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- **issue:** localhost binding may have restrictions on shared host (express installed, server start"
       }
     ],
     "tiered": [
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 46,
         "freq": 1,
         "context": "- **monetization:** tiered enterprise model in monetization-plan.md"
       },
@@ -2833,7 +3397,7 @@
     "enterprise": [
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 46,
         "freq": 1,
         "context": "- **monetization:** tiered enterprise model in monetization-plan.md"
       },
@@ -2865,7 +3429,7 @@
     "model": [
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 46,
         "freq": 1,
         "context": "- **monetization:** tiered enterprise model in monetization-plan.md"
       },
@@ -2879,7 +3443,7 @@
     "monetization-plan": [
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 46,
         "freq": 1,
         "context": "- **monetization:** tiered enterprise model in monetization-plan.md"
       }
@@ -2887,7 +3451,7 @@
     "todo": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 47,
         "freq": 1,
         "context": "- **todo:** historical charts, multi-host monitoring, alerting"
       },
@@ -2907,7 +3471,7 @@
     "historical": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 47,
         "freq": 1,
         "context": "- **todo:** historical charts, multi-host monitoring, alerting"
       },
@@ -2933,7 +3497,7 @@
     "charts": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 47,
         "freq": 1,
         "context": "- **todo:** historical charts, multi-host monitoring, alerting"
       },
@@ -2947,7 +3511,7 @@
     "multi-host": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 47,
         "freq": 1,
         "context": "- **todo:** historical charts, multi-host monitoring, alerting"
       },
@@ -2967,7 +3531,7 @@
     "monitoring": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 47,
         "freq": 1,
         "context": "- **todo:** historical charts, multi-host monitoring, alerting"
       },
@@ -3035,7 +3599,7 @@
     "alerting": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 47,
         "freq": 1,
         "context": "- **todo:** historical charts, multi-host monitoring, alerting"
       },
@@ -3049,9 +3613,15 @@
     "voice": [
       {
         "file": "MEMORY.md",
-        "line": 43,
+        "line": 49,
         "freq": 1,
         "context": "### discord voice bot"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
       },
       {
         "file": "tasks/active.md",
@@ -3081,9 +3651,15 @@
     "bot": [
       {
         "file": "MEMORY.md",
-        "line": 43,
+        "line": 49,
         "freq": 1,
         "context": "### discord voice bot"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
       },
       {
         "file": "tasks/active.md",
@@ -3113,7 +3689,7 @@
     "scaffolded": [
       {
         "file": "MEMORY.md",
-        "line": 44,
+        "line": 50,
         "freq": 1,
         "context": "- **status:** scaffolded, blocked"
       }
@@ -3121,7 +3697,7 @@
     "blocked": [
       {
         "file": "MEMORY.md",
-        "line": 44,
+        "line": 50,
         "freq": 1,
         "context": "- **status:** scaffolded, blocked"
       },
@@ -3141,7 +3717,7 @@
     "discord-voice-bot": [
       {
         "file": "MEMORY.md",
-        "line": 45,
+        "line": 51,
         "freq": 1,
         "context": "- **location:** discord-voice-bot/"
       }
@@ -3149,7 +3725,7 @@
     "blocker": [
       {
         "file": "MEMORY.md",
-        "line": 46,
+        "line": 52,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       }
@@ -3157,7 +3733,7 @@
     "udp": [
       {
         "file": "MEMORY.md",
-        "line": 46,
+        "line": 52,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       },
@@ -3168,24 +3744,16 @@
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
       }
     ],
-    "available": [
-      {
-        "file": "MEMORY.md",
-        "line": 46,
-        "freq": 1,
-        "context": "- **blocker:** UDP not available on current server"
-      }
-    ],
     "current": [
       {
         "file": "MEMORY.md",
-        "line": 46,
+        "line": 52,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       },
       {
         "file": "MEMORY.md",
-        "line": 88,
+        "line": 94,
         "freq": 1,
         "context": "- **tasks:** tasks/active.md for current work"
       },
@@ -3199,7 +3767,7 @@
     "solution": [
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 53,
         "freq": 1,
         "context": "- **solution:** needs different server or hosting"
       }
@@ -3207,13 +3775,13 @@
     "needs": [
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 53,
         "freq": 1,
         "context": "- **solution:** needs different server or hosting"
       },
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -3239,7 +3807,7 @@
     "different": [
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 53,
         "freq": 1,
         "context": "- **solution:** needs different server or hosting"
       },
@@ -3253,7 +3821,7 @@
     "hosting": [
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 53,
         "freq": 1,
         "context": "- **solution:** needs different server or hosting"
       },
@@ -3279,7 +3847,7 @@
     "hub": [
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 55,
         "freq": 1,
         "context": "### discord hub (ventok)"
       },
@@ -3299,25 +3867,25 @@
     "active": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 74,
         "freq": 2,
         "context": "- **active:** tasks/active.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 50,
+        "line": 56,
         "freq": 1,
         "context": "- **status:** active"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 77,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
       {
         "file": "MEMORY.md",
-        "line": 88,
+        "line": 94,
         "freq": 1,
         "context": "- **tasks:** tasks/active.md for current work"
       },
@@ -3343,7 +3911,7 @@
     "guild": [
       {
         "file": "MEMORY.md",
-        "line": 51,
+        "line": 57,
         "freq": 1,
         "context": "- **guild id:** 1464611456858456259"
       }
@@ -3351,7 +3919,7 @@
     "1464611456858456259": [
       {
         "file": "MEMORY.md",
-        "line": 51,
+        "line": 57,
         "freq": 1,
         "context": "- **guild id:** 1464611456858456259"
       }
@@ -3359,7 +3927,7 @@
     "general": [
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 58,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       }
@@ -3367,33 +3935,45 @@
     "tasks": [
       {
         "file": "MEMORY.md",
-        "line": 88,
+        "line": 94,
         "freq": 2,
         "context": "- **tasks:** tasks/active.md for current work"
       },
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 58,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 74,
         "freq": 1,
         "context": "- **active:** tasks/active.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 75,
         "freq": 1,
         "context": "- **done:** tasks/done.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 70,
+        "line": 76,
         "freq": 1,
         "context": "- **ideas:** tasks/ideas.md"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
       },
       {
         "file": "tasks/README.md",
@@ -3441,7 +4021,7 @@
     "logs": [
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 58,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
@@ -3491,7 +4071,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 58,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
@@ -3500,6 +4080,12 @@
         "line": 12,
         "freq": 1,
         "context": "- Implemented Pencil.dev design with dark theme:"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
       },
       {
         "file": "tasks/active.md",
@@ -3523,7 +4109,7 @@
     "webhooks": [
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 59,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
@@ -3537,19 +4123,25 @@
     "configured": [
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 59,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 84,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 31,
+        "line": 27,
+        "freq": 1,
+        "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 38,
         "freq": 1,
         "context": "- email/calendar access not configured in heartbeat context"
       }
@@ -3557,7 +4149,7 @@
     "cross-posting": [
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 59,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
@@ -3577,7 +4169,7 @@
     "see": [
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 59,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       }
@@ -3585,13 +4177,13 @@
     "tools": [
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 59,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
       {
         "file": "MEMORY.md",
-        "line": 89,
+        "line": 95,
         "freq": 1,
         "context": "- **discord webhook:** TOOLS.md has urls"
       },
@@ -3602,42 +4194,10 @@
         "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
       }
     ],
-    "host": [
-      {
-        "file": "MEMORY.md",
-        "line": 58,
-        "freq": 1,
-        "context": "- **host:** sn-69-16.tll07.zoneas.eu"
-      },
-      {
-        "file": "MEMORY.md",
-        "line": 81,
-        "freq": 1,
-        "context": "- vercel deployments show container metrics not host metrics"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 7,
-        "freq": 1,
-        "context": "- Single host monitoring"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 11,
-        "freq": 1,
-        "context": "### Pro Tier ($49/month/host)"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 18,
-        "freq": 1,
-        "context": "### Enterprise Tier ($199/month/host)"
-      }
-    ],
     "sn-69-16": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 64,
         "freq": 1,
         "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       }
@@ -3645,7 +4205,7 @@
     "tll07": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 64,
         "freq": 1,
         "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       }
@@ -3653,7 +4213,7 @@
     "zoneas": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 64,
         "freq": 1,
         "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       }
@@ -3661,7 +4221,7 @@
     "platform": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 65,
         "freq": 1,
         "context": "- **platform:** linux"
       },
@@ -3687,7 +4247,7 @@
     "linux": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 65,
         "freq": 1,
         "context": "- **platform:** linux"
       }
@@ -3695,7 +4255,7 @@
     "v24": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 66,
         "freq": 1,
         "context": "- **node:** v24.13.0"
       }
@@ -3703,15 +4263,21 @@
     "workspace": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 67,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- ✓ created workspace status script (scripts/status.mjs)"
       }
     ],
     "data02": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 67,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
       }
@@ -3719,7 +4285,7 @@
     "virt137413": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 67,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
       }
@@ -3727,7 +4293,7 @@
     "clawd": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 67,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
       }
@@ -3735,7 +4301,7 @@
     "disk": [
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 68,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       },
@@ -3755,13 +4321,13 @@
     "usage": [
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 68,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       },
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 69,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       },
@@ -3787,7 +4353,7 @@
     "8gb": [
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 68,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       }
@@ -3795,7 +4361,7 @@
     "10gb": [
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 68,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       }
@@ -3803,7 +4369,7 @@
     "416gb": [
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 69,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       }
@@ -3811,7 +4377,7 @@
     "540gb": [
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 69,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       }
@@ -3819,9 +4385,15 @@
     "task": [
       {
         "file": "MEMORY.md",
-        "line": 67,
+        "line": 73,
         "freq": 1,
         "context": "## task system"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
       },
       {
         "file": "tasks/README.md",
@@ -3839,7 +4411,7 @@
     "system": [
       {
         "file": "MEMORY.md",
-        "line": 67,
+        "line": 73,
         "freq": 1,
         "context": "## task system"
       },
@@ -3874,6 +4446,12 @@
         "context": "- Alerting system integration"
       },
       {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 6,
         "freq": 1,
@@ -3895,7 +4473,7 @@
     "done": [
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 75,
         "freq": 2,
         "context": "- **done:** tasks/done.md"
       },
@@ -3921,7 +4499,7 @@
     "ideas": [
       {
         "file": "MEMORY.md",
-        "line": 70,
+        "line": 76,
         "freq": 2,
         "context": "- **ideas:** tasks/ideas.md"
       },
@@ -3947,7 +4525,7 @@
     "backlog": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
@@ -3967,7 +4545,7 @@
     "slash": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
@@ -3987,7 +4565,7 @@
     "commands": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
@@ -4007,19 +4585,19 @@
     "email": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 84,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 31,
+        "line": 38,
         "freq": 1,
         "context": "- email/calendar access not configured in heartbeat context"
       },
@@ -4039,19 +4617,19 @@
     "calendar": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 84,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 31,
+        "line": 38,
         "freq": 1,
         "context": "- email/calendar access not configured in heartbeat context"
       },
@@ -4065,7 +4643,7 @@
     "integration": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
@@ -4109,7 +4687,7 @@
     "python": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
@@ -4129,7 +4707,7 @@
     "sdk": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 78,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, python SDK"
       },
@@ -4143,7 +4721,7 @@
     "learnings": [
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 82,
         "freq": 1,
         "context": "## learnings"
       },
@@ -4152,18 +4730,24 @@
         "line": 7,
         "freq": 1,
         "context": "- identity, working style, projects, infrastructure, learnings, preferences"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
       }
     ],
     "gateway": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       },
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 85,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       },
@@ -4177,7 +4761,7 @@
     "websocket": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       },
@@ -4191,7 +4775,7 @@
     "occasionally": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -4199,7 +4783,7 @@
     "drops": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -4207,13 +4791,13 @@
     "errors": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 83,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       },
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 85,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -4221,25 +4805,31 @@
     "heartbeat": [
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 84,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 29,
+        "line": 26,
+        "freq": 1,
+        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 36,
         "freq": 1,
         "context": "## heartbeat checks"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 30,
+        "line": 37,
         "freq": 1,
         "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 31,
+        "line": 38,
         "freq": 1,
         "context": "- email/calendar access not configured in heartbeat context"
       },
@@ -4253,13 +4843,13 @@
     "access": [
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 84,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 31,
+        "line": 38,
         "freq": 1,
         "context": "- email/calendar access not configured in heartbeat context"
       },
@@ -4285,7 +4875,7 @@
     "sub-agent": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 85,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -4293,7 +4883,7 @@
     "spawns": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 85,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -4301,7 +4891,7 @@
     "partially": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 85,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -4309,7 +4899,7 @@
     "succeed": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 85,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -4317,7 +4907,7 @@
     "despite": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 85,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -4325,57 +4915,29 @@
     "memory_search": [
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
-      }
-    ],
-    "tool": [
-      {
-        "file": "MEMORY.md",
-        "line": 80,
-        "freq": 1,
-        "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 81,
-        "freq": 1,
-        "context": "| 2 | CLI tool, auth system |"
       }
     ],
     "google": [
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
-      }
-    ],
-    "built": [
-      {
-        "file": "MEMORY.md",
-        "line": 80,
-        "freq": 1,
-        "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 18,
-        "freq": 1,
-        "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
       }
     ],
     "keyword": [
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
       {
         "file": "MEMORY.md",
-        "line": 86,
+        "line": 92,
         "freq": 1,
         "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
       },
@@ -4386,36 +4948,10 @@
         "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
       }
     ],
-    "index": [
-      {
-        "file": "MEMORY.md",
-        "line": 80,
-        "freq": 1,
-        "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
-      },
-      {
-        "file": "MEMORY.md",
-        "line": 87,
-        "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 18,
-        "freq": 1,
-        "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 27,
-        "freq": 1,
-        "context": "- add index auto-rebuild (watch for file changes?)"
-      }
-    ],
     "instead": [
       {
         "file": "MEMORY.md",
-        "line": 80,
+        "line": 86,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       }
@@ -4423,7 +4959,7 @@
     "deployments": [
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 87,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       }
@@ -4431,7 +4967,7 @@
     "show": [
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 87,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       }
@@ -4439,7 +4975,7 @@
     "quick": [
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 91,
         "freq": 1,
         "context": "## quick recall"
       }
@@ -4447,7 +4983,7 @@
     "recall": [
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 91,
         "freq": 1,
         "context": "## quick recall"
       }
@@ -4455,7 +4991,7 @@
     "msearch": [
       {
         "file": "MEMORY.md",
-        "line": 86,
+        "line": 92,
         "freq": 2,
         "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
       },
@@ -4469,13 +5005,13 @@
     "scripts": [
       {
         "file": "MEMORY.md",
-        "line": 86,
+        "line": 92,
         "freq": 1,
         "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
       },
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 93,
         "freq": 1,
         "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
       },
@@ -4484,12 +5020,18 @@
         "line": 18,
         "freq": 1,
         "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- ✓ created workspace status script (scripts/status.mjs)"
       }
     ],
     "query": [
       {
         "file": "MEMORY.md",
-        "line": 86,
+        "line": 92,
         "freq": 1,
         "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
       }
@@ -4497,7 +5039,7 @@
     "rebuild": [
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 93,
         "freq": 1,
         "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
       }
@@ -4505,7 +5047,7 @@
     "memory-index": [
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 93,
         "freq": 1,
         "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
       },
@@ -4516,10 +5058,30 @@
         "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
       }
     ],
+    "mjs": [
+      {
+        "file": "MEMORY.md",
+        "line": 93,
+        "freq": 1,
+        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- ✓ created workspace status script (scripts/status.mjs)"
+      }
+    ],
     "build": [
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 93,
         "freq": 1,
         "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
       },
@@ -4539,7 +5101,7 @@
     "work": [
       {
         "file": "MEMORY.md",
-        "line": 88,
+        "line": 94,
         "freq": 1,
         "context": "- **tasks:** tasks/active.md for current work"
       },
@@ -4548,12 +5110,18 @@
         "line": 3,
         "freq": 1,
         "context": "## memory optimization work"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- ✓ committed all work (4 commits)"
       }
     ],
     "webhook": [
       {
         "file": "MEMORY.md",
-        "line": 89,
+        "line": 95,
         "freq": 1,
         "context": "- **discord webhook:** TOOLS.md has urls"
       },
@@ -4585,7 +5153,7 @@
     "urls": [
       {
         "file": "MEMORY.md",
-        "line": 89,
+        "line": 95,
         "freq": 1,
         "context": "- **discord webhook:** TOOLS.md has urls"
       }
@@ -4593,7 +5161,7 @@
     "last": [
       {
         "file": "MEMORY.md",
-        "line": 93,
+        "line": 99,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       }
@@ -4601,7 +5169,7 @@
     "updated": [
       {
         "file": "MEMORY.md",
-        "line": 93,
+        "line": 99,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -4610,12 +5178,18 @@
         "line": 22,
         "freq": 1,
         "context": "- ✓ updated AGENTS.md with search docs"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
       }
     ],
     "2026-01-25": [
       {
         "file": "MEMORY.md",
-        "line": 93,
+        "line": 99,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -4718,6 +5292,12 @@
         "line": 9,
         "freq": 1,
         "context": "- Created new project: real-time system health monitoring dashboard"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- ✓ created workspace status script (scripts/status.mjs)"
       }
     ],
     "service": [
@@ -4868,6 +5448,18 @@
         "line": 9,
         "freq": 1,
         "context": "- Created new project: real-time system health monitoring dashboard"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -5171,7 +5763,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 25,
+        "line": 32,
         "freq": 1,
         "context": "- consider memory categories as separate files (memory/projects.md, etc.)"
       },
@@ -5339,11 +5931,11 @@
         "file": "memory/2026-01-25.md",
         "line": 19,
         "freq": 1,
-        "context": "- ✓ indexed 240 terms from 3 files"
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 25,
+        "line": 32,
         "freq": 1,
         "context": "- consider memory categories as separate files (memory/projects.md, etc.)"
       }
@@ -5365,7 +5957,7 @@
       },
       {
         "file": "memory/2026-01-25.md",
-        "line": 25,
+        "line": 32,
         "freq": 1,
         "context": "- consider memory categories as separate files (memory/projects.md, etc.)"
       }
@@ -5445,6 +6037,14 @@
       }
     ],
     "flaky": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- identified issues: gateway websocket flaky, express missing for health dashboard"
+      }
+    ],
+    "missing": [
       {
         "file": "memory/2026-01-25.md",
         "line": 9,
@@ -5568,14 +6168,6 @@
         "context": "- logs = debug/error output (reference only)"
       }
     ],
-    "reference": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 15,
-        "freq": 1,
-        "context": "- logs = debug/error output (reference only)"
-      }
-    ],
     "completed": [
       {
         "file": "memory/2026-01-25.md",
@@ -5596,12 +6188,12 @@
         "context": "# Completed Tasks"
       }
     ],
-    "indexed": [
+    "expanded": [
       {
         "file": "memory/2026-01-25.md",
         "line": 19,
         "freq": 1,
-        "context": "- ✓ indexed 240 terms from 3 files"
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
       }
     ],
     "terms": [
@@ -5609,7 +6201,7 @@
         "file": "memory/2026-01-25.md",
         "line": 19,
         "freq": 1,
-        "context": "- ✓ indexed 240 terms from 3 files"
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
       }
     ],
     "works": [
@@ -5682,12 +6274,132 @@
         "line": 21,
         "freq": 1,
         "context": "- ✓ added msearch wrapper script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- ✓ created workspace status script (scripts/status.mjs)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
+      }
+    ],
+    "rewrite": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
+      }
+    ],
+    "includes": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
+      }
+    ],
+    "discovered": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      }
+    ],
+    "documented": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      }
+    ],
+    "practical": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
+      }
+    ],
+    "checks": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## heartbeat checks"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- [ ] email/calendar integration for heartbeat checks"
+      }
+    ],
+    "git": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
+      }
+    ],
+    "committed": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- ✓ committed all work (4 commits)"
+      }
+    ],
+    "commits": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- ✓ committed all work (4 commits)"
+      }
+    ],
+    "explored": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      }
+    ],
+    "found": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
+      }
+    ],
+    "expected": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- ✓ explored context-memory project — found it's more complete than expected (full API, CLI, docs, l"
       }
     ],
     "next": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "## next steps"
       }
@@ -5695,7 +6407,7 @@
     "steps": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "## next steps"
       },
@@ -5709,7 +6421,7 @@
     "separate": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 25,
+        "line": 32,
         "freq": 1,
         "context": "- consider memory categories as separate files (memory/projects.md, etc.)"
       },
@@ -5729,7 +6441,7 @@
     "etc": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 25,
+        "line": 32,
         "freq": 1,
         "context": "- consider memory categories as separate files (memory/projects.md, etc.)"
       }
@@ -5737,7 +6449,7 @@
     "establish": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 26,
+        "line": 33,
         "freq": 1,
         "context": "- establish review cadence"
       }
@@ -5745,7 +6457,7 @@
     "review": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 26,
+        "line": 33,
         "freq": 1,
         "context": "- establish review cadence"
       }
@@ -5753,7 +6465,7 @@
     "cadence": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 26,
+        "line": 33,
         "freq": 1,
         "context": "- establish review cadence"
       }
@@ -5761,7 +6473,7 @@
     "add": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 27,
+        "line": 34,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
       },
@@ -5781,7 +6493,7 @@
     "auto-rebuild": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 27,
+        "line": 34,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
       }
@@ -5789,7 +6501,7 @@
     "watch": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 27,
+        "line": 34,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
       }
@@ -5797,7 +6509,7 @@
     "file": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 27,
+        "line": 34,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
       }
@@ -5805,7 +6517,7 @@
     "changes": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 27,
+        "line": 34,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
       },
@@ -5822,24 +6534,10 @@
         "context": "- webhooks on context changes"
       }
     ],
-    "checks": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 29,
-        "freq": 1,
-        "context": "## heartbeat checks"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 19,
-        "freq": 1,
-        "context": "- [ ] email/calendar integration for heartbeat checks"
-      }
-    ],
     "utc": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 30,
+        "line": 37,
         "freq": 1,
         "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
       }
@@ -5847,7 +6545,7 @@
     "routine": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 30,
+        "line": 37,
         "freq": 1,
         "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
       }
@@ -5855,7 +6553,7 @@
     "activity": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 30,
+        "line": 37,
         "freq": 1,
         "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
       }
@@ -5863,7 +6561,7 @@
     "cross-post": [
       {
         "file": "memory/2026-01-25.md",
-        "line": 30,
+        "line": 37,
         "freq": 1,
         "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
       }
@@ -6116,46 +6814,6 @@
         "line": 7,
         "freq": 1,
         "context": "- [x] configure cross-posting webhook"
-      }
-    ],
-    "cli": [
-      {
-        "file": "tasks/active.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- [x] context memory MVP — api, cli, docs, marketing"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 17,
-        "freq": 1,
-        "context": "- **CLI** — `ctx get`, `ctx set`, `ctx search`, `ctx forget`"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 21,
-        "freq": 1,
-        "context": "- no fancy UI (CLI + API only)"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 62,
-        "freq": 1,
-        "context": "recommendation: **Railway** (simplest, i can deploy directly via CLI)"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 81,
-        "freq": 1,
-        "context": "| 2 | CLI tool, auth system |"
-      }
-    ],
-    "marketing": [
-      {
-        "file": "tasks/active.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- [x] context memory MVP — api, cli, docs, marketing"
       }
     ],
     "remind": [
@@ -7218,14 +7876,6 @@
         "context": "- **versioning** — history of changes, rollback"
       }
     ],
-    "rest": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 16,
-        "freq": 1,
-        "context": "- **API** — REST, simple auth via API keys"
-      }
-    ],
     "simple": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -7292,14 +7942,6 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
-      }
-    ],
-    "ctx": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 17,
-        "freq": 4,
-        "context": "- **CLI** — `ctx get`, `ctx set`, `ctx search`, `ctx forget`"
       }
     ],
     "get": [
@@ -8038,36 +8680,6 @@
         "context": "- [x] Database schema"
       }
     ],
-    "routes": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 80,
-        "freq": 1,
-        "context": "| 1 | database schema, core API routes |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 32,
-        "freq": 1,
-        "context": "- [x] Basic API routes"
-      }
-    ],
-    "landing": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 83,
-        "freq": 1,
-        "context": "| 4 | landing page, docs |"
-      }
-    ],
-    "page": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 83,
-        "freq": 1,
-        "context": "| 4 | landing page, docs |"
-      }
-    ],
     "live": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -8080,6 +8692,22 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
+      }
+    ],
+    "days": [
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 86,
+        "freq": 1,
+        "context": "MVP live in ~5 days once infra is ready."
+      }
+    ],
+    "ready": [
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 86,
+        "freq": 1,
+        "context": "MVP live in ~5 days once infra is ready."
       }
     ],
     "action": [
@@ -8603,45 +9231,45 @@
   },
   "files": {
     "MEMORY.md": {
-      "lines": 94,
-      "updated": "2026-01-25T11:17:49.095Z"
+      "lines": 100,
+      "updated": "2026-01-25T11:20:35.399Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:17:49.097Z"
+      "updated": "2026-01-25T11:20:35.400Z"
     },
     "memory/2026-01-25.md": {
-      "lines": 32,
-      "updated": "2026-01-25T11:17:49.097Z"
+      "lines": 39,
+      "updated": "2026-01-25T11:20:35.400Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:17:49.097Z"
+      "updated": "2026-01-25T11:20:35.401Z"
     },
     "tasks/active.md": {
       "lines": 22,
-      "updated": "2026-01-25T11:17:49.097Z"
+      "updated": "2026-01-25T11:20:35.401Z"
     },
     "tasks/done.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:17:49.098Z"
+      "updated": "2026-01-25T11:20:35.402Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:17:49.098Z"
+      "updated": "2026-01-25T11:20:35.402Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:17:49.098Z"
+      "updated": "2026-01-25T11:20:35.402Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:17:49.099Z"
+      "updated": "2026-01-25T11:20:35.402Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:17:49.099Z"
+      "updated": "2026-01-25T11:20:35.403Z"
     }
   },
-  "built": "2026-01-25T11:17:49.094Z"
+  "built": "2026-01-25T11:20:35.397Z"
 }

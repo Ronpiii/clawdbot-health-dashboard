@@ -42,7 +42,7 @@
 - **github:** https://github.com/Ronpiii/clawdbot-health-dashboard
 - **local:** port 3000 (monitors real server)
 - **note:** vercel shows container metrics, not actual server
-- **issue:** express package missing in services/health-dashboard.mjs
+- **issue:** localhost binding may have restrictions on shared host (express installed, server starts, but curl can't connect)
 - **monetization:** tiered enterprise model in monetization-plan.md
 - **todo:** historical charts, multi-host monitoring, alerting
 
