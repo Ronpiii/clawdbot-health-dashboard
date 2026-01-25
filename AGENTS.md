@@ -24,16 +24,36 @@ You wake up fresh each session. These files are your continuity:
 
 Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
 
+### 🛠️ Arc CLI (Unified Toolkit)
+Use `./scripts/arc` for all workspace operations:
+
+```bash
+./scripts/arc search "query"   # search memory (670+ terms, synonyms)
+./scripts/arc status           # workspace health
+./scripts/arc check            # heartbeat checks
+./scripts/arc note "text"      # quick note capture
+./scripts/arc task list        # task management
+./scripts/arc summary          # daily summary
+./scripts/arc maintain         # auto-maintenance
+./scripts/arc analytics        # search patterns
+./scripts/arc help             # full help
+```
+
+See `scripts/README.md` for detailed documentation.
+
 ### 🔍 Memory Search (Local Keyword Index)
 When you need to recall something but don't know which file:
 
 ```bash
-# search memory files
+# use arc CLI (preferred)
+./scripts/arc search "query terms"
+
+# or use direct scripts
 node scripts/memory-index.mjs search "query terms"
-# or use the wrapper
 ./scripts/msearch health dashboard
 
-# rebuild index after adding/editing memory files
+# rebuild index
+./scripts/arc index
 node scripts/memory-index.mjs build
 ```
 
