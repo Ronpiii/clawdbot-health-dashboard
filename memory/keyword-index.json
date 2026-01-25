@@ -1203,7 +1203,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 113,
+        "line": 114,
         "freq": 1,
         "context": "| task.mjs | task management + discord |"
       },
@@ -1409,7 +1409,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 119,
+        "line": 120,
         "freq": 1,
         "context": "---"
       },
@@ -5147,7 +5147,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 115,
         "freq": 2,
         "context": "| note.mjs | quick note capture |"
       },
@@ -6853,7 +6853,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 113,
+        "line": 114,
         "freq": 2,
         "context": "| task.mjs | task management + discord |"
       },
@@ -7761,7 +7761,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 115,
         "freq": 1,
         "context": "| note.mjs | quick note capture |"
       },
@@ -8681,7 +8681,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 115,
         "freq": 1,
         "context": "| note.mjs | quick note capture |"
       },
@@ -8775,7 +8775,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 113,
+        "line": 114,
         "freq": 1,
         "context": "| task.mjs | task management + discord |"
       },
@@ -8843,7 +8843,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 116,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -9137,7 +9137,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 117,
+        "line": 118,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -9188,6 +9188,12 @@
         "context": "## toolkit built 2026-01-25"
       },
       {
+        "file": "MEMORY.md",
+        "line": 113,
+        "freq": 1,
+        "context": "| test-toolkit.mjs | toolkit test suite |"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 71,
         "freq": 1,
@@ -9221,7 +9227,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 122,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -9483,29 +9489,35 @@
         "file": "MEMORY.md",
         "line": 113,
         "freq": 1,
-        "context": "| task.mjs | task management + discord |"
+        "context": "| test-toolkit.mjs | toolkit test suite |"
       },
       {
         "file": "MEMORY.md",
         "line": 114,
         "freq": 1,
-        "context": "| note.mjs | quick note capture |"
+        "context": "| task.mjs | task management + discord |"
       },
       {
         "file": "MEMORY.md",
         "line": 115,
         "freq": 1,
-        "context": "| daily-summary.mjs | end-of-day summary |"
+        "context": "| note.mjs | quick note capture |"
       },
       {
         "file": "MEMORY.md",
         "line": 116,
         "freq": 1,
-        "context": "| compress-logs.mjs | log compression |"
+        "context": "| daily-summary.mjs | end-of-day summary |"
       },
       {
         "file": "MEMORY.md",
         "line": 117,
+        "freq": 1,
+        "context": "| compress-logs.mjs | log compression |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 118,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -10150,10 +10162,76 @@
         "context": "| `reflect.mjs` | Self-improvement prompts |"
       }
     ],
+    "test-toolkit": [
+      {
+        "file": "MEMORY.md",
+        "line": 113,
+        "freq": 1,
+        "context": "| test-toolkit.mjs | toolkit test suite |"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 91,
+        "freq": 1,
+        "context": "### test-toolkit.mjs"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 95,
+        "freq": 1,
+        "context": "node scripts/test-toolkit.mjs"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
+      }
+    ],
+    "test": [
+      {
+        "file": "MEMORY.md",
+        "line": 113,
+        "freq": 1,
+        "context": "| test-toolkit.mjs | toolkit test suite |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 94,
+        "freq": 1,
+        "context": "3. [ ] create Stripe account → share API keys (test + live)"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 96,
+        "freq": 1,
+        "context": "./scripts/arc test"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
+      }
+    ],
+    "suite": [
+      {
+        "file": "MEMORY.md",
+        "line": 113,
+        "freq": 1,
+        "context": "| test-toolkit.mjs | toolkit test suite |"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
+      }
+    ],
     "daily-summary": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 116,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -10191,7 +10269,7 @@
     "end-of-day": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 116,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -10217,7 +10295,7 @@
     "compress-logs": [
       {
         "file": "MEMORY.md",
-        "line": 116,
+        "line": 117,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -10267,7 +10345,7 @@
     "log": [
       {
         "file": "MEMORY.md",
-        "line": 116,
+        "line": 117,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -10305,7 +10383,7 @@
     "compression": [
       {
         "file": "MEMORY.md",
-        "line": 116,
+        "line": 117,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -10331,7 +10409,7 @@
     "discord-post": [
       {
         "file": "MEMORY.md",
-        "line": 117,
+        "line": 118,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -10369,7 +10447,7 @@
     "posting": [
       {
         "file": "MEMORY.md",
-        "line": 117,
+        "line": 118,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -10383,7 +10461,7 @@
     "last": [
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 122,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -10397,7 +10475,7 @@
     "updated": [
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 122,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -19096,26 +19174,6 @@
         "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
       }
     ],
-    "test": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 94,
-        "freq": 1,
-        "context": "3. [ ] create Stripe account → share API keys (test + live)"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 96,
-        "freq": 1,
-        "context": "./scripts/arc test"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 146,
-        "freq": 1,
-        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
-      }
-    ],
     "confirm": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -19606,26 +19664,6 @@
         "context": "Generate reflection prompts for self-improvement."
       }
     ],
-    "test-toolkit": [
-      {
-        "file": "scripts/README.md",
-        "line": 91,
-        "freq": 1,
-        "context": "### test-toolkit.mjs"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 95,
-        "freq": 1,
-        "context": "node scripts/test-toolkit.mjs"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 146,
-        "freq": 1,
-        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
-      }
-    ],
     "smoke": [
       {
         "file": "scripts/README.md",
@@ -19699,69 +19737,61 @@
         "freq": 1,
         "context": "## Communication"
       }
-    ],
-    "suite": [
-      {
-        "file": "scripts/README.md",
-        "line": 146,
-        "freq": 1,
-        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
-      }
     ]
   },
   "files": {
     "MEMORY.md": {
-      "lines": 122,
-      "updated": "2026-01-25T11:38:52.752Z"
+      "lines": 123,
+      "updated": "2026-01-25T11:39:01.616Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:38:52.754Z"
+      "updated": "2026-01-25T11:39:01.617Z"
     },
     "memory/2026-01-25.md": {
       "lines": 74,
-      "updated": "2026-01-25T11:38:52.754Z"
+      "updated": "2026-01-25T11:39:01.618Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:38:52.755Z"
+      "updated": "2026-01-25T11:39:01.619Z"
     },
     "tasks/active.md": {
       "lines": 22,
-      "updated": "2026-01-25T11:38:52.755Z"
+      "updated": "2026-01-25T11:39:01.619Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:38:52.755Z"
+      "updated": "2026-01-25T11:39:01.622Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:38:52.756Z"
+      "updated": "2026-01-25T11:39:01.622Z"
     },
     "QUICKREF.md": {
       "lines": 52,
-      "updated": "2026-01-25T11:38:52.756Z"
+      "updated": "2026-01-25T11:39:01.622Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T11:38:52.756Z"
+      "updated": "2026-01-25T11:39:01.623Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:38:52.758Z"
+      "updated": "2026-01-25T11:39:01.624Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:38:52.758Z"
+      "updated": "2026-01-25T11:39:01.624Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:38:52.758Z"
+      "updated": "2026-01-25T11:39:01.625Z"
     },
     "scripts/README.md": {
       "lines": 150,
-      "updated": "2026-01-25T11:38:52.759Z"
+      "updated": "2026-01-25T11:39:01.625Z"
     }
   },
-  "built": "2026-01-25T11:38:52.751Z"
+  "built": "2026-01-25T11:39:01.615Z"
 }
