@@ -507,7 +507,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 130,
+        "line": 138,
         "freq": 1,
         "context": "| `msearch` | Shortcut for memory search |"
       }
@@ -947,7 +947,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 128,
+        "line": 96,
+        "freq": 1,
+        "context": "./scripts/arc test"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 136,
         "freq": 1,
         "context": "| `arc` | Unified CLI wrapper |"
       }
@@ -1287,19 +1293,19 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       },
       {
         "file": "scripts/README.md",
-        "line": 117,
+        "line": 125,
         "freq": 1,
         "context": "Post to Discord webhooks."
       },
       {
         "file": "scripts/README.md",
-        "line": 140,
+        "line": 149,
         "freq": 1,
         "context": "| `discord-post.mjs` | Discord webhook posting |"
       }
@@ -2539,7 +2545,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 133,
+        "line": 141,
         "freq": 2,
         "context": "| `status.mjs` | Workspace status overview |"
       },
@@ -3137,19 +3143,19 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 129,
+        "line": 137,
         "freq": 1,
         "context": "| `memory-index.mjs` | Build/search keyword index |"
       },
       {
         "file": "scripts/README.md",
-        "line": 130,
+        "line": 138,
         "freq": 1,
         "context": "| `msearch` | Shortcut for memory search |"
       },
       {
         "file": "scripts/README.md",
-        "line": 136,
+        "line": 144,
         "freq": 1,
         "context": "| `search-analytics.mjs` | Search pattern analysis |"
       }
@@ -3297,55 +3303,61 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 95,
+        "freq": 1,
+        "context": "node scripts/test-toolkit.mjs"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 105,
         "freq": 1,
         "context": "node scripts/task.mjs list [active|done|ideas]"
       },
       {
         "file": "scripts/README.md",
-        "line": 98,
+        "line": 106,
         "freq": 1,
         "context": "node scripts/task.mjs add \"task description\" [--high]"
       },
       {
         "file": "scripts/README.md",
-        "line": 99,
+        "line": 107,
         "freq": 1,
         "context": "node scripts/task.mjs done \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 100,
+        "line": 108,
         "freq": 1,
         "context": "node scripts/task.mjs start \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 101,
+        "line": 109,
         "freq": 1,
         "context": "node scripts/task.mjs block \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 110,
+        "line": 118,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs           # print summary"
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       },
       {
         "file": "scripts/README.md",
-        "line": 120,
+        "line": 128,
         "freq": 1,
         "context": "node scripts/discord-post.mjs logs \"message\""
       },
       {
         "file": "scripts/README.md",
-        "line": 121,
+        "line": 129,
         "freq": 1,
         "context": "node scripts/discord-post.mjs tasks \"task update\""
       }
@@ -3618,6 +3630,12 @@
         "line": 30,
         "freq": 1,
         "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 92,
+        "freq": 1,
+        "context": "Run smoke tests on all toolkit scripts."
       }
     ],
     "cli": [
@@ -3707,19 +3725,19 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 94,
+        "line": 102,
         "freq": 1,
         "context": "Simple task management CLI."
       },
       {
         "file": "scripts/README.md",
-        "line": 128,
+        "line": 136,
         "freq": 1,
         "context": "| `arc` | Unified CLI wrapper |"
       },
       {
         "file": "scripts/README.md",
-        "line": 138,
+        "line": 147,
         "freq": 1,
         "context": "| `task.mjs` | Task management CLI |"
       }
@@ -4003,7 +4021,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 129,
+        "line": 137,
         "freq": 1,
         "context": "| `memory-index.mjs` | Build/search keyword index |"
       }
@@ -5171,7 +5189,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 132,
+        "line": 140,
         "freq": 2,
         "context": "| `note.mjs` | Quick note capture to daily log |"
       },
@@ -6017,7 +6035,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 105,
         "freq": 1,
         "context": "node scripts/task.mjs list [active|done|ideas]"
       }
@@ -6175,19 +6193,19 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 91,
+        "line": 99,
         "freq": 1,
         "context": "## Tasks"
       },
       {
         "file": "scripts/README.md",
-        "line": 107,
+        "line": 115,
         "freq": 1,
         "context": "Generate end-of-day summary (tasks, commits, notes)."
       },
       {
         "file": "scripts/README.md",
-        "line": 121,
+        "line": 129,
         "freq": 1,
         "context": "node scripts/discord-post.mjs tasks \"task update\""
       }
@@ -6315,13 +6333,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 120,
+        "line": 128,
         "freq": 1,
         "context": "node scripts/discord-post.mjs logs \"message\""
       },
       {
         "file": "scripts/README.md",
-        "line": 131,
+        "line": 139,
         "freq": 1,
         "context": "| `compress-logs.mjs` | Analyze old logs for compression |"
       }
@@ -6391,7 +6409,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 117,
+        "line": 125,
         "freq": 1,
         "context": "Post to Discord webhooks."
       }
@@ -6707,13 +6725,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 133,
+        "line": 141,
         "freq": 1,
         "context": "| `status.mjs` | Workspace status overview |"
       },
       {
         "file": "scripts/README.md",
-        "line": 135,
+        "line": 143,
         "freq": 1,
         "context": "| `auto-maintenance.mjs` | Automated workspace maintenance |"
       }
@@ -6859,13 +6877,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 98,
+        "line": 106,
         "freq": 2,
         "context": "node scripts/task.mjs add \"task description\" [--high]"
       },
       {
         "file": "scripts/README.md",
-        "line": 138,
+        "line": 147,
         "freq": 2,
         "context": "| `task.mjs` | Task management CLI |"
       },
@@ -6919,43 +6937,43 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 93,
+        "line": 101,
         "freq": 1,
         "context": "### task.mjs"
       },
       {
         "file": "scripts/README.md",
-        "line": 94,
+        "line": 102,
         "freq": 1,
         "context": "Simple task management CLI."
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 105,
         "freq": 1,
         "context": "node scripts/task.mjs list [active|done|ideas]"
       },
       {
         "file": "scripts/README.md",
-        "line": 99,
+        "line": 107,
         "freq": 1,
         "context": "node scripts/task.mjs done \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 100,
+        "line": 108,
         "freq": 1,
         "context": "node scripts/task.mjs start \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 101,
+        "line": 109,
         "freq": 1,
         "context": "node scripts/task.mjs block \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 121,
+        "line": 129,
         "freq": 1,
         "context": "node scripts/discord-post.mjs tasks \"task update\""
       }
@@ -7055,13 +7073,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 105,
         "freq": 1,
         "context": "node scripts/task.mjs list [active|done|ideas]"
       },
       {
         "file": "scripts/README.md",
-        "line": 99,
+        "line": 107,
         "freq": 1,
         "context": "node scripts/task.mjs done \"partial match\""
       }
@@ -7093,7 +7111,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 105,
         "freq": 1,
         "context": "node scripts/task.mjs list [active|done|ideas]"
       }
@@ -7543,7 +7561,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 134,
+        "line": 142,
         "freq": 1,
         "context": "| `heartbeat-check.mjs` | Heartbeat action items |"
       }
@@ -7693,7 +7711,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 129,
+        "line": 137,
         "freq": 1,
         "context": "| `memory-index.mjs` | Build/search keyword index |"
       }
@@ -7809,7 +7827,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 132,
+        "line": 140,
         "freq": 1,
         "context": "| `note.mjs` | Quick note capture to daily log |"
       }
@@ -8365,55 +8383,73 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 92,
+        "freq": 1,
+        "context": "Run smoke tests on all toolkit scripts."
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 95,
+        "freq": 1,
+        "context": "node scripts/test-toolkit.mjs"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 96,
+        "freq": 1,
+        "context": "./scripts/arc test"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 105,
         "freq": 1,
         "context": "node scripts/task.mjs list [active|done|ideas]"
       },
       {
         "file": "scripts/README.md",
-        "line": 98,
+        "line": 106,
         "freq": 1,
         "context": "node scripts/task.mjs add \"task description\" [--high]"
       },
       {
         "file": "scripts/README.md",
-        "line": 99,
+        "line": 107,
         "freq": 1,
         "context": "node scripts/task.mjs done \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 100,
+        "line": 108,
         "freq": 1,
         "context": "node scripts/task.mjs start \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 101,
+        "line": 109,
         "freq": 1,
         "context": "node scripts/task.mjs block \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 110,
+        "line": 118,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs           # print summary"
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       },
       {
         "file": "scripts/README.md",
-        "line": 120,
+        "line": 128,
         "freq": 1,
         "context": "node scripts/discord-post.mjs logs \"message\""
       },
       {
         "file": "scripts/README.md",
-        "line": 121,
+        "line": 129,
         "freq": 1,
         "context": "node scripts/discord-post.mjs tasks \"task update\""
       }
@@ -8459,7 +8495,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 128,
+        "line": 136,
         "freq": 1,
         "context": "| `arc` | Unified CLI wrapper |"
       }
@@ -8693,7 +8729,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 132,
+        "line": 140,
         "freq": 1,
         "context": "| `note.mjs` | Quick note capture to daily log |"
       }
@@ -8725,7 +8761,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 105,
         "freq": 1,
         "context": "node scripts/task.mjs list [active|done|ideas]"
       }
@@ -8763,13 +8799,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 94,
+        "line": 102,
         "freq": 1,
         "context": "Simple task management CLI."
       },
       {
         "file": "scripts/README.md",
-        "line": 138,
+        "line": 147,
         "freq": 1,
         "context": "| `task.mjs` | Task management CLI |"
       }
@@ -8825,25 +8861,25 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 104,
+        "line": 112,
         "freq": 1,
         "context": "## Summary"
       },
       {
         "file": "scripts/README.md",
-        "line": 107,
+        "line": 115,
         "freq": 1,
         "context": "Generate end-of-day summary (tasks, commits, notes)."
       },
       {
         "file": "scripts/README.md",
-        "line": 110,
+        "line": 118,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs           # print summary"
       },
       {
         "file": "scripts/README.md",
-        "line": 139,
+        "line": 148,
         "freq": 1,
         "context": "| `daily-summary.mjs` | End-of-day summary generator |"
       }
@@ -8941,7 +8977,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 132,
+        "line": 140,
         "freq": 1,
         "context": "| `note.mjs` | Quick note capture to daily log |"
       }
@@ -9029,7 +9065,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 135,
+        "line": 143,
         "freq": 1,
         "context": "| `auto-maintenance.mjs` | Automated workspace maintenance |"
       }
@@ -9131,7 +9167,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 140,
+        "line": 149,
         "freq": 1,
         "context": "| `discord-post.mjs` | Discord webhook posting |"
       }
@@ -9162,6 +9198,18 @@
         "line": 27,
         "freq": 1,
         "context": "### 🛠️ Arc CLI (Unified Toolkit)"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 92,
+        "freq": 1,
+        "context": "Run smoke tests on all toolkit scripts."
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
       }
     ],
     "2026-01-25": [
@@ -9235,7 +9283,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 126,
+        "line": 134,
         "freq": 1,
         "context": "| Script | Purpose |"
       }
@@ -9255,7 +9303,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 126,
+        "line": 134,
         "freq": 1,
         "context": "| Script | Purpose |"
       }
@@ -9281,7 +9329,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 127,
+        "line": 135,
         "freq": 1,
         "context": "|--------|---------|"
       }
@@ -9301,7 +9349,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 127,
+        "line": 135,
         "freq": 1,
         "context": "|--------|---------|"
       }
@@ -9333,7 +9381,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 128,
+        "line": 136,
         "freq": 1,
         "context": "| `arc` | Unified CLI wrapper |"
       }
@@ -9389,7 +9437,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 129,
+        "line": 137,
         "freq": 1,
         "context": "| `memory-index.mjs` | Build/search keyword index |"
       }
@@ -9667,139 +9715,157 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 93,
+        "line": 91,
         "freq": 1,
-        "context": "### task.mjs"
+        "context": "### test-toolkit.mjs"
       },
       {
         "file": "scripts/README.md",
-        "line": 97,
+        "line": 95,
         "freq": 1,
-        "context": "node scripts/task.mjs list [active|done|ideas]"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 98,
-        "freq": 1,
-        "context": "node scripts/task.mjs add \"task description\" [--high]"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 99,
-        "freq": 1,
-        "context": "node scripts/task.mjs done \"partial match\""
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 100,
-        "freq": 1,
-        "context": "node scripts/task.mjs start \"partial match\""
+        "context": "node scripts/test-toolkit.mjs"
       },
       {
         "file": "scripts/README.md",
         "line": 101,
         "freq": 1,
-        "context": "node scripts/task.mjs block \"partial match\""
+        "context": "### task.mjs"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "node scripts/task.mjs list [active|done|ideas]"
       },
       {
         "file": "scripts/README.md",
         "line": 106,
         "freq": 1,
+        "context": "node scripts/task.mjs add \"task description\" [--high]"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "node scripts/task.mjs done \"partial match\""
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 108,
+        "freq": 1,
+        "context": "node scripts/task.mjs start \"partial match\""
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 109,
+        "freq": 1,
+        "context": "node scripts/task.mjs block \"partial match\""
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 114,
+        "freq": 1,
         "context": "### daily-summary.mjs"
       },
       {
         "file": "scripts/README.md",
-        "line": 110,
+        "line": 118,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs           # print summary"
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       },
       {
         "file": "scripts/README.md",
-        "line": 116,
+        "line": 124,
         "freq": 1,
         "context": "### discord-post.mjs"
       },
       {
         "file": "scripts/README.md",
-        "line": 120,
+        "line": 128,
         "freq": 1,
         "context": "node scripts/discord-post.mjs logs \"message\""
       },
       {
         "file": "scripts/README.md",
-        "line": 121,
+        "line": 129,
         "freq": 1,
         "context": "node scripts/discord-post.mjs tasks \"task update\""
       },
       {
         "file": "scripts/README.md",
-        "line": 129,
+        "line": 137,
         "freq": 1,
         "context": "| `memory-index.mjs` | Build/search keyword index |"
       },
       {
         "file": "scripts/README.md",
-        "line": 131,
+        "line": 139,
         "freq": 1,
         "context": "| `compress-logs.mjs` | Analyze old logs for compression |"
       },
       {
         "file": "scripts/README.md",
-        "line": 132,
+        "line": 140,
         "freq": 1,
         "context": "| `note.mjs` | Quick note capture to daily log |"
       },
       {
         "file": "scripts/README.md",
-        "line": 133,
+        "line": 141,
         "freq": 1,
         "context": "| `status.mjs` | Workspace status overview |"
       },
       {
         "file": "scripts/README.md",
-        "line": 134,
+        "line": 142,
         "freq": 1,
         "context": "| `heartbeat-check.mjs` | Heartbeat action items |"
       },
       {
         "file": "scripts/README.md",
-        "line": 135,
+        "line": 143,
         "freq": 1,
         "context": "| `auto-maintenance.mjs` | Automated workspace maintenance |"
       },
       {
         "file": "scripts/README.md",
-        "line": 136,
+        "line": 144,
         "freq": 1,
         "context": "| `search-analytics.mjs` | Search pattern analysis |"
       },
       {
         "file": "scripts/README.md",
-        "line": 137,
+        "line": 145,
         "freq": 1,
         "context": "| `reflect.mjs` | Self-improvement prompts |"
       },
       {
         "file": "scripts/README.md",
-        "line": 138,
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 147,
         "freq": 1,
         "context": "| `task.mjs` | Task management CLI |"
       },
       {
         "file": "scripts/README.md",
-        "line": 139,
+        "line": 148,
         "freq": 1,
         "context": "| `daily-summary.mjs` | End-of-day summary generator |"
       },
       {
         "file": "scripts/README.md",
-        "line": 140,
+        "line": 149,
         "freq": 1,
         "context": "| `discord-post.mjs` | Discord webhook posting |"
       }
@@ -9825,7 +9891,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 133,
+        "line": 141,
         "freq": 1,
         "context": "| `status.mjs` | Workspace status overview |"
       }
@@ -9863,7 +9929,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 134,
+        "line": 142,
         "freq": 1,
         "context": "| `heartbeat-check.mjs` | Heartbeat action items |"
       }
@@ -9929,7 +9995,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 135,
+        "line": 143,
         "freq": 1,
         "context": "| `auto-maintenance.mjs` | Automated workspace maintenance |"
       }
@@ -9955,7 +10021,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 136,
+        "line": 144,
         "freq": 1,
         "context": "| `search-analytics.mjs` | Search pattern analysis |"
       }
@@ -9981,7 +10047,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 136,
+        "line": 144,
         "freq": 1,
         "context": "| `search-analytics.mjs` | Search pattern analysis |"
       }
@@ -9995,7 +10061,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 136,
+        "line": 144,
         "freq": 1,
         "context": "| `search-analytics.mjs` | Search pattern analysis |"
       }
@@ -10039,7 +10105,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 137,
+        "line": 145,
         "freq": 1,
         "context": "| `reflect.mjs` | Self-improvement prompts |"
       }
@@ -10059,7 +10125,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 137,
+        "line": 145,
         "freq": 1,
         "context": "| `reflect.mjs` | Self-improvement prompts |"
       }
@@ -10079,7 +10145,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 137,
+        "line": 145,
         "freq": 1,
         "context": "| `reflect.mjs` | Self-improvement prompts |"
       }
@@ -10099,25 +10165,25 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 106,
+        "line": 114,
         "freq": 1,
         "context": "### daily-summary.mjs"
       },
       {
         "file": "scripts/README.md",
-        "line": 110,
+        "line": 118,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs           # print summary"
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       },
       {
         "file": "scripts/README.md",
-        "line": 139,
+        "line": 148,
         "freq": 1,
         "context": "| `daily-summary.mjs` | End-of-day summary generator |"
       }
@@ -10137,13 +10203,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 107,
+        "line": 115,
         "freq": 1,
         "context": "Generate end-of-day summary (tasks, commits, notes)."
       },
       {
         "file": "scripts/README.md",
-        "line": 139,
+        "line": 148,
         "freq": 1,
         "context": "| `daily-summary.mjs` | End-of-day summary generator |"
       }
@@ -10193,7 +10259,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 131,
+        "line": 139,
         "freq": 1,
         "context": "| `compress-logs.mjs` | Analyze old logs for compression |"
       }
@@ -10231,7 +10297,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 132,
+        "line": 140,
         "freq": 1,
         "context": "| `note.mjs` | Quick note capture to daily log |"
       }
@@ -10257,7 +10323,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 131,
+        "line": 139,
         "freq": 1,
         "context": "| `compress-logs.mjs` | Analyze old logs for compression |"
       }
@@ -10277,25 +10343,25 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 116,
+        "line": 124,
         "freq": 1,
         "context": "### discord-post.mjs"
       },
       {
         "file": "scripts/README.md",
-        "line": 120,
+        "line": 128,
         "freq": 1,
         "context": "node scripts/discord-post.mjs logs \"message\""
       },
       {
         "file": "scripts/README.md",
-        "line": 121,
+        "line": 129,
         "freq": 1,
         "context": "node scripts/discord-post.mjs tasks \"task update\""
       },
       {
         "file": "scripts/README.md",
-        "line": 140,
+        "line": 149,
         "freq": 1,
         "context": "| `discord-post.mjs` | Discord webhook posting |"
       }
@@ -10309,7 +10375,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 140,
+        "line": 149,
         "freq": 1,
         "context": "| `discord-post.mjs` | Discord webhook posting |"
       }
@@ -10969,7 +11035,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 107,
+        "line": 115,
         "freq": 1,
         "context": "Generate end-of-day summary (tasks, commits, notes)."
       }
@@ -11291,7 +11357,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 124,
+        "line": 132,
         "freq": 1,
         "context": "## Files"
       }
@@ -11647,19 +11713,19 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 99,
+        "line": 107,
         "freq": 1,
         "context": "node scripts/task.mjs done \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 100,
+        "line": 108,
         "freq": 1,
         "context": "node scripts/task.mjs start \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 101,
+        "line": 109,
         "freq": 1,
         "context": "node scripts/task.mjs block \"partial match\""
       }
@@ -11747,7 +11813,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 130,
+        "line": 138,
         "freq": 1,
         "context": "| `msearch` | Shortcut for memory search |"
       }
@@ -11897,7 +11963,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 107,
+        "line": 115,
         "freq": 1,
         "context": "Generate end-of-day summary (tasks, commits, notes)."
       }
@@ -12051,7 +12117,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 131,
+        "line": 139,
         "freq": 1,
         "context": "| `compress-logs.mjs` | Analyze old logs for compression |"
       }
@@ -12083,13 +12149,13 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       },
       {
         "file": "scripts/README.md",
-        "line": 117,
+        "line": 125,
         "freq": 1,
         "context": "Post to Discord webhooks."
       }
@@ -12131,7 +12197,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 139,
+        "line": 148,
         "freq": 1,
         "context": "| `daily-summary.mjs` | End-of-day summary generator |"
       }
@@ -12369,7 +12435,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 98,
+        "line": 106,
         "freq": 1,
         "context": "node scripts/task.mjs add \"task description\" [--high]"
       }
@@ -12835,7 +12901,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 134,
+        "line": 142,
         "freq": 1,
         "context": "| `heartbeat-check.mjs` | Heartbeat action items |"
       }
@@ -13225,7 +13291,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 129,
+        "line": 137,
         "freq": 1,
         "context": "| `memory-index.mjs` | Build/search keyword index |"
       }
@@ -13641,19 +13707,25 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 96,
+        "line": 94,
         "freq": 1,
         "context": "```bash"
       },
       {
         "file": "scripts/README.md",
-        "line": 109,
+        "line": 104,
         "freq": 1,
         "context": "```bash"
       },
       {
         "file": "scripts/README.md",
-        "line": 119,
+        "line": 117,
+        "freq": 1,
+        "context": "```bash"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 127,
         "freq": 1,
         "context": "```bash"
       }
@@ -13859,7 +13931,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 100,
+        "line": 108,
         "freq": 1,
         "context": "node scripts/task.mjs start \"partial match\""
       }
@@ -14026,6 +14098,12 @@
         "line": 20,
         "freq": 1,
         "context": "4. Run `schema.sql` to set up tables"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 92,
+        "freq": 1,
+        "context": "Run smoke tests on all toolkit scripts."
       }
     ],
     "during": [
@@ -14115,7 +14193,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       }
@@ -15125,7 +15203,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 131,
+        "line": 139,
         "freq": 1,
         "context": "| `compress-logs.mjs` | Analyze old logs for compression |"
       }
@@ -15257,7 +15335,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 121,
+        "line": 129,
         "freq": 1,
         "context": "node scripts/discord-post.mjs tasks \"task update\""
       }
@@ -16197,7 +16275,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 120,
+        "line": 128,
         "freq": 1,
         "context": "node scripts/discord-post.mjs logs \"message\""
       }
@@ -18257,7 +18335,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 94,
+        "line": 102,
         "freq": 1,
         "context": "Simple task management CLI."
       }
@@ -18989,7 +19067,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 134,
+        "line": 142,
         "freq": 1,
         "context": "| `heartbeat-check.mjs` | Heartbeat action items |"
       }
@@ -19024,6 +19102,18 @@
         "line": 94,
         "freq": 1,
         "context": "3. [ ] create Stripe account → share API keys (test + live)"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 96,
+        "freq": 1,
+        "context": "./scripts/arc test"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
       }
     ],
     "confirm": [
@@ -19419,7 +19509,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 130,
+        "line": 138,
         "freq": 1,
         "context": "| `msearch` | Shortcut for memory search |"
       }
@@ -19465,7 +19555,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 135,
+        "line": 143,
         "freq": 1,
         "context": "| `auto-maintenance.mjs` | Automated workspace maintenance |"
       }
@@ -19503,7 +19593,7 @@
       },
       {
         "file": "scripts/README.md",
-        "line": 107,
+        "line": 115,
         "freq": 1,
         "context": "Generate end-of-day summary (tasks, commits, notes)."
       }
@@ -19516,10 +19606,38 @@
         "context": "Generate reflection prompts for self-improvement."
       }
     ],
+    "test-toolkit": [
+      {
+        "file": "scripts/README.md",
+        "line": 91,
+        "freq": 1,
+        "context": "### test-toolkit.mjs"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 95,
+        "freq": 1,
+        "context": "node scripts/test-toolkit.mjs"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
+      }
+    ],
+    "smoke": [
+      {
+        "file": "scripts/README.md",
+        "line": 92,
+        "freq": 1,
+        "context": "Run smoke tests on all toolkit scripts."
+      }
+    ],
     "description": [
       {
         "file": "scripts/README.md",
-        "line": 98,
+        "line": 106,
         "freq": 1,
         "context": "node scripts/task.mjs add \"task description\" [--high]"
       }
@@ -19527,7 +19645,7 @@
     "--high": [
       {
         "file": "scripts/README.md",
-        "line": 98,
+        "line": 106,
         "freq": 1,
         "context": "node scripts/task.mjs add \"task description\" [--high]"
       }
@@ -19535,19 +19653,19 @@
     "match": [
       {
         "file": "scripts/README.md",
-        "line": 99,
+        "line": 107,
         "freq": 1,
         "context": "node scripts/task.mjs done \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 100,
+        "line": 108,
         "freq": 1,
         "context": "node scripts/task.mjs start \"partial match\""
       },
       {
         "file": "scripts/README.md",
-        "line": 101,
+        "line": 109,
         "freq": 1,
         "context": "node scripts/task.mjs block \"partial match\""
       }
@@ -19555,7 +19673,7 @@
     "block": [
       {
         "file": "scripts/README.md",
-        "line": 101,
+        "line": 109,
         "freq": 1,
         "context": "node scripts/task.mjs block \"partial match\""
       }
@@ -19563,13 +19681,13 @@
     "print": [
       {
         "file": "scripts/README.md",
-        "line": 110,
+        "line": 118,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs           # print summary"
       },
       {
         "file": "scripts/README.md",
-        "line": 111,
+        "line": 119,
         "freq": 1,
         "context": "node scripts/daily-summary.mjs --post    # print and post to Discord"
       }
@@ -19577,65 +19695,73 @@
     "communication": [
       {
         "file": "scripts/README.md",
-        "line": 114,
+        "line": 122,
         "freq": 1,
         "context": "## Communication"
+      }
+    ],
+    "suite": [
+      {
+        "file": "scripts/README.md",
+        "line": 146,
+        "freq": 1,
+        "context": "| `test-toolkit.mjs` | Toolkit test suite |"
       }
     ]
   },
   "files": {
     "MEMORY.md": {
       "lines": 122,
-      "updated": "2026-01-25T11:38:16.097Z"
+      "updated": "2026-01-25T11:38:52.752Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:38:16.099Z"
+      "updated": "2026-01-25T11:38:52.754Z"
     },
     "memory/2026-01-25.md": {
       "lines": 74,
-      "updated": "2026-01-25T11:38:16.099Z"
+      "updated": "2026-01-25T11:38:52.754Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:38:16.100Z"
+      "updated": "2026-01-25T11:38:52.755Z"
     },
     "tasks/active.md": {
       "lines": 22,
-      "updated": "2026-01-25T11:38:16.100Z"
+      "updated": "2026-01-25T11:38:52.755Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:38:16.101Z"
+      "updated": "2026-01-25T11:38:52.755Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:38:16.101Z"
+      "updated": "2026-01-25T11:38:52.756Z"
     },
     "QUICKREF.md": {
       "lines": 52,
-      "updated": "2026-01-25T11:38:16.101Z"
+      "updated": "2026-01-25T11:38:52.756Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T11:38:16.101Z"
+      "updated": "2026-01-25T11:38:52.756Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:38:16.103Z"
+      "updated": "2026-01-25T11:38:52.758Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:38:16.103Z"
+      "updated": "2026-01-25T11:38:52.758Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:38:16.104Z"
+      "updated": "2026-01-25T11:38:52.758Z"
     },
     "scripts/README.md": {
-      "lines": 141,
-      "updated": "2026-01-25T11:38:16.104Z"
+      "lines": 150,
+      "updated": "2026-01-25T11:38:52.759Z"
     }
   },
-  "built": "2026-01-25T11:38:16.096Z"
+  "built": "2026-01-25T11:38:52.751Z"
 }
