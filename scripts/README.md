@@ -62,6 +62,14 @@ Consolidated heartbeat checks. Returns HEARTBEAT_OK or action items.
 node scripts/heartbeat-check.mjs
 ```
 
+### auto-maintenance.mjs
+Automated workspace maintenance (index rebuild, auto-commit routine files).
+
+```bash
+node scripts/auto-maintenance.mjs
+./scripts/arc maintain
+```
+
 ## Tasks
 
 ### task.mjs
@@ -106,6 +114,7 @@ node scripts/discord-post.mjs tasks "task update"
 | `note.mjs` | Quick note capture to daily log |
 | `status.mjs` | Workspace status overview |
 | `heartbeat-check.mjs` | Heartbeat action items |
+| `auto-maintenance.mjs` | Automated workspace maintenance |
 | `task.mjs` | Task management CLI |
 | `daily-summary.mjs` | End-of-day summary generator |
 | `discord-post.mjs` | Discord webhook posting |
