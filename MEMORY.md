@@ -86,6 +86,10 @@
 - sub-agent spawns may partially succeed despite gateway errors
 - memory_search tool needs openai/google api key — built local keyword index instead
 - vercel deployments show container metrics not host metrics
+- small composable tools > monolithic systems
+- synonym expansion significantly improves search relevance
+- auto-maintenance keeps workspace healthy without manual intervention
+- continuous work mode: keep going until told otherwise
 
 ---
 
