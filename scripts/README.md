@@ -21,6 +21,15 @@ node scripts/compress-logs.mjs 7   # logs older than 7 days
 node scripts/compress-logs.mjs 0   # all logs
 ```
 
+### note.mjs
+Quick note capture to today's memory log.
+
+```bash
+node scripts/note.mjs "quick thought"
+node scripts/note.mjs --section "Learnings" "something I learned"
+echo "piped note" | node scripts/note.mjs
+```
+
 ## Status & Health
 
 ### status.mjs
@@ -67,6 +76,7 @@ node scripts/discord-post.mjs tasks "task update"
 | `memory-index.mjs` | Build/search keyword index |
 | `msearch` | Shortcut for memory search |
 | `compress-logs.mjs` | Analyze old logs for compression |
+| `note.mjs` | Quick note capture to daily log |
 | `status.mjs` | Workspace status overview |
 | `heartbeat-check.mjs` | Heartbeat action items |
 | `task.mjs` | Task management CLI |
