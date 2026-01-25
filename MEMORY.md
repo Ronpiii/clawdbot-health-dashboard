@@ -91,7 +91,8 @@
 
 ## quick recall
 - **arc CLI:** `./scripts/arc <cmd>` — unified tool interface
-- **search:** `./scripts/arc search <query>` — 673 terms with synonyms
+- **search:** `./scripts/arc search <query>` — 1054 terms with synonyms
+- **goals:** see GOALS.md for long-term tracking
 - **status:** `./scripts/arc status` — workspace health
 - **note:** `./scripts/arc note "text"` — quick capture
 - **tasks:** `./scripts/arc task list` — task management
