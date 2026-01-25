@@ -2,6 +2,22 @@
 
 Utility scripts for workspace management.
 
+## Quick Start
+
+Use the unified `arc` CLI:
+
+```bash
+./scripts/arc search "query"     # search memory
+./scripts/arc status             # workspace status
+./scripts/arc check              # heartbeat checks
+./scripts/arc note "text"        # quick note
+./scripts/arc task list          # list tasks
+./scripts/arc summary            # daily summary
+./scripts/arc help               # full help
+```
+
+---
+
 ## Memory
 
 ### memory-index.mjs
@@ -83,6 +99,7 @@ node scripts/discord-post.mjs tasks "task update"
 
 | Script | Purpose |
 |--------|---------|
+| `arc` | Unified CLI wrapper |
 | `memory-index.mjs` | Build/search keyword index |
 | `msearch` | Shortcut for memory search |
 | `compress-logs.mjs` | Analyze old logs for compression |
