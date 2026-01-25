@@ -22,20 +22,22 @@
 ## projects
 
 ### context memory api (priority)
-- **status:** MVP code complete, waiting on infra from ron
+- **status:** fully documented, waiting on infra from ron
 - **location:** projects/context-memory/
 - **what:** persistent memory store for AI agents — namespaces, entries, semantic search
 - **stack:** node/fastify + postgres/pgvector + openai embeddings
 - **components:**
   - api/ — full REST API (routes, services, validation, tests)
   - cli/ — `ctx` command-line tool
-  - docs/ — comprehensive API documentation
-  - landing/ — marketing page (index.html)
+  - sdk-python/ — python SDK (ctxmem package)
+  - docs/ — SELFHOST.md, api.md, comprehensive docs
+  - landing/ — marketing page with honest positioning
+  - marketing/ — HN post, launch tweets
 - **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery
-- **monetization:** free/pro/team tiers ($0/$12/$49)
-- **blocking:** domain, railway account, stripe account, openai key confirmation
+- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option
+- **blocking:** domain, railway account, stripe account
 - **timeline:** deploy-ready once infra available
-- **docs:** PLAN.md has full spec, docs/README.md has API reference
+- **positioning:** honest — "for when local files aren't enough" (multi-agent, cross-device, semantic search)
 
 ### clawdbot health dashboard
 - **status:** deployed but local preferred
@@ -76,7 +78,7 @@
 - **done:** tasks/done.md  
 - **ideas:** tasks/ideas.md
 - key active: context memory MVP (waiting infra)
-- backlog: discord slash commands, email/calendar integration, python SDK
+- backlog: discord slash commands, email/calendar integration, scheduled daily summary
 
 ---
 
