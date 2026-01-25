@@ -1277,7 +1277,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 116,
         "freq": 1,
         "context": "| task.mjs | task management + discord |"
       },
@@ -1507,7 +1507,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 122,
         "freq": 1,
         "context": "---"
       },
@@ -2718,6 +2718,12 @@
         "line": 109,
         "freq": 1,
         "context": "| status.mjs | workspace health overview |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 115,
+        "freq": 1,
+        "context": "| goals.mjs | goal status display |"
       },
       {
         "file": "memory/2026-01-24.md",
@@ -5527,7 +5533,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 116,
+        "line": 117,
         "freq": 2,
         "context": "| note.mjs | quick note capture |"
       },
@@ -7293,7 +7299,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 116,
         "freq": 2,
         "context": "| task.mjs | task management + discord |"
       },
@@ -8285,7 +8291,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 116,
+        "line": 117,
         "freq": 1,
         "context": "| note.mjs | quick note capture |"
       },
@@ -9244,6 +9250,12 @@
         "context": "# GOALS.md - Long-term Goals"
       },
       {
+        "file": "MEMORY.md",
+        "line": 115,
+        "freq": 1,
+        "context": "| goals.mjs | goal status display |"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 76,
         "freq": 1,
@@ -9377,7 +9389,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 116,
+        "line": 117,
         "freq": 1,
         "context": "| note.mjs | quick note capture |"
       },
@@ -9471,7 +9483,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 116,
         "freq": 1,
         "context": "| task.mjs | task management + discord |"
       },
@@ -9545,7 +9557,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 117,
+        "line": 118,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -9899,7 +9911,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 119,
+        "line": 120,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -10007,7 +10019,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 124,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -10293,29 +10305,35 @@
         "file": "MEMORY.md",
         "line": 115,
         "freq": 1,
-        "context": "| task.mjs | task management + discord |"
+        "context": "| goals.mjs | goal status display |"
       },
       {
         "file": "MEMORY.md",
         "line": 116,
         "freq": 1,
-        "context": "| note.mjs | quick note capture |"
+        "context": "| task.mjs | task management + discord |"
       },
       {
         "file": "MEMORY.md",
         "line": 117,
         "freq": 1,
-        "context": "| daily-summary.mjs | end-of-day summary |"
+        "context": "| note.mjs | quick note capture |"
       },
       {
         "file": "MEMORY.md",
         "line": 118,
         "freq": 1,
-        "context": "| compress-logs.mjs | log compression |"
+        "context": "| daily-summary.mjs | end-of-day summary |"
       },
       {
         "file": "MEMORY.md",
         "line": 119,
+        "freq": 1,
+        "context": "| compress-logs.mjs | log compression |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 120,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -11164,10 +11182,56 @@
         "context": "| `test-toolkit.mjs` | Toolkit test suite |"
       }
     ],
+    "goal": [
+      {
+        "file": "MEMORY.md",
+        "line": 115,
+        "freq": 1,
+        "context": "| goals.mjs | goal status display |"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- better goal progress tracking"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 212,
+        "freq": 1,
+        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 100,
+        "freq": 1,
+        "context": "Show goal status from GOALS.md."
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 155,
+        "freq": 1,
+        "context": "| `goals.mjs` | Goal status display |"
+      }
+    ],
+    "display": [
+      {
+        "file": "MEMORY.md",
+        "line": 115,
+        "freq": 1,
+        "context": "| goals.mjs | goal status display |"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 155,
+        "freq": 1,
+        "context": "| `goals.mjs` | Goal status display |"
+      }
+    ],
     "daily-summary": [
       {
         "file": "MEMORY.md",
-        "line": 117,
+        "line": 118,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -11205,7 +11269,7 @@
     "end-of-day": [
       {
         "file": "MEMORY.md",
-        "line": 117,
+        "line": 118,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -11231,7 +11295,7 @@
     "compress-logs": [
       {
         "file": "MEMORY.md",
-        "line": 118,
+        "line": 119,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -11281,7 +11345,7 @@
     "log": [
       {
         "file": "MEMORY.md",
-        "line": 118,
+        "line": 119,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -11319,7 +11383,7 @@
     "compression": [
       {
         "file": "MEMORY.md",
-        "line": 118,
+        "line": 119,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -11345,7 +11409,7 @@
     "discord-post": [
       {
         "file": "MEMORY.md",
-        "line": 119,
+        "line": 120,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -11383,7 +11447,7 @@
     "posting": [
       {
         "file": "MEMORY.md",
-        "line": 119,
+        "line": 120,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -11397,7 +11461,7 @@
     "last": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 124,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -11411,7 +11475,7 @@
     "updated": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 124,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -15902,32 +15966,6 @@
         "line": 117,
         "freq": 1,
         "context": "4. **compounds** — more usage = better understanding of what matters"
-      }
-    ],
-    "goal": [
-      {
-        "file": "GOALS.md",
-        "line": 46,
-        "freq": 1,
-        "context": "- better goal progress tracking"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 212,
-        "freq": 1,
-        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 100,
-        "freq": 1,
-        "context": "Show goal status from GOALS.md."
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 155,
-        "freq": 1,
-        "context": "| `goals.mjs` | Goal status display |"
       }
     ],
     "update": [
@@ -21131,73 +21169,65 @@
         "freq": 1,
         "context": "## Communication"
       }
-    ],
-    "display": [
-      {
-        "file": "scripts/README.md",
-        "line": 155,
-        "freq": 1,
-        "context": "| `goals.mjs` | Goal status display |"
-      }
     ]
   },
   "files": {
     "MEMORY.md": {
-      "lines": 124,
-      "updated": "2026-01-25T11:45:03.094Z"
+      "lines": 125,
+      "updated": "2026-01-25T11:45:15.256Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:45:03.095Z"
+      "updated": "2026-01-25T11:45:15.258Z"
     },
     "memory/2026-01-25.md": {
       "lines": 82,
-      "updated": "2026-01-25T11:45:03.096Z"
+      "updated": "2026-01-25T11:45:15.258Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:45:03.097Z"
+      "updated": "2026-01-25T11:45:15.259Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T11:45:03.100Z"
+      "updated": "2026-01-25T11:45:15.259Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:45:03.100Z"
+      "updated": "2026-01-25T11:45:15.260Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:45:03.101Z"
+      "updated": "2026-01-25T11:45:15.260Z"
     },
     "QUICKREF.md": {
       "lines": 52,
-      "updated": "2026-01-25T11:45:03.101Z"
+      "updated": "2026-01-25T11:45:15.260Z"
     },
     "GOALS.md": {
       "lines": 66,
-      "updated": "2026-01-25T11:45:03.101Z"
+      "updated": "2026-01-25T11:45:15.260Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T11:45:03.101Z"
+      "updated": "2026-01-25T11:45:15.260Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:45:03.103Z"
+      "updated": "2026-01-25T11:45:15.262Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:45:03.103Z"
+      "updated": "2026-01-25T11:45:15.262Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:45:03.104Z"
+      "updated": "2026-01-25T11:45:15.263Z"
     },
     "scripts/README.md": {
       "lines": 159,
-      "updated": "2026-01-25T11:45:03.104Z"
+      "updated": "2026-01-25T11:45:15.263Z"
     }
   },
-  "built": "2026-01-25T11:45:03.092Z"
+  "built": "2026-01-25T11:45:15.255Z"
 }
