@@ -13,6 +13,7 @@
 
 ## Backlog
 
+- [~] continuous self-learning loop
 - [ ] discord voice bot — blocked by UDP (needs different server)
 - [ ] slash commands for discord (/status, /remind, /search)
 - [ ] auto-threading in #dev for long conversations
