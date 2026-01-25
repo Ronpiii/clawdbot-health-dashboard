@@ -21,8 +21,13 @@
 - 11 tests, all passing
 
 ### Context Memory API (ongoing)
-**status:** 🔄 blocked
+**status:** 🔄 blocked (code ready)
 **objective:** launch persistent memory service for AI workflows
+**completed:**
+- python SDK (ctxmem)
+- self-hosting docs
+- API reference
+- honest positioning + marketing
 **blockers:** waiting on infra (domain, railway, stripe)
 **next:** deploy once infra available
 
