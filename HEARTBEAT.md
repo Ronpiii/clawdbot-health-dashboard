@@ -1,6 +1,9 @@
 # HEARTBEAT.md
 
-## quick status
+## quick check
+run `node scripts/heartbeat-check.mjs` — returns HEARTBEAT_OK or action items
+
+## detailed status
 run `node scripts/status.mjs` for workspace overview (git, tasks, memory)
 
 ## cross-post check
