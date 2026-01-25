@@ -16,6 +16,21 @@ import { join } from 'path';
 const WORKSPACE = '/data02/virt137413/clawd';
 const TASKS_DIR = join(WORKSPACE, 'tasks');
 
+// Discord webhook for task updates
+const TASKS_WEBHOOK = 'https://discord.com/api/webhooks/1464653854716067841/QpNGZv94kh94S4vL83xOpnCQNkt_GE4bLckCl8fI5YF4j4eSrLxgY4U_VugiK2FE_Il9';
+
+async function postToDiscord(message) {
+  try {
+    await fetch(TASKS_WEBHOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: 'Arc Tasks', content: message })
+    });
+  } catch (err) {
+    // silent fail - don't break task flow
+  }
+}
+
 const FILES = {
   active: join(TASKS_DIR, 'active.md'),
   done: join(TASKS_DIR, 'done.md'),
@@ -139,6 +154,13 @@ async function updateStatus(pattern, newStatus) {
   await writeFile(FILES.active, lines.join('\n'));
   console.log(`updated: ${newLine}`);
   
+  // post status changes to Discord
+  if (newStatus === '~') {
+    await postToDiscord(`🔄 started: ${task.text}`);
+  } else if (newStatus === '!') {
+    await postToDiscord(`⚠️ blocked: ${task.text}`);
+  }
+  
   // if done, move to done.md
   if (newStatus === 'x') {
     const doneContent = await readFile(FILES.done, 'utf-8');
@@ -170,6 +192,9 @@ async function updateStatus(pattern, newStatus) {
     await writeFile(FILES.active, lines.join('\n'));
     
     console.log(`moved to done.md`);
+    
+    // post to Discord
+    await postToDiscord(`✅ completed: ${task.text}`);
   }
 }
 
