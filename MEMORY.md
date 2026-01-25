@@ -15,6 +15,7 @@
 - prefers concrete specs, not hand-wavy summaries
 - systems-oriented thinker
 - trusts me to make decisions about ventok infrastructure
+- **continuous work mode** — keep going until told otherwise, don't wait for permission
 
 ---
 

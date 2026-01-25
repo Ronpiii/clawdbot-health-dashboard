@@ -35,6 +35,12 @@
 - **#tasks relay**: `https://discord.com/api/webhooks/1464653854716067841/QpNGZv94kh94S4vL83xOpnCQNkt_GE4bLckCl8fI5YF4j4eSrLxgY4U_VugiK2FE_Il9`
   - task updates from any context
 
+### Quick Post Script
+```bash
+node scripts/discord-post.mjs logs "message here"
+node scripts/discord-post.mjs tasks "task update"
+```
+
 ---
 
 ## Why Separate?
