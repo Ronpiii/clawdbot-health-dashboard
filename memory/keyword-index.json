@@ -26,6 +26,12 @@
     ],
     "673": [
       {
+        "file": "MEMORY.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **search:** `./scripts/arc search <query>` — 673 terms with synonyms"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 33,
         "freq": 1,
@@ -314,6 +320,12 @@
     ],
     "arc": [
       {
+        "file": "MEMORY.md",
+        "line": 93,
+        "freq": 2,
+        "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 27,
         "freq": 2,
@@ -324,6 +336,48 @@
         "line": 4,
         "freq": 1,
         "context": "- **name:** arc"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **search:** `./scripts/arc search <query>` — 673 terms with synonyms"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 95,
+        "freq": 1,
+        "context": "- **status:** `./scripts/arc status` — workspace health"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- **tasks:** `./scripts/arc task list` — task management"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 98,
+        "freq": 1,
+        "context": "- **summary:** `./scripts/arc summary` — daily summary"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 99,
+        "freq": 1,
+        "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 105,
+        "freq": 1,
+        "context": "| arc | unified CLI wrapper |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -529,9 +583,15 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 100,
         "freq": 1,
-        "context": "- **discord webhook:** TOOLS.md has urls"
+        "context": "- **discord:** TOOLS.md has webhook urls"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 110,
+        "freq": 1,
+        "context": "| task.mjs | task management + discord |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -681,7 +741,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 98,
+        "line": 116,
         "freq": 1,
         "context": "---"
       },
@@ -1106,12 +1166,6 @@
         "context": "- **continuous work mode** — keep going until told otherwise, don't wait for permission"
       },
       {
-        "file": "MEMORY.md",
-        "line": 95,
-        "freq": 1,
-        "context": "- **tasks:** tasks/active.md for current work"
-      },
-      {
         "file": "memory/2026-01-25.md",
         "line": 3,
         "freq": 1,
@@ -1534,6 +1588,12 @@
     ],
     "status": [
       {
+        "file": "MEMORY.md",
+        "line": 95,
+        "freq": 2,
+        "context": "- **status:** `./scripts/arc status` — workspace health"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 25,
         "freq": 2,
@@ -1562,6 +1622,12 @@
         "line": 57,
         "freq": 1,
         "context": "- **status:** active"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 107,
+        "freq": 1,
+        "context": "| status.mjs | workspace health overview |"
       },
       {
         "file": "memory/2026-01-24.md",
@@ -1899,15 +1965,21 @@
     "search": [
       {
         "file": "MEMORY.md",
+        "line": 94,
+        "freq": 2,
+        "context": "- **search:** `./scripts/arc search <query>` — 673 terms with synonyms"
+      },
+      {
+        "file": "MEMORY.md",
         "line": 27,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
       {
         "file": "MEMORY.md",
-        "line": 93,
+        "line": 106,
         "freq": 1,
-        "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
+        "context": "| memory-index.mjs | keyword search with synonyms |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -2002,12 +2074,6 @@
         "line": 67,
         "freq": 1,
         "context": "- **node:** v24.13.0"
-      },
-      {
-        "file": "MEMORY.md",
-        "line": 94,
-        "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
       },
       {
         "file": "tasks/ideas.md",
@@ -2282,6 +2348,18 @@
         "context": "- cli/ — `ctx` command-line tool"
       },
       {
+        "file": "MEMORY.md",
+        "line": 93,
+        "freq": 1,
+        "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 105,
+        "freq": 1,
+        "context": "| arc | unified CLI wrapper |"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 29,
         "freq": 1,
@@ -2358,6 +2436,12 @@
         "line": 87,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 93,
+        "freq": 1,
+        "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -2506,12 +2590,6 @@
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
       {
-        "file": "MEMORY.md",
-        "line": 94,
-        "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
-      },
-      {
         "file": "memory/2026-01-25.md",
         "line": 18,
         "freq": 1,
@@ -2562,6 +2640,12 @@
         "line": 87,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 102,
+        "freq": 1,
+        "context": "## toolkit built 2026-01-25"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -3108,6 +3192,18 @@
         "context": "### clawdbot health dashboard"
       },
       {
+        "file": "MEMORY.md",
+        "line": 95,
+        "freq": 1,
+        "context": "- **status:** `./scripts/arc status` — workspace health"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 107,
+        "freq": 1,
+        "context": "| status.mjs | workspace health overview |"
+      },
+      {
         "file": "memory/2026-01-24.md",
         "line": 5,
         "freq": 1,
@@ -3226,12 +3322,6 @@
         "line": 87,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
-      },
-      {
-        "file": "MEMORY.md",
-        "line": 93,
-        "freq": 1,
-        "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
       },
       {
         "file": "memory/2026-01-24.md",
@@ -3535,6 +3625,18 @@
       }
     ],
     "note": [
+      {
+        "file": "MEMORY.md",
+        "line": 96,
+        "freq": 2,
+        "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 111,
+        "freq": 2,
+        "context": "| note.mjs | quick note capture |"
+      },
       {
         "file": "memory/2026-01-25.md",
         "line": 40,
@@ -4154,12 +4256,6 @@
         "context": "- **blocker:** UDP not available on current server"
       },
       {
-        "file": "MEMORY.md",
-        "line": 95,
-        "freq": 1,
-        "context": "- **tasks:** tasks/active.md for current work"
-      },
-      {
         "file": "tasks/README.md",
         "line": 7,
         "freq": 1,
@@ -4286,12 +4382,6 @@
         "context": "- key active: context memory MVP (waiting infra)"
       },
       {
-        "file": "MEMORY.md",
-        "line": 95,
-        "freq": 1,
-        "context": "- **tasks:** tasks/active.md for current work"
-      },
-      {
         "file": "tasks/README.md",
         "line": 7,
         "freq": 1,
@@ -4337,12 +4427,6 @@
     "tasks": [
       {
         "file": "MEMORY.md",
-        "line": 95,
-        "freq": 2,
-        "context": "- **tasks:** tasks/active.md for current work"
-      },
-      {
-        "file": "MEMORY.md",
         "line": 59,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
@@ -4364,6 +4448,12 @@
         "line": 77,
         "freq": 1,
         "context": "- **ideas:** tasks/ideas.md"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -4603,9 +4693,9 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 100,
         "freq": 1,
-        "context": "- **discord webhook:** TOOLS.md has urls"
+        "context": "- **discord:** TOOLS.md has webhook urls"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -4698,6 +4788,18 @@
         "line": 68,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 95,
+        "freq": 1,
+        "context": "- **status:** `./scripts/arc status` — workspace health"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 107,
+        "freq": 1,
+        "context": "| status.mjs | workspace health overview |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -4827,6 +4929,18 @@
       }
     ],
     "task": [
+      {
+        "file": "MEMORY.md",
+        "line": 97,
+        "freq": 2,
+        "context": "- **tasks:** `./scripts/arc task list` — task management"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 110,
+        "freq": 2,
+        "context": "| task.mjs | task management + discord |"
+      },
       {
         "file": "memory/2026-01-25.md",
         "line": 39,
@@ -5278,6 +5392,12 @@
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
+        "file": "MEMORY.md",
+        "line": 108,
+        "freq": 1,
+        "context": "| heartbeat-check.mjs | heartbeat automation |"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 26,
         "freq": 1,
@@ -5411,9 +5531,9 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 93,
+        "line": 106,
         "freq": 1,
-        "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
+        "context": "| memory-index.mjs | keyword search with synonyms |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -5466,6 +5586,18 @@
         "context": "## quick recall"
       },
       {
+        "file": "MEMORY.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 111,
+        "freq": 1,
+        "context": "| note.mjs | quick note capture |"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 34,
         "freq": 1,
@@ -5492,26 +5624,6 @@
         "context": "## quick recall"
       }
     ],
-    "msearch": [
-      {
-        "file": "MEMORY.md",
-        "line": 93,
-        "freq": 2,
-        "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 21,
-        "freq": 1,
-        "context": "- ✓ added msearch wrapper script"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 34,
-        "freq": 1,
-        "context": "- `scripts/msearch` — quick wrapper for memory search"
-      }
-    ],
     "scripts": [
       {
         "file": "memory/2026-01-25.md",
@@ -5523,13 +5635,43 @@
         "file": "MEMORY.md",
         "line": 93,
         "freq": 1,
-        "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
+        "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface"
       },
       {
         "file": "MEMORY.md",
         "line": 94,
         "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+        "context": "- **search:** `./scripts/arc search <query>` — 673 terms with synonyms"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 95,
+        "freq": 1,
+        "context": "- **status:** `./scripts/arc status` — workspace health"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- **tasks:** `./scripts/arc task list` — task management"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 98,
+        "freq": 1,
+        "context": "- **summary:** `./scripts/arc summary` — daily summary"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 99,
+        "freq": 1,
+        "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -5616,28 +5758,448 @@
         "context": "- scripts created: 10"
       }
     ],
-    "query": [
+    "cmd": [
       {
         "file": "MEMORY.md",
         "line": 93,
         "freq": 1,
-        "context": "- **msearch:** `./scripts/msearch <query>` — local keyword search"
+        "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface"
       }
     ],
-    "rebuild": [
+    "unified": [
+      {
+        "file": "MEMORY.md",
+        "line": 93,
+        "freq": 1,
+        "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 105,
+        "freq": 1,
+        "context": "| arc | unified CLI wrapper |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- `scripts/arc` — unified CLI wrapper for all tools"
+      }
+    ],
+    "interface": [
+      {
+        "file": "MEMORY.md",
+        "line": 93,
+        "freq": 1,
+        "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface"
+      }
+    ],
+    "query": [
       {
         "file": "MEMORY.md",
         "line": 94,
         "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+        "context": "- **search:** `./scripts/arc search <query>` — 673 terms with synonyms"
+      }
+    ],
+    "terms": [
+      {
+        "file": "MEMORY.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **search:** `./scripts/arc search <query>` — 673 terms with synonyms"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- `scripts/memory-index.mjs` — local keyword search (673 terms, synonym expansion)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- tightened partial matching (70% overlap, 4+ char terms)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- memory index: 673 terms from 10 files"
+      }
+    ],
+    "synonyms": [
+      {
+        "file": "MEMORY.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **search:** `./scripts/arc search <query>` — 673 terms with synonyms"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 106,
+        "freq": 1,
+        "context": "| memory-index.mjs | keyword search with synonyms |"
+      }
+    ],
+    "text": [
+      {
+        "file": "MEMORY.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
+      }
+    ],
+    "capture": [
+      {
+        "file": "MEMORY.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 111,
+        "freq": 1,
+        "context": "| note.mjs | quick note capture |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- daily logs = raw capture (ephemeral)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- `scripts/note.mjs` — quick note capture to daily log"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:27] testing note capture script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
+      }
+    ],
+    "list": [
+      {
+        "file": "MEMORY.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- **tasks:** `./scripts/arc task list` — task management"
+      }
+    ],
+    "management": [
+      {
+        "file": "MEMORY.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- **tasks:** `./scripts/arc task list` — task management"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 110,
+        "freq": 1,
+        "context": "| task.mjs | task management + discord |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- `scripts/task.mjs` — task management with Discord notifications"
+      }
+    ],
+    "summary": [
+      {
+        "file": "MEMORY.md",
+        "line": 98,
+        "freq": 3,
+        "context": "- **summary:** `./scripts/arc summary` — daily summary"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 112,
+        "freq": 1,
+        "context": "| daily-summary.mjs | end-of-day summary |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- `scripts/daily-summary.mjs` — end-of-day summary generator"
+      },
+      {
+        "file": "tasks/ideas.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- scheduled reports (daily summary to #logs)"
+      }
+    ],
+    "daily": [
+      {
+        "file": "MEMORY.md",
+        "line": 98,
+        "freq": 1,
+        "context": "- **summary:** `./scripts/arc summary` — daily summary"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- migrated valuable info from 2026-01-24.md daily log"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- daily logs = raw capture (ephemeral)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- `scripts/compress-logs.mjs` — extract key info from old daily logs"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- `scripts/note.mjs` — quick note capture to daily log"
+      },
+      {
+        "file": "tasks/ideas.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- scheduled reports (daily summary to #logs)"
+      }
+    ],
+    "maintain": [
+      {
+        "file": "MEMORY.md",
+        "line": 99,
+        "freq": 2,
+        "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
+      }
+    ],
+    "auto-maintenance": [
+      {
+        "file": "MEMORY.md",
+        "line": 99,
+        "freq": 1,
+        "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 109,
+        "freq": 1,
+        "context": "| auto-maintenance.mjs | routine maintenance |"
+      }
+    ],
+    "webhook": [
+      {
+        "file": "MEMORY.md",
+        "line": 100,
+        "freq": 1,
+        "context": "- **discord:** TOOLS.md has webhook urls"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 114,
+        "freq": 1,
+        "context": "| discord-post.mjs | webhook posting |"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- [x] configure cross-posting webhook"
+      },
+      {
+        "file": "tasks/done.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- [x] #logs webhook for cross-posting"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- Webhook integrations"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- [ ] Stripe webhook secret"
+      }
+    ],
+    "urls": [
+      {
+        "file": "MEMORY.md",
+        "line": 100,
+        "freq": 1,
+        "context": "- **discord:** TOOLS.md has webhook urls"
+      }
+    ],
+    "toolkit": [
+      {
+        "file": "MEMORY.md",
+        "line": 102,
+        "freq": 1,
+        "context": "## toolkit built 2026-01-25"
+      }
+    ],
+    "2026-01-25": [
+      {
+        "file": "MEMORY.md",
+        "line": 102,
+        "freq": 1,
+        "context": "## toolkit built 2026-01-25"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 118,
+        "freq": 1,
+        "context": "*last updated: 2026-01-25*"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-01-25"
+      },
+      {
+        "file": "tasks/done.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## 2026-01-25"
+      }
+    ],
+    "script": [
+      {
+        "file": "MEMORY.md",
+        "line": 103,
+        "freq": 1,
+        "context": "| script | purpose |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- ✓ added msearch wrapper script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- ✓ created workspace status script (scripts/status.mjs)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- [11:27] testing note capture script"
+      },
+      {
+        "file": "tasks/done.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- [x] create heartbeat-check script"
+      },
+      {
+        "file": "tasks/done.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- [x] create workspace status script"
+      }
+    ],
+    "purpose": [
+      {
+        "file": "MEMORY.md",
+        "line": 103,
+        "freq": 1,
+        "context": "| script | purpose |"
+      }
+    ],
+    "--------": [
+      {
+        "file": "MEMORY.md",
+        "line": 104,
+        "freq": 1,
+        "context": "|--------|---------|"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 29,
+        "freq": 1,
+        "context": "|-----------|--------|-----|"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 43,
+        "freq": 1,
+        "context": "|------|-------|--------|"
+      }
+    ],
+    "---------": [
+      {
+        "file": "MEMORY.md",
+        "line": 104,
+        "freq": 1,
+        "context": "|--------|---------|"
+      }
+    ],
+    "wrapper": [
+      {
+        "file": "MEMORY.md",
+        "line": 105,
+        "freq": 1,
+        "context": "| arc | unified CLI wrapper |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- ✓ added msearch wrapper script"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- `scripts/arc` — unified CLI wrapper for all tools"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- `scripts/msearch` — quick wrapper for memory search"
       }
     ],
     "memory-index": [
       {
         "file": "MEMORY.md",
-        "line": 94,
+        "line": 106,
         "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+        "context": "| memory-index.mjs | keyword search with synonyms |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -5655,9 +6217,57 @@
     "mjs": [
       {
         "file": "MEMORY.md",
-        "line": 94,
+        "line": 106,
         "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+        "context": "| memory-index.mjs | keyword search with synonyms |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 107,
+        "freq": 1,
+        "context": "| status.mjs | workspace health overview |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 108,
+        "freq": 1,
+        "context": "| heartbeat-check.mjs | heartbeat automation |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 109,
+        "freq": 1,
+        "context": "| auto-maintenance.mjs | routine maintenance |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 110,
+        "freq": 1,
+        "context": "| task.mjs | task management + discord |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 111,
+        "freq": 1,
+        "context": "| note.mjs | quick note capture |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 112,
+        "freq": 1,
+        "context": "| daily-summary.mjs | end-of-day summary |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 113,
+        "freq": 1,
+        "context": "| compress-logs.mjs | log compression |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 114,
+        "freq": 1,
+        "context": "| discord-post.mjs | webhook posting |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -5720,76 +6330,178 @@
         "context": "- `scripts/daily-summary.mjs` — end-of-day summary generator"
       }
     ],
-    "build": [
+    "overview": [
       {
         "file": "MEMORY.md",
-        "line": 94,
+        "line": 107,
         "freq": 1,
-        "context": "- **rebuild index:** `node scripts/memory-index.mjs build`"
+        "context": "| status.mjs | workspace health overview |"
       },
       {
-        "file": "tasks/done.md",
-        "line": 9,
+        "file": "memory/2026-01-25.md",
+        "line": 35,
         "freq": 1,
-        "context": "- [x] build local keyword index for memory"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 115,
-        "freq": 1,
-        "context": "2. **small surface area** — can build fast, iterate fast"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 120,
-        "freq": 1,
-        "context": "let's build it."
+        "context": "- `scripts/status.mjs` — workspace health overview"
       }
     ],
-    "webhook": [
+    "heartbeat-check": [
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 108,
         "freq": 1,
-        "context": "- **discord webhook:** TOOLS.md has urls"
+        "context": "| heartbeat-check.mjs | heartbeat automation |"
       },
       {
-        "file": "tasks/active.md",
-        "line": 7,
+        "file": "memory/2026-01-25.md",
+        "line": 38,
         "freq": 1,
-        "context": "- [x] configure cross-posting webhook"
+        "context": "- `scripts/heartbeat-check.mjs` — consolidated heartbeat checks"
       },
       {
         "file": "tasks/done.md",
-        "line": 19,
+        "line": 6,
         "freq": 1,
-        "context": "- [x] #logs webhook for cross-posting"
+        "context": "- [x] create heartbeat-check script"
+      }
+    ],
+    "automation": [
+      {
+        "file": "MEMORY.md",
+        "line": 108,
+        "freq": 1,
+        "context": "| heartbeat-check.mjs | heartbeat automation |"
       },
       {
-        "file": "monetization-plan.md",
+        "file": "memory/2026-01-25.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- task completion automation"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- integrating tools (task → discord) creates useful automation"
+      }
+    ],
+    "routine": [
+      {
+        "file": "MEMORY.md",
+        "line": 109,
+        "freq": 1,
+        "context": "| auto-maintenance.mjs | routine maintenance |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
+      }
+    ],
+    "maintenance": [
+      {
+        "file": "MEMORY.md",
+        "line": 109,
+        "freq": 1,
+        "context": "| auto-maintenance.mjs | routine maintenance |"
+      }
+    ],
+    "daily-summary": [
+      {
+        "file": "MEMORY.md",
+        "line": 112,
+        "freq": 1,
+        "context": "| daily-summary.mjs | end-of-day summary |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- `scripts/daily-summary.mjs` — end-of-day summary generator"
+      }
+    ],
+    "end-of-day": [
+      {
+        "file": "MEMORY.md",
+        "line": 112,
+        "freq": 1,
+        "context": "| daily-summary.mjs | end-of-day summary |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- `scripts/daily-summary.mjs` — end-of-day summary generator"
+      }
+    ],
+    "compress-logs": [
+      {
+        "file": "MEMORY.md",
+        "line": 113,
+        "freq": 1,
+        "context": "| compress-logs.mjs | log compression |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- `scripts/compress-logs.mjs` — extract key info from old daily logs"
+      }
+    ],
+    "log": [
+      {
+        "file": "MEMORY.md",
+        "line": 113,
+        "freq": 1,
+        "context": "| compress-logs.mjs | log compression |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- migrated valuable info from 2026-01-24.md daily log"
+      },
+      {
+        "file": "memory/2026-01-25.md",
         "line": 40,
         "freq": 1,
-        "context": "- Webhook integrations"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 37,
-        "freq": 1,
-        "context": "- [ ] Stripe webhook secret"
+        "context": "- `scripts/note.mjs` — quick note capture to daily log"
       }
     ],
-    "urls": [
+    "compression": [
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 113,
         "freq": 1,
-        "context": "- **discord webhook:** TOOLS.md has urls"
+        "context": "| compress-logs.mjs | log compression |"
+      }
+    ],
+    "discord-post": [
+      {
+        "file": "MEMORY.md",
+        "line": 114,
+        "freq": 1,
+        "context": "| discord-post.mjs | webhook posting |"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- `scripts/discord-post.mjs` — post to Discord webhooks"
+      }
+    ],
+    "posting": [
+      {
+        "file": "MEMORY.md",
+        "line": 114,
+        "freq": 1,
+        "context": "| discord-post.mjs | webhook posting |"
       }
     ],
     "last": [
       {
         "file": "MEMORY.md",
-        "line": 100,
+        "line": 118,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       }
@@ -5797,7 +6509,7 @@
     "updated": [
       {
         "file": "MEMORY.md",
-        "line": 100,
+        "line": 118,
         "freq": 1,
         "context": "*last updated: 2026-01-25*"
       },
@@ -5812,26 +6524,6 @@
         "line": 26,
         "freq": 1,
         "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
-      }
-    ],
-    "2026-01-25": [
-      {
-        "file": "MEMORY.md",
-        "line": 100,
-        "freq": 1,
-        "context": "*last updated: 2026-01-25*"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 1,
-        "freq": 1,
-        "context": "# 2026-01-25"
-      },
-      {
-        "file": "tasks/done.md",
-        "line": 3,
-        "freq": 1,
-        "context": "## 2026-01-25"
       }
     ],
     "implemented": [
@@ -6680,52 +7372,6 @@
         "context": "- `scripts/compress-logs.mjs` — extract key info from old daily logs"
       }
     ],
-    "daily": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- migrated valuable info from 2026-01-24.md daily log"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- daily logs = raw capture (ephemeral)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 36,
-        "freq": 1,
-        "context": "- `scripts/compress-logs.mjs` — extract key info from old daily logs"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 40,
-        "freq": 1,
-        "context": "- `scripts/note.mjs` — quick note capture to daily log"
-      },
-      {
-        "file": "tasks/ideas.md",
-        "line": 10,
-        "freq": 1,
-        "context": "- scheduled reports (daily summary to #logs)"
-      }
-    ],
-    "log": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- migrated valuable info from 2026-01-24.md daily log"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 40,
-        "freq": 1,
-        "context": "- `scripts/note.mjs` — quick note capture to daily log"
-      }
-    ],
     "identified": [
       {
         "file": "memory/2026-01-25.md",
@@ -6770,32 +7416,6 @@
         "line": 12,
         "freq": 1,
         "context": "- daily logs = raw capture (ephemeral)"
-      }
-    ],
-    "capture": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- daily logs = raw capture (ephemeral)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 40,
-        "freq": 1,
-        "context": "- `scripts/note.mjs` — quick note capture to daily log"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 58,
-        "freq": 1,
-        "context": "- [11:27] testing note capture script"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 61,
-        "freq": 1,
-        "context": "- [11:28] quick note capture makes memory logging easier"
       }
     ],
     "ephemeral": [
@@ -6924,32 +7544,6 @@
         "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
       }
     ],
-    "terms": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 19,
-        "freq": 1,
-        "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 33,
-        "freq": 1,
-        "context": "- `scripts/memory-index.mjs` — local keyword search (673 terms, synonym expansion)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 46,
-        "freq": 1,
-        "context": "- tightened partial matching (70% overlap, 4+ char terms)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 69,
-        "freq": 1,
-        "context": "- memory index: 673 terms from 10 files"
-      }
-    ],
     "works": [
       {
         "file": "memory/2026-01-25.md",
@@ -7018,62 +7612,18 @@
         "context": "- added synonym expansion (db→database, api→endpoint, etc.)"
       }
     ],
-    "wrapper": [
+    "msearch": [
       {
         "file": "memory/2026-01-25.md",
         "line": 21,
         "freq": 1,
         "context": "- ✓ added msearch wrapper script"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 32,
-        "freq": 1,
-        "context": "- `scripts/arc` — unified CLI wrapper for all tools"
       },
       {
         "file": "memory/2026-01-25.md",
         "line": 34,
         "freq": 1,
         "context": "- `scripts/msearch` — quick wrapper for memory search"
-      }
-    ],
-    "script": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 21,
-        "freq": 1,
-        "context": "- ✓ added msearch wrapper script"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 25,
-        "freq": 1,
-        "context": "- ✓ created workspace status script (scripts/status.mjs)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 26,
-        "freq": 1,
-        "context": "- ✓ updated HEARTBEAT.md with practical checks and status script"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 58,
-        "freq": 1,
-        "context": "- [11:27] testing note capture script"
-      },
-      {
-        "file": "tasks/done.md",
-        "line": 6,
-        "freq": 1,
-        "context": "- [x] create heartbeat-check script"
-      },
-      {
-        "file": "tasks/done.md",
-        "line": 7,
-        "freq": 1,
-        "context": "- [x] create workspace status script"
       }
     ],
     "rewrite": [
@@ -7204,14 +7754,6 @@
         "context": "## scripts created today"
       }
     ],
-    "unified": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 32,
-        "freq": 1,
-        "context": "- `scripts/arc` — unified CLI wrapper for all tools"
-      }
-    ],
     "synonym": [
       {
         "file": "memory/2026-01-25.md",
@@ -7252,22 +7794,6 @@
         "context": "- synonym expansion significantly improves search relevance"
       }
     ],
-    "overview": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 35,
-        "freq": 1,
-        "context": "- `scripts/status.mjs` — workspace health overview"
-      }
-    ],
-    "compress-logs": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 36,
-        "freq": 1,
-        "context": "- `scripts/compress-logs.mjs` — extract key info from old daily logs"
-      }
-    ],
     "extract": [
       {
         "file": "memory/2026-01-25.md",
@@ -7290,14 +7816,6 @@
         "context": "- auto-summarization of old entries"
       }
     ],
-    "discord-post": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 37,
-        "freq": 1,
-        "context": "- `scripts/discord-post.mjs` — post to Discord webhooks"
-      }
-    ],
     "post": [
       {
         "file": "memory/2026-01-25.md",
@@ -7312,20 +7830,6 @@
         "context": "2. Post to discord #tasks for visibility"
       }
     ],
-    "heartbeat-check": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 38,
-        "freq": 1,
-        "context": "- `scripts/heartbeat-check.mjs` — consolidated heartbeat checks"
-      },
-      {
-        "file": "tasks/done.md",
-        "line": 6,
-        "freq": 1,
-        "context": "- [x] create heartbeat-check script"
-      }
-    ],
     "consolidated": [
       {
         "file": "memory/2026-01-25.md",
@@ -7334,50 +7838,12 @@
         "context": "- `scripts/heartbeat-check.mjs` — consolidated heartbeat checks"
       }
     ],
-    "management": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 39,
-        "freq": 1,
-        "context": "- `scripts/task.mjs` — task management with Discord notifications"
-      }
-    ],
     "notifications": [
       {
         "file": "memory/2026-01-25.md",
         "line": 39,
         "freq": 1,
         "context": "- `scripts/task.mjs` — task management with Discord notifications"
-      }
-    ],
-    "daily-summary": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 41,
-        "freq": 1,
-        "context": "- `scripts/daily-summary.mjs` — end-of-day summary generator"
-      }
-    ],
-    "end-of-day": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 41,
-        "freq": 1,
-        "context": "- `scripts/daily-summary.mjs` — end-of-day summary generator"
-      }
-    ],
-    "summary": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 41,
-        "freq": 1,
-        "context": "- `scripts/daily-summary.mjs` — end-of-day summary generator"
-      },
-      {
-        "file": "tasks/ideas.md",
-        "line": 10,
-        "freq": 1,
-        "context": "- scheduled reports (daily summary to #logs)"
       }
     ],
     "generator": [
@@ -7618,29 +8084,7 @@
         "context": "- task completion automation"
       }
     ],
-    "automation": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 53,
-        "freq": 1,
-        "context": "- task completion automation"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 64,
-        "freq": 1,
-        "context": "- integrating tools (task → discord) creates useful automation"
-      }
-    ],
     "utc": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 56,
-        "freq": 1,
-        "context": "- 00:xx UTC - routine heartbeat, no telegram activity to cross-post"
-      }
-    ],
-    "routine": [
       {
         "file": "memory/2026-01-25.md",
         "line": 56,
@@ -8126,6 +8570,26 @@
         "line": 8,
         "freq": 1,
         "context": "- [x] restructure MEMORY.md"
+      }
+    ],
+    "build": [
+      {
+        "file": "tasks/done.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- [x] build local keyword index for memory"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 115,
+        "freq": 1,
+        "context": "2. **small surface area** — can build fast, iterate fast"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 120,
+        "freq": 1,
+        "context": "let's build it."
       }
     ],
     "improve": [
@@ -9254,20 +9718,6 @@
         "line": 79,
         "freq": 1,
         "context": "|-----|-----------|"
-      }
-    ],
-    "--------": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 29,
-        "freq": 1,
-        "context": "|-----------|--------|-----|"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 43,
-        "freq": 1,
-        "context": "|------|-------|--------|"
       }
     ],
     "-----": [
@@ -10425,45 +10875,45 @@
   },
   "files": {
     "MEMORY.md": {
-      "lines": 101,
-      "updated": "2026-01-25T11:31:48.606Z"
+      "lines": 119,
+      "updated": "2026-01-25T11:34:03.945Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:31:48.607Z"
+      "updated": "2026-01-25T11:34:03.947Z"
     },
     "memory/2026-01-25.md": {
       "lines": 71,
-      "updated": "2026-01-25T11:31:48.607Z"
+      "updated": "2026-01-25T11:34:03.947Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:31:48.608Z"
+      "updated": "2026-01-25T11:34:03.948Z"
     },
     "tasks/active.md": {
       "lines": 22,
-      "updated": "2026-01-25T11:31:48.609Z"
+      "updated": "2026-01-25T11:34:03.949Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:31:48.609Z"
+      "updated": "2026-01-25T11:34:03.949Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:31:48.609Z"
+      "updated": "2026-01-25T11:34:03.949Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:31:48.609Z"
+      "updated": "2026-01-25T11:34:03.949Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:31:48.609Z"
+      "updated": "2026-01-25T11:34:03.949Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:31:48.610Z"
+      "updated": "2026-01-25T11:34:03.950Z"
     }
   },
-  "built": "2026-01-25T11:31:48.605Z"
+  "built": "2026-01-25T11:34:03.944Z"
 }
