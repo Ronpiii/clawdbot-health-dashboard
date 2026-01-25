@@ -9,7 +9,7 @@
 
 ## In Progress
 
-- [~] context memory — waiting on infra from ron (domain, railway, stripe)
+- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook
 
 ## Backlog
 
