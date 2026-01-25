@@ -68,6 +68,11 @@ const tests = [
     name: 'arc help',
     cmd: './scripts/arc help',
     expect: /unified CLI/
+  },
+  {
+    name: 'goals.mjs',
+    cmd: 'node scripts/goals.mjs',
+    expect: /goal status/
   }
 ];
 
