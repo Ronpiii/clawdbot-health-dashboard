@@ -54,12 +54,14 @@
         "line": 33,
         "freq": 1,
         "context": "- `scripts/memory-index.mjs` — local keyword search (1037 terms, 13 files, synonyms)"
-      },
+      }
+    ],
+    "1043": [
       {
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1037 terms from 13 files"
+        "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       }
     ],
     "3000": [
@@ -257,7 +259,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1037 terms from 13 files"
+        "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       },
       {
         "file": "tasks/active.md",
@@ -1975,7 +1977,7 @@
         "file": "memory/2026-01-25.md",
         "line": 79,
         "freq": 1,
-        "context": "- work logged: 70+ items"
+        "context": "- work logged: 77+ items"
       },
       {
         "file": "QUICKREF.md",
@@ -3993,7 +3995,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1037 terms from 13 files"
+        "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       },
       {
         "file": "tasks/done.md",
@@ -8677,7 +8679,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1037 terms from 13 files"
+        "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       },
       {
         "file": "AGENTS.md",
@@ -11599,7 +11601,7 @@
         "file": "memory/2026-01-25.md",
         "line": 77,
         "freq": 1,
-        "context": "- memory index: 1037 terms from 13 files"
+        "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       },
       {
         "file": "QUICKREF.md",
@@ -12271,7 +12273,7 @@
         "file": "memory/2026-01-25.md",
         "line": 75,
         "freq": 1,
-        "context": "- commits: 58+"
+        "context": "- commits: 66+"
       },
       {
         "file": "scripts/README.md",
@@ -12536,6 +12538,12 @@
         "line": 68,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 77,
+        "freq": 1,
+        "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       }
     ],
     "expansion": [
@@ -13196,12 +13204,26 @@
         "context": "## session stats"
       }
     ],
+    "groups": [
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 77,
+        "freq": 1,
+        "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 122,
+        "freq": 1,
+        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
+      }
+    ],
     "logged": [
       {
         "file": "memory/2026-01-25.md",
         "line": 79,
         "freq": 1,
-        "context": "- work logged: 70+ items"
+        "context": "- work logged: 77+ items"
       }
     ],
     "items": [
@@ -13209,7 +13231,7 @@
         "file": "memory/2026-01-25.md",
         "line": 79,
         "freq": 1,
-        "context": "- work logged: 70+ items"
+        "context": "- work logged: 77+ items"
       },
       {
         "file": "QUICKREF.md",
@@ -16566,14 +16588,6 @@
         "line": 210,
         "freq": 2,
         "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
-      }
-    ],
-    "groups": [
-      {
-        "file": "AGENTS.md",
-        "line": 122,
-        "freq": 1,
-        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
       }
     ],
     "participant": [
@@ -20042,56 +20056,56 @@
   "files": {
     "MEMORY.md": {
       "lines": 123,
-      "updated": "2026-01-25T11:41:59.321Z"
+      "updated": "2026-01-25T11:42:09.079Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:41:59.326Z"
+      "updated": "2026-01-25T11:42:09.080Z"
     },
     "memory/2026-01-25.md": {
       "lines": 82,
-      "updated": "2026-01-25T11:41:59.326Z"
+      "updated": "2026-01-25T11:42:09.081Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:41:59.327Z"
+      "updated": "2026-01-25T11:42:09.082Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T11:41:59.328Z"
+      "updated": "2026-01-25T11:42:09.082Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:41:59.328Z"
+      "updated": "2026-01-25T11:42:09.082Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:41:59.328Z"
+      "updated": "2026-01-25T11:42:09.082Z"
     },
     "QUICKREF.md": {
       "lines": 52,
-      "updated": "2026-01-25T11:41:59.328Z"
+      "updated": "2026-01-25T11:42:09.082Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T11:41:59.328Z"
+      "updated": "2026-01-25T11:42:09.083Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:41:59.330Z"
+      "updated": "2026-01-25T11:42:09.084Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:41:59.330Z"
+      "updated": "2026-01-25T11:42:09.084Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:41:59.331Z"
+      "updated": "2026-01-25T11:42:09.085Z"
     },
     "scripts/README.md": {
       "lines": 150,
-      "updated": "2026-01-25T11:41:59.331Z"
+      "updated": "2026-01-25T11:42:09.085Z"
     }
   },
-  "built": "2026-01-25T11:41:59.320Z"
+  "built": "2026-01-25T11:42:09.078Z"
 }
