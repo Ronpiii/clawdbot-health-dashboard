@@ -80,6 +80,14 @@ node scripts/search-analytics.mjs
 ./scripts/arc analytics
 ```
 
+### reflect.mjs
+Generate reflection prompts for self-improvement.
+
+```bash
+node scripts/reflect.mjs [days]
+./scripts/arc reflect 7
+```
+
 ## Tasks
 
 ### task.mjs
@@ -126,6 +134,7 @@ node scripts/discord-post.mjs tasks "task update"
 | `heartbeat-check.mjs` | Heartbeat action items |
 | `auto-maintenance.mjs` | Automated workspace maintenance |
 | `search-analytics.mjs` | Search pattern analysis |
+| `reflect.mjs` | Self-improvement prompts |
 | `task.mjs` | Task management CLI |
 | `daily-summary.mjs` | End-of-day summary generator |
 | `discord-post.mjs` | Discord webhook posting |
