@@ -59,6 +59,16 @@ node scripts/task.mjs start "partial match"
 node scripts/task.mjs block "partial match"
 ```
 
+## Summary
+
+### daily-summary.mjs
+Generate end-of-day summary (tasks, commits, notes).
+
+```bash
+node scripts/daily-summary.mjs           # print summary
+node scripts/daily-summary.mjs --post    # print and post to Discord
+```
+
 ## Communication
 
 ### discord-post.mjs
@@ -80,4 +90,5 @@ node scripts/discord-post.mjs tasks "task update"
 | `status.mjs` | Workspace status overview |
 | `heartbeat-check.mjs` | Heartbeat action items |
 | `task.mjs` | Task management CLI |
+| `daily-summary.mjs` | End-of-day summary generator |
 | `discord-post.mjs` | Discord webhook posting |
