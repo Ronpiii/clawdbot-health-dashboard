@@ -2,6 +2,10 @@
 
 ## 2026-01-25
 
+- [x] create heartbeat-check script
+- [x] create workspace status script
+- [x] restructure MEMORY.md
+- [x] build local keyword index for memory
 - [x] improve memory search relevance
 
 ## 2026-01-24
