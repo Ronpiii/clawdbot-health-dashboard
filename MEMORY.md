@@ -110,6 +110,7 @@
 | auto-maintenance.mjs | routine maintenance |
 | search-analytics.mjs | search pattern analysis |
 | reflect.mjs | self-improvement prompts |
+| test-toolkit.mjs | toolkit test suite |
 | task.mjs | task management + discord |
 | note.mjs | quick note capture |
 | daily-summary.mjs | end-of-day summary |
