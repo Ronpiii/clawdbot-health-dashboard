@@ -23,6 +23,7 @@ const TASKS_DIR = join(WORKSPACE, 'tasks');
 // additional files to index (relative to workspace)
 const EXTRA_FILES = [
   'QUICKREF.md',
+  'GOALS.md',
   'AGENTS.md',
   'monetization-plan.md',
   'projects/context-memory/PLAN.md',

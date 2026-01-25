@@ -64,6 +64,14 @@
         "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       }
     ],
+    "1044": [
+      {
+        "file": "GOALS.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- 1044+ terms indexed from 13 files"
+      }
+    ],
     "3000": [
       {
         "file": "MEMORY.md",
@@ -328,6 +336,36 @@
         "context": "3. Read MEMORY.md (main session)"
       },
       {
+        "file": "GOALS.md",
+        "line": 5,
+        "freq": 1,
+        "context": "### Memory System (2026-01-25)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### Context Memory API (ongoing)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**objective:** launch persistent memory service for AI workflows"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- track search patterns to identify memory gaps"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- [x] memory optimization - local keyword index"
+      },
+      {
         "file": "AGENTS.md",
         "line": 14,
         "freq": 1,
@@ -534,6 +572,12 @@
         "context": "| MEMORY.md | long-term memory |"
       },
       {
+        "file": "GOALS.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# GOALS.md - Long-term Goals"
+      },
+      {
         "file": "AGENTS.md",
         "line": 82,
         "freq": 1,
@@ -576,6 +620,12 @@
         "line": 14,
         "freq": 1,
         "context": "- [x] bootstrap arc identity (SOUL.md, USER.md, MEMORY.md)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- [x] bootstrap identity (SOUL.md, USER.md)"
       }
     ],
     "name": [
@@ -784,6 +834,12 @@
         "line": 51,
         "freq": 1,
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- 13 scripts via `arc` CLI"
       },
       {
         "file": "AGENTS.md",
@@ -1104,6 +1160,12 @@
         "line": 15,
         "freq": 1,
         "context": "- [x] telegram pairing"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- [x] telegram + discord pairing"
       }
     ],
     "timezone": [
@@ -1282,6 +1344,18 @@
         "context": "## Discord"
       },
       {
+        "file": "GOALS.md",
+        "line": 33,
+        "freq": 1,
+        "context": "### Discord Integration"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- [x] telegram + discord pairing"
+      },
+      {
         "file": "AGENTS.md",
         "line": 86,
         "freq": 1,
@@ -1376,6 +1450,12 @@
         "line": 12,
         "freq": 1,
         "context": "## 2026-01-24"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 58,
+        "freq": 1,
+        "context": "### 2026-01-24"
       }
     ],
     "---": [
@@ -1418,6 +1498,24 @@
       {
         "file": "MEMORY.md",
         "line": 120,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 29,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 48,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 63,
         "freq": 1,
         "context": "---"
       },
@@ -1736,6 +1834,18 @@
         "line": 15,
         "freq": 1,
         "context": "- prefers concrete specs, not hand-wavy summaries"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- daily summaries, reflection prompts"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- scheduled daily summaries (blocked by cron gateway)"
       },
       {
         "file": "AGENTS.md",
@@ -2276,6 +2386,12 @@
         "context": "- [ ] context memory: self-hosted option"
       },
       {
+        "file": "GOALS.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### Context Memory API (ongoing)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 14,
         "freq": 1,
@@ -2432,6 +2548,12 @@
         "line": 8,
         "freq": 1,
         "context": "- [x] context memory MVP — api, cli, docs, marketing"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### Context Memory API (ongoing)"
       },
       {
         "file": "AGENTS.md",
@@ -2630,6 +2752,30 @@
         "context": "./scripts/arc status           # workspace health"
       },
       {
+        "file": "GOALS.md",
+        "line": 6,
+        "freq": 1,
+        "context": "**status:** ✅ achieved"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 15,
+        "freq": 1,
+        "context": "**status:** ✅ achieved"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**status:** 🔄 blocked"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- slash commands (/status, /remind, /search)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 32,
         "freq": 1,
@@ -2678,6 +2824,12 @@
         "line": 8,
         "freq": 1,
         "context": "- [x] context memory MVP — api, cli, docs, marketing"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- [x] health dashboard MVP"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -2732,6 +2884,12 @@
         "line": 12,
         "freq": 1,
         "context": "- [~] context memory — waiting on infra from ron (domain, railway, stripe)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 26,
+        "freq": 1,
+        "context": "**blockers:** waiting on infra (domain, railway, stripe)"
       }
     ],
     "infra": [
@@ -2764,6 +2922,18 @@
         "line": 12,
         "freq": 1,
         "context": "- [~] context memory — waiting on infra from ron (domain, railway, stripe)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 26,
+        "freq": 1,
+        "context": "**blockers:** waiting on infra (domain, railway, stripe)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 27,
+        "freq": 1,
+        "context": "**next:** deploy once infra available"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -2824,6 +2994,12 @@
         "line": 3,
         "freq": 1,
         "context": "Persistent task tracking for Ventok."
+      },
+      {
+        "file": "GOALS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**objective:** launch persistent memory service for AI workflows"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -3088,6 +3264,30 @@
         "line": 10,
         "freq": 1,
         "context": "- [x] improve memory search relevance"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- search analytics tracking"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- slash commands (/status, /remind, /search)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- track search patterns to identify memory gaps"
       },
       {
         "file": "AGENTS.md",
@@ -3664,6 +3864,24 @@
         "context": "- all tests passing: 11/11"
       },
       {
+        "file": "GOALS.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- all tests passing"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- 11 tests, all passing"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- [x] testing - test suite with 11 tests"
+      },
+      {
         "file": "scripts/README.md",
         "line": 92,
         "freq": 1,
@@ -3712,6 +3930,12 @@
         "line": 3,
         "freq": 1,
         "context": "## Arc CLI"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- 13 scripts via `arc` CLI"
       },
       {
         "file": "AGENTS.md",
@@ -3866,6 +4090,12 @@
         "context": "- notion integration for docs/knowledge base"
       },
       {
+        "file": "GOALS.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- notion for docs"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 83,
         "freq": 1,
@@ -3884,6 +4114,12 @@
         "line": 23,
         "freq": 1,
         "context": "- ✓ comprehensive MEMORY.md rewrite — now includes all projects, tasks, infra, learnings"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 16,
+        "freq": 1,
+        "context": "**objective:** create comprehensive automation tools"
       }
     ],
     "documentation": [
@@ -3898,6 +4134,12 @@
         "line": 46,
         "freq": 1,
         "context": "- `scripts/README.md` — documentation for all scripts"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- [x] documentation - QUICKREF.md, scripts/README.md"
       },
       {
         "file": "AGENTS.md",
@@ -4002,6 +4244,12 @@
         "line": 9,
         "freq": 1,
         "context": "- [x] build local keyword index for memory"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- [x] memory optimization - local keyword index"
       },
       {
         "file": "AGENTS.md",
@@ -4276,6 +4524,12 @@
         "context": "- [~] context memory — waiting on infra from ron (domain, railway, stripe)"
       },
       {
+        "file": "GOALS.md",
+        "line": 26,
+        "freq": 1,
+        "context": "**blockers:** waiting on infra (domain, railway, stripe)"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 52,
         "freq": 1,
@@ -4300,6 +4554,12 @@
         "line": 12,
         "freq": 1,
         "context": "- [~] context memory — waiting on infra from ron (domain, railway, stripe)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 26,
+        "freq": 1,
+        "context": "**blockers:** waiting on infra (domain, railway, stripe)"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -4394,6 +4654,12 @@
         "line": 12,
         "freq": 1,
         "context": "- [~] context memory — waiting on infra from ron (domain, railway, stripe)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 26,
+        "freq": 1,
+        "context": "**blockers:** waiting on infra (domain, railway, stripe)"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -4532,6 +4798,12 @@
         "context": "- **timeline:** deploy-ready once infra available"
       },
       {
+        "file": "GOALS.md",
+        "line": 27,
+        "freq": 1,
+        "context": "**next:** deploy once infra available"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 86,
         "freq": 1,
@@ -4562,6 +4834,12 @@
         "line": 53,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 27,
+        "freq": 1,
+        "context": "**next:** deploy once infra available"
       }
     ],
     "plan": [
@@ -4592,6 +4870,12 @@
         "line": 46,
         "freq": 1,
         "context": "- `scripts/README.md` — documentation for all scripts"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- [x] documentation - QUICKREF.md, scripts/README.md"
       },
       {
         "file": "AGENTS.md",
@@ -4720,6 +5004,12 @@
         "context": "./scripts/arc status           # workspace health"
       },
       {
+        "file": "GOALS.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- [x] health dashboard MVP"
+      },
+      {
         "file": "AGENTS.md",
         "line": 32,
         "freq": 1,
@@ -4774,6 +5064,12 @@
         "line": 24,
         "freq": 1,
         "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- [x] health dashboard MVP"
       },
       {
         "file": "AGENTS.md",
@@ -4862,6 +5158,18 @@
         "line": 9,
         "freq": 1,
         "context": "- [x] build local keyword index for memory"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- [x] memory optimization - local keyword index"
       },
       {
         "file": "AGENTS.md",
@@ -5030,6 +5338,12 @@
         "line": 6,
         "freq": 1,
         "context": "- github integration for repo monitoring"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- github for repo monitoring"
       }
     ],
     "com": [
@@ -5700,6 +6014,12 @@
         "context": "- github integration for repo monitoring"
       },
       {
+        "file": "GOALS.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- github for repo monitoring"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 3,
         "freq": 1,
@@ -5864,6 +6184,18 @@
         "line": 17,
         "freq": 1,
         "context": "- [ ] discord voice bot — blocked by UDP (needs different server)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**status:** 🔄 blocked"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- scheduled daily summaries (blocked by cron gateway)"
       }
     ],
     "discord-voice-bot": [
@@ -6070,6 +6402,12 @@
         "line": 23,
         "freq": 1,
         "context": "| tasks/active.md | current work |"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## Active Goals"
       },
       {
         "file": "scripts/README.md",
@@ -6424,6 +6762,12 @@
         "line": 18,
         "freq": 1,
         "context": "- [x] internal comms hub channels (#tasks, #logs, #dev)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- auto-threading in #dev"
       }
     ],
     "webhooks": [
@@ -6566,6 +6910,12 @@
         "line": 24,
         "freq": 1,
         "context": "| TOOLS.md | infrastructure notes |"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 16,
+        "freq": 1,
+        "context": "**objective:** create comprehensive automation tools"
       },
       {
         "file": "AGENTS.md",
@@ -6712,6 +7062,18 @@
         "line": 6,
         "freq": 1,
         "context": "./scripts/arc status           # workspace health"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 14,
+        "freq": 1,
+        "context": "### Workspace Toolkit (2026-01-25)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- [x] workspace toolkit - 13 scripts"
       },
       {
         "file": "AGENTS.md",
@@ -6974,6 +7336,12 @@
         "context": "./scripts/arc task list        # tasks"
       },
       {
+        "file": "GOALS.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- auto-maintenance, task management"
+      },
+      {
         "file": "scripts/README.md",
         "line": 14,
         "freq": 1,
@@ -7064,6 +7432,12 @@
         "line": 24,
         "freq": 1,
         "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 5,
+        "freq": 1,
+        "context": "### Memory System (2026-01-25)"
       },
       {
         "file": "monetization-plan.md",
@@ -7178,6 +7552,12 @@
         "line": 14,
         "freq": 1,
         "context": "## Backlog"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 31,
+        "freq": 1,
+        "context": "## Backlog Goals"
       }
     ],
     "slash": [
@@ -7198,6 +7578,12 @@
         "line": 9,
         "freq": 1,
         "context": "- custom slash commands per workflow"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- slash commands (/status, /remind, /search)"
       }
     ],
     "commands": [
@@ -7218,6 +7604,12 @@
         "line": 9,
         "freq": 1,
         "context": "- custom slash commands per workflow"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- slash commands (/status, /remind, /search)"
       },
       {
         "file": "AGENTS.md",
@@ -7250,6 +7642,12 @@
         "line": 20,
         "freq": 1,
         "context": "- [ ] email/calendar integration for heartbeat checks"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- email/calendar for heartbeats"
       },
       {
         "file": "AGENTS.md",
@@ -7294,6 +7692,12 @@
         "line": 20,
         "freq": 1,
         "context": "- [ ] email/calendar integration for heartbeat checks"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- email/calendar for heartbeats"
       },
       {
         "file": "AGENTS.md",
@@ -7344,6 +7748,12 @@
         "line": 6,
         "freq": 1,
         "context": "- github integration for repo monitoring"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 33,
+        "freq": 1,
+        "context": "### Discord Integration"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -7460,6 +7870,12 @@
         "line": 81,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- scheduled daily summaries (blocked by cron gateway)"
       }
     ],
     "websocket": [
@@ -7752,6 +8168,18 @@
         "line": 9,
         "freq": 1,
         "context": "- [x] build local keyword index for memory"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- [x] memory optimization - local keyword index"
       },
       {
         "file": "AGENTS.md",
@@ -8190,6 +8618,24 @@
         "line": 51,
         "freq": 1,
         "context": "- tasks: `./scripts/arc post tasks \"msg\"`"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- 13 scripts via `arc` CLI"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- [x] workspace toolkit - 13 scripts"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- [x] documentation - QUICKREF.md, scripts/README.md"
       },
       {
         "file": "AGENTS.md",
@@ -8682,6 +9128,12 @@
         "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       },
       {
+        "file": "GOALS.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- 1044+ terms indexed from 13 files"
+      },
+      {
         "file": "AGENTS.md",
         "line": 31,
         "freq": 1,
@@ -8878,6 +9330,12 @@
         "context": "- `scripts/task.mjs` — task management with Discord notifications"
       },
       {
+        "file": "GOALS.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- auto-maintenance, task management"
+      },
+      {
         "file": "AGENTS.md",
         "line": 35,
         "freq": 1,
@@ -9050,6 +9508,18 @@
         "context": "| memory/YYYY-MM-DD.md | daily logs |"
       },
       {
+        "file": "GOALS.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- daily summaries, reflection prompts"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- scheduled daily summaries (blocked by cron gateway)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 22,
         "freq": 1,
@@ -9162,6 +9632,12 @@
         "context": "./scripts/arc maintain         # auto-maintenance"
       },
       {
+        "file": "GOALS.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- auto-maintenance, task management"
+      },
+      {
         "file": "AGENTS.md",
         "line": 37,
         "freq": 1,
@@ -9206,6 +9682,12 @@
         "context": "./scripts/arc analytics          # search analytics"
       },
       {
+        "file": "GOALS.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- search analytics tracking"
+      },
+      {
         "file": "AGENTS.md",
         "line": 38,
         "freq": 1,
@@ -9236,6 +9718,12 @@
         "line": 11,
         "freq": 1,
         "context": "## patterns identified"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- track search patterns to identify memory gaps"
       },
       {
         "file": "AGENTS.md",
@@ -9328,6 +9816,18 @@
         "context": "- scripts created: 13 (full toolkit + tests)"
       },
       {
+        "file": "GOALS.md",
+        "line": 14,
+        "freq": 1,
+        "context": "### Workspace Toolkit (2026-01-25)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- [x] workspace toolkit - 13 scripts"
+      },
+      {
         "file": "AGENTS.md",
         "line": 27,
         "freq": 1,
@@ -9370,6 +9870,24 @@
         "line": 3,
         "freq": 1,
         "context": "## 2026-01-25"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 5,
+        "freq": 1,
+        "context": "### Memory System (2026-01-25)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 14,
+        "freq": 1,
+        "context": "### Workspace Toolkit (2026-01-25)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 52,
+        "freq": 1,
+        "context": "### 2026-01-25"
       }
     ],
     "script": [
@@ -10116,6 +10634,12 @@
         "line": 69,
         "freq": 1,
         "context": "- integrating tools (task → discord) creates useful automation"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 16,
+        "freq": 1,
+        "context": "**objective:** create comprehensive automation tools"
       }
     ],
     "routine": [
@@ -10324,6 +10848,12 @@
         "context": "- `scripts/reflect.mjs` — self-improvement prompts"
       },
       {
+        "file": "GOALS.md",
+        "line": 43,
+        "freq": 1,
+        "context": "### Self-Improvement"
+      },
+      {
         "file": "scripts/README.md",
         "line": 84,
         "freq": 1,
@@ -10348,6 +10878,12 @@
         "line": 44,
         "freq": 1,
         "context": "- `scripts/reflect.mjs` — self-improvement prompts"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- daily summaries, reflection prompts"
       },
       {
         "file": "scripts/README.md",
@@ -10408,6 +10944,12 @@
         "context": "- `scripts/test-toolkit.mjs` — toolkit test suite (11 tests)"
       },
       {
+        "file": "GOALS.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- [x] testing - test suite with 11 tests"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 94,
         "freq": 1,
@@ -10438,6 +10980,12 @@
         "line": 45,
         "freq": 1,
         "context": "- `scripts/test-toolkit.mjs` — toolkit test suite (11 tests)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- [x] testing - test suite with 11 tests"
       },
       {
         "file": "scripts/README.md",
@@ -10830,6 +11378,12 @@
         "context": "- Created system health monitoring service"
       },
       {
+        "file": "GOALS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**objective:** launch persistent memory service for AI workflows"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 35,
         "freq": 1,
@@ -11070,6 +11624,12 @@
         "line": 6,
         "freq": 1,
         "context": "- github integration for repo monitoring"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- github for repo monitoring"
       }
     ],
     "pencil": [
@@ -11508,6 +12068,12 @@
         "context": "## memory optimization work"
       },
       {
+        "file": "GOALS.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- [x] memory optimization - local keyword index"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 29,
         "freq": 1,
@@ -11608,6 +12174,12 @@
         "line": 16,
         "freq": 1,
         "context": "## Key Files"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- 1044+ terms indexed from 13 files"
       },
       {
         "file": "AGENTS.md",
@@ -11968,6 +12540,12 @@
         "line": 1,
         "freq": 1,
         "context": "# Completed Tasks"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 50,
+        "freq": 1,
+        "context": "## Completed Goals"
       },
       {
         "file": "AGENTS.md",
@@ -12490,6 +13068,12 @@
         "line": 47,
         "freq": 1,
         "context": "- `QUICKREF.md` — quick reference card for workflows"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- [x] documentation - QUICKREF.md, scripts/README.md"
       }
     ],
     "workflows": [
@@ -12504,6 +13088,12 @@
         "line": 26,
         "freq": 1,
         "context": "## Workflows"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**objective:** launch persistent memory service for AI workflows"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -12544,6 +13134,12 @@
         "line": 77,
         "freq": 1,
         "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- synonym expansion (20 groups)"
       }
     ],
     "expansion": [
@@ -12558,6 +13154,12 @@
         "line": 68,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- synonym expansion (20 groups)"
       }
     ],
     "etc": [
@@ -12650,6 +13252,12 @@
         "line": 54,
         "freq": 1,
         "context": "## next steps"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 27,
+        "freq": 1,
+        "context": "**next:** deploy once infra available"
       },
       {
         "file": "AGENTS.md",
@@ -12902,6 +13510,12 @@
         "line": 63,
         "freq": 1,
         "context": "- [11:27] testing note capture script"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- [x] testing - test suite with 11 tests"
       }
     ],
     "makes": [
@@ -13018,6 +13632,12 @@
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
       {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
+      },
+      {
         "file": "AGENTS.md",
         "line": 104,
         "freq": 1,
@@ -13050,6 +13670,18 @@
         "context": "- most impactful: local keyword search enables memory recall without external APIs"
       },
       {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 38,
+        "freq": 1,
+        "context": "### External Integrations"
+      },
+      {
         "file": "AGENTS.md",
         "line": 60,
         "freq": 1,
@@ -13068,6 +13700,12 @@
         "line": 70,
         "freq": 1,
         "context": "- most impactful: local keyword search enables memory recall without external APIs"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
       }
     ],
     "small": [
@@ -13212,6 +13850,12 @@
         "context": "- memory index: 1043 terms from 13 files (20 synonym groups)"
       },
       {
+        "file": "GOALS.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- synonym expansion (20 groups)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 122,
         "freq": 1,
@@ -13270,6 +13914,18 @@
         "line": 80,
         "freq": 1,
         "context": "- all tests passing: 11/11"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- all tests passing"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- 11 tests, all passing"
       }
     ],
     "tried": [
@@ -13324,6 +13980,12 @@
         "line": 10,
         "freq": 1,
         "context": "- scheduled reports (daily summary to #logs)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- scheduled daily summaries (blocked by cron gateway)"
       }
     ],
     "via": [
@@ -13332,6 +13994,12 @@
         "line": 81,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- 13 scripts via `arc` CLI"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -13352,6 +14020,12 @@
         "line": 81,
         "freq": 1,
         "context": "- [11:40] tried to set up scheduled daily summary via cron - gateway having websocket issues"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- scheduled daily summaries (blocked by cron gateway)"
       }
     ],
     "having": [
@@ -13368,6 +14042,18 @@
         "line": 3,
         "freq": 1,
         "context": "Persistent task tracking for Ventok."
+      },
+      {
+        "file": "GOALS.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- search analytics tracking"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- better goal progress tracking"
       }
     ],
     "structure": [
@@ -13478,6 +14164,12 @@
         "line": 10,
         "freq": 1,
         "context": "## In Progress"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- better goal progress tracking"
       }
     ],
     "statuses": [
@@ -13558,6 +14250,12 @@
         "context": "- [x] create workspace status script"
       },
       {
+        "file": "GOALS.md",
+        "line": 16,
+        "freq": 1,
+        "context": "**objective:** create comprehensive automation tools"
+      },
+      {
         "file": "AGENTS.md",
         "line": 22,
         "freq": 1,
@@ -13614,6 +14312,12 @@
         "line": 18,
         "freq": 1,
         "context": "- [ ] slash commands for discord (/status, /remind, /search)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- slash commands (/status, /remind, /search)"
       }
     ],
     "auto-threading": [
@@ -13622,6 +14326,12 @@
         "line": 19,
         "freq": 1,
         "context": "- [ ] auto-threading in #dev for long conversations"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- auto-threading in #dev"
       }
     ],
     "long": [
@@ -13702,6 +14412,12 @@
         "context": "- [x] build local keyword index for memory"
       },
       {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
+      },
+      {
         "file": "AGENTS.md",
         "line": 57,
         "freq": 1,
@@ -13748,6 +14464,12 @@
         "context": "- [x] bootstrap arc identity (SOUL.md, USER.md, MEMORY.md)"
       },
       {
+        "file": "GOALS.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- [x] bootstrap identity (SOUL.md, USER.md)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 7,
         "freq": 1,
@@ -13774,6 +14496,12 @@
         "context": "1. Read SOUL.md, USER.md"
       },
       {
+        "file": "GOALS.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- [x] bootstrap identity (SOUL.md, USER.md)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 12,
         "freq": 1,
@@ -13798,6 +14526,12 @@
         "line": 29,
         "freq": 1,
         "context": "1. Read SOUL.md, USER.md"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- [x] bootstrap identity (SOUL.md, USER.md)"
       },
       {
         "file": "AGENTS.md",
@@ -13830,6 +14564,12 @@
         "line": 8,
         "freq": 1,
         "context": "- mobile node pairing (phone camera/location access)"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- [x] telegram + discord pairing"
       }
     ],
     "setup": [
@@ -13938,6 +14678,12 @@
         "line": 5,
         "freq": 1,
         "context": "- notion integration for docs/knowledge base"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- notion for docs"
       }
     ],
     "base": [
@@ -14654,6 +15400,12 @@
         "context": "### Heartbeats"
       },
       {
+        "file": "GOALS.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- email/calendar for heartbeats"
+      },
+      {
         "file": "AGENTS.md",
         "line": 158,
         "freq": 1,
@@ -14744,6 +15496,372 @@
         "line": 47,
         "freq": 1,
         "context": "- If items: address or note"
+      }
+    ],
+    "goals": [
+      {
+        "file": "GOALS.md",
+        "line": 1,
+        "freq": 2,
+        "context": "# GOALS.md - Long-term Goals"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## Active Goals"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 31,
+        "freq": 1,
+        "context": "## Backlog Goals"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 50,
+        "freq": 1,
+        "context": "## Completed Goals"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 65,
+        "freq": 1,
+        "context": "*update goals as they evolve*"
+      }
+    ],
+    "achieved": [
+      {
+        "file": "GOALS.md",
+        "line": 6,
+        "freq": 1,
+        "context": "**status:** ✅ achieved"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 15,
+        "freq": 1,
+        "context": "**status:** ✅ achieved"
+      }
+    ],
+    "objective": [
+      {
+        "file": "GOALS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "**objective:** build local keyword search without external APIs"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 16,
+        "freq": 1,
+        "context": "**objective:** create comprehensive automation tools"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**objective:** launch persistent memory service for AI workflows"
+      }
+    ],
+    "outcome": [
+      {
+        "file": "GOALS.md",
+        "line": 8,
+        "freq": 1,
+        "context": "**outcome:**"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 17,
+        "freq": 1,
+        "context": "**outcome:**"
+      }
+    ],
+    "indexed": [
+      {
+        "file": "GOALS.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- 1044+ terms indexed from 13 files"
+      }
+    ],
+    "reflection": [
+      {
+        "file": "GOALS.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- daily summaries, reflection prompts"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 84,
+        "freq": 1,
+        "context": "Generate reflection prompts for self-improvement."
+      }
+    ],
+    "ongoing": [
+      {
+        "file": "GOALS.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### Context Memory API (ongoing)"
+      }
+    ],
+    "launch": [
+      {
+        "file": "GOALS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**objective:** launch persistent memory service for AI workflows"
+      }
+    ],
+    "blockers": [
+      {
+        "file": "GOALS.md",
+        "line": 26,
+        "freq": 1,
+        "context": "**blockers:** waiting on infra (domain, railway, stripe)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 82,
+        "freq": 1,
+        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
+      }
+    ],
+    "deploy": [
+      {
+        "file": "GOALS.md",
+        "line": 27,
+        "freq": 1,
+        "context": "**next:** deploy once infra available"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 33,
+        "freq": 1,
+        "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 62,
+        "freq": 1,
+        "context": "recommendation: **Railway** (simplest, i can deploy directly via CLI)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 84,
+        "freq": 1,
+        "context": "| 5 | stripe integration, deploy |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 93,
+        "freq": 1,
+        "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
+      }
+    ],
+    "integrations": [
+      {
+        "file": "GOALS.md",
+        "line": 38,
+        "freq": 1,
+        "context": "### External Integrations"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- Webhook integrations"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### Integrations"
+      }
+    ],
+    "track": [
+      {
+        "file": "GOALS.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- track search patterns to identify memory gaps"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 173,
+        "freq": 1,
+        "context": "**Track your checks** in `memory/heartbeat-state.json`:"
+      }
+    ],
+    "identify": [
+      {
+        "file": "GOALS.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- track search patterns to identify memory gaps"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 206,
+        "freq": 1,
+        "context": "2. Identify significant events, lessons, or insights worth keeping long-term"
+      }
+    ],
+    "gaps": [
+      {
+        "file": "GOALS.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- track search patterns to identify memory gaps"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 76,
+        "freq": 1,
+        "context": "Analyze search patterns (common queries, gaps in memory)."
+      }
+    ],
+    "automated": [
+      {
+        "file": "GOALS.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- automated learning from interactions"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 68,
+        "freq": 1,
+        "context": "Automated workspace maintenance (index rebuild, auto-commit routine files)."
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 143,
+        "freq": 1,
+        "context": "| `auto-maintenance.mjs` | Automated workspace maintenance |"
+      }
+    ],
+    "learning": [
+      {
+        "file": "GOALS.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- automated learning from interactions"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- Machine learning anomaly detection"
+      }
+    ],
+    "interactions": [
+      {
+        "file": "GOALS.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- automated learning from interactions"
+      }
+    ],
+    "better": [
+      {
+        "file": "GOALS.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- better goal progress tracking"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 117,
+        "freq": 1,
+        "context": "4. **compounds** — more usage = better understanding of what matters"
+      }
+    ],
+    "goal": [
+      {
+        "file": "GOALS.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- better goal progress tracking"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 212,
+        "freq": 1,
+        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
+      }
+    ],
+    "update": [
+      {
+        "file": "GOALS.md",
+        "line": 65,
+        "freq": 1,
+        "context": "*update goals as they evolve*"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 82,
+        "freq": 1,
+        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- You can **read, edit, and update** MEMORY.md freely in main sessions"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 91,
+        "freq": 1,
+        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 199,
+        "freq": 1,
+        "context": "- Update documentation"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 201,
+        "freq": 1,
+        "context": "- **Review and update MEMORY.md** (see below)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 207,
+        "freq": 1,
+        "context": "3. Update `MEMORY.md` with distilled learnings"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 129,
+        "freq": 1,
+        "context": "node scripts/discord-post.mjs tasks \"task update\""
+      }
+    ],
+    "evolve": [
+      {
+        "file": "GOALS.md",
+        "line": 65,
+        "freq": 1,
+        "context": "*update goals as they evolve*"
       }
     ],
     "your": [
@@ -15688,70 +16806,6 @@
         "line": 82,
         "freq": 1,
         "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
-      }
-    ],
-    "blockers": [
-      {
-        "file": "AGENTS.md",
-        "line": 82,
-        "freq": 1,
-        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
-      }
-    ],
-    "update": [
-      {
-        "file": "AGENTS.md",
-        "line": 82,
-        "freq": 1,
-        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 88,
-        "freq": 1,
-        "context": "- You can **read, edit, and update** MEMORY.md freely in main sessions"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 91,
-        "freq": 1,
-        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 96,
-        "freq": 1,
-        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 97,
-        "freq": 1,
-        "context": "- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 199,
-        "freq": 1,
-        "context": "- Update documentation"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 201,
-        "freq": 1,
-        "context": "- **Review and update MEMORY.md** (see below)"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 207,
-        "freq": 1,
-        "context": "3. Update `MEMORY.md` with distilled learnings"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 129,
-        "freq": 1,
-        "context": "node scripts/discord-post.mjs tasks \"task update\""
       }
     ],
     "worth": [
@@ -17750,14 +18804,6 @@
         "context": "\"weather\": null"
       }
     ],
-    "track": [
-      {
-        "file": "AGENTS.md",
-        "line": 173,
-        "freq": 1,
-        "context": "**Track your checks** in `memory/heartbeat-state.json`:"
-      }
-    ],
     "heartbeat-state": [
       {
         "file": "AGENTS.md",
@@ -17938,14 +18984,6 @@
         "context": "- **Review and update MEMORY.md** (see below)"
       }
     ],
-    "identify": [
-      {
-        "file": "AGENTS.md",
-        "line": 206,
-        "freq": 1,
-        "context": "2. Identify significant events, lessons, or insights worth keeping long-term"
-      }
-    ],
     "insights": [
       {
         "file": "AGENTS.md",
@@ -18008,14 +19046,6 @@
         "line": 210,
         "freq": 1,
         "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
-      }
-    ],
-    "goal": [
-      {
-        "file": "AGENTS.md",
-        "line": 212,
-        "freq": 1,
-        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
       }
     ],
     "helpful": [
@@ -18254,14 +19284,6 @@
         "context": "- Custom dashboard branding"
       }
     ],
-    "learning": [
-      {
-        "file": "monetization-plan.md",
-        "line": 23,
-        "freq": 1,
-        "context": "- Machine learning anomaly detection"
-      }
-    ],
     "anomaly": [
       {
         "file": "monetization-plan.md",
@@ -18444,20 +19466,6 @@
         "line": 39,
         "freq": 1,
         "context": "- Programmatic metrics retrieval"
-      }
-    ],
-    "integrations": [
-      {
-        "file": "monetization-plan.md",
-        "line": 40,
-        "freq": 1,
-        "context": "- Webhook integrations"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 27,
-        "freq": 1,
-        "context": "### Integrations"
       }
     ],
     "scalable": [
@@ -19010,32 +20018,6 @@
         "line": 33,
         "freq": 1,
         "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
-      }
-    ],
-    "deploy": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 33,
-        "freq": 1,
-        "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 62,
-        "freq": 1,
-        "context": "recommendation: **Railway** (simplest, i can deploy directly via CLI)"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 84,
-        "freq": 1,
-        "context": "| 5 | stripe integration, deploy |"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 93,
-        "freq": 1,
-        "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
       }
     ],
     "scales": [
@@ -19656,14 +20638,6 @@
         "context": "4. **compounds** — more usage = better understanding of what matters"
       }
     ],
-    "better": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 117,
-        "freq": 1,
-        "context": "4. **compounds** — more usage = better understanding of what matters"
-      }
-    ],
     "understanding": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -19918,20 +20892,6 @@
         "context": "Consolidated heartbeat checks. Returns HEARTBEAT_OK or action items."
       }
     ],
-    "automated": [
-      {
-        "file": "scripts/README.md",
-        "line": 68,
-        "freq": 1,
-        "context": "Automated workspace maintenance (index rebuild, auto-commit routine files)."
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 143,
-        "freq": 1,
-        "context": "| `auto-maintenance.mjs` | Automated workspace maintenance |"
-      }
-    ],
     "auto-commit": [
       {
         "file": "scripts/README.md",
@@ -19941,14 +20901,6 @@
       }
     ],
     "common": [
-      {
-        "file": "scripts/README.md",
-        "line": 76,
-        "freq": 1,
-        "context": "Analyze search patterns (common queries, gaps in memory)."
-      }
-    ],
-    "gaps": [
       {
         "file": "scripts/README.md",
         "line": 76,
@@ -19968,14 +20920,6 @@
         "line": 115,
         "freq": 1,
         "context": "Generate end-of-day summary (tasks, commits, notes)."
-      }
-    ],
-    "reflection": [
-      {
-        "file": "scripts/README.md",
-        "line": 84,
-        "freq": 1,
-        "context": "Generate reflection prompts for self-improvement."
       }
     ],
     "smoke": [
@@ -20056,56 +21000,60 @@
   "files": {
     "MEMORY.md": {
       "lines": 123,
-      "updated": "2026-01-25T11:42:09.079Z"
+      "updated": "2026-01-25T11:42:59.643Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-25T11:42:09.080Z"
+      "updated": "2026-01-25T11:42:59.645Z"
     },
     "memory/2026-01-25.md": {
       "lines": 82,
-      "updated": "2026-01-25T11:42:09.081Z"
+      "updated": "2026-01-25T11:42:59.645Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-25T11:42:09.082Z"
+      "updated": "2026-01-25T11:42:59.646Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-25T11:42:09.082Z"
+      "updated": "2026-01-25T11:42:59.646Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-25T11:42:09.082Z"
+      "updated": "2026-01-25T11:42:59.646Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-25T11:42:09.082Z"
+      "updated": "2026-01-25T11:42:59.647Z"
     },
     "QUICKREF.md": {
       "lines": 52,
-      "updated": "2026-01-25T11:42:09.082Z"
+      "updated": "2026-01-25T11:42:59.647Z"
+    },
+    "GOALS.md": {
+      "lines": 66,
+      "updated": "2026-01-25T11:42:59.647Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-25T11:42:09.083Z"
+      "updated": "2026-01-25T11:42:59.647Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-25T11:42:09.084Z"
+      "updated": "2026-01-25T11:42:59.649Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-25T11:42:09.084Z"
+      "updated": "2026-01-25T11:42:59.649Z"
     },
     "projects/context-memory/README.md": {
       "lines": 38,
-      "updated": "2026-01-25T11:42:09.085Z"
+      "updated": "2026-01-25T11:42:59.649Z"
     },
     "scripts/README.md": {
       "lines": 150,
-      "updated": "2026-01-25T11:42:09.085Z"
+      "updated": "2026-01-25T11:42:59.649Z"
     }
   },
-  "built": "2026-01-25T11:42:09.078Z"
+  "built": "2026-01-25T11:42:59.642Z"
 }
