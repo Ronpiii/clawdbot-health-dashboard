@@ -88,6 +88,14 @@ node scripts/reflect.mjs [days]
 ./scripts/arc reflect 7
 ```
 
+### test-toolkit.mjs
+Run smoke tests on all toolkit scripts.
+
+```bash
+node scripts/test-toolkit.mjs
+./scripts/arc test
+```
+
 ## Tasks
 
 ### task.mjs
@@ -135,6 +143,7 @@ node scripts/discord-post.mjs tasks "task update"
 | `auto-maintenance.mjs` | Automated workspace maintenance |
 | `search-analytics.mjs` | Search pattern analysis |
 | `reflect.mjs` | Self-improvement prompts |
+| `test-toolkit.mjs` | Toolkit test suite |
 | `task.mjs` | Task management CLI |
 | `daily-summary.mjs` | End-of-day summary generator |
 | `discord-post.mjs` | Discord webhook posting |
