@@ -24,10 +24,12 @@ const TASKS_DIR = join(WORKSPACE, 'tasks');
 const EXTRA_FILES = [
   'QUICKREF.md',
   'GOALS.md',
+  'CHANGELOG.md',
   'AGENTS.md',
   'monetization-plan.md',
   'projects/context-memory/PLAN.md',
   'projects/context-memory/README.md',
+  'projects/context-memory/PITCH.md',
   'scripts/README.md'
 ];
 
