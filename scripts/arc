@@ -33,7 +33,8 @@ const SCRIPTS = {
   maintain: 'auto-maintenance.mjs',
   analytics: 'search-analytics.mjs',
   reflect: 'reflect.mjs',
-  test: 'test-toolkit.mjs'
+  test: 'test-toolkit.mjs',
+  goals: 'goals.mjs'
 };
 
 const HELP = `
@@ -53,6 +54,7 @@ Commands:
   analytics             Search analytics
   reflect [days]        Reflection prompts
   test                  Run toolkit tests
+  goals                 Show goal status
 
 Examples:
   arc search "database issue"
@@ -130,6 +132,10 @@ switch (cmd) {
     
   case 'test':
     run(SCRIPTS.test, args);
+    break;
+    
+  case 'goals':
+    run(SCRIPTS.goals, args);
     break;
     
   default:
