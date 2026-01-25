@@ -1,0 +1,5 @@
+#!/bin/bash
+# quick memory search wrapper
+# usage: msearch <query>
+cd /data02/virt137413/clawd
+node scripts/memory-index.mjs search "$*"

@@ -24,6 +24,30 @@ You wake up fresh each session. These files are your continuity:
 
 Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
 
+### 🔍 Memory Search (Local Keyword Index)
+When you need to recall something but don't know which file:
+
+```bash
+# search memory files
+node scripts/memory-index.mjs search "query terms"
+# or use the wrapper
+./scripts/msearch health dashboard
+
+# rebuild index after adding/editing memory files
+node scripts/memory-index.mjs build
+```
+
+The index covers MEMORY.md + memory/*.md files. Scores results by term frequency and multi-term matches. No external API needed.
+
+**When to search:**
+- Before answering questions about past work
+- Looking for decisions/context you know exists but forgot where
+- Cross-referencing projects or people
+
+**When to just read:**
+- Recent context (today/yesterday's logs)
+- You know exactly which file has it
+
 ### 🧠 MEMORY.md - Your Long-Term Memory
 - **ONLY load in main session** (direct chats with your human)
 - **DO NOT load in shared contexts** (Discord, group chats, sessions with other people)

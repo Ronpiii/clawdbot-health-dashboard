@@ -1,9 +1,10 @@
 {
   "lastChecks": {
-    "email": 1737743400,
-    "calendar": 1737743700,
-    "weather": 1737743100,
-    "telegramCrosspost": 1737742500
+    "email": null,
+    "calendar": null,
+    "weather": null,
+    "telegramCrosspost": 1737795600
   },
-  "lastHeartbeat": 1737743700
+  "lastHeartbeat": 1737795600,
+  "note": "2026-01-25 - no telegram activity, no email/calendar access"
 }
