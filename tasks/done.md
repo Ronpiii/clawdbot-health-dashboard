@@ -1,5 +1,9 @@
 # Completed Tasks
 
+## 2026-01-25
+
+- [x] improve memory search relevance
+
 ## 2026-01-24
 
 - [x] bootstrap arc identity (SOUL.md, USER.md, MEMORY.md)
