@@ -37,6 +37,19 @@ Consolidated heartbeat checks. Returns HEARTBEAT_OK or action items.
 node scripts/heartbeat-check.mjs
 ```
 
+## Tasks
+
+### task.mjs
+Simple task management CLI.
+
+```bash
+node scripts/task.mjs list [active|done|ideas]
+node scripts/task.mjs add "task description" [--high]
+node scripts/task.mjs done "partial match"
+node scripts/task.mjs start "partial match"
+node scripts/task.mjs block "partial match"
+```
+
 ## Communication
 
 ### discord-post.mjs
@@ -56,4 +69,5 @@ node scripts/discord-post.mjs tasks "task update"
 | `compress-logs.mjs` | Analyze old logs for compression |
 | `status.mjs` | Workspace status overview |
 | `heartbeat-check.mjs` | Heartbeat action items |
+| `task.mjs` | Task management CLI |
 | `discord-post.mjs` | Discord webhook posting |
