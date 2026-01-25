@@ -21,14 +21,20 @@
 ## projects
 
 ### context memory api (priority)
-- **status:** MVP ready, waiting on infra from ron
+- **status:** MVP code complete, waiting on infra from ron
 - **location:** projects/context-memory/
 - **what:** persistent memory store for AI agents — namespaces, entries, semantic search
 - **stack:** node/fastify + postgres/pgvector + openai embeddings
+- **components:**
+  - api/ — full REST API (routes, services, validation, tests)
+  - cli/ — `ctx` command-line tool
+  - docs/ — comprehensive API documentation
+  - landing/ — marketing page (index.html)
+- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery
 - **monetization:** free/pro/team tiers ($0/$12/$49)
 - **blocking:** domain, railway account, stripe account, openai key confirmation
-- **timeline:** 5 days once infra ready
-- **docs:** PLAN.md has full spec
+- **timeline:** deploy-ready once infra available
+- **docs:** PLAN.md has full spec, docs/README.md has API reference
 
 ### clawdbot health dashboard
 - **status:** deployed but local preferred
