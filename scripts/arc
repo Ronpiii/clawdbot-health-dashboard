@@ -32,7 +32,8 @@ const SCRIPTS = {
   index: 'memory-index.mjs',
   maintain: 'auto-maintenance.mjs',
   analytics: 'search-analytics.mjs',
-  reflect: 'reflect.mjs'
+  reflect: 'reflect.mjs',
+  test: 'test-toolkit.mjs'
 };
 
 const HELP = `
@@ -51,6 +52,7 @@ Commands:
   maintain              Run auto-maintenance
   analytics             Search analytics
   reflect [days]        Reflection prompts
+  test                  Run toolkit tests
 
 Examples:
   arc search "database issue"
@@ -124,6 +126,10 @@ switch (cmd) {
   case 'reflect':
   case 'review':
     run(SCRIPTS.reflect, args);
+    break;
+    
+  case 'test':
+    run(SCRIPTS.test, args);
     break;
     
   default:
