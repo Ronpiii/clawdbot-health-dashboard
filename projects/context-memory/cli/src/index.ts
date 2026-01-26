@@ -7,7 +7,7 @@ import ora from 'ora';
 import { table } from 'table';
 
 const config = new Conf({ projectName: 'ctx' });
-const API_URL = config.get('apiUrl', 'https://api.ctxmem.dev') as string;
+const API_URL = config.get('apiUrl', 'https://api-production-b6db.up.railway.app') as string;
 
 const program = new Command();
 
@@ -141,7 +141,6 @@ program
   .description('Set an entry')
   .option('-t, --tags <tags>', 'Comma-separated tags')
   .option('--ttl <seconds>', 'Time to live in seconds')
-  .option('--no-embed', 'Skip embedding generation')
   .action(async (namespace, key, value, opts) => {
     const spinner = ora('Saving entry...').start();
     try {
@@ -153,13 +152,13 @@ program
         parsedValue = value;
       }
 
-      await api(`/v1/namespaces/${namespace}/entries/${key}`, {
-        method: 'PUT',
+      await api(`/v1/namespaces/${namespace}/entries`, {
+        method: 'POST',
         body: JSON.stringify({
+          key,
           value: parsedValue,
           tags: opts.tags?.split(',').map((t: string) => t.trim()),
-          ttl: opts.ttl ? parseInt(opts.ttl, 10) : undefined,
-          embed: opts.embed,
+          ttl_seconds: opts.ttl ? parseInt(opts.ttl, 10) : undefined,
         }),
       });
       spinner.succeed(`Entry '${key}' saved`);
