@@ -9,7 +9,7 @@
 
 ## In Progress
 
-- [~] context memory — **API DEPLOYED** ✓ **LANDING DEPLOYED** ✓ remaining: custom domain, stripe webhook
+- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2/3 UX
 
 ## Backlog
 
