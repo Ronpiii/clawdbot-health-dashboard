@@ -9,7 +9,7 @@
 
 ## In Progress
 
-- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook
+- [~] context memory — **API DEPLOYED** ✓ **LANDING DEPLOYED** ✓ remaining: custom domain, stripe webhook
 
 ## Backlog
 
