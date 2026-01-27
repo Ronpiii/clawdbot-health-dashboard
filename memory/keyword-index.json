@@ -477,12 +477,6 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
-      },
-      {
-        "file": "tasks/active.md",
         "line": 21,
         "freq": 1,
         "context": "- [x] context memory: python SDK"
@@ -894,6 +888,12 @@
         "line": 4,
         "freq": 1,
         "context": "- **name:** arc"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **Create Sequence modal** — name/description, creates draft sequence"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -1494,6 +1494,18 @@
         "line": 60,
         "freq": 1,
         "context": "- ron concerned after shodan exposure (923 clawdbot gateways exposed)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 39,
+        "freq": 1,
+        "context": "### Still TODO (per Ron's feedback)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -2212,6 +2224,12 @@
         "context": "- `projects/ventok/products/competitor-analysis.md`"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 45,
+        "freq": 1,
+        "context": "`/data02/virt137413/clawd/projects/anivia`"
+      },
+      {
         "file": "AGENTS.md",
         "line": 65,
         "freq": 1,
@@ -2890,6 +2908,12 @@
         "context": "- ron prefers continuous work mode"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## Major Work: Anivia SaaS App"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 24,
         "freq": 1,
@@ -3355,12 +3379,6 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
-      },
-      {
-        "file": "tasks/active.md",
         "line": 21,
         "freq": 1,
         "context": "- [x] context memory: python SDK"
@@ -3620,12 +3638,6 @@
         "context": "- [x] context memory MVP — api, cli, docs, marketing"
       },
       {
-        "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
-      },
-      {
         "file": "GOALS.md",
         "line": 23,
         "freq": 1,
@@ -3748,10 +3760,34 @@
         "context": "### context memory api (priority)"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 32,
+        "freq": 1,
+        "context": "### Onboarding UX (Priority 1)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- Priority 2: mobile responsiveness, ARIA labels"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- Priority 3: tooltips for optional steps"
+      },
+      {
         "file": "tasks/active.md",
         "line": 3,
         "freq": 1,
         "context": "## High Priority"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
       },
       {
         "file": "monetization-plan.md",
@@ -4106,6 +4142,12 @@
         "line": 54,
         "freq": 1,
         "context": "- **location:** discord-voice-bot/"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 44,
+        "freq": 1,
+        "context": "### Project Location"
       },
       {
         "file": "memory/ventok-business.md",
@@ -5372,6 +5414,12 @@
         "context": "- full funnel: research → outreach → nurture → close → production handoff"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- **Activity page** — full activity log with filtering"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 16,
         "freq": 1,
@@ -5486,6 +5534,18 @@
         "line": 30,
         "freq": 1,
         "context": "- api/ — full REST API (routes, services, validation, tests)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **Add Lead modal** — form with validation, inserts to Supabase"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Form validation with error messages"
       }
     ],
     "tests": [
@@ -6212,12 +6272,6 @@
         "context": "- **Remaining:** custom domain, landing page, stripe webhook URL"
       },
       {
-        "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
-      },
-      {
         "file": "projects/context-memory/PLAN.md",
         "line": 83,
         "freq": 1,
@@ -6280,6 +6334,30 @@
         "line": 172,
         "freq": 1,
         "context": "- **Remaining:** custom domain, landing page, stripe webhook URL"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Add Note modal** — notes on lead detail page"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Sequence detail page** — steps management, enrollments view"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- **Activity page** — full activity log with filtering"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -6526,6 +6604,12 @@
         "line": 18,
         "freq": 1,
         "context": "- ✓ built local keyword index (scripts/memory-index.mjs)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
       },
       {
         "file": "CHANGELOG.md",
@@ -6848,12 +6932,6 @@
         "context": "### Web Design (Ellie's domain)"
       },
       {
-        "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
-      },
-      {
         "file": "GOALS.md",
         "line": 31,
         "freq": 1,
@@ -7044,12 +7122,6 @@
         "line": 50,
         "freq": 1,
         "context": "- [ ] context memory: domain, railway custom domain, stripe webhook"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
       },
       {
         "file": "GOALS.md",
@@ -7744,6 +7816,12 @@
         "context": "- ✓ discovered/documented: context memory api, health dashboard, discord voice bot, task system"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **Dashboard real data** — stats from Supabase, not mock"
+      },
+      {
         "file": "GOALS.md",
         "line": 66,
         "freq": 1,
@@ -7788,10 +7866,10 @@
         "context": "## CONTEXT MEMORY DEPLOYED! 🎉"
       },
       {
-        "file": "tasks/active.md",
-        "line": 12,
+        "file": "memory/2026-01-27.md",
+        "line": 46,
         "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
+        "context": "Deployed to: https://anivia.vercel.app"
       }
     ],
     "preferred": [
@@ -7846,6 +7924,12 @@
         "context": "- vercel deployments show container metrics not host metrics"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 46,
+        "freq": 1,
+        "context": "Deployed to: https://anivia.vercel.app"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 52,
         "freq": 1,
@@ -7882,6 +7966,12 @@
         "line": 158,
         "freq": 1,
         "context": "- **API live:** https://api-production-b6db.up.railway.app"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 46,
+        "freq": 1,
+        "context": "Deployed to: https://anivia.vercel.app"
       },
       {
         "file": "AGENTS.md",
@@ -7952,6 +8042,18 @@
         "line": 158,
         "freq": 1,
         "context": "- **API live:** https://api-production-b6db.up.railway.app"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## Major Work: Anivia SaaS App"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 46,
+        "freq": 1,
+        "context": "Deployed to: https://anivia.vercel.app"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -8104,6 +8206,18 @@
         "context": "- Local instance monitors real Clawdbot infrastructure"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **Dashboard real data** — stats from Supabase, not mock"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
+      },
+      {
         "file": "AGENTS.md",
         "line": 141,
         "freq": 1,
@@ -8238,6 +8352,12 @@
         "line": 66,
         "freq": 1,
         "context": "- [11:28] quick note capture makes memory logging easier"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Add Note modal** — notes on lead detail page"
       },
       {
         "file": "QUICKREF.md",
@@ -8644,6 +8764,12 @@
         "line": 47,
         "freq": 1,
         "context": "## todo for ron"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 39,
+        "freq": 1,
+        "context": "### Still TODO (per Ron's feedback)"
       },
       {
         "file": "tasks/README.md",
@@ -10094,6 +10220,12 @@
         "line": 70,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 45,
+        "freq": 1,
+        "context": "`/data02/virt137413/clawd/projects/anivia`"
       }
     ],
     "virt137413": [
@@ -10102,6 +10234,12 @@
         "line": 70,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 45,
+        "freq": 1,
+        "context": "`/data02/virt137413/clawd/projects/anivia`"
       }
     ],
     "clawd": [
@@ -10110,6 +10248,12 @@
         "line": 70,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 45,
+        "freq": 1,
+        "context": "`/data02/virt137413/clawd/projects/anivia`"
       }
     ],
     "disk": [
@@ -10508,6 +10652,12 @@
         "context": "- `[x]` — done"
       },
       {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 40,
         "freq": 1,
@@ -10808,6 +10958,12 @@
         "line": 76,
         "freq": 1,
         "context": "- gap: AI-native SMB tool for €300-800/mo (between cheap email tools and enterprise AI)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Send Email modal** — creates draft emails"
       },
       {
         "file": "tasks/active.md",
@@ -13782,6 +13938,12 @@
         "context": "- namespace management"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Sequence detail page** — steps management, enrollments view"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 33,
         "freq": 1,
@@ -13968,12 +14130,6 @@
         "line": 7,
         "freq": 1,
         "context": "- [x] configure cross-posting webhook"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
       },
       {
         "file": "tasks/done.md",
@@ -14976,6 +15132,12 @@
         "context": "- team: Ronald (tech/automation) + Ellie (web design)"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 8,
         "freq": 1,
@@ -15658,6 +15820,12 @@
         "context": "- `scripts/note.mjs` — quick note capture to daily log"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- **Activity page** — full activity log with filtering"
+      },
+      {
         "file": "AGENTS.md",
         "line": 71,
         "freq": 1,
@@ -15824,6 +15992,18 @@
         "context": "- GOALS.md updated"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 26,
+        "freq": 1,
+        "context": "All policies updated to use this helper function."
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- Time estimates updated (8-12 min)"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 3,
         "freq": 1,
@@ -15888,6 +16068,12 @@
         "line": 116,
         "freq": 1,
         "context": "- error handling (auth, rate limit, not found, limits)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Form validation with error messages"
       }
     ],
     "recovery": [
@@ -15932,6 +16118,12 @@
         "line": 23,
         "freq": 1,
         "context": "### ventok lead generation"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `lead_gen_presets` — saved lead generation criteria"
       }
     ],
     "created": [
@@ -16094,6 +16286,12 @@
         "line": 165,
         "freq": 1,
         "context": "- **Bugs fixed during deploy:**"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 21,
+        "freq": 1,
+        "context": "Fixed Supabase infinite recursion in RLS policies:"
       }
     ],
     "vector": [
@@ -16174,6 +16372,12 @@
         "line": 52,
         "freq": 1,
         "context": "- tested: \"database issue\" correctly finds vector dimension fix"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 28,
+        "freq": 1,
+        "context": "### Database Tables Added"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -16282,6 +16486,18 @@
         "line": 107,
         "freq": 1,
         "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 44,
+        "freq": 1,
+        "context": "### Project Location"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
       },
       {
         "file": "memory/ventok-business.md",
@@ -16554,6 +16770,12 @@
         "line": 15,
         "freq": 1,
         "context": "- CPU load average metrics (1/5/15 min)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- Time estimates updated (8-12 min)"
       }
     ],
     "gauge": [
@@ -16612,6 +16834,12 @@
         "line": 18,
         "freq": 1,
         "context": "- Status badges and color-coded indicators"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- Optional step indicators"
       }
     ],
     "parsing": [
@@ -16660,6 +16888,12 @@
     ],
     "notes": [
       {
+        "file": "memory/2026-01-27.md",
+        "line": 29,
+        "freq": 2,
+        "context": "- `notes` — lead notes"
+      },
+      {
         "file": "memory/2026-01-24.md",
         "line": 22,
         "freq": 1,
@@ -16676,6 +16910,12 @@
         "line": 52,
         "freq": 1,
         "context": "## notes"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Add Note modal** — notes on lead detail page"
       },
       {
         "file": "QUICKREF.md",
@@ -16802,6 +17042,30 @@
         "line": 28,
         "freq": 1,
         "context": "- Consider adding historical data/charts"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **Dashboard real data** — stats from Supabase, not mock"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- `?fresh=true` clears pre-filled data"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
       },
       {
         "file": "AGENTS.md",
@@ -17248,6 +17512,12 @@
         "context": "- current state: €72/mo MRR (1 client: Noar, severely underpriced)"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
+      },
+      {
         "file": "projects/context-memory/README.md",
         "line": 105,
         "freq": 1,
@@ -17358,6 +17628,12 @@
         "line": 78,
         "freq": 1,
         "context": "- tasks completed: 6"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 7,
+        "freq": 1,
+        "context": "### Completed Features"
       },
       {
         "file": "memory/ventok-business.md",
@@ -17560,6 +17836,12 @@
         "line": 131,
         "freq": 1,
         "context": "- added self-hosting section with link to docs"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 28,
+        "freq": 1,
+        "context": "### Database Tables Added"
       }
     ],
     "msearch": [
@@ -18264,6 +18546,12 @@
         "line": 52,
         "freq": 1,
         "context": "- tested: \"database issue\" correctly finds vector dimension fix"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### RLS Fix (Critical)"
       }
     ],
     "next": [
@@ -18292,6 +18580,18 @@
         "line": 54,
         "freq": 1,
         "context": "## next steps"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Sequence detail page** — steps management, enrollments view"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- Priority 3: tooltips for optional steps"
       }
     ],
     "separate": [
@@ -18374,6 +18674,18 @@
         "line": 57,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **Add Lead modal** — form with validation, inserts to Supabase"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Add Note modal** — notes on lead detail page"
       },
       {
         "file": "tasks/README.md",
@@ -18510,6 +18822,12 @@
         "line": 58,
         "freq": 1,
         "context": "- task completion automation"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- Success animation on completion"
       }
     ],
     "utc": [
@@ -18521,6 +18839,12 @@
       }
     ],
     "activity": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 14,
+        "freq": 2,
+        "context": "- **Activity page** — full activity log with filtering"
+      },
       {
         "file": "memory/2026-01-25.md",
         "line": 61,
@@ -18588,6 +18912,18 @@
         "line": 69,
         "freq": 1,
         "context": "- integrating tools (task → discord) creates useful automation"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **Create Sequence modal** — name/description, creates draft sequence"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Send Email modal** — creates draft emails"
       }
     ],
     "useful": [
@@ -18782,6 +19118,12 @@
         "line": 74,
         "freq": 1,
         "context": "## session stats (final)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **Dashboard real data** — stats from Supabase, not mock"
       }
     ],
     "final": [
@@ -18882,6 +19224,12 @@
         "line": 141,
         "freq": 1,
         "context": "- deployment checklist for launch day"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-01-27 — Anivia Build Day"
       },
       {
         "file": "QUICKREF.md",
@@ -19696,6 +20044,12 @@
         "context": "- our config: `bind: \"loopback\"` + `auth.mode: \"token\"` — safe"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 24,
+        "freq": 1,
+        "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 16,
         "freq": 1,
@@ -20024,6 +20378,12 @@
         "line": 125,
         "freq": 1,
         "context": "- README.md rewritten for users (not internal dev notes)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 24,
+        "freq": 1,
+        "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
       }
     ],
     "internal": [
@@ -20214,6 +20574,18 @@
         "context": "- \"dogfooding\" approach: build system, use it for Ventok's own sales first"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 26,
+        "freq": 1,
+        "context": "All policies updated to use this helper function."
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      },
+      {
         "file": "AGENTS.md",
         "line": 28,
         "freq": 1,
@@ -20392,6 +20764,18 @@
         "line": 90,
         "freq": 1,
         "context": "- manufacturing-specific features (production integration)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 7,
+        "freq": 1,
+        "context": "### Completed Features"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -20600,6 +20984,18 @@
         "line": 163,
         "freq": 1,
         "context": "- create entry ✓"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **Create Sequence modal** — name/description, creates draft sequence"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 23,
+        "freq": 1,
+        "context": "CREATE FUNCTION public.get_user_org_id() RETURNS UUID"
       },
       {
         "file": "tasks/active.md",
@@ -20988,6 +21384,12 @@
         "line": 170,
         "freq": 1,
         "context": "- namespace slug vs UUID in entries routes"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 23,
+        "freq": 1,
+        "context": "CREATE FUNCTION public.get_user_org_id() RETURNS UUID"
       }
     ],
     "ctx_qgrcir4-ewds5_gsyyzbh7fzovhu5xy8": [
@@ -21009,7 +21411,7 @@
         "file": "tasks/active.md",
         "line": 12,
         "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
       }
     ],
     "custom": [
@@ -21036,12 +21438,6 @@
         "line": 47,
         "freq": 1,
         "context": "- Supabase (when custom db needed)"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [~] context memory — **API DEPLOYED** ✓ remaining: custom domain, landing, stripe webhook"
       },
       {
         "file": "tasks/ideas.md",
@@ -21514,6 +21910,12 @@
         "line": 17,
         "freq": 1,
         "context": "- saved to `memory/ventok-business.md`"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `lead_gen_presets` — saved lead generation criteria"
       }
     ],
     "ventok-business": [
@@ -21848,6 +22250,12 @@
         "context": "- pipeline: TMW (wood mfr, meeting in 2 weeks), Luminor (bank), Veho Tartu"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 74,
         "freq": 1,
@@ -21870,6 +22278,12 @@
         "line": 115,
         "freq": 1,
         "context": "3. Convert 1-2 pipeline prospects → establish €1k+ MRR baseline"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
       }
     ],
     "tmw": [
@@ -22040,6 +22454,30 @@
         "line": 67,
         "freq": 1,
         "context": "- designed full-stack AI-managed system: lead → nurture → close → production"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **Add Lead modal** — form with validation, inserts to Supabase"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Add Note modal** — notes on lead detail page"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- `notes` — lead notes"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `lead_gen_presets` — saved lead generation criteria"
       }
     ],
     "leads": [
@@ -22066,6 +22504,18 @@
         "line": 43,
         "freq": 1,
         "context": "- `projects/ventok/leads.csv`"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Generate Leads modal** — AI discovery with preset support"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
       }
     ],
     "csv": [
@@ -22258,10 +22708,22 @@
     ],
     "sequence": [
       {
+        "file": "memory/2026-01-27.md",
+        "line": 9,
+        "freq": 2,
+        "context": "- **Create Sequence modal** — name/description, creates draft sequence"
+      },
+      {
         "file": "memory/2026-01-26.md",
         "line": 26,
         "freq": 1,
         "context": "- created `projects/ventok/outreach-sequence.md` — 3-email sequence in Estonian"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Sequence detail page** — steps management, enrollments view"
       }
     ],
     "lead-research-guide": [
@@ -22416,6 +22878,12 @@
         "line": 34,
         "freq": 1,
         "context": "### security check"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 24,
+        "freq": 1,
+        "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
       },
       {
         "file": "AGENTS.md",
@@ -22866,6 +23334,12 @@
         "line": 83,
         "freq": 1,
         "context": "- positioning: \"The AI sales team for manufacturers\""
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
       }
     ],
     "opsec": [
@@ -22980,6 +23454,12 @@
         "line": 62,
         "freq": 1,
         "context": "- tightened practices: no printing secrets, redact by default, assume logs persist"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **Toggle switches** — AI Settings + Settings pages now persist"
       }
     ],
     "pivot": [
@@ -23554,6 +24034,12 @@
         "context": "- \"dogfooding\" approach: build system, use it for Ventok's own sales first"
       },
       {
+        "file": "memory/2026-01-27.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-01-27 — Anivia Build Day"
+      },
+      {
         "file": "tasks/done.md",
         "line": 9,
         "freq": 1,
@@ -23624,6 +24110,18 @@
         "line": 82,
         "freq": 1,
         "context": "- same system becomes SaaS product for TMW and others"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## Major Work: Anivia SaaS App"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
       },
       {
         "file": "monetization-plan.md",
@@ -23760,6 +24258,1064 @@
         "line": 90,
         "freq": 1,
         "context": "- manufacturing-specific features (production integration)"
+      }
+    ],
+    "2026-01-27": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-01-27 — Anivia Build Day"
+      }
+    ],
+    "anivia": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-01-27 — Anivia Build Day"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## Major Work: Anivia SaaS App"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 45,
+        "freq": 1,
+        "context": "`/data02/virt137413/clawd/projects/anivia`"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 46,
+        "freq": 1,
+        "context": "Deployed to: https://anivia.vercel.app"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
+      }
+    ],
+    "major": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## Major Work: Anivia SaaS App"
+      }
+    ],
+    "out": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 171,
+        "freq": 1,
+        "context": "- **Weather** - Relevant if your human might go out?"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 184,
+        "freq": 1,
+        "context": "**When to reach out:**"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 216,
+        "freq": 1,
+        "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
+      }
+    ],
+    "deployment-ready": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 5,
+        "freq": 1,
+        "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
+      }
+    ],
+    "modal": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **Add Lead modal** — form with validation, inserts to Supabase"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **Create Sequence modal** — name/description, creates draft sequence"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Add Note modal** — notes on lead detail page"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Send Email modal** — creates draft emails"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Generate Leads modal** — AI discovery with preset support"
+      }
+    ],
+    "form": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **Add Lead modal** — form with validation, inserts to Supabase"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Form validation with error messages"
+      }
+    ],
+    "inserts": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **Add Lead modal** — form with validation, inserts to Supabase"
+      }
+    ],
+    "supabase": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **Add Lead modal** — form with validation, inserts to Supabase"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **Dashboard real data** — stats from Supabase, not mock"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 21,
+        "freq": 1,
+        "context": "Fixed Supabase infinite recursion in RLS policies:"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 48,
+        "freq": 1,
+        "context": "### Supabase"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- Supabase + React custom apps"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- Supabase (when custom db needed)"
+      }
+    ],
+    "description": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **Create Sequence modal** — name/description, creates draft sequence"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 56,
+        "freq": 1,
+        "context": "| Feature | Description |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 90,
+        "freq": 1,
+        "context": "| Endpoint | Method | Description |"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 114,
+        "freq": 1,
+        "context": "node scripts/task.mjs add \"task description\" [--high]"
+      }
+    ],
+    "draft": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **Create Sequence modal** — name/description, creates draft sequence"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Send Email modal** — creates draft emails"
+      }
+    ],
+    "detail": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **Add Note modal** — notes on lead detail page"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Sequence detail page** — steps management, enrollments view"
+      }
+    ],
+    "send": [
+      {
+        "file": "AGENTS.md",
+        "line": 141,
+        "freq": 2,
+        "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Send Email modal** — creates draft emails"
+      }
+    ],
+    "emails": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **Send Email modal** — creates draft emails"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- Sending emails, tweets, public posts"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 168,
+        "freq": 1,
+        "context": "- **Emails** - Any urgent unread messages?"
+      }
+    ],
+    "generate": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Generate Leads modal** — AI discovery with preset support"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 84,
+        "freq": 1,
+        "context": "Generate reflection prompts for self-improvement."
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 123,
+        "freq": 1,
+        "context": "Generate end-of-day summary (tasks, commits, notes)."
+      }
+    ],
+    "discovery": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Generate Leads modal** — AI discovery with preset support"
+      }
+    ],
+    "preset": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Generate Leads modal** — AI discovery with preset support"
+      }
+    ],
+    "support": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **Generate Leads modal** — AI discovery with preset support"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- Community support"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- Priority support"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- SLA-backed support"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 46,
+        "freq": 1,
+        "context": "| team | $49/mo | unlimited namespaces, 1M entries, priority support |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 60,
+        "freq": 1,
+        "context": "| **Versioning** | History of changes, rollback support |"
+      }
+    ],
+    "enrollments": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Sequence detail page** — steps management, enrollments view"
+      }
+    ],
+    "view": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Sequence detail page** — steps management, enrollments view"
+      }
+    ],
+    "filtering": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- **Activity page** — full activity log with filtering"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      }
+    ],
+    "filters": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      }
+    ],
+    "drawer": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      }
+    ],
+    "source": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      }
+    ],
+    "value": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 81,
+        "freq": 1,
+        "context": "- Value: €2k-€5k project + potential €500-€1k/mo retainer"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 129,
+        "freq": 1,
+        "context": "- You can add genuine value (info, insight, help)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 13,
+        "freq": 1,
+        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
+      }
+    ],
+    "score": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      }
+    ],
+    "date": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      }
+    ],
+    "toggle": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **Toggle switches** — AI Settings + Settings pages now persist"
+      }
+    ],
+    "switches": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **Toggle switches** — AI Settings + Settings pages now persist"
+      }
+    ],
+    "settings": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 16,
+        "freq": 2,
+        "context": "- **Toggle switches** — AI Settings + Settings pages now persist"
+      }
+    ],
+    "pages": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **Toggle switches** — AI Settings + Settings pages now persist"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **Clickable attention cards** — route to relevant pages"
+      }
+    ],
+    "mock": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- **Dashboard real data** — stats from Supabase, not mock"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
+      }
+    ],
+    "clickable": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **Clickable attention cards** — route to relevant pages"
+      }
+    ],
+    "attention": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **Clickable attention cards** — route to relevant pages"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 163,
+        "freq": 1,
+        "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
+      }
+    ],
+    "cards": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **Clickable attention cards** — route to relevant pages"
+      }
+    ],
+    "route": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **Clickable attention cards** — route to relevant pages"
+      }
+    ],
+    "relevant": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **Clickable attention cards** — route to relevant pages"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 171,
+        "freq": 1,
+        "context": "- **Weather** - Relevant if your human might go out?"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 208,
+        "freq": 1,
+        "context": "4. Remove outdated info from MEMORY.md that's no longer relevant"
+      }
+    ],
+    "rls": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### RLS Fix (Critical)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 21,
+        "freq": 1,
+        "context": "Fixed Supabase infinite recursion in RLS policies:"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      }
+    ],
+    "critical": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### RLS Fix (Critical)"
+      }
+    ],
+    "infinite": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 21,
+        "freq": 1,
+        "context": "Fixed Supabase infinite recursion in RLS policies:"
+      }
+    ],
+    "recursion": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 21,
+        "freq": 1,
+        "context": "Fixed Supabase infinite recursion in RLS policies:"
+      }
+    ],
+    "policies": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 21,
+        "freq": 1,
+        "context": "Fixed Supabase infinite recursion in RLS policies:"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 26,
+        "freq": 1,
+        "context": "All policies updated to use this helper function."
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      }
+    ],
+    "sql": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 22,
+        "freq": 1,
+        "context": "```sql"
+      }
+    ],
+    "function": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 23,
+        "freq": 1,
+        "context": "CREATE FUNCTION public.get_user_org_id() RETURNS UUID"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 26,
+        "freq": 1,
+        "context": "All policies updated to use this helper function."
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      }
+    ],
+    "public": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 23,
+        "freq": 1,
+        "context": "CREATE FUNCTION public.get_user_org_id() RETURNS UUID"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- Sending emails, tweets, public posts"
+      }
+    ],
+    "get_user_org_id": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 23,
+        "freq": 1,
+        "context": "CREATE FUNCTION public.get_user_org_id() RETURNS UUID"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      }
+    ],
+    "returns": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 23,
+        "freq": 1,
+        "context": "CREATE FUNCTION public.get_user_org_id() RETURNS UUID"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 61,
+        "freq": 1,
+        "context": "Consolidated heartbeat checks. Returns HEARTBEAT_OK or action items."
+      }
+    ],
+    "definer": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 24,
+        "freq": 1,
+        "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
+      }
+    ],
+    "select": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 24,
+        "freq": 1,
+        "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
+      }
+    ],
+    "org_id": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 24,
+        "freq": 1,
+        "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
+      }
+    ],
+    "uid": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 24,
+        "freq": 1,
+        "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
+      }
+    ],
+    "helper": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 26,
+        "freq": 1,
+        "context": "All policies updated to use this helper function."
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 49,
+        "freq": 1,
+        "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      }
+    ],
+    "tables": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 28,
+        "freq": 1,
+        "context": "### Database Tables Added"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 154,
+        "freq": 1,
+        "context": "- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead"
+      }
+    ],
+    "lead_gen_presets": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `lead_gen_presets` — saved lead generation criteria"
+      }
+    ],
+    "criteria": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `lead_gen_presets` — saved lead generation criteria"
+      }
+    ],
+    "onboarding": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 32,
+        "freq": 1,
+        "context": "### Onboarding UX (Priority 1)"
+      }
+    ],
+    "messages": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Form validation with error messages"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 168,
+        "freq": 1,
+        "context": "- **Emails** - Any urgent unread messages?"
+      }
+    ],
+    "time": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- Time estimates updated (8-12 min)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 91,
+        "freq": 1,
+        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 160,
+        "freq": 1,
+        "context": "When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just repl"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 212,
+        "freq": 1,
+        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
+      }
+    ],
+    "estimates": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- Time estimates updated (8-12 min)"
+      }
+    ],
+    "8-12": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- Time estimates updated (8-12 min)"
+      }
+    ],
+    "fresh": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- `?fresh=true` clears pre-filled data"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 21,
+        "freq": 1,
+        "context": "You wake up fresh each session. These files are your continuity:"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "true": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- `?fresh=true` clears pre-filled data"
+      }
+    ],
+    "clears": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- `?fresh=true` clears pre-filled data"
+      }
+    ],
+    "pre-filled": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- `?fresh=true` clears pre-filled data"
+      }
+    ],
+    "success": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- Success animation on completion"
+      }
+    ],
+    "animation": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- Success animation on completion"
+      }
+    ],
+    "optional": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- Optional step indicators"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- Priority 3: tooltips for optional steps"
+      }
+    ],
+    "step": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- Optional step indicators"
+      }
+    ],
+    "still": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 39,
+        "freq": 1,
+        "context": "### Still TODO (per Ron's feedback)"
+      },
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
+      }
+    ],
+    "per": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 39,
+        "freq": 1,
+        "context": "### Still TODO (per Ron's feedback)"
+      },
+      {
+        "file": "tasks/ideas.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- custom slash commands per workflow"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 167,
+        "freq": 1,
+        "context": "**Things to check (rotate through these, 2-4 times per day):**"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **namespaces** — isolated memory spaces per project/agent"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- cost: ~$0.0001 per 1k tokens (very cheap)"
+      }
+    ],
+    "feedback": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 39,
+        "freq": 1,
+        "context": "### Still TODO (per Ron's feedback)"
+      }
+    ],
+    "mobile": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- Priority 2: mobile responsiveness, ARIA labels"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
+      },
+      {
+        "file": "tasks/ideas.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- mobile node pairing (phone camera/location access)"
+      }
+    ],
+    "responsiveness": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- Priority 2: mobile responsiveness, ARIA labels"
+      }
+    ],
+    "aria": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- Priority 2: mobile responsiveness, ARIA labels"
+      }
+    ],
+    "labels": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- Priority 2: mobile responsiveness, ARIA labels"
+      }
+    ],
+    "tooltips": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- Priority 3: tooltips for optional steps"
+      }
+    ],
+    "uses": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
+      }
+    ],
+    "drag-drop": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
+      }
+    ],
+    "persistence": [
+      {
+        "file": "memory/2026-01-27.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- Pipeline page still uses mock data (drag-drop persistence)"
       }
     ],
     "entity": [
@@ -24170,20 +25726,6 @@
         "line": 40,
         "freq": 1,
         "context": "- Webhook integrations"
-      }
-    ],
-    "supabase": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 30,
-        "freq": 1,
-        "context": "- Supabase + React custom apps"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 47,
-        "freq": 1,
-        "context": "- Supabase (when custom db needed)"
       }
     ],
     "react": [
@@ -24780,26 +26322,6 @@
         "context": "- TMW demo system"
       }
     ],
-    "value": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 81,
-        "freq": 1,
-        "context": "- Value: €2k-€5k project + potential €500-€1k/mo retainer"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 129,
-        "freq": 1,
-        "context": "- You can add genuine value (info, insight, help)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 13,
-        "freq": 1,
-        "context": "-d '{\"key\": \"decision\", \"value\": \"use postgres for the database\"}'"
-      }
-    ],
     "2k-": [
       {
         "file": "memory/ventok-business.md",
@@ -25300,6 +26822,34 @@
         "context": "- [x] configure cross-posting webhook"
       }
     ],
+    "core": [
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 11,
+        "freq": 1,
+        "context": "### core features (v0.1)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| 1 | database schema, core API routes |"
+      }
+    ],
+    "responsive": [
+      {
+        "file": "tasks/active.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2"
+      }
+    ],
     "remind": [
       {
         "file": "tasks/active.md",
@@ -25534,14 +27084,6 @@
         "context": "- voice mode improvements (wake word? continuous?)"
       }
     ],
-    "mobile": [
-      {
-        "file": "tasks/ideas.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- mobile node pairing (phone camera/location access)"
-      }
-    ],
     "phone": [
       {
         "file": "tasks/ideas.md",
@@ -25574,32 +27116,6 @@
         "line": 149,
         "freq": 1,
         "context": "Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, "
-      }
-    ],
-    "per": [
-      {
-        "file": "tasks/ideas.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- custom slash commands per workflow"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 167,
-        "freq": 1,
-        "context": "**Things to check (rotate through these, 2-4 times per day):**"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- **namespaces** — isolated memory spaces per project/agent"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 72,
-        "freq": 1,
-        "context": "- cost: ~$0.0001 per 1k tokens (very cheap)"
       }
     ],
     "bash": [
@@ -26716,32 +28232,6 @@
         "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
       }
     ],
-    "out": [
-      {
-        "file": "AGENTS.md",
-        "line": 7,
-        "freq": 1,
-        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 171,
-        "freq": 1,
-        "context": "- **Weather** - Relevant if your human might go out?"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 184,
-        "freq": 1,
-        "context": "**When to reach out:**"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 216,
-        "freq": 1,
-        "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
-      }
-    ],
     "again": [
       {
         "file": "AGENTS.md",
@@ -26868,20 +28358,6 @@
         "line": 141,
         "freq": 1,
         "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
-      }
-    ],
-    "fresh": [
-      {
-        "file": "AGENTS.md",
-        "line": 21,
-        "freq": 1,
-        "context": "You wake up fresh each session. These files are your continuity:"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       }
     ],
     "continuity": [
@@ -27614,26 +29090,6 @@
         "context": "- This is your curated memory — the distilled essence, not raw logs"
       }
     ],
-    "time": [
-      {
-        "file": "AGENTS.md",
-        "line": 91,
-        "freq": 1,
-        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 160,
-        "freq": 1,
-        "context": "When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just repl"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 212,
-        "freq": 1,
-        "context": "The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, "
-      }
-    ],
     "down": [
       {
         "file": "AGENTS.md",
@@ -27726,32 +29182,6 @@
         "line": 96,
         "freq": 1,
         "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
-      }
-    ],
-    "relevant": [
-      {
-        "file": "AGENTS.md",
-        "line": 96,
-        "freq": 1,
-        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 97,
-        "freq": 1,
-        "context": "- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 171,
-        "freq": 1,
-        "context": "- **Weather** - Relevant if your human might go out?"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 208,
-        "freq": 1,
-        "context": "4. Remove outdated info from MEMORY.md that's no longer relevant"
       }
     ],
     "learn": [
@@ -27989,28 +29419,6 @@
       }
     ],
     "sending": [
-      {
-        "file": "AGENTS.md",
-        "line": 116,
-        "freq": 1,
-        "context": "- Sending emails, tweets, public posts"
-      }
-    ],
-    "emails": [
-      {
-        "file": "AGENTS.md",
-        "line": 116,
-        "freq": 1,
-        "context": "- Sending emails, tweets, public posts"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 168,
-        "freq": 1,
-        "context": "- **Emails** - Any urgent unread messages?"
-      }
-    ],
-    "public": [
       {
         "file": "AGENTS.md",
         "line": 116,
@@ -28510,14 +29918,6 @@
         "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
       }
     ],
-    "send": [
-      {
-        "file": "AGENTS.md",
-        "line": 141,
-        "freq": 2,
-        "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
-      }
-    ],
     "avoid": [
       {
         "file": "AGENTS.md",
@@ -28780,14 +30180,6 @@
         "context": "- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead"
       }
     ],
-    "tables": [
-      {
-        "file": "AGENTS.md",
-        "line": 154,
-        "freq": 1,
-        "context": "- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead"
-      }
-    ],
     "bullet": [
       {
         "file": "AGENTS.md",
@@ -28950,14 +30342,6 @@
         "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
       }
     ],
-    "attention": [
-      {
-        "file": "AGENTS.md",
-        "line": 163,
-        "freq": 1,
-        "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
-      }
-    ],
     "short": [
       {
         "file": "AGENTS.md",
@@ -29035,14 +30419,6 @@
       }
     ],
     "unread": [
-      {
-        "file": "AGENTS.md",
-        "line": 168,
-        "freq": 1,
-        "context": "- **Emails** - Any urgent unread messages?"
-      }
-    ],
-    "messages": [
       {
         "file": "AGENTS.md",
         "line": 168,
@@ -29416,38 +30792,6 @@
         "line": 9,
         "freq": 1,
         "context": "- Community support"
-      }
-    ],
-    "support": [
-      {
-        "file": "monetization-plan.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- Community support"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 16,
-        "freq": 1,
-        "context": "- Priority support"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 25,
-        "freq": 1,
-        "context": "- SLA-backed support"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 46,
-        "freq": 1,
-        "context": "| team | $49/mo | unlimited namespaces, 1M entries, priority support |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 60,
-        "freq": 1,
-        "context": "| **Versioning** | History of changes, rollback support |"
       }
     ],
     "month": [
@@ -29866,20 +31210,6 @@
         "line": 9,
         "freq": 1,
         "context": "## MVP scope"
-      }
-    ],
-    "core": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 11,
-        "freq": 1,
-        "context": "### core features (v0.1)"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 80,
-        "freq": 1,
-        "context": "| 1 | database schema, core API routes |"
       }
     ],
     "isolated": [
@@ -31072,26 +32402,6 @@
         "context": "| Feature | Files | Context Memory |"
       }
     ],
-    "description": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 56,
-        "freq": 1,
-        "context": "| Feature | Description |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 90,
-        "freq": 1,
-        "context": "| Endpoint | Method | Description |"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 114,
-        "freq": 1,
-        "context": "node scripts/task.mjs add \"task description\" [--high]"
-      }
-    ],
     "-------------": [
       {
         "file": "projects/context-memory/README.md",
@@ -31610,14 +32920,6 @@
         "context": "echo \"piped note\" | node scripts/note.mjs"
       }
     ],
-    "returns": [
-      {
-        "file": "scripts/README.md",
-        "line": 61,
-        "freq": 1,
-        "context": "Consolidated heartbeat checks. Returns HEARTBEAT_OK or action items."
-      }
-    ],
     "auto-commit": [
       {
         "file": "scripts/README.md",
@@ -31632,20 +32934,6 @@
         "line": 76,
         "freq": 1,
         "context": "Analyze search patterns (common queries, gaps in memory)."
-      }
-    ],
-    "generate": [
-      {
-        "file": "scripts/README.md",
-        "line": 84,
-        "freq": 1,
-        "context": "Generate reflection prompts for self-improvement."
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 123,
-        "freq": 1,
-        "context": "Generate end-of-day summary (tasks, commits, notes)."
       }
     ],
     "smoke": [
@@ -31698,76 +32986,80 @@
   "files": {
     "MEMORY.md": {
       "lines": 132,
-      "updated": "2026-01-27T00:04:25.059Z"
+      "updated": "2026-01-27T14:37:10.108Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-27T00:04:25.064Z"
+      "updated": "2026-01-27T14:37:10.113Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-27T00:04:25.064Z"
+      "updated": "2026-01-27T14:37:10.113Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-27T00:04:25.066Z"
+      "updated": "2026-01-27T14:37:10.115Z"
+    },
+    "memory/2026-01-27.md": {
+      "lines": 50,
+      "updated": "2026-01-27T14:37:10.116Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-27T00:04:25.067Z"
+      "updated": "2026-01-27T14:37:10.117Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-27T00:04:25.068Z"
+      "updated": "2026-01-27T14:37:10.117Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-27T00:04:25.068Z"
+      "updated": "2026-01-27T14:37:10.117Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-27T00:04:25.068Z"
+      "updated": "2026-01-27T14:37:10.117Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-27T00:04:25.068Z"
+      "updated": "2026-01-27T14:37:10.118Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-27T00:04:25.069Z"
+      "updated": "2026-01-27T14:37:10.118Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-27T00:04:25.069Z"
+      "updated": "2026-01-27T14:37:10.118Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-27T00:04:25.069Z"
+      "updated": "2026-01-27T14:37:10.118Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-27T00:04:25.069Z"
+      "updated": "2026-01-27T14:37:10.119Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-27T00:04:25.071Z"
+      "updated": "2026-01-27T14:37:10.120Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-27T00:04:25.072Z"
+      "updated": "2026-01-27T14:37:10.120Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-27T00:04:25.072Z"
+      "updated": "2026-01-27T14:37:10.121Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-27T00:04:25.072Z"
+      "updated": "2026-01-27T14:37:10.121Z"
     },
     "scripts/README.md": {
       "lines": 159,
-      "updated": "2026-01-27T00:04:25.073Z"
+      "updated": "2026-01-27T14:37:10.121Z"
     }
   },
-  "built": "2026-01-27T00:04:25.058Z"
+  "built": "2026-01-27T14:37:10.107Z"
 }
