@@ -44,7 +44,8 @@ const SCRIPTS = {
   reflect: 'reflect.mjs',
   test: 'test-toolkit.mjs',
   goals: 'goals.mjs',
-  commit: 'auto-commit.mjs'
+  commit: 'auto-commit.mjs',
+  audit: 'audit-skill.mjs'
 };
 
 const HELP = `
