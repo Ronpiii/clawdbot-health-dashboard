@@ -16,8 +16,8 @@ Ron wants me to build something small but helpful every night while he sleeps.
 ### Anivia Improvements
 - [ ] Email preview component — see how emails look before sending
 - [ ] Lead scoring explainer — show why AI scored a lead the way it did
-- [ ] Keyboard shortcuts — power user navigation
-- [ ] Dark mode toggle — if not already there
+- [x] Keyboard shortcuts — power user navigation ✓ already exists (CommandPalette)
+- [x] Dark mode toggle — if not already there ✓ built 2026-01-28
 - [x] Export leads to CSV — simple data export ✓ built 2026-01-28
 - [ ] Bulk email drafting UI — select leads → draft all
 - [ ] Activity feed filters — by type, date range
