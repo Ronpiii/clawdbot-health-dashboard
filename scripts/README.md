@@ -1,158 +1,228 @@
 # Scripts
 
-Utility scripts for workspace management.
+Utility scripts for workspace management. Use the unified `arc` CLI.
 
 ## Quick Start
 
-Use the unified `arc` CLI:
-
 ```bash
-./scripts/arc search "query"     # search memory
-./scripts/arc status             # workspace status
-./scripts/arc check              # heartbeat checks
-./scripts/arc note "text"        # quick note
-./scripts/arc task list          # list tasks
-./scripts/arc summary            # daily summary
-./scripts/arc maintain           # auto-maintenance
-./scripts/arc analytics          # search analytics
-./scripts/arc help               # full help
+./scripts/arc help              # show all commands
+./scripts/arc status            # workspace overview
+./scripts/arc today             # what happened today
+./scripts/arc week              # last 7 days
+./scripts/arc timeline          # visual work history
+./scripts/arc search "query"    # search memory
+./scripts/arc idea "thought"    # capture idea
+./scripts/arc standup           # work summary
 ```
 
 ---
 
-## Memory
+## Memory & Search
 
-### memory-index.mjs
-Local keyword index for memory files.
-
-```bash
-node scripts/memory-index.mjs build           # rebuild index
-node scripts/memory-index.mjs search "query"  # search
-./scripts/msearch "query"                     # shortcut
-```
-
-### compress-logs.mjs
-Extract key info from old daily logs for review/compression.
+### search
+Search memory files using local keyword index with synonym expansion.
 
 ```bash
-node scripts/compress-logs.mjs 7   # logs older than 7 days
-node scripts/compress-logs.mjs 0   # all logs
+arc search "database query"      # search for terms
+arc search "aniva"               # typos → "did you mean: anivia?"
 ```
 
-### note.mjs
-Quick note capture to today's memory log.
+### index
+Rebuild the search index.
 
 ```bash
-node scripts/note.mjs "quick thought"
-node scripts/note.mjs --section "Learnings" "something I learned"
-echo "piped note" | node scripts/note.mjs
+arc index
 ```
 
-## Status & Health
-
-### status.mjs
-Workspace overview (git, tasks, memory index).
+### compress
+Extract key info from old logs for review.
 
 ```bash
-node scripts/status.mjs
+arc compress 7    # logs older than 7 days
+arc compress 0    # all logs
 ```
 
-### heartbeat-check.mjs
-Consolidated heartbeat checks. Returns HEARTBEAT_OK or action items.
+---
+
+## Time Views
+
+### today
+Quick context for the current day.
 
 ```bash
-node scripts/heartbeat-check.mjs
+arc today    # shows log, commits, ideas, files touched
 ```
 
-### auto-maintenance.mjs
-Automated workspace maintenance (index rebuild, auto-commit routine files).
+### week
+Overview of the past 7 days.
 
 ```bash
-node scripts/auto-maintenance.mjs
-./scripts/arc maintain
+arc week    # daily summaries, commit counts, active tasks
 ```
 
-### search-analytics.mjs
-Analyze search patterns (common queries, gaps in memory).
+### timeline
+Visual timeline of work with colors and symbols.
 
 ```bash
-node scripts/search-analytics.mjs
-./scripts/arc analytics
+arc timeline          # last 7 days
+arc timeline 14       # last 14 days
+arc timeline --commits   # include git commits
 ```
 
-### reflect.mjs
-Generate reflection prompts for self-improvement.
+---
+
+## Capture
+
+### note
+Quick note to today's memory log.
 
 ```bash
-node scripts/reflect.mjs [days]
-./scripts/arc reflect 7
+arc note "quick thought"
+arc note "learning" --section Learnings
 ```
 
-### test-toolkit.mjs
-Run smoke tests on all toolkit scripts.
+### idea
+Capture ideas with optional tags.
 
 ```bash
-node scripts/test-toolkit.mjs
-./scripts/arc test
+arc idea "feature idea #project #category"
+arc idea list                    # show all ideas
+arc idea list anivia             # filter by tag
+arc idea tags                    # show all tags
+arc idea clear                   # remove completed
 ```
 
-### goals.mjs
+---
+
+## Projects & Tasks
+
+### project
+List or inspect projects.
+
+```bash
+arc project              # list all projects
+arc project anivia       # show project details
+```
+
+### task
+Task management.
+
+```bash
+arc task list            # active tasks
+arc task add "new task"  # add task
+arc task done "match"    # mark done
+arc task start "match"   # mark in-progress
+arc task block "match"   # mark blocked
+```
+
+### goals
 Show goal status from GOALS.md.
 
 ```bash
-node scripts/goals.mjs
-./scripts/arc goals
+arc goals
 ```
 
-## Tasks
+---
 
-### task.mjs
-Simple task management CLI.
+## Status & Health
+
+### status
+Workspace overview (git, memory, tasks).
 
 ```bash
-node scripts/task.mjs list [active|done|ideas]
-node scripts/task.mjs add "task description" [--high]
-node scripts/task.mjs done "partial match"
-node scripts/task.mjs start "partial match"
-node scripts/task.mjs block "partial match"
+arc status
 ```
 
-## Summary
-
-### daily-summary.mjs
-Generate end-of-day summary (tasks, commits, notes).
+### check
+Heartbeat check (returns HEARTBEAT_OK or action items).
 
 ```bash
-node scripts/daily-summary.mjs           # print summary
-node scripts/daily-summary.mjs --post    # print and post to Discord
+arc check
 ```
+
+### standup
+Generate work summary for standup.
+
+```bash
+arc standup             # print summary
+arc standup --post      # post to Discord #logs
+```
+
+### summary
+Generate daily summary.
+
+```bash
+arc summary             # print summary
+arc summary --post      # post to Discord
+```
+
+---
+
+## Maintenance
+
+### maintain
+Run auto-maintenance (index rebuild, routine commits).
+
+```bash
+arc maintain
+```
+
+### analytics
+Analyze search patterns.
+
+```bash
+arc analytics
+```
+
+### reflect
+Generate reflection prompts.
+
+```bash
+arc reflect 7    # reflect on past 7 days
+```
+
+### test
+Run toolkit tests.
+
+```bash
+arc test
+```
+
+---
 
 ## Communication
 
-### discord-post.mjs
+### post
 Post to Discord webhooks.
 
 ```bash
-node scripts/discord-post.mjs logs "message"
-node scripts/discord-post.mjs tasks "task update"
+arc post logs "message"
+arc post tasks "update"
 ```
 
-## Files
+---
+
+## All Scripts
 
 | Script | Purpose |
 |--------|---------|
 | `arc` | Unified CLI wrapper |
-| `memory-index.mjs` | Build/search keyword index |
-| `msearch` | Shortcut for memory search |
-| `compress-logs.mjs` | Analyze old logs for compression |
-| `note.mjs` | Quick note capture to daily log |
-| `status.mjs` | Workspace status overview |
-| `heartbeat-check.mjs` | Heartbeat action items |
-| `auto-maintenance.mjs` | Automated workspace maintenance |
-| `search-analytics.mjs` | Search pattern analysis |
-| `reflect.mjs` | Self-improvement prompts |
-| `test-toolkit.mjs` | Toolkit test suite |
-| `goals.mjs` | Goal status display |
-| `task.mjs` | Task management CLI |
-| `daily-summary.mjs` | End-of-day summary generator |
-| `discord-post.mjs` | Discord webhook posting |
+| `memory-index.mjs` | Keyword search with synonyms + fuzzy |
+| `note.mjs` | Quick note capture |
+| `idea.mjs` | Idea capture with tags |
+| `today.mjs` | Today's context |
+| `week.mjs` | Weekly overview |
+| `timeline.mjs` | Visual work timeline |
+| `project.mjs` | Project context loading |
+| `standup.mjs` | Work summary generator |
+| `task.mjs` | Task management |
+| `status.mjs` | Workspace overview |
+| `heartbeat-check.mjs` | Heartbeat checks |
+| `daily-summary.mjs` | Daily summary |
+| `compress-logs.mjs` | Log compression |
+| `auto-maintenance.mjs` | Auto-maintenance |
+| `search-analytics.mjs` | Search analytics |
+| `reflect.mjs` | Reflection prompts |
+| `goals.mjs` | Goal status |
+| `test-toolkit.mjs` | Toolkit tests |
+| `discord-post.mjs` | Discord posting |
