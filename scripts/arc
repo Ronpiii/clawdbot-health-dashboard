@@ -21,6 +21,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const SCRIPTS = {
+  niche: 'niche.mjs',
   search: 'memory-index.mjs',
   status: 'status.mjs',
   check: 'heartbeat-check.mjs',
@@ -49,6 +50,7 @@ const HELP = `
 arc - unified CLI for workspace tools
 
 Commands:
+  niche <topic>         30-day niche research (Reddit, HN, X)
   search <query>        Search memory (keyword index)
   status                Show workspace status
   check                 Run heartbeat checks
@@ -102,6 +104,11 @@ if (!cmd || cmd === 'help' || cmd === '--help' || cmd === '-h') {
 
 // special handling for some commands
 switch (cmd) {
+  case 'niche':
+  case 'research':
+    run(SCRIPTS.niche, args);
+    break;
+    
   case 'search':
     run(SCRIPTS.search, ['search', ...args]);
     break;
