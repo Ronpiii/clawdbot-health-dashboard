@@ -21,7 +21,7 @@ Ron wants me to build something small but helpful every night while he sleeps.
 - [x] Export leads to CSV — simple data export ✓ built 2026-01-28
 - [ ] Bulk email drafting UI — select leads → draft all
 - [ ] Activity feed filters — by type, date range
-- [ ] Pipeline analytics — conversion rates between stages
+- [x] Pipeline analytics — conversion rates between stages ✓ built 2026-01-28
 
 ### Developer Tools
 - [x] Auto-commit script — commits workspace changes with AI-generated message ✓ built 2026-01-28
