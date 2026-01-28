@@ -18,7 +18,7 @@ Ron wants me to build something small but helpful every night while he sleeps.
 - [ ] Lead scoring explainer — show why AI scored a lead the way it did
 - [ ] Keyboard shortcuts — power user navigation
 - [ ] Dark mode toggle — if not already there
-- [ ] Export leads to CSV — simple data export
+- [x] Export leads to CSV — simple data export ✓ built 2026-01-28
 - [ ] Bulk email drafting UI — select leads → draft all
 - [ ] Activity feed filters — by type, date range
 - [ ] Pipeline analytics — conversion rates between stages
