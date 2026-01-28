@@ -25,6 +25,7 @@ const SCRIPTS = {
   status: 'status.mjs',
   check: 'heartbeat-check.mjs',
   note: 'note.mjs',
+  idea: 'idea.mjs',
   task: 'task.mjs',
   summary: 'daily-summary.mjs',
   post: 'discord-post.mjs',
@@ -45,6 +46,7 @@ Commands:
   status                Show workspace status
   check                 Run heartbeat checks
   note <text>           Quick note to today's log
+  idea <text>           Capture an idea for later
   task <cmd> [args]     Task management (list/add/done/start/block)
   summary [--post]      Generate daily summary
   post <channel> <msg>  Post to Discord (logs/tasks)
@@ -59,6 +61,7 @@ Commands:
 Examples:
   arc search "database issue"
   arc note "figured out the bug"
+  arc idea "what if leads had confidence scores"
   arc task done "memory search"
   arc summary --post
 `;
@@ -101,6 +104,10 @@ switch (cmd) {
     
   case 'note':
     run(SCRIPTS.note, args);
+    break;
+    
+  case 'idea':
+    run(SCRIPTS.idea, args);
     break;
     
   case 'task':
