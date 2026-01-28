@@ -149,6 +149,7 @@
 | idea.mjs | zero-friction idea capture (nightly build 01-28) |
 | today.mjs | quick context for current day |
 | week.mjs | weekly overview (past 7 days) |
+| project.mjs | project context loading |
 | daily-summary.mjs | end-of-day summary |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |

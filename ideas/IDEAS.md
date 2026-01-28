@@ -10,5 +10,5 @@ Quick captures. Review periodically and promote to projects or discard.
 
 - [ ] fuzzy/typo-tolerant search for memory index _(2026-01-28 10:02)_
 
-- [ ] arc project cmd — quick context loading for specific projects (anivia, context-memory, ventok) _(2026-01-28 10:02)_
+- [x] arc project cmd — quick context loading for specific projects (anivia, context-memory, ventok) _(2026-01-28 10:02)_ ✓ built
 
