@@ -9,13 +9,13 @@
 
 ## In Progress
 
-- [~] anivia — **CORE FEATURES DONE** ✓ remaining: mobile responsive, pipeline real data, Priority 2/3 UX
+- [~] anivia — **CORE FEATURES DONE** ✓ remaining: pipeline real data, Priority 2/3 UX (mobile already done)
 
 ## Backlog
 
-- [!] scheduled daily summary to discord
+- [x] scheduled daily summary to discord — script done, needs manual trigger until cron fixed
 - [ ] discord voice bot — blocked by UDP (needs different server)
-- [ ] slash commands for discord (/status, /remind, /search)
+- [x] slash commands for discord (/status, /remind, /search, /task)
 - [ ] auto-threading in #dev for long conversations
 - [ ] email/calendar integration for heartbeat checks
 - [x] context memory: python SDK

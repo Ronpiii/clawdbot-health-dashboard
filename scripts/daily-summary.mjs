@@ -1,155 +1,96 @@
 #!/usr/bin/env node
 /**
- * daily-summary.mjs - generate end-of-day summary
- * 
- * aggregates: completed tasks, commits, notes from today's log
- * optionally posts to Discord
- * 
- * usage:
- *   node scripts/daily-summary.mjs
- *   node scripts/daily-summary.mjs --post
+ * daily-summary.mjs - generate and post daily workspace summary to discord
  */
 
-import { readFile } from 'fs/promises';
 import { execSync } from 'child_process';
-import { join } from 'path';
-import { existsSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 
-const WORKSPACE = '/data02/virt137413/clawd';
-const LOGS_WEBHOOK = 'https://discord.com/api/webhooks/1464653461915435049/nVhGT0f9Snavdcnc9SyUFYIiCLM2LlP68Z2y6GFTrcAosYVpBTRV12rm_gJDOGLf-ygj';
+const WEBHOOK = 'https://discord.com/api/webhooks/1464653461915435049/nVhGT0f9Snavdcnc9SyUFYIiCLM2LlP68Z2y6GFTrcAosYVpBTRV12rm_gJDOGLf-ygj';
 
-function getToday() {
-  return new Date().toISOString().split('T')[0];
-}
-
-async function getCompletedTasks() {
+function run(cmd) {
   try {
-    const content = await readFile(join(WORKSPACE, 'tasks/done.md'), 'utf-8');
-    const today = getToday();
-    
-    // find today's section
-    const lines = content.split('\n');
-    const todayIdx = lines.findIndex(l => l.includes(today));
-    
-    if (todayIdx === -1) return [];
-    
-    const tasks = [];
-    for (let i = todayIdx + 1; i < lines.length; i++) {
-      if (lines[i].startsWith('## ')) break; // next date section
-      if (lines[i].match(/^- \[x\]/)) {
-        tasks.push(lines[i].replace(/^- \[x\] /, ''));
-      }
-    }
-    
-    return tasks;
+    return execSync(cmd, { encoding: 'utf8', timeout: 10000 }).trim();
   } catch {
-    return [];
+    return null;
   }
 }
 
-function getCommits() {
-  try {
-    const today = getToday();
-    const log = execSync(
-      `git log --oneline --since="${today} 00:00" --until="${today} 23:59"`,
-      { cwd: WORKSPACE, encoding: 'utf-8' }
-    );
-    return log.trim().split('\n').filter(Boolean);
-  } catch {
-    return [];
+function getTodayLog() {
+  const today = new Date().toISOString().split('T')[0];
+  const path = `memory/${today}.md`;
+  if (existsSync(path)) {
+    const content = readFileSync(path, 'utf8');
+    // extract key sections, limit length
+    const lines = content.split('\n').slice(0, 50);
+    return lines.join('\n').slice(0, 1500);
   }
+  return null;
 }
 
-async function getNotesFromLog() {
-  const file = join(WORKSPACE, 'memory', `${getToday()}.md`);
-  if (!existsSync(file)) return { completed: [], learnings: [] };
-  
-  try {
-    const content = await readFile(file, 'utf-8');
-    
-    // extract completed items
-    const completed = (content.match(/^- ✓.+$/gm) || []).map(l => l.replace(/^- ✓\s*/, ''));
-    
-    // extract learnings section
-    const learningsMatch = content.match(/## Learnings\n([\s\S]*?)(?=\n## |$)/);
-    const learnings = learningsMatch 
-      ? (learningsMatch[1].match(/^- .+$/gm) || []).map(l => l.replace(/^- (\[[\d:]+\] )?/, ''))
-      : [];
-    
-    return { completed, learnings };
-  } catch {
-    return { completed: [], learnings: [] };
+function getGitActivity() {
+  const today = new Date().toISOString().split('T')[0];
+  const logs = run(`git log --oneline --since="${today} 00:00" --until="${today} 23:59" 2>/dev/null`);
+  if (logs && logs.length > 0) {
+    const commits = logs.split('\n').length;
+    return `${commits} commit${commits === 1 ? '' : 's'}: ${logs.split('\n').slice(0, 5).join(', ')}`;
   }
+  return 'no commits today';
 }
 
-async function generateSummary() {
-  const today = getToday();
-  const tasks = await getCompletedTasks();
-  const commits = getCommits();
-  const notes = await getNotesFromLog();
-  
-  let summary = `**📊 Daily Summary — ${today}**\n\n`;
-  
-  // tasks completed
-  if (tasks.length > 0) {
-    summary += `**Tasks Completed (${tasks.length})**\n`;
-    tasks.forEach(t => summary += `• ${t}\n`);
-    summary += '\n';
+function getTaskSummary() {
+  const path = 'tasks/active.md';
+  if (existsSync(path)) {
+    const content = readFileSync(path, 'utf8');
+    const done = (content.match(/- \[x\]/g) || []).length;
+    const inProgress = (content.match(/- \[~\]/g) || []).length;
+    const pending = (content.match(/- \[ \]/g) || []).length;
+    const blocked = (content.match(/- \[!\]/g) || []).length;
+    return `✓ ${done} done | ⏳ ${inProgress} in progress | 📋 ${pending} pending | 🚫 ${blocked} blocked`;
   }
-  
-  // commits
-  if (commits.length > 0) {
-    summary += `**Commits (${commits.length})**\n`;
-    commits.slice(0, 10).forEach(c => summary += `• ${c}\n`);
-    if (commits.length > 10) summary += `• _...and ${commits.length - 10} more_\n`;
-    summary += '\n';
-  }
-  
-  // work logged
-  if (notes.completed.length > 0) {
-    summary += `**Work Logged (${notes.completed.length})**\n`;
-    notes.completed.slice(0, 8).forEach(c => summary += `• ${c}\n`);
-    if (notes.completed.length > 8) summary += `• _...and ${notes.completed.length - 8} more_\n`;
-    summary += '\n';
-  }
-  
-  // learnings
-  if (notes.learnings.length > 0) {
-    summary += `**Learnings**\n`;
-    notes.learnings.forEach(l => summary += `• ${l}\n`);
-    summary += '\n';
-  }
-  
-  // stats
-  const totalItems = tasks.length + commits.length + notes.completed.length;
-  summary += `_${totalItems} items logged today_`;
-  
-  return summary;
+  return null;
 }
 
 async function postToDiscord(message) {
-  const response = await fetch(LOGS_WEBHOOK, {
+  const response = await fetch(WEBHOOK, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ 
-      username: 'Arc Daily', 
-      content: message.slice(0, 2000)
+    body: JSON.stringify({
+      username: 'Arc Daily',
+      content: message
     })
   });
-  
   if (!response.ok) {
-    throw new Error(`Discord error: ${response.status}`);
+    throw new Error(`Discord webhook failed: ${response.status}`);
   }
 }
 
-// main
-const shouldPost = process.argv.includes('--post') || process.argv.includes('-p');
-
-const summary = await generateSummary();
-console.log(summary);
-
-if (shouldPost) {
-  console.log('\n---\nPosting to Discord...');
-  await postToDiscord(summary);
-  console.log('Posted!');
+async function main() {
+  const date = new Date().toISOString().split('T')[0];
+  const parts = [`**📊 Daily Summary — ${date}**\n`];
+  
+  // git activity
+  const git = getGitActivity();
+  parts.push(`**git:** ${git}`);
+  
+  // tasks
+  const tasks = getTaskSummary();
+  if (tasks) parts.push(`**tasks:** ${tasks}`);
+  
+  // today's log highlights
+  const log = getTodayLog();
+  if (log) {
+    parts.push(`\n**log highlights:**\n\`\`\`\n${log.slice(0, 800)}\n\`\`\``);
+  }
+  
+  const message = parts.join('\n');
+  
+  if (process.argv.includes('--dry-run')) {
+    console.log(message);
+  } else {
+    await postToDiscord(message);
+    console.log('posted daily summary to discord #logs');
+  }
 }
+
+main().catch(console.error);
