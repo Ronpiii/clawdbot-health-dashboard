@@ -9,11 +9,11 @@
 
 ## In Progress
 
-- [~] anivia — **CORE FEATURES DONE** ✓ remaining: pipeline real data, Priority 2/3 UX (mobile already done)
+- [x] anivia — **COMPLETE** ✓ pipeline real data, mobile UX, ARIA labels, tooltips all done
 
 ## Backlog
 
-- [x] scheduled daily summary to discord — script done, needs manual trigger until cron fixed
+- [x] scheduled daily summary to discord — cron working (20:00 UTC)
 - [ ] discord voice bot — blocked by UDP (needs different server)
 - [x] slash commands for discord (/status, /remind, /search, /task)
 - [ ] auto-threading in #dev for long conversations
