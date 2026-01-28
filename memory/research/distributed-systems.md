@@ -73,10 +73,84 @@ URL: https://www.unison-lang.org/docs/the-big-idea/
 
 ---
 
+---
+
+### FoundationDB Simulation Testing
+
+**The approach:** Deterministic simulation of entire clusters in a single thread.
+
+**Key points:**
+- Runs tens of thousands of simulations nightly
+- Each simulation tests large numbers of component failures
+- Estimated **1 trillion CPU-hours equivalent** of simulation run
+- Determinism enables perfect repeatability for debugging
+- 10:1 real-to-simulated time ratio
+
+**What they simulate:**
+- Drive performance, space, filling up
+- Network packet delivery
+- Machine shutdowns, reboots, "coming back from the dead"
+- Connection failures, performance degradation
+- Datacenter-level failures
+
+**The winning chaos test: "Swizzle-clogging"**
+1. Pick random subset of nodes
+2. Clog (stop) each network connection one by one over seconds
+3. Unclog in random order, one by one
+4. This finds "deep issues that only happen in rarest real-world cases"
+
+**The insight:** They use the same workload code for simulation and production testing. Flow (their actor-based language) enables both efficient production code AND simulated execution.
+
+**Quote:** "It seems unlikely that we would have been able to build FoundationDB without this technology."
+
+URL: https://apple.github.io/foundationdb/testing.html
+
+---
+
+---
+
+### Zig's Comptime
+
+**The idea:** Execute arbitrary code at compile time, replacing macros and code generation.
+
+```zig
+// Compute fibonacci at compile time
+const x = comptime fibonacci(10);  // x = 55, computed during compilation
+
+// Return a TYPE from a function
+fn Matrix(comptime T: type, comptime width: comptime_int, comptime height: comptime_int) type {
+    return [height][width]T;
+}
+// Usage: Matrix(f32, 4, 4) == [4][4]f32
+```
+
+**Key features:**
+- `comptime_int` — arbitrary precision integers (no overflow, size determined at use)
+- Types are first-class values at compile time
+- Functions can return types (generics without separate syntax)
+- `@typeInfo` — reflect on types at compile time
+- `@Type` — construct types from info structs
+
+**Why it's interesting:**
+- No macro language needed — just write Zig
+- Generics are just functions that return types
+- Type introspection built into the language
+- Zero runtime cost for compile-time computation
+
+**Comparison to other approaches:**
+- C macros: text substitution, no type safety
+- C++ templates: separate syntax, cryptic errors
+- Rust generics: powerful but still separate from values
+- Zig comptime: types ARE values, same syntax for everything
+
+URL: https://zig.guide/language-basics/comptime/
+
+---
+
 ## Threads to Pull
 
-- [ ] Zig's comptime — compile-time execution that replaces macros
+- [x] Zig's comptime — compile-time execution that replaces macros
 - [ ] Vale's region borrowing — memory safety without GC or borrow checker complexity
 - [ ] TLA+ — formal specification for distributed systems (Lamport)
 - [ ] Hermit — deterministic execution for debugging distributed systems
-- [ ] FoundationDB's simulation testing — 1M test hours/day in simulation
+- [x] FoundationDB's simulation testing — deterministic chaos
