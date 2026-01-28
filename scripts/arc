@@ -28,6 +28,7 @@ const SCRIPTS = {
   idea: 'idea.mjs',
   today: 'today.mjs',
   week: 'week.mjs',
+  timeline: 'timeline.mjs',
   project: 'project.mjs',
   standup: 'standup.mjs',
   task: 'task.mjs',
@@ -53,6 +54,7 @@ Commands:
   idea <text>           Capture an idea for later
   today                 Quick context: what happened today
   week                  Weekly overview (past 7 days)
+  timeline [days]       Visual timeline of work (--commits for git)
   project [name]        List projects or show project context
   standup [--post]      Generate standup summary (optionally post to Discord)
   task <cmd> [args]     Task management (list/add/done/start/block)
@@ -124,6 +126,11 @@ switch (cmd) {
     
   case 'week':
     run(SCRIPTS.week, args);
+    break;
+    
+  case 'timeline':
+  case 'tl':
+    run(SCRIPTS.timeline, args);
     break;
     
   case 'project':

@@ -151,6 +151,7 @@
 | week.mjs | weekly overview (past 7 days) |
 | project.mjs | project context loading |
 | standup.mjs | work summary + discord post |
+| timeline.mjs | visual work timeline with colors |
 | daily-summary.mjs | end-of-day summary |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
