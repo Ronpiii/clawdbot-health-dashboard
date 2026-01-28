@@ -19,41 +19,62 @@
 
 ---
 
+## team
+- **ron** — tech/automation lead
+- **ellie** — web design partner (telegram id: 8143429523)
+
+---
+
+## ventok business
+- **current MRR:** €72 (1 client: Noar — severely underpriced)
+- **target:** €5k MRR for full-time transition
+- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu
+- **positioning:** "escape excel hell" for estonian SME manufacturers
+- **leads:** projects/ventok/leads.csv (14 manufacturers prioritized)
+- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)
+- **full analysis:** memory/ventok-business.md
+
+---
+
 ## projects
 
-### context memory api (priority)
-- **status:** fully documented, waiting on infra from ron
+### anivia (priority — active build)
+- **status:** deployed, core features done
+- **url:** https://anivia.vercel.app
+- **location:** projects/anivia/
+- **what:** AI sales automation SaaS for manufacturers
+- **stack:** next.js + supabase + vercel
+- **done:** add lead, sequences, notes, send email, generate leads, activity page, filters, settings toggles, dashboard stats
+- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion
+- **todo:** mobile responsive, pipeline real data, priority 2/3 UX polish
+- **vision:** "AI sales team for manufacturers" — full funnel from research → close
+
+### ai sales system (product concept)
+- **docs:** projects/ventok/products/ai-sales-automation.md
+- **competitors:** projects/ventok/products/competitor-analysis.md
+- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)
+- **approach:** dogfooding — build for ventok sales first, then SaaS
+
+### context memory api
+- **status:** documented, waiting on infra
 - **location:** projects/context-memory/
 - **what:** persistent memory store for AI agents — namespaces, entries, semantic search
 - **stack:** node/fastify + postgres/pgvector + openai embeddings
-- **components:**
-  - api/ — full REST API (routes, services, validation, tests)
-  - cli/ — `ctx` command-line tool
-  - sdk-python/ — python SDK (ctxmem package)
-  - docs/ — SELFHOST.md, api.md, comprehensive docs
-  - landing/ — marketing page with honest positioning
-  - marketing/ — HN post, launch tweets
-- **services built:** memory-manager, dynamic-tagger, incremental-embedding, error-recovery
+- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing
 - **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option
-- **blocking:** domain, railway account, stripe account
-- **timeline:** deploy-ready once infra available
-- **positioning:** honest — "for when local files aren't enough" (multi-agent, cross-device, semantic search)
+- **blocking:** domain, railway, stripe from ron
+- **positioning:** "for when local files aren't enough"
 
 ### clawdbot health dashboard
-- **status:** deployed but local preferred
+- **status:** deployed, local preferred
 - **vercel:** https://clawdbot-health-dashboard.vercel.app/
 - **github:** https://github.com/Ronpiii/clawdbot-health-dashboard
-- **local:** port 3000 (monitors real server)
 - **note:** vercel shows container metrics, not actual server
-- **issue:** localhost binding may have restrictions on shared host (express installed, server starts, but curl can't connect)
-- **monetization:** tiered enterprise model in monetization-plan.md
-- **todo:** historical charts, multi-host monitoring, alerting
 
 ### discord voice bot
-- **status:** scaffolded, blocked
+- **status:** blocked
 - **location:** discord-voice-bot/
 - **blocker:** UDP not available on current server
-- **solution:** needs different server or hosting
 
 ### discord hub (ventok)
 - **status:** active
@@ -92,6 +113,9 @@
 - synonym expansion significantly improves search relevance
 - auto-maintenance keeps workspace healthy without manual intervention
 - continuous work mode: keep going until told otherwise
+- **security:** clawdbot config `bind: "loopback"` is safe (923 exposed gateways on shodan had `bind: "all"`)
+- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies
+- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds.md)
 
 ---
 
@@ -108,7 +132,7 @@
 - **analytics:** `./scripts/arc analytics` — search patterns
 - **discord:** TOOLS.md has webhook urls
 
-## toolkit built 2026-01-25
+## toolkit (scripts/)
 | script | purpose |
 |--------|---------|
 | arc | unified CLI wrapper |
@@ -122,10 +146,11 @@
 | goals.mjs | goal status display |
 | task.mjs | task management + discord |
 | note.mjs | quick note capture |
+| idea.mjs | zero-friction idea capture (nightly build 01-28) |
 | daily-summary.mjs | end-of-day summary |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
 
 ---
 
-*last updated: 2026-01-25*
+*last updated: 2026-01-28*

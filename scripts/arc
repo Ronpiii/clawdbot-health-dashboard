@@ -26,6 +26,7 @@ const SCRIPTS = {
   check: 'heartbeat-check.mjs',
   note: 'note.mjs',
   idea: 'idea.mjs',
+  today: 'today.mjs',
   task: 'task.mjs',
   summary: 'daily-summary.mjs',
   post: 'discord-post.mjs',
@@ -47,6 +48,7 @@ Commands:
   check                 Run heartbeat checks
   note <text>           Quick note to today's log
   idea <text>           Capture an idea for later
+  today                 Quick context: what happened today
   task <cmd> [args]     Task management (list/add/done/start/block)
   summary [--post]      Generate daily summary
   post <channel> <msg>  Post to Discord (logs/tasks)
@@ -108,6 +110,10 @@ switch (cmd) {
     
   case 'idea':
     run(SCRIPTS.idea, args);
+    break;
+    
+  case 'today':
+    run(SCRIPTS.today, args);
     break;
     
   case 'task':
