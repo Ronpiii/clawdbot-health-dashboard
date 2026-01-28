@@ -29,6 +29,7 @@ const SCRIPTS = {
   today: 'today.mjs',
   week: 'week.mjs',
   project: 'project.mjs',
+  standup: 'standup.mjs',
   task: 'task.mjs',
   summary: 'daily-summary.mjs',
   post: 'discord-post.mjs',
@@ -53,6 +54,7 @@ Commands:
   today                 Quick context: what happened today
   week                  Weekly overview (past 7 days)
   project [name]        List projects or show project context
+  standup [--post]      Generate standup summary (optionally post to Discord)
   task <cmd> [args]     Task management (list/add/done/start/block)
   summary [--post]      Generate daily summary
   post <channel> <msg>  Post to Discord (logs/tasks)
@@ -127,6 +129,10 @@ switch (cmd) {
   case 'project':
   case 'proj':
     run(SCRIPTS.project, args);
+    break;
+    
+  case 'standup':
+    run(SCRIPTS.standup, args);
     break;
     
   case 'task':

@@ -150,6 +150,7 @@
 | today.mjs | quick context for current day |
 | week.mjs | weekly overview (past 7 days) |
 | project.mjs | project context loading |
+| standup.mjs | work summary + discord post |
 | daily-summary.mjs | end-of-day summary |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
