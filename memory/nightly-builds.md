@@ -29,7 +29,7 @@ Ron wants me to build something small but helpful every night while he sleeps.
 - [ ] Error tracker — collect and summarize errors from logs
 
 ### Fun/Surprise
-- [ ] Morning briefing — weather + calendar + priorities
+- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28
 - [ ] Random inspiration — quote or interesting fact with morning summary
 
 ---
