@@ -191,6 +191,56 @@ function expandWithSynonyms(terms) {
   return [...expanded];
 }
 
+// simple edit distance (Levenshtein)
+function editDistance(a, b) {
+  if (a.length === 0) return b.length;
+  if (b.length === 0) return a.length;
+  
+  const matrix = [];
+  for (let i = 0; i <= b.length; i++) {
+    matrix[i] = [i];
+  }
+  for (let j = 0; j <= a.length; j++) {
+    matrix[0][j] = j;
+  }
+  
+  for (let i = 1; i <= b.length; i++) {
+    for (let j = 1; j <= a.length; j++) {
+      if (b[i-1] === a[j-1]) {
+        matrix[i][j] = matrix[i-1][j-1];
+      } else {
+        matrix[i][j] = Math.min(
+          matrix[i-1][j-1] + 1,  // substitution
+          matrix[i][j-1] + 1,    // insertion
+          matrix[i-1][j] + 1     // deletion
+        );
+      }
+    }
+  }
+  return matrix[b.length][a.length];
+}
+
+// find similar terms for "did you mean" suggestions
+function findSimilarTerms(queryTerms, indexTerms, maxDistance = 2) {
+  const suggestions = new Set();
+  
+  for (const qt of queryTerms) {
+    if (qt.length < 3) continue;
+    
+    for (const it of indexTerms) {
+      // skip if lengths are too different
+      if (Math.abs(qt.length - it.length) > maxDistance) continue;
+      
+      const dist = editDistance(qt, it);
+      if (dist > 0 && dist <= maxDistance) {
+        suggestions.add(it);
+      }
+    }
+  }
+  
+  return [...suggestions].slice(0, 10);
+}
+
 // search index
 async function search(query, maxResults = 10) {
   if (!existsSync(INDEX_PATH)) {
@@ -297,6 +347,13 @@ switch (cmd) {
     
     if (results.length === 0) {
       console.log('no results');
+      
+      // suggest similar terms (fuzzy)
+      const index = JSON.parse(await readFile(INDEX_PATH, 'utf-8'));
+      const suggestions = findSimilarTerms(tokenize(query), Object.keys(index.terms));
+      if (suggestions.length > 0) {
+        console.log(`\ndid you mean: ${suggestions.slice(0, 5).join(', ')}?`);
+      }
     } else {
       console.log(`\nfound ${results.length} results:\n`);
       for (const r of results) {
