@@ -30,7 +30,7 @@ Ron wants me to build something small but helpful every night while he sleeps.
 
 ### Fun/Surprise
 - [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28
-- [ ] Random inspiration — quote or interesting fact with morning summary
+- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28
 
 ---
 

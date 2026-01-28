@@ -96,19 +96,32 @@ function getYesterdayHighlights() {
 
 // Get a random quote/thought
 function getInspiration() {
-  const quotes = [
-    "Ship fast, fix later.",
-    "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "Simplicity is the ultimate sophistication.",
-    "Done is better than perfect.",
-    "Focus on what matters, ignore the rest.",
-    "Small steps lead to big changes.",
-    "Build something people want.",
-    "The obstacle is the way.",
-    "Progress, not perfection.",
-    "Make it work, make it right, make it fast.",
+  const items = [
+    // Quotes
+    { type: 'quote', text: "Ship fast, fix later." },
+    { type: 'quote', text: "The best time to plant a tree was 20 years ago. The second best time is now." },
+    { type: 'quote', text: "Simplicity is the ultimate sophistication." },
+    { type: 'quote', text: "Done is better than perfect." },
+    { type: 'quote', text: "Focus on what matters, ignore the rest." },
+    { type: 'quote', text: "Small steps lead to big changes." },
+    { type: 'quote', text: "Build something people want." },
+    { type: 'quote', text: "The obstacle is the way." },
+    { type: 'quote', text: "Progress, not perfection." },
+    { type: 'quote', text: "Make it work, make it right, make it fast." },
+    
+    // Interesting facts from research
+    { type: 'fact', text: "FoundationDB runs ~1 trillion CPU-hours equivalent of simulation testing. Their chaos test 'swizzle-clogging' finds bugs that only appear in rare real-world cases." },
+    { type: 'fact', text: "92% of catastrophic failures in distributed systems could be prevented by simple testing of error handling code (Yuan et al., OSDI 2014)." },
+    { type: 'fact', text: "In Zig, types are first-class values at compile time. You can write a function that returns a type — no separate generics syntax needed." },
+    { type: 'fact', text: "Jepsen has found consistency bugs in almost every database tested — MongoDB, Elasticsearch, Redis, Cassandra, CockroachDB, and many more." },
+    { type: 'fact', text: "Unison identifies code by the hash of its syntax tree, not its name. Dependencies are pinned by hash, eliminating 'works on my machine' issues." },
+    { type: 'fact', text: "The event-stream npm attack went undetected for months. One maintainer handoff was all it took to compromise thousands of projects." },
+    { type: 'fact', text: "Almost all distributed system failures need only 3 or fewer nodes to reproduce — good news for testing." },
+    { type: 'fact', text: "Permission prompts create an illusion of control. After 50 'Allow' clicks, click 51 gets no scrutiny." },
   ];
-  return quotes[Math.floor(Math.random() * quotes.length)];
+  
+  const item = items[Math.floor(Math.random() * items.length)];
+  return item.type === 'fact' ? `💡 ${item.text}` : item.text;
 }
 
 // Get day info
