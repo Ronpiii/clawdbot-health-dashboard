@@ -152,6 +152,7 @@
 | project.mjs | project context loading |
 | standup.mjs | work summary + discord post |
 | timeline.mjs | visual work timeline with colors |
+| morning.mjs | morning briefing (weather, priorities) |
 | daily-summary.mjs | end-of-day summary |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
