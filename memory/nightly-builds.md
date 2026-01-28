@@ -9,7 +9,7 @@ Ron wants me to build something small but helpful every night while he sleeps.
 ## Ideas Backlog
 
 ### Workflow & Communication
-- [ ] Daily standup bot — auto-summary of yesterday's work posted to Discord #logs
+- [x] Daily standup bot — auto-summary of yesterday's work posted to Discord #logs ✓ cron added 2026-01-28
 - [x] Quick capture CLI — `arc idea "thought"` saves to ideas file ✓ built 2026-01-28
 - [ ] Voice memo transcription — process voice notes into actionable items
 
