@@ -26,7 +26,7 @@ Ron wants me to build something small but helpful every night while he sleeps.
 ### Developer Tools
 - [x] Auto-commit script — commits workspace changes with AI-generated message ✓ built 2026-01-28
 - [x] PR summary generator — summarize changes for review ✓ built 2026-01-28
-- [ ] Error tracker — collect and summarize errors from logs
+- [x] Error tracker — collect and summarize errors from logs ✓ built 2026-01-28
 
 ### Fun/Surprise
 - [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28

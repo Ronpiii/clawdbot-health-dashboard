@@ -46,7 +46,8 @@ const SCRIPTS = {
   goals: 'goals.mjs',
   commit: 'auto-commit.mjs',
   audit: 'audit-skill.mjs',
-  pr: 'pr-summary.mjs'
+  pr: 'pr-summary.mjs',
+  errors: 'error-tracker.mjs'
 };
 
 const HELP = `
