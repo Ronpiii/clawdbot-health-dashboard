@@ -153,6 +153,7 @@
 | standup.mjs | work summary + discord post |
 | timeline.mjs | visual work timeline with colors |
 | morning.mjs | morning briefing (weather, priorities) |
+| recap.mjs | 30-day recap (git stats, projects, themes) |
 | daily-summary.mjs | end-of-day summary |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |

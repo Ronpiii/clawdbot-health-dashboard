@@ -28,6 +28,7 @@ const SCRIPTS = {
   idea: 'idea.mjs',
   today: 'today.mjs',
   week: 'week.mjs',
+  recap: 'recap.mjs',
   timeline: 'timeline.mjs',
   morning: 'morning.mjs',
   project: 'project.mjs',
@@ -55,6 +56,7 @@ Commands:
   idea <text>           Capture an idea for later
   today                 Quick context: what happened today
   week                  Weekly overview (past 7 days)
+  recap [days]          30-day recap (commits, projects, highlights)
   timeline [days]       Visual timeline of work (--commits for git)
   morning               Morning briefing (weather, priorities, yesterday)
   project [name]        List projects or show project context
@@ -128,6 +130,10 @@ switch (cmd) {
     
   case 'week':
     run(SCRIPTS.week, args);
+    break;
+    
+  case 'recap':
+    run(SCRIPTS.recap, args);
     break;
     
   case 'timeline':
