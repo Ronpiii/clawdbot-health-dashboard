@@ -242,6 +242,14 @@
         "context": "2. **local keyword search** — 1115 terms, synonym expansion, no external APIs"
       }
     ],
+    "2014": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
+      }
+    ],
     "3000": [
       {
         "file": "memory/2026-01-24.md",
@@ -513,7 +521,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
@@ -1659,6 +1667,12 @@
       },
       {
         "file": "MEMORY.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
+      },
+      {
+        "file": "MEMORY.md",
         "line": 66,
         "freq": 1,
         "context": "- **blocking:** domain, railway, stripe from ron"
@@ -1809,13 +1823,13 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
       {
         "file": "tasks/active.md",
-        "line": 14,
+        "line": 13,
         "freq": 1,
         "context": "## Next (when ron picks direction)"
       },
@@ -2067,7 +2081,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 12,
+        "line": 11,
         "freq": 1,
         "context": "- [ ] discord voice bot — needs UDP-capable server"
       },
@@ -2757,7 +2771,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 14,
+        "line": 13,
         "freq": 1,
         "context": "## Next (when ron picks direction)"
       }
@@ -3235,7 +3249,7 @@
         "file": "memory/2026-01-29.md",
         "line": 16,
         "freq": 1,
-        "context": "- noar repricing, TMW meeting prep, ventok outreach"
+        "context": "- TMW meeting prep, ventok outreach"
       },
       {
         "file": "memory/ventok-business.md",
@@ -3263,7 +3277,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 7,
+        "line": 6,
         "freq": 1,
         "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
       },
@@ -4683,7 +4697,7 @@
         "file": "MEMORY.md",
         "line": 30,
         "freq": 1,
-        "context": "- **current MRR:** €72 (1 client: Noar — severely underpriced)"
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
       },
       {
         "file": "MEMORY.md",
@@ -4745,7 +4759,7 @@
         "file": "MEMORY.md",
         "line": 30,
         "freq": 1,
-        "context": "- **current MRR:** €72 (1 client: Noar — severely underpriced)"
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
       },
       {
         "file": "MEMORY.md",
@@ -4795,7 +4809,7 @@
         "file": "MEMORY.md",
         "line": 30,
         "freq": 1,
-        "context": "- **current MRR:** €72 (1 client: Noar — severely underpriced)"
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -4833,7 +4847,7 @@
         "file": "MEMORY.md",
         "line": 30,
         "freq": 1,
-        "context": "- **current MRR:** €72 (1 client: Noar — severely underpriced)"
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
       },
       {
         "file": "memory/2026-01-26.md",
@@ -4846,12 +4860,6 @@
         "line": 49,
         "freq": 1,
         "context": "- noar repricing conversation (€72 → €300-500/mo) _(tracked in tasks/active.md)_"
-      },
-      {
-        "file": "memory/2026-01-29.md",
-        "line": 16,
-        "freq": 1,
-        "context": "- noar repricing, TMW meeting prep, ventok outreach"
       },
       {
         "file": "memory/ventok-business.md",
@@ -4876,58 +4884,28 @@
         "line": 114,
         "freq": 1,
         "context": "2. Reprice Noar or replace with properly-priced client"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- [ ] noar repricing — €72/mo is way underpriced, target €300-500/mo"
       }
     ],
-    "severely": [
+    "sister": [
       {
         "file": "MEMORY.md",
         "line": 30,
         "freq": 1,
-        "context": "- **current MRR:** €72 (1 client: Noar — severely underpriced)"
-      },
-      {
-        "file": "memory/2026-01-26.md",
-        "line": 18,
-        "freq": 1,
-        "context": "- current state: €72/mo MRR (1 client: Noar, severely underpriced)"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 91,
-        "freq": 1,
-        "context": "- **Noar:** €72/mo — SEVERELY UNDERPRICED, needs repricing to €300-€500/mo minimum"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 108,
-        "freq": 1,
-        "context": "2. **Pricing:** Noar severely underpriced, sets bad precedent"
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
       }
     ],
-    "underpriced": [
+    "pricing": [
       {
         "file": "MEMORY.md",
         "line": 30,
         "freq": 1,
-        "context": "- **current MRR:** €72 (1 client: Noar — severely underpriced)"
-      },
-      {
-        "file": "memory/2026-01-26.md",
-        "line": 18,
-        "freq": 1,
-        "context": "- current state: €72/mo MRR (1 client: Noar, severely underpriced)"
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
       },
       {
         "file": "memory/ventok-business.md",
-        "line": 91,
+        "line": 54,
         "freq": 1,
-        "context": "- **Noar:** €72/mo — SEVERELY UNDERPRICED, needs repricing to €300-€500/mo minimum"
+        "context": "## Pricing"
       },
       {
         "file": "memory/ventok-business.md",
@@ -4936,10 +4914,62 @@
         "context": "2. **Pricing:** Noar severely underpriced, sets bad precedent"
       },
       {
-        "file": "tasks/active.md",
-        "line": 5,
+        "file": "monetization-plan.md",
+        "line": 41,
         "freq": 1,
-        "context": "- [ ] noar repricing — €72/mo is way underpriced, target €300-500/mo"
+        "context": "- Scalable pricing based on API calls"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **option B:** Fly.io — similar pricing"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 64,
+        "freq": 1,
+        "context": "## Pricing"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 50,
+        "freq": 1,
+        "context": "## Pricing"
+      }
+    ],
+    "fine": [
+      {
+        "file": "MEMORY.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
+      },
+      {
+        "file": "memory/2026-01-28.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- Gateway runs fine but CLI tools probe wrong address"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 138,
+        "freq": 1,
+        "context": "- The conversation is flowing fine without you"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "as-is": [
+      {
+        "file": "MEMORY.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)"
       }
     ],
     "target": [
@@ -4972,12 +5002,6 @@
         "line": 107,
         "freq": 1,
         "context": "1. **Revenue:** Only €72/mo paying, 68x gap to target"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- [ ] noar repricing — €72/mo is way underpriced, target €300-500/mo"
       },
       {
         "file": "monetization-plan.md",
@@ -5070,6 +5094,12 @@
         "context": "- anivia: 5 commits (mobile onboarding, CSV, dark mode, pipeline analytics, score explainer, activit"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 32,
         "freq": 1,
@@ -5141,7 +5171,7 @@
         "file": "memory/2026-01-29.md",
         "line": 16,
         "freq": 1,
-        "context": "- noar repricing, TMW meeting prep, ventok outreach"
+        "context": "- TMW meeting prep, ventok outreach"
       },
       {
         "file": "memory/ventok-business.md",
@@ -5163,7 +5193,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 6,
+        "line": 5,
         "freq": 1,
         "context": "- [ ] TMW meeting prep — proposal for AI sales system"
       }
@@ -5219,11 +5249,11 @@
         "file": "memory/2026-01-29.md",
         "line": 16,
         "freq": 1,
-        "context": "- noar repricing, TMW meeting prep, ventok outreach"
+        "context": "- TMW meeting prep, ventok outreach"
       },
       {
         "file": "tasks/active.md",
-        "line": 6,
+        "line": 5,
         "freq": 1,
         "context": "- [ ] TMW meeting prep — proposal for AI sales system"
       }
@@ -5545,7 +5575,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 7,
+        "line": 6,
         "freq": 1,
         "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
       }
@@ -5606,6 +5636,12 @@
         "context": "| CSV export | `/api/leads/export` + download button in toolbar |"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 15,
         "freq": 1,
@@ -5613,7 +5649,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 7,
+        "line": 6,
         "freq": 1,
         "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
       }
@@ -5650,6 +5686,12 @@
         "context": "- anivia: 5 commits (mobile onboarding, CSV, dark mode, pipeline analytics, score explainer, activit"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 32,
         "freq": 1,
@@ -5657,7 +5699,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 7,
+        "line": 6,
         "freq": 1,
         "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
       }
@@ -5705,11 +5747,11 @@
         "file": "memory/2026-01-29.md",
         "line": 16,
         "freq": 1,
-        "context": "- noar repricing, TMW meeting prep, ventok outreach"
+        "context": "- TMW meeting prep, ventok outreach"
       },
       {
         "file": "tasks/active.md",
-        "line": 7,
+        "line": 6,
         "freq": 1,
         "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
       }
@@ -5775,7 +5817,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 7,
+        "line": 6,
         "freq": 1,
         "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
       }
@@ -5864,6 +5906,12 @@
         "line": 6,
         "freq": 1,
         "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -6028,6 +6076,12 @@
         "context": "- anivia: 5 commits (mobile onboarding, CSV, dark mode, pipeline analytics, score explainer, activit"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 19,
+        "freq": 1,
+        "context": "## anivia restructure"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 14,
         "freq": 1,
@@ -6047,13 +6101,13 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 15,
         "freq": 1,
         "context": "- [ ] anivia phase 2 — backend (supabase + tRPC + real data)"
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 16,
         "freq": 1,
         "context": "- [ ] anivia landing page — update with new copy"
       },
@@ -6274,6 +6328,12 @@
         "context": "## nightly build: arc todo"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 3,
         "freq": 1,
@@ -6394,6 +6454,12 @@
         "line": 97,
         "freq": 1,
         "context": "- status: code complete, waiting on infra (domain, railway, stripe)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- approveAction() now uses optimistic locking: `.eq('status', 'pending')` on update"
       },
       {
         "file": "memory/ventok-business.md",
@@ -6981,7 +7047,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 6,
+        "line": 5,
         "freq": 1,
         "context": "- [ ] TMW meeting prep — proposal for AI sales system"
       }
@@ -7065,7 +7131,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 14,
+        "line": 13,
         "freq": 1,
         "context": "## Next (when ron picks direction)"
       },
@@ -7133,7 +7199,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 15,
         "freq": 1,
         "context": "- [ ] anivia phase 2 — backend (supabase + tRPC + real data)"
       }
@@ -7212,6 +7278,12 @@
         "line": 48,
         "freq": 1,
         "context": "- **done:** add lead, sequences, notes, send email, generate leads, activity page, filters, settings"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
       }
     ],
     "notes": [
@@ -7370,6 +7442,12 @@
         "context": "Remaining: 5 items (email preview, bulk drafting, voice transcription, PR summary, error tracker)"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- prevents two concurrent callers from both sending the same email"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 14,
         "freq": 1,
@@ -7470,6 +7548,12 @@
         "context": "- anivia: 5 commits (mobile onboarding, CSV, dark mode, pipeline analytics, score explainer, activit"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 32,
         "freq": 1,
@@ -7526,8 +7610,14 @@
         "context": "- Pipeline page still uses mock data (drag-drop persistence)"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- AI settings moved into settings page as tab"
+      },
+      {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 16,
         "freq": 1,
         "context": "- [ ] anivia landing page — update with new copy"
       },
@@ -7566,10 +7656,22 @@
         "context": "- **Toggle switches** — AI Settings + Settings pages now persist"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 22,
+        "freq": 2,
+        "context": "- AI settings moved into settings page as tab"
+      },
+      {
         "file": "MEMORY.md",
         "line": 48,
         "freq": 1,
         "context": "- **done:** add lead, sequences, notes, send email, generate leads, activity page, filters, settings"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
       }
     ],
     "toggles": [
@@ -7622,6 +7724,12 @@
         "line": 17,
         "freq": 1,
         "context": "- **Dashboard real data** — stats from Supabase, not mock"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
       },
       {
         "file": "GOALS.md",
@@ -7704,6 +7812,18 @@
         "line": 49,
         "freq": 1,
         "context": "Ron's project — RLS policies use `public.get_user_org_id()` helper function."
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
       }
     ],
     "fix": [
@@ -7730,6 +7850,12 @@
         "line": 8,
         "freq": 1,
         "context": "### Gateway IP Fix"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **CRITICAL FIX**: double-approve race condition in approval flow"
       }
     ],
     "public": [
@@ -7836,6 +7962,12 @@
         "line": 49,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- prevents two concurrent callers from both sending the same email"
       }
     ],
     "infinite": [
@@ -8043,7 +8175,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 15,
         "freq": 1,
         "context": "- [ ] anivia phase 2 — backend (supabase + tRPC + real data)"
       },
@@ -8098,8 +8230,14 @@
         "context": "- Verified pipeline already uses real data"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
+      },
+      {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 15,
         "freq": 1,
         "context": "- [ ] anivia phase 2 — backend (supabase + tRPC + real data)"
       },
@@ -8254,6 +8392,12 @@
         "line": 78,
         "freq": 1,
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **safety audit**: applied distributed systems research"
       }
     ],
     "close": [
@@ -8387,7 +8531,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 6,
+        "line": 5,
         "freq": 1,
         "context": "- [ ] TMW meeting prep — proposal for AI sales system"
       },
@@ -8838,6 +8982,18 @@
         "line": 9,
         "freq": 1,
         "context": "- identified issues: gateway websocket flaky, express missing for health dashboard"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
       }
     ],
     "300-800": [
@@ -8971,7 +9127,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
@@ -10813,7 +10969,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 16,
         "freq": 1,
         "context": "- [ ] anivia landing page — update with new copy"
       },
@@ -11065,7 +11221,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
@@ -11127,7 +11283,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
@@ -11207,7 +11363,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
@@ -12135,7 +12291,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 12,
+        "line": 11,
         "freq": 1,
         "context": "- [ ] discord voice bot — needs UDP-capable server"
       }
@@ -12179,7 +12335,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 12,
+        "line": 11,
         "freq": 1,
         "context": "- [ ] discord voice bot — needs UDP-capable server"
       },
@@ -12241,7 +12397,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 12,
+        "line": 11,
         "freq": 1,
         "context": "- [ ] discord voice bot — needs UDP-capable server"
       },
@@ -12309,7 +12465,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 9,
+        "line": 8,
         "freq": 1,
         "context": "## Blocked"
       },
@@ -14739,13 +14895,13 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
       {
         "file": "tasks/active.md",
-        "line": 12,
+        "line": 11,
         "freq": 1,
         "context": "- [ ] discord voice bot — needs UDP-capable server"
       },
@@ -14818,6 +14974,12 @@
         "line": 4,
         "freq": 1,
         "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
       },
       {
         "file": "CHANGELOG.md",
@@ -15202,6 +15364,12 @@
         "line": 78,
         "freq": 1,
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **safety audit**: applied distributed systems research"
       },
       {
         "file": "memory/ventok-business.md",
@@ -18574,6 +18742,12 @@
         "context": "- `scripts/status.mjs` — workspace health overview"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 1,
         "freq": 1,
@@ -18894,6 +19068,12 @@
         "context": "- **Test account:** ron@ctxmem.dev / ctx_QgrciR4-eWds5_GsYYZBH7FzOvhu5xY8"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 15,
         "freq": 1,
@@ -18942,6 +19122,12 @@
         "line": 90,
         "freq": 1,
         "context": "7. **test suite** — 12 tests, all passing"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
       },
       {
         "file": "GOALS.md",
@@ -20464,6 +20650,12 @@
         "context": "- `arc errors` — log error tracker with deduplication"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 35,
         "freq": 1,
@@ -20772,6 +20964,12 @@
         "line": 21,
         "freq": 1,
         "context": "- Mobile onboarding layout (was broken — 480px fixed sidebar)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
       }
     ],
     "vector": [
@@ -20967,7 +21165,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 16,
         "freq": 1,
         "context": "- [ ] anivia landing page — update with new copy"
       },
@@ -21084,6 +21282,12 @@
         "line": 29,
         "freq": 1,
         "context": "| Dark mode | next-themes + toggle in sidebar/mobile header |"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
       }
     ],
     "navigation": [
@@ -22330,6 +22534,12 @@
         "line": 72,
         "freq": 1,
         "context": "- Added `morning-standup` cron (6am UTC / 8am Tallinn)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
       }
     ],
     "msearch": [
@@ -22440,6 +22650,12 @@
         "line": 60,
         "freq": 1,
         "context": "## heartbeat checks"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
       },
       {
         "file": "QUICKREF.md",
@@ -22790,6 +23006,12 @@
         "line": 117,
         "freq": 1,
         "context": "- tests with respx mocking"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
       },
       {
         "file": "QUICKREF.md",
@@ -23346,6 +23568,12 @@
         "line": 63,
         "freq": 1,
         "context": "- Jepsen database testing methodology"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
       },
       {
         "file": "GOALS.md",
@@ -24368,6 +24596,12 @@
         "line": 113,
         "freq": 1,
         "context": "- httpx-based client with full type hints"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
       }
     ],
     "hints": [
@@ -24484,6 +24718,12 @@
     ],
     "auth": [
       {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 2,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      },
+      {
         "file": "memory/2026-01-25.md",
         "line": 116,
         "freq": 1,
@@ -24518,6 +24758,12 @@
         "line": 24,
         "freq": 1,
         "context": "SECURITY DEFINER AS $$ SELECT org_id FROM users WHERE id = auth.uid() $$;"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -24925,7 +25171,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 7,
+        "line": 6,
         "freq": 1,
         "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
       },
@@ -25172,6 +25418,12 @@
         "line": 152,
         "freq": 1,
         "context": "- content/memory-architecture.md"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- lazy-loaded tab content"
       }
     ],
     "memory-architecture": [
@@ -25254,6 +25506,12 @@
         "line": 159,
         "freq": 1,
         "context": "- **Full flow tested:**"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **CRITICAL FIX**: double-approve race condition in approval flow"
       }
     ],
     "signup": [
@@ -25495,7 +25753,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 11,
+        "line": 10,
         "freq": 1,
         "context": "- [ ] context memory deploy — needs domain, railway, stripe from ron"
       },
@@ -26260,6 +26518,46 @@
         "context": "- `lead_gen_presets` — saved lead generation criteria"
       }
     ],
+    "severely": [
+      {
+        "file": "memory/2026-01-26.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- current state: €72/mo MRR (1 client: Noar, severely underpriced)"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 91,
+        "freq": 1,
+        "context": "- **Noar:** €72/mo — SEVERELY UNDERPRICED, needs repricing to €300-€500/mo minimum"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 108,
+        "freq": 1,
+        "context": "2. **Pricing:** Noar severely underpriced, sets bad precedent"
+      }
+    ],
+    "underpriced": [
+      {
+        "file": "memory/2026-01-26.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- current state: €72/mo MRR (1 client: Noar, severely underpriced)"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 91,
+        "freq": 1,
+        "context": "- **Noar:** €72/mo — SEVERELY UNDERPRICED, needs repricing to €300-€500/mo minimum"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 108,
+        "freq": 1,
+        "context": "2. **Pricing:** Noar severely underpriced, sets bad precedent"
+      }
+    ],
     "ronald": [
       {
         "file": "memory/2026-01-26.md",
@@ -26452,6 +26750,12 @@
         "line": 31,
         "freq": 1,
         "context": "- approved ellie's telegram access (user id: 8143429523)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
       },
       {
         "file": "tasks/done.md",
@@ -26693,11 +26997,11 @@
         "file": "memory/2026-01-29.md",
         "line": 16,
         "freq": 1,
-        "context": "- noar repricing, TMW meeting prep, ventok outreach"
+        "context": "- TMW meeting prep, ventok outreach"
       },
       {
         "file": "tasks/active.md",
-        "line": 6,
+        "line": 5,
         "freq": 1,
         "context": "- [ ] TMW meeting prep — proposal for AI sales system"
       }
@@ -26711,7 +27015,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 6,
+        "line": 5,
         "freq": 1,
         "context": "- [ ] TMW meeting prep — proposal for AI sales system"
       }
@@ -26770,22 +27074,10 @@
         "context": "- noar repricing conversation (€72 → €300-500/mo) _(tracked in tasks/active.md)_"
       },
       {
-        "file": "memory/2026-01-29.md",
-        "line": 16,
-        "freq": 1,
-        "context": "- noar repricing, TMW meeting prep, ventok outreach"
-      },
-      {
         "file": "memory/ventok-business.md",
         "line": 91,
         "freq": 1,
         "context": "- **Noar:** €72/mo — SEVERELY UNDERPRICED, needs repricing to €300-€500/mo minimum"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- [ ] noar repricing — €72/mo is way underpriced, target €300-500/mo"
       }
     ],
     "conversation": [
@@ -26808,12 +27100,6 @@
         "line": 49,
         "freq": 1,
         "context": "- noar repricing conversation (€72 → €300-500/mo) _(tracked in tasks/active.md)_"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- [ ] noar repricing — €72/mo is way underpriced, target €300-500/mo"
       }
     ],
     "targeting": [
@@ -27422,6 +27708,18 @@
         "line": 88,
         "freq": 1,
         "context": "- approval queue workflow"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **CRITICAL FIX**: double-approve race condition in approval flow"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
       }
     ],
     "queue": [
@@ -28006,6 +28304,12 @@
         "line": 20,
         "freq": 1,
         "context": "### RLS Fix (Critical)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **CRITICAL FIX**: double-approve race condition in approval flow"
       }
     ],
     "sql": [
@@ -28412,6 +28716,12 @@
         "line": 23,
         "freq": 1,
         "context": "- Verified pipeline already uses real data"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- approveAction() now uses optimistic locking: `.eq('status', 'pending')` on update"
       }
     ],
     "drag-drop": [
@@ -28506,26 +28816,6 @@
         "context": "- Gateway runs fine but CLI tools probe wrong address"
       }
     ],
-    "fine": [
-      {
-        "file": "memory/2026-01-28.md",
-        "line": 10,
-        "freq": 1,
-        "context": "- Gateway runs fine but CLI tools probe wrong address"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 138,
-        "freq": 1,
-        "context": "- The conversation is flowing fine without you"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
-      }
-    ],
     "probe": [
       {
         "file": "memory/2026-01-28.md",
@@ -28578,6 +28868,12 @@
         "line": 12,
         "freq": 1,
         "context": "- Tools need explicit `gatewayUrl` param until proper restart"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
       }
     ],
     "gatewayurl": [
@@ -28666,6 +28962,12 @@
         "line": 20,
         "freq": 1,
         "context": "### Final Fixes"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
       }
     ],
     "layout": [
@@ -28788,6 +29090,12 @@
         "context": "| CSV export | `/api/leads/export` + download button in toolbar |"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 32,
         "freq": 1,
@@ -28906,6 +29214,12 @@
         "line": 31,
         "freq": 1,
         "context": "| Lead score explainer | popover showing breakdown (contact, company, deal, engagement) |"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
       }
     ],
     "showing": [
@@ -29142,6 +29456,12 @@
         "context": "- **tasks/active.md cleanup** — removed completed items, surfaced business tasks:"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 13,
         "freq": 1,
@@ -29284,6 +29604,18 @@
         "context": "- `SECURITY.md` — documented red flags and audit procedures"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **safety audit**: applied distributed systems research"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 35,
         "freq": 1,
@@ -29378,6 +29710,12 @@
         "line": 61,
         "freq": 1,
         "context": "- FoundationDB simulation testing (trillion CPU-hours, swizzle-clogging)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
       }
     ],
     "simulation": [
@@ -29386,6 +29724,12 @@
         "line": 61,
         "freq": 1,
         "context": "- FoundationDB simulation testing (trillion CPU-hours, swizzle-clogging)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
       }
     ],
     "trillion": [
@@ -29688,6 +30032,12 @@
         "line": 78,
         "freq": 1,
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **safety audit**: applied distributed systems research"
       }
     ],
     "2026-01-29": [
@@ -29992,6 +30342,496 @@
         "context": "- separated blocked vs backlog properly"
       }
     ],
+    "restructure": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 19,
+        "freq": 1,
+        "context": "## anivia restructure"
+      },
+      {
+        "file": "tasks/done.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- [x] restructure MEMORY.md"
+      }
+    ],
+    "nav": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
+      }
+    ],
+    "consolidation": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
+      }
+    ],
+    "behind": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
+      }
+    ],
+    "avatar": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **nav consolidation**: 8 sidebar items → 4 + settings behind user avatar"
+      }
+    ],
+    "approvals": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
+      }
+    ],
+    "tabs": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- dashboard (with overview/approvals/activity tabs), pipeline, leads, sequences"
+      }
+    ],
+    "moved": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- AI settings moved into settings page as tab"
+      }
+    ],
+    "into": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- AI settings moved into settings page as tab"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- [ ] Voice memo transcription — process voice notes into actionable items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 26,
+        "freq": 1,
+        "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 72,
+        "freq": 1,
+        "context": "Periodically compress old daily logs into MEMORY.md:"
+      }
+    ],
+    "tab": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- AI settings moved into settings page as tab"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- lazy-loaded tab content"
+      }
+    ],
+    "lazy-loaded": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- lazy-loaded tab content"
+      }
+    ],
+    "component": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **build fixes**: added missing popover component, fixed CSV export type error"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- [ ] Email preview component for anivia — see how emails look before sending"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 28,
+        "freq": 1,
+        "context": "| component | choice | why |"
+      }
+    ],
+    "safety": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **safety audit**: applied distributed systems research"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 101,
+        "freq": 1,
+        "context": "## Safety"
+      }
+    ],
+    "applied": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **safety audit**: applied distributed systems research"
+      }
+    ],
+    "double-approve": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **CRITICAL FIX**: double-approve race condition in approval flow"
+      }
+    ],
+    "race": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **CRITICAL FIX**: double-approve race condition in approval flow"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      }
+    ],
+    "condition": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **CRITICAL FIX**: double-approve race condition in approval flow"
+      }
+    ],
+    "approveaction": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- approveAction() now uses optimistic locking: `.eq('status', 'pending')` on update"
+      }
+    ],
+    "optimistic": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- approveAction() now uses optimistic locking: `.eq('status', 'pending')` on update"
+      }
+    ],
+    "locking": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- approveAction() now uses optimistic locking: `.eq('status', 'pending')` on update"
+      }
+    ],
+    "pending": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- approveAction() now uses optimistic locking: `.eq('status', 'pending')` on update"
+      }
+    ],
+    "update": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- approveAction() now uses optimistic locking: `.eq('status', 'pending')` on update"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- [ ] anivia landing page — update with new copy"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 70,
+        "freq": 1,
+        "context": "*update goals as they evolve*"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 82,
+        "freq": 1,
+        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- You can **read, edit, and update** MEMORY.md freely in main sessions"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 91,
+        "freq": 1,
+        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 199,
+        "freq": 1,
+        "context": "- Update documentation"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 201,
+        "freq": 1,
+        "context": "- **Review and update MEMORY.md** (see below)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 207,
+        "freq": 1,
+        "context": "3. Update `MEMORY.md` with distilled learnings"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 200,
+        "freq": 1,
+        "context": "arc post tasks \"update\""
+      }
+    ],
+    "two": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- prevents two concurrent callers from both sending the same email"
+      }
+    ],
+    "concurrent": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- prevents two concurrent callers from both sending the same email"
+      }
+    ],
+    "callers": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- prevents two concurrent callers from both sending the same email"
+      }
+    ],
+    "sending": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- prevents two concurrent callers from both sending the same email"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- [ ] Email preview component for anivia — see how emails look before sending"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- Sending emails, tweets, public posts"
+      }
+    ],
+    "write": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- Write significant events, thoughts, decisions, opinions, lessons learned"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 93,
+        "freq": 1,
+        "context": "### 📝 Write It Down - No \"Mental Notes\"!"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 5,
+        "freq": 1,
+        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
+      }
+    ],
+    "operations": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- Partial fulfillment logic, kiln operations"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 28,
+        "freq": 1,
+        "context": "Use `./scripts/arc` for all workspace operations:"
+      }
+    ],
+    "rely": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      }
+    ],
+    "acceptable": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      }
+    ],
+    "ideal": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- auth audit: 12 write operations missing explicit auth checks (rely on RLS — acceptable but not ide"
+      }
+    ],
+    "safety-audit": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
+      }
+    ],
+    "integrity": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 2,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
+      }
+    ],
+    "conditions": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- built full test suite: `tests/safety-audit.ts` (RLS, approval integrity, race conditions, auth, da"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- **Multi-agent coordination** — shared state without race conditions"
+      }
+    ],
+    "inspired": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
+      }
+    ],
+    "yuan": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
+      }
+    ],
+    "osdi": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
+      }
+    ],
+    "paper": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- inspired by Yuan et al. OSDI 2014 paper + FoundationDB simulation testing"
+      }
+    ],
     "something": [
       {
         "file": "memory/nightly-builds.md",
@@ -30146,40 +30986,6 @@
         "context": "- [ ] Voice memo transcription — process voice notes into actionable items"
       }
     ],
-    "into": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 13,
-        "freq": 1,
-        "context": "- [ ] Voice memo transcription — process voice notes into actionable items"
-      },
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 26,
-        "freq": 1,
-        "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 72,
-        "freq": 1,
-        "context": "Periodically compress old daily logs into MEMORY.md:"
-      }
-    ],
-    "component": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 14,
-        "freq": 1,
-        "context": "- [ ] Email preview component for anivia — see how emails look before sending"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 28,
-        "freq": 1,
-        "context": "| component | choice | why |"
-      }
-    ],
     "look": [
       {
         "file": "memory/nightly-builds.md",
@@ -30212,26 +31018,6 @@
         "line": 122,
         "freq": 1,
         "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
-      }
-    ],
-    "sending": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 14,
-        "freq": 1,
-        "context": "- [ ] Email preview component for anivia — see how emails look before sending"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 7,
-        "freq": 1,
-        "context": "- [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 116,
-        "freq": 1,
-        "context": "- Sending emails, tweets, public posts"
       }
     ],
     "unchecked": [
@@ -30373,7 +31159,7 @@
       },
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 15,
         "freq": 1,
         "context": "- [ ] anivia phase 2 — backend (supabase + tRPC + real data)"
       }
@@ -30860,20 +31646,6 @@
         "context": "- Need: production management + kiln tracking + partial fulfillment"
       }
     ],
-    "operations": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 34,
-        "freq": 1,
-        "context": "- Partial fulfillment logic, kiln operations"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 28,
-        "freq": 1,
-        "context": "Use `./scripts/arc` for all workspace operations:"
-      }
-    ],
     "minimal": [
       {
         "file": "memory/ventok-business.md",
@@ -31000,44 +31772,6 @@
         "line": 52,
         "freq": 1,
         "context": "- Vercel/Netlify (hosting)"
-      }
-    ],
-    "pricing": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 54,
-        "freq": 1,
-        "context": "## Pricing"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 108,
-        "freq": 1,
-        "context": "2. **Pricing:** Noar severely underpriced, sets bad precedent"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 41,
-        "freq": 1,
-        "context": "- Scalable pricing based on API calls"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 59,
-        "freq": 1,
-        "context": "- **option B:** Fly.io — similar pricing"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 64,
-        "freq": 1,
-        "context": "## Pricing"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 50,
-        "freq": 1,
-        "context": "## Pricing"
       }
     ],
     "basic": [
@@ -31696,30 +32430,10 @@
         "context": "- `[?]` — needs clarification"
       }
     ],
-    "way": [
-      {
-        "file": "tasks/active.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- [ ] noar repricing — €72/mo is way underpriced, target €300-500/mo"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 3,
-        "freq": 1,
-        "context": "This folder is home. Treat it that way."
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 151,
-        "freq": 1,
-        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
-      }
-    ],
     "udp-capable": [
       {
         "file": "tasks/active.md",
-        "line": 12,
+        "line": 11,
         "freq": 1,
         "context": "- [ ] discord voice bot — needs UDP-capable server"
       }
@@ -31727,7 +32441,7 @@
     "picks": [
       {
         "file": "tasks/active.md",
-        "line": 14,
+        "line": 13,
         "freq": 1,
         "context": "## Next (when ron picks direction)"
       }
@@ -31735,7 +32449,7 @@
     "phase": [
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 15,
         "freq": 1,
         "context": "- [ ] anivia phase 2 — backend (supabase + tRPC + real data)"
       }
@@ -31743,93 +32457,17 @@
     "trpc": [
       {
         "file": "tasks/active.md",
-        "line": 16,
+        "line": 15,
         "freq": 1,
         "context": "- [ ] anivia phase 2 — backend (supabase + tRPC + real data)"
-      }
-    ],
-    "update": [
-      {
-        "file": "tasks/active.md",
-        "line": 17,
-        "freq": 1,
-        "context": "- [ ] anivia landing page — update with new copy"
-      },
-      {
-        "file": "GOALS.md",
-        "line": 70,
-        "freq": 1,
-        "context": "*update goals as they evolve*"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 82,
-        "freq": 1,
-        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 88,
-        "freq": 1,
-        "context": "- You can **read, edit, and update** MEMORY.md freely in main sessions"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 91,
-        "freq": 1,
-        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 96,
-        "freq": 1,
-        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 97,
-        "freq": 1,
-        "context": "- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 199,
-        "freq": 1,
-        "context": "- Update documentation"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 201,
-        "freq": 1,
-        "context": "- **Review and update MEMORY.md** (see below)"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 207,
-        "freq": 1,
-        "context": "3. Update `MEMORY.md` with distilled learnings"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 200,
-        "freq": 1,
-        "context": "arc post tasks \"update\""
       }
     ],
     "copy": [
       {
         "file": "tasks/active.md",
-        "line": 17,
+        "line": 16,
         "freq": 1,
         "context": "- [ ] anivia landing page — update with new copy"
-      }
-    ],
-    "restructure": [
-      {
-        "file": "tasks/done.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- [x] restructure MEMORY.md"
       }
     ],
     "improve": [
@@ -32846,6 +33484,20 @@
         "context": "This folder is home. Treat it that way."
       }
     ],
+    "way": [
+      {
+        "file": "AGENTS.md",
+        "line": 3,
+        "freq": 1,
+        "context": "This folder is home. Treat it that way."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 151,
+        "freq": 1,
+        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
+      }
+    ],
     "exists": [
       {
         "file": "AGENTS.md",
@@ -33534,32 +34186,6 @@
         "context": "**Safe to do freely:**"
       }
     ],
-    "write": [
-      {
-        "file": "AGENTS.md",
-        "line": 89,
-        "freq": 1,
-        "context": "- Write significant events, thoughts, decisions, opinions, lessons learned"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 93,
-        "freq": 1,
-        "context": "### 📝 Write It Down - No \"Mental Notes\"!"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 94,
-        "freq": 1,
-        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 5,
-        "freq": 1,
-        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
-      }
-    ],
     "significant": [
       {
         "file": "AGENTS.md",
@@ -33826,14 +34452,6 @@
         "line": 99,
         "freq": 1,
         "context": "- **Text > Brain** 📝"
-      }
-    ],
-    "safety": [
-      {
-        "file": "AGENTS.md",
-        "line": 101,
-        "freq": 1,
-        "context": "## Safety"
       }
     ],
     "exfiltrate": [
@@ -37044,22 +37662,6 @@
         "context": "| Multi-agent coordination | messy | ✓ |"
       }
     ],
-    "race": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 105,
-        "freq": 1,
-        "context": "- **Multi-agent coordination** — shared state without race conditions"
-      }
-    ],
-    "conditions": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 105,
-        "freq": 1,
-        "context": "- **Multi-agent coordination** — shared state without race conditions"
-      }
-    ],
     "cross-device": [
       {
         "file": "projects/context-memory/README.md",
@@ -37540,92 +38142,92 @@
   "files": {
     "MEMORY.md": {
       "lines": 166,
-      "updated": "2026-01-29T10:07:06.251Z"
+      "updated": "2026-01-29T10:37:08.980Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-29T10:07:06.256Z"
+      "updated": "2026-01-29T10:37:08.982Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-29T10:07:06.256Z"
+      "updated": "2026-01-29T10:37:08.983Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-29T10:07:06.258Z"
+      "updated": "2026-01-29T10:37:08.984Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-01-29T10:07:06.259Z"
+      "updated": "2026-01-29T10:37:08.985Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-01-29T10:07:06.260Z"
+      "updated": "2026-01-29T10:37:08.986Z"
     },
     "memory/2026-01-29.md": {
-      "lines": 18,
-      "updated": "2026-01-29T10:07:06.260Z"
+      "lines": 32,
+      "updated": "2026-01-29T10:37:08.986Z"
     },
     "memory/nightly-builds.md": {
       "lines": 36,
-      "updated": "2026-01-29T10:07:06.260Z"
+      "updated": "2026-01-29T10:37:08.987Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-29T10:07:06.260Z"
+      "updated": "2026-01-29T10:37:08.987Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-29T10:07:06.261Z"
+      "updated": "2026-01-29T10:37:08.988Z"
     },
     "tasks/active.md": {
-      "lines": 18,
-      "updated": "2026-01-29T10:07:06.261Z"
+      "lines": 17,
+      "updated": "2026-01-29T10:37:08.988Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-29T10:07:06.261Z"
+      "updated": "2026-01-29T10:37:08.988Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-29T10:07:06.262Z"
+      "updated": "2026-01-29T10:37:08.988Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-29T10:07:06.262Z"
+      "updated": "2026-01-29T10:37:08.988Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-29T10:07:06.262Z"
+      "updated": "2026-01-29T10:37:08.988Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-29T10:07:06.263Z"
+      "updated": "2026-01-29T10:37:08.989Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-29T10:07:06.263Z"
+      "updated": "2026-01-29T10:37:08.989Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-29T10:07:06.264Z"
+      "updated": "2026-01-29T10:37:08.990Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-29T10:07:06.264Z"
+      "updated": "2026-01-29T10:37:08.991Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-29T10:07:06.265Z"
+      "updated": "2026-01-29T10:37:08.991Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-29T10:07:06.266Z"
+      "updated": "2026-01-29T10:37:08.995Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-01-29T10:07:06.266Z"
+      "updated": "2026-01-29T10:37:08.995Z"
     }
   },
-  "built": "2026-01-29T10:07:06.250Z"
+  "built": "2026-01-29T10:37:08.979Z"
 }

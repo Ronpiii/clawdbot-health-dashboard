@@ -27,7 +27,7 @@
 ---
 
 ## ventok business
-- **current MRR:** €72 (1 client: Noar — severely underpriced)
+- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)
 - **target:** €5k MRR for full-time transition
 - **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu
 - **positioning:** "escape excel hell" for estonian SME manufacturers
