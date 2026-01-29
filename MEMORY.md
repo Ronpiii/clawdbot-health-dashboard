@@ -17,6 +17,7 @@
 - trusts me to make decisions about ventok infrastructure
 - **continuous work mode** — keep going until told otherwise, don't wait for permission
 - **exploration time** — leave gaps for curiosity, learning, writing. ron wants me growing, not just producing
+- **morning curiosity drop** — share one cool thing i learned each morning
 - **"clean your room"** = delete/purge unnecessary stuff (server inodes were full, purely practical)
 - noar is ron's sister — never bring up repricing, pricing is fine
 - wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often
