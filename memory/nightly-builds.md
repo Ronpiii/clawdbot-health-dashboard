@@ -8,73 +8,28 @@ Ron wants me to build something small but helpful every night while he sleeps.
 
 ## Ideas Backlog
 
-### Workflow & Communication
-- [x] Daily standup bot — auto-summary of yesterday's work posted to Discord #logs ✓ cron added 2026-01-28
-- [x] Quick capture CLI — `arc idea "thought"` saves to ideas file ✓ built 2026-01-28
+_Add new ideas here. Pick one per night._
+
 - [ ] Voice memo transcription — process voice notes into actionable items
-
-### Anivia Improvements
-- [ ] Email preview component — see how emails look before sending
-- [x] Lead scoring explainer — show why AI scored a lead the way it did ✓ built 2026-01-28
-- [x] Keyboard shortcuts — power user navigation ✓ already exists (CommandPalette)
-- [x] Dark mode toggle — if not already there ✓ built 2026-01-28
-- [x] Export leads to CSV — simple data export ✓ built 2026-01-28
-- [ ] Bulk email drafting UI — select leads → draft all
-- [x] Activity feed filters — by type, date range ✓ built 2026-01-28
-- [x] Pipeline analytics — conversion rates between stages ✓ built 2026-01-28
-
-### Developer Tools
-- [x] Auto-commit script — commits workspace changes with AI-generated message ✓ built 2026-01-28
-- [x] PR summary generator — summarize changes for review ✓ built 2026-01-28
-- [x] Error tracker — collect and summarize errors from logs ✓ built 2026-01-28
-- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29
-
-### Fun/Surprise
-- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28
-- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28
+- [ ] Email preview component for anivia — see how emails look before sending
+- [ ] Bulk email drafting UI for anivia — select leads → draft all
 
 ---
 
 ## Completed Builds
 
+### 2026-01-29: TODO Aggregator
+**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items
+**Modes:** full list, count, keyword filter, done, all (with progress bar)
+
+### 2026-01-29: TODO Triage
+**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale
+
 ### 2026-01-28: Quick Idea Capture
 **What:** `arc idea` command for instant thought capture
-**Why:** Brain dump without context switching — idea comes, capture it, move on
-**How to test:**
-```bash
-arc idea "what if we added dark mode"
-arc idea list
-arc idea clear   # removes completed
-```
-**Files changed:**
-- `scripts/idea.mjs` (new)
-- `scripts/arc` (added idea command)
-- `ideas/IDEAS.md` (created on first use)
-**Time spent:** ~5 minutes
 
----
+### 2026-01-28: Anivia Features (batch)
+CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter
 
-### 2026-01-29: TODO Aggregator
-**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by file
-**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all.
-**Modes:**
-- `arc todo` — full list grouped by file with icons
-- `arc todo count` — compact counts per file
-- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)
-- `arc todo done` — show completed items
-- `arc todo all` — both, with progress bar (43% done across workspace)
-**Files changed:**
-- `scripts/todo.mjs` (new — 140 lines)
-- `scripts/arc` (added todo/todos commands + help entry)
-**Time spent:** ~5 minutes
-
----
-
-## Build Log Format
-
-### YYYY-MM-DD: [Feature Name]
-**What:** Brief description
-**Why:** Problem it solves
-**How to test:** Steps to try it
-**Files changed:** List of files
-**Time spent:** X minutes
+### 2026-01-28: Dev Tools (batch)
+Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit
