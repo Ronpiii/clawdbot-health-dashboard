@@ -48,7 +48,8 @@ const SCRIPTS = {
   audit: 'audit-skill.mjs',
   pr: 'pr-summary.mjs',
   errors: 'error-tracker.mjs',
-  todo: 'todo.mjs'
+  todo: 'todo.mjs',
+  triage: 'triage.mjs'
 };
 
 const HELP = `
@@ -79,6 +80,7 @@ Commands:
   test                  Run toolkit tests
   goals                 Show goal status
   todo [query|count]    Find all unchecked TODOs across workspace
+  triage [cat|summary]  Categorize TODOs: blocked/actionable/documentation/stale
 
 Examples:
   arc search "database issue"
