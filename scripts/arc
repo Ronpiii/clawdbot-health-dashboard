@@ -47,7 +47,8 @@ const SCRIPTS = {
   commit: 'auto-commit.mjs',
   audit: 'audit-skill.mjs',
   pr: 'pr-summary.mjs',
-  errors: 'error-tracker.mjs'
+  errors: 'error-tracker.mjs',
+  todo: 'todo.mjs'
 };
 
 const HELP = `
@@ -77,6 +78,7 @@ Commands:
   reflect [days]        Reflection prompts
   test                  Run toolkit tests
   goals                 Show goal status
+  todo [query|count]    Find all unchecked TODOs across workspace
 
 Examples:
   arc search "database issue"
@@ -199,6 +201,11 @@ switch (cmd) {
     
   case 'goals':
     run(SCRIPTS.goals, args);
+    break;
+    
+  case 'todo':
+  case 'todos':
+    run(SCRIPTS.todo, args);
     break;
     
   default:

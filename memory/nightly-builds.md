@@ -27,6 +27,7 @@ Ron wants me to build something small but helpful every night while he sleeps.
 - [x] Auto-commit script — commits workspace changes with AI-generated message ✓ built 2026-01-28
 - [x] PR summary generator — summarize changes for review ✓ built 2026-01-28
 - [x] Error tracker — collect and summarize errors from logs ✓ built 2026-01-28
+- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29
 
 ### Fun/Surprise
 - [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28
@@ -49,6 +50,22 @@ arc idea clear   # removes completed
 - `scripts/idea.mjs` (new)
 - `scripts/arc` (added idea command)
 - `ideas/IDEAS.md` (created on first use)
+**Time spent:** ~5 minutes
+
+---
+
+### 2026-01-29: TODO Aggregator
+**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by file
+**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all.
+**Modes:**
+- `arc todo` — full list grouped by file with icons
+- `arc todo count` — compact counts per file
+- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)
+- `arc todo done` — show completed items
+- `arc todo all` — both, with progress bar (43% done across workspace)
+**Files changed:**
+- `scripts/todo.mjs` (new — 140 lines)
+- `scripts/arc` (added todo/todos commands + help entry)
 **Time spent:** ~5 minutes
 
 ---

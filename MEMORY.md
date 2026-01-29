@@ -155,6 +155,7 @@
 | morning.mjs | morning briefing (weather, priorities) |
 | recap.mjs | 30-day recap (git stats, projects, themes) |
 | daily-summary.mjs | end-of-day summary |
+| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
 
