@@ -49,7 +49,8 @@ const SCRIPTS = {
   pr: 'pr-summary.mjs',
   errors: 'error-tracker.mjs',
   todo: 'todo.mjs',
-  triage: 'triage.mjs'
+  triage: 'triage.mjs',
+  changelog: 'changelog.mjs'
 };
 
 const HELP = `
@@ -81,6 +82,7 @@ Commands:
   goals                 Show goal status
   todo [query|count]    Find all unchecked TODOs across workspace
   triage [cat|summary]  Categorize TODOs: blocked/actionable/documentation/stale
+  changelog [opts]      Generate changelog (--project, --days, --format md)
 
 Examples:
   arc search "database issue"
@@ -213,6 +215,11 @@ switch (cmd) {
   case 'todo':
   case 'todos':
     run(SCRIPTS.todo, args);
+    break;
+    
+  case 'changelog':
+  case 'cl':
+    run(SCRIPTS.changelog, args);
     break;
     
   default:
