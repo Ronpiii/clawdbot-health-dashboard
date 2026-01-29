@@ -50,7 +50,8 @@ const SCRIPTS = {
   errors: 'error-tracker.mjs',
   todo: 'todo.mjs',
   triage: 'triage.mjs',
-  changelog: 'changelog.mjs'
+  changelog: 'changelog.mjs',
+  learn: 'learn.mjs'
 };
 
 const HELP = `
@@ -63,6 +64,7 @@ Commands:
   check                 Run heartbeat checks
   note <text>           Quick note to today's log
   idea <text>           Capture an idea for later
+  learn <text>          Capture a lesson learned (not just activity)
   today                 Quick context: what happened today
   week                  Weekly overview (past 7 days)
   recap [days]          30-day recap (commits, projects, highlights)
@@ -144,6 +146,10 @@ switch (cmd) {
     
   case 'idea':
     run(SCRIPTS.idea, args);
+    break;
+    
+  case 'learn':
+    run(SCRIPTS.learn, args);
     break;
     
   case 'today':
