@@ -48,12 +48,32 @@
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
     ],
+    "139": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- 139 open TODOs found across 15 files"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      }
+    ],
     "140": [
       {
         "file": "memory/2026-01-25.md",
         "line": 149,
         "freq": 1,
         "context": "- 140+ commits total"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- `scripts/todo.mjs` (new — 140 lines)"
       }
     ],
     "199": [
@@ -911,7 +931,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 58,
+        "line": 75,
         "freq": 1,
         "context": "### YYYY-MM-DD: [Feature Name]"
       },
@@ -934,6 +954,12 @@
         "line": 27,
         "freq": 2,
         "context": "- ✓ configured git identity (Arc <arc@ventok.dev>)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 63,
+        "freq": 2,
+        "context": "- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)"
       },
       {
         "file": "MEMORY.md",
@@ -1032,6 +1058,18 @@
         "context": "- `arc errors` — log error tracker with deduplication"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc todo"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 13,
         "freq": 1,
@@ -1039,33 +1077,69 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 41,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 44,
+        "line": 45,
         "freq": 1,
         "context": "arc idea \"what if we added dark mode\""
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 45,
+        "line": 46,
         "freq": 1,
         "context": "arc idea list"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 46,
+        "line": 47,
         "freq": 1,
         "context": "arc idea clear   # removes completed"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 50,
+        "line": 51,
         "freq": 1,
         "context": "- `scripts/arc` (added idea command)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- `arc todo` — full list grouped by file with icons"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- `arc todo count` — compact counts per file"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- `arc todo done` — show completed items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- `arc todo all` — both, with progress bar (43% done across workspace)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
       },
       {
         "file": "tasks/done.md",
@@ -2050,6 +2124,12 @@
         "context": "- Discord voice bot still blocked (needs UDP server)"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- posted summary to discord #logs"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 12,
         "freq": 1,
@@ -2185,7 +2265,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 51,
+        "line": 52,
         "freq": 1,
         "context": "- `ideas/IDEAS.md` (created on first use)"
       },
@@ -2311,19 +2391,25 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 161,
+        "line": 162,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 35,
+        "line": 36,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 54,
+        "line": 55,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 71,
         "freq": 1,
         "context": "---"
       },
@@ -3651,7 +3737,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 44,
+        "line": 45,
         "freq": 1,
         "context": "arc idea \"what if we added dark mode\""
       },
@@ -5564,6 +5650,18 @@
         "context": "- **Activity page** — full activity log with filtering"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- `arc todo` — full list grouped by file with icons"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 16,
         "freq": 1,
@@ -5894,6 +5992,12 @@
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       },
       {
+        "file": "MEMORY.md",
+        "line": 158,
+        "freq": 1,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
+      },
+      {
         "file": "memory/2026-01-26.md",
         "line": 80,
         "freq": 1,
@@ -5912,6 +6016,12 @@
         "context": "# 2026-01-28 — Build Day"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc todo"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 3,
         "freq": 1,
@@ -5919,7 +6029,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 56,
+        "line": 73,
         "freq": 1,
         "context": "## Build Log Format"
       },
@@ -6304,6 +6414,24 @@
         "line": 47,
         "freq": 1,
         "context": "- **done:** add lead, sequences, notes, send email, generate leads, activity page, filters, settings"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- `arc todo done` — show completed items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- `arc todo all` — both, with progress bar (43% done across workspace)"
       },
       {
         "file": "tasks/README.md",
@@ -7002,6 +7130,12 @@
         "context": "- [ ] Bulk email drafting UI — select leads → draft all"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)"
+      },
+      {
         "file": "tasks/active.md",
         "line": 20,
         "freq": 1,
@@ -7507,6 +7641,18 @@
     "todo": [
       {
         "file": "MEMORY.md",
+        "line": 158,
+        "freq": 2,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 63,
+        "freq": 2,
+        "context": "- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)"
+      },
+      {
+        "file": "MEMORY.md",
         "line": 49,
         "freq": 1,
         "context": "- **todo:** mobile responsive, pipeline real data, priority 2/3 UX polish"
@@ -7528,6 +7674,78 @@
         "line": 39,
         "freq": 1,
         "context": "### Still TODO (per Ron's feedback)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc todo"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 57,
+        "freq": 1,
+        "context": "### 2026-01-29: TODO Aggregator"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- `arc todo` — full list grouped by file with icons"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- `arc todo count` — compact counts per file"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- `arc todo done` — show completed items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- `arc todo all` — both, with progress bar (43% done across workspace)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- `scripts/todo.mjs` (new — 140 lines)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
       },
       {
         "file": "tasks/README.md",
@@ -8294,6 +8512,12 @@
         "context": "- key finding: no one owns full funnel (outreach OR CRM, never both)"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
         "file": "AGENTS.md",
         "line": 143,
         "freq": 1,
@@ -8549,7 +8773,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       },
@@ -10975,7 +11199,7 @@
     "files": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 62,
+        "line": 79,
         "freq": 2,
         "context": "**Files changed:** List of files"
       },
@@ -10996,6 +11220,12 @@
         "line": 124,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — 1115 terms, 16 files, 20 synonym groups"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 158,
+        "freq": 1,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
       {
         "file": "memory/2026-01-25.md",
@@ -11052,8 +11282,38 @@
         "context": "### files created"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- 139 open TODOs found across 15 files"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 48,
+        "line": 49,
+        "freq": 1,
+        "context": "**Files changed:**"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 66,
         "freq": 1,
         "context": "**Files changed:**"
       },
@@ -11606,6 +11866,12 @@
         "line": 23,
         "freq": 1,
         "context": "- Vercel deployment shows Vercel's container metrics, not actual server"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
       },
       {
         "file": "scripts/README.md",
@@ -12204,6 +12470,12 @@
         "line": 73,
         "freq": 1,
         "context": "- Posts morning briefing to Discord #logs"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- posted summary to discord #logs"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -12876,6 +13148,24 @@
         "context": "- [x] Auto-commit script — commits workspace changes with AI-generated message ✓ built 2026-01-28"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- `arc todo all` — both, with progress bar (43% done across workspace)"
+      },
+      {
         "file": "tasks/done.md",
         "line": 7,
         "freq": 1,
@@ -13253,7 +13543,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 51,
+        "line": 52,
         "freq": 2,
         "context": "- `ideas/IDEAS.md` (created on first use)"
       },
@@ -13520,6 +13810,12 @@
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (14 commands)"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
+      },
+      {
         "file": "tasks/active.md",
         "line": 18,
         "freq": 1,
@@ -13571,7 +13867,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 33,
         "freq": 1,
         "context": "- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28"
       },
@@ -13920,6 +14216,12 @@
         "context": "- `arc pr` — PR summary generator from diffs"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- posted summary to discord #logs"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 28,
         "freq": 1,
@@ -13927,7 +14229,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       },
@@ -14476,6 +14778,12 @@
         "context": "## Dev Tools Built"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 13,
         "freq": 1,
@@ -14531,7 +14839,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
         "freq": 1,
         "context": "- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28"
       },
@@ -14584,6 +14898,18 @@
         "line": 108,
         "freq": 1,
         "context": "- [12:01] reflection: most impactful = keyword search + auto-maintenance + unified CLI"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)"
       },
       {
         "file": "tasks/done.md",
@@ -14772,6 +15098,12 @@
         "line": 18,
         "freq": 1,
         "context": "- [x] Lead scoring explainer — show why AI scored a lead the way it did ✓ built 2026-01-28"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- `arc todo done` — show completed items"
       },
       {
         "file": "scripts/README.md",
@@ -15263,7 +15595,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       },
@@ -15615,7 +15947,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 51,
+        "line": 52,
         "freq": 1,
         "context": "- `ideas/IDEAS.md` (created on first use)"
       },
@@ -15834,10 +16166,22 @@
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       },
       {
+        "file": "MEMORY.md",
+        "line": 158,
+        "freq": 1,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
+      },
+      {
         "file": "memory/2026-01-28.md",
         "line": 45,
         "freq": 1,
         "context": "## Nightly Builds Backlog Updated"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc todo"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -15867,7 +16211,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 38,
         "freq": 1,
         "context": "## Completed Builds"
       }
@@ -16037,7 +16381,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 40,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       },
@@ -16128,6 +16472,12 @@
         "line": 46,
         "freq": 2,
         "context": "- `scripts/README.md` — documentation for all scripts"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 7,
+        "freq": 2,
+        "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
       },
       {
         "file": "MEMORY.md",
@@ -16305,15 +16655,27 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 49,
+        "line": 50,
         "freq": 1,
         "context": "- `scripts/idea.mjs` (new)"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 50,
+        "line": 51,
         "freq": 1,
         "context": "- `scripts/arc` (added idea command)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- `scripts/todo.mjs` (new — 140 lines)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
       },
       {
         "file": "QUICKREF.md",
@@ -16736,6 +17098,12 @@
         "line": 164,
         "freq": 1,
         "context": "- semantic search ✓ (85% match on test query)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)"
       },
       {
         "file": "QUICKREF.md",
@@ -17207,19 +17575,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 40,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 41,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       },
@@ -17274,14 +17642,26 @@
         "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 45,
+        "line": 46,
         "freq": 1,
         "context": "arc idea list"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 62,
+        "line": 61,
+        "freq": 1,
+        "context": "- `arc todo` — full list grouped by file with icons"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 79,
         "freq": 1,
         "context": "**Files changed:** List of files"
       },
@@ -17561,7 +17941,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 159,
+        "line": 160,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -18031,11 +18411,17 @@
         "file": "MEMORY.md",
         "line": 158,
         "freq": 1,
-        "context": "| compress-logs.mjs | log compression |"
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
       {
         "file": "MEMORY.md",
         "line": 159,
+        "freq": 1,
+        "context": "| compress-logs.mjs | log compression |"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 160,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -18130,10 +18516,22 @@
         "context": "6. **goal tracking** — GOALS.md + goals.mjs"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 49,
+        "line": 50,
         "freq": 1,
         "context": "- `scripts/idea.mjs` (new)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- `scripts/todo.mjs` (new — 140 lines)"
       },
       {
         "file": "AGENTS.md",
@@ -18641,13 +19039,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 42,
+        "line": 43,
         "freq": 1,
         "context": "**How to test:**"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 61,
+        "line": 78,
         "freq": 1,
         "context": "**How to test:** Steps to try it"
       },
@@ -18811,49 +19209,49 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 40,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 41,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 44,
+        "line": 45,
         "freq": 1,
         "context": "arc idea \"what if we added dark mode\""
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 45,
+        "line": 46,
         "freq": 1,
         "context": "arc idea list"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 46,
+        "line": 47,
         "freq": 1,
         "context": "arc idea clear   # removes completed"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 49,
+        "line": 50,
         "freq": 1,
         "context": "- `scripts/idea.mjs` (new)"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 50,
+        "line": 51,
         "freq": 1,
         "context": "- `scripts/arc` (added idea command)"
       },
@@ -19599,13 +19997,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 33,
         "freq": 1,
         "context": "- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       }
@@ -19637,7 +20035,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 33,
         "freq": 1,
         "context": "- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28"
       }
@@ -19657,7 +20055,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 33,
         "freq": 1,
         "context": "- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28"
       },
@@ -19683,7 +20081,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 33,
         "freq": 1,
         "context": "- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28"
       },
@@ -19820,10 +20218,120 @@
         "context": "5. **daily summaries** — end-of-day reports"
       }
     ],
-    "compress-logs": [
+    "aggregator": [
       {
         "file": "MEMORY.md",
         "line": 158,
+        "freq": 1,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 57,
+        "freq": 1,
+        "context": "### 2026-01-29: TODO Aggregator"
+      }
+    ],
+    "across": [
+      {
+        "file": "MEMORY.md",
+        "line": 158,
+        "freq": 1,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- 139 open TODOs found across 15 files"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- `arc todo all` — both, with progress bar (43% done across workspace)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 5,
+        "freq": 1,
+        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- **Teams** sharing context across members"
+      }
+    ],
+    "markdown": [
+      {
+        "file": "MEMORY.md",
+        "line": 158,
+        "freq": 1,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 154,
+        "freq": 1,
+        "context": "- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead"
+      }
+    ],
+    "01-29": [
+      {
+        "file": "MEMORY.md",
+        "line": 158,
+        "freq": 1,
+        "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
+      }
+    ],
+    "compress-logs": [
+      {
+        "file": "MEMORY.md",
+        "line": 159,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -19855,7 +20363,7 @@
     "log": [
       {
         "file": "MEMORY.md",
-        "line": 158,
+        "line": 159,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -19885,7 +20393,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 56,
+        "line": 73,
         "freq": 1,
         "context": "## Build Log Format"
       },
@@ -19917,7 +20425,7 @@
     "compression": [
       {
         "file": "MEMORY.md",
-        "line": 158,
+        "line": 159,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -19937,7 +20445,7 @@
     "discord-post": [
       {
         "file": "MEMORY.md",
-        "line": 159,
+        "line": 160,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -19957,7 +20465,7 @@
     "posting": [
       {
         "file": "MEMORY.md",
-        "line": 159,
+        "line": 160,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -19971,7 +20479,7 @@
     "last": [
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 164,
         "freq": 1,
         "context": "*last updated: 2026-01-28*"
       },
@@ -20015,7 +20523,7 @@
     "updated": [
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 164,
         "freq": 1,
         "context": "*last updated: 2026-01-28*"
       },
@@ -20074,6 +20582,12 @@
         "context": "## Nightly Builds Backlog Updated"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 3,
         "freq": 1,
@@ -20089,7 +20603,7 @@
     "2026-01-28": [
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 164,
         "freq": 1,
         "context": "*last updated: 2026-01-28*"
       },
@@ -20161,19 +20675,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 33,
         "freq": 1,
         "context": "- [x] Morning briefing — weather + calendar + priorities ✓ built 2026-01-28"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 40,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       }
@@ -20393,7 +20907,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 51,
+        "line": 52,
         "freq": 1,
         "context": "- `ideas/IDEAS.md` (created on first use)"
       },
@@ -20747,9 +21261,15 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 49,
+        "line": 50,
         "freq": 1,
         "context": "- `scripts/idea.mjs` (new)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- `scripts/todo.mjs` (new — 140 lines)"
       },
       {
         "file": "tasks/README.md",
@@ -20845,7 +21365,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 44,
+        "line": 45,
         "freq": 1,
         "context": "arc idea \"what if we added dark mode\""
       }
@@ -21911,15 +22431,21 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 38,
         "freq": 1,
         "context": "## Completed Builds"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 46,
+        "line": 47,
         "freq": 1,
         "context": "arc idea clear   # removes completed"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- `arc todo done` — show completed items"
       },
       {
         "file": "memory/ventok-business.md",
@@ -22143,15 +22669,21 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 44,
+        "line": 45,
         "freq": 1,
         "context": "arc idea \"what if we added dark mode\""
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 50,
+        "line": 51,
         "freq": 1,
         "context": "- `scripts/arc` (added idea command)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
       }
     ],
     "msearch": [
@@ -22402,6 +22934,12 @@
         "line": 116,
         "freq": 1,
         "context": "- error handling (auth, rate limit, not found, limits)"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- 139 open TODOs found across 15 files"
       },
       {
         "file": "AGENTS.md",
@@ -22943,7 +23481,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 61,
+        "line": 78,
         "freq": 1,
         "context": "**How to test:** Steps to try it"
       }
@@ -23056,6 +23594,24 @@
         "line": 13,
         "freq": 1,
         "context": "- [x] Quick capture CLI — `arc idea \"thought\"` saves to ideas file ✓ built 2026-01-28"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- `arc todo` — full list grouped by file with icons"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- `arc todo count` — compact counts per file"
       },
       {
         "file": "QUICKREF.md",
@@ -25340,6 +25896,12 @@
         "context": "- create entry ✓"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
+      },
+      {
         "file": "projects/context-memory/README.md",
         "line": 94,
         "freq": 1,
@@ -26332,6 +26894,12 @@
         "context": "- created `projects/ventok/lead-research-guide.md` — how to find more leads"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
         "file": "projects/context-memory/README.md",
         "line": 59,
         "freq": 1,
@@ -26899,7 +27467,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 60,
+        "line": 77,
         "freq": 1,
         "context": "**Why:** Problem it solves"
       },
@@ -27529,7 +28097,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 59,
+        "line": 76,
         "freq": 1,
         "context": "**What:** Brief description"
       },
@@ -28049,13 +28617,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 52,
+        "line": 53,
         "freq": 1,
         "context": "**Time spent:** ~5 minutes"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 63,
+        "line": 69,
+        "freq": 1,
+        "context": "**Time spent:** ~5 minutes"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 80,
         "freq": 1,
         "context": "**Time spent:** X minutes"
       },
@@ -28220,6 +28794,12 @@
         "line": 39,
         "freq": 1,
         "context": "### Still TODO (per Ron's feedback)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- `arc todo count` — compact counts per file"
       },
       {
         "file": "tasks/ideas.md",
@@ -28677,7 +29257,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 58,
+        "line": 75,
         "freq": 1,
         "context": "### YYYY-MM-DD: [Feature Name]"
       },
@@ -28918,6 +29498,18 @@
         "context": "| Activity date filter | today / 7 days / 30 days dropdown |"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)"
+      },
+      {
         "file": "projects/context-memory/README.md",
         "line": 62,
         "freq": 1,
@@ -28961,15 +29553,27 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 41,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 50,
+        "line": 51,
         "freq": 1,
         "context": "- `scripts/arc` (added idea command)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
       }
     ],
     "palette": [
@@ -29063,7 +29667,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       }
@@ -29082,10 +29686,34 @@
         "context": "Remaining: 5 items (email preview, bulk drafting, voice transcription, PR summary, error tracker)"
       },
       {
+        "file": "memory/2026-01-29.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 14,
         "freq": 1,
         "context": "- [ ] Voice memo transcription — process voice notes into actionable items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- `arc todo done` — show completed items"
       },
       {
         "file": "QUICKREF.md",
@@ -29469,7 +30097,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       }
@@ -29618,6 +30246,156 @@
         "line": 78,
         "freq": 1,
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      }
+    ],
+    "2026-01-29": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 57,
+        "freq": 1,
+        "context": "### 2026-01-29: TODO Aggregator"
+      }
+    ],
+    "scans": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      }
+    ],
+    "open": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- 139 open TODOs found across 15 files"
+      }
+    ],
+    "todos": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- 139 open TODOs found across 15 files"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
+      }
+    ],
+    "supports": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      }
+    ],
+    "count": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- `arc todo count` — compact counts per file"
+      }
+    ],
+    "progress": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- `arc todo all` — both, with progress bar (43% done across workspace)"
+      },
+      {
+        "file": "tasks/README.md",
+        "line": 16,
+        "freq": 1,
+        "context": "4. React 🔄 when in progress"
+      },
+      {
+        "file": "tasks/README.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- `[~]` — in progress"
+      },
+      {
+        "file": "tasks/active.md",
+        "line": 10,
+        "freq": 1,
+        "context": "## In Progress"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- better goal progress tracking"
+      }
+    ],
+    "bar": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- supports: full list, count, keyword filter, done, all (with progress bar)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- `arc todo all` — both, with progress bar (43% done across workspace)"
+      }
+    ],
+    "posted": [
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- posted summary to discord #logs"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] Daily standup bot — auto-summary of yesterday's work posted to Discord #logs ✓ cron added 2026"
       }
     ],
     "something": [
@@ -29778,14 +30556,6 @@
         "context": "- Recent context (today/yesterday's logs)"
       }
     ],
-    "posted": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [x] Daily standup bot — auto-summary of yesterday's work posted to Discord #logs ✓ cron added 2026"
-      }
-    ],
     "thought": [
       {
         "file": "memory/nightly-builds.md",
@@ -29795,7 +30565,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 41,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
@@ -30144,10 +30914,24 @@
         "context": "- [x] Error tracker — collect and summarize errors from logs ✓ built 2026-01-28"
       }
     ],
+    "unchecked": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- [x] TODO aggregator — find all unchecked items across workspace ✓ built 2026-01-29"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      }
+    ],
     "fun": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 32,
         "freq": 1,
         "context": "### Fun/Surprise"
       }
@@ -30155,7 +30939,7 @@
     "surprise": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 32,
         "freq": 1,
         "context": "### Fun/Surprise"
       },
@@ -30169,7 +30953,7 @@
     "random": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       }
@@ -30177,7 +30961,7 @@
     "inspiration": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       }
@@ -30185,7 +30969,7 @@
     "interesting": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       },
@@ -30199,7 +30983,7 @@
     "fact": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 34,
         "freq": 1,
         "context": "- [x] Random inspiration — quote or interesting fact with morning summary ✓ enhanced 2026-01-28"
       }
@@ -30207,7 +30991,7 @@
     "instant": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 41,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       }
@@ -30215,7 +30999,7 @@
     "brain": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       },
@@ -30229,7 +31013,7 @@
     "dump": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       }
@@ -30237,7 +31021,7 @@
     "switching": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       }
@@ -30245,7 +31029,7 @@
     "comes": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       }
@@ -30253,7 +31037,7 @@
     "move": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 41,
+        "line": 42,
         "freq": 1,
         "context": "**Why:** Brain dump without context switching — idea comes, capture it, move on"
       },
@@ -30267,7 +31051,7 @@
     "bash": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 43,
+        "line": 44,
         "freq": 1,
         "context": "```bash"
       },
@@ -30461,7 +31245,7 @@
     "clear": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 46,
+        "line": 47,
         "freq": 1,
         "context": "arc idea clear   # removes completed"
       },
@@ -30475,7 +31259,7 @@
     "removes": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 46,
+        "line": 47,
         "freq": 1,
         "context": "arc idea clear   # removes completed"
       }
@@ -30483,13 +31267,19 @@
     "changed": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 48,
+        "line": 49,
         "freq": 1,
         "context": "**Files changed:**"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 62,
+        "line": 66,
+        "freq": 1,
+        "context": "**Files changed:**"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 79,
         "freq": 1,
         "context": "**Files changed:** List of files"
       }
@@ -30497,13 +31287,19 @@
     "spent": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 52,
+        "line": 53,
         "freq": 1,
         "context": "**Time spent:** ~5 minutes"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 63,
+        "line": 69,
+        "freq": 1,
+        "context": "**Time spent:** ~5 minutes"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 80,
         "freq": 1,
         "context": "**Time spent:** X minutes"
       }
@@ -30511,13 +31307,19 @@
     "minutes": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 52,
+        "line": 53,
         "freq": 1,
         "context": "**Time spent:** ~5 minutes"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 63,
+        "line": 69,
+        "freq": 1,
+        "context": "**Time spent:** ~5 minutes"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 80,
         "freq": 1,
         "context": "**Time spent:** X minutes"
       },
@@ -30528,10 +31330,198 @@
         "context": "- You just checked &lt;30 minutes ago"
       }
     ],
+    "grouped": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 58,
+        "freq": 1,
+        "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items, grouped by "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- `arc todo` — full list grouped by file with icons"
+      }
+    ],
+    "scattered": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      }
+    ],
+    "easy": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 33,
+        "freq": 1,
+        "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
+      }
+    ],
+    "lose": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 3,
+        "freq": 1,
+        "context": "Persistent memory for AI workflows — never lose context again."
+      }
+    ],
+    "track": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
+        "file": "GOALS.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- track search patterns to identify memory gaps"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 173,
+        "freq": 1,
+        "context": "**Track your checks** in `memory/heartbeat-state.json`:"
+      }
+    ],
+    "them": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 59,
+        "freq": 1,
+        "context": "**Why:** 139 TODOs scattered across 15 files. Easy to lose track. Now one command shows them all."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep "
+      }
+    ],
+    "modes": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 60,
+        "freq": 1,
+        "context": "**Modes:**"
+      }
+    ],
+    "icons": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- `arc todo` — full list grouped by file with icons"
+      }
+    ],
+    "compact": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- `arc todo count` — compact counts per file"
+      }
+    ],
+    "counts": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- `arc todo count` — compact counts per file"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 60,
+        "freq": 1,
+        "context": "arc week    # daily summaries, commit counts, active tasks"
+      }
+    ],
+    "results": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- `arc todo <query>` — filter by keyword (e.g. `arc todo email` → 12 results)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 60,
+        "freq": 1,
+        "context": "The index covers MEMORY.md + memory/*.md files. Scores results by term frequency and multi-term matc"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 35,
+        "freq": 1,
+        "context": "results = ctx.search(\"what database?\")"
+      }
+    ],
+    "lines": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- `scripts/todo.mjs` (new — 140 lines)"
+      }
+    ],
+    "help": [
+      {
+        "file": "QUICKREF.md",
+        "line": 16,
+        "freq": 2,
+        "context": "./scripts/arc help             # full help"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 39,
+        "freq": 2,
+        "context": "./scripts/arc help             # full help"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- `scripts/arc` (added todo/todos commands + help entry)"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 23,
+        "freq": 1,
+        "context": "| USER.md | who i help |"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 129,
+        "freq": 1,
+        "context": "- You can add genuine value (info, insight, help)"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 8,
+        "freq": 1,
+        "context": "./scripts/arc help              # show all commands"
+      }
+    ],
     "format": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 56,
+        "line": 73,
         "freq": 1,
         "context": "## Build Log Format"
       }
@@ -30539,7 +31529,7 @@
     "yyyy-mm-dd": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 58,
+        "line": 75,
         "freq": 1,
         "context": "### YYYY-MM-DD: [Feature Name]"
       },
@@ -30577,7 +31567,7 @@
     "brief": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 59,
+        "line": 76,
         "freq": 1,
         "context": "**What:** Brief description"
       }
@@ -30585,7 +31575,7 @@
     "solves": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 60,
+        "line": 77,
         "freq": 1,
         "context": "**Why:** Problem it solves"
       },
@@ -30599,7 +31589,7 @@
     "try": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 61,
+        "line": 78,
         "freq": 1,
         "context": "**How to test:** Steps to try it"
       }
@@ -31956,32 +32946,6 @@
         "context": "2. Post to discord #tasks for visibility"
       }
     ],
-    "progress": [
-      {
-        "file": "tasks/README.md",
-        "line": 16,
-        "freq": 1,
-        "context": "4. React 🔄 when in progress"
-      },
-      {
-        "file": "tasks/README.md",
-        "line": 21,
-        "freq": 1,
-        "context": "- `[~]` — in progress"
-      },
-      {
-        "file": "tasks/active.md",
-        "line": 10,
-        "freq": 1,
-        "context": "## In Progress"
-      },
-      {
-        "file": "GOALS.md",
-        "line": 51,
-        "freq": 1,
-        "context": "- better goal progress tracking"
-      }
-    ],
     "statuses": [
       {
         "file": "tasks/README.md",
@@ -32346,38 +33310,6 @@
         "context": "Run toolkit tests."
       }
     ],
-    "help": [
-      {
-        "file": "QUICKREF.md",
-        "line": 16,
-        "freq": 2,
-        "context": "./scripts/arc help             # full help"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 39,
-        "freq": 2,
-        "context": "./scripts/arc help             # full help"
-      },
-      {
-        "file": "QUICKREF.md",
-        "line": 23,
-        "freq": 1,
-        "context": "| USER.md | who i help |"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 129,
-        "freq": 1,
-        "context": "- You can add genuine value (info, insight, help)"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 8,
-        "freq": 1,
-        "context": "./scripts/arc help              # show all commands"
-      }
-    ],
     "read": [
       {
         "file": "QUICKREF.md",
@@ -32720,20 +33652,6 @@
         "line": 7,
         "freq": 1,
         "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
-      }
-    ],
-    "track": [
-      {
-        "file": "GOALS.md",
-        "line": 49,
-        "freq": 1,
-        "context": "- track search patterns to identify memory gaps"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 173,
-        "freq": 1,
-        "context": "**Track your checks** in `memory/heartbeat-state.json`:"
       }
     ],
     "identify": [
@@ -33314,14 +34232,6 @@
         "context": "- Late night (23:00-08:00) unless urgent"
       }
     ],
-    "them": [
-      {
-        "file": "AGENTS.md",
-        "line": 25,
-        "freq": 1,
-        "context": "Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep "
-      }
-    ],
     "detailed": [
       {
         "file": "AGENTS.md",
@@ -33374,20 +34284,6 @@
         "line": 164,
         "freq": 1,
         "context": "Run auto-maintenance (index rebuild, routine commits)."
-      }
-    ],
-    "results": [
-      {
-        "file": "AGENTS.md",
-        "line": 60,
-        "freq": 1,
-        "context": "The index covers MEMORY.md + memory/*.md files. Scores results by term frequency and multi-term matc"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 35,
-        "freq": 1,
-        "context": "results = ctx.search(\"what database?\")"
       }
     ],
     "term": [
@@ -34852,14 +35748,6 @@
         "context": "- **WhatsApp:** No headers — use **bold** or CAPS for emphasis"
       }
     ],
-    "markdown": [
-      {
-        "file": "AGENTS.md",
-        "line": 154,
-        "freq": 1,
-        "context": "- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead"
-      }
-    ],
     "bullet": [
       {
         "file": "AGENTS.md",
@@ -35816,32 +36704,6 @@
         "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
       }
     ],
-    "across": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 5,
-        "freq": 1,
-        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 7,
-        "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 13,
-        "freq": 1,
-        "context": "- **Teams** sharing context across members"
-      }
-    ],
     "compaction": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -36250,14 +37112,6 @@
         "line": 59,
         "freq": 1,
         "context": "- **option B:** Fly.io — similar pricing"
-      }
-    ],
-    "easy": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 33,
-        "freq": 1,
-        "context": "| hosting | Railway or Fly.io | easy deploy, scales, cheap to start |"
       }
     ],
     "scales": [
@@ -36790,14 +37644,6 @@
         "line": 120,
         "freq": 1,
         "context": "let's build it."
-      }
-    ],
-    "lose": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 3,
-        "freq": 1,
-        "context": "Persistent memory for AI workflows — never lose context again."
       }
     ],
     "lets": [
@@ -37514,14 +38360,6 @@
         "context": "arc today    # shows log, commits, ideas, files touched"
       }
     ],
-    "counts": [
-      {
-        "file": "scripts/README.md",
-        "line": 60,
-        "freq": 1,
-        "context": "arc week    # daily summaries, commit counts, active tasks"
-      }
-    ],
     "symbols": [
       {
         "file": "scripts/README.md",
@@ -37639,89 +38477,93 @@
   },
   "files": {
     "MEMORY.md": {
-      "lines": 164,
-      "updated": "2026-01-28T20:30:43.991Z"
+      "lines": 165,
+      "updated": "2026-01-29T00:30:53.351Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-28T20:30:43.994Z"
+      "updated": "2026-01-29T00:30:53.353Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-28T20:30:43.994Z"
+      "updated": "2026-01-29T00:30:53.353Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-28T20:30:43.996Z"
+      "updated": "2026-01-29T00:30:53.355Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-01-28T20:30:43.997Z"
+      "updated": "2026-01-29T00:30:53.356Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-01-28T20:30:43.998Z"
+      "updated": "2026-01-29T00:30:53.356Z"
+    },
+    "memory/2026-01-29.md": {
+      "lines": 9,
+      "updated": "2026-01-29T00:30:53.357Z"
     },
     "memory/nightly-builds.md": {
-      "lines": 64,
-      "updated": "2026-01-28T20:30:43.998Z"
+      "lines": 81,
+      "updated": "2026-01-29T00:30:53.357Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-28T20:30:43.999Z"
+      "updated": "2026-01-29T00:30:53.357Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-28T20:30:43.999Z"
+      "updated": "2026-01-29T00:30:53.358Z"
     },
     "tasks/active.md": {
       "lines": 23,
-      "updated": "2026-01-28T20:30:43.999Z"
+      "updated": "2026-01-29T00:30:53.358Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-28T20:30:44.000Z"
+      "updated": "2026-01-29T00:30:53.358Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-28T20:30:44.000Z"
+      "updated": "2026-01-29T00:30:53.359Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-28T20:30:44.000Z"
+      "updated": "2026-01-29T00:30:53.359Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-28T20:30:44.000Z"
+      "updated": "2026-01-29T00:30:53.359Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-28T20:30:44.001Z"
+      "updated": "2026-01-29T00:30:53.360Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-28T20:30:44.001Z"
+      "updated": "2026-01-29T00:30:53.360Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-28T20:30:44.002Z"
+      "updated": "2026-01-29T00:30:53.361Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-28T20:30:44.002Z"
+      "updated": "2026-01-29T00:30:53.361Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-28T20:30:44.003Z"
+      "updated": "2026-01-29T00:30:53.362Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-28T20:30:44.004Z"
+      "updated": "2026-01-29T00:30:53.362Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-01-28T20:30:44.004Z"
+      "updated": "2026-01-29T00:30:53.362Z"
     }
   },
-  "built": "2026-01-28T20:30:43.990Z"
+  "built": "2026-01-29T00:30:53.350Z"
 }
