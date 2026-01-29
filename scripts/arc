@@ -118,6 +118,11 @@ switch (cmd) {
     break;
     
   case 'search':
+    // use v2 TF-IDF search by default
+    run('memory-search-v2.mjs', args);
+    break;
+    
+  case 'search-v1':
     run(SCRIPTS.search, ['search', ...args]);
     break;
     
