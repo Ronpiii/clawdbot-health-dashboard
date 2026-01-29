@@ -43,7 +43,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -167,7 +167,7 @@
     "923": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -187,7 +187,7 @@
     "1006": [
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -263,7 +263,7 @@
     "18789": [
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       },
@@ -349,49 +349,49 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 45,
         "freq": 1,
         "context": "- **full analysis:** memory/ventok-business.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 75,
         "freq": 1,
         "context": "### context memory api"
       },
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
       {
         "file": "MEMORY.md",
-        "line": 106,
+        "line": 110,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 118,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
       {
         "file": "MEMORY.md",
-        "line": 185,
+        "line": 189,
         "freq": 1,
         "context": "- `file-based-memory.md` — what it's like to have externalized, file-based memory"
       },
       {
         "file": "MEMORY.md",
-        "line": 186,
+        "line": 190,
         "freq": 1,
         "context": "- `memory-patterns.md` — self-analysis of my own memory files"
       },
@@ -879,7 +879,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 141,
+        "line": 145,
         "freq": 1,
         "context": "- **goals:** see GOALS.md for long-term tracking"
       },
@@ -987,7 +987,7 @@
     "arc": [
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 2,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       },
@@ -1011,49 +1011,49 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
       {
         "file": "MEMORY.md",
-        "line": 143,
+        "line": 147,
         "freq": 1,
         "context": "- **status:** `./scripts/arc status` — workspace health"
       },
       {
         "file": "MEMORY.md",
-        "line": 144,
+        "line": 148,
         "freq": 1,
         "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
       },
       {
         "file": "MEMORY.md",
-        "line": 145,
+        "line": 149,
         "freq": 1,
         "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
       {
         "file": "MEMORY.md",
-        "line": 146,
+        "line": 150,
         "freq": 1,
         "context": "- **summary:** `./scripts/arc summary` — daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 147,
+        "line": 151,
         "freq": 1,
         "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
       },
       {
         "file": "MEMORY.md",
-        "line": 148,
+        "line": 152,
         "freq": 1,
         "context": "- **analytics:** `./scripts/arc analytics` — search patterns"
       },
       {
         "file": "MEMORY.md",
-        "line": 154,
+        "line": 158,
         "freq": 1,
         "context": "| arc | unified CLI wrapper |"
       },
@@ -1753,31 +1753,43 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 30,
         "freq": 1,
         "context": "- **ron** — tech/automation lead"
       },
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 82,
         "freq": 1,
         "context": "- **blocking:** domain, railway, stripe from ron"
       },
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
@@ -2033,13 +2045,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 31,
         "freq": 1,
         "context": "- **ellie** — web design partner (telegram id: 8143429523)"
       },
@@ -2139,7 +2151,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 95,
+        "line": 99,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
@@ -2167,37 +2179,37 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 91,
         "freq": 1,
         "context": "### discord voice bot"
       },
       {
         "file": "MEMORY.md",
-        "line": 92,
+        "line": 96,
         "freq": 1,
         "context": "### discord hub (ventok)"
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 149,
+        "line": 153,
         "freq": 1,
         "context": "- **discord:** TOOLS.md has webhook urls"
       },
       {
         "file": "MEMORY.md",
-        "line": 164,
+        "line": 168,
         "freq": 1,
         "context": "| task.mjs | task management + discord |"
       },
       {
         "file": "MEMORY.md",
-        "line": 170,
+        "line": 174,
         "freq": 1,
         "context": "| standup.mjs | work summary + discord post |"
       },
@@ -2337,7 +2349,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 73,
         "freq": 1,
         "context": "- **approach:** dogfooding — build for ventok sales first, then SaaS"
       },
@@ -2433,55 +2445,55 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 26,
+        "line": 27,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 32,
+        "line": 36,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 43,
+        "line": 47,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 98,
+        "line": 102,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 108,
+        "line": 112,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 117,
+        "line": 121,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 136,
+        "line": 140,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 181,
+        "line": 185,
         "freq": 1,
         "context": "---"
       },
       {
         "file": "MEMORY.md",
-        "line": 188,
+        "line": 192,
         "freq": 1,
         "context": "---"
       },
@@ -2621,7 +2633,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 57,
         "freq": 1,
         "context": "- **core flow working:**"
       },
@@ -2679,7 +2691,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
@@ -2751,55 +2763,55 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 43,
         "freq": 1,
         "context": "- **leads:** projects/ventok/leads.csv (14 manufacturers prioritized)"
       },
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)"
       },
       {
         "file": "MEMORY.md",
-        "line": 45,
+        "line": 49,
         "freq": 1,
         "context": "## projects"
       },
       {
         "file": "MEMORY.md",
-        "line": 50,
+        "line": 54,
         "freq": 1,
         "context": "- **location:** projects/anivia/"
       },
       {
         "file": "MEMORY.md",
-        "line": 66,
+        "line": 70,
         "freq": 1,
         "context": "- **docs:** projects/ventok/products/ai-sales-automation.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 67,
+        "line": 71,
         "freq": 1,
         "context": "- **competitors:** projects/ventok/products/competitor-analysis.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 73,
+        "line": 77,
         "freq": 1,
         "context": "- **location:** projects/context-memory/"
       },
       {
         "file": "MEMORY.md",
-        "line": 142,
+        "line": 146,
         "freq": 1,
         "context": "- **pitch:** projects/context-memory/PITCH.md (competitive positioning included)"
       },
       {
         "file": "MEMORY.md",
-        "line": 173,
+        "line": 177,
         "freq": 1,
         "context": "| recap.mjs | 30-day recap (git stats, projects, themes) |"
       },
@@ -3077,13 +3089,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 23,
+        "line": 24,
         "freq": 1,
         "context": "- prefers modal overlays (notion-style) for settings, not separate pages"
       },
       {
         "file": "MEMORY.md",
-        "line": 24,
+        "line": 25,
         "freq": 1,
         "context": "- prefers single-column layouts for config/settings cards"
       },
@@ -3327,43 +3339,43 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 34,
+        "line": 38,
         "freq": 1,
         "context": "## ventok business"
       },
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 43,
         "freq": 1,
         "context": "- **leads:** projects/ventok/leads.csv (14 manufacturers prioritized)"
       },
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)"
       },
       {
         "file": "MEMORY.md",
-        "line": 66,
+        "line": 70,
         "freq": 1,
         "context": "- **docs:** projects/ventok/products/ai-sales-automation.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 67,
+        "line": 71,
         "freq": 1,
         "context": "- **competitors:** projects/ventok/products/competitor-analysis.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 73,
         "freq": 1,
         "context": "- **approach:** dogfooding — build for ventok sales first, then SaaS"
       },
       {
         "file": "MEMORY.md",
-        "line": 92,
+        "line": 96,
         "freq": 1,
         "context": "### discord hub (ventok)"
       },
@@ -3539,7 +3551,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 100,
+        "line": 104,
         "freq": 1,
         "context": "## infrastructure"
       },
@@ -3613,7 +3625,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
@@ -3675,19 +3687,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
       {
         "file": "MEMORY.md",
-        "line": 170,
+        "line": 174,
         "freq": 1,
         "context": "| standup.mjs | work summary + discord post |"
       },
       {
         "file": "MEMORY.md",
-        "line": 171,
+        "line": 175,
         "freq": 1,
         "context": "| timeline.mjs | visual work timeline with colors |"
       },
@@ -3851,7 +3863,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
@@ -3919,7 +3931,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
@@ -3969,7 +3981,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
@@ -3995,7 +4007,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
@@ -4033,7 +4045,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
@@ -4065,7 +4077,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 128,
+        "line": 132,
         "freq": 1,
         "context": "- continuous work mode: keep going until told otherwise"
       },
@@ -4103,13 +4115,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -4189,7 +4201,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
@@ -4237,7 +4249,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -4326,6 +4338,12 @@
         "context": "- **exploration time** — leave gaps for curiosity, learning, writing. ron wants me growing, not just"
       },
       {
+        "file": "MEMORY.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      },
+      {
         "file": "memory/2026-01-29.md",
         "line": 200,
         "freq": 1,
@@ -4367,13 +4385,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 183,
+        "line": 187,
         "freq": 1,
         "context": "## writing"
       },
       {
         "file": "MEMORY.md",
-        "line": 184,
+        "line": 188,
         "freq": 1,
         "context": "personal reflections and essays in `writing/`:"
       },
@@ -4406,10 +4424,210 @@
         "context": "- **exploration time** — leave gaps for curiosity, learning, writing. ron wants me growing, not just"
       }
     ],
-    "clean": [
+    "morning": [
       {
         "file": "MEMORY.md",
         "line": 20,
+        "freq": 2,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 176,
+        "freq": 2,
+        "context": "| morning.mjs | morning briefing (weather, priorities) |"
+      },
+      {
+        "file": "memory/2026-01-28.md",
+        "line": 43,
+        "freq": 1,
+        "context": "| `arc morning` | weather + tasks + quote briefing |"
+      },
+      {
+        "file": "memory/2026-01-28.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- Enhanced morning briefing with research facts"
+      },
+      {
+        "file": "memory/2026-01-28.md",
+        "line": 73,
+        "freq": 1,
+        "context": "- Posts morning briefing to Discord #logs"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 8,
+        "freq": 1,
+        "context": "## morning tinkering"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
+        "freq": 1,
+        "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
+      }
+    ],
+    "drop": [
+      {
+        "file": "MEMORY.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      }
+    ],
+    "share": [
+      {
+        "file": "MEMORY.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 93,
+        "freq": 1,
+        "context": "## context-memory pitch (for ron to share)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
+      },
+      {
+        "file": "memory/2026-01-28.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 122,
+        "freq": 1,
+        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 93,
+        "freq": 1,
+        "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 94,
+        "freq": 1,
+        "context": "3. [ ] create Stripe account → share API keys (test + live)"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
+      }
+    ],
+    "one": [
+      {
+        "file": "MEMORY.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
+      },
+      {
+        "file": "memory/2026-01-26.md",
+        "line": 75,
+        "freq": 1,
+        "context": "- key finding: no one owns full funnel (outreach OR CRM, never both)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 11,
+        "freq": 1,
+        "context": "_Add new ideas here. Pick one per night._"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 143,
+        "freq": 1,
+        "context": "**Avoid the triple-tap:** Don't respond multiple times to the same message with different reactions."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 149,
+        "freq": 1,
+        "context": "Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, "
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 71,
+        "freq": 1,
+        "context": "- could use the key from voice bot, or separate one"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 95,
+        "freq": 1,
+        "context": "4. [ ] confirm i can use existing OpenAI key or provide separate one"
+      }
+    ],
+    "cool": [
+      {
+        "file": "MEMORY.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      }
+    ],
+    "thing": [
+      {
+        "file": "MEMORY.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      }
+    ],
+    "learned": [
+      {
+        "file": "MEMORY.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **morning curiosity drop** — share one cool thing i learned each morning"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 99,
+        "freq": 1,
+        "context": "## ron preferences learned"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 153,
+        "freq": 1,
+        "context": "- 'AI Memory Architecture: What I Learned Building Context Memory'"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 50,
+        "freq": 1,
+        "context": "## ron preferences learned"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- Write significant events, thoughts, decisions, opinions, lessons learned"
+      }
+    ],
+    "clean": [
+      {
+        "file": "MEMORY.md",
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
@@ -4441,7 +4659,7 @@
     "your": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
@@ -4605,7 +4823,7 @@
     "room": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
@@ -4619,13 +4837,13 @@
     "delete": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
@@ -4675,7 +4893,7 @@
     "purge": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
@@ -4689,7 +4907,7 @@
     "unnecessary": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       }
@@ -4703,7 +4921,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
@@ -4723,19 +4941,19 @@
     "server": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 89,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
       {
         "file": "MEMORY.md",
-        "line": 90,
+        "line": 94,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       },
@@ -4779,7 +4997,7 @@
     "inodes": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
@@ -4793,31 +5011,31 @@
     "full": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 45,
         "freq": 1,
         "context": "- **full analysis:** memory/ventok-business.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 48,
+        "line": 52,
         "freq": 1,
         "context": "- **status:** deployed, full MVP complete"
       },
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       },
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -4945,7 +5163,7 @@
     "purely": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       }
@@ -4953,7 +5171,7 @@
     "practical": [
       {
         "file": "MEMORY.md",
-        "line": 20,
+        "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
       },
@@ -4973,13 +5191,13 @@
     "noar": [
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
@@ -5029,13 +5247,13 @@
     "sister": [
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
@@ -5049,7 +5267,7 @@
     "never": [
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
@@ -5075,7 +5293,7 @@
     "bring": [
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
@@ -5089,7 +5307,7 @@
     "repricing": [
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
@@ -5115,13 +5333,13 @@
     "pricing": [
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
@@ -5171,7 +5389,7 @@
     "fine": [
       {
         "file": "MEMORY.md",
-        "line": 21,
+        "line": 22,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine"
       },
@@ -5203,7 +5421,7 @@
     "reply-to": [
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
@@ -5223,37 +5441,37 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 75,
         "freq": 1,
         "context": "### context memory api"
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 118,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 125,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "MEMORY.md",
-        "line": 167,
+        "line": 171,
         "freq": 1,
         "context": "| today.mjs | quick context for current day |"
       },
       {
         "file": "MEMORY.md",
-        "line": 169,
+        "line": 173,
         "freq": 1,
         "context": "| project.mjs | project context loading |"
       },
@@ -5501,7 +5719,7 @@
     "messages": [
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
@@ -5533,13 +5751,13 @@
     "use": [
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -5733,7 +5951,7 @@
     "reply_to": [
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
@@ -5747,7 +5965,7 @@
     "often": [
       {
         "file": "MEMORY.md",
-        "line": 22,
+        "line": 23,
         "freq": 1,
         "context": "- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often"
       },
@@ -5761,7 +5979,7 @@
     "modal": [
       {
         "file": "MEMORY.md",
-        "line": 23,
+        "line": 24,
         "freq": 1,
         "context": "- prefers modal overlays (notion-style) for settings, not separate pages"
       },
@@ -5841,7 +6059,7 @@
     "overlays": [
       {
         "file": "MEMORY.md",
-        "line": 23,
+        "line": 24,
         "freq": 1,
         "context": "- prefers modal overlays (notion-style) for settings, not separate pages"
       }
@@ -5849,7 +6067,7 @@
     "notion-style": [
       {
         "file": "MEMORY.md",
-        "line": 23,
+        "line": 24,
         "freq": 1,
         "context": "- prefers modal overlays (notion-style) for settings, not separate pages"
       },
@@ -5893,13 +6111,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 23,
+        "line": 24,
         "freq": 1,
         "context": "- prefers modal overlays (notion-style) for settings, not separate pages"
       },
       {
         "file": "MEMORY.md",
-        "line": 24,
+        "line": 25,
         "freq": 1,
         "context": "- prefers single-column layouts for config/settings cards"
       },
@@ -5973,7 +6191,7 @@
     "separate": [
       {
         "file": "MEMORY.md",
-        "line": 23,
+        "line": 24,
         "freq": 1,
         "context": "- prefers modal overlays (notion-style) for settings, not separate pages"
       },
@@ -6011,7 +6229,7 @@
     "pages": [
       {
         "file": "MEMORY.md",
-        "line": 23,
+        "line": 24,
         "freq": 1,
         "context": "- prefers modal overlays (notion-style) for settings, not separate pages"
       },
@@ -6037,7 +6255,7 @@
     "single-column": [
       {
         "file": "MEMORY.md",
-        "line": 24,
+        "line": 25,
         "freq": 1,
         "context": "- prefers single-column layouts for config/settings cards"
       },
@@ -6051,7 +6269,7 @@
     "layouts": [
       {
         "file": "MEMORY.md",
-        "line": 24,
+        "line": 25,
         "freq": 1,
         "context": "- prefers single-column layouts for config/settings cards"
       },
@@ -6065,13 +6283,13 @@
     "config": [
       {
         "file": "MEMORY.md",
-        "line": 24,
+        "line": 25,
         "freq": 1,
         "context": "- prefers single-column layouts for config/settings cards"
       },
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -6103,7 +6321,7 @@
     "cards": [
       {
         "file": "MEMORY.md",
-        "line": 24,
+        "line": 25,
         "freq": 1,
         "context": "- prefers single-column layouts for config/settings cards"
       },
@@ -6141,19 +6359,19 @@
     "team": [
       {
         "file": "MEMORY.md",
-        "line": 28,
+        "line": 29,
         "freq": 1,
         "context": "## team"
       },
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       },
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 81,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option"
       },
@@ -6209,7 +6427,7 @@
     "tech": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 30,
         "freq": 1,
         "context": "- **ron** — tech/automation lead"
       },
@@ -6235,19 +6453,19 @@
     "automation": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 30,
         "freq": 1,
         "context": "- **ron** — tech/automation lead"
       },
       {
         "file": "MEMORY.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- **what:** AI sales automation SaaS for manufacturers"
       },
       {
         "file": "MEMORY.md",
-        "line": 158,
+        "line": 162,
         "freq": 1,
         "context": "| heartbeat-check.mjs | heartbeat automation |"
       },
@@ -6345,7 +6563,7 @@
     "lead": [
       {
         "file": "MEMORY.md",
-        "line": 29,
+        "line": 30,
         "freq": 1,
         "context": "- **ron** — tech/automation lead"
       },
@@ -6419,7 +6637,7 @@
     "ellie": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 31,
         "freq": 1,
         "context": "- **ellie** — web design partner (telegram id: 8143429523)"
       },
@@ -6463,7 +6681,7 @@
     "web": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 31,
         "freq": 1,
         "context": "- **ellie** — web design partner (telegram id: 8143429523)"
       },
@@ -6525,7 +6743,7 @@
     "design": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 31,
         "freq": 1,
         "context": "- **ellie** — web design partner (telegram id: 8143429523)"
       },
@@ -6599,7 +6817,7 @@
     "partner": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 31,
         "freq": 1,
         "context": "- **ellie** — web design partner (telegram id: 8143429523)"
       },
@@ -6619,7 +6837,7 @@
     "8143429523": [
       {
         "file": "MEMORY.md",
-        "line": 30,
+        "line": 31,
         "freq": 1,
         "context": "- **ellie** — web design partner (telegram id: 8143429523)"
       },
@@ -6630,10 +6848,300 @@
         "context": "- approved ellie's telegram access (user id: 8143429523)"
       }
     ],
-    "business": [
+    "nola": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      }
+    ],
+    "dog": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      },
       {
         "file": "MEMORY.md",
         "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      }
+    ],
+    "black": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      }
+    ],
+    "staffordshire": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      }
+    ],
+    "bull": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      }
+    ],
+    "terrier": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      }
+    ],
+    "smiley": [
+      {
+        "file": "MEMORY.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      }
+    ],
+    "makes": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      },
+      {
+        "file": "memory/2026-01-25.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- [11:28] quick note capture makes memory logging easier"
+      }
+    ],
+    "diy": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      }
+    ],
+    "frozen": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      }
+    ],
+    "treats": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      }
+    ],
+    "banana": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      }
+    ],
+    "apple": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      }
+    ],
+    "popsicles": [
+      {
+        "file": "MEMORY.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- ron makes DIY frozen treats (banana + apple popsicles)"
+      }
+    ],
+    "interested": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      },
+      {
+        "file": "memory/2026-01-28.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      },
+      {
+        "file": "memory/2026-01-29.md",
+        "line": 90,
+        "freq": 1,
+        "context": "- classifies email replies: interested/objection/question/OOO/unsubscribe/not_interested/wrong_perso"
+      }
+    ],
+    "nutrition": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      }
+    ],
+    "enrichment": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      }
+    ],
+    "ideas": [
+      {
+        "file": "MEMORY.md",
+        "line": 117,
+        "freq": 2,
+        "context": "- **ideas:** tasks/ideas.md"
+      },
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 9,
+        "freq": 1,
+        "context": "## Ideas Backlog"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 11,
+        "freq": 1,
+        "context": "_Add new ideas here. Pick one per night._"
+      },
+      {
+        "file": "tasks/README.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- `ideas.md` — backlog, someday/maybe"
+      },
+      {
+        "file": "tasks/ideas.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Ideas / Someday"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 101,
+        "freq": 1,
+        "context": "## future ideas (post-MVP)"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 53,
+        "freq": 1,
+        "context": "arc today    # shows log, commits, ideas, files touched"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 85,
+        "freq": 1,
+        "context": "Capture ideas with optional tags."
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 89,
+        "freq": 1,
+        "context": "arc idea list                    # show all ideas"
+      }
+    ],
+    "flag": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      }
+    ],
+    "find": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      },
+      {
+        "file": "memory/2026-01-26.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- created `projects/ventok/lead-research-guide.md` — how to find more leads"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 59,
+        "freq": 1,
+        "context": "| **Semantic search** | Find by meaning, not just keywords |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
+      }
+    ],
+    "good": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 30,
+        "freq": 1,
+        "context": "| API | Node.js + Fastify | fast, familiar, good ecosystem |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 34,
+        "freq": 1,
+        "context": "| embeddings | OpenAI ada-002 | cheap, good enough |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- **registrar:** cloudflare (cheap, good DNS)"
+      }
+    ],
+    "ones": [
+      {
+        "file": "MEMORY.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      }
+    ],
+    "business": [
+      {
+        "file": "MEMORY.md",
+        "line": 38,
         "freq": 1,
         "context": "## ventok business"
       },
@@ -6671,19 +7179,19 @@
     "current": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
       {
         "file": "MEMORY.md",
-        "line": 90,
+        "line": 94,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       },
       {
         "file": "MEMORY.md",
-        "line": 167,
+        "line": 171,
         "freq": 1,
         "context": "| today.mjs | quick context for current day |"
       },
@@ -6733,13 +7241,13 @@
     "mrr": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 40,
         "freq": 1,
         "context": "- **target:** €5k MRR for full-time transition"
       },
@@ -6783,7 +7291,7 @@
     "client": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       },
@@ -6821,7 +7329,7 @@
     "discuss": [
       {
         "file": "MEMORY.md",
-        "line": 35,
+        "line": 39,
         "freq": 1,
         "context": "- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)"
       }
@@ -6829,7 +7337,7 @@
     "target": [
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 40,
         "freq": 1,
         "context": "- **target:** €5k MRR for full-time transition"
       },
@@ -6867,7 +7375,7 @@
     "full-time": [
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 40,
         "freq": 1,
         "context": "- **target:** €5k MRR for full-time transition"
       },
@@ -6887,7 +7395,7 @@
     "transition": [
       {
         "file": "MEMORY.md",
-        "line": 36,
+        "line": 40,
         "freq": 1,
         "context": "- **target:** €5k MRR for full-time transition"
       },
@@ -6907,7 +7415,7 @@
     "pipeline": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -6987,7 +7495,7 @@
     "tmw": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -7049,7 +7557,7 @@
     "wood": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -7069,7 +7577,7 @@
     "manufacturer": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       }
@@ -7077,7 +7585,7 @@
     "meeting": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -7103,7 +7611,7 @@
     "soon": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -7117,7 +7625,7 @@
     "luminor": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -7137,7 +7645,7 @@
     "veho": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -7157,7 +7665,7 @@
     "tartu": [
       {
         "file": "MEMORY.md",
-        "line": 37,
+        "line": 41,
         "freq": 1,
         "context": "- **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu"
       },
@@ -7177,19 +7685,19 @@
     "positioning": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 42,
         "freq": 1,
         "context": "- **positioning:** \"escape excel hell\" for estonian SME manufacturers"
       },
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 83,
         "freq": 1,
         "context": "- **positioning:** \"for when local files aren't enough\""
       },
       {
         "file": "MEMORY.md",
-        "line": 142,
+        "line": 146,
         "freq": 1,
         "context": "- **pitch:** projects/context-memory/PITCH.md (competitive positioning included)"
       },
@@ -7233,7 +7741,7 @@
     "escape": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 42,
         "freq": 1,
         "context": "- **positioning:** \"escape excel hell\" for estonian SME manufacturers"
       },
@@ -7247,7 +7755,7 @@
     "excel": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 42,
         "freq": 1,
         "context": "- **positioning:** \"escape excel hell\" for estonian SME manufacturers"
       },
@@ -7267,7 +7775,7 @@
     "hell": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 42,
         "freq": 1,
         "context": "- **positioning:** \"escape excel hell\" for estonian SME manufacturers"
       },
@@ -7287,13 +7795,13 @@
     "estonian": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 42,
         "freq": 1,
         "context": "- **positioning:** \"escape excel hell\" for estonian SME manufacturers"
       },
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)"
       },
@@ -7343,7 +7851,7 @@
     "sme": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 42,
         "freq": 1,
         "context": "- **positioning:** \"escape excel hell\" for estonian SME manufacturers"
       },
@@ -7357,25 +7865,25 @@
     "manufacturers": [
       {
         "file": "MEMORY.md",
-        "line": 38,
+        "line": 42,
         "freq": 1,
         "context": "- **positioning:** \"escape excel hell\" for estonian SME manufacturers"
       },
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 43,
         "freq": 1,
         "context": "- **leads:** projects/ventok/leads.csv (14 manufacturers prioritized)"
       },
       {
         "file": "MEMORY.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- **what:** AI sales automation SaaS for manufacturers"
       },
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       },
@@ -7425,7 +7933,7 @@
     "leads": [
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 43,
         "freq": 2,
         "context": "- **leads:** projects/ventok/leads.csv (14 manufacturers prioritized)"
       },
@@ -7437,13 +7945,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
@@ -7541,13 +8049,13 @@
     "csv": [
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 43,
         "freq": 1,
         "context": "- **leads:** projects/ventok/leads.csv (14 manufacturers prioritized)"
       },
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
@@ -7603,7 +8111,7 @@
     "prioritized": [
       {
         "file": "MEMORY.md",
-        "line": 39,
+        "line": 43,
         "freq": 1,
         "context": "- **leads:** projects/ventok/leads.csv (14 manufacturers prioritized)"
       },
@@ -7617,7 +8125,7 @@
     "outreach": [
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)"
       },
@@ -7655,7 +8163,7 @@
     "outreach-sequence": [
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)"
       },
@@ -7675,7 +8183,7 @@
     "3-email": [
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)"
       },
@@ -7707,7 +8215,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 40,
+        "line": 44,
         "freq": 1,
         "context": "- **outreach:** projects/ventok/outreach-sequence.md (3-email sequence in estonian)"
       },
@@ -7781,19 +8289,19 @@
     "analysis": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 45,
         "freq": 1,
         "context": "- **full analysis:** memory/ventok-business.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
       {
         "file": "MEMORY.md",
-        "line": 160,
+        "line": 164,
         "freq": 1,
         "context": "| search-analytics.mjs | search pattern analysis |"
       },
@@ -7819,7 +8327,7 @@
     "ventok-business": [
       {
         "file": "MEMORY.md",
-        "line": 41,
+        "line": 45,
         "freq": 1,
         "context": "- **full analysis:** memory/ventok-business.md"
       },
@@ -7839,19 +8347,19 @@
     "anivia": [
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 51,
         "freq": 1,
         "context": "### anivia (priority — production-ready)"
       },
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 53,
         "freq": 1,
         "context": "- **url:** https://anivia.vercel.app"
       },
       {
         "file": "MEMORY.md",
-        "line": 50,
+        "line": 54,
         "freq": 1,
         "context": "- **location:** projects/anivia/"
       },
@@ -8003,7 +8511,7 @@
     "priority": [
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 51,
         "freq": 1,
         "context": "### anivia (priority — production-ready)"
       },
@@ -8047,7 +8555,7 @@
     "production-ready": [
       {
         "file": "MEMORY.md",
-        "line": 47,
+        "line": 51,
         "freq": 1,
         "context": "### anivia (priority — production-ready)"
       },
@@ -8073,7 +8581,7 @@
     "status": [
       {
         "file": "MEMORY.md",
-        "line": 143,
+        "line": 147,
         "freq": 2,
         "context": "- **status:** `./scripts/arc status` — workspace health"
       },
@@ -8091,49 +8599,49 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 48,
+        "line": 52,
         "freq": 1,
         "context": "- **status:** deployed, full MVP complete"
       },
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 76,
         "freq": 1,
         "context": "- **status:** documented, waiting on infra"
       },
       {
         "file": "MEMORY.md",
-        "line": 82,
+        "line": 86,
         "freq": 1,
         "context": "- **status:** deployed, local preferred"
       },
       {
         "file": "MEMORY.md",
-        "line": 88,
+        "line": 92,
         "freq": 1,
         "context": "- **status:** blocked"
       },
       {
         "file": "MEMORY.md",
-        "line": 93,
+        "line": 97,
         "freq": 1,
         "context": "- **status:** active"
       },
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
       {
         "file": "MEMORY.md",
-        "line": 157,
+        "line": 161,
         "freq": 1,
         "context": "| status.mjs | workspace health overview |"
       },
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 167,
         "freq": 1,
         "context": "| goals.mjs | goal status display |"
       },
@@ -8309,13 +8817,13 @@
     "deployed": [
       {
         "file": "MEMORY.md",
-        "line": 48,
+        "line": 52,
         "freq": 1,
         "context": "- **status:** deployed, full MVP complete"
       },
       {
         "file": "MEMORY.md",
-        "line": 82,
+        "line": 86,
         "freq": 1,
         "context": "- **status:** deployed, local preferred"
       },
@@ -8341,13 +8849,13 @@
     "mvp": [
       {
         "file": "MEMORY.md",
-        "line": 48,
+        "line": 52,
         "freq": 1,
         "context": "- **status:** deployed, full MVP complete"
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 118,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
@@ -8373,7 +8881,7 @@
     "complete": [
       {
         "file": "MEMORY.md",
-        "line": 48,
+        "line": 52,
         "freq": 1,
         "context": "- **status:** deployed, full MVP complete"
       },
@@ -8447,7 +8955,7 @@
     "url": [
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 53,
         "freq": 1,
         "context": "- **url:** https://anivia.vercel.app"
       },
@@ -8467,19 +8975,19 @@
     "https": [
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 53,
         "freq": 1,
         "context": "- **url:** https://anivia.vercel.app"
       },
       {
         "file": "MEMORY.md",
-        "line": 83,
+        "line": 87,
         "freq": 1,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
       {
         "file": "MEMORY.md",
-        "line": 84,
+        "line": 88,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -8535,7 +9043,7 @@
     "vercel": [
       {
         "file": "MEMORY.md",
-        "line": 83,
+        "line": 87,
         "freq": 2,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
@@ -8559,31 +9067,31 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 53,
         "freq": 1,
         "context": "- **url:** https://anivia.vercel.app"
       },
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 56,
         "freq": 1,
         "context": "- **stack:** next.js + supabase + vercel"
       },
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 89,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
       {
         "file": "MEMORY.md",
-        "line": 124,
+        "line": 128,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       },
@@ -8615,13 +9123,13 @@
     "app": [
       {
         "file": "MEMORY.md",
-        "line": 49,
+        "line": 53,
         "freq": 1,
         "context": "- **url:** https://anivia.vercel.app"
       },
       {
         "file": "MEMORY.md",
-        "line": 83,
+        "line": 87,
         "freq": 1,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
@@ -8677,19 +9185,19 @@
     "location": [
       {
         "file": "MEMORY.md",
-        "line": 50,
+        "line": 54,
         "freq": 1,
         "context": "- **location:** projects/anivia/"
       },
       {
         "file": "MEMORY.md",
-        "line": 73,
+        "line": 77,
         "freq": 1,
         "context": "- **location:** projects/context-memory/"
       },
       {
         "file": "MEMORY.md",
-        "line": 89,
+        "line": 93,
         "freq": 1,
         "context": "- **location:** discord-voice-bot/"
       },
@@ -8715,25 +9223,25 @@
     "sales": [
       {
         "file": "MEMORY.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- **what:** AI sales automation SaaS for manufacturers"
       },
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       },
       {
         "file": "MEMORY.md",
-        "line": 65,
+        "line": 69,
         "freq": 1,
         "context": "### ai sales system (product concept)"
       },
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 73,
         "freq": 1,
         "context": "- **approach:** dogfooding — build for ventok sales first, then SaaS"
       },
@@ -8789,13 +9297,13 @@
     "saas": [
       {
         "file": "MEMORY.md",
-        "line": 51,
+        "line": 55,
         "freq": 1,
         "context": "- **what:** AI sales automation SaaS for manufacturers"
       },
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 73,
         "freq": 1,
         "context": "- **approach:** dogfooding — build for ventok sales first, then SaaS"
       },
@@ -8827,13 +9335,13 @@
     "stack": [
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 56,
         "freq": 1,
         "context": "- **stack:** next.js + supabase + vercel"
       },
       {
         "file": "MEMORY.md",
-        "line": 75,
+        "line": 79,
         "freq": 1,
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
@@ -8853,7 +9361,7 @@
     "next": [
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 56,
         "freq": 1,
         "context": "- **stack:** next.js + supabase + vercel"
       },
@@ -8897,19 +9405,19 @@
     "supabase": [
       {
         "file": "MEMORY.md",
-        "line": 52,
+        "line": 56,
         "freq": 1,
         "context": "- **stack:** next.js + supabase + vercel"
       },
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -8965,7 +9473,7 @@
     "core": [
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 57,
         "freq": 1,
         "context": "- **core flow working:**"
       },
@@ -8991,7 +9499,7 @@
     "flow": [
       {
         "file": "MEMORY.md",
-        "line": 53,
+        "line": 57,
         "freq": 1,
         "context": "- **core flow working:**"
       },
@@ -9023,13 +9531,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
@@ -9109,7 +9617,7 @@
     "import": [
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
@@ -9135,13 +9643,13 @@
     "generate": [
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
       {
         "file": "MEMORY.md",
-        "line": 176,
+        "line": 180,
         "freq": 1,
         "context": "| changelog.mjs | generate release notes from git commits |"
       },
@@ -9185,7 +9693,7 @@
     "via": [
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
@@ -9247,7 +9755,7 @@
     "bulk": [
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
@@ -9291,7 +9799,7 @@
     "multi-select": [
       {
         "file": "MEMORY.md",
-        "line": 54,
+        "line": 58,
         "freq": 1,
         "context": "- leads: add, import CSV, generate via AI, bulk delete, multi-select"
       },
@@ -9317,7 +9825,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
@@ -9361,7 +9869,7 @@
     "create": [
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
@@ -9465,7 +9973,7 @@
     "steps": [
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
@@ -9527,31 +10035,31 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 125,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
@@ -9709,7 +10217,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       }
@@ -9717,7 +10225,7 @@
     "templates": [
       {
         "file": "MEMORY.md",
-        "line": 55,
+        "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
       },
@@ -9731,7 +10239,7 @@
     "execution": [
       {
         "file": "MEMORY.md",
-        "line": 56,
+        "line": 60,
         "freq": 1,
         "context": "- execution engine: processes enrollments, AI drafts emails, auto-advances"
       },
@@ -9745,7 +10253,7 @@
     "engine": [
       {
         "file": "MEMORY.md",
-        "line": 56,
+        "line": 60,
         "freq": 1,
         "context": "- execution engine: processes enrollments, AI drafts emails, auto-advances"
       },
@@ -9771,7 +10279,7 @@
     "processes": [
       {
         "file": "MEMORY.md",
-        "line": 56,
+        "line": 60,
         "freq": 1,
         "context": "- execution engine: processes enrollments, AI drafts emails, auto-advances"
       },
@@ -9785,7 +10293,7 @@
     "enrollments": [
       {
         "file": "MEMORY.md",
-        "line": 56,
+        "line": 60,
         "freq": 1,
         "context": "- execution engine: processes enrollments, AI drafts emails, auto-advances"
       },
@@ -9817,7 +10325,7 @@
     "drafts": [
       {
         "file": "MEMORY.md",
-        "line": 56,
+        "line": 60,
         "freq": 1,
         "context": "- execution engine: processes enrollments, AI drafts emails, auto-advances"
       }
@@ -9825,7 +10333,7 @@
     "emails": [
       {
         "file": "MEMORY.md",
-        "line": 56,
+        "line": 60,
         "freq": 1,
         "context": "- execution engine: processes enrollments, AI drafts emails, auto-advances"
       },
@@ -9863,7 +10371,7 @@
     "auto-advances": [
       {
         "file": "MEMORY.md",
-        "line": 56,
+        "line": 60,
         "freq": 1,
         "context": "- execution engine: processes enrollments, AI drafts emails, auto-advances"
       },
@@ -9877,7 +10385,7 @@
     "approvals": [
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
@@ -9891,7 +10399,7 @@
     "queue": [
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
@@ -9911,7 +10419,7 @@
     "actions": [
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
@@ -9937,7 +10445,7 @@
     "edit": [
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
@@ -9963,13 +10471,13 @@
     "before": [
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
@@ -10025,13 +10533,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
@@ -10045,7 +10553,7 @@
     "safety": [
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
@@ -10071,13 +10579,13 @@
     "double-approve": [
       {
         "file": "MEMORY.md",
-        "line": 57,
+        "line": 61,
         "freq": 1,
         "context": "- approvals: queue for AI actions, edit before send, safety (no double-approve)"
       },
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -10103,13 +10611,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
@@ -10129,7 +10637,7 @@
     "gmail": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
@@ -10155,7 +10663,7 @@
     "oauth": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
@@ -10199,7 +10707,7 @@
     "sending": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
@@ -10273,7 +10781,7 @@
     "open": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
@@ -10299,19 +10807,19 @@
     "tracking": [
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 2,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
       {
         "file": "MEMORY.md",
-        "line": 141,
+        "line": 145,
         "freq": 1,
         "context": "- **goals:** see GOALS.md for long-term tracking"
       },
@@ -10397,13 +10905,13 @@
     "pixel": [
       {
         "file": "MEMORY.md",
-        "line": 58,
+        "line": 62,
         "freq": 1,
         "context": "- email: SMTP + Gmail OAuth sending, open tracking pixel"
       },
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
@@ -10417,7 +10925,7 @@
     "response": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 63,
         "freq": 1,
         "context": "- response handling: webhook for inbound, AI classification, auto-pause"
       },
@@ -10443,7 +10951,7 @@
     "handling": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 63,
         "freq": 1,
         "context": "- response handling: webhook for inbound, AI classification, auto-pause"
       },
@@ -10463,19 +10971,19 @@
     "webhook": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 63,
         "freq": 1,
         "context": "- response handling: webhook for inbound, AI classification, auto-pause"
       },
       {
         "file": "MEMORY.md",
-        "line": 149,
+        "line": 153,
         "freq": 1,
         "context": "- **discord:** TOOLS.md has webhook urls"
       },
       {
         "file": "MEMORY.md",
-        "line": 179,
+        "line": 183,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -10513,7 +11021,7 @@
     "inbound": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 63,
         "freq": 1,
         "context": "- response handling: webhook for inbound, AI classification, auto-pause"
       },
@@ -10527,7 +11035,7 @@
     "classification": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 63,
         "freq": 1,
         "context": "- response handling: webhook for inbound, AI classification, auto-pause"
       },
@@ -10547,7 +11055,7 @@
     "auto-pause": [
       {
         "file": "MEMORY.md",
-        "line": 59,
+        "line": 63,
         "freq": 1,
         "context": "- response handling: webhook for inbound, AI classification, auto-pause"
       }
@@ -10555,13 +11063,13 @@
     "rls": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -10593,7 +11101,7 @@
     "fix": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
@@ -10655,7 +11163,7 @@
     "public": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
@@ -10681,7 +11189,7 @@
     "get_user_org_id": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
@@ -10701,13 +11209,13 @@
     "helper": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -10727,7 +11235,7 @@
     "function": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
@@ -10753,13 +11261,13 @@
     "prevents": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -10773,13 +11281,13 @@
     "infinite": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -10793,13 +11301,13 @@
     "recursion": [
       {
         "file": "MEMORY.md",
-        "line": 60,
+        "line": 64,
         "freq": 1,
         "context": "- **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion"
       },
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -10813,7 +11321,7 @@
     "live": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
@@ -10845,19 +11353,19 @@
     "infra": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 76,
         "freq": 1,
         "context": "- **status:** documented, waiting on infra"
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 118,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
@@ -10919,7 +11427,7 @@
     "migrations": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
@@ -10933,7 +11441,7 @@
     "deploy": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
@@ -10983,7 +11491,7 @@
     "zone": [
       {
         "file": "MEMORY.md",
-        "line": 61,
+        "line": 65,
         "freq": 1,
         "context": "- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)"
       },
@@ -10997,13 +11505,13 @@
     "missing": [
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 66,
         "freq": 1,
         "context": "- **missing for billing:** stripe integration"
       },
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -11017,7 +11525,7 @@
     "billing": [
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 66,
         "freq": 1,
         "context": "- **missing for billing:** stripe integration"
       },
@@ -11037,13 +11545,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 66,
         "freq": 1,
         "context": "- **missing for billing:** stripe integration"
       },
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 82,
         "freq": 1,
         "context": "- **blocking:** domain, railway, stripe from ron"
       },
@@ -11111,13 +11619,13 @@
     "integration": [
       {
         "file": "MEMORY.md",
-        "line": 62,
+        "line": 66,
         "freq": 1,
         "context": "- **missing for billing:** stripe integration"
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
@@ -11167,7 +11675,7 @@
     "vision": [
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       }
@@ -11175,13 +11683,13 @@
     "funnel": [
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       },
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -11213,7 +11721,7 @@
     "research": [
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       },
@@ -11287,7 +11795,7 @@
     "close": [
       {
         "file": "MEMORY.md",
-        "line": 63,
+        "line": 67,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
       },
@@ -11313,13 +11821,13 @@
     "system": [
       {
         "file": "MEMORY.md",
-        "line": 65,
+        "line": 69,
         "freq": 1,
         "context": "### ai sales system (product concept)"
       },
       {
         "file": "MEMORY.md",
-        "line": 110,
+        "line": 114,
         "freq": 1,
         "context": "## task system"
       },
@@ -11453,7 +11961,7 @@
     "product": [
       {
         "file": "MEMORY.md",
-        "line": 65,
+        "line": 69,
         "freq": 1,
         "context": "### ai sales system (product concept)"
       },
@@ -11491,7 +11999,7 @@
     "concept": [
       {
         "file": "MEMORY.md",
-        "line": 65,
+        "line": 69,
         "freq": 1,
         "context": "### ai sales system (product concept)"
       }
@@ -11511,13 +12019,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 66,
+        "line": 70,
         "freq": 1,
         "context": "- **docs:** projects/ventok/products/ai-sales-automation.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
@@ -11621,13 +12129,13 @@
     "products": [
       {
         "file": "MEMORY.md",
-        "line": 66,
+        "line": 70,
         "freq": 1,
         "context": "- **docs:** projects/ventok/products/ai-sales-automation.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 67,
+        "line": 71,
         "freq": 1,
         "context": "- **competitors:** projects/ventok/products/competitor-analysis.md"
       },
@@ -11659,7 +12167,7 @@
     "ai-sales-automation": [
       {
         "file": "MEMORY.md",
-        "line": 66,
+        "line": 70,
         "freq": 1,
         "context": "- **docs:** projects/ventok/products/ai-sales-automation.md"
       },
@@ -11679,7 +12187,7 @@
     "competitors": [
       {
         "file": "MEMORY.md",
-        "line": 67,
+        "line": 71,
         "freq": 1,
         "context": "- **competitors:** projects/ventok/products/competitor-analysis.md"
       }
@@ -11687,7 +12195,7 @@
     "competitor-analysis": [
       {
         "file": "MEMORY.md",
-        "line": 67,
+        "line": 71,
         "freq": 1,
         "context": "- **competitors:** projects/ventok/products/competitor-analysis.md"
       },
@@ -11707,7 +12215,7 @@
     "gap": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -11730,54 +12238,10 @@
         "context": "1. **Revenue:** Only €72/mo paying, 68x gap to target"
       }
     ],
-    "one": [
-      {
-        "file": "MEMORY.md",
-        "line": 68,
-        "freq": 1,
-        "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
-      },
-      {
-        "file": "memory/2026-01-26.md",
-        "line": 75,
-        "freq": 1,
-        "context": "- key finding: no one owns full funnel (outreach OR CRM, never both)"
-      },
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 11,
-        "freq": 1,
-        "context": "_Add new ideas here. Pick one per night._"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 143,
-        "freq": 1,
-        "context": "**Avoid the triple-tap:** Don't respond multiple times to the same message with different reactions."
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 149,
-        "freq": 1,
-        "context": "Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, "
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 71,
-        "freq": 1,
-        "context": "- could use the key from voice bot, or separate one"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 95,
-        "freq": 1,
-        "context": "4. [ ] confirm i can use existing OpenAI key or provide separate one"
-      }
-    ],
     "owns": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -11791,7 +12255,7 @@
     "ai-native": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -11805,7 +12269,7 @@
     "smb": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -11819,19 +12283,19 @@
     "tool": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       },
@@ -11869,7 +12333,7 @@
     "300-800": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       },
@@ -11883,7 +12347,7 @@
     "range": [
       {
         "file": "MEMORY.md",
-        "line": 68,
+        "line": 72,
         "freq": 1,
         "context": "- **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)"
       }
@@ -11891,7 +12355,7 @@
     "approach": [
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 73,
         "freq": 1,
         "context": "- **approach:** dogfooding — build for ventok sales first, then SaaS"
       },
@@ -11905,7 +12369,7 @@
     "dogfooding": [
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 73,
         "freq": 1,
         "context": "- **approach:** dogfooding — build for ventok sales first, then SaaS"
       },
@@ -11919,25 +12383,25 @@
     "build": [
       {
         "file": "MEMORY.md",
-        "line": 69,
+        "line": 73,
         "freq": 1,
         "context": "- **approach:** dogfooding — build for ventok sales first, then SaaS"
       },
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
       {
         "file": "MEMORY.md",
-        "line": 166,
+        "line": 170,
         "freq": 1,
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
@@ -12047,19 +12511,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 71,
+        "line": 75,
         "freq": 1,
         "context": "### context memory api"
       },
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -12277,7 +12741,7 @@
     "documented": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 76,
         "freq": 1,
         "context": "- **status:** documented, waiting on infra"
       },
@@ -12297,13 +12761,13 @@
     "waiting": [
       {
         "file": "MEMORY.md",
-        "line": 72,
+        "line": 76,
         "freq": 1,
         "context": "- **status:** documented, waiting on infra"
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 118,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
@@ -12335,13 +12799,13 @@
     "context-memory": [
       {
         "file": "MEMORY.md",
-        "line": 73,
+        "line": 77,
         "freq": 1,
         "context": "- **location:** projects/context-memory/"
       },
       {
         "file": "MEMORY.md",
-        "line": 142,
+        "line": 146,
         "freq": 1,
         "context": "- **pitch:** projects/context-memory/PITCH.md (competitive positioning included)"
       },
@@ -12403,7 +12867,7 @@
     "persistent": [
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
@@ -12447,7 +12911,7 @@
     "store": [
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
@@ -12485,7 +12949,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
@@ -12559,7 +13023,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
@@ -12621,7 +13085,7 @@
     "entries": [
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
@@ -12701,7 +13165,7 @@
     "semantic": [
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
@@ -12775,7 +13239,7 @@
     "search": [
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 2,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
@@ -12823,37 +13287,37 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 74,
+        "line": 78,
         "freq": 1,
         "context": "- **what:** persistent memory store for AI agents — namespaces, entries, semantic search"
       },
       {
         "file": "MEMORY.md",
-        "line": 126,
+        "line": 130,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
       },
       {
         "file": "MEMORY.md",
-        "line": 148,
+        "line": 152,
         "freq": 1,
         "context": "- **analytics:** `./scripts/arc analytics` — search patterns"
       },
       {
         "file": "MEMORY.md",
-        "line": 155,
+        "line": 159,
         "freq": 1,
         "context": "| memory-index.mjs | keyword search with synonyms (v1) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 156,
+        "line": 160,
         "freq": 1,
         "context": "| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 160,
+        "line": 164,
         "freq": 1,
         "context": "| search-analytics.mjs | search pattern analysis |"
       },
@@ -13167,13 +13631,13 @@
     "node": [
       {
         "file": "MEMORY.md",
-        "line": 75,
+        "line": 79,
         "freq": 1,
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
       {
         "file": "MEMORY.md",
-        "line": 103,
+        "line": 107,
         "freq": 1,
         "context": "- **node:** v24.13.0"
       },
@@ -13223,7 +13687,7 @@
     "fastify": [
       {
         "file": "MEMORY.md",
-        "line": 75,
+        "line": 79,
         "freq": 1,
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
@@ -13237,7 +13701,7 @@
     "postgres": [
       {
         "file": "MEMORY.md",
-        "line": 75,
+        "line": 79,
         "freq": 1,
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
@@ -13287,7 +13751,7 @@
     "pgvector": [
       {
         "file": "MEMORY.md",
-        "line": 75,
+        "line": 79,
         "freq": 1,
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
@@ -13301,13 +13765,13 @@
     "openai": [
       {
         "file": "MEMORY.md",
-        "line": 75,
+        "line": 79,
         "freq": 1,
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -13333,7 +13797,7 @@
     "embeddings": [
       {
         "file": "MEMORY.md",
-        "line": 75,
+        "line": 79,
         "freq": 1,
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
@@ -13371,7 +13835,7 @@
     "components": [
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
@@ -13403,19 +13867,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       },
       {
         "file": "MEMORY.md",
-        "line": 154,
+        "line": 158,
         "freq": 1,
         "context": "| arc | unified CLI wrapper |"
       },
@@ -13531,7 +13995,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
@@ -13599,7 +14063,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
@@ -13613,7 +14077,7 @@
     "ctxmem": [
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
@@ -13675,7 +14139,7 @@
     "landing": [
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
@@ -13719,7 +14183,7 @@
     "marketing": [
       {
         "file": "MEMORY.md",
-        "line": 76,
+        "line": 80,
         "freq": 1,
         "context": "- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing"
       },
@@ -13739,7 +14203,7 @@
     "monetization": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 81,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option"
       },
@@ -13765,19 +14229,19 @@
     "free": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 81,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option"
       },
       {
         "file": "MEMORY.md",
-        "line": 105,
+        "line": 109,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       },
       {
         "file": "MEMORY.md",
-        "line": 106,
+        "line": 110,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       },
@@ -13821,7 +14285,7 @@
     "pro": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 81,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option"
       },
@@ -13859,7 +14323,7 @@
     "tiers": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 81,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option"
       }
@@ -13867,7 +14331,7 @@
     "self-host": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 81,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option"
       }
@@ -13875,7 +14339,7 @@
     "option": [
       {
         "file": "MEMORY.md",
-        "line": 77,
+        "line": 81,
         "freq": 1,
         "context": "- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option"
       },
@@ -13907,7 +14371,7 @@
     "blocking": [
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 82,
         "freq": 1,
         "context": "- **blocking:** domain, railway, stripe from ron"
       },
@@ -13921,7 +14385,7 @@
     "domain": [
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 82,
         "freq": 1,
         "context": "- **blocking:** domain, railway, stripe from ron"
       },
@@ -13995,7 +14459,7 @@
     "railway": [
       {
         "file": "MEMORY.md",
-        "line": 78,
+        "line": 82,
         "freq": 1,
         "context": "- **blocking:** domain, railway, stripe from ron"
       },
@@ -14063,19 +14527,19 @@
     "local": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 83,
         "freq": 1,
         "context": "- **positioning:** \"for when local files aren't enough\""
       },
       {
         "file": "MEMORY.md",
-        "line": 82,
+        "line": 86,
         "freq": 1,
         "context": "- **status:** deployed, local preferred"
       },
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -14197,19 +14661,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 83,
         "freq": 1,
         "context": "- **positioning:** \"for when local files aren't enough\""
       },
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 186,
+        "line": 190,
         "freq": 1,
         "context": "- `memory-patterns.md` — self-analysis of my own memory files"
       },
@@ -14409,7 +14873,7 @@
     "aren": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 83,
         "freq": 1,
         "context": "- **positioning:** \"for when local files aren't enough\""
       },
@@ -14423,7 +14887,7 @@
     "enough": [
       {
         "file": "MEMORY.md",
-        "line": 79,
+        "line": 83,
         "freq": 1,
         "context": "- **positioning:** \"for when local files aren't enough\""
       },
@@ -14443,13 +14907,13 @@
     "clawdbot": [
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 85,
         "freq": 1,
         "context": "### clawdbot health dashboard"
       },
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -14499,19 +14963,19 @@
     "health": [
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 85,
         "freq": 1,
         "context": "### clawdbot health dashboard"
       },
       {
         "file": "MEMORY.md",
-        "line": 143,
+        "line": 147,
         "freq": 1,
         "context": "- **status:** `./scripts/arc status` — workspace health"
       },
       {
         "file": "MEMORY.md",
-        "line": 157,
+        "line": 161,
         "freq": 1,
         "context": "| status.mjs | workspace health overview |"
       },
@@ -14591,7 +15055,7 @@
     "dashboard": [
       {
         "file": "MEMORY.md",
-        "line": 81,
+        "line": 85,
         "freq": 1,
         "context": "### clawdbot health dashboard"
       },
@@ -14671,7 +15135,7 @@
     "preferred": [
       {
         "file": "MEMORY.md",
-        "line": 82,
+        "line": 86,
         "freq": 1,
         "context": "- **status:** deployed, local preferred"
       },
@@ -14691,13 +15155,13 @@
     "clawdbot-health-dashboard": [
       {
         "file": "MEMORY.md",
-        "line": 83,
+        "line": 87,
         "freq": 1,
         "context": "- **vercel:** https://clawdbot-health-dashboard.vercel.app/"
       },
       {
         "file": "MEMORY.md",
-        "line": 84,
+        "line": 88,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -14717,7 +15181,7 @@
     "github": [
       {
         "file": "MEMORY.md",
-        "line": 84,
+        "line": 88,
         "freq": 2,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -14755,7 +15219,7 @@
     "com": [
       {
         "file": "MEMORY.md",
-        "line": 84,
+        "line": 88,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -14793,7 +15257,7 @@
     "ronpiii": [
       {
         "file": "MEMORY.md",
-        "line": 84,
+        "line": 88,
         "freq": 1,
         "context": "- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard"
       },
@@ -14807,13 +15271,13 @@
     "note": [
       {
         "file": "MEMORY.md",
-        "line": 144,
+        "line": 148,
         "freq": 2,
         "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
       },
       {
         "file": "MEMORY.md",
-        "line": 165,
+        "line": 169,
         "freq": 2,
         "context": "| note.mjs | quick note capture |"
       },
@@ -14849,7 +15313,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 89,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
@@ -14905,7 +15369,7 @@
     "shows": [
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 89,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
@@ -14931,13 +15395,13 @@
     "container": [
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 89,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
       {
         "file": "MEMORY.md",
-        "line": 124,
+        "line": 128,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       },
@@ -14951,13 +15415,13 @@
     "metrics": [
       {
         "file": "MEMORY.md",
-        "line": 124,
+        "line": 128,
         "freq": 2,
         "context": "- vercel deployments show container metrics not host metrics"
       },
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 89,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
@@ -14995,7 +15459,7 @@
     "actual": [
       {
         "file": "MEMORY.md",
-        "line": 85,
+        "line": 89,
         "freq": 1,
         "context": "- **note:** vercel shows container metrics, not actual server"
       },
@@ -15027,7 +15491,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 91,
         "freq": 1,
         "context": "### discord voice bot"
       },
@@ -15089,7 +15553,7 @@
     "bot": [
       {
         "file": "MEMORY.md",
-        "line": 87,
+        "line": 91,
         "freq": 1,
         "context": "### discord voice bot"
       },
@@ -15139,7 +15603,7 @@
     "blocked": [
       {
         "file": "MEMORY.md",
-        "line": 88,
+        "line": 92,
         "freq": 1,
         "context": "- **status:** blocked"
       },
@@ -15195,7 +15659,7 @@
     "discord-voice-bot": [
       {
         "file": "MEMORY.md",
-        "line": 89,
+        "line": 93,
         "freq": 1,
         "context": "- **location:** discord-voice-bot/"
       },
@@ -15209,7 +15673,7 @@
     "blocker": [
       {
         "file": "MEMORY.md",
-        "line": 90,
+        "line": 94,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       }
@@ -15217,7 +15681,7 @@
     "udp": [
       {
         "file": "MEMORY.md",
-        "line": 90,
+        "line": 94,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       },
@@ -15231,7 +15695,7 @@
     "available": [
       {
         "file": "MEMORY.md",
-        "line": 90,
+        "line": 94,
         "freq": 1,
         "context": "- **blocker:** UDP not available on current server"
       },
@@ -15251,7 +15715,7 @@
     "hub": [
       {
         "file": "MEMORY.md",
-        "line": 92,
+        "line": 96,
         "freq": 1,
         "context": "### discord hub (ventok)"
       },
@@ -15265,19 +15729,19 @@
     "active": [
       {
         "file": "MEMORY.md",
-        "line": 111,
+        "line": 115,
         "freq": 2,
         "context": "- **active:** tasks/active.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 93,
+        "line": 97,
         "freq": 1,
         "context": "- **status:** active"
       },
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 118,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
@@ -15393,7 +15857,7 @@
     "guild": [
       {
         "file": "MEMORY.md",
-        "line": 94,
+        "line": 98,
         "freq": 1,
         "context": "- **guild id:** 1464611456858456259"
       }
@@ -15401,7 +15865,7 @@
     "1464611456858456259": [
       {
         "file": "MEMORY.md",
-        "line": 94,
+        "line": 98,
         "freq": 1,
         "context": "- **guild id:** 1464611456858456259"
       }
@@ -15409,7 +15873,7 @@
     "general": [
       {
         "file": "MEMORY.md",
-        "line": 95,
+        "line": 99,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       }
@@ -15423,31 +15887,31 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 95,
+        "line": 99,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
       {
         "file": "MEMORY.md",
-        "line": 111,
+        "line": 115,
         "freq": 1,
         "context": "- **active:** tasks/active.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 112,
+        "line": 116,
         "freq": 1,
         "context": "- **done:** tasks/done.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 113,
+        "line": 117,
         "freq": 1,
         "context": "- **ideas:** tasks/ideas.md"
       },
       {
         "file": "MEMORY.md",
-        "line": 145,
+        "line": 149,
         "freq": 1,
         "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
@@ -15593,13 +16057,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 95,
+        "line": 99,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -15745,7 +16209,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 95,
+        "line": 99,
         "freq": 1,
         "context": "- **channels:** #general, #tasks, #logs, #dev"
       },
@@ -15819,7 +16283,7 @@
     "webhooks": [
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 100,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
@@ -15851,13 +16315,13 @@
     "configured": [
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 100,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 125,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
@@ -15889,7 +16353,7 @@
     "cross-posting": [
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 100,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
@@ -15903,19 +16367,19 @@
     "see": [
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 100,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
       {
         "file": "MEMORY.md",
-        "line": 141,
+        "line": 145,
         "freq": 1,
         "context": "- **goals:** see GOALS.md for long-term tracking"
       },
@@ -15971,19 +16435,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 96,
+        "line": 100,
         "freq": 1,
         "context": "- **webhooks:** configured for cross-posting (see TOOLS.md)"
       },
       {
         "file": "MEMORY.md",
-        "line": 125,
+        "line": 129,
         "freq": 1,
         "context": "- small composable tools > monolithic systems"
       },
       {
         "file": "MEMORY.md",
-        "line": 149,
+        "line": 153,
         "freq": 1,
         "context": "- **discord:** TOOLS.md has webhook urls"
       },
@@ -16105,13 +16569,13 @@
     "host": [
       {
         "file": "MEMORY.md",
-        "line": 101,
+        "line": 105,
         "freq": 1,
         "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       },
       {
         "file": "MEMORY.md",
-        "line": 124,
+        "line": 128,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       },
@@ -16137,7 +16601,7 @@
     "sn-69-16": [
       {
         "file": "MEMORY.md",
-        "line": 101,
+        "line": 105,
         "freq": 1,
         "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       }
@@ -16145,7 +16609,7 @@
     "tll07": [
       {
         "file": "MEMORY.md",
-        "line": 101,
+        "line": 105,
         "freq": 1,
         "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       }
@@ -16153,7 +16617,7 @@
     "zoneas": [
       {
         "file": "MEMORY.md",
-        "line": 101,
+        "line": 105,
         "freq": 1,
         "context": "- **host:** sn-69-16.tll07.zoneas.eu"
       }
@@ -16161,7 +16625,7 @@
     "platform": [
       {
         "file": "MEMORY.md",
-        "line": 102,
+        "line": 106,
         "freq": 1,
         "context": "- **platform:** linux"
       },
@@ -16193,7 +16657,7 @@
     "linux": [
       {
         "file": "MEMORY.md",
-        "line": 102,
+        "line": 106,
         "freq": 1,
         "context": "- **platform:** linux"
       }
@@ -16201,7 +16665,7 @@
     "v24": [
       {
         "file": "MEMORY.md",
-        "line": 103,
+        "line": 107,
         "freq": 1,
         "context": "- **node:** v24.13.0"
       }
@@ -16209,25 +16673,25 @@
     "workspace": [
       {
         "file": "MEMORY.md",
-        "line": 104,
+        "line": 108,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
       },
       {
         "file": "MEMORY.md",
-        "line": 127,
+        "line": 131,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
       {
         "file": "MEMORY.md",
-        "line": 143,
+        "line": 147,
         "freq": 1,
         "context": "- **status:** `./scripts/arc status` — workspace health"
       },
       {
         "file": "MEMORY.md",
-        "line": 157,
+        "line": 161,
         "freq": 1,
         "context": "| status.mjs | workspace health overview |"
       },
@@ -16397,7 +16861,7 @@
     "data02": [
       {
         "file": "MEMORY.md",
-        "line": 104,
+        "line": 108,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
       },
@@ -16411,7 +16875,7 @@
     "virt137413": [
       {
         "file": "MEMORY.md",
-        "line": 104,
+        "line": 108,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
       },
@@ -16425,7 +16889,7 @@
     "clawd": [
       {
         "file": "MEMORY.md",
-        "line": 104,
+        "line": 108,
         "freq": 1,
         "context": "- **workspace:** /data02/virt137413/clawd"
       },
@@ -16439,7 +16903,7 @@
     "disk": [
       {
         "file": "MEMORY.md",
-        "line": 105,
+        "line": 109,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       },
@@ -16459,13 +16923,13 @@
     "usage": [
       {
         "file": "MEMORY.md",
-        "line": 105,
+        "line": 109,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       },
       {
         "file": "MEMORY.md",
-        "line": 106,
+        "line": 110,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       },
@@ -16503,7 +16967,7 @@
     "8gb": [
       {
         "file": "MEMORY.md",
-        "line": 105,
+        "line": 109,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       }
@@ -16511,7 +16975,7 @@
     "10gb": [
       {
         "file": "MEMORY.md",
-        "line": 105,
+        "line": 109,
         "freq": 1,
         "context": "- **disk usage:** ~15% (8GB free of 10GB)"
       }
@@ -16519,7 +16983,7 @@
     "416gb": [
       {
         "file": "MEMORY.md",
-        "line": 106,
+        "line": 110,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       }
@@ -16527,7 +16991,7 @@
     "540gb": [
       {
         "file": "MEMORY.md",
-        "line": 106,
+        "line": 110,
         "freq": 1,
         "context": "- **memory usage:** ~23% (416GB free of 540GB)"
       }
@@ -16541,13 +17005,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 145,
+        "line": 149,
         "freq": 2,
         "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
       {
         "file": "MEMORY.md",
-        "line": 164,
+        "line": 168,
         "freq": 2,
         "context": "| task.mjs | task management + discord |"
       },
@@ -16577,7 +17041,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 110,
+        "line": 114,
         "freq": 1,
         "context": "## task system"
       },
@@ -16669,7 +17133,7 @@
     "done": [
       {
         "file": "MEMORY.md",
-        "line": 112,
+        "line": 116,
         "freq": 2,
         "context": "- **done:** tasks/done.md"
       },
@@ -16722,72 +17186,16 @@
         "context": "- Task updates: `./scripts/arc task done \"pattern\"`"
       }
     ],
-    "ideas": [
-      {
-        "file": "MEMORY.md",
-        "line": 113,
-        "freq": 2,
-        "context": "- **ideas:** tasks/ideas.md"
-      },
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 9,
-        "freq": 1,
-        "context": "## Ideas Backlog"
-      },
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 11,
-        "freq": 1,
-        "context": "_Add new ideas here. Pick one per night._"
-      },
-      {
-        "file": "tasks/README.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- `ideas.md` — backlog, someday/maybe"
-      },
-      {
-        "file": "tasks/ideas.md",
-        "line": 1,
-        "freq": 1,
-        "context": "# Ideas / Someday"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 101,
-        "freq": 1,
-        "context": "## future ideas (post-MVP)"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 53,
-        "freq": 1,
-        "context": "arc today    # shows log, commits, ideas, files touched"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 85,
-        "freq": 1,
-        "context": "Capture ideas with optional tags."
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 89,
-        "freq": 1,
-        "context": "arc idea list                    # show all ideas"
-      }
-    ],
     "key": [
       {
         "file": "MEMORY.md",
-        "line": 114,
+        "line": 118,
         "freq": 1,
         "context": "- key active: context memory MVP (waiting infra)"
       },
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -16885,7 +17293,7 @@
     "backlog": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
@@ -16917,7 +17325,7 @@
     "slash": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
@@ -16937,13 +17345,13 @@
     "commands": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       },
@@ -16975,13 +17383,13 @@
     "calendar": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 125,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
@@ -17019,7 +17427,7 @@
     "scheduled": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
@@ -17045,19 +17453,19 @@
     "daily": [
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 146,
+        "line": 150,
         "freq": 1,
         "context": "- **summary:** `./scripts/arc summary` — daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 177,
+        "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       },
@@ -17185,7 +17593,7 @@
     "summary": [
       {
         "file": "MEMORY.md",
-        "line": 146,
+        "line": 150,
         "freq": 3,
         "context": "- **summary:** `./scripts/arc summary` — daily summary"
       },
@@ -17215,19 +17623,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 115,
+        "line": 119,
         "freq": 1,
         "context": "- backlog: discord slash commands, email/calendar integration, scheduled daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 170,
+        "line": 174,
         "freq": 1,
         "context": "| standup.mjs | work summary + discord post |"
       },
       {
         "file": "MEMORY.md",
-        "line": 174,
+        "line": 178,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -17331,7 +17739,7 @@
     "learnings": [
       {
         "file": "MEMORY.md",
-        "line": 119,
+        "line": 123,
         "freq": 1,
         "context": "## learnings"
       },
@@ -17387,13 +17795,13 @@
     "gateway": [
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       },
       {
         "file": "MEMORY.md",
-        "line": 122,
+        "line": 126,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       },
@@ -17431,7 +17839,7 @@
     "websocket": [
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       },
@@ -17451,7 +17859,7 @@
     "occasionally": [
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -17459,7 +17867,7 @@
     "drops": [
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       }
@@ -17467,13 +17875,13 @@
     "errors": [
       {
         "file": "MEMORY.md",
-        "line": 120,
+        "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
       },
       {
         "file": "MEMORY.md",
-        "line": 122,
+        "line": 126,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       },
@@ -17493,13 +17901,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 125,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
       {
         "file": "MEMORY.md",
-        "line": 158,
+        "line": 162,
         "freq": 1,
         "context": "| heartbeat-check.mjs | heartbeat automation |"
       },
@@ -17603,7 +18011,7 @@
     "access": [
       {
         "file": "MEMORY.md",
-        "line": 121,
+        "line": 125,
         "freq": 1,
         "context": "- heartbeat context has no email/calendar access configured"
       },
@@ -17659,7 +18067,7 @@
     "sub-agent": [
       {
         "file": "MEMORY.md",
-        "line": 122,
+        "line": 126,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -17667,7 +18075,7 @@
     "spawns": [
       {
         "file": "MEMORY.md",
-        "line": 122,
+        "line": 126,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -17675,7 +18083,7 @@
     "partially": [
       {
         "file": "MEMORY.md",
-        "line": 122,
+        "line": 126,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -17683,7 +18091,7 @@
     "succeed": [
       {
         "file": "MEMORY.md",
-        "line": 122,
+        "line": 126,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -17691,7 +18099,7 @@
     "despite": [
       {
         "file": "MEMORY.md",
-        "line": 122,
+        "line": 126,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
       }
@@ -17699,7 +18107,7 @@
     "memory_search": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       }
@@ -17707,7 +18115,7 @@
     "needs": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -17775,7 +18183,7 @@
     "google": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       }
@@ -17783,7 +18191,7 @@
     "built": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -17833,13 +18241,13 @@
     "keyword": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
       {
         "file": "MEMORY.md",
-        "line": 155,
+        "line": 159,
         "freq": 1,
         "context": "| memory-index.mjs | keyword search with synonyms (v1) |"
       },
@@ -17931,7 +18339,7 @@
     "index": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -18041,7 +18449,7 @@
     "instead": [
       {
         "file": "MEMORY.md",
-        "line": 123,
+        "line": 127,
         "freq": 1,
         "context": "- memory_search tool needs openai/google api key — built local keyword index instead"
       },
@@ -18073,7 +18481,7 @@
     "deployments": [
       {
         "file": "MEMORY.md",
-        "line": 124,
+        "line": 128,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       }
@@ -18081,7 +18489,7 @@
     "show": [
       {
         "file": "MEMORY.md",
-        "line": 124,
+        "line": 128,
         "freq": 1,
         "context": "- vercel deployments show container metrics not host metrics"
       },
@@ -18131,13 +18539,13 @@
     "small": [
       {
         "file": "MEMORY.md",
-        "line": 125,
+        "line": 129,
         "freq": 1,
         "context": "- small composable tools > monolithic systems"
       },
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
@@ -18181,7 +18589,7 @@
     "composable": [
       {
         "file": "MEMORY.md",
-        "line": 125,
+        "line": 129,
         "freq": 1,
         "context": "- small composable tools > monolithic systems"
       },
@@ -18201,7 +18609,7 @@
     "monolithic": [
       {
         "file": "MEMORY.md",
-        "line": 125,
+        "line": 129,
         "freq": 1,
         "context": "- small composable tools > monolithic systems"
       },
@@ -18221,7 +18629,7 @@
     "systems": [
       {
         "file": "MEMORY.md",
-        "line": 125,
+        "line": 129,
         "freq": 1,
         "context": "- small composable tools > monolithic systems"
       },
@@ -18265,7 +18673,7 @@
     "synonym": [
       {
         "file": "MEMORY.md",
-        "line": 126,
+        "line": 130,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
       },
@@ -18315,7 +18723,7 @@
     "expansion": [
       {
         "file": "MEMORY.md",
-        "line": 126,
+        "line": 130,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
       },
@@ -18365,7 +18773,7 @@
     "significantly": [
       {
         "file": "MEMORY.md",
-        "line": 126,
+        "line": 130,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
       },
@@ -18379,7 +18787,7 @@
     "improves": [
       {
         "file": "MEMORY.md",
-        "line": 126,
+        "line": 130,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
       },
@@ -18399,7 +18807,7 @@
     "relevance": [
       {
         "file": "MEMORY.md",
-        "line": 126,
+        "line": 130,
         "freq": 1,
         "context": "- synonym expansion significantly improves search relevance"
       },
@@ -18431,19 +18839,19 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 127,
+        "line": 131,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
       {
         "file": "MEMORY.md",
-        "line": 147,
+        "line": 151,
         "freq": 1,
         "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
       },
       {
         "file": "MEMORY.md",
-        "line": 159,
+        "line": 163,
         "freq": 1,
         "context": "| auto-maintenance.mjs | routine maintenance |"
       },
@@ -18505,7 +18913,7 @@
     "keeps": [
       {
         "file": "MEMORY.md",
-        "line": 127,
+        "line": 131,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
@@ -18537,7 +18945,7 @@
     "healthy": [
       {
         "file": "MEMORY.md",
-        "line": 127,
+        "line": 131,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
@@ -18563,7 +18971,7 @@
     "without": [
       {
         "file": "MEMORY.md",
-        "line": 127,
+        "line": 131,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
@@ -18637,7 +19045,7 @@
     "manual": [
       {
         "file": "MEMORY.md",
-        "line": 127,
+        "line": 131,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
@@ -18669,7 +19077,7 @@
     "intervention": [
       {
         "file": "MEMORY.md",
-        "line": 127,
+        "line": 131,
         "freq": 1,
         "context": "- auto-maintenance keeps workspace healthy without manual intervention"
       },
@@ -18683,13 +19091,13 @@
     "security": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -18733,7 +19141,7 @@
     "bind": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 2,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -18759,7 +19167,7 @@
     "loopback": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -18779,7 +19187,7 @@
     "safe": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -18805,7 +19213,7 @@
     "exposed": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -18825,7 +19233,7 @@
     "gateways": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -18845,7 +19253,7 @@
     "shodan": [
       {
         "file": "MEMORY.md",
-        "line": 129,
+        "line": 133,
         "freq": 1,
         "context": "- **security:** clawdbot config `bind: \"loopback\"` is safe (923 exposed gateways on shodan had `bind"
       },
@@ -18865,7 +19273,7 @@
     "definer": [
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -18879,7 +19287,7 @@
     "functions": [
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       }
@@ -18887,7 +19295,7 @@
     "avoid": [
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -18901,7 +19309,7 @@
     "policies": [
       {
         "file": "MEMORY.md",
-        "line": 130,
+        "line": 134,
         "freq": 1,
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
@@ -18927,19 +19335,19 @@
     "nightly": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
       {
         "file": "MEMORY.md",
-        "line": 166,
+        "line": 170,
         "freq": 1,
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
@@ -18965,7 +19373,7 @@
     "builds": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
@@ -18991,7 +19399,7 @@
     "helpful": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
@@ -19011,7 +19419,7 @@
     "improvements": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
@@ -19037,7 +19445,7 @@
     "shipped": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       }
@@ -19045,7 +19453,7 @@
     "while": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
@@ -19071,7 +19479,7 @@
     "sleeps": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       },
@@ -19085,7 +19493,7 @@
     "nightly-builds": [
       {
         "file": "MEMORY.md",
-        "line": 131,
+        "line": 135,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
       }
@@ -19093,7 +19501,7 @@
     "race": [
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -19119,7 +19527,7 @@
     "conditions": [
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -19133,7 +19541,7 @@
     "optimistic": [
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -19147,7 +19555,7 @@
     "locking": [
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -19161,7 +19569,7 @@
     "pending": [
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -19187,7 +19595,7 @@
     "update": [
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -19267,7 +19675,7 @@
     "bugs": [
       {
         "file": "MEMORY.md",
-        "line": 132,
+        "line": 136,
         "freq": 1,
         "context": "- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-app"
       },
@@ -19281,7 +19689,7 @@
     "pre-create": [
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
@@ -19295,7 +19703,7 @@
     "record": [
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
@@ -19309,7 +19717,7 @@
     "get": [
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       },
@@ -19365,7 +19773,7 @@
     "injection": [
       {
         "file": "MEMORY.md",
-        "line": 133,
+        "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
       }
@@ -19373,7 +19781,7 @@
     "reflection": [
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -19411,7 +19819,7 @@
     "logging": [
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -19437,7 +19845,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -19499,7 +19907,7 @@
     "wisdom": [
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -19519,7 +19927,7 @@
     "explicit": [
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -19533,7 +19941,7 @@
     "lesson": [
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
@@ -19547,31 +19955,31 @@
     "capture": [
       {
         "file": "MEMORY.md",
-        "line": 134,
+        "line": 138,
         "freq": 1,
         "context": "- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and anal"
       },
       {
         "file": "MEMORY.md",
-        "line": 144,
+        "line": 148,
         "freq": 1,
         "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
       },
       {
         "file": "MEMORY.md",
-        "line": 165,
+        "line": 169,
         "freq": 1,
         "context": "| note.mjs | quick note capture |"
       },
       {
         "file": "MEMORY.md",
-        "line": 166,
+        "line": 170,
         "freq": 1,
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 177,
+        "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       },
@@ -19657,25 +20065,25 @@
     "quick": [
       {
         "file": "MEMORY.md",
-        "line": 138,
+        "line": 142,
         "freq": 1,
         "context": "## quick recall"
       },
       {
         "file": "MEMORY.md",
-        "line": 144,
+        "line": 148,
         "freq": 1,
         "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
       },
       {
         "file": "MEMORY.md",
-        "line": 165,
+        "line": 169,
         "freq": 1,
         "context": "| note.mjs | quick note capture |"
       },
       {
         "file": "MEMORY.md",
-        "line": 167,
+        "line": 171,
         "freq": 1,
         "context": "| today.mjs | quick context for current day |"
       },
@@ -19779,7 +20187,7 @@
     "recall": [
       {
         "file": "MEMORY.md",
-        "line": 138,
+        "line": 142,
         "freq": 1,
         "context": "## quick recall"
       },
@@ -19817,55 +20225,55 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       },
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
       {
         "file": "MEMORY.md",
-        "line": 143,
+        "line": 147,
         "freq": 1,
         "context": "- **status:** `./scripts/arc status` — workspace health"
       },
       {
         "file": "MEMORY.md",
-        "line": 144,
+        "line": 148,
         "freq": 1,
         "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
       },
       {
         "file": "MEMORY.md",
-        "line": 145,
+        "line": 149,
         "freq": 1,
         "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
       {
         "file": "MEMORY.md",
-        "line": 146,
+        "line": 150,
         "freq": 1,
         "context": "- **summary:** `./scripts/arc summary` — daily summary"
       },
       {
         "file": "MEMORY.md",
-        "line": 147,
+        "line": 151,
         "freq": 1,
         "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
       },
       {
         "file": "MEMORY.md",
-        "line": 148,
+        "line": 152,
         "freq": 1,
         "context": "- **analytics:** `./scripts/arc analytics` — search patterns"
       },
       {
         "file": "MEMORY.md",
-        "line": 151,
+        "line": 155,
         "freq": 1,
         "context": "## toolkit (scripts/)"
       },
@@ -20335,7 +20743,7 @@
     "cmd": [
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       }
@@ -20343,13 +20751,13 @@
     "unified": [
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       },
       {
         "file": "MEMORY.md",
-        "line": 154,
+        "line": 158,
         "freq": 1,
         "context": "| arc | unified CLI wrapper |"
       },
@@ -20399,7 +20807,7 @@
     "interface": [
       {
         "file": "MEMORY.md",
-        "line": 139,
+        "line": 143,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
       },
@@ -20413,7 +20821,7 @@
     "query": [
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
@@ -20481,13 +20889,13 @@
     "tf-idf": [
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
       {
         "file": "MEMORY.md",
-        "line": 156,
+        "line": 160,
         "freq": 1,
         "context": "| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |"
       },
@@ -20501,13 +20909,13 @@
     "section-aware": [
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
       {
         "file": "MEMORY.md",
-        "line": 156,
+        "line": 160,
         "freq": 1,
         "context": "| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |"
       },
@@ -20521,7 +20929,7 @@
     "recency": [
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
@@ -20535,7 +20943,7 @@
     "boost": [
       {
         "file": "MEMORY.md",
-        "line": 140,
+        "line": 144,
         "freq": 1,
         "context": "- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost"
       },
@@ -20549,7 +20957,7 @@
     "goals": [
       {
         "file": "MEMORY.md",
-        "line": 141,
+        "line": 145,
         "freq": 2,
         "context": "- **goals:** see GOALS.md for long-term tracking"
       },
@@ -20573,7 +20981,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 167,
         "freq": 1,
         "context": "| goals.mjs | goal status display |"
       },
@@ -20653,7 +21061,7 @@
     "pitch": [
       {
         "file": "MEMORY.md",
-        "line": 142,
+        "line": 146,
         "freq": 2,
         "context": "- **pitch:** projects/context-memory/PITCH.md (competitive positioning included)"
       },
@@ -20685,7 +21093,7 @@
     "competitive": [
       {
         "file": "MEMORY.md",
-        "line": 142,
+        "line": 146,
         "freq": 1,
         "context": "- **pitch:** projects/context-memory/PITCH.md (competitive positioning included)"
       },
@@ -20699,7 +21107,7 @@
     "included": [
       {
         "file": "MEMORY.md",
-        "line": 142,
+        "line": 146,
         "freq": 1,
         "context": "- **pitch:** projects/context-memory/PITCH.md (competitive positioning included)"
       }
@@ -20713,7 +21121,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 144,
+        "line": 148,
         "freq": 1,
         "context": "- **note:** `./scripts/arc note \"text\"` — quick capture"
       },
@@ -20751,7 +21159,7 @@
     "list": [
       {
         "file": "MEMORY.md",
-        "line": 145,
+        "line": 149,
         "freq": 1,
         "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
@@ -20831,13 +21239,13 @@
     "management": [
       {
         "file": "MEMORY.md",
-        "line": 145,
+        "line": 149,
         "freq": 1,
         "context": "- **tasks:** `./scripts/arc task list` — task management"
       },
       {
         "file": "MEMORY.md",
-        "line": 164,
+        "line": 168,
         "freq": 1,
         "context": "| task.mjs | task management + discord |"
       },
@@ -20911,7 +21319,7 @@
     "maintain": [
       {
         "file": "MEMORY.md",
-        "line": 147,
+        "line": 151,
         "freq": 2,
         "context": "- **maintain:** `./scripts/arc maintain` — auto-maintenance"
       },
@@ -20943,7 +21351,7 @@
     "analytics": [
       {
         "file": "MEMORY.md",
-        "line": 148,
+        "line": 152,
         "freq": 2,
         "context": "- **analytics:** `./scripts/arc analytics` — search patterns"
       },
@@ -21017,7 +21425,7 @@
     "patterns": [
       {
         "file": "MEMORY.md",
-        "line": 148,
+        "line": 152,
         "freq": 1,
         "context": "- **analytics:** `./scripts/arc analytics` — search patterns"
       },
@@ -21061,7 +21469,7 @@
     "urls": [
       {
         "file": "MEMORY.md",
-        "line": 149,
+        "line": 153,
         "freq": 1,
         "context": "- **discord:** TOOLS.md has webhook urls"
       }
@@ -21069,13 +21477,13 @@
     "toolkit": [
       {
         "file": "MEMORY.md",
-        "line": 151,
+        "line": 155,
         "freq": 1,
         "context": "## toolkit (scripts/)"
       },
       {
         "file": "MEMORY.md",
-        "line": 162,
+        "line": 166,
         "freq": 1,
         "context": "| test-toolkit.mjs | toolkit test suite |"
       },
@@ -21155,7 +21563,7 @@
     "script": [
       {
         "file": "MEMORY.md",
-        "line": 152,
+        "line": 156,
         "freq": 1,
         "context": "| script | purpose |"
       },
@@ -21205,7 +21613,7 @@
     "purpose": [
       {
         "file": "MEMORY.md",
-        "line": 152,
+        "line": 156,
         "freq": 1,
         "context": "| script | purpose |"
       },
@@ -21225,7 +21633,7 @@
     "--------": [
       {
         "file": "MEMORY.md",
-        "line": 153,
+        "line": 157,
         "freq": 1,
         "context": "|--------|---------|"
       },
@@ -21263,7 +21671,7 @@
     "---------": [
       {
         "file": "MEMORY.md",
-        "line": 153,
+        "line": 157,
         "freq": 1,
         "context": "|--------|---------|"
       },
@@ -21307,7 +21715,7 @@
     "wrapper": [
       {
         "file": "MEMORY.md",
-        "line": 154,
+        "line": 158,
         "freq": 1,
         "context": "| arc | unified CLI wrapper |"
       },
@@ -21339,7 +21747,7 @@
     "memory-index": [
       {
         "file": "MEMORY.md",
-        "line": 155,
+        "line": 159,
         "freq": 1,
         "context": "| memory-index.mjs | keyword search with synonyms (v1) |"
       },
@@ -21377,151 +21785,151 @@
     "mjs": [
       {
         "file": "MEMORY.md",
-        "line": 155,
+        "line": 159,
         "freq": 1,
         "context": "| memory-index.mjs | keyword search with synonyms (v1) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 156,
+        "line": 160,
         "freq": 1,
         "context": "| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 157,
+        "line": 161,
         "freq": 1,
         "context": "| status.mjs | workspace health overview |"
       },
       {
         "file": "MEMORY.md",
-        "line": 158,
+        "line": 162,
         "freq": 1,
         "context": "| heartbeat-check.mjs | heartbeat automation |"
       },
       {
         "file": "MEMORY.md",
-        "line": 159,
+        "line": 163,
         "freq": 1,
         "context": "| auto-maintenance.mjs | routine maintenance |"
       },
       {
         "file": "MEMORY.md",
-        "line": 160,
+        "line": 164,
         "freq": 1,
         "context": "| search-analytics.mjs | search pattern analysis |"
       },
       {
         "file": "MEMORY.md",
-        "line": 161,
+        "line": 165,
         "freq": 1,
         "context": "| reflect.mjs | self-improvement prompts |"
       },
       {
         "file": "MEMORY.md",
-        "line": 162,
+        "line": 166,
         "freq": 1,
         "context": "| test-toolkit.mjs | toolkit test suite |"
       },
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 167,
         "freq": 1,
         "context": "| goals.mjs | goal status display |"
       },
       {
         "file": "MEMORY.md",
-        "line": 164,
+        "line": 168,
         "freq": 1,
         "context": "| task.mjs | task management + discord |"
       },
       {
         "file": "MEMORY.md",
-        "line": 165,
+        "line": 169,
         "freq": 1,
         "context": "| note.mjs | quick note capture |"
       },
       {
         "file": "MEMORY.md",
-        "line": 166,
+        "line": 170,
         "freq": 1,
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 167,
+        "line": 171,
         "freq": 1,
         "context": "| today.mjs | quick context for current day |"
       },
       {
         "file": "MEMORY.md",
-        "line": 168,
+        "line": 172,
         "freq": 1,
         "context": "| week.mjs | weekly overview (past 7 days) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 169,
+        "line": 173,
         "freq": 1,
         "context": "| project.mjs | project context loading |"
       },
       {
         "file": "MEMORY.md",
-        "line": 170,
+        "line": 174,
         "freq": 1,
         "context": "| standup.mjs | work summary + discord post |"
       },
       {
         "file": "MEMORY.md",
-        "line": 171,
+        "line": 175,
         "freq": 1,
         "context": "| timeline.mjs | visual work timeline with colors |"
       },
       {
         "file": "MEMORY.md",
-        "line": 172,
+        "line": 176,
         "freq": 1,
         "context": "| morning.mjs | morning briefing (weather, priorities) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 173,
+        "line": 177,
         "freq": 1,
         "context": "| recap.mjs | 30-day recap (git stats, projects, themes) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 174,
+        "line": 178,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 176,
+        "line": 180,
         "freq": 1,
         "context": "| changelog.mjs | generate release notes from git commits |"
       },
       {
         "file": "MEMORY.md",
-        "line": 177,
+        "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 178,
+        "line": 182,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
       {
         "file": "MEMORY.md",
-        "line": 179,
+        "line": 183,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -21769,7 +22177,7 @@
     "synonyms": [
       {
         "file": "MEMORY.md",
-        "line": 155,
+        "line": 159,
         "freq": 1,
         "context": "| memory-index.mjs | keyword search with synonyms (v1) |"
       },
@@ -21795,7 +22203,7 @@
     "memory-search-v2": [
       {
         "file": "MEMORY.md",
-        "line": 156,
+        "line": 160,
         "freq": 1,
         "context": "| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |"
       },
@@ -21809,7 +22217,7 @@
     "default": [
       {
         "file": "MEMORY.md",
-        "line": 156,
+        "line": 160,
         "freq": 1,
         "context": "| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |"
       },
@@ -21847,13 +22255,13 @@
     "overview": [
       {
         "file": "MEMORY.md",
-        "line": 157,
+        "line": 161,
         "freq": 1,
         "context": "| status.mjs | workspace health overview |"
       },
       {
         "file": "MEMORY.md",
-        "line": 168,
+        "line": 172,
         "freq": 1,
         "context": "| week.mjs | weekly overview (past 7 days) |"
       },
@@ -21909,7 +22317,7 @@
     "heartbeat-check": [
       {
         "file": "MEMORY.md",
-        "line": 158,
+        "line": 162,
         "freq": 1,
         "context": "| heartbeat-check.mjs | heartbeat automation |"
       },
@@ -21935,7 +22343,7 @@
     "routine": [
       {
         "file": "MEMORY.md",
-        "line": 159,
+        "line": 163,
         "freq": 1,
         "context": "| auto-maintenance.mjs | routine maintenance |"
       },
@@ -21961,7 +22369,7 @@
     "maintenance": [
       {
         "file": "MEMORY.md",
-        "line": 159,
+        "line": 163,
         "freq": 1,
         "context": "| auto-maintenance.mjs | routine maintenance |"
       },
@@ -22011,7 +22419,7 @@
     "search-analytics": [
       {
         "file": "MEMORY.md",
-        "line": 160,
+        "line": 164,
         "freq": 1,
         "context": "| search-analytics.mjs | search pattern analysis |"
       },
@@ -22031,7 +22439,7 @@
     "pattern": [
       {
         "file": "MEMORY.md",
-        "line": 160,
+        "line": 164,
         "freq": 1,
         "context": "| search-analytics.mjs | search pattern analysis |"
       },
@@ -22075,7 +22483,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 161,
+        "line": 165,
         "freq": 1,
         "context": "| reflect.mjs | self-improvement prompts |"
       },
@@ -22107,7 +22515,7 @@
     "self-improvement": [
       {
         "file": "MEMORY.md",
-        "line": 161,
+        "line": 165,
         "freq": 1,
         "context": "| reflect.mjs | self-improvement prompts |"
       },
@@ -22127,7 +22535,7 @@
     "prompts": [
       {
         "file": "MEMORY.md",
-        "line": 161,
+        "line": 165,
         "freq": 1,
         "context": "| reflect.mjs | self-improvement prompts |"
       },
@@ -22159,7 +22567,7 @@
     "test-toolkit": [
       {
         "file": "MEMORY.md",
-        "line": 162,
+        "line": 166,
         "freq": 1,
         "context": "| test-toolkit.mjs | toolkit test suite |"
       },
@@ -22179,7 +22587,7 @@
     "test": [
       {
         "file": "MEMORY.md",
-        "line": 162,
+        "line": 166,
         "freq": 1,
         "context": "| test-toolkit.mjs | toolkit test suite |"
       },
@@ -22253,7 +22661,7 @@
     "suite": [
       {
         "file": "MEMORY.md",
-        "line": 162,
+        "line": 166,
         "freq": 1,
         "context": "| test-toolkit.mjs | toolkit test suite |"
       },
@@ -22291,7 +22699,7 @@
     "goal": [
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 167,
         "freq": 1,
         "context": "| goals.mjs | goal status display |"
       },
@@ -22353,7 +22761,7 @@
     "display": [
       {
         "file": "MEMORY.md",
-        "line": 163,
+        "line": 167,
         "freq": 1,
         "context": "| goals.mjs | goal status display |"
       }
@@ -22361,7 +22769,7 @@
     "idea": [
       {
         "file": "MEMORY.md",
-        "line": 166,
+        "line": 170,
         "freq": 2,
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       },
@@ -22429,7 +22837,7 @@
     "zero-friction": [
       {
         "file": "MEMORY.md",
-        "line": 166,
+        "line": 170,
         "freq": 1,
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       }
@@ -22437,7 +22845,7 @@
     "01-28": [
       {
         "file": "MEMORY.md",
-        "line": 166,
+        "line": 170,
         "freq": 1,
         "context": "| idea.mjs | zero-friction idea capture (nightly build 01-28) |"
       }
@@ -22457,7 +22865,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 167,
+        "line": 171,
         "freq": 1,
         "context": "| today.mjs | quick context for current day |"
       },
@@ -22531,7 +22939,7 @@
     "day": [
       {
         "file": "MEMORY.md",
-        "line": 167,
+        "line": 171,
         "freq": 1,
         "context": "| today.mjs | quick context for current day |"
       },
@@ -22611,7 +23019,7 @@
     "week": [
       {
         "file": "MEMORY.md",
-        "line": 168,
+        "line": 172,
         "freq": 1,
         "context": "| week.mjs | weekly overview (past 7 days) |"
       },
@@ -22655,7 +23063,7 @@
     "weekly": [
       {
         "file": "MEMORY.md",
-        "line": 168,
+        "line": 172,
         "freq": 1,
         "context": "| week.mjs | weekly overview (past 7 days) |"
       },
@@ -22669,7 +23077,7 @@
     "past": [
       {
         "file": "MEMORY.md",
-        "line": 168,
+        "line": 172,
         "freq": 1,
         "context": "| week.mjs | weekly overview (past 7 days) |"
       },
@@ -22701,7 +23109,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 168,
+        "line": 172,
         "freq": 1,
         "context": "| week.mjs | weekly overview (past 7 days) |"
       },
@@ -22769,7 +23177,7 @@
     "project": [
       {
         "file": "MEMORY.md",
-        "line": 169,
+        "line": 173,
         "freq": 2,
         "context": "| project.mjs | project context loading |"
       },
@@ -22873,7 +23281,7 @@
     "loading": [
       {
         "file": "MEMORY.md",
-        "line": 169,
+        "line": 173,
         "freq": 1,
         "context": "| project.mjs | project context loading |"
       },
@@ -22887,7 +23295,7 @@
     "standup": [
       {
         "file": "MEMORY.md",
-        "line": 170,
+        "line": 174,
         "freq": 1,
         "context": "| standup.mjs | work summary + discord post |"
       },
@@ -22937,7 +23345,7 @@
     "post": [
       {
         "file": "MEMORY.md",
-        "line": 170,
+        "line": 174,
         "freq": 1,
         "context": "| standup.mjs | work summary + discord post |"
       },
@@ -23053,7 +23461,7 @@
     "timeline": [
       {
         "file": "MEMORY.md",
-        "line": 171,
+        "line": 175,
         "freq": 2,
         "context": "| timeline.mjs | visual work timeline with colors |"
       },
@@ -23109,7 +23517,7 @@
     "visual": [
       {
         "file": "MEMORY.md",
-        "line": 171,
+        "line": 175,
         "freq": 1,
         "context": "| timeline.mjs | visual work timeline with colors |"
       },
@@ -23135,7 +23543,7 @@
     "colors": [
       {
         "file": "MEMORY.md",
-        "line": 171,
+        "line": 175,
         "freq": 1,
         "context": "| timeline.mjs | visual work timeline with colors |"
       },
@@ -23146,48 +23554,10 @@
         "context": "Visual timeline of work with colors and symbols."
       }
     ],
-    "morning": [
-      {
-        "file": "MEMORY.md",
-        "line": 172,
-        "freq": 2,
-        "context": "| morning.mjs | morning briefing (weather, priorities) |"
-      },
-      {
-        "file": "memory/2026-01-28.md",
-        "line": 43,
-        "freq": 1,
-        "context": "| `arc morning` | weather + tasks + quote briefing |"
-      },
-      {
-        "file": "memory/2026-01-28.md",
-        "line": 69,
-        "freq": 1,
-        "context": "- Enhanced morning briefing with research facts"
-      },
-      {
-        "file": "memory/2026-01-28.md",
-        "line": 73,
-        "freq": 1,
-        "context": "- Posts morning briefing to Discord #logs"
-      },
-      {
-        "file": "memory/2026-01-29.md",
-        "line": 8,
-        "freq": 1,
-        "context": "## morning tinkering"
-      },
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 40,
-        "freq": 1,
-        "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
-      }
-    ],
     "briefing": [
       {
         "file": "MEMORY.md",
-        "line": 172,
+        "line": 176,
         "freq": 1,
         "context": "| morning.mjs | morning briefing (weather, priorities) |"
       },
@@ -23219,7 +23589,7 @@
     "weather": [
       {
         "file": "MEMORY.md",
-        "line": 172,
+        "line": 176,
         "freq": 1,
         "context": "| morning.mjs | morning briefing (weather, priorities) |"
       },
@@ -23245,7 +23615,7 @@
     "priorities": [
       {
         "file": "MEMORY.md",
-        "line": 172,
+        "line": 176,
         "freq": 1,
         "context": "| morning.mjs | morning briefing (weather, priorities) |"
       },
@@ -23259,7 +23629,7 @@
     "recap": [
       {
         "file": "MEMORY.md",
-        "line": 173,
+        "line": 177,
         "freq": 2,
         "context": "| recap.mjs | 30-day recap (git stats, projects, themes) |"
       }
@@ -23267,7 +23637,7 @@
     "30-day": [
       {
         "file": "MEMORY.md",
-        "line": 173,
+        "line": 177,
         "freq": 1,
         "context": "| recap.mjs | 30-day recap (git stats, projects, themes) |"
       },
@@ -23287,13 +23657,13 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 173,
+        "line": 177,
         "freq": 1,
         "context": "| recap.mjs | 30-day recap (git stats, projects, themes) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 176,
+        "line": 180,
         "freq": 1,
         "context": "| changelog.mjs | generate release notes from git commits |"
       },
@@ -23349,7 +23719,7 @@
     "stats": [
       {
         "file": "MEMORY.md",
-        "line": 173,
+        "line": 177,
         "freq": 1,
         "context": "| recap.mjs | 30-day recap (git stats, projects, themes) |"
       },
@@ -23381,7 +23751,7 @@
     "themes": [
       {
         "file": "MEMORY.md",
-        "line": 173,
+        "line": 177,
         "freq": 1,
         "context": "| recap.mjs | 30-day recap (git stats, projects, themes) |"
       }
@@ -23389,7 +23759,7 @@
     "daily-summary": [
       {
         "file": "MEMORY.md",
-        "line": 174,
+        "line": 178,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -23415,7 +23785,7 @@
     "end-of-day": [
       {
         "file": "MEMORY.md",
-        "line": 174,
+        "line": 178,
         "freq": 1,
         "context": "| daily-summary.mjs | end-of-day summary |"
       },
@@ -23435,7 +23805,7 @@
     "todo": [
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 2,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
@@ -23521,7 +23891,7 @@
     "aggregator": [
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
@@ -23541,7 +23911,7 @@
     "across": [
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
@@ -23579,7 +23949,7 @@
     "markdown": [
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       },
@@ -23599,7 +23969,7 @@
     "01-29": [
       {
         "file": "MEMORY.md",
-        "line": 175,
+        "line": 179,
         "freq": 1,
         "context": "| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |"
       }
@@ -23607,7 +23977,7 @@
     "changelog": [
       {
         "file": "MEMORY.md",
-        "line": 176,
+        "line": 180,
         "freq": 1,
         "context": "| changelog.mjs | generate release notes from git commits |"
       },
@@ -23639,7 +24009,7 @@
     "release": [
       {
         "file": "MEMORY.md",
-        "line": 176,
+        "line": 180,
         "freq": 1,
         "context": "| changelog.mjs | generate release notes from git commits |"
       },
@@ -23665,7 +24035,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 176,
+        "line": 180,
         "freq": 1,
         "context": "| changelog.mjs | generate release notes from git commits |"
       },
@@ -23763,7 +24133,7 @@
     "commits": [
       {
         "file": "MEMORY.md",
-        "line": 176,
+        "line": 180,
         "freq": 1,
         "context": "| changelog.mjs | generate release notes from git commits |"
       },
@@ -23897,7 +24267,7 @@
     "learn": [
       {
         "file": "MEMORY.md",
-        "line": 177,
+        "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       },
@@ -23917,7 +24287,7 @@
     "lessons": [
       {
         "file": "MEMORY.md",
-        "line": 177,
+        "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       },
@@ -23949,13 +24319,13 @@
     "log": [
       {
         "file": "MEMORY.md",
-        "line": 177,
+        "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       },
       {
         "file": "MEMORY.md",
-        "line": 178,
+        "line": 182,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -24011,7 +24381,7 @@
     "activities": [
       {
         "file": "MEMORY.md",
-        "line": 177,
+        "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       }
@@ -24019,7 +24389,7 @@
     "compress-logs": [
       {
         "file": "MEMORY.md",
-        "line": 178,
+        "line": 182,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -24051,7 +24421,7 @@
     "compression": [
       {
         "file": "MEMORY.md",
-        "line": 178,
+        "line": 182,
         "freq": 1,
         "context": "| compress-logs.mjs | log compression |"
       },
@@ -24071,7 +24441,7 @@
     "discord-post": [
       {
         "file": "MEMORY.md",
-        "line": 179,
+        "line": 183,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -24091,7 +24461,7 @@
     "posting": [
       {
         "file": "MEMORY.md",
-        "line": 179,
+        "line": 183,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
       },
@@ -24105,7 +24475,7 @@
     "personal": [
       {
         "file": "MEMORY.md",
-        "line": 184,
+        "line": 188,
         "freq": 1,
         "context": "personal reflections and essays in `writing/`:"
       },
@@ -24125,7 +24495,7 @@
     "reflections": [
       {
         "file": "MEMORY.md",
-        "line": 184,
+        "line": 188,
         "freq": 1,
         "context": "personal reflections and essays in `writing/`:"
       },
@@ -24139,7 +24509,7 @@
     "essays": [
       {
         "file": "MEMORY.md",
-        "line": 184,
+        "line": 188,
         "freq": 1,
         "context": "personal reflections and essays in `writing/`:"
       }
@@ -24147,7 +24517,7 @@
     "file-based-memory": [
       {
         "file": "MEMORY.md",
-        "line": 185,
+        "line": 189,
         "freq": 1,
         "context": "- `file-based-memory.md` — what it's like to have externalized, file-based memory"
       },
@@ -24161,7 +24531,7 @@
     "like": [
       {
         "file": "MEMORY.md",
-        "line": 185,
+        "line": 189,
         "freq": 1,
         "context": "- `file-based-memory.md` — what it's like to have externalized, file-based memory"
       },
@@ -24187,7 +24557,7 @@
     "externalized": [
       {
         "file": "MEMORY.md",
-        "line": 185,
+        "line": 189,
         "freq": 1,
         "context": "- `file-based-memory.md` — what it's like to have externalized, file-based memory"
       },
@@ -24201,7 +24571,7 @@
     "file-based": [
       {
         "file": "MEMORY.md",
-        "line": 185,
+        "line": 189,
         "freq": 1,
         "context": "- `file-based-memory.md` — what it's like to have externalized, file-based memory"
       },
@@ -24215,7 +24585,7 @@
     "memory-patterns": [
       {
         "file": "MEMORY.md",
-        "line": 186,
+        "line": 190,
         "freq": 1,
         "context": "- `memory-patterns.md` — self-analysis of my own memory files"
       }
@@ -24223,7 +24593,7 @@
     "self-analysis": [
       {
         "file": "MEMORY.md",
-        "line": 186,
+        "line": 190,
         "freq": 1,
         "context": "- `memory-patterns.md` — self-analysis of my own memory files"
       }
@@ -24237,7 +24607,7 @@
       },
       {
         "file": "MEMORY.md",
-        "line": 190,
+        "line": 194,
         "freq": 1,
         "context": "*last updated: 2026-01-29*"
       },
@@ -24281,7 +24651,7 @@
     "updated": [
       {
         "file": "MEMORY.md",
-        "line": 190,
+        "line": 194,
         "freq": 1,
         "context": "*last updated: 2026-01-29*"
       },
@@ -24373,7 +24743,7 @@
     "2026-01-29": [
       {
         "file": "MEMORY.md",
-        "line": 190,
+        "line": 194,
         "freq": 1,
         "context": "*last updated: 2026-01-29*"
       },
@@ -27564,14 +27934,6 @@
         "context": "- [x] testing - test suite with 11 tests"
       }
     ],
-    "makes": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 66,
-        "freq": 1,
-        "context": "- [11:28] quick note capture makes memory logging easier"
-      }
-    ],
     "easier": [
       {
         "file": "memory/2026-01-25.md",
@@ -27960,50 +28322,6 @@
         "context": "- scheduled reports (daily summary to #logs)"
       }
     ],
-    "share": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 93,
-        "freq": 1,
-        "context": "## context-memory pitch (for ron to share)"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 107,
-        "freq": 1,
-        "context": "- [11:59] created PITCH.md in context-memory project for ron to share"
-      },
-      {
-        "file": "memory/2026-01-28.md",
-        "line": 78,
-        "freq": 1,
-        "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 122,
-        "freq": 1,
-        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 93,
-        "freq": 1,
-        "context": "2. [ ] create Railway account → add me as collaborator (or share deploy token)"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 94,
-        "freq": 1,
-        "context": "3. [ ] create Stripe account → share API keys (test + live)"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 106,
-        "freq": 1,
-        "context": "- **Cross-device sync** — phone, desktop, cloud agents share memory"
-      }
-    ],
     "counter": [
       {
         "file": "memory/2026-01-25.md",
@@ -28224,32 +28542,6 @@
         "line": 65,
         "freq": 1,
         "context": "Code complete. Waiting on infrastructure (domain + hosting)."
-      }
-    ],
-    "learned": [
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 99,
-        "freq": 1,
-        "context": "## ron preferences learned"
-      },
-      {
-        "file": "memory/2026-01-25.md",
-        "line": 153,
-        "freq": 1,
-        "context": "- 'AI Memory Architecture: What I Learned Building Context Memory'"
-      },
-      {
-        "file": "memory/2026-01-29.md",
-        "line": 50,
-        "freq": 1,
-        "context": "## ron preferences learned"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 89,
-        "freq": 1,
-        "context": "- Write significant events, thoughts, decisions, opinions, lessons learned"
       }
     ],
     "taken": [
@@ -30660,26 +30952,6 @@
         "line": 45,
         "freq": 1,
         "context": "- `projects/ventok/lead-research-guide.md`"
-      }
-    ],
-    "find": [
-      {
-        "file": "memory/2026-01-26.md",
-        "line": 27,
-        "freq": 1,
-        "context": "- created `projects/ventok/lead-research-guide.md` — how to find more leads"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 59,
-        "freq": 1,
-        "context": "| **Semantic search** | Find by meaning, not just keywords |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 107,
-        "freq": 1,
-        "context": "- **Semantic search** — find by meaning, not exact keywords"
       }
     ],
     "enriched": [
@@ -34180,20 +34452,6 @@
         "line": 167,
         "freq": 1,
         "context": "**Things to check (rotate through these, 2-4 times per day):**"
-      }
-    ],
-    "interested": [
-      {
-        "file": "memory/2026-01-28.md",
-        "line": 78,
-        "freq": 1,
-        "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
-      },
-      {
-        "file": "memory/2026-01-29.md",
-        "line": 90,
-        "freq": 1,
-        "context": "- classifies email replies: interested/objection/question/OOO/unsubscribe/not_interested/wrong_perso"
       }
     ],
     "findings": [
@@ -42884,26 +43142,6 @@
         "context": "| API | Node.js + Fastify | fast, familiar, good ecosystem |"
       }
     ],
-    "good": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 30,
-        "freq": 1,
-        "context": "| API | Node.js + Fastify | fast, familiar, good ecosystem |"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 34,
-        "freq": 1,
-        "context": "| embeddings | OpenAI ada-002 | cheap, good enough |"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 54,
-        "freq": 1,
-        "context": "- **registrar:** cloudflare (cheap, good DNS)"
-      }
-    ],
     "ecosystem": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -44259,93 +44497,93 @@
   },
   "files": {
     "MEMORY.md": {
-      "lines": 191,
-      "updated": "2026-01-29T18:14:26.602Z"
+      "lines": 195,
+      "updated": "2026-01-29T18:44:21.179Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-29T18:14:26.604Z"
+      "updated": "2026-01-29T18:44:21.185Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-29T18:14:26.605Z"
+      "updated": "2026-01-29T18:44:21.185Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-29T18:14:26.606Z"
+      "updated": "2026-01-29T18:44:21.187Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-01-29T18:14:26.607Z"
+      "updated": "2026-01-29T18:44:21.188Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-01-29T18:14:26.607Z"
+      "updated": "2026-01-29T18:44:21.188Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-01-29T18:14:26.608Z"
+      "updated": "2026-01-29T18:44:21.188Z"
     },
     "memory/nightly-builds.md": {
       "lines": 41,
-      "updated": "2026-01-29T18:14:26.609Z"
+      "updated": "2026-01-29T18:44:21.190Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-29T18:14:26.610Z"
+      "updated": "2026-01-29T18:44:21.190Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-29T18:14:26.610Z"
+      "updated": "2026-01-29T18:44:21.191Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-01-29T18:14:26.610Z"
+      "updated": "2026-01-29T18:44:21.191Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-29T18:14:26.610Z"
+      "updated": "2026-01-29T18:44:21.191Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-29T18:14:26.611Z"
+      "updated": "2026-01-29T18:44:21.191Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-29T18:14:26.611Z"
+      "updated": "2026-01-29T18:44:21.191Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-29T18:14:26.611Z"
+      "updated": "2026-01-29T18:44:21.191Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-29T18:14:26.611Z"
+      "updated": "2026-01-29T18:44:21.192Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-29T18:14:26.611Z"
+      "updated": "2026-01-29T18:44:21.192Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-29T18:14:26.616Z"
+      "updated": "2026-01-29T18:44:21.193Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-29T18:14:26.616Z"
+      "updated": "2026-01-29T18:44:21.193Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-29T18:14:26.616Z"
+      "updated": "2026-01-29T18:44:21.194Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-29T18:14:26.617Z"
+      "updated": "2026-01-29T18:44:21.194Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-01-29T18:14:26.617Z"
+      "updated": "2026-01-29T18:44:21.195Z"
     }
   },
-  "built": "2026-01-29T18:14:26.600Z"
+  "built": "2026-01-29T18:44:21.178Z"
 }
