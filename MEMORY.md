@@ -43,17 +43,22 @@
 
 ## projects
 
-### anivia (priority — active build)
-- **status:** deployed, core features done
+### anivia (priority — production-ready)
+- **status:** deployed, full MVP complete
 - **url:** https://anivia.vercel.app
 - **location:** projects/anivia/
 - **what:** AI sales automation SaaS for manufacturers
 - **stack:** next.js + supabase + vercel
-- **done:** add lead, sequences, notes, send email, generate leads, activity page, filters, settings toggles, dashboard stats
+- **core flow working:**
+  - leads: add, import CSV, generate via AI, bulk delete, multi-select
+  - sequences: create, add steps (email/wait), enroll leads, templates
+  - execution engine: processes enrollments, AI drafts emails, auto-advances
+  - approvals: queue for AI actions, edit before send, safety (no double-approve)
+  - email: SMTP + Gmail OAuth sending, open tracking pixel
+  - response handling: webhook for inbound, AI classification, auto-pause
 - **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion
-- **done (01-29):** nav restructure (8→4), settings modal, multi-select, safety audit, bulk delete, SMTP live
-- **live infra:** supabase (11 migrations applied), vercel deploy, resend email, SMTP (zone.eu)
-- **actually missing for SaaS:** stripe billing, openai API key in env
+- **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)
+- **missing for billing:** stripe integration
 - **vision:** "AI sales team for manufacturers" — full funnel from research → close
 
 ### ai sales system (product concept)
@@ -123,12 +128,14 @@
 - **security:** clawdbot config `bind: "loopback"` is safe (923 exposed gateways on shodan had `bind: "all"`)
 - **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies
 - **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds.md)
+- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-approve bugs
+- **email tracking:** pre-create record before send to get tracking ID for pixel injection
 
 ---
 
 ## quick recall
-- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (14 commands)
-- **search:** `./scripts/arc search <query>` — 1115 terms, 16 files, 20 synonym groups
+- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)
+- **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost
 - **goals:** see GOALS.md for long-term tracking
 - **pitch:** projects/context-memory/PITCH.md (competitive positioning included)
 - **status:** `./scripts/arc status` — workspace health
@@ -143,7 +150,8 @@
 | script | purpose |
 |--------|---------|
 | arc | unified CLI wrapper |
-| memory-index.mjs | keyword search with synonyms |
+| memory-index.mjs | keyword search with synonyms (v1) |
+| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |
 | status.mjs | workspace health overview |
 | heartbeat-check.mjs | heartbeat automation |
 | auto-maintenance.mjs | routine maintenance |
@@ -168,4 +176,4 @@
 
 ---
 
-*last updated: 2026-01-28*
+*last updated: 2026-01-29*
