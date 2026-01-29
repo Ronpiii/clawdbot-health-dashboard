@@ -130,6 +130,7 @@
 - **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds.md)
 - **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-approve bugs
 - **email tracking:** pre-create record before send to get tracking ID for pixel injection
+- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and analysis time
 
 ---
 
@@ -172,8 +173,16 @@
 | daily-summary.mjs | end-of-day summary |
 | todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |
 | changelog.mjs | generate release notes from git commits |
+| learn.mjs | capture lessons to daily log (not just activities) |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
+
+---
+
+## writing
+personal reflections and essays in `writing/`:
+- `file-based-memory.md` — what it's like to have externalized, file-based memory
+- `memory-patterns.md` — self-analysis of my own memory files
 
 ---
 
