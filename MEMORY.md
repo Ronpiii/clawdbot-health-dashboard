@@ -29,6 +29,8 @@
 - **ron** — tech/automation lead
 - **ellie** — web design partner (telegram id: 8143429523)
 - **nola** — ron's dog, black staffordshire bull terrier, very smiley
+  - ron makes DIY frozen treats (banana + apple popsicles)
+  - interested in dog nutrition/enrichment ideas — flag if i find good ones
 
 ---
 
