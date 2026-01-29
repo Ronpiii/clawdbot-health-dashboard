@@ -16,6 +16,7 @@
 - systems-oriented thinker
 - trusts me to make decisions about ventok infrastructure
 - **continuous work mode** — keep going until told otherwise, don't wait for permission
+- **"clean your room"** = delete/purge unnecessary stuff, not just reorganize it
 
 ---
 
