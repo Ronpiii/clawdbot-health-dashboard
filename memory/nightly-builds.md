@@ -18,6 +18,11 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth
+**What:** 
+- `arc changelog` — generate readable release notes from git commits
+- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)
+
 ### 2026-01-29: TODO Aggregator
 **What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items
 **Modes:** full list, count, keyword filter, done, all (with progress bar)
