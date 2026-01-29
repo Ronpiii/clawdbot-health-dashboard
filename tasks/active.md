@@ -2,7 +2,6 @@
 
 ## Priority (Business)
 
-- [ ] noar repricing — €72/mo is way underpriced, target €300-500/mo
 - [ ] TMW meeting prep — proposal for AI sales system
 - [ ] ventok outreach — start sending sequence to leads.csv (14 manufacturers)
 

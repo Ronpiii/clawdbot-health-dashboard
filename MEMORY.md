@@ -17,6 +17,10 @@
 - trusts me to make decisions about ventok infrastructure
 - **continuous work mode** — keep going until told otherwise, don't wait for permission
 - **"clean your room"** = delete/purge unnecessary stuff, not just reorganize it
+- noar is ron's sister — never bring up repricing, pricing is fine
+- wants reply-to context on telegram messages — use `[[reply_to:<id>]]` often
+- prefers modal overlays (notion-style) for settings, not separate pages
+- prefers single-column layouts for config/settings cards
 
 ---
 
@@ -27,7 +31,7 @@
 ---
 
 ## ventok business
-- **current MRR:** €72 (1 client: Noar — ron's sister, pricing is fine as-is)
+- **current MRR:** €72 (1 client: Noar — ron's sister, don't discuss pricing)
 - **target:** €5k MRR for full-time transition
 - **pipeline:** TMW (wood manufacturer, meeting soon), Luminor, Veho Tartu
 - **positioning:** "escape excel hell" for estonian SME manufacturers
@@ -47,7 +51,9 @@
 - **stack:** next.js + supabase + vercel
 - **done:** add lead, sequences, notes, send email, generate leads, activity page, filters, settings toggles, dashboard stats
 - **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion
-- **todo:** mobile responsive, pipeline real data, priority 2/3 UX polish
+- **done (01-29):** nav restructure (8→4), settings modal, multi-select, safety audit, bulk delete, SMTP live
+- **live infra:** supabase (11 migrations applied), vercel deploy, resend email, SMTP (zone.eu)
+- **actually missing for SaaS:** stripe billing, openai API key in env
 - **vision:** "AI sales team for manufacturers" — full funnel from research → close
 
 ### ai sales system (product concept)
