@@ -1,3 +1,5 @@
 projects/context-memory/cli/node_modules/
 projects/anivia/
 .config/
+node_modules/
+mockups/*.png
