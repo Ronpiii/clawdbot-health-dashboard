@@ -4,10 +4,10 @@
     "calendar": null,
     "weather": null,
     "telegramCrosspost": 1737795600,
-    "git": 1769794160011,
-    "tasks": 1769794160011,
-    "memory": 1769794160011
+    "git": 1769795959841,
+    "tasks": 1769795959841,
+    "memory": 1769795959841
   },
-  "lastHeartbeat": 1769794160011,
+  "lastHeartbeat": 1769795959841,
   "note": "2026-01-25 - no telegram activity, no email/calendar access"
 }
