@@ -49,7 +49,7 @@
 ## projects
 
 ### anivia (priority — production-ready)
-- **status:** deployed, full MVP complete
+- **status:** production-ready (jan 30 milestone)
 - **url:** https://anivia.vercel.app
 - **location:** projects/anivia/
 - **what:** AI sales automation SaaS for manufacturers
@@ -59,11 +59,12 @@
   - sequences: create, add steps (email/wait), enroll leads, templates
   - execution engine: processes enrollments, AI drafts emails, auto-advances
   - approvals: queue for AI actions, edit before send, safety (no double-approve)
-  - email: SMTP + Gmail OAuth sending, open tracking pixel
+  - email: SMTP + Gmail OAuth + Microsoft OAuth sending, open tracking pixel
   - response handling: webhook for inbound, AI classification, auto-pause
 - **rls fix:** `public.get_user_org_id()` helper function prevents infinite recursion
 - **live infra:** supabase (15 migrations), vercel deploy, SMTP (zone.eu)
 - **missing for billing:** stripe integration
+- **blocker:** vercel pro upgrade needed for 15-min sequence cron (hobby = 1/day)
 - **vision:** "AI sales team for manufacturers" — full funnel from research → close
 
 ### ai sales system (product concept)

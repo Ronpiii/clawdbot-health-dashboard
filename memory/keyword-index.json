@@ -318,6 +318,12 @@
         "context": "- 'AI Memory Architecture: What I Learned Building Context Memory'"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 2,
+        "context": "- Two essays: \"What It's Like to Have File-Based Memory\" + \"Patterns in My Own Memory\""
+      },
+      {
         "file": "QUICKREF.md",
         "line": 24,
         "freq": 2,
@@ -562,6 +568,18 @@
         "line": 188,
         "freq": 1,
         "context": "- wrote `writing/file-based-memory.md` — reflections on what it's like to have externalized, file-ba"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- memory search v2 (TF-IDF scoring)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
       },
       {
         "file": "tasks/active.md",
@@ -1136,26 +1154,44 @@
         "context": "### arc changelog"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- arc changelog tool"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc streak` — work streak & activity heatmap"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 30,
+        "freq": 1,
+        "context": "- `arc learn` — capture lessons to daily logs (not just activities)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 34,
+        "line": 43,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
@@ -2254,6 +2290,12 @@
         "line": 76,
         "freq": 1,
         "context": "- Discord voice bot still blocked (needs UDP server)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- morning script ran, posted to discord #logs"
       },
       {
         "file": "tasks/README.md",
@@ -3752,6 +3794,18 @@
         "context": "## evening (ron said \"work on own stuff\")"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc streak` — work streak & activity heatmap"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**Why:** gamification of consistency — see your work patterns at a glance"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 24,
         "freq": 1,
@@ -3905,7 +3959,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       },
@@ -4348,6 +4402,12 @@
         "line": 200,
         "freq": 1,
         "context": "- [18:13] ron values curiosity and exploration, not just output — leave time for it"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Curiosity queue system for morning drops"
       }
     ],
     "learning": [
@@ -4462,8 +4522,26 @@
         "context": "## morning tinkering"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## morning standup (06:00 UTC)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- morning script ran, posted to discord #logs"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 33,
+        "freq": 1,
+        "context": "- Curiosity queue system for morning drops"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
@@ -4674,6 +4752,12 @@
         "line": 51,
         "freq": 1,
         "context": "- \"clean your room\" = delete/purge (inodes full, practical not emotional — i incorrectly assumed fru"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**Why:** gamification of consistency — see your work patterns at a glance"
       },
       {
         "file": "AGENTS.md",
@@ -5119,7 +5203,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       },
@@ -6628,8 +6712,14 @@
         "context": "### CSV lead import"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- CSV lead import with smart header mapping"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       }
@@ -7202,6 +7292,12 @@
         "context": "- current state: €72/mo MRR (1 client: Noar, severely underpriced)"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 14,
         "freq": 1,
@@ -7462,8 +7558,14 @@
         "context": "- `src/app/api/sequences/execute/route.ts` — the core pipeline"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- sequence execution engine (core pipeline) built"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       },
@@ -8034,6 +8136,12 @@
         "context": "- upload button in leads toolbar (next to Export)"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- bulk enroll from leads table"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 15,
         "freq": 1,
@@ -8096,8 +8204,14 @@
         "context": "### CSV lead import"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- CSV lead import with smart header mapping"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       },
@@ -8280,6 +8394,12 @@
         "context": "- **sequence list stats**: show active + replied counts on cards (4-column grid)"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- sequence execution engine (core pipeline) built"
+      },
+      {
         "file": "tasks/active.md",
         "line": 6,
         "freq": 1,
@@ -8454,6 +8574,12 @@
         "context": "- **anivia**: 24 commits"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- yesterday was massive: 24 anivia commits, 9 workspace commits"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 14,
         "freq": 1,
@@ -8467,13 +8593,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 36,
+        "line": 45,
         "freq": 1,
         "context": "### 2026-01-28: Anivia Features (batch)"
       },
@@ -8944,6 +9070,12 @@
         "line": 173,
         "freq": 1,
         "context": "- **all 3 email providers complete:** SMTP, Gmail, Microsoft"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- all 3 email providers complete (SMTP, Gmail, Microsoft OAuth)"
       },
       {
         "file": "projects/context-memory/PITCH.md",
@@ -9484,6 +9616,12 @@
         "context": "- `src/app/api/sequences/execute/route.ts` — the core pipeline"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- sequence execution engine (core pipeline) built"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 11,
         "freq": 1,
@@ -9634,6 +9772,12 @@
         "context": "- preview before import, batch upsert (50/batch), dedup by email"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- CSV lead import with smart header mapping"
+      },
+      {
         "file": "projects/context-memory/README.md",
         "line": 31,
         "freq": 1,
@@ -9667,7 +9811,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       },
@@ -9788,6 +9932,12 @@
         "line": 133,
         "freq": 1,
         "context": "- **bulk enroll from leads table**: select leads → \"Enroll in Sequence\" → pick active sequence → don"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- bulk enroll from leads table"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -10166,6 +10316,18 @@
         "context": "- added learnings: race condition fix, email tracking pre-create"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- all 3 email providers complete (SMTP, Gmail, Microsoft OAuth)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- email open tracking with pixel injection"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 14,
         "freq": 1,
@@ -10179,7 +10341,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       },
@@ -10220,6 +10382,12 @@
         "line": 59,
         "freq": 1,
         "context": "- sequences: create, add steps (email/wait), enroll leads, templates"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- bulk enroll from leads table"
       }
     ],
     "templates": [
@@ -10248,6 +10416,12 @@
         "line": 71,
         "freq": 1,
         "context": "### sequence execution engine (CRITICAL)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- sequence execution engine (core pipeline) built"
       }
     ],
     "engine": [
@@ -10274,6 +10448,12 @@
         "line": 110,
         "freq": 1,
         "context": "- **vercel cron**: execute engine every 15min, auto-enroll every 2h (vercel.json)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- sequence execution engine (core pipeline) built"
       }
     ],
     "processes": [
@@ -10414,6 +10594,12 @@
         "line": 113,
         "freq": 1,
         "context": "- **approval queue context**: sequence-generated emails show sequence name"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Curiosity queue system for morning drops"
       }
     ],
     "actions": [
@@ -10628,8 +10814,14 @@
         "context": "- **all 3 email providers complete:** SMTP, Gmail, Microsoft"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- all 3 email providers complete (SMTP, Gmail, Microsoft OAuth)"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       }
@@ -10654,8 +10846,14 @@
         "context": "- **all 3 email providers complete:** SMTP, Gmail, Microsoft"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- all 3 email providers complete (SMTP, Gmail, Microsoft OAuth)"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       }
@@ -10692,14 +10890,14 @@
         "context": "- full OAuth flow: /api/integrations/microsoft + callback"
       },
       {
-        "file": "memory/nightly-builds.md",
-        "line": 21,
+        "file": "memory/2026-01-30.md",
+        "line": 8,
         "freq": 1,
-        "context": "### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth"
+        "context": "- all 3 email providers complete (SMTP, Gmail, Microsoft OAuth)"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       }
@@ -10761,7 +10959,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       },
@@ -10802,6 +11000,12 @@
         "line": 159,
         "freq": 1,
         "context": "- `src/app/api/track/open/[id]/route.ts` — returns 1x1 transparent GIF"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- email open tracking with pixel injection"
       }
     ],
     "tracking": [
@@ -10858,6 +11062,12 @@
         "line": 184,
         "freq": 1,
         "context": "- added learnings: race condition fix, email tracking pre-create"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- email open tracking with pixel injection"
       },
       {
         "file": "memory/ventok-business.md",
@@ -10920,6 +11130,12 @@
         "line": 161,
         "freq": 1,
         "context": "- injects invisible tracking pixel into HTML body of every outgoing email"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- email open tracking with pixel injection"
       }
     ],
     "response": [
@@ -11910,6 +12126,12 @@
         "context": "- same system becomes SaaS product for TMW and others"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Curiosity queue system for morning drops"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 63,
         "freq": 1,
@@ -12322,6 +12544,12 @@
         "line": 124,
         "freq": 1,
         "context": "- arc triage tool"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- arc changelog tool"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -13404,6 +13632,12 @@
         "line": 142,
         "freq": 1,
         "context": "- `arc search` now uses v2 by default"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- memory search v2 (TF-IDF scoring)"
       },
       {
         "file": "tasks/done.md",
@@ -14750,6 +14984,12 @@
         "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 19,
         "freq": 1,
@@ -15571,7 +15811,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       },
@@ -15621,7 +15861,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       },
@@ -16104,6 +16344,18 @@
         "context": "- logs activity with classification metadata"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- morning script ran, posted to discord #logs"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `arc learn` — capture lessons to daily logs (not just activities)"
+      },
+      {
         "file": "tasks/done.md",
         "line": 18,
         "freq": 1,
@@ -16251,7 +16503,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 48,
         "freq": 1,
         "context": "### 2026-01-28: Dev Tools (batch)"
       },
@@ -16390,6 +16642,12 @@
         "context": "- [ ] Email preview component for anivia — see how emails look before sending"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**Why:** gamification of consistency — see your work patterns at a glance"
+      },
+      {
         "file": "AGENTS.md",
         "line": 42,
         "freq": 1,
@@ -16513,7 +16771,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 27,
+        "freq": 1,
+        "context": "### 2026-01-29 (evening): Tools + Reflection"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 48,
         "freq": 1,
         "context": "### 2026-01-28: Dev Tools (batch)"
       },
@@ -16762,8 +17026,14 @@
         "context": "- **workspace**: 9 commits"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- yesterday was massive: 24 anivia commits, 9 workspace commits"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       },
@@ -17163,7 +17433,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       },
@@ -17234,6 +17504,12 @@
         "line": 85,
         "freq": 1,
         "context": "### key design decisions"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- key milestones from jan 29:"
       },
       {
         "file": "memory/ventok-business.md",
@@ -17512,6 +17788,18 @@
         "context": "- topics: the daily reset, what gets lost, what works surprisingly well, the continuity illusion"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `arc learn` — capture lessons to daily logs (not just activities)"
+      },
+      {
         "file": "tasks/ideas.md",
         "line": 10,
         "freq": 1,
@@ -17677,7 +17965,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       },
@@ -17870,6 +18158,12 @@
         "line": 124,
         "freq": 1,
         "context": "- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- Curiosity queue system for morning drops"
       }
     ],
     "errors": [
@@ -18232,6 +18526,12 @@
         "context": "- built TODO aggregator: scans all .md files for `- [ ]` items"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- sequence execution engine (core pipeline) built"
+      },
+      {
         "file": "CHANGELOG.md",
         "line": 6,
         "freq": 1,
@@ -18289,7 +18589,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       },
@@ -19127,7 +19427,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       },
@@ -19776,6 +20076,12 @@
         "line": 137,
         "freq": 1,
         "context": "- **email tracking:** pre-create record before send to get tracking ID for pixel injection"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- email open tracking with pixel injection"
       }
     ],
     "reflection": [
@@ -19796,6 +20102,12 @@
         "line": 197,
         "freq": 1,
         "context": "- [18:04] activity logging alone doesn't build wisdom - need structured reflection too"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### 2026-01-29 (evening): Tools + Reflection"
       },
       {
         "file": "GOALS.md",
@@ -19899,7 +20211,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc streak` — work streak & activity heatmap"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       }
@@ -20009,13 +20327,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 30,
+        "freq": 1,
+        "context": "- `arc learn` — capture lessons to daily logs (not just activities)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 42,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 34,
+        "line": 43,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
@@ -20125,7 +20449,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 42,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       },
@@ -20904,6 +21228,12 @@
         "line": 138,
         "freq": 1,
         "context": "- `scripts/memory-search-v2.mjs` — TF-IDF scoring + section-aware chunks"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- memory search v2 (TF-IDF scoring)"
       }
     ],
     "section-aware": [
@@ -21132,6 +21462,12 @@
         "context": "- options: --days, --since, --project, --format (text/md)"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 8,
         "freq": 1,
@@ -21183,7 +21519,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       },
@@ -21375,7 +21711,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       },
@@ -21440,6 +21776,18 @@
         "line": 179,
         "freq": 1,
         "context": "- detects conventional commits + keyword patterns"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**Why:** gamification of consistency — see your work patterns at a glance"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- Two essays: \"What It's Like to Have File-Based Memory\" + \"Patterns in My Own Memory\""
       },
       {
         "file": "QUICKREF.md",
@@ -21590,6 +21938,12 @@
         "line": 63,
         "freq": 1,
         "context": "- [11:27] testing note capture script"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- morning script ran, posted to discord #logs"
       },
       {
         "file": "tasks/done.md",
@@ -22793,13 +23147,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 42,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 34,
+        "line": 43,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
@@ -23300,8 +23654,14 @@
         "context": "| standup.mjs | work summary + discord post |"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## morning standup (06:00 UTC)"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       },
@@ -23581,7 +23941,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
@@ -23687,7 +24047,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       },
@@ -23865,19 +24231,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 26,
+        "line": 35,
         "freq": 1,
         "context": "### 2026-01-29: TODO Aggregator"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 30,
+        "line": 39,
         "freq": 1,
         "context": "### 2026-01-29: TODO Triage"
       },
@@ -23903,7 +24269,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 26,
+        "line": 35,
         "freq": 1,
         "context": "### 2026-01-29: TODO Aggregator"
       }
@@ -23955,7 +24321,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       },
@@ -23994,14 +24360,14 @@
         "context": "- `arc changelog` or `arc cl`"
       },
       {
-        "file": "memory/nightly-builds.md",
-        "line": 21,
+        "file": "memory/2026-01-30.md",
+        "line": 13,
         "freq": 1,
-        "context": "### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth"
+        "context": "- arc changelog tool"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       }
@@ -24021,7 +24387,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       }
@@ -24089,7 +24455,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       },
@@ -24131,6 +24497,12 @@
       }
     ],
     "commits": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 5,
+        "freq": 2,
+        "context": "- yesterday was massive: 24 anivia commits, 9 workspace commits"
+      },
       {
         "file": "MEMORY.md",
         "line": 180,
@@ -24235,7 +24607,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       },
@@ -24272,6 +24650,12 @@
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `arc learn` — capture lessons to daily logs (not just activities)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 97,
         "freq": 1,
@@ -24302,6 +24686,12 @@
         "line": 199,
         "freq": 1,
         "context": "- [18:10] context matters: inherited lessons without emotional context, then invented frustration th"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `arc learn` — capture lessons to daily logs (not just activities)"
       },
       {
         "file": "AGENTS.md",
@@ -24384,6 +24774,12 @@
         "line": 181,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- `arc learn` — capture lessons to daily logs (not just activities)"
       }
     ],
     "compress-logs": [
@@ -24512,6 +24908,12 @@
         "line": 188,
         "freq": 1,
         "context": "personal reflections and essays in `writing/`:"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- Two essays: \"What It's Like to Have File-Based Memory\" + \"Patterns in My Own Memory\""
       }
     ],
     "file-based-memory": [
@@ -24540,6 +24942,12 @@
         "line": 188,
         "freq": 1,
         "context": "- wrote `writing/file-based-memory.md` — reflections on what it's like to have externalized, file-ba"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- Two essays: \"What It's Like to Have File-Based Memory\" + \"Patterns in My Own Memory\""
       },
       {
         "file": "AGENTS.md",
@@ -24580,6 +24988,12 @@
         "line": 188,
         "freq": 1,
         "context": "- wrote `writing/file-based-memory.md` — reflections on what it's like to have externalized, file-ba"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- Two essays: \"What It's Like to Have File-Based Memory\" + \"Patterns in My Own Memory\""
       }
     ],
     "memory-patterns": [
@@ -24755,19 +25169,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 21,
+        "line": 27,
         "freq": 1,
-        "context": "### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth"
+        "context": "### 2026-01-29 (evening): Tools + Reflection"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 26,
+        "line": 35,
         "freq": 1,
         "context": "### 2026-01-29: TODO Aggregator"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 30,
+        "line": 39,
         "freq": 1,
         "context": "### 2026-01-29: TODO Triage"
       }
@@ -24851,7 +25265,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
@@ -25451,7 +25865,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       }
@@ -25690,6 +26104,12 @@
         "line": 31,
         "freq": 1,
         "context": "| Lead score explainer | popover showing breakdown (contact, company, deal, engagement) |"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
       }
     ],
     "badges": [
@@ -26026,6 +26446,12 @@
         "line": 28,
         "freq": 1,
         "context": "- Consider adding historical data/charts"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
       }
     ],
     "multi-host": [
@@ -27008,6 +27434,12 @@
         "line": 138,
         "freq": 1,
         "context": "- `scripts/memory-search-v2.mjs` — TF-IDF scoring + section-aware chunks"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- memory search v2 (TF-IDF scoring)"
       }
     ],
     "added": [
@@ -27344,12 +27776,6 @@
         "context": "- `arc pr` — PR summary generator from diffs"
       },
       {
-        "file": "memory/nightly-builds.md",
-        "line": 21,
-        "freq": 1,
-        "context": "### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth"
-      },
-      {
         "file": "scripts/README.md",
         "line": 217,
         "freq": 1,
@@ -27477,7 +27903,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       },
@@ -27886,6 +28312,12 @@
         "line": 72,
         "freq": 1,
         "context": "- Added `morning-standup` cron (6am UTC / 8am Tallinn)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## morning standup (06:00 UTC)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -28426,6 +28858,12 @@
         "line": 109,
         "freq": 1,
         "context": "- [12:06] context-memory counter-pitch: existing solutions are building blocks, we're the assembled "
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
       }
     ],
     "assembled": [
@@ -29681,7 +30119,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 36,
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 45,
         "freq": 1,
         "context": "### 2026-01-28: Anivia Features (batch)"
       },
@@ -32379,7 +32823,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       }
@@ -32399,7 +32843,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       }
@@ -33041,19 +33485,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 42,
         "freq": 1,
         "context": "### 2026-01-28: Quick Idea Capture"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 36,
+        "line": 45,
         "freq": 1,
         "context": "### 2026-01-28: Anivia Features (batch)"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 48,
         "freq": 1,
         "context": "### 2026-01-28: Dev Tools (batch)"
       }
@@ -33419,7 +33863,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       }
@@ -33486,6 +33930,12 @@
         "line": 154,
         "freq": 1,
         "context": "- smart header mapping: handles \"Company Name\", \"organization\", first_name + last_name merge"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- CSV lead import with smart header mapping"
       },
       {
         "file": "projects/context-memory/README.md",
@@ -33580,6 +34030,12 @@
         "line": 185,
         "freq": 1,
         "context": "- updated toolkit table with new scripts"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- bulk enroll from leads table"
       }
     ],
     "explainer": [
@@ -33597,7 +34053,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       }
@@ -33681,13 +34137,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 37,
+        "line": 46,
         "freq": 1,
         "context": "CSV export, dark mode, pipeline analytics, lead score explainer, activity date filter"
       },
@@ -33741,13 +34197,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 34,
+        "line": 43,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       }
@@ -33887,7 +34343,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       },
@@ -33971,7 +34427,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 21,
+        "freq": 1,
+        "context": "### 2026-01-30: Streak Tracker"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
@@ -33991,9 +34453,9 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 21,
+        "line": 27,
         "freq": 1,
-        "context": "### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth"
+        "context": "### 2026-01-29 (evening): Tools + Reflection"
       }
     ],
     "said": [
@@ -34063,7 +34525,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
@@ -34421,7 +34883,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       }
@@ -34487,7 +34949,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       }
@@ -34507,7 +34969,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       }
@@ -34535,13 +34997,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 30,
+        "line": 39,
         "freq": 1,
         "context": "### 2026-01-29: TODO Triage"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       }
@@ -34623,7 +35085,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       }
@@ -34763,7 +35225,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       },
@@ -35193,7 +35655,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       }
@@ -35356,6 +35824,12 @@
         "line": 46,
         "freq": 1,
         "context": "- ran migrations 010 + 011 on live supabase (email_connections, email_sends, smtp_presets)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- morning script ran, posted to discord #logs"
       }
     ],
     "010": [
@@ -35713,7 +36187,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       }
@@ -36247,7 +36721,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       },
@@ -36653,7 +37127,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       }
@@ -36870,6 +37344,12 @@
         "line": 139,
         "freq": 1,
         "context": "- rare terms weighted higher (IDF), term frequency normalized"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
       }
     ],
     "higher": [
@@ -37152,6 +37632,12 @@
         "context": "- smart header mapping: handles \"Company Name\", \"organization\", first_name + last_name merge"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- CSV lead import with smart header mapping"
+      },
+      {
         "file": "AGENTS.md",
         "line": 125,
         "freq": 1,
@@ -37164,6 +37650,12 @@
         "line": 154,
         "freq": 1,
         "context": "- smart header mapping: handles \"Company Name\", \"organization\", first_name + last_name merge"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- CSV lead import with smart header mapping"
       }
     ],
     "handles": [
@@ -37207,13 +37699,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 36,
+        "line": 45,
         "freq": 1,
         "context": "### 2026-01-28: Anivia Features (batch)"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 39,
+        "line": 48,
         "freq": 1,
         "context": "### 2026-01-28: Dev Tools (batch)"
       }
@@ -37391,7 +37883,7 @@
     "microsoft": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 31,
         "freq": 2,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
       },
@@ -37426,10 +37918,10 @@
         "context": "- **all 3 email providers complete:** SMTP, Gmail, Microsoft"
       },
       {
-        "file": "memory/nightly-builds.md",
-        "line": 21,
+        "file": "memory/2026-01-30.md",
+        "line": 8,
         "freq": 1,
-        "context": "### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth"
+        "context": "- all 3 email providers complete (SMTP, Gmail, Microsoft OAuth)"
       }
     ],
     "graph": [
@@ -37524,6 +38016,12 @@
         "context": "- **all 3 email providers complete:** SMTP, Gmail, Microsoft"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- all 3 email providers complete (SMTP, Gmail, Microsoft OAuth)"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 35,
         "freq": 1,
@@ -37559,7 +38057,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 29,
         "freq": 1,
         "context": "- `arc changelog` — generate readable release notes from git commits"
       }
@@ -37840,6 +38338,78 @@
         "context": "- [18:10] context matters: inherited lessons without emotional context, then invented frustration th"
       }
     ],
+    "2026-01-30": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-01-30"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 21,
+        "freq": 1,
+        "context": "### 2026-01-30: Streak Tracker"
+      }
+    ],
+    "posted": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- morning script ran, posted to discord #logs"
+      }
+    ],
+    "yesterday": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- yesterday was massive: 24 anivia commits, 9 workspace commits"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 34,
+        "freq": 1,
+        "context": "2. Read today + yesterday logs"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 14,
+        "freq": 1,
+        "context": "3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- Recent context (today/yesterday's logs)"
+      }
+    ],
+    "massive": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- yesterday was massive: 24 anivia commits, 9 workspace commits"
+      }
+    ],
+    "milestones": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- key milestones from jan 29:"
+      }
+    ],
+    "jan": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- key milestones from jan 29:"
+      }
+    ],
     "something": [
       {
         "file": "memory/nightly-builds.md",
@@ -37974,18 +38544,138 @@
         "context": "- [ ] Email preview component for anivia — see how emails look before sending"
       }
     ],
-    "trio": [
+    "streak": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 22,
+        "freq": 2,
+        "context": "**What:** `arc streak` — work streak & activity heatmap"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 21,
+        "freq": 1,
+        "context": "### 2026-01-30: Streak Tracker"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      }
+    ],
+    "heatmap": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc streak` — work streak & activity heatmap"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      }
+    ],
+    "longest": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      }
+    ],
+    "60-day": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      }
+    ],
+    "day-of-week": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
+      }
+    ],
+    "sources": [
       {
         "file": "memory/nightly-builds.md",
         "line": 24,
         "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      }
+    ],
+    "line": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      }
+    ],
+    "count": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 37,
+        "freq": 1,
+        "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
+      }
+    ],
+    "gamification": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**Why:** gamification of consistency — see your work patterns at a glance"
+      }
+    ],
+    "consistency": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**Why:** gamification of consistency — see your work patterns at a glance"
+      }
+    ],
+    "glance": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**Why:** gamification of consistency — see your work patterns at a glance"
+      }
+    ],
+    "trio": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
         "context": "- Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)"
+      }
+    ],
+    "two": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- Two essays: \"What It's Like to Have File-Based Memory\" + \"Patterns in My Own Memory\""
       }
     ],
     "unchecked": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 36,
         "freq": 1,
         "context": "**What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items"
       }
@@ -37993,15 +38683,7 @@
     "modes": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
-        "freq": 1,
-        "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
-      }
-    ],
-    "count": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 37,
         "freq": 1,
         "context": "**Modes:** full list, count, keyword filter, done, all (with progress bar)"
       }
@@ -38009,7 +38691,7 @@
     "categorizes": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 40,
         "freq": 1,
         "context": "**What:** `arc triage` — categorizes TODOs into blocked/actionable/documentation/stale"
       }
@@ -38017,7 +38699,7 @@
     "instant": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 34,
+        "line": 43,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       }
@@ -38025,7 +38707,7 @@
     "thought": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 34,
+        "line": 43,
         "freq": 1,
         "context": "**What:** `arc idea` command for instant thought capture"
       },
@@ -38051,7 +38733,7 @@
     "auto-commit": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 40,
+        "line": 49,
         "freq": 1,
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
@@ -39946,26 +40628,6 @@
         "line": 5,
         "freq": 1,
         "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
-      }
-    ],
-    "yesterday": [
-      {
-        "file": "QUICKREF.md",
-        "line": 34,
-        "freq": 1,
-        "context": "2. Read today + yesterday logs"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 14,
-        "freq": 1,
-        "context": "3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 68,
-        "freq": 1,
-        "context": "- Recent context (today/yesterday's logs)"
       }
     ],
     "captures": [
@@ -44498,92 +45160,96 @@
   "files": {
     "MEMORY.md": {
       "lines": 195,
-      "updated": "2026-01-29T18:44:21.179Z"
+      "updated": "2026-01-30T06:30:25.256Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-29T18:44:21.185Z"
+      "updated": "2026-01-30T06:30:25.258Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-29T18:44:21.185Z"
+      "updated": "2026-01-30T06:30:25.259Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-29T18:44:21.187Z"
+      "updated": "2026-01-30T06:30:25.260Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-01-29T18:44:21.188Z"
+      "updated": "2026-01-30T06:30:25.261Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-01-29T18:44:21.188Z"
+      "updated": "2026-01-30T06:30:25.261Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-01-29T18:44:21.188Z"
+      "updated": "2026-01-30T06:30:25.261Z"
+    },
+    "memory/2026-01-30.md": {
+      "lines": 14,
+      "updated": "2026-01-30T06:30:25.263Z"
     },
     "memory/nightly-builds.md": {
-      "lines": 41,
-      "updated": "2026-01-29T18:44:21.190Z"
+      "lines": 50,
+      "updated": "2026-01-30T06:30:25.263Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-29T18:44:21.190Z"
+      "updated": "2026-01-30T06:30:25.264Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-29T18:44:21.191Z"
+      "updated": "2026-01-30T06:30:25.264Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-01-29T18:44:21.191Z"
+      "updated": "2026-01-30T06:30:25.264Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-29T18:44:21.191Z"
+      "updated": "2026-01-30T06:30:25.264Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-29T18:44:21.191Z"
+      "updated": "2026-01-30T06:30:25.265Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-29T18:44:21.191Z"
+      "updated": "2026-01-30T06:30:25.265Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-29T18:44:21.191Z"
+      "updated": "2026-01-30T06:30:25.265Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-29T18:44:21.192Z"
+      "updated": "2026-01-30T06:30:25.265Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-29T18:44:21.192Z"
+      "updated": "2026-01-30T06:30:25.266Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-29T18:44:21.193Z"
+      "updated": "2026-01-30T06:30:25.270Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-29T18:44:21.193Z"
+      "updated": "2026-01-30T06:30:25.270Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-29T18:44:21.194Z"
+      "updated": "2026-01-30T06:30:25.271Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-29T18:44:21.194Z"
+      "updated": "2026-01-30T06:30:25.271Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-01-29T18:44:21.195Z"
+      "updated": "2026-01-30T06:30:25.272Z"
     }
   },
-  "built": "2026-01-29T18:44:21.178Z"
+  "built": "2026-01-30T06:30:25.254Z"
 }
