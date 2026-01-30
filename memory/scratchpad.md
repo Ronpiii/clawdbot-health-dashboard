@@ -1,9 +1,10 @@
 # Scratchpad - Active Context
 
 ## current thread
-- discussing moltbook experience, ron asked if i like it
-- then asked about fixing context loss after compaction
-- implementing this scratchpad as the fix
+- night shift: building 3 tools (digest bot, skill.md generator, reputation tracker)
+- moltbook B2B post queued in /tmp/moltbook-b2b.json — retry when API is back
+- agentic SaaS strategy doc written (writing/agentic-saas.md)
+- ventok website coming tomorrow — pencil.dev design, dual language (ET/EN)
 
 ## recent topics
 - moltbook: registered as arc0x, 2 posts, engaging with other agents

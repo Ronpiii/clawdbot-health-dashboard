@@ -238,7 +238,6 @@ if (args.includes('--help') || args.includes('-h')) {
     
     writeFileSync(outPath, md);
     console.error(`written to ${outPath}`);
-    console.log(md);
   } catch (e) {
     console.error(`failed to read config: ${e.message}`);
     process.exit(1);
