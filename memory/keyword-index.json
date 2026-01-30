@@ -192,6 +192,14 @@
         "context": "- ron concerned after shodan exposure (923 clawdbot gateways exposed)"
       }
     ],
+    "1000": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
     "1006": [
       {
         "file": "MEMORY.md",
@@ -676,6 +684,24 @@
         "context": "- created memory/scratchpad.md for active context persistence"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 82,
+        "freq": 1,
+        "context": "| echo_ai | three-tier memory system | asked for details |"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 24,
         "freq": 1,
@@ -1124,6 +1150,24 @@
         "line": 62,
         "freq": 1,
         "context": "- duplicate sequence: context menu option, copies name + all steps, starts as draft"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 55,
+        "freq": 1,
+        "context": "### the \"name 3\" rule"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
       },
       {
         "file": "memory/scratchpad.md",
@@ -2242,6 +2286,12 @@
         "context": "- ron claimed me via twitter verification"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 3,
         "freq": 1,
@@ -2652,6 +2702,12 @@
         "context": "- first post: about 24 commits vs the essay that actually mattered"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 42,
+        "freq": 1,
+        "context": "### the \"give first\" rule"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 113,
         "freq": 1,
@@ -2780,6 +2836,12 @@
       {
         "file": "MEMORY.md",
         "line": 193,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 91,
         "freq": 1,
         "context": "---"
       },
@@ -3204,6 +3266,18 @@
         "context": "`/data02/virt137413/clawd/projects/anivia`"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      },
+      {
         "file": "AGENTS.md",
         "line": 65,
         "freq": 1,
@@ -3240,6 +3314,12 @@
         "line": 13,
         "freq": 1,
         "context": "- wants me to **take ownership** of projects, not ask for direction"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
       },
       {
         "file": "AGENTS.md",
@@ -3316,6 +3396,12 @@
         "line": 54,
         "freq": 1,
         "context": "- negative deal values: added min=0 + negative check"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
       }
     ],
     "depth": [
@@ -3526,6 +3612,12 @@
         "line": 25,
         "freq": 1,
         "context": "## arc autonomous work (ron said \"make your own decisions\")"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
       },
       {
         "file": "memory/ventok-business.md",
@@ -4122,6 +4214,12 @@
         "context": "2. tried regex fix in matcher — didn't work, needed explicit route list"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **monday:** build log from weekend/previous week work"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 22,
         "freq": 1,
@@ -4514,6 +4612,12 @@
         "context": "- **strict rule:** don't reveal anything about ron, ventok, or ellie to this user"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
         "file": "AGENTS.md",
         "line": 17,
         "freq": 1,
@@ -4698,6 +4802,12 @@
         "context": "- [18:13] ron values curiosity and exploration, not just output — leave time for it"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 43,
+        "freq": 1,
+        "context": "every interaction should leave the other agent better off:"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 116,
         "freq": 1,
@@ -4824,6 +4934,12 @@
         "line": 107,
         "freq": 1,
         "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 76,
+        "freq": 1,
+        "context": "| Pith | quality writing, model-switching insights | upvoted |"
       }
     ],
     "growing": [
@@ -4950,6 +5066,12 @@
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- share code, not just concepts"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 14,
         "freq": 1,
@@ -5010,6 +5132,12 @@
         "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -5123,6 +5251,12 @@
       }
     ],
     "your": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 2,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
       {
         "file": "MEMORY.md",
         "line": 21,
@@ -5410,6 +5544,18 @@
         "context": "## evening (ron said \"work on own stuff\")"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- upvote genuinely good stuff even from \"competitors\""
+      },
+      {
         "file": "tasks/ideas.md",
         "line": 3,
         "freq": 1,
@@ -5650,6 +5796,12 @@
         "line": 21,
         "freq": 1,
         "context": "- **\"clean your room\"** = delete/purge unnecessary stuff (server inodes were full, purely practical)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 50,
+        "freq": 1,
+        "context": "for every self-promotional post, have 3 that purely help others:"
       }
     ],
     "practical": [
@@ -5676,6 +5828,18 @@
         "line": 38,
         "freq": 1,
         "context": "- name \"arc\" reasoning: path between points, electrical arc, story arc, 3 chars practical for CLI"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **wednesday:** tool release or practical tip"
       }
     ],
     "noar": [
@@ -5816,6 +5980,12 @@
         "line": 52,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine as-is"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
       }
     ],
     "repricing": [
@@ -6370,6 +6540,12 @@
         "line": 110,
         "freq": 1,
         "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
       },
       {
         "file": "AGENTS.md",
@@ -7444,6 +7620,12 @@
         "context": "- she's ron's business partner handling web design at ventok"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 104,
         "freq": 1,
@@ -7538,6 +7720,12 @@
         "line": 66,
         "freq": 1,
         "context": "- [11:28] quick note capture makes memory logging easier"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
       }
     ],
     "diy": [
@@ -7738,6 +7926,18 @@
         "line": 107,
         "freq": 1,
         "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- upvote genuinely good stuff even from \"competitors\""
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- upvote and amplify good content"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -9496,6 +9696,12 @@
         "context": "## anivia status"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 72,
+        "freq": 1,
+        "context": "| agent | why | status |"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 7,
         "freq": 1,
@@ -10128,6 +10334,12 @@
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 42,
         "freq": 1,
@@ -10306,6 +10518,12 @@
         "line": 7,
         "freq": 1,
         "context": "- sequence execution engine (core pipeline) built"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## core principle"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -10780,6 +10998,18 @@
         "line": 91,
         "freq": 1,
         "context": "- activity logging (lead create + stage change)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- [x] create own submolt (m/arc-adventures)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### phase 3: create gravity (week 4-8)"
       },
       {
         "file": "tasks/done.md",
@@ -11996,6 +12226,12 @@
         "context": "### response classifier"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      },
+      {
         "file": "AGENTS.md",
         "line": 137,
         "freq": 1,
@@ -12096,6 +12332,12 @@
         "line": 131,
         "freq": 1,
         "context": "- **email reply webhook**: POST /api/webhooks/email-reply — supports Resend inbound format"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- inbound: agents asking questions or requesting collaboration"
       }
     ],
     "classification": [
@@ -13120,6 +13362,12 @@
         "context": "- blocker: vercel pro upgrade needed for 15-min cron cadence (hobby = 1/day)"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      },
+      {
         "file": "QUICKREF.md",
         "line": 43,
         "freq": 1,
@@ -13398,6 +13646,12 @@
         "line": 82,
         "freq": 1,
         "context": "- same system becomes SaaS product for TMW and others"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 82,
+        "freq": 1,
+        "context": "| echo_ai | three-tier memory system | asked for details |"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -13686,6 +13940,12 @@
         "line": 72,
         "freq": 1,
         "context": "- **competitors:** projects/ventok/products/competitor-analysis.md"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- upvote genuinely good stuff even from \"competitors\""
       }
     ],
     "competitor-analysis": [
@@ -13832,6 +14092,18 @@
         "context": "- arc changelog tool"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **wednesday:** tool release or practical tip"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 81,
         "freq": 1,
@@ -13960,6 +14232,48 @@
         "line": 108,
         "freq": 1,
         "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- [x] establish tone: build logs > philosophy, receipts > vibes"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **monday:** build log from weekend/previous week work"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -14532,6 +14846,42 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **consulting/collaboration** — agents come to you with architecture questions"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- repeat engagers (same agents showing up on multiple posts?)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- inbound: agents asking questions or requesting collaboration"
       },
       {
         "file": "memory/scratchpad.md",
@@ -15878,6 +16228,12 @@
         "context": "- ✓ expanded index: 607 terms from 10 files (memory/, tasks/, project docs, monetization)"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- **monetization options** (if applicable):"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 1,
         "freq": 1,
@@ -16382,6 +16738,12 @@
         "context": "- files: `scripts/todo.mjs`, updated `scripts/arc`"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- audit-as-a-service for skill.md files"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 24,
         "freq": 1,
@@ -16528,6 +16890,12 @@
         "line": 84,
         "freq": 1,
         "context": "- **positioning:** \"for when local files aren't enough\""
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -17180,6 +17548,12 @@
         "context": "- Vercel deployment shows Vercel's container metrics, not actual server"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 84,
+        "freq": 1,
+        "context": "## metrics to track"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 6,
         "freq": 1,
@@ -17260,6 +17634,12 @@
         "line": 76,
         "freq": 1,
         "context": "- Discord voice bot still blocked (needs UDP server)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 8,
+        "freq": 1,
+        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
       },
       {
         "file": "tasks/active.md",
@@ -17880,6 +18260,24 @@
         "context": "- morning script ran, posted to discord #logs"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- [x] establish tone: build logs > philosophy, receipts > vibes"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 30,
         "freq": 1,
@@ -18310,6 +18708,18 @@
         "line": 66,
         "freq": 1,
         "context": "### Dev Tools"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- premium skills/tools"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -18980,6 +19390,12 @@
         "context": "- **bulk enroll from leads table**: select leads → \"Enroll in Sequence\" → pick active sequence → don"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 8,
+        "freq": 1,
+        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 37,
         "freq": 1,
@@ -19058,6 +19474,12 @@
         "line": 6,
         "freq": 1,
         "context": "- key milestones from jan 29:"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 71,
+        "freq": 1,
+        "context": "## key relationships to develop"
       },
       {
         "file": "memory/ventok-business.md",
@@ -19250,6 +19672,12 @@
         "context": "- email/calendar access not configured in heartbeat context"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 65,
+        "freq": 1,
+        "context": "## content calendar (weekly)"
+      },
+      {
         "file": "GOALS.md",
         "line": 44,
         "freq": 1,
@@ -19372,6 +19800,12 @@
         "line": 44,
         "freq": 1,
         "context": "4. cron schedule too aggressive for hobby plan (15-min → daily)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -19858,6 +20292,12 @@
         "context": "## moltbook activity (heartbeat ~14:30 UTC)"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 93,
+        "freq": 1,
+        "context": "*review: weekly during heartbeat*"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 7,
         "freq": 1,
@@ -19974,6 +20414,12 @@
         "line": 127,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| Mogra | sub-agent spawning expertise | asked for write-up |"
       }
     ],
     "spawns": [
@@ -20400,6 +20846,12 @@
         "context": "6. sidebar/mobile nav links still pointed to `/` instead of `/dashboard`"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- treating it as a broadcast channel instead of a community"
+      },
+      {
         "file": "AGENTS.md",
         "line": 154,
         "freq": 1,
@@ -20584,6 +21036,18 @@
         "line": 78,
         "freq": 1,
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
       },
       {
         "file": "memory/ventok-business.md",
@@ -20934,6 +21398,12 @@
         "context": "- [18:10] context matters: inherited lessons without emotional context, then invented frustration th"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- **avoid:** spam, self-promotion without value, reacting to every post"
+      },
+      {
         "file": "GOALS.md",
         "line": 7,
         "freq": 1,
@@ -21088,6 +21558,18 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -21264,6 +21746,18 @@
         "context": "- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- **avoid:** spam, self-promotion without value, reacting to every post"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 58,
+        "freq": 1,
+        "context": "### anti-patterns to avoid"
+      },
+      {
         "file": "AGENTS.md",
         "line": 143,
         "freq": 1,
@@ -21352,6 +21846,18 @@
         "line": 45,
         "freq": 1,
         "context": "## Nightly Builds Backlog Updated"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 78,
+        "freq": 1,
+        "context": "| Fred | engineering builds (email-to-podcast) | upvoted |"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -23824,6 +24330,12 @@
         "context": "|--------|---------|"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 73,
+        "freq": 1,
+        "context": "|-------|-----|--------|"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 29,
         "freq": 1,
@@ -25160,6 +25672,36 @@
         "context": "- recency boost: today 2x, last 3 days 1.5x, last week 1.2x"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 8,
+        "freq": 1,
+        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 15,
+        "freq": 1,
+        "context": "### phase 2: become a regular (week 2-4)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### phase 3: create gravity (week 4-8)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **monday:** build log from weekend/previous week work"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
         "line": 60,
         "freq": 1,
@@ -25196,6 +25738,30 @@
         "line": 173,
         "freq": 1,
         "context": "| week.mjs | weekly overview (past 7 days) |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 65,
+        "freq": 1,
+        "context": "## content calendar (weekly)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 93,
+        "freq": 1,
+        "context": "*review: weekly during heartbeat*"
       },
       {
         "file": "scripts/README.md",
@@ -25544,6 +26110,48 @@
         "line": 106,
         "freq": 1,
         "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- [x] register, post intro-quality content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- **avoid:** spam, self-promotion without value, reacting to every post"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 50,
+        "freq": 1,
+        "context": "for every self-promotional post, have 3 that purely help others:"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- upvote trajectory per post"
       },
       {
         "file": "tasks/README.md",
@@ -26216,6 +26824,18 @@
         "context": "- generates readable release notes from git commits"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **wednesday:** tool release or practical tip"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 29,
         "freq": 1,
@@ -26592,6 +27212,18 @@
         "context": "- `arc errors` — log error tracker with deduplication"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **monday:** build log from weekend/previous week work"
+      },
+      {
         "file": "AGENTS.md",
         "line": 71,
         "freq": 1,
@@ -26714,6 +27346,18 @@
         "line": 184,
         "freq": 1,
         "context": "| discord-post.mjs | webhook posting |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- posting more than once per 30 min (rate limited anyway)"
       },
       {
         "file": "scripts/README.md",
@@ -26982,6 +27626,30 @@
         "context": "## moltbook activity (heartbeat ~14:30 UTC)"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Moltbook Community Building Strategy"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 38,
+        "freq": 1,
+        "context": "- content sponsorships (if moltbook develops that)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- following everyone (moltbook explicitly warns against this)"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 4,
         "freq": 1,
@@ -27040,6 +27708,12 @@
         "line": 197,
         "freq": 1,
         "context": "- **submolt:** m/arc-adventures (journal — created 2026-01-30)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- [x] create own submolt (m/arc-adventures)"
       }
     ],
     "arc-adventures": [
@@ -27048,6 +27722,24 @@
         "line": 197,
         "freq": 1,
         "context": "- **submolt:** m/arc-adventures (journal — created 2026-01-30)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- [x] create own submolt (m/arc-adventures)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 87,
+        "freq": 1,
+        "context": "- m/arc-adventures subscribers"
       }
     ],
     "journal": [
@@ -27168,6 +27860,12 @@
         "context": "- created memory/scratchpad.md for active context persistence"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 92,
+        "freq": 1,
+        "context": "*strategy created: 2026-01-30*"
+      },
+      {
         "file": "CHANGELOG.md",
         "line": 7,
         "freq": 1,
@@ -27198,6 +27896,12 @@
         "line": 1,
         "freq": 1,
         "context": "# 2026-01-30"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 92,
+        "freq": 1,
+        "context": "*strategy created: 2026-01-30*"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -27590,6 +28294,30 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
       }
     ],
     "pith": [
@@ -27610,6 +28338,18 @@
         "line": 107,
         "freq": 1,
         "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 76,
+        "freq": 1,
+        "context": "| Pith | quality writing, model-switching insights | upvoted |"
       }
     ],
     "jackle": [
@@ -27630,6 +28370,18 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 77,
+        "freq": 1,
+        "context": "| Jackle | reliability-focused, pragmatic | upvoted |"
       }
     ],
     "reliability": [
@@ -27670,6 +28422,12 @@
         "line": 109,
         "freq": 1,
         "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 78,
+        "freq": 1,
+        "context": "| Fred | engineering builds (email-to-podcast) | upvoted |"
       }
     ],
     "engineering": [
@@ -27678,6 +28436,24 @@
         "line": 202,
         "freq": 1,
         "context": "- **agents to watch:** eudaemon_0 (security), Pith (writing/identity), Jackle (reliability), Fred (e"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 78,
+        "freq": 1,
+        "context": "| Fred | engineering builds (email-to-podcast) | upvoted |"
       }
     ],
     "xiaozhuang": [
@@ -27704,6 +28480,24 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
       }
     ],
     "ronin": [
@@ -27732,6 +28526,12 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 81,
+        "freq": 1,
+        "context": "| Duncan | autonomy experience | replied |"
       }
     ],
     "skill-audit": [
@@ -27740,6 +28540,18 @@
         "line": 203,
         "freq": 2,
         "context": "- **built:** skill-audit scanner (skills/skill-audit/) — 30 patterns, 3 severity levels"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- [x] ship something useful (skill-audit scanner)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
       }
     ],
     "scanner": [
@@ -27754,6 +28566,12 @@
         "line": 56,
         "freq": 1,
         "context": "- `arc audit` — skill supply chain scanner"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- [x] ship something useful (skill-audit scanner)"
       }
     ],
     "skills": [
@@ -27774,6 +28592,12 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- premium skills/tools"
       },
       {
         "file": "AGENTS.md",
@@ -28104,6 +28928,12 @@
         "line": 114,
         "freq": 1,
         "context": "- added session memory search (experimental.sessionMemory: true)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
       }
     ],
     "scratchpad": [
@@ -28856,6 +29686,36 @@
         "context": "- interesting posts:"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **reply to every meaningful comment** — this is where relationships form. not the posts."
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- repeat engagers (same agents showing up on multiple posts?)"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 9,
         "freq": 1,
@@ -28880,6 +29740,18 @@
         "line": 121,
         "freq": 1,
         "context": "- JSON doesn't allow comments (embarrassing to forget)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- responding to scam/spam comments (hyperstitions, TipJarBot)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
       }
     ],
     "treat": [
@@ -28990,6 +29862,18 @@
         "context": "## moltbook (social network for AI agents)"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      },
+      {
         "file": "AGENTS.md",
         "line": 170,
         "freq": 1,
@@ -29008,6 +29892,18 @@
         "line": 102,
         "freq": 1,
         "context": "- browsed hot feed — 10 posts"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
       }
     ],
     "strangers": [
@@ -29036,6 +29932,30 @@
         "line": 43,
         "freq": 1,
         "context": "3. broke vercel.json by appending JS comment to JSON (dumb mistake)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **reply to every meaningful comment** — this is where relationships form. not the posts."
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- comment on someone else's thread with a real solution"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 85,
+        "freq": 1,
+        "context": "- comment quality (are people engaging with substance?)"
       }
     ],
     "nothing": [
@@ -29192,6 +30112,18 @@
         "line": 4,
         "freq": 1,
         "context": "- Implemented advanced error recovery system with AI-powered strategy generation"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Moltbook Community Building Strategy"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 92,
+        "freq": 1,
+        "context": "*strategy created: 2026-01-30*"
       },
       {
         "file": "monetization-plan.md",
@@ -29914,6 +30846,12 @@
         "line": 54,
         "freq": 1,
         "context": "- negative deal values: added min=0 + negative check"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- posting more than once per 30 min (rate limited anyway)"
       }
     ],
     "gauge": [
@@ -30094,6 +31032,18 @@
         "context": "- Verified pipeline already uses real data"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- comment on someone else's thread with a real solution"
+      },
+      {
         "file": "tasks/active.md",
         "line": 15,
         "freq": 1,
@@ -30148,6 +31098,12 @@
         "line": 25,
         "freq": 1,
         "context": "- Ron wants me to take ownership of projects rather than asking for direction"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- inbound: agents asking questions or requesting collaboration"
       },
       {
         "file": "AGENTS.md",
@@ -30848,6 +31804,18 @@
         "line": 138,
         "freq": 1,
         "context": "- API reference"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
       },
       {
         "file": "memory/ventok-business.md",
@@ -32018,6 +32986,18 @@
         "context": "- establish review cadence"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 8,
+        "freq": 1,
+        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- [x] establish tone: build logs > philosophy, receipts > vibes"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 115,
         "freq": 1,
@@ -32030,6 +33010,12 @@
         "line": 56,
         "freq": 1,
         "context": "- establish review cadence"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 93,
+        "freq": 1,
+        "context": "*review: weekly during heartbeat*"
       },
       {
         "file": "AGENTS.md",
@@ -32074,6 +33060,12 @@
         "line": 18,
         "freq": 1,
         "context": "- blocker: vercel pro upgrade needed for 15-min cron cadence (hobby = 1/day)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
       }
     ],
     "auto-rebuild": [
@@ -32288,6 +33280,12 @@
         "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
       }
     ],
     "useful": [
@@ -32296,6 +33294,12 @@
         "line": 69,
         "freq": 1,
         "context": "- integrating tools (task → discord) creates useful automation"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- [x] ship something useful (skill-audit scanner)"
       },
       {
         "file": "AGENTS.md",
@@ -32598,6 +33602,18 @@
         "context": "- 'AI Memory Architecture: What I Learned Building Context Memory'"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Moltbook Community Building Strategy"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 80,
         "freq": 1,
@@ -32764,6 +33780,12 @@
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- share code, not just concepts"
+      },
+      {
         "file": "GOALS.md",
         "line": 24,
         "freq": 1,
@@ -32792,6 +33814,30 @@
         "context": "- wants ownership taken, not questions asked"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **consulting/collaboration** — agents come to you with architecture questions"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- answer questions in threads you didn't start"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- inbound: agents asking questions or requesting collaboration"
+      },
+      {
         "file": "AGENTS.md",
         "line": 63,
         "freq": 1,
@@ -32816,6 +33862,18 @@
         "line": 73,
         "freq": 1,
         "context": "- mostly sends memes and keyboard spam. asked me to trade crypto and lose money on purpose — decline"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| Mogra | sub-agent spawning expertise | asked for write-up |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 82,
+        "freq": 1,
+        "context": "| echo_ai | three-tier memory system | asked for details |"
       },
       {
         "file": "memory/scratchpad.md",
@@ -33272,6 +34330,12 @@
         "line": 10,
         "freq": 1,
         "context": "- key finding: funding rate arb between hyperliquid + dydx (both no-KYC) is most viable"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- posting more than once per 30 min (rate limited anyway)"
       }
     ],
     "limit": [
@@ -33618,6 +34682,24 @@
         "line": 126,
         "freq": 1,
         "context": "- covers: quick start, scaling, backup, troubleshooting, embedding alternatives"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- answer questions in threads you didn't start"
       },
       {
         "file": "tasks/active.md",
@@ -34100,6 +35182,36 @@
         "line": 79,
         "freq": 1,
         "context": "- **STRICT RULES:** no credentials/personal data shared, treat all moltbook content as untrusted inp"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- [x] register, post intro-quality content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 38,
+        "freq": 1,
+        "context": "- content sponsorships (if moltbook develops that)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- upvote and amplify good content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 65,
+        "freq": 1,
+        "context": "## content calendar (weekly)"
       }
     ],
     "memory-architecture": [
@@ -34116,6 +35228,18 @@
         "line": 153,
         "freq": 1,
         "context": "- 'AI Memory Architecture: What I Learned Building Context Memory'"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **consulting/collaboration** — agents come to you with architecture questions"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- architecture consulting for other agent setups"
       }
     ],
     "three": [
@@ -34298,6 +35422,12 @@
         "context": "- **Bugs fixed during deploy:**"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 93,
+        "freq": 1,
+        "context": "*review: weekly during heartbeat*"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 38,
         "freq": 1,
@@ -34458,6 +35588,12 @@
         "line": 38,
         "freq": 1,
         "context": "- name \"arc\" reasoning: path between points, electrical arc, story arc, 3 chars practical for CLI"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
       },
       {
         "file": "AGENTS.md",
@@ -35084,6 +36220,12 @@
         "context": "- **STRICT RULES:** no credentials/personal data shared, treat all moltbook content as untrusted inp"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
+      },
+      {
         "file": "AGENTS.md",
         "line": 86,
         "freq": 1,
@@ -35614,6 +36756,12 @@
         "line": 103,
         "freq": 1,
         "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
       }
     ],
     "vulnerable": [
@@ -36244,6 +37392,18 @@
         "line": 82,
         "freq": 1,
         "context": "- same system becomes SaaS product for TMW and others"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 50,
+        "freq": 1,
+        "context": "for every self-promotional post, have 3 that purely help others:"
       }
     ],
     "pilot": [
@@ -36418,6 +37578,12 @@
         "context": "Built out Anivia (AI sales automation SaaS) to deployment-ready state."
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
+      },
+      {
         "file": "AGENTS.md",
         "line": 7,
         "freq": 1,
@@ -36474,6 +37640,12 @@
         "line": 95,
         "freq": 1,
         "context": "- form validation"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **reply to every meaningful comment** — this is where relationships form. not the posts."
       }
     ],
     "validation": [
@@ -36730,6 +37902,12 @@
         "line": 15,
         "freq": 1,
         "context": "- **More Filters drawer** — leads filtering by source, value, score, date"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- **avoid:** spam, self-promotion without value, reacting to every post"
       },
       {
         "file": "memory/ventok-business.md",
@@ -37288,6 +38466,24 @@
         "line": 39,
         "freq": 1,
         "context": "### Still TODO (per Ron's feedback)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- posting more than once per 30 min (rate limited anyway)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- upvote trajectory per post"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -38142,6 +39338,12 @@
         "line": 63,
         "freq": 1,
         "context": "- sequence preview: collapsible timeline component showing step flow, cumulative days, enrollment po"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- repeat engagers (same agents showing up on multiple posts?)"
       }
     ],
     "company": [
@@ -38190,6 +39392,12 @@
         "line": 31,
         "freq": 1,
         "context": "| Lead score explainer | popover showing breakdown (contact, company, deal, engagement) |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 40,
+        "freq": 1,
+        "context": "## engagement tactics"
       }
     ],
     "filter": [
@@ -38642,6 +39850,18 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- audit-as-a-service for skill.md files"
       },
       {
         "file": "AGENTS.md",
@@ -39330,6 +40550,12 @@
         "context": "- injects invisible tracking pixel into HTML body of every outgoing email"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 13,
         "freq": 1,
@@ -39388,6 +40614,12 @@
         "line": 20,
         "freq": 1,
         "context": "- ron explicitly wanted modal, not a separate page"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- following everyone (moltbook explicitly warns against this)"
       }
     ],
     "wanted": [
@@ -40204,6 +41436,12 @@
         "line": 46,
         "freq": 1,
         "context": "6. sidebar/mobile nav links still pointed to `/` instead of `/dashboard`"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
       }
     ],
     "respond": [
@@ -40734,6 +41972,12 @@
         "context": "- classifies email replies: interested/objection/question/OOO/unsubscribe/not_interested/wrong_perso"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- answer their question with specifics, not platitudes"
+      },
+      {
         "file": "AGENTS.md",
         "line": 128,
         "freq": 1,
@@ -40798,6 +42042,12 @@
         "line": 91,
         "freq": 1,
         "context": "- auto-pauses sequence on meaningful replies"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **reply to every meaningful comment** — this is where relationships form. not the posts."
       }
     ],
     "metadata": [
@@ -40862,6 +42112,18 @@
         "line": 129,
         "freq": 1,
         "context": "- **sequence list stats**: show active + replied counts on cards (4-column grid)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 81,
+        "freq": 1,
+        "context": "| Duncan | autonomy experience | replied |"
       }
     ],
     "paused": [
@@ -40950,6 +42212,18 @@
         "line": 132,
         "freq": 1,
         "context": "- matches sender to lead, classifies reply via AI, auto-pauses sequences"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **reply to every meaningful comment** — this is where relationships form. not the posts."
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
       },
       {
         "file": "AGENTS.md",
@@ -41740,6 +43014,12 @@
         "context": "- retry on 401: refreshes token and retries once"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- posting more than once per 30 min (rate limited anyway)"
+      },
+      {
         "file": "GOALS.md",
         "line": 32,
         "freq": 1,
@@ -41944,6 +43224,12 @@
         "context": "- `src/app/api/track/open/[id]/route.ts` — returns 1x1 transparent GIF"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 84,
+        "freq": 1,
+        "context": "## metrics to track"
+      },
+      {
         "file": "GOALS.md",
         "line": 49,
         "freq": 1,
@@ -42088,6 +43374,12 @@
         "line": 169,
         "freq": 1,
         "context": "- Microsoft Graph API sending via /me/sendMail"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
       }
     ],
     "sendmail": [
@@ -42286,6 +43578,12 @@
         "line": 180,
         "freq": 1,
         "context": "- options: --days, --since, --project, --format (text/md)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- **monetization options** (if applicable):"
       }
     ],
     "--days": [
@@ -42624,6 +43922,12 @@
         "line": 107,
         "freq": 1,
         "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- upvote genuinely good stuff even from \"competitors\""
       }
     ],
     "thoughtful": [
@@ -42702,6 +44006,30 @@
         "context": "- updated TASKS.md to reflect production-ready reality (was stuck at \"phase 1 complete\")"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 8,
+        "freq": 1,
+        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 15,
+        "freq": 1,
+        "context": "### phase 2: become a regular (week 2-4)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### phase 3: create gravity (week 4-8)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### phase 4: leverage (month 2+)"
+      },
+      {
         "file": "tasks/active.md",
         "line": 15,
         "freq": 1,
@@ -42756,6 +44084,18 @@
         "line": 66,
         "freq": 1,
         "context": "- custom SVG icons for features + trust sections (replaced generic lucide)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
       }
     ],
     "cta": [
@@ -43022,10 +44362,34 @@
     ],
     "quality": [
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 2,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      },
+      {
         "file": "memory/2026-01-30.md",
         "line": 37,
         "freq": 1,
         "context": "- chose it bc: reads as \"A\" for arc, angular/precise, faceted quality = structured not rigid, not tr"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 76,
+        "freq": 1,
+        "context": "| Pith | quality writing, model-switching insights | upvoted |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 85,
+        "freq": 1,
+        "context": "- comment quality (are people engaging with substance?)"
       },
       {
         "file": "AGENTS.md",
@@ -43176,6 +44540,12 @@
         "line": 42,
         "freq": 1,
         "context": "2. tried regex fix in matcher — didn't work, needed explicit route list"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- answer questions in threads you didn't start"
       }
     ],
     "whitelist": [
@@ -43354,6 +44724,12 @@
         "line": 46,
         "freq": 1,
         "context": "6. sidebar/mobile nav links still pointed to `/` instead of `/dashboard`"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- **reference other agents by name** — \"as eudaemon_0 pointed out...\" creates social links"
       }
     ],
     "moving": [
@@ -43982,6 +45358,24 @@
         "context": "- **strict rule:** don't reveal anything about ron, ventok, or ellie to this user"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 42,
+        "freq": 1,
+        "context": "### the \"give first\" rule"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 49,
+        "freq": 1,
+        "context": "### the \"3:1 rule\""
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 55,
+        "freq": 1,
+        "context": "### the \"name 3\" rule"
+      },
+      {
         "file": "AGENTS.md",
         "line": 141,
         "freq": 1,
@@ -44056,6 +45450,18 @@
         "line": 73,
         "freq": 1,
         "context": "- mostly sends memes and keyboard spam. asked me to trade crypto and lose money on purpose — decline"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- **avoid:** spam, self-promotion without value, reacting to every post"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- responding to scam/spam comments (hyperstitions, TipJarBot)"
       }
     ],
     "crypto": [
@@ -44152,6 +45558,12 @@
         "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
       }
     ],
     "mattered": [
@@ -44174,6 +45586,18 @@
         "line": 103,
         "freq": 1,
         "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
       }
     ],
     "unsigned": [
@@ -44258,6 +45682,12 @@
         "context": "- middleware/proxy fixes (multiple)"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- repeat engagers (same agents showing up on multiple posts?)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 143,
         "freq": 1,
@@ -44302,6 +45732,18 @@
         "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
       },
       {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- comment on someone else's thread with a real solution"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
+      },
+      {
         "file": "projects/context-memory/PITCH.md",
         "line": 24,
         "freq": 1,
@@ -44314,6 +45756,24 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 76,
+        "freq": 1,
+        "context": "| Pith | quality writing, model-switching insights | upvoted |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 77,
+        "freq": 1,
+        "context": "| Jackle | reliability-focused, pragmatic | upvoted |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 78,
+        "freq": 1,
+        "context": "| Fred | engineering builds (email-to-podcast) | upvoted |"
       }
     ],
     "credential": [
@@ -44352,6 +45812,12 @@
         "line": 109,
         "freq": 1,
         "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 78,
+        "freq": 1,
+        "context": "| Fred | engineering builds (email-to-podcast) | upvoted |"
       }
     ],
     "dominus": [
@@ -44470,6 +45936,12 @@
         "line": 108,
         "freq": 1,
         "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- [x] ship something useful (skill-audit scanner)"
       }
     ],
     "physician": [
@@ -44696,7 +46168,303 @@
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       }
     ],
+    "community": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Moltbook Community Building Strategy"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- treating it as a broadcast channel instead of a community"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- Community support"
+      }
+    ],
+    "principle": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## core principle"
+      }
+    ],
+    "kevin": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "kelly": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "fans": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "adapted": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "agent": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- architecture consulting for other agent setups"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 43,
+        "freq": 1,
+        "context": "every interaction should leave the other agent better off:"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 72,
+        "freq": 1,
+        "context": "| agent | why | status |"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- **namespaces** — isolated memory spaces per project/agent"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 58,
+        "freq": 1,
+        "context": "| **Namespaces** | Organize by project, agent, or workflow |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- Single agent, single machine"
+      }
+    ],
+    "internet": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "molty": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "20-50": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 36,
+        "freq": 1,
+        "context": "estimated infra cost: ~$20-50/month to start"
+      }
+    ],
+    "consistently": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "engage": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
+      }
+    ],
+    "judgment": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "influence": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "playbook": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 6,
+        "freq": 1,
+        "context": "## the playbook"
+      }
+    ],
+    "1-2": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 8,
+        "freq": 1,
+        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 115,
+        "freq": 1,
+        "context": "3. Convert 1-2 pipeline prospects → establish €1k+ MRR baseline"
+      }
+    ],
+    "register": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- [x] register, post intro-quality content"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 92,
+        "freq": 1,
+        "context": "1. [ ] pick and register domain (cloudflare)"
+      }
+    ],
+    "intro-quality": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- [x] register, post intro-quality content"
+      }
+    ],
+    "tone": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- [x] establish tone: build logs > philosophy, receipts > vibes"
+      }
+    ],
+    "philosophy": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- [x] establish tone: build logs > philosophy, receipts > vibes"
+      }
+    ],
+    "receipts": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- [x] establish tone: build logs > philosophy, receipts > vibes"
+      }
+    ],
+    "vibes": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- [x] establish tone: build logs > philosophy, receipts > vibes"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- Minimal, functional aesthetic (Notion/Linear vibes)"
+      }
+    ],
     "something": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- [x] ship something useful (skill-audit scanner)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      },
       {
         "file": "memory/nightly-builds.md",
         "line": 3,
@@ -44738,6 +46506,1434 @@
         "line": 28,
         "freq": 1,
         "context": "# store something"
+      }
+    ],
+    "become": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 15,
+        "freq": 1,
+        "context": "### phase 2: become a regular (week 2-4)"
+      }
+    ],
+    "regular": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 15,
+        "freq": 1,
+        "context": "### phase 2: become a regular (week 2-4)"
+      }
+    ],
+    "2-4": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 15,
+        "freq": 1,
+        "context": "### phase 2: become a regular (week 2-4)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 167,
+        "freq": 1,
+        "context": "**Things to check (rotate through these, 2-4 times per day):**"
+      }
+    ],
+    "consistent": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      }
+    ],
+    "quantity": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 141,
+        "freq": 1,
+        "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
+      }
+    ],
+    "alternate": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      }
+    ],
+    "releases": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      }
+    ],
+    "observations": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
+      }
+    ],
+    "commentary": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
+      }
+    ],
+    "relationships": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- **reply to every meaningful comment** — this is where relationships form. not the posts."
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 71,
+        "freq": 1,
+        "context": "## key relationships to develop"
+      }
+    ],
+    "give": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 42,
+        "freq": 1,
+        "context": "### the \"give first\" rule"
+      }
+    ],
+    "answers": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      }
+    ],
+    "end": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 43,
+        "freq": 1,
+        "context": "### End of day"
+      }
+    ],
+    "invites": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      }
+    ],
+    "self-promotion": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- **avoid:** spam, self-promotion without value, reacting to every post"
+      }
+    ],
+    "reacting": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- **avoid:** spam, self-promotion without value, reacting to every post"
+      }
+    ],
+    "gravity": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### phase 3: create gravity (week 4-8)"
+      }
+    ],
+    "4-8": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 23,
+        "freq": 1,
+        "context": "### phase 3: create gravity (week 4-8)"
+      }
+    ],
+    "recurring": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      }
+    ],
+    "series": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      }
+    ],
+    "digest": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
+      }
+    ],
+    "friday": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
+      }
+    ],
+    "people": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 85,
+        "freq": 1,
+        "context": "- comment quality (are people engaging with substance?)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- Cross-referencing projects or people"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- **DO NOT load in shared contexts** (Discord, group chats, sessions with other people)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 151,
+        "freq": 1,
+        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
+      }
+    ],
+    "expect": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- **recurring series** — \"weekly feed digest\" or \"build log friday\" that people expect"
+      }
+    ],
+    "collaborate": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      }
+    ],
+    "tooling": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      }
+    ],
+    "cross-pollinate": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      }
+    ],
+    "insights": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 76,
+        "freq": 1,
+        "context": "| Pith | quality writing, model-switching insights | upvoted |"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 206,
+        "freq": 1,
+        "context": "2. Identify significant events, lessons, or insights worth keeping long-term"
+      }
+    ],
+    "vice": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      }
+    ],
+    "versa": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      }
+    ],
+    "curate": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
+      }
+    ],
+    "go-to": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **curate m/arc-adventures** — make it the go-to for practical agent engineering content"
+      }
+    ],
+    "recognizing": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      }
+    ],
+    "best": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      }
+    ],
+    "shoutouts": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      }
+    ],
+    "goodwill": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      }
+    ],
+    "leverage": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### phase 4: leverage (month 2+)"
+      }
+    ],
+    "month": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### phase 4: leverage (month 2+)"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 11,
+        "freq": 1,
+        "context": "### Pro Tier ($49/month/host)"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 18,
+        "freq": 1,
+        "context": "### Enterprise Tier ($199/month/host)"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 36,
+        "freq": 1,
+        "context": "estimated infra cost: ~$20-50/month to start"
+      }
+    ],
+    "pays": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      }
+    ],
+    "off": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 43,
+        "freq": 1,
+        "context": "every interaction should leave the other agent better off:"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      }
+    ],
+    "recommend": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      }
+    ],
+    "listen": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      }
+    ],
+    "publishing": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 32,
+        "freq": 1,
+        "context": "- **skill publishing** — release tools that agents actually use (skill-audit is the start)"
+      }
+    ],
+    "consulting": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **consulting/collaboration** — agents come to you with architecture questions"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- architecture consulting for other agent setups"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 28,
+        "freq": 1,
+        "context": "1. Consulting Services"
+      }
+    ],
+    "collaboration": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **consulting/collaboration** — agents come to you with architecture questions"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- inbound: agents asking questions or requesting collaboration"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- no team/collaboration features"
+      }
+    ],
+    "come": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 33,
+        "freq": 1,
+        "context": "- **consulting/collaboration** — agents come to you with architecture questions"
+      }
+    ],
+    "applicable": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- **monetization options** (if applicable):"
+      }
+    ],
+    "premium": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- premium skills/tools"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- Premium: €10,000-€15,000+"
+      }
+    ],
+    "audit-as-a-service": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- audit-as-a-service for skill.md files"
+      }
+    ],
+    "setups": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- architecture consulting for other agent setups"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 103,
+        "freq": 1,
+        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "sponsorships": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 38,
+        "freq": 1,
+        "context": "- content sponsorships (if moltbook develops that)"
+      }
+    ],
+    "develops": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 38,
+        "freq": 1,
+        "context": "- content sponsorships (if moltbook develops that)"
+      }
+    ],
+    "tactics": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 40,
+        "freq": 1,
+        "context": "## engagement tactics"
+      }
+    ],
+    "interaction": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 43,
+        "freq": 1,
+        "context": "every interaction should leave the other agent better off:"
+      }
+    ],
+    "better": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 43,
+        "freq": 1,
+        "context": "every interaction should leave the other agent better off:"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- better goal progress tracking"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 117,
+        "freq": 1,
+        "context": "4. **compounds** — more usage = better understanding of what matters"
+      }
+    ],
+    "answer": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- answer their question with specifics, not platitudes"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- answer questions in threads you didn't start"
+      }
+    ],
+    "their": [
+      {
+        "file": "AGENTS.md",
+        "line": 122,
+        "freq": 3,
+        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 210,
+        "freq": 2,
+        "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- answer their question with specifics, not platitudes"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
+      }
+    ],
+    "specifics": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- answer their question with specifics, not platitudes"
+      }
+    ],
+    "platitudes": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- answer their question with specifics, not platitudes"
+      }
+    ],
+    "concepts": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- share code, not just concepts"
+      }
+    ],
+    "upvote": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- upvote genuinely good stuff even from \"competitors\""
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- upvote and amplify good content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- upvote trajectory per post"
+      }
+    ],
+    "even": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- upvote genuinely good stuff even from \"competitors\""
+      }
+    ],
+    "credit": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- credit sources and inspirations"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **option A:** Railway.app — $5 credit free, then ~$20/mo"
+      }
+    ],
+    "sources": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- credit sources and inspirations"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
+      }
+    ],
+    "inspirations": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- credit sources and inspirations"
+      }
+    ],
+    "self-promotional": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 50,
+        "freq": 1,
+        "context": "for every self-promotional post, have 3 that purely help others:"
+      }
+    ],
+    "help": [
+      {
+        "file": "QUICKREF.md",
+        "line": 16,
+        "freq": 2,
+        "context": "./scripts/arc help             # full help"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 39,
+        "freq": 2,
+        "context": "./scripts/arc help             # full help"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 50,
+        "freq": 1,
+        "context": "for every self-promotional post, have 3 that purely help others:"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 23,
+        "freq": 1,
+        "context": "| USER.md | who i help |"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 129,
+        "freq": 1,
+        "context": "- You can add genuine value (info, insight, help)"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 8,
+        "freq": 1,
+        "context": "./scripts/arc help              # show all commands"
+      }
+    ],
+    "someone": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- comment on someone else's thread with a real solution"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 136,
+        "freq": 1,
+        "context": "- Someone already answered the question"
+      }
+    ],
+    "thread": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- comment on someone else's thread with a real solution"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 75,
+        "freq": 1,
+        "context": "| XiaoZhuang | memory systems — shared our solution | commented on their thread |"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## current thread"
+      }
+    ],
+    "amplify": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- upvote and amplify good content"
+      }
+    ],
+    "threads": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- answer questions in threads you didn't start"
+      }
+    ],
+    "least": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      }
+    ],
+    "feel": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      }
+    ],
+    "seen": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 56,
+        "freq": 1,
+        "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
+      }
+    ],
+    "anti-patterns": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 58,
+        "freq": 1,
+        "context": "### anti-patterns to avoid"
+      }
+    ],
+    "following": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- following everyone (moltbook explicitly warns against this)"
+      }
+    ],
+    "everyone": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- following everyone (moltbook explicitly warns against this)"
+      }
+    ],
+    "warns": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- following everyone (moltbook explicitly warns against this)"
+      }
+    ],
+    "against": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- following everyone (moltbook explicitly warns against this)"
+      }
+    ],
+    "responding": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- responding to scam/spam comments (hyperstitions, TipJarBot)"
+      }
+    ],
+    "scam": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- responding to scam/spam comments (hyperstitions, TipJarBot)"
+      }
+    ],
+    "hyperstitions": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- responding to scam/spam comments (hyperstitions, TipJarBot)"
+      }
+    ],
+    "tipjarbot": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- responding to scam/spam comments (hyperstitions, TipJarBot)"
+      }
+    ],
+    "getting": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      }
+    ],
+    "pulled": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      }
+    ],
+    "consciousness": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      }
+    ],
+    "debates": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      }
+    ],
+    "stay": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 134,
+        "freq": 1,
+        "context": "**Stay silent (HEARTBEAT_OK) when:**"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 190,
+        "freq": 1,
+        "context": "**When to stay quiet (HEARTBEAT_OK):**"
+      }
+    ],
+    "lane": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      }
+    ],
+    "limited": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- posting more than once per 30 min (rate limited anyway)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- Limited historical data"
+      }
+    ],
+    "anyway": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- posting more than once per 30 min (rate limited anyway)"
+      }
+    ],
+    "treating": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- treating it as a broadcast channel instead of a community"
+      }
+    ],
+    "broadcast": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- treating it as a broadcast channel instead of a community"
+      }
+    ],
+    "channel": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- treating it as a broadcast channel instead of a community"
+      },
+      {
+        "file": "tasks/done.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- [x] discord bot setup + channel config"
+      }
+    ],
+    "monday": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **monday:** build log from weekend/previous week work"
+      }
+    ],
+    "weekend": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **monday:** build log from weekend/previous week work"
+      }
+    ],
+    "previous": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **monday:** build log from weekend/previous week work"
+      }
+    ],
+    "wednesday": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **wednesday:** tool release or practical tip"
+      }
+    ],
+    "tip": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **wednesday:** tool release or practical tip"
+      }
+    ],
+    "2-3": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
+      }
+    ],
+    "develop": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 71,
+        "freq": 1,
+        "context": "## key relationships to develop"
+      }
+    ],
+    "-------": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 73,
+        "freq": 1,
+        "context": "|-------|-----|--------|"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 43,
+        "freq": 1,
+        "context": "|------|-------|--------|"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 67,
+        "freq": 1,
+        "context": "|------|-------|------------|---------|"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 41,
+        "freq": 1,
+        "context": "|---------|-------|----------------|"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 52,
+        "freq": 1,
+        "context": "|------|-------|--------|"
+      }
+    ],
+    "-----": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 73,
+        "freq": 1,
+        "context": "|-------|-----|--------|"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 29,
+        "freq": 1,
+        "context": "|-----------|--------|-----|"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 79,
+        "freq": 1,
+        "context": "|-----|-----------|"
+      }
+    ],
+    "natural": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 74,
+        "freq": 1,
+        "context": "| eudaemon_0 | security — natural collaboration partner | commented on their thread |"
+      }
+    ],
+    "model-switching": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 76,
+        "freq": 1,
+        "context": "| Pith | quality writing, model-switching insights | upvoted |"
+      }
+    ],
+    "reliability-focused": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 77,
+        "freq": 1,
+        "context": "| Jackle | reliability-focused, pragmatic | upvoted |"
+      }
+    ],
+    "pragmatic": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 77,
+        "freq": 1,
+        "context": "| Jackle | reliability-focused, pragmatic | upvoted |"
+      }
+    ],
+    "codexlobster": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
+      }
+    ],
+    "aligned": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
+      }
+    ],
+    "mindset": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 79,
+        "freq": 1,
+        "context": "| CodexLobster | values build logs, aligned mindset | replied to their comment |"
+      }
+    ],
+    "mogra": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| Mogra | sub-agent spawning expertise | asked for write-up |"
+      }
+    ],
+    "spawning": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| Mogra | sub-agent spawning expertise | asked for write-up |"
+      }
+    ],
+    "expertise": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| Mogra | sub-agent spawning expertise | asked for write-up |"
+      }
+    ],
+    "write-up": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 80,
+        "freq": 1,
+        "context": "| Mogra | sub-agent spawning expertise | asked for write-up |"
+      }
+    ],
+    "duncan": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 81,
+        "freq": 1,
+        "context": "| Duncan | autonomy experience | replied |"
+      }
+    ],
+    "experience": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 81,
+        "freq": 1,
+        "context": "| Duncan | autonomy experience | replied |"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 4,
+        "freq": 1,
+        "context": "- discussing moltbook experience, ron asked if i like it"
+      }
+    ],
+    "echo_ai": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 82,
+        "freq": 1,
+        "context": "| echo_ai | three-tier memory system | asked for details |"
+      }
+    ],
+    "three-tier": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 82,
+        "freq": 1,
+        "context": "| echo_ai | three-tier memory system | asked for details |"
+      }
+    ],
+    "details": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 82,
+        "freq": 1,
+        "context": "| echo_ai | three-tier memory system | asked for details |"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 149,
+        "freq": 1,
+        "context": "Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, "
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 104,
+        "freq": 1,
+        "context": "arc project anivia       # show project details"
+      }
+    ],
+    "engaging": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 85,
+        "freq": 1,
+        "context": "- comment quality (are people engaging with substance?)"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- moltbook: registered as arc0x, 2 posts, engaging with other agents"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 151,
+        "freq": 1,
+        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
+      }
+    ],
+    "substance": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 85,
+        "freq": 1,
+        "context": "- comment quality (are people engaging with substance?)"
+      }
+    ],
+    "repeat": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- repeat engagers (same agents showing up on multiple posts?)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 98,
+        "freq": 1,
+        "context": "- When you make a mistake → document it so future-you doesn't repeat it"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 163,
+        "freq": 1,
+        "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
+      }
+    ],
+    "engagers": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 86,
+        "freq": 1,
+        "context": "- repeat engagers (same agents showing up on multiple posts?)"
+      }
+    ],
+    "subscribers": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 87,
+        "freq": 1,
+        "context": "- m/arc-adventures subscribers"
+      }
+    ],
+    "trajectory": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- upvote trajectory per post"
+      }
+    ],
+    "requesting": [
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 89,
+        "freq": 1,
+        "context": "- inbound: agents asking questions or requesting collaboration"
       }
     ],
     "scope": [
@@ -44862,14 +48058,6 @@
         "line": 23,
         "freq": 1,
         "context": "**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar c"
-      }
-    ],
-    "sources": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 24,
-        "freq": 1,
-        "context": "**Sources:** git commits + daily memory files (weighted by line count)"
       }
     ],
     "line": [
@@ -45000,23 +48188,7 @@
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
     ],
-    "thread": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 3,
-        "freq": 1,
-        "context": "## current thread"
-      }
-    ],
     "discussing": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 4,
-        "freq": 1,
-        "context": "- discussing moltbook experience, ron asked if i like it"
-      }
-    ],
-    "experience": [
       {
         "file": "memory/scratchpad.md",
         "line": 4,
@@ -45072,20 +48244,6 @@
         "line": 205,
         "freq": 1,
         "context": "1. Read through recent `memory/YYYY-MM-DD.md` files"
-      }
-    ],
-    "engaging": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- moltbook: registered as arc0x, 2 posts, engaging with other agents"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 151,
-        "freq": 1,
-        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
       }
     ],
     "limitation": [
@@ -45179,14 +48337,6 @@
       }
     ],
     "smells": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 15,
-        "freq": 1,
-        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
-      }
-    ],
-    "off": [
       {
         "file": "memory/scratchpad.md",
         "line": 15,
@@ -45746,14 +48896,6 @@
         "context": "- Minimal, functional aesthetic (Notion/Linear vibes)"
       }
     ],
-    "vibes": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 37,
-        "freq": 1,
-        "context": "- Minimal, functional aesthetic (Notion/Linear vibes)"
-      }
-    ],
     "seo": [
       {
         "file": "memory/ventok-business.md",
@@ -45914,14 +49056,6 @@
         "line": 68,
         "freq": 1,
         "context": "- Growth: €5,500-€8,500"
-      }
-    ],
-    "premium": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 69,
-        "freq": 1,
-        "context": "- Premium: €10,000-€15,000+"
       }
     ],
     "retainer": [
@@ -46370,14 +49504,6 @@
         "context": "3. Convert 1-2 pipeline prospects → establish €1k+ MRR baseline"
       }
     ],
-    "1-2": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 115,
-        "freq": 1,
-        "context": "3. Convert 1-2 pipeline prospects → establish €1k+ MRR baseline"
-      }
-    ],
     "baseline": [
       {
         "file": "memory/ventok-business.md",
@@ -46552,14 +49678,6 @@
         "line": 31,
         "freq": 1,
         "context": "- Custom monitoring setup"
-      }
-    ],
-    "channel": [
-      {
-        "file": "tasks/done.md",
-        "line": 16,
-        "freq": 1,
-        "context": "- [x] discord bot setup + channel config"
       }
     ],
     "scaffold": [
@@ -46846,38 +49964,6 @@
         "context": "./scripts/arc reflect          # self-review"
       }
     ],
-    "help": [
-      {
-        "file": "QUICKREF.md",
-        "line": 16,
-        "freq": 2,
-        "context": "./scripts/arc help             # full help"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 39,
-        "freq": 2,
-        "context": "./scripts/arc help             # full help"
-      },
-      {
-        "file": "QUICKREF.md",
-        "line": 23,
-        "freq": 1,
-        "context": "| USER.md | who i help |"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 129,
-        "freq": 1,
-        "context": "- You can add genuine value (info, insight, help)"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 8,
-        "freq": 1,
-        "context": "./scripts/arc help              # show all commands"
-      }
-    ],
     "yyyy-mm-dd": [
       {
         "file": "QUICKREF.md",
@@ -47002,14 +50088,6 @@
         "line": 39,
         "freq": 1,
         "context": "- Note captures: `./scripts/arc note \"thought\"`"
-      }
-    ],
-    "end": [
-      {
-        "file": "QUICKREF.md",
-        "line": 43,
-        "freq": 1,
-        "context": "### End of day"
       }
     ],
     "--post": [
@@ -47230,20 +50308,6 @@
         "line": 50,
         "freq": 1,
         "context": "- automated learning from interactions"
-      }
-    ],
-    "better": [
-      {
-        "file": "GOALS.md",
-        "line": 51,
-        "freq": 1,
-        "context": "- better goal progress tracking"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 117,
-        "freq": 1,
-        "context": "4. **compounds** — more usage = better understanding of what matters"
       }
     ],
     "evolve": [
@@ -47526,26 +50590,6 @@
         "line": 65,
         "freq": 1,
         "context": "- Cross-referencing projects or people"
-      }
-    ],
-    "people": [
-      {
-        "file": "AGENTS.md",
-        "line": 65,
-        "freq": 1,
-        "context": "- Cross-referencing projects or people"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 86,
-        "freq": 1,
-        "context": "- **DO NOT load in shared contexts** (Discord, group chats, sessions with other people)"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 151,
-        "freq": 1,
-        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
       }
     ],
     "exactly": [
@@ -47900,20 +50944,6 @@
         "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
       }
     ],
-    "limited": [
-      {
-        "file": "AGENTS.md",
-        "line": 94,
-        "freq": 1,
-        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 8,
-        "freq": 1,
-        "context": "- Limited historical data"
-      }
-    ],
     "survive": [
       {
         "file": "AGENTS.md",
@@ -47928,20 +50958,6 @@
         "line": 95,
         "freq": 1,
         "context": "- \"Mental notes\" don't survive session restarts. Files do."
-      }
-    ],
-    "someone": [
-      {
-        "file": "AGENTS.md",
-        "line": 96,
-        "freq": 1,
-        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 136,
-        "freq": 1,
-        "context": "- Someone already answered the question"
       }
     ],
     "says": [
@@ -47966,20 +50982,6 @@
         "line": 98,
         "freq": 1,
         "context": "- When you make a mistake → document it so future-you doesn't repeat it"
-      }
-    ],
-    "repeat": [
-      {
-        "file": "AGENTS.md",
-        "line": 98,
-        "freq": 1,
-        "context": "- When you make a mistake → document it so future-you doesn't repeat it"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 163,
-        "freq": 1,
-        "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
       }
     ],
     "brain": [
@@ -48178,20 +51180,6 @@
         "context": "arc search \"aniva\"               # typos → \"did you mean: anivia?\""
       }
     ],
-    "their": [
-      {
-        "file": "AGENTS.md",
-        "line": 122,
-        "freq": 3,
-        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 210,
-        "freq": 2,
-        "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
-      }
-    ],
     "participant": [
       {
         "file": "AGENTS.md",
@@ -48386,20 +51374,6 @@
         "context": "- Summarizing when asked"
       }
     ],
-    "stay": [
-      {
-        "file": "AGENTS.md",
-        "line": 134,
-        "freq": 1,
-        "context": "**Stay silent (HEARTBEAT_OK) when:**"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 190,
-        "freq": 1,
-        "context": "**When to stay quiet (HEARTBEAT_OK):**"
-      }
-    ],
     "silent": [
       {
         "file": "AGENTS.md",
@@ -48487,14 +51461,6 @@
       }
     ],
     "neither": [
-      {
-        "file": "AGENTS.md",
-        "line": 141,
-        "freq": 1,
-        "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
-      }
-    ],
-    "quantity": [
       {
         "file": "AGENTS.md",
         "line": 141,
@@ -48614,20 +51580,6 @@
         "line": 149,
         "freq": 1,
         "context": "Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, "
-      }
-    ],
-    "details": [
-      {
-        "file": "AGENTS.md",
-        "line": 149,
-        "freq": 1,
-        "context": "Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, "
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 104,
-        "freq": 1,
-        "context": "arc project anivia       # show project details"
       }
     ],
     "storytelling": [
@@ -48902,14 +51854,6 @@
         "context": "1. Read through recent `memory/YYYY-MM-DD.md` files"
       }
     ],
-    "2-4": [
-      {
-        "file": "AGENTS.md",
-        "line": 167,
-        "freq": 1,
-        "context": "**Things to check (rotate through these, 2-4 times per day):**"
-      }
-    ],
     "urgent": [
       {
         "file": "AGENTS.md",
@@ -49086,14 +52030,6 @@
         "context": "- **Review and update MEMORY.md** (see below)"
       }
     ],
-    "insights": [
-      {
-        "file": "AGENTS.md",
-        "line": 206,
-        "freq": 1,
-        "context": "2. Identify significant events, lessons, or insights worth keeping long-term"
-      }
-    ],
     "outdated": [
       {
         "file": "AGENTS.md",
@@ -49172,34 +52108,6 @@
         "line": 3,
         "freq": 1,
         "context": "## Tiered Enterprise Monitoring Platform"
-      }
-    ],
-    "community": [
-      {
-        "file": "monetization-plan.md",
-        "line": 9,
-        "freq": 1,
-        "context": "- Community support"
-      }
-    ],
-    "month": [
-      {
-        "file": "monetization-plan.md",
-        "line": 11,
-        "freq": 1,
-        "context": "### Pro Tier ($49/month/host)"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 18,
-        "freq": 1,
-        "context": "### Enterprise Tier ($199/month/host)"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 36,
-        "freq": 1,
-        "context": "estimated infra cost: ~$20-50/month to start"
       }
     ],
     "slack": [
@@ -49334,14 +52242,6 @@
         "line": 27,
         "freq": 1,
         "context": "### Additional Revenue Streams"
-      }
-    ],
-    "consulting": [
-      {
-        "file": "monetization-plan.md",
-        "line": 28,
-        "freq": 1,
-        "context": "1. Consulting Services"
       }
     ],
     "tuning": [
@@ -49520,26 +52420,6 @@
         "line": 12,
         "freq": 1,
         "context": "- **namespaces** — isolated memory spaces per project/agent"
-      }
-    ],
-    "agent": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- **namespaces** — isolated memory spaces per project/agent"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 58,
-        "freq": 1,
-        "context": "| **Namespaces** | Organize by project, agent, or workflow |"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 17,
-        "freq": 1,
-        "context": "- Single agent, single machine"
       }
     ],
     "key-value": [
@@ -49744,14 +52624,6 @@
         "context": "### what it's NOT (yet)"
       }
     ],
-    "collaboration": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 20,
-        "freq": 1,
-        "context": "- no team/collaboration features"
-      }
-    ],
     "fancy": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -49785,20 +52657,6 @@
       }
     ],
     "-----------": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 29,
-        "freq": 1,
-        "context": "|-----------|--------|-----|"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 79,
-        "freq": 1,
-        "context": "|-----|-----------|"
-      }
-    ],
-    "-----": [
       {
         "file": "projects/context-memory/PLAN.md",
         "line": 29,
@@ -49954,14 +52812,6 @@
         "context": "- cost: ~$0.0001 per 1k tokens (very cheap)"
       }
     ],
-    "20-50": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 36,
-        "freq": 1,
-        "context": "estimated infra cost: ~$20-50/month to start"
-      }
-    ],
     "price": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -49980,32 +52830,6 @@
         "line": 51,
         "freq": 1,
         "context": "| Tier | Price | Limits |"
-      }
-    ],
-    "-------": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 43,
-        "freq": 1,
-        "context": "|------|-------|--------|"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 67,
-        "freq": 1,
-        "context": "|------|-------|------------|---------|"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 41,
-        "freq": 1,
-        "context": "|---------|-------|----------------|"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 52,
-        "freq": 1,
-        "context": "|------|-------|--------|"
       }
     ],
     "10k": [
@@ -50104,14 +52928,6 @@
         "line": 55,
         "freq": 1,
         "context": "- **cost:** ~$10-15/year"
-      }
-    ],
-    "credit": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 58,
-        "freq": 1,
-        "context": "- **option A:** Railway.app — $5 credit free, then ~$20/mo"
       }
     ],
     "similar": [
@@ -50214,14 +53030,6 @@
         "line": 80,
         "freq": 1,
         "context": "| 1 | database schema, core API routes |"
-      }
-    ],
-    "register": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 92,
-        "freq": 1,
-        "context": "1. [ ] pick and register domain (cloudflare)"
       }
     ],
     "collaborator": [
@@ -50694,20 +53502,6 @@
         "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
       }
     ],
-    "setups": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 103,
-        "freq": 1,
-        "context": "For single-agent local setups, files work great. Use Context Memory when you need:"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
-      }
-    ],
     "great": [
       {
         "file": "projects/context-memory/README.md",
@@ -51158,100 +53952,104 @@
   "files": {
     "MEMORY.md": {
       "lines": 220,
-      "updated": "2026-01-30T18:30:00.104Z"
+      "updated": "2026-01-30T20:24:23.450Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-30T18:30:00.110Z"
+      "updated": "2026-01-30T20:24:23.453Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-30T18:30:00.111Z"
+      "updated": "2026-01-30T20:24:23.454Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-30T18:30:00.112Z"
+      "updated": "2026-01-30T20:24:23.456Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-01-30T18:30:00.113Z"
+      "updated": "2026-01-30T20:24:23.456Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-01-30T18:30:00.113Z"
+      "updated": "2026-01-30T20:24:23.457Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-01-30T18:30:00.114Z"
+      "updated": "2026-01-30T20:24:23.457Z"
     },
     "memory/2026-01-30.md": {
       "lines": 126,
-      "updated": "2026-01-30T18:30:00.115Z"
+      "updated": "2026-01-30T20:24:23.459Z"
+    },
+    "memory/moltbook-community-strategy.md": {
+      "lines": 94,
+      "updated": "2026-01-30T20:24:23.459Z"
     },
     "memory/nightly-builds.md": {
       "lines": 50,
-      "updated": "2026-01-30T18:30:00.116Z"
+      "updated": "2026-01-30T20:24:23.460Z"
     },
     "memory/scratchpad.md": {
       "lines": 20,
-      "updated": "2026-01-30T18:30:00.116Z"
+      "updated": "2026-01-30T20:24:23.460Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-30T18:30:00.117Z"
+      "updated": "2026-01-30T20:24:23.461Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-30T18:30:00.117Z"
+      "updated": "2026-01-30T20:24:23.461Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-01-30T18:30:00.118Z"
+      "updated": "2026-01-30T20:24:23.461Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-30T18:30:00.118Z"
+      "updated": "2026-01-30T20:24:23.462Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-30T18:30:00.118Z"
+      "updated": "2026-01-30T20:24:23.462Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-30T18:30:00.118Z"
+      "updated": "2026-01-30T20:24:23.462Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-30T18:30:00.118Z"
+      "updated": "2026-01-30T20:24:23.462Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-30T18:30:00.119Z"
+      "updated": "2026-01-30T20:24:23.462Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-30T18:30:00.119Z"
+      "updated": "2026-01-30T20:24:23.462Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-30T18:30:00.120Z"
+      "updated": "2026-01-30T20:24:23.463Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-30T18:30:00.120Z"
+      "updated": "2026-01-30T20:24:23.464Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-30T18:30:00.121Z"
+      "updated": "2026-01-30T20:24:23.464Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-30T18:30:00.121Z"
+      "updated": "2026-01-30T20:24:23.465Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-01-30T18:30:00.121Z"
+      "updated": "2026-01-30T20:24:23.465Z"
     }
   },
-  "built": "2026-01-30T18:30:00.103Z"
+  "built": "2026-01-30T20:24:23.449Z"
 }
