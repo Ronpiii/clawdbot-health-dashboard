@@ -51,7 +51,8 @@ const SCRIPTS = {
   todo: 'todo.mjs',
   triage: 'triage.mjs',
   changelog: 'changelog.mjs',
-  learn: 'learn.mjs'
+  learn: 'learn.mjs',
+  streak: 'streak.mjs'
 };
 
 const HELP = `
@@ -85,6 +86,7 @@ Commands:
   todo [query|count]    Find all unchecked TODOs across workspace
   triage [cat|summary]  Categorize TODOs: blocked/actionable/documentation/stale
   changelog [opts]      Generate changelog (--project, --days, --format md)
+  streak [days]         Work streak & activity heatmap (default 60 days)
 
 Examples:
   arc search "database issue"
@@ -228,6 +230,14 @@ switch (cmd) {
     run(SCRIPTS.changelog, args);
     break;
     
+  case 'streak':
+    run(SCRIPTS.streak, args);
+    break;
+    
+  case 'triage':
+    run(SCRIPTS.triage, args);
+    break;
+
   default:
     console.log(`unknown command: ${cmd}`);
     console.log('run "arc help" for usage');

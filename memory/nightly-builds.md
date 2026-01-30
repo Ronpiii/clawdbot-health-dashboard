@@ -18,6 +18,12 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-01-30: Streak Tracker
+**What:** `arc streak` — work streak & activity heatmap
+**Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar charts
+**Sources:** git commits + daily memory files (weighted by line count)
+**Why:** gamification of consistency — see your work patterns at a glance
+
 ### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth
 **What:** 
 - `arc changelog` — generate readable release notes from git commits
