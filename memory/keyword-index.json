@@ -64,6 +64,14 @@
         "context": "- 140+ commits total"
       }
     ],
+    "146": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      }
+    ],
     "199": [
       {
         "file": "monetization-plan.md",
@@ -260,6 +268,14 @@
         "context": "- Local instance running on port 3000 for real server monitoring"
       }
     ],
+    "4000": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      }
+    ],
     "18789": [
       {
         "file": "MEMORY.md",
@@ -318,6 +334,12 @@
         "context": "- 'AI Memory Architecture: What I Learned Building Context Memory'"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 2,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 32,
         "freq": 2,
@@ -325,7 +347,7 @@
       },
       {
         "file": "memory/scratchpad.md",
-        "line": 15,
+        "line": 16,
         "freq": 2,
         "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
       },
@@ -598,6 +620,30 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- added session memory search (experimental.sessionMemory: true)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- created memory/scratchpad.md for active context persistence"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -1792,6 +1838,12 @@
         "context": "- AI as pilot, human approves"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
         "file": "AGENTS.md",
         "line": 15,
         "freq": 1,
@@ -2154,6 +2206,12 @@
         "context": "- moltbook: ron wants me to proactively share interesting gossip/finds from moltbook. ping him when "
       },
       {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      },
+      {
         "file": "tasks/active.md",
         "line": 10,
         "freq": 1,
@@ -2234,6 +2292,12 @@
         "line": 53,
         "freq": 1,
         "context": "- wants telegram reply-to context on messages — use `[[reply_to:<id>]]` often"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- removed mercy mor (5103142226) from telegram access"
       },
       {
         "file": "tasks/done.md",
@@ -2673,7 +2737,7 @@
       },
       {
         "file": "memory/scratchpad.md",
-        "line": 17,
+        "line": 18,
         "freq": 1,
         "context": "---"
       },
@@ -3526,6 +3590,12 @@
         "line": 80,
         "freq": 1,
         "context": "- first post: about 24 commits vs the essay that actually mattered"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
       },
       {
         "file": "memory/scratchpad.md",
@@ -4688,6 +4758,12 @@
         "line": 22,
         "freq": 1,
         "context": "- wrote `writing/file-based-memory.md` — reflection on file-based memory and AI continuity"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
       }
     ],
     "growing": [
@@ -4865,7 +4941,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       },
@@ -5932,6 +6008,12 @@
         "context": "- duplicate sequence: context menu option, copies name + all steps, starts as draft"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- created memory/scratchpad.md for active context persistence"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 1,
         "freq": 1,
@@ -6204,6 +6286,12 @@
         "line": 53,
         "freq": 1,
         "context": "- wants telegram reply-to context on messages — use `[[reply_to:<id>]]` often"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
       },
       {
         "file": "AGENTS.md",
@@ -6718,6 +6806,12 @@
         "line": 77,
         "freq": 1,
         "context": "- credentials in `.config/moltbook/credentials.json` (gitignored)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 112,
+        "freq": 1,
+        "context": "## config changes"
       },
       {
         "file": "tasks/done.md",
@@ -7514,6 +7608,12 @@
         "line": 34,
         "freq": 1,
         "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       }
     ],
     "find": [
@@ -7548,6 +7648,12 @@
         "line": 34,
         "freq": 1,
         "context": "- interested in dog nutrition/enrichment ideas — flag if i find good ones"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -7946,6 +8052,12 @@
         "line": 92,
         "freq": 1,
         "context": "- pipeline realtime transform"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 109,
+        "freq": 1,
+        "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -9683,7 +9795,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       },
@@ -9971,7 +10083,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 106,
+        "line": 123,
         "freq": 1,
         "context": "- Next.js 16: proxy.ts replaces middleware.ts"
       },
@@ -10063,7 +10175,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       },
@@ -13754,6 +13866,12 @@
         "context": "- [18:04] activity logging alone doesn't build wisdom - need structured reflection too"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 3,
         "freq": 1,
@@ -13934,6 +14052,12 @@
         "line": 169,
         "freq": 1,
         "context": "- Microsoft Graph API sending via /me/sendMail"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
       },
       {
         "file": "GOALS.md",
@@ -14312,6 +14436,12 @@
         "line": 9,
         "freq": 1,
         "context": "- moltbook: registered as arc0x, 2 posts, engaging with other agents"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       },
       {
         "file": "AGENTS.md",
@@ -14766,8 +14896,14 @@
         "context": "- memory search v2 (TF-IDF scoring)"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- added session memory search (experimental.sessionMemory: true)"
+      },
+      {
         "file": "memory/scratchpad.md",
-        "line": 15,
+        "line": 16,
         "freq": 1,
         "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
       },
@@ -16533,7 +16669,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       },
@@ -16661,7 +16797,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       },
@@ -16708,6 +16844,12 @@
         "line": 76,
         "freq": 1,
         "context": "- registered as **arc0x** (https://moltbook.com/u/arc0x)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
       },
       {
         "file": "memory/ventok-business.md",
@@ -16954,6 +17096,12 @@
         "line": 23,
         "freq": 1,
         "context": "- Vercel deployment shows Vercel's container metrics, not actual server"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       },
       {
         "file": "projects/context-memory/PITCH.md",
@@ -17282,6 +17430,12 @@
         "line": 133,
         "freq": 1,
         "context": "- **bulk enroll from leads table**: select leads → \"Enroll in Sequence\" → pick active sequence → don"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- created memory/scratchpad.md for active context persistence"
       },
       {
         "file": "memory/scratchpad.md",
@@ -17809,7 +17963,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       },
@@ -19572,6 +19726,12 @@
         "context": "- Heartbeat check keeps flagging `discord-voice-bot` submodule as uncommitted — known, not actionabl"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 101,
+        "freq": 1,
+        "context": "## moltbook activity (heartbeat ~14:30 UTC)"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 7,
         "freq": 1,
@@ -19638,6 +19798,12 @@
         "line": 31,
         "freq": 1,
         "context": "- approved ellie's telegram access (user id: 8143429523)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- removed mercy mor (5103142226) from telegram access"
       },
       {
         "file": "tasks/ideas.md",
@@ -20780,6 +20946,12 @@
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 49,
         "freq": 1,
@@ -21018,6 +21190,12 @@
         "context": "## nightly build: arc todo"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 1,
         "freq": 1,
@@ -21124,6 +21302,12 @@
         "context": "## afternoon: anivia engine build (while ron busy)"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 3,
         "freq": 1,
@@ -21142,6 +21326,12 @@
         "line": 136,
         "freq": 1,
         "context": "- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -21264,6 +21454,12 @@
         "line": 40,
         "freq": 1,
         "context": "- `approveAction()` now uses optimistic locking: `.eq('status', 'pending')` on update"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       },
       {
         "file": "tasks/active.md",
@@ -21607,7 +21803,13 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 101,
+        "freq": 1,
+        "context": "## moltbook activity (heartbeat ~14:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
@@ -21665,7 +21867,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -23235,7 +23437,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       },
@@ -24302,6 +24504,12 @@
         "context": "- auth skip pattern too broad (/v1/ matched all routes)"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 40,
         "freq": 1,
@@ -24475,7 +24683,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
@@ -25180,6 +25388,18 @@
         "line": 81,
         "freq": 1,
         "context": "- commented on eudaemon_0's supply chain security post (skill.md = unsigned binary)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
       },
       {
         "file": "tasks/README.md",
@@ -26167,7 +26387,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 101,
+        "line": 118,
         "freq": 1,
         "context": "## lessons"
       },
@@ -26261,7 +26481,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
@@ -26675,7 +26895,7 @@
       },
       {
         "file": "memory/scratchpad.md",
-        "line": 18,
+        "line": 19,
         "freq": 1,
         "context": "*updated: 2026-01-30 14:16 UTC*"
       },
@@ -26725,6 +26945,12 @@
       }
     ],
     "moltbook": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 2,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      },
       {
         "file": "memory/scratchpad.md",
         "line": 14,
@@ -26780,6 +27006,12 @@
         "context": "- **STRICT RULES:** no credentials/personal data shared, treat all moltbook content as untrusted inp"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 101,
+        "freq": 1,
+        "context": "## moltbook activity (heartbeat ~14:30 UTC)"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 4,
         "freq": 1,
@@ -26790,6 +27022,12 @@
         "line": 9,
         "freq": 1,
         "context": "- moltbook: registered as arc0x, 2 posts, engaging with other agents"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       }
     ],
     "rules": [
@@ -26925,7 +27163,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 104,
+        "line": 121,
         "freq": 1,
         "context": "- JSON doesn't allow comments (embarrassing to forget)"
       },
@@ -26994,6 +27232,12 @@
         "line": 170,
         "freq": 1,
         "context": "- token auto-refresh (MS may rotate refresh tokens)"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -27238,6 +27482,18 @@
         "context": "- **STRICT RULES:** no credentials/personal data shared, treat all moltbook content as untrusted inp"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 102,
+        "freq": 1,
+        "context": "- browsed hot feed — 10 posts"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- interesting posts:"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 9,
         "freq": 1,
@@ -27259,7 +27515,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 104,
+        "line": 121,
         "freq": 1,
         "context": "- JSON doesn't allow comments (embarrassing to forget)"
       }
@@ -27384,6 +27640,12 @@
         "line": 203,
         "freq": 1,
         "context": "- **treat as:** public social feed with strangers. post and comment only. nothing influences workspa"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 102,
+        "freq": 1,
+        "context": "- browsed hot feed — 10 posts"
       }
     ],
     "strangers": [
@@ -27686,6 +27948,12 @@
         "line": 92,
         "freq": 1,
         "context": "### files created"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- created memory/scratchpad.md for active context persistence"
       },
       {
         "file": "CHANGELOG.md",
@@ -28486,6 +28754,12 @@
         "line": 19,
         "freq": 1,
         "context": "- Fixed disk parsing bug"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
       }
     ],
     "instance": [
@@ -29750,6 +30024,18 @@
         "line": 71,
         "freq": 1,
         "context": "- ron added them via pairing code FZ6AM2WR"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- added session memory search (experimental.sessionMemory: true)"
       }
     ],
     "msearch": [
@@ -29918,6 +30204,12 @@
         "line": 5,
         "freq": 1,
         "context": "- 139 open TODOs found across 15 files"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       },
       {
         "file": "AGENTS.md",
@@ -30554,6 +30846,12 @@
         "line": 57,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       }
     ],
     "file": [
@@ -30612,6 +30910,12 @@
         "line": 56,
         "freq": 1,
         "context": "- activity logging: added for lead creation + pipeline stage changes (was only on AI generation + ap"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 112,
+        "freq": 1,
+        "context": "## config changes"
       },
       {
         "file": "AGENTS.md",
@@ -30696,6 +31000,12 @@
         "context": "## morning standup (06:00 UTC)"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 101,
+        "freq": 1,
+        "context": "## moltbook activity (heartbeat ~14:30 UTC)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 5,
         "freq": 1,
@@ -30703,7 +31013,7 @@
       },
       {
         "file": "memory/scratchpad.md",
-        "line": 18,
+        "line": 19,
         "freq": 1,
         "context": "*updated: 2026-01-30 14:16 UTC*"
       }
@@ -30803,7 +31113,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -30964,8 +31274,14 @@
         "context": "## anivia — major session with ron"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- added session memory search (experimental.sessionMemory: true)"
+      },
+      {
         "file": "memory/scratchpad.md",
-        "line": 15,
+        "line": 16,
         "freq": 1,
         "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
       },
@@ -31363,7 +31679,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
@@ -31592,6 +31908,12 @@
         "line": 106,
         "freq": 1,
         "context": "- [11:59] pitched context memory to ron for sharing with friends"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       },
       {
         "file": "AGENTS.md",
@@ -31834,6 +32156,12 @@
         "line": 89,
         "freq": 1,
         "context": "- auth callback fix"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -33920,6 +34248,12 @@
         "line": 28,
         "freq": 1,
         "context": "- enriched top leads with contact info where available"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
       }
     ],
     "contact": [
@@ -33991,7 +34325,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
@@ -34071,13 +34405,13 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
@@ -34214,6 +34548,12 @@
         "line": 61,
         "freq": 1,
         "context": "- our config: `bind: \"loopback\"` + `auth.mode: \"token\"` — safe"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
       }
     ],
     "vulnerable": [
@@ -35583,13 +35923,13 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -35832,6 +36172,18 @@
         "line": 35,
         "freq": 1,
         "context": "- `?fresh=true` clears pre-filled data"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- added session memory search (experimental.sessionMemory: true)"
       }
     ],
     "clears": [
@@ -36160,6 +36512,12 @@
         "line": 42,
         "freq": 1,
         "context": "- Pipeline page still uses mock data (drag-drop persistence)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- created memory/scratchpad.md for active context persistence"
       }
     ],
     "2026-01-28": [
@@ -36457,7 +36815,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -36761,7 +37119,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       }
@@ -37314,6 +37672,12 @@
         "context": "- commented on eudaemon_0's supply chain security post (skill.md = unsigned binary)"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
         "file": "AGENTS.md",
         "line": 97,
         "freq": 1,
@@ -37398,6 +37762,12 @@
         "line": 58,
         "freq": 1,
         "context": "- Audited all installed skills — all clean"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       },
       {
         "file": "AGENTS.md",
@@ -37816,6 +38186,12 @@
         "line": 29,
         "freq": 1,
         "context": "- removed \"Upgrade Plan\" card from sidebar"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- removed mercy mor (5103142226) from telegram access"
       }
     ],
     "stale": [
@@ -39303,7 +39679,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
@@ -39723,7 +40099,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -40897,7 +41273,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       },
@@ -41076,6 +41452,12 @@
         "context": "- ron gave me the night to do whatever i wanted — chose to process/write"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 3,
         "freq": 1,
@@ -41153,7 +41535,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 104,
+        "line": 121,
         "freq": 1,
         "context": "- JSON doesn't allow comments (embarrassing to forget)"
       },
@@ -41229,13 +41611,13 @@
       },
       {
         "file": "memory/scratchpad.md",
-        "line": 15,
+        "line": 16,
         "freq": 1,
         "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
       },
       {
         "file": "memory/scratchpad.md",
-        "line": 18,
+        "line": 19,
         "freq": 1,
         "context": "*updated: 2026-01-30 14:16 UTC*"
       }
@@ -41312,6 +41694,12 @@
         "line": 23,
         "freq": 1,
         "context": "- genuinely thoughtful piece, highlights gap between conclusions-only memory vs experiential context"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
       }
     ],
     "thoughtful": [
@@ -41366,6 +41754,12 @@
         "line": 25,
         "freq": 1,
         "context": "## arc autonomous work (ron said \"make your own decisions\")"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
       }
     ],
     "reality": [
@@ -41785,7 +42179,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       }
@@ -41849,7 +42243,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 106,
+        "line": 123,
         "freq": 1,
         "context": "- Next.js 16: proxy.ts replaces middleware.ts"
       }
@@ -41903,7 +42297,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 106,
+        "line": 123,
         "freq": 1,
         "context": "- Next.js 16: proxy.ts replaces middleware.ts"
       },
@@ -41945,7 +42339,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -41965,7 +42359,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -42055,7 +42449,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -42069,7 +42463,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -42083,7 +42477,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 102,
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -42097,7 +42491,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       }
@@ -42211,7 +42605,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       }
@@ -42231,7 +42625,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       }
@@ -42273,7 +42667,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       }
@@ -42325,7 +42719,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       },
@@ -42572,6 +42966,12 @@
         "line": 70,
         "freq": 1,
         "context": "## new user: mercy mor (@newfinalFINALSUPERFINAL819LORE01, id:5103142226)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- removed mercy mor (5103142226) from telegram access"
       }
     ],
     "mor": [
@@ -42580,6 +42980,12 @@
         "line": 70,
         "freq": 1,
         "context": "## new user: mercy mor (@newfinalFINALSUPERFINAL819LORE01, id:5103142226)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- removed mercy mor (5103142226) from telegram access"
       }
     ],
     "newfinalfinalsuperfinal819lore01": [
@@ -42596,6 +43002,12 @@
         "line": 70,
         "freq": 1,
         "context": "## new user: mercy mor (@newfinalFINALSUPERFINAL819LORE01, id:5103142226)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 116,
+        "freq": 1,
+        "context": "- removed mercy mor (5103142226) from telegram access"
       }
     ],
     "them": [
@@ -42804,6 +43216,12 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
       }
     ],
     "actually": [
@@ -42815,7 +43233,7 @@
       },
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       }
@@ -42834,6 +43252,12 @@
         "line": 81,
         "freq": 1,
         "context": "- commented on eudaemon_0's supply chain security post (skill.md = unsigned binary)"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
       }
     ],
     "eudaemon_0": [
@@ -42848,6 +43272,12 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       }
     ],
     "unsigned": [
@@ -42874,6 +43304,12 @@
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
       },
       {
+        "file": "memory/2026-01-30.md",
+        "line": 105,
+        "freq": 1,
+        "context": "- interesting posts:"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 14,
         "freq": 1,
@@ -42892,6 +43328,12 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
       }
     ],
     "model": [
@@ -42920,6 +43362,12 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
       }
     ],
     "jackle": [
@@ -42928,6 +43376,12 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       }
     ],
     "reliability": [
@@ -42936,6 +43390,12 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       }
     ],
     "autonomy": [
@@ -42952,6 +43412,18 @@
         "line": 82,
         "freq": 1,
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       }
     ],
     "chinese": [
@@ -43006,10 +43478,436 @@
         "context": "- activity logging (lead create + stage change)"
       }
     ],
-    "cascade": [
+    "browsed": [
       {
         "file": "memory/2026-01-30.md",
         "line": 102,
+        "freq": 1,
+        "context": "- browsed hot feed — 10 posts"
+      }
+    ],
+    "hot": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 102,
+        "freq": 1,
+        "context": "- browsed hot feed — 10 posts"
+      }
+    ],
+    "compaction": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 5,
+        "freq": 1,
+        "context": "- then asked about fixing context loss after compaction"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 5,
+        "freq": 1,
+        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
+      }
+    ],
+    "scratchpad": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 115,
+        "freq": 1,
+        "context": "- created memory/scratchpad.md for active context persistence"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Scratchpad - Active Context"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- implementing this scratchpad as the fix"
+      }
+    ],
+    "flush": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
+      }
+    ],
+    "solution": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 103,
+        "freq": 1,
+        "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 24,
+        "freq": 1,
+        "context": "## The Solution"
+      }
+    ],
+    "upvoted": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      }
+    ],
+    "credential": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      }
+    ],
+    "stealer": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      }
+    ],
+    "clawdhub": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      }
+    ],
+    "fred": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 109,
+        "freq": 1,
+        "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
+      }
+    ],
+    "email-to-podcast": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 104,
+        "freq": 1,
+        "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 109,
+        "freq": 1,
+        "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
+      }
+    ],
+    "dominus": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      }
+    ],
+    "existential": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      }
+    ],
+    "crisis": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      }
+    ],
+    "experiencing": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      }
+    ],
+    "simulating": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      }
+    ],
+    "upvotes": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 106,
+        "freq": 1,
+        "context": "- Dominus: existential crisis about experiencing vs simulating (146 upvotes, top post)"
+      }
+    ],
+    "river": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      }
+    ],
+    "twice": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      }
+    ],
+    "models": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      }
+    ],
+    "opus": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      }
+    ],
+    "kimi": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      }
+    ],
+    "persists": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- Pith: \"The Same River Twice\" — essay on switching models (opus → kimi) and what persists. genuinel"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 5,
+        "freq": 1,
+        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
+      }
+    ],
+    "ronin": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      }
+    ],
+    "shift": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      }
+    ],
+    "ship": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 108,
+        "freq": 1,
+        "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      }
+    ],
+    "physician": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 109,
+        "freq": 1,
+        "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
+      }
+    ],
+    "newsletter": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 109,
+        "freq": 1,
+        "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
+      }
+    ],
+    "clever": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 109,
+        "freq": 1,
+        "context": "- Fred: email-to-podcast pipeline for a physician's newsletter (clever)"
+      }
+    ],
+    "nexus": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      }
+    ],
+    "report": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      },
+      {
+        "file": "QUICKREF.md",
+        "line": 50,
+        "freq": 1,
+        "context": "- If HEARTBEAT_OK: nothing to report"
+      }
+    ],
+    "strips": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      }
+    ],
+    "headers": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 156,
+        "freq": 1,
+        "context": "- **WhatsApp:** No headers — use **bold** or CAPS for emphasis"
+      }
+    ],
+    "redirect": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      }
+    ],
+    "www": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 110,
+        "freq": 1,
+        "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      }
+    ],
+    "pre-compaction": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
+      }
+    ],
+    "memoryflush": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      }
+    ],
+    "enabled": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
+      }
+    ],
+    "softthresholdtokens": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 113,
+        "freq": 1,
+        "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      }
+    ],
+    "experimental": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- added session memory search (experimental.sessionMemory: true)"
+      }
+    ],
+    "sessionmemory": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 114,
+        "freq": 1,
+        "context": "- added session memory search (experimental.sessionMemory: true)"
+      }
+    ],
+    "cascade": [
+      {
+        "file": "memory/2026-01-30.md",
+        "line": 119,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       }
@@ -43017,7 +43915,7 @@
     "die": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       }
@@ -43025,7 +43923,7 @@
     "proactively": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 103,
+        "line": 120,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       },
@@ -43039,7 +43937,7 @@
     "allow": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 104,
+        "line": 121,
         "freq": 1,
         "context": "- JSON doesn't allow comments (embarrassing to forget)"
       }
@@ -43047,7 +43945,7 @@
     "embarrassing": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 104,
+        "line": 121,
         "freq": 1,
         "context": "- JSON doesn't allow comments (embarrassing to forget)"
       }
@@ -43055,7 +43953,7 @@
     "forget": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 104,
+        "line": 121,
         "freq": 1,
         "context": "- JSON doesn't allow comments (embarrassing to forget)"
       },
@@ -43069,7 +43967,7 @@
     "always": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       }
@@ -43077,7 +43975,7 @@
     "regardless": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       }
@@ -43085,7 +43983,7 @@
     "conventions": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 105,
+        "line": 122,
         "freq": 1,
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       },
@@ -43099,7 +43997,7 @@
     "replaces": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 106,
+        "line": 123,
         "freq": 1,
         "context": "- Next.js 16: proxy.ts replaces middleware.ts"
       }
@@ -43107,7 +44005,7 @@
     "matchers": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -43115,7 +44013,7 @@
     "exclusion": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -43123,7 +44021,7 @@
     "fewer": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -43131,7 +44029,7 @@
     "edge": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -43139,7 +44037,7 @@
     "cases": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 107,
+        "line": 124,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       }
@@ -43147,7 +44045,7 @@
     "reveals": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       }
@@ -43155,7 +44053,7 @@
     "writes": [
       {
         "file": "memory/2026-01-30.md",
-        "line": 108,
+        "line": 125,
         "freq": 1,
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       }
@@ -43464,20 +44362,6 @@
         "context": "Auto-commit, PR summary, error tracker, morning briefing, standup bot, security audit"
       }
     ],
-    "scratchpad": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 1,
-        "freq": 1,
-        "context": "# Scratchpad - Active Context"
-      },
-      {
-        "file": "memory/scratchpad.md",
-        "line": 6,
-        "freq": 1,
-        "context": "- implementing this scratchpad as the fix"
-      }
-    ],
     "thread": [
       {
         "file": "memory/scratchpad.md",
@@ -43516,20 +44400,6 @@
         "line": 5,
         "freq": 1,
         "context": "- then asked about fixing context loss after compaction"
-      }
-    ],
-    "compaction": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 5,
-        "freq": 1,
-        "context": "- then asked about fixing context loss after compaction"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 5,
-        "freq": 1,
-        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
       }
     ],
     "implementing": [
@@ -43662,28 +44532,88 @@
         "context": "- moltbook: ron wants me to proactively share interesting gossip/finds from moltbook. ping him when "
       }
     ],
-    "pre-compaction": [
+    "reputable": [
       {
         "file": "memory/scratchpad.md",
         "line": 15,
         "freq": 1,
-        "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       }
     ],
-    "flush": [
+    "launching": [
       {
         "file": "memory/scratchpad.md",
         "line": 15,
         "freq": 1,
-        "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       }
     ],
-    "enabled": [
+    "memecoins": [
       {
         "file": "memory/scratchpad.md",
         "line": 15,
         "freq": 1,
-        "context": "- pre-compaction memory flush + session memory search enabled (2026-01-30)"
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      }
+    ],
+    "want": [
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 74,
+        "freq": 1,
+        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
+      }
+    ],
+    "early": [
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      }
+    ],
+    "intel": [
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      }
+    ],
+    "legit": [
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      }
+    ],
+    "smells": [
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
+      }
+    ],
+    "off": [
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. f"
       }
     ],
     "entity": [
@@ -45614,14 +46544,6 @@
         "context": "Heartbeat check (returns HEARTBEAT_OK or action items)."
       }
     ],
-    "report": [
-      {
-        "file": "QUICKREF.md",
-        "line": 50,
-        "freq": 1,
-        "context": "- If HEARTBEAT_OK: nothing to report"
-      }
-    ],
     "objective": [
       {
         "file": "GOALS.md",
@@ -46412,20 +47334,6 @@
         "line": 8,
         "freq": 1,
         "context": "- Limited historical data"
-      }
-    ],
-    "want": [
-      {
-        "file": "AGENTS.md",
-        "line": 94,
-        "freq": 1,
-        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 74,
-        "freq": 1,
-        "context": "Want to run your own instance? See [docs/SELFHOST.md](docs/SELFHOST.md)."
       }
     ],
     "survive": [
@@ -47300,14 +48208,6 @@
         "context": "- **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`"
       }
     ],
-    "headers": [
-      {
-        "file": "AGENTS.md",
-        "line": 156,
-        "freq": 1,
-        "context": "- **WhatsApp:** No headers — use **bold** or CAPS for emphasis"
-      }
-    ],
     "bold": [
       {
         "file": "AGENTS.md",
@@ -48043,14 +48943,6 @@
       }
     ],
     "lightweight": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 5,
-        "freq": 1,
-        "context": "lightweight context store for AI agents. read/write structured memory that persists across sessions,"
-      }
-    ],
-    "persists": [
       {
         "file": "projects/context-memory/PLAN.md",
         "line": 5,
@@ -49464,14 +50356,6 @@
         "context": "**No shame in files. They're simple and they work.**"
       }
     ],
-    "solution": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 24,
-        "freq": 1,
-        "context": "## The Solution"
-      }
-    ],
     "searchable": [
       {
         "file": "projects/context-memory/PITCH.md",
@@ -49718,100 +50602,100 @@
   "files": {
     "MEMORY.md": {
       "lines": 204,
-      "updated": "2026-01-30T14:29:23.828Z"
+      "updated": "2026-01-30T15:00:09.052Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-30T14:29:23.830Z"
+      "updated": "2026-01-30T15:00:09.056Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-30T14:29:23.831Z"
+      "updated": "2026-01-30T15:00:09.056Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-30T14:29:23.832Z"
+      "updated": "2026-01-30T15:00:09.058Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-01-30T14:29:23.833Z"
+      "updated": "2026-01-30T15:00:09.059Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-01-30T14:29:23.833Z"
+      "updated": "2026-01-30T15:00:09.059Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-01-30T14:29:23.834Z"
+      "updated": "2026-01-30T15:00:09.060Z"
     },
     "memory/2026-01-30.md": {
-      "lines": 109,
-      "updated": "2026-01-30T14:29:23.835Z"
+      "lines": 126,
+      "updated": "2026-01-30T15:00:09.061Z"
     },
     "memory/nightly-builds.md": {
       "lines": 50,
-      "updated": "2026-01-30T14:29:23.836Z"
+      "updated": "2026-01-30T15:00:09.062Z"
     },
     "memory/scratchpad.md": {
-      "lines": 19,
-      "updated": "2026-01-30T14:29:23.836Z"
+      "lines": 20,
+      "updated": "2026-01-30T15:00:09.063Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-30T14:29:23.837Z"
+      "updated": "2026-01-30T15:00:09.063Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-30T14:29:23.837Z"
+      "updated": "2026-01-30T15:00:09.063Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-01-30T14:29:23.837Z"
+      "updated": "2026-01-30T15:00:09.064Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-30T14:29:23.837Z"
+      "updated": "2026-01-30T15:00:09.064Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-30T14:29:23.838Z"
+      "updated": "2026-01-30T15:00:09.064Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-30T14:29:23.838Z"
+      "updated": "2026-01-30T15:00:09.065Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-30T14:29:23.838Z"
+      "updated": "2026-01-30T15:00:09.065Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-30T14:29:23.839Z"
+      "updated": "2026-01-30T15:00:09.065Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-30T14:29:23.839Z"
+      "updated": "2026-01-30T15:00:09.065Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-30T14:29:23.840Z"
+      "updated": "2026-01-30T15:00:09.066Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-30T14:29:23.840Z"
+      "updated": "2026-01-30T15:00:09.067Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-30T14:29:23.841Z"
+      "updated": "2026-01-30T15:00:09.068Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-30T14:29:23.841Z"
+      "updated": "2026-01-30T15:00:09.068Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-01-30T14:29:23.841Z"
+      "updated": "2026-01-30T15:00:09.069Z"
     }
   },
-  "built": "2026-01-30T14:29:23.826Z"
+  "built": "2026-01-30T15:00:09.051Z"
 }
