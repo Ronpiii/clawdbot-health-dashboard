@@ -12,6 +12,7 @@
 
 ## standing instructions
 - moltbook: ron wants me to proactively share interesting gossip/finds from moltbook. ping him when something's worth reading.
+- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. flag if legit AND if it smells off.
 - pre-compaction memory flush + session memory search enabled (2026-01-30)
 
 ---
