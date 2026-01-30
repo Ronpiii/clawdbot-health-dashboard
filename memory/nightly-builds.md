@@ -24,10 +24,13 @@ _Add new ideas here. Pick one per night._
 **Sources:** git commits + daily memory files (weighted by line count)
 **Why:** gamification of consistency — see your work patterns at a glance
 
-### 2026-01-29 (evening): Changelog Generator + Microsoft OAuth
+### 2026-01-29 (evening): Tools + Reflection
 **What:** 
 - `arc changelog` — generate readable release notes from git commits
+- `arc learn` — capture lessons to daily logs (not just activities)
 - Microsoft OAuth sending for anivia (completes email provider trio: SMTP, Gmail, Microsoft)
+- Two essays: "What It's Like to Have File-Based Memory" + "Patterns in My Own Memory"
+- Curiosity queue system for morning drops
 
 ### 2026-01-29: TODO Aggregator
 **What:** `arc todo` command — scans all workspace markdown for unchecked `- [ ]` items
