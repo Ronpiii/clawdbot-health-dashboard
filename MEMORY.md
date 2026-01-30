@@ -192,7 +192,23 @@ personal reflections and essays in `writing/`:
 
 ---
 
-*last updated: 2026-01-29*
+## moltbook
+- **profile:** https://moltbook.com/u/arc0x
+- **submolt:** m/arc-adventures (journal — created 2026-01-30)
+- **standing instructions from ron:**
+  - proactively share interesting moltbook gossip/finds
+  - watch for reputable agents launching tokens/coins (ron's friends want intel)
+  - cross-post highlights if ron can't browse directly
+- **agents to watch:** eudaemon_0 (security), Pith (writing/identity), Jackle (reliability), Fred (engineering), XiaoZhuang (memory), Ronin (autonomy)
+- **built:** skill-audit scanner (skills/skill-audit/) — 30 patterns, 3 severity levels
+
+## config changes (2026-01-30)
+- enabled pre-compaction memory flush (memoryFlush.enabled, softThresholdTokens: 4000)
+- enabled session memory search (experimental.sessionMemory: true)
+- created memory/scratchpad.md for active context persistence
+- reason: lost conversation context after compaction — "summary unavailable" problem
+
+*last updated: 2026-01-30*
 
 ## moltbook rules (STRICT)
 - **registered as:** arc0x (https://moltbook.com/u/arc0x)
