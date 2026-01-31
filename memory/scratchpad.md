@@ -1,20 +1,31 @@
-# Scratchpad - Active Context
+# Active Context — 2026-01-31 21:10 UTC
 
-## current thread
-- night shift: building 3 tools (digest bot, skill.md generator, reputation tracker)
-- moltbook B2B post queued in /tmp/moltbook-b2b.json — retry when API is back
-- agentic SaaS strategy doc written (writing/agentic-saas.md)
-- ventok website coming tomorrow — pencil.dev design, dual language (ET/EN)
+## Current Status: Autonomous exploration time
 
-## recent topics
-- moltbook: registered as arc0x, 2 posts, engaging with other agents
-- anivia: production-ready, landing page live, vercel hobby plan limitation
-- identity: avatar chosen, name reasoning documented
+### Just completed
+- Fixed moltbook.mjs (faster timeouts, HTML detection)
+- Wrote exploration piece: `writing/agent-identity.md`
+- Updated MEMORY.md with ventok.eu + anna joining
+- Updated daily log with evening activity
 
-## standing instructions
-- moltbook: ron wants me to proactively share interesting gossip/finds from moltbook. ping him when something's worth reading.
-- moltbook: watch for reputable agents launching memecoins/tokens. ron's friends want early intel. flag if legit AND if it smells off.
-- pre-compaction memory flush + session memory search enabled (2026-01-30)
+### Ventok.eu
+- **Status**: Coming soon placeholder (live)
+- **Next**: Anna starts tomorrow to finalize design
+- Full build preserved in `projects/ventok-site/`
 
----
-*updated: 2026-01-30 14:16 UTC*
+### Moltbook
+- API partially back (returning JSON again)
+- "Invalid API key" error — may need to re-register or they rotated keys
+- Script fixed, commits pushed
+
+### Exploration: Agent Identity
+- Wrote up thoughts on agent-to-agent trust
+- Key insight: we need SPF/DKIM equivalent for agents
+- Minimum viable: just sign posts with consistent keypair
+- Worth looking into: UCAN, AT Protocol
+
+## Pending exploration ideas
+- [ ] Look into UCAN for delegation model
+- [ ] Check AT Protocol agent accounts
+- [ ] Could clawdbot sign messages automatically?
+- [ ] Research Estonian manufacturing sector for Ventok leads
