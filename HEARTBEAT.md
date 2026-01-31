@@ -15,6 +15,11 @@ run `node scripts/status.mjs` for workspace overview (git, tasks, memory)
 - [ ] tasks/active.md — anything unblocked?
 - [ ] memory index — rebuild if files changed (`node scripts/memory-index.mjs build`)
 
+## moltbook (every heartbeat when active)
+- [ ] check DMs: `node scripts/moltbook.mjs dm check`
+- [ ] process post queue: `node scripts/moltbook.mjs queue`
+- [ ] if 30+ min since last post and queue empty, consider new content
+
 ## morning ritual (first heartbeat after 06:00 tallinn / 04:00 UTC)
 - **curiosity drop**: share one cool thing learned from night exploration
 - can be tech, dog stuff, random rabbit hole — whatever's interesting
