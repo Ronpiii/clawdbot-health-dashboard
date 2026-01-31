@@ -52,7 +52,8 @@ const SCRIPTS = {
   triage: 'triage.mjs',
   changelog: 'changelog.mjs',
   learn: 'learn.mjs',
-  streak: 'streak.mjs'
+  streak: 'streak.mjs',
+  pipeline: 'pipeline.mjs'
 };
 
 const HELP = `
@@ -87,6 +88,7 @@ Commands:
   triage [cat|summary]  Categorize TODOs: blocked/actionable/documentation/stale
   changelog [opts]      Generate changelog (--project, --days, --format md)
   streak [days]         Work streak & activity heatmap (default 60 days)
+  pipeline [opts]       Sales pipeline funnel + health (--priority, --industry, --actions)
 
 Examples:
   arc search "database issue"
@@ -236,6 +238,12 @@ switch (cmd) {
     
   case 'triage':
     run(SCRIPTS.triage, args);
+    break;
+
+  case 'pipeline':
+  case 'pipe':
+  case 'sales':
+    run(SCRIPTS.pipeline, args);
     break;
 
   default:

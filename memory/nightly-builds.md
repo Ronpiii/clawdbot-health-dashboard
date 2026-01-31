@@ -18,6 +18,13 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-01-31: Sales Pipeline CLI
+**What:** `arc pipeline` — visual sales pipeline viewer for ventok
+**Features:** ASCII funnel by stage, priority bars, industry clusters (--industry), next actions (ready to contact / needs email / going stale), pipeline health score (0-100) with actionable suggestions
+**Aliases:** `arc pipe`, `arc sales`
+**Flags:** `--priority` (expand by priority), `--industry` (cluster by industry), `--actions` (actions only), `--json` (raw data)
+**Why:** Ron's pushing toward €5k MRR — needs a quick CLI view of where leads stand, what's stale, and what to do next. Health score gamifies pipeline hygiene.
+
 ### 2026-01-30: Streak Tracker
 **What:** `arc streak` — work streak & activity heatmap
 **Features:** current/longest streak, 60-day heatmap (text blocks), day-of-week breakdown with bar charts
