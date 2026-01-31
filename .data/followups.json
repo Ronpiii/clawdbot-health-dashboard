@@ -1,0 +1,27 @@
+{
+  "followups": [
+    {
+      "id": 1,
+      "company": "Thermory AS",
+      "action": "Send integration proposal",
+      "due": "2026-02-01",
+      "contact": null,
+      "priority": "high",
+      "notes": null,
+      "done": false,
+      "created": "2026-01-31T21:54:00.514Z"
+    },
+    {
+      "id": 2,
+      "company": "TMW Baltic",
+      "action": "Follow up on audit call",
+      "due": "2026-02-03",
+      "contact": null,
+      "priority": "normal",
+      "notes": null,
+      "done": false,
+      "created": "2026-01-31T21:54:00.545Z"
+    }
+  ],
+  "lastId": 2
+}
