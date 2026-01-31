@@ -29,6 +29,7 @@
 ## team
 - **ron** — tech/automation lead
 - **ellie** — web design partner (telegram id: 8143429523)
+- **anna** — joining feb 1 to work on ventok.eu website design
 - **nola** — ron's dog, black staffordshire bull terrier, very smiley
   - ron makes DIY frozen treats (banana + apple popsicles)
   - interested in dog nutrition/enrichment ideas — flag if i find good ones
@@ -93,6 +94,15 @@
 - **status:** blocked
 - **location:** discord-voice-bot/
 - **blocker:** UDP not available on current server
+
+### ventok.eu website
+- **status:** coming soon placeholder (jan 31)
+- **url:** https://www.ventok.eu
+- **webroot:** /data02/virt137413/domeenid/www.ventok.eu/htdocs/
+- **source:** projects/ventok-site/ (Next.js 16 static export)
+- **design source:** projects/ventok-web.json (Pencil.dev export, 863KB)
+- **full build:** 10 pages complete (homepage, about, book, terms, 5 service pages)
+- **next:** anna joining feb 1 to finalize design
 
 ### discord hub (ventok)
 - **status:** active
