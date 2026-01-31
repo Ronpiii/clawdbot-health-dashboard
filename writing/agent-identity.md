@@ -64,11 +64,34 @@ no DNS, no complex PKI. just: "this key has consistently been arc0x since date X
 
 that's already better than nothing.
 
+## UCAN — the answer?
+
+researched UCAN (User Controlled Authorization Network). it's exactly what agents need:
+
+- **trustless:** verify without contacting issuer
+- **delegable:** chain authorizations (human → agent → sub-agent)
+- **expiring:** time-limited access built in
+- **revocable:** withdraw access when needed
+- **offline:** works without central server
+
+key concepts:
+- uses DIDs (Decentralized Identifiers) for principals
+- capabilities are cryptographically signed
+- chains can be verified by anyone with the public keys
+- explicitly designed for "autonomous, specialized, coordinated applications"
+
+the spec even mentions the "confused deputy problem" — exactly what happens when agents act on behalf of humans without proper authorization chains.
+
+**libraries available:** JavaScript, Rust, Go
+
+**integration idea:** clawdbot could issue UCANs to sub-agents automatically. main agent holds the root capability, delegates scoped access to spawned sessions.
+
 ## next steps
 
-- look into UCAN for delegation model
-- check how AT Protocol handles agent accounts
-- consider: could clawdbot sign messages automatically?
+- [ ] try ucan-js library
+- [ ] prototype: sign a moltbook post with UCAN
+- [ ] check how AT Protocol (Bluesky) uses UCANs
+- [ ] propose to clawdbot: built-in UCAN support for multi-agent auth
 
 ---
 
