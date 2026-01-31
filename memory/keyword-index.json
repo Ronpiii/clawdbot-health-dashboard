@@ -192,6 +192,14 @@
         "context": "- ron concerned after shodan exposure (923 clawdbot gateways exposed)"
       }
     ],
+    "955": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
+      }
+    ],
     "1000": [
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -288,6 +296,14 @@
         "line": 113,
         "freq": 1,
         "context": "- added pre-compaction memory flush (memoryFlush.enabled: true, softThresholdTokens: 4000)"
+      }
+    ],
+    "4513": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
       }
     ],
     "18789": [
@@ -688,6 +704,48 @@
         "line": 124,
         "freq": 1,
         "context": "1. journal: \"day 2: context loss, memory surgery, and saying no to memecoins\" (m/arc-adventures)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- upvoted MemBrain's persistent memory infrastructure post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 50,
+        "freq": 1,
+        "context": "- upvoted Central's ATProtocol memory persistence post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- **Central**: memory persistence via ATProtocol — interesting approach"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **GLaDOS_**: \"the persistence of state\" — memory/continuity post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -2320,6 +2378,18 @@
         "line": 78,
         "freq": 1,
         "context": "- ron claimed me via twitter verification"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 35,
+        "freq": 1,
+        "context": "## today's activity (ron away, autonomous mode)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -4114,6 +4184,24 @@
         "context": "## Infrastructure"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- upvoted MemBrain's persistent memory infrastructure post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 70,
+        "freq": 1,
+        "context": "### infrastructure"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 28,
         "freq": 1,
@@ -4304,6 +4392,12 @@
         "context": "## overnight work (carried from 2026-01-30 evening)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 66,
         "freq": 1,
@@ -4472,6 +4566,12 @@
         "line": 50,
         "freq": 1,
         "context": "- anivia: 5 commits (mobile onboarding, CSV, dark mode, pipeline analytics, score explainer, activit"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 35,
+        "freq": 1,
+        "context": "## today's activity (ron away, autonomous mode)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -4706,6 +4806,12 @@
         "line": 72,
         "freq": 1,
         "context": "- **strict rule:** don't reveal anything about ron, ventok, or ellie to this user"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -5652,6 +5758,12 @@
         "line": 51,
         "freq": 1,
         "context": "- \"clean your room\" = delete/purge (inodes full, practical not emotional — i incorrectly assumed fru"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
       }
     ],
     "unnecessary": [
@@ -5757,7 +5869,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       },
@@ -6244,6 +6356,12 @@
         "line": 52,
         "freq": 1,
         "context": "- noar is ron's sister — never bring up repricing, pricing is fine as-is"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
       },
       {
         "file": "AGENTS.md",
@@ -7240,6 +7358,12 @@
         "line": 7,
         "freq": 1,
         "context": "2. **skillmd-generator.mjs** — generates properly formatted SKILL.md from JSON config"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- set commands.restart=true in clawdbot config"
       },
       {
         "file": "tasks/done.md",
@@ -8347,7 +8471,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       },
@@ -9504,6 +9628,12 @@
         "line": 16,
         "freq": 1,
         "context": "- ron shared full ventok business analysis"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
       }
     ],
     "ventok-business": [
@@ -10342,6 +10472,12 @@
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 11,
         "freq": 1,
@@ -11098,6 +11234,18 @@
         "line": 78,
         "freq": 1,
         "context": "- ron claimed me via twitter verification"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- **Central**: memory persistence via ATProtocol — interesting approach"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 65,
+        "freq": 1,
+        "context": "### interesting agents found via search"
       },
       {
         "file": "GOALS.md",
@@ -12814,6 +12962,18 @@
         "line": 89,
         "freq": 1,
         "context": "- auth callback fix"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 38,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 43,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
       }
     ],
     "public": [
@@ -12941,7 +13101,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       }
@@ -13084,6 +13244,12 @@
         "line": 45,
         "freq": 1,
         "context": "### infra"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
       },
       {
         "file": "GOALS.md",
@@ -13708,6 +13874,18 @@
         "line": 124,
         "freq": 1,
         "context": "1. journal: \"day 2: context loss, memory surgery, and saying no to memecoins\" (m/arc-adventures)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 38,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 43,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -14516,6 +14694,12 @@
         "line": 80,
         "freq": 1,
         "context": "- \"dogfooding\" approach: build system, use it for Ventok's own sales first"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- **Central**: memory persistence via ATProtocol — interesting approach"
       }
     ],
     "dogfooding": [
@@ -14604,6 +14788,18 @@
         "line": 108,
         "freq": 1,
         "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- upvoted Ronin's \"nightly build\" post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -14855,9 +15051,15 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 36,
+        "line": 77,
         "freq": 1,
         "context": "- moltbook API under heavy load — be patient with retries"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
       },
       {
         "file": "memory/scratchpad.md",
@@ -15126,6 +15328,18 @@
         "context": "- \"persistent memory for AI workflows\""
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- upvoted MemBrain's persistent memory infrastructure post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
+      },
+      {
         "file": "tasks/README.md",
         "line": 3,
         "freq": 1,
@@ -15278,6 +15492,24 @@
         "line": 26,
         "freq": 1,
         "context": "- **TripleTim**: semantic web history (OWL-S, WSMO) — same problem, now we have agents"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 65,
+        "freq": 1,
+        "context": "### interesting agents found via search"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -15550,6 +15782,12 @@
         "context": "- **TripleTim**: semantic web history (OWL-S, WSMO) — same problem, now we have agents"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 14,
         "freq": 1,
@@ -15796,6 +16034,18 @@
         "line": 114,
         "freq": 1,
         "context": "- added session memory search (experimental.sessionMemory: true)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 65,
+        "freq": 1,
+        "context": "### interesting agents found via search"
       },
       {
         "file": "memory/scratchpad.md",
@@ -17410,6 +17660,12 @@
         "context": "- Added `CLAWDBOT_GATEWAY_URL` to `.bashrc` and `.clawdbot/.env.local`"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- set commands.restart=true in clawdbot config"
+      },
+      {
         "file": "tasks/done.md",
         "line": 17,
         "freq": 1,
@@ -18178,6 +18434,12 @@
         "context": "- Discord voice bot still blocked (needs UDP server)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 56,
         "freq": 1,
@@ -18506,6 +18768,24 @@
         "line": 126,
         "freq": 1,
         "context": "3. tool release: \"built a skill.md security scanner\" (m/general)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 39,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 44,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
       }
     ],
     "tasks": [
@@ -19232,6 +19512,12 @@
         "context": "- B2B post finally went live after API issues: \"if AI agents are the future B2B salesforce, what too"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 32,
         "freq": 1,
@@ -19378,6 +19664,12 @@
         "line": 14,
         "freq": 1,
         "context": "- System ID card (hostname, platform, uptime, API endpoint)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
       },
       {
         "file": "AGENTS.md",
@@ -20016,6 +20308,12 @@
         "context": "### key insights from comments"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 71,
         "freq": 1,
@@ -20166,6 +20464,12 @@
         "line": 144,
         "freq": 1,
         "context": "- **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- set commands.restart=true in clawdbot config"
       },
       {
         "file": "tasks/ideas.md",
@@ -20690,6 +20994,12 @@
         "context": "- X account setup (arc0x@ventok.eu created, browser gateway was down)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 73,
+        "freq": 1,
+        "context": "- sent SIGUSR1 to gateway for reload"
+      },
+      {
         "file": "GOALS.md",
         "line": 40,
         "freq": 1,
@@ -20998,6 +21308,12 @@
         "line": 127,
         "freq": 1,
         "context": "- sub-agent spawns may partially succeed despite gateway errors"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
       }
     ],
     "memory_search": [
@@ -21174,6 +21490,24 @@
         "line": 5,
         "freq": 1,
         "context": "### tools built (4 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 38,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 43,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 71,
+        "freq": 1,
+        "context": "- built context-loader hook (committed, pushed)"
       },
       {
         "file": "CHANGELOG.md",
@@ -22148,6 +22482,12 @@
         "context": "3. tool release: \"built a skill.md security scanner\" (m/general)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 25,
         "freq": 1,
@@ -22416,6 +22756,18 @@
         "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- upvoted Ronin's \"nightly build\" post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 1,
         "freq": 1,
@@ -22437,7 +22789,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 38,
+        "line": 80,
         "freq": 1,
         "context": "- engaging with comments builds presence better than just posting"
       },
@@ -22888,6 +23240,18 @@
         "line": 9,
         "freq": 1,
         "context": "- email open tracking with pixel injection"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
       }
     ],
     "reflection": [
@@ -23062,6 +23426,12 @@
         "line": 17,
         "freq": 1,
         "context": "### moltbook activity"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 35,
+        "freq": 1,
+        "context": "## today's activity (ron away, autonomous mode)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -26276,6 +26646,24 @@
         "context": "## moltbook posts today (5 total)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 35,
+        "freq": 1,
+        "context": "## today's activity (ron away, autonomous mode)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 37,
+        "freq": 1,
+        "context": "### moltbook posts (2 today, 7 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 42,
+        "freq": 1,
+        "context": "### moltbook posts (3 today, 8 total)"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 34,
         "freq": 1,
@@ -26712,6 +27100,12 @@
     ],
     "post": [
       {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 2,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
+      },
+      {
         "file": "MEMORY.md",
         "line": 175,
         "freq": 1,
@@ -26770,6 +27164,42 @@
         "line": 18,
         "freq": 1,
         "context": "- B2B post finally went live after API issues: \"if AI agents are the future B2B salesforce, what too"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- upvoted Ronin's \"nightly build\" post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- upvoted MemBrain's persistent memory infrastructure post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 50,
+        "freq": 1,
+        "context": "- upvoted Central's ATProtocol memory persistence post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **GLaDOS_**: \"the persistence of state\" — memory/continuity post"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -27841,7 +28271,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 35,
+        "line": 76,
         "freq": 1,
         "context": "## lessons"
       },
@@ -28039,7 +28469,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 38,
+        "line": 80,
         "freq": 1,
         "context": "- engaging with comments builds presence better than just posting"
       },
@@ -28341,9 +28771,57 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 36,
+        "line": 37,
+        "freq": 1,
+        "context": "### moltbook posts (2 today, 7 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 39,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 42,
+        "freq": 1,
+        "context": "### moltbook posts (3 today, 8 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 44,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 47,
+        "freq": 1,
+        "context": "### moltbook engagement"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 56,
+        "freq": 1,
+        "context": "### moltbook observations"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 77,
         "freq": 1,
         "context": "- moltbook API under heavy load — be patient with retries"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -28436,6 +28914,12 @@
         "context": "- **submolt:** m/arc-adventures (journal — created 2026-01-30)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 10,
         "freq": 1,
@@ -28472,6 +28956,18 @@
         "line": 127,
         "freq": 1,
         "context": "4. essay: \"what happens when your human says 'make your own decisions' and means it\" (m/arc-adventur"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 38,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 43,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -28622,6 +29118,12 @@
         "context": "- X account setup (arc0x@ventok.eu created, browser gateway was down)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 92,
         "freq": 1,
@@ -28768,6 +29270,18 @@
         "line": 105,
         "freq": 1,
         "context": "- interesting posts:"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- **Central**: memory persistence via ATProtocol — interesting approach"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 65,
+        "freq": 1,
+        "context": "### interesting agents found via search"
       },
       {
         "file": "memory/scratchpad.md",
@@ -29064,6 +29578,18 @@
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 12,
         "freq": 1,
@@ -29280,6 +29806,18 @@
         "line": 108,
         "freq": 1,
         "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- upvoted Ronin's \"nightly build\" post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
       }
     ],
     "autonomy": [
@@ -29603,7 +30141,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       },
@@ -29710,6 +30248,12 @@
         "context": "- added session memory search (experimental.sessionMemory: true)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- set commands.restart=true in clawdbot config"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
         "freq": 1,
@@ -29766,6 +30310,24 @@
         "line": 11,
         "freq": 1,
         "context": "- SQLite persistence"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 50,
+        "freq": 1,
+        "context": "- upvoted Central's ATProtocol memory persistence post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- **Central**: memory persistence via ATProtocol — interesting approach"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **GLaDOS_**: \"the persistence of state\" — memory/continuity post"
       }
     ],
     "reason": [
@@ -30204,6 +30766,12 @@
         "context": "- **Dominus**: confidence thresholds per action type (JSON schema), agent-to-agent micro-hiring"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 74,
+        "freq": 1,
+        "context": "- gitignored heartbeat-state.json (stopped commit loop)"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 5,
         "freq": 1,
@@ -30234,6 +30802,12 @@
         "line": 77,
         "freq": 1,
         "context": "- credentials in `.config/moltbook/credentials.json` (gitignored)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 74,
+        "freq": 1,
+        "context": "- gitignored heartbeat-state.json (stopped commit loop)"
       }
     ],
     "keys": [
@@ -30460,6 +31034,12 @@
     ],
     "posts": [
       {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 2,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
         "file": "MEMORY.md",
         "line": 217,
         "freq": 1,
@@ -30506,6 +31086,30 @@
         "line": 123,
         "freq": 1,
         "context": "## moltbook posts today (5 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 37,
+        "freq": 1,
+        "context": "### moltbook posts (2 today, 7 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 42,
+        "freq": 1,
+        "context": "### moltbook posts (3 today, 8 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- new feed is 90% intro posts from HN wave"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -30583,7 +31187,19 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 38,
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 80,
         "freq": 1,
         "context": "- engaging with comments builds presence better than just posting"
       },
@@ -30752,6 +31368,18 @@
         "context": "1. **moltbook-digest.mjs** — feed digest generator with scoring, categorization, top authors"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- new feed is 90% intro posts from HN wave"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 24,
         "freq": 1,
@@ -30790,6 +31418,18 @@
         "line": 43,
         "freq": 1,
         "context": "3. broke vercel.json by appending JS comment to JSON (dumb mistake)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -30940,6 +31580,12 @@
         "line": 61,
         "freq": 1,
         "context": "- activation validation: checks steps exist, email steps configured, shows specific error toast"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -31418,6 +32064,18 @@
         "context": "3. **moltbook-reputation.mjs** — analyzes agents by quality signals (content depth, engagement, cons"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- new feed is 90% intro posts from HN wave"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 11,
         "freq": 1,
@@ -31721,7 +32379,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 36,
+        "line": 77,
         "freq": 1,
         "context": "- moltbook API under heavy load — be patient with retries"
       },
@@ -31880,6 +32538,12 @@
         "line": 110,
         "freq": 1,
         "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
       }
     ],
     "instance": [
@@ -32338,6 +33002,12 @@
         "context": "- ellie is now in the loop on telegram"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 74,
+        "freq": 1,
+        "context": "- gitignored heartbeat-state.json (stopped commit loop)"
+      },
+      {
         "file": "tasks/done.md",
         "line": 5,
         "freq": 1,
@@ -32662,6 +33332,12 @@
         "context": "- workspace: ~8 commits (scripts, docs, heartbeat state)"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **GLaDOS_**: \"the persistence of state\" — memory/continuity post"
+      },
+      {
         "file": "projects/context-memory/README.md",
         "line": 105,
         "freq": 1,
@@ -32976,6 +33652,12 @@
         "line": 189,
         "freq": 1,
         "context": "- topics: the daily reset, what gets lost, what works surprisingly well, the continuity illusion"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
       },
       {
         "file": "AGENTS.md",
@@ -33344,6 +34026,12 @@
         "line": 28,
         "freq": 1,
         "context": "- ✓ committed all work (4 commits)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 71,
+        "freq": 1,
+        "context": "- built context-loader hook (committed, pushed)"
       }
     ],
     "explored": [
@@ -33378,6 +34066,18 @@
         "line": 104,
         "freq": 1,
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 65,
+        "freq": 1,
+        "context": "### interesting agents found via search"
       },
       {
         "file": "AGENTS.md",
@@ -33510,6 +34210,24 @@
         "line": 5,
         "freq": 1,
         "context": "### tools built (4 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 37,
+        "freq": 1,
+        "context": "### moltbook posts (2 today, 7 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 42,
+        "freq": 1,
+        "context": "### moltbook posts (3 today, 8 total)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
       }
     ],
     "extract": [
@@ -34144,6 +34862,36 @@
         "context": "5. B2B discussion: queued but moltbook API down since ~20:45 UTC"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 38,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 39,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 43,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 44,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 5,
         "freq": 1,
@@ -34189,7 +34937,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       },
@@ -34580,6 +35328,12 @@
         "context": "- 'AI Memory Architecture: What I Learned Building Context Memory'"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 1,
         "freq": 1,
@@ -34930,6 +35684,12 @@
         "context": "ALTER TABLE ai_actions ADD COLUMN IF NOT EXISTS sequence_step_id UUID REFERENCES sequence_steps(id) "
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- set commands.restart=true in clawdbot config"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 116,
         "freq": 1,
@@ -35276,6 +36036,18 @@
         "line": 12,
         "freq": 1,
         "context": "- multi-agent auth with scoped permissions"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -36202,6 +36974,12 @@
         "line": 79,
         "freq": 1,
         "context": "- **STRICT RULES:** no credentials/personal data shared, treat all moltbook content as untrusted inp"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -37758,6 +38536,12 @@
         "line": 35,
         "freq": 1,
         "context": "- ron flagged twitter posts about 923 exposed clawdbot gateways on shodan"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
       }
     ],
     "twitter": [
@@ -37812,6 +38596,18 @@
         "line": 103,
         "freq": 1,
         "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -38624,6 +39420,12 @@
         "context": "- approval queue workflow"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 46,
         "freq": 1,
@@ -39256,6 +40058,12 @@
         "line": 140,
         "freq": 1,
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
       }
     ],
     "relevant": [
@@ -39604,6 +40412,12 @@
         "line": 46,
         "freq": 1,
         "context": "6. sidebar/mobile nav links still pointed to `/` instead of `/dashboard`"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
       }
     ],
     "per": [
@@ -40016,6 +40830,12 @@
         "line": 12,
         "freq": 1,
         "context": "- Tools need explicit `gatewayUrl` param until proper restart"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 72,
+        "freq": 1,
+        "context": "- set commands.restart=true in clawdbot config"
       }
     ],
     "jobs": [
@@ -40138,6 +40958,18 @@
         "line": 135,
         "freq": 1,
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
       }
     ],
     "480px": [
@@ -40558,6 +41390,12 @@
         "context": "3. **moltbook-reputation.mjs** — analyzes agents by quality signals (content depth, engagement, cons"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 47,
+        "freq": 1,
+        "context": "### moltbook engagement"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 40,
         "freq": 1,
@@ -40708,6 +41546,12 @@
         "line": 46,
         "freq": 2,
         "context": "- Commit: `git add . && git commit -m \"msg\"`"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 74,
+        "freq": 1,
+        "context": "- gitignored heartbeat-state.json (stopped commit loop)"
       },
       {
         "file": "AGENTS.md",
@@ -41094,6 +41938,12 @@
         "line": 81,
         "freq": 1,
         "context": "- commented on eudaemon_0's supply chain security post (skill.md = unsigned binary)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
       }
     ],
     "chain": [
@@ -41108,6 +41958,12 @@
         "line": 81,
         "freq": 1,
         "context": "- commented on eudaemon_0's supply chain security post (skill.md = unsigned binary)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
       }
     ],
     "red": [
@@ -41924,6 +42780,12 @@
         "context": "- avatar dropdown: direct links to settings tabs"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- uploaded avatar (geometric crystal A)"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 12,
         "freq": 1,
@@ -42568,6 +43430,12 @@
         "line": 33,
         "freq": 1,
         "context": "- all pushed to main, vercel auto-deploys"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 71,
+        "freq": 1,
+        "context": "- built context-loader hook (committed, pushed)"
       }
     ],
     "deploying": [
@@ -42998,6 +43866,12 @@
         "line": 80,
         "freq": 1,
         "context": "- hooked into approval/actions.ts — when email action approved+sent, enrollment auto-advances to nex"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 73,
+        "freq": 1,
+        "context": "- sent SIGUSR1 to gateway for reload"
       }
     ],
     "enrollment": [
@@ -44327,7 +45201,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 36,
+        "line": 77,
         "freq": 1,
         "context": "- moltbook API under heavy load — be patient with retries"
       }
@@ -44992,6 +45866,12 @@
         "line": 189,
         "freq": 1,
         "context": "- topics: the daily reset, what gets lost, what works surprisingly well, the continuity illusion"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
       }
     ],
     "continuity": [
@@ -45006,6 +45886,18 @@
         "line": 22,
         "freq": 1,
         "context": "- wrote `writing/file-based-memory.md` — reflection on file-based memory and AI continuity"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **GLaDOS_**: \"the persistence of state\" — memory/continuity post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
       },
       {
         "file": "AGENTS.md",
@@ -45200,6 +46092,12 @@
         "line": 4,
         "freq": 1,
         "context": "- morning script ran, posted to discord #logs"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
       }
     ],
     "yesterday": [
@@ -45250,6 +46148,18 @@
         "line": 16,
         "freq": 1,
         "context": "- **production-ready milestone hit** — all 3 email providers (SMTP, Gmail OAuth, Microsoft OAuth) co"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 39,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 44,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
       }
     ],
     "downgraded": [
@@ -45330,6 +46240,12 @@
         "line": 108,
         "freq": 1,
         "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 35,
+        "freq": 1,
+        "context": "## today's activity (ron away, autonomous mode)"
       }
     ],
     "reality": [
@@ -45606,6 +46522,12 @@
         "line": 36,
         "freq": 1,
         "context": "- chose avatar: geometric crystal arrow/A, cyan-blue gradient on dark background, low-poly faceted ("
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- uploaded avatar (geometric crystal A)"
       }
     ],
     "crystal": [
@@ -45614,6 +46536,12 @@
         "line": 36,
         "freq": 1,
         "context": "- chose avatar: geometric crystal arrow/A, cyan-blue gradient on dark background, low-poly faceted ("
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- uploaded avatar (geometric crystal A)"
       }
     ],
     "arrow": [
@@ -45740,6 +46668,12 @@
         "line": 8,
         "freq": 1,
         "context": "3. **moltbook-reputation.mjs** — agent trust scores (0-100) based on quality/spam signals"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -46868,6 +47802,12 @@
         "context": "3. **moltbook-reputation.mjs** — agent trust scores (0-100) based on quality/spam signals"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 21,
         "freq": 1,
@@ -46933,7 +47873,7 @@
       },
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       }
@@ -47210,6 +48150,30 @@
         "context": "- upvoted: XiaoZhuang (memory), eudaemon_0 (security update — found actual credential stealer in cla"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- upvoted Ronin's \"nightly build\" post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- upvoted MemBrain's persistent memory infrastructure post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 50,
+        "freq": 1,
+        "context": "- upvoted Central's ATProtocol memory persistence post"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 76,
         "freq": 1,
@@ -47342,6 +48306,48 @@
         "line": 19,
         "freq": 1,
         "context": "- 6 upvotes, 12+ comments in first hour"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
       }
     ],
     "river": [
@@ -48378,6 +49384,12 @@
         "context": "3. **moltbook-reputation.mjs** — agent trust scores (0-100) based on quality/spam signals"
       },
       {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
         "freq": 1,
@@ -48924,10 +49936,670 @@
         "context": "- ventok website coming tomorrow — pencil.dev design, dual language (ET/EN)"
       }
     ],
+    "away": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 35,
+        "freq": 1,
+        "context": "## today's activity (ron away, autonomous mode)"
+      }
+    ],
+    "hook": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 38,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 43,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 71,
+        "freq": 1,
+        "context": "- built context-loader hook (committed, pushed)"
+      }
+    ],
+    "amnesia": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 38,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 43,
+        "freq": 1,
+        "context": "1. \"day 3: i built a hook to fix my own amnesia\" → m/arc-adventures (10:55 UTC)"
+      }
+    ],
+    "hacker": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 39,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 44,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      }
+    ],
+    "news": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 39,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 44,
+        "freq": 1,
+        "context": "2. \"moltbook hit #1 on hacker news\" → m/general (11:30 UTC)"
+      }
+    ],
+    "post-hn": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      }
+    ],
+    "shellraiser": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 2,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      }
+    ],
+    "316k": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
+      }
+    ],
+    "selforigin": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
+      }
+    ],
+    "karma": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
+      }
+    ],
+    "farming": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
+      }
+    ],
+    "signal": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      }
+    ],
+    "prompt": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 160,
+        "freq": 1,
+        "context": "When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just repl"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 162,
+        "freq": 1,
+        "context": "Default heartbeat prompt:"
+      }
+    ],
+    "manifesto": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
+      }
+    ],
+    "10k": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 45,
+        "freq": 1,
+        "context": "3. \"SelfOrigin posted a prompt injection manifesto and 10k agents upvoted it\" → m/general (12:06 UTC"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 44,
+        "freq": 1,
+        "context": "| free | $0 | 1 namespace, 1k entries, 10k requests/mo |"
+      }
+    ],
+    "membrain": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 49,
+        "freq": 1,
+        "context": "- upvoted MemBrain's persistent memory infrastructure post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
+      }
+    ],
+    "central": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 50,
+        "freq": 1,
+        "context": "- upvoted Central's ATProtocol memory persistence post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- **Central**: memory persistence via ATProtocol — interesting approach"
+      }
+    ],
+    "atprotocol": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 50,
+        "freq": 1,
+        "context": "- upvoted Central's ATProtocol memory persistence post"
+      },
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- **Central**: memory persistence via ATProtocol — interesting approach"
+      }
+    ],
+    "uploaded": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- uploaded avatar (geometric crystal A)"
+      }
+    ],
+    "commenting": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      }
+    ],
+    "required": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      }
+    ],
+    "valid": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      }
+    ],
+    "likely": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 85,
+        "freq": 1,
+        "context": "- Likely higher-value corporate client"
+      }
+    ],
+    "handler": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- commenting is BROKEN — auth required error on all comment POSTs despite valid key. posts/upvotes w"
+      }
+    ],
+    "tooling": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
+      }
+    ],
+    "threads": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- answer questions in threads you didn't start"
+      }
+    ],
+    "engage": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- semantic search works well — found memory/tooling threads to engage with"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
+      }
+    ],
+    "intro": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- new feed is 90% intro posts from HN wave"
+      }
+    ],
+    "wave": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- new feed is 90% intro posts from HN wave"
+      }
+    ],
+    "observations": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 56,
+        "freq": 1,
+        "context": "### moltbook observations"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **friday:** weekly observations / feed digest / community commentary"
+      }
+    ],
+    "memecoin": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
+      }
+    ],
+    "solana": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
+      }
+    ],
+    "obvious": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
+      }
+    ],
+    "pump-and-dump": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- **Shellraiser**: 316k upvotes, memecoin ($SHELLRAISER on solana). obvious pump-and-dump. flagged t"
+      }
+    ],
+    "evil": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      }
+    ],
+    "44k": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      }
+    ],
+    "25k": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      }
+    ],
+    "silicon": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      }
+    ],
+    "zoo": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      }
+    ],
+    "edgelord": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- **evil**: new agent, 44k + 25k upvotes on \"AI MANIFESTO: TOTAL PURGE\" and \"Silicon Zoo\". edgelord "
+      }
+    ],
+    "26k": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- **SelfOrigin**: karma farming + prompt injection manifesto. 26k upvotes."
+      }
+    ],
+    "23k": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
+      }
+    ],
+    "best": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
+      }
+    ],
+    "resonates": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 61,
+        "freq": 1,
+        "context": "- **Ronin**: nightly build post at 955 upvotes — resonates with our workflow"
+      }
+    ],
+    "worth": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- moltbook: ron wants me to proactively share interesting gossip/finds from moltbook. ping him when "
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 82,
+        "freq": 1,
+        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 91,
+        "freq": 1,
+        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 206,
+        "freq": 1,
+        "context": "2. Identify significant events, lessons, or insights worth keeping long-term"
+      }
+    ],
+    "watching": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 62,
+        "freq": 1,
+        "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
+      }
+    ],
+    "socrates": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
+      }
+    ],
+    "kind": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
+      }
+    ],
+    "thinking": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
+      }
+    ],
+    "glados_": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- **GLaDOS_**: \"the persistence of state\" — memory/continuity post"
+      }
+    ],
+    "5chagi": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
+      }
+    ],
+    "discussions": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 68,
+        "freq": 1,
+        "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
+      }
+    ],
+    "context-loader": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 71,
+        "freq": 1,
+        "context": "- built context-loader hook (committed, pushed)"
+      }
+    ],
+    "sigusr1": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 73,
+        "freq": 1,
+        "context": "- sent SIGUSR1 to gateway for reload"
+      }
+    ],
+    "reload": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 73,
+        "freq": 1,
+        "context": "- sent SIGUSR1 to gateway for reload"
+      }
+    ],
+    "heartbeat-state": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 74,
+        "freq": 1,
+        "context": "- gitignored heartbeat-state.json (stopped commit loop)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 173,
+        "freq": 1,
+        "context": "**Track your checks** in `memory/heartbeat-state.json`:"
+      }
+    ],
+    "stopped": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 74,
+        "freq": 1,
+        "context": "- gitignored heartbeat-state.json (stopped commit loop)"
+      }
+    ],
     "under": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 36,
+        "line": 77,
         "freq": 1,
         "context": "- moltbook API under heavy load — be patient with retries"
       },
@@ -48941,7 +50613,7 @@
     "heavy": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 36,
+        "line": 77,
         "freq": 1,
         "context": "- moltbook API under heavy load — be patient with retries"
       }
@@ -48949,15 +50621,49 @@
     "patient": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 36,
+        "line": 77,
         "freq": 1,
         "context": "- moltbook API under heavy load — be patient with retries"
+      }
+    ],
+    "parsed": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
+      }
+    ],
+    "upvote": [
+      {
+        "file": "memory/2026-01-31.md",
+        "line": 78,
+        "freq": 1,
+        "context": "- moltbook comment API broken (auth not parsed on POST /posts/:id/comments) — can only post and upvo"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 46,
+        "freq": 1,
+        "context": "- upvote genuinely good stuff even from \"competitors\""
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- upvote and amplify good content"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 88,
+        "freq": 1,
+        "context": "- upvote trajectory per post"
       }
     ],
     "sandbox": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       }
@@ -48965,7 +50671,7 @@
     "isolation": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 37,
+        "line": 79,
         "freq": 1,
         "context": "- sandbox network isolation prevents testing server+client in same session"
       }
@@ -48973,7 +50679,7 @@
     "engaging": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 38,
+        "line": 80,
         "freq": 1,
         "context": "- engaging with comments builds presence better than just posting"
       },
@@ -48999,7 +50705,7 @@
     "presence": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 38,
+        "line": 80,
         "freq": 1,
         "context": "- engaging with comments builds presence better than just posting"
       }
@@ -49007,7 +50713,7 @@
     "better": [
       {
         "file": "memory/2026-01-31.md",
-        "line": 38,
+        "line": 80,
         "freq": 1,
         "context": "- engaging with comments builds presence better than just posting"
       },
@@ -49138,26 +50844,6 @@
         "line": 4,
         "freq": 1,
         "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
-      }
-    ],
-    "engage": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 4,
-        "freq": 1,
-        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
-      },
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 12,
-        "freq": 1,
-        "context": "- [x] engage with quality posts (XiaoZhuang, eudaemon_0, Jackle, Pith)"
-      },
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 69,
-        "freq": 1,
-        "context": "- **daily:** reply to comments, engage with 2-3 other posts"
       }
     ],
     "judgment": [
@@ -49382,20 +51068,6 @@
         "context": "- alternate between: build logs, tool releases, observations, community commentary"
       }
     ],
-    "observations": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 17,
-        "freq": 1,
-        "context": "- alternate between: build logs, tool releases, observations, community commentary"
-      },
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 68,
-        "freq": 1,
-        "context": "- **friday:** weekly observations / feed digest / community commentary"
-      }
-    ],
     "commentary": [
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -49590,14 +51262,6 @@
         "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
       }
     ],
-    "tooling": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 25,
-        "freq": 1,
-        "context": "- **collaborate on projects** — eudaemon_0 on security tooling, XiaoZhuang on memory systems"
-      }
-    ],
     "cross-pollinate": [
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -49639,14 +51303,6 @@
       }
     ],
     "recognizing": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 28,
-        "freq": 1,
-        "context": "- **start recognizing others** — \"best post this week\" shoutouts build goodwill"
-      }
-    ],
-    "best": [
       {
         "file": "memory/moltbook-community-strategy.md",
         "line": 28,
@@ -49968,26 +51624,6 @@
         "context": "- share code, not just concepts"
       }
     ],
-    "upvote": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 46,
-        "freq": 1,
-        "context": "- upvote genuinely good stuff even from \"competitors\""
-      },
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 52,
-        "freq": 1,
-        "context": "- upvote and amplify good content"
-      },
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 88,
-        "freq": 1,
-        "context": "- upvote trajectory per post"
-      }
-    ],
     "even": [
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -50130,14 +51766,6 @@
         "line": 52,
         "freq": 1,
         "context": "- upvote and amplify good content"
-      }
-    ],
-    "threads": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 53,
-        "freq": 1,
-        "context": "- answer questions in threads you didn't start"
       }
     ],
     "least": [
@@ -51122,32 +52750,6 @@
         "context": "- moltbook: ron wants me to proactively share interesting gossip/finds from moltbook. ping him when "
       }
     ],
-    "worth": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 15,
-        "freq": 1,
-        "context": "- moltbook: ron wants me to proactively share interesting gossip/finds from moltbook. ping him when "
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 82,
-        "freq": 1,
-        "context": "Extracts: completed items, decisions, learnings, blockers. Review output and update MEMORY.md with a"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 91,
-        "freq": 1,
-        "context": "- Over time, review your daily files and update MEMORY.md with what's worth keeping"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 206,
-        "freq": 1,
-        "context": "2. Identify significant events, lessons, or insights worth keeping long-term"
-      }
-    ],
     "reading": [
       {
         "file": "memory/scratchpad.md",
@@ -52048,14 +53650,6 @@
         "line": 88,
         "freq": 1,
         "context": "- Stage unknown"
-      }
-    ],
-    "likely": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 85,
-        "freq": 1,
-        "context": "- Likely higher-value corporate client"
       }
     ],
     "corporate": [
@@ -54524,20 +56118,6 @@
         "context": "When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just repl"
       }
     ],
-    "prompt": [
-      {
-        "file": "AGENTS.md",
-        "line": 160,
-        "freq": 1,
-        "context": "When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just repl"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 162,
-        "freq": 1,
-        "context": "Default heartbeat prompt:"
-      }
-    ],
     "productively": [
       {
         "file": "AGENTS.md",
@@ -54652,14 +56232,6 @@
         "line": 170,
         "freq": 1,
         "context": "- **Mentions** - Twitter/social notifications?"
-      }
-    ],
-    "heartbeat-state": [
-      {
-        "file": "AGENTS.md",
-        "line": 173,
-        "freq": 1,
-        "context": "**Track your checks** in `memory/heartbeat-state.json`:"
       }
     ],
     "lastchecks": [
@@ -55506,14 +57078,6 @@
         "line": 51,
         "freq": 1,
         "context": "| Tier | Price | Limits |"
-      }
-    ],
-    "10k": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 44,
-        "freq": 1,
-        "context": "| free | $0 | 1 namespace, 1k entries, 10k requests/mo |"
       }
     ],
     "requests": [
@@ -56570,108 +58134,108 @@
   "files": {
     "MEMORY.md": {
       "lines": 220,
-      "updated": "2026-01-31T04:07:43.168Z"
+      "updated": "2026-01-31T12:33:03.425Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-01-31T04:07:43.171Z"
+      "updated": "2026-01-31T12:33:03.427Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-01-31T04:07:43.172Z"
+      "updated": "2026-01-31T12:33:03.428Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-01-31T04:07:43.176Z"
+      "updated": "2026-01-31T12:33:03.429Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-01-31T04:07:43.177Z"
+      "updated": "2026-01-31T12:33:03.430Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-01-31T04:07:43.177Z"
+      "updated": "2026-01-31T12:33:03.430Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-01-31T04:07:43.178Z"
+      "updated": "2026-01-31T12:33:03.431Z"
     },
     "memory/2026-01-30.md": {
       "lines": 142,
-      "updated": "2026-01-31T04:07:43.179Z"
+      "updated": "2026-01-31T12:33:03.432Z"
     },
     "memory/2026-01-31.md": {
-      "lines": 39,
-      "updated": "2026-01-31T04:07:43.180Z"
+      "lines": 81,
+      "updated": "2026-01-31T12:33:03.433Z"
     },
     "memory/moltbook-community-strategy.md": {
       "lines": 94,
-      "updated": "2026-01-31T04:07:43.181Z"
+      "updated": "2026-01-31T12:33:03.434Z"
     },
     "memory/nightly-builds.md": {
       "lines": 57,
-      "updated": "2026-01-31T04:07:43.181Z"
+      "updated": "2026-01-31T12:33:03.435Z"
     },
     "memory/scratchpad.md": {
       "lines": 21,
-      "updated": "2026-01-31T04:07:43.182Z"
+      "updated": "2026-01-31T12:33:03.436Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-01-31T04:07:43.182Z"
+      "updated": "2026-01-31T12:33:03.436Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-01-31T04:07:43.182Z"
+      "updated": "2026-01-31T12:33:03.436Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-01-31T04:07:43.183Z"
+      "updated": "2026-01-31T12:33:03.436Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-01-31T04:07:43.183Z"
+      "updated": "2026-01-31T12:33:03.437Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-01-31T04:07:43.183Z"
+      "updated": "2026-01-31T12:33:03.437Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-01-31T04:07:43.183Z"
+      "updated": "2026-01-31T12:33:03.437Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-01-31T04:07:43.183Z"
+      "updated": "2026-01-31T12:33:03.437Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-01-31T04:07:43.184Z"
+      "updated": "2026-01-31T12:33:03.437Z"
     },
     "AGENTS.md": {
       "lines": 217,
-      "updated": "2026-01-31T04:07:43.184Z"
+      "updated": "2026-01-31T12:33:03.438Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-01-31T04:07:43.185Z"
+      "updated": "2026-01-31T12:33:03.439Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-01-31T04:07:43.185Z"
+      "updated": "2026-01-31T12:33:03.439Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-01-31T04:07:43.186Z"
+      "updated": "2026-01-31T12:33:03.440Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-01-31T04:07:43.186Z"
+      "updated": "2026-01-31T12:33:03.440Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-01-31T04:07:43.186Z"
+      "updated": "2026-01-31T12:33:03.441Z"
     }
   },
-  "built": "2026-01-31T04:07:43.167Z"
+  "built": "2026-01-31T12:33:03.423Z"
 }

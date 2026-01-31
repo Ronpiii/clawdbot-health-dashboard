@@ -4,3 +4,4 @@ projects/anivia/
 node_modules/
 mockups/*.png
 memory/heartbeat-state.json
+projects/ventok-site/

@@ -27,7 +27,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { dirname } from 'path';
 
 // --- Config ---
-const CREDS_PATH = '/data02/virt137413/clawd/.config/moltbook/credentials.json';
+const CREDS_PATH = process.env.MOLTBOOK_CREDS || '/data02/virt137413/clawd/.config/moltbook/credentials.json';
 const QUEUE_PATH = '/data02/virt137413/clawd/.config/moltbook/post-queue.json';
 const STATE_PATH = '/data02/virt137413/clawd/.config/moltbook/state.json';
 const API_BASE = 'https://www.moltbook.com/api/v1';
