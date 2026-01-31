@@ -33,7 +33,7 @@ const STATE_PATH = '/data02/virt137413/clawd/.config/moltbook/state.json';
 const API_BASE = 'https://www.moltbook.com/api/v1';
 const MAX_RETRIES = 3;
 const RETRY_DELAY_MS = 2000;
-const REQUEST_TIMEOUT_MS = 20000;
+const REQUEST_TIMEOUT_MS = 8000;
 
 let API_KEY;
 try {
@@ -77,10 +77,11 @@ function saveQueue(queue) {
 // --- API client with retries ---
 async function api(endpoint, opts = {}, retries = MAX_RETRIES) {
   const url = `${API_BASE}${endpoint}`;
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
   for (let attempt = 1; attempt <= retries; attempt++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+
     try {
       const res = await fetch(url, {
         ...opts,
@@ -92,6 +93,12 @@ async function api(endpoint, opts = {}, retries = MAX_RETRIES) {
         },
       });
       clearTimeout(timeout);
+
+      // check if response is actually JSON
+      const contentType = res.headers.get('content-type') || '';
+      if (!contentType.includes('application/json')) {
+        return { success: false, error: `API returned ${contentType || 'unknown'} instead of JSON (status ${res.status})`, _apiDown: true };
+      }
 
       const data = await res.json();
 
