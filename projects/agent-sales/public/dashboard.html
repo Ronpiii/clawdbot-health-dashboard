@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Sales — Approval Dashboard</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12131a;
+      --surface2: #1a1b25;
+      --border: #2a2b3a;
+      --text: #e4e4e7;
+      --text-dim: #71717a;
+      --accent: #3b82f6;
+      --success: #22c55e;
+      --warning: #eab308;
+      --danger: #ef4444;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    
+    .header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--accent), #8b5cf6);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    
+    .stats-bar {
+      display: flex;
+      gap: 24px;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .stat-value.pending { color: var(--warning); }
+    .stat-value.approved { color: var(--success); }
+    .stat-value.deals { color: var(--accent); }
+    
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 24px;
+      padding: 24px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .card-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .card-title {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .badge {
+      padding: 4px 10px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    
+    .badge-warning { background: rgba(234, 179, 8, 0.15); color: var(--warning); }
+    .badge-success { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+    .badge-danger { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
+    .badge-info { background: rgba(59, 130, 246, 0.15); color: var(--accent); }
+    
+    .approval-list {
+      max-height: 600px;
+      overflow-y: auto;
+    }
+    
+    .approval-item {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    
+    .approval-item:last-child { border-bottom: none; }
+    
+    .approval-checkbox {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      accent-color: var(--accent);
+    }
+    
+    .approval-content {
+      flex: 1;
+    }
+    
+    .approval-type {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    
+    .approval-action {
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    
+    .approval-details {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+    
+    .approval-confidence {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    
+    .confidence-bar {
+      flex: 1;
+      height: 4px;
+      background: var(--surface2);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    
+    .confidence-fill {
+      height: 100%;
+      border-radius: 2px;
+    }
+    
+    .confidence-fill.high { background: var(--success); }
+    .confidence-fill.medium { background: var(--warning); }
+    .confidence-fill.low { background: var(--danger); }
+    
+    .confidence-label {
+      font-size: 11px;
+      color: var(--text-dim);
+      min-width: 40px;
+    }
+    
+    .actions {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .btn {
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-approve {
+      background: var(--success);
+      color: white;
+    }
+    
+    .btn-reject {
+      background: var(--surface2);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    
+    .btn-approve:hover { filter: brightness(1.1); }
+    .btn-reject:hover { background: var(--danger); border-color: var(--danger); }
+    
+    .batch-actions {
+      padding: 16px 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+    
+    .btn-batch {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+    
+    /* Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .pipeline-stage {
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .pipeline-stage:last-child { border-bottom: none; }
+    
+    .stage-name {
+      font-size: 13px;
+    }
+    
+    .stage-value {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .activity-list {
+      padding: 16px;
+    }
+    
+    .activity-item {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    
+    .activity-item:last-child { border-bottom: none; }
+    
+    .activity-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      background: var(--surface2);
+    }
+    
+    .activity-text {
+      flex: 1;
+      line-height: 1.4;
+    }
+    
+    .activity-time {
+      color: var(--text-dim);
+      font-size: 11px;
+    }
+    
+    .empty-state {
+      padding: 40px;
+      text-align: center;
+      color: var(--text-dim);
+    }
+    
+    .empty-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <div class="logo-icon">⌁</div>
+      <span>Agent Sales</span>
+    </div>
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-value pending" id="pending-count">--</div>
+        <div class="stat-label">Pending</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value approved" id="approved-today">--</div>
+        <div class="stat-label">Approved Today</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value deals" id="total-pipeline">--</div>
+        <div class="stat-label">Pipeline Value</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Pending Approvals</div>
+        <span class="badge badge-warning" id="approval-badge">Loading...</span>
+      </div>
+      <div class="approval-list" id="approval-list">
+        <div class="empty-state">
+          <div class="empty-icon">⏳</div>
+          <p>Loading approvals...</p>
+        </div>
+      </div>
+      <div class="batch-actions">
+        <button class="btn btn-reject btn-batch" onclick="batchReject()">Reject Selected</button>
+        <button class="btn btn-approve btn-batch" onclick="batchApprove()">Approve Selected</button>
+      </div>
+    </div>
+    
+    <div class="sidebar">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Pipeline</div>
+        </div>
+        <div id="pipeline-stages">
+          <div class="pipeline-stage">
+            <span class="stage-name">Loading...</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Recent Activity</div>
+        </div>
+        <div class="activity-list" id="activity-list">
+          <div class="activity-item">
+            <div class="activity-text">Loading...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const API_KEY = localStorage.getItem('agent_sales_key') || prompt('Enter your API key:');
+    if (API_KEY) localStorage.setItem('agent_sales_key', API_KEY);
+    
+    const api = async (endpoint, opts = {}) => {
+      const res = await fetch(`/api/v1${endpoint}`, {
+        ...opts,
+        headers: {
+          'Authorization': `Bearer ${API_KEY}`,
+          'Content-Type': 'application/json',
+          ...(opts.headers || {}),
+        },
+        body: opts.body ? JSON.stringify(opts.body) : undefined,
+      });
+      return res.json();
+    };
+    
+    const formatMoney = (n) => '$' + (n || 0).toLocaleString();
+    
+    const confidenceClass = (c) => c >= 0.8 ? 'high' : c >= 0.5 ? 'medium' : 'low';
+    
+    const renderApprovals = (approvals) => {
+      const list = document.getElementById('approval-list');
+      const badge = document.getElementById('approval-badge');
+      
+      badge.textContent = `${approvals.length} items`;
+      
+      if (approvals.length === 0) {
+        list.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">✓</div>
+            <p>No pending approvals! Your agents are running smoothly.</p>
+          </div>
+        `;
+        return;
+      }
+      
+      list.innerHTML = approvals.map(a => `
+        <div class="approval-item" data-id="${a.id}">
+          <input type="checkbox" class="approval-checkbox" data-id="${a.id}">
+          <div class="approval-content">
+            <div class="approval-type">${a.type}</div>
+            <div class="approval-action">${a.action.replace(/_/g, ' ')}</div>
+            <div class="approval-details">
+              ${Object.entries(a.data || {}).map(([k, v]) => `<strong>${k}:</strong> ${v}`).join(' · ')}
+            </div>
+            <div class="approval-confidence">
+              <div class="confidence-bar">
+                <div class="confidence-fill ${confidenceClass(a.confidence)}" style="width: ${a.confidence * 100}%"></div>
+              </div>
+              <span class="confidence-label">${Math.round(a.confidence * 100)}%</span>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn btn-approve" onclick="approve('${a.id}')">Approve</button>
+            <button class="btn btn-reject" onclick="reject('${a.id}')">Reject</button>
+          </div>
+        </div>
+      `).join('');
+    };
+    
+    const renderPipeline = (stats) => {
+      const stages = document.getElementById('pipeline-stages');
+      const stageOrder = ['prospecting', 'qualified', 'proposal', 'negotiation', 'closed_won', 'closed_lost'];
+      const stageLabels = {
+        prospecting: 'Prospecting',
+        qualified: 'Qualified',
+        proposal: 'Proposal',
+        negotiation: 'Negotiation',
+        closed_won: 'Closed Won',
+        closed_lost: 'Closed Lost'
+      };
+      
+      const byStage = {};
+      (stats || []).forEach(s => byStage[s.stage] = s);
+      
+      stages.innerHTML = stageOrder.map(stage => {
+        const data = byStage[stage] || { count: 0, value: 0 };
+        return `
+          <div class="pipeline-stage">
+            <span class="stage-name">${stageLabels[stage]} (${data.count})</span>
+            <span class="stage-value">${formatMoney(data.value)}</span>
+          </div>
+        `;
+      }).join('');
+    };
+    
+    const renderActivity = (activity) => {
+      const list = document.getElementById('activity-list');
+      const icons = {
+        create_lead: '➕',
+        update_lead: '✏️',
+        enrich_lead: '🔍',
+        enroll_lead: '📧',
+        move_stage: '➡️',
+        approve: '✓',
+        reject: '✗',
+      };
+      
+      list.innerHTML = (activity || []).slice(0, 10).map(a => `
+        <div class="activity-item">
+          <div class="activity-icon">${icons[a.action] || '•'}</div>
+          <div class="activity-text">
+            ${a.action.replace(/_/g, ' ')}
+            <div class="activity-time">${new Date(a.created_at).toLocaleTimeString()}</div>
+          </div>
+        </div>
+      `).join('');
+    };
+    
+    const loadData = async () => {
+      const [approvals, stats, activity] = await Promise.all([
+        api('/approvals?status=pending'),
+        api('/stats'),
+        api('/activity?limit=10'),
+      ]);
+      
+      document.getElementById('pending-count').textContent = stats.totals?.pending_approvals || 0;
+      document.getElementById('total-pipeline').textContent = formatMoney(
+        (stats.pipeline || []).reduce((s, p) => s + (p.value || 0), 0)
+      );
+      
+      renderApprovals(approvals.approvals || []);
+      renderPipeline(stats.pipeline);
+      renderActivity(activity.activity);
+    };
+    
+    const approve = async (id) => {
+      await api(`/approvals/${id}/approve`, { method: 'POST', body: {} });
+      loadData();
+    };
+    
+    const reject = async (id) => {
+      await api(`/approvals/${id}/reject`, { method: 'POST', body: {} });
+      loadData();
+    };
+    
+    const getSelected = () => 
+      [...document.querySelectorAll('.approval-checkbox:checked')].map(c => c.dataset.id);
+    
+    const batchApprove = async () => {
+      const ids = getSelected();
+      if (ids.length === 0) return alert('Select items first');
+      await api('/approvals/batch', { method: 'POST', body: { approve: ids } });
+      loadData();
+    };
+    
+    const batchReject = async () => {
+      const ids = getSelected();
+      if (ids.length === 0) return alert('Select items first');
+      await api('/approvals/batch', { method: 'POST', body: { reject: ids } });
+      loadData();
+    };
+    
+    loadData();
+    setInterval(loadData, 30000); // Refresh every 30s
+  </script>
+</body>
+</html>
