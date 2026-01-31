@@ -3,3 +3,4 @@ projects/anivia/
 .config/
 node_modules/
 mockups/*.png
+memory/heartbeat-state.json
