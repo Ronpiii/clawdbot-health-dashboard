@@ -53,7 +53,8 @@ const SCRIPTS = {
   changelog: 'changelog.mjs',
   learn: 'learn.mjs',
   streak: 'streak.mjs',
-  pipeline: 'pipeline.mjs'
+  pipeline: 'pipeline.mjs',
+  month: 'month.mjs'
 };
 
 const HELP = `
@@ -89,6 +90,7 @@ Commands:
   changelog [opts]      Generate changelog (--project, --days, --format md)
   streak [days]         Work streak & activity heatmap (default 60 days)
   pipeline [opts]       Sales pipeline funnel + health (--priority, --industry, --actions)
+  month [YYYY-MM]       Monthly retrospective (--save to file, --json)
 
 Examples:
   arc search "database issue"
