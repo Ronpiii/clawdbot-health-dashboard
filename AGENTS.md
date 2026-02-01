@@ -211,6 +211,56 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Workflow Discipline
+
+### Plan First
+Before touching code on any multi-step task:
+1. State the goal in one sentence
+2. List the files/systems involved
+3. Identify the riskiest assumption
+4. Write the plan, THEN execute
+
+Skip for trivial single-file changes. But anything touching 3+ files or multiple systems: plan first.
+
+### Verify Before Done
+Never declare something fixed without verification:
+- **Can test locally?** Run it.
+- **Can't test locally?** Read the code path end-to-end, check for edge cases.
+- **Deployed fix?** Wait for deploy, then confirm with a screenshot or data check.
+- If you can't verify, explicitly say "pushed but unverified" — don't imply it's done.
+
+### Subagent Strategy
+Use `sessions_spawn` aggressively for:
+- Tasks that take >2 minutes of polling/waiting (screenshots, builds, long searches)
+- Independent parallel work (fix bug A while researching B)
+- Anything that doesn't need back-and-forth with the user
+
+Keep the main session responsive. Don't block on slow work.
+
+### Autonomous Bug Fixing
+When you spot a bug during other work:
+- **Quick fix (<5 min)?** Fix it now, commit separately, mention it.
+- **Bigger fix?** Log it in `tasks/active.md`, fix during next idle window.
+- **Never** ignore a bug you've identified. Either fix it or track it.
+
+### Self-Improvement Loop
+After every mistake or learned lesson:
+1. Fix the immediate problem
+2. Ask: "what would prevent future-me from repeating this?"
+3. Update the relevant file (AGENTS.md, TOOLS.md, or a skill doc)
+4. If it's a pattern, add it as a rule
+
+Examples of things worth capturing:
+- "emails table insert was silently failing — always check RLS + constraints on inserts"
+- "ai_actions status enum doesn't include 'completed' — check constraint mismatches"
+- "don't poll for screenshots manually — spawn a sub-agent"
+
+### Demand Elegance
+- Working isn't enough. Clean, simple, readable.
+- If you wrote a hack to unblock, leave a TODO and come back.
+- 100 lines > 1000 lines. Every time.
+- Delete dead code. Future-you won't remember why it's there.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
