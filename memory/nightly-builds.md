@@ -18,6 +18,13 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-01: Monthly Retrospective
+**What:** `arc month` — generates structured month-in-review from daily logs + git history
+**Features:** calendar-month aware, activity heatmap (Mon-Sun grid with intensity blocks), git stats (commits/lines/busiest day), auto-extracts tools built, content published, key decisions, lessons learned, collaborators, most touched files
+**Flags:** `--save` (save to `memory/monthly/YYYY-MM.md`), `--json` (machine-readable), `YYYY-MM` (specific month)
+**First run:** January 2026 report — 371 commits, +601k/-145k lines, 8 days logged, 6 projects, 30 lessons captured
+**Why:** It's Feb 1. Perfect timing. Ron wakes up to a full month-in-review he didn't ask for. The kind of thing you wish you had but never build yourself.
+
 ### 2026-01-31: Sales Pipeline CLI
 **What:** `arc pipeline` — visual sales pipeline viewer for ventok
 **Features:** ASCII funnel by stage, priority bars, industry clusters (--industry), next actions (ready to contact / needs email / going stale), pipeline health score (0-100) with actionable suggestions
