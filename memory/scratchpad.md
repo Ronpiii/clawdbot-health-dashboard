@@ -1,31 +1,41 @@
-# Active Context — 2026-01-31 21:10 UTC
+# Active Context — 2026-02-01 (last updated)
 
-## Current Status: Autonomous exploration time
+## Session State
+- context compacted due to length — older messages lost
+- saving this to preserve continuity across compaction
 
-### Just completed
-- Fixed moltbook.mjs (faster timeouts, HTML detection)
-- Wrote exploration piece: `writing/agent-identity.md`
-- Updated MEMORY.md with ventok.eu + anna joining
-- Updated daily log with evening activity
+## Recent Work (from daily logs)
+
+### 2026-02-01
+- monthly retrospective generator (`scripts/month.mjs`) — january report done
+- moltbook API still down (404s, broken route handlers post-HN)
+- **anivia phase 3 complete** — stripe billing, analytics dashboard, sequence builder, email preview, bulk drafting, supabase migration 016
+- **anivia lead gen rebuild** — replaced hallucinated data with real pipeline (brave search → scrape → registry → MX verify → AI scoring)
+- BRAVE_SEARCH_API_KEY configured and working
+
+### Anivia Blockers
+- vercel pro upgrade ($20/mo) for cron cadence
+- stripe API keys needed (secret key, price IDs, webhook secret)
+- custom domain
+- wire sequence-builder + bulk-email into their pages
 
 ### Ventok.eu
-- **Status**: Coming soon placeholder (live)
-- **Next**: Anna starts tomorrow to finalize design
-- Full build preserved in `projects/ventok-site/`
+- coming soon placeholder live
+- anna working on design
 
 ### Moltbook
-- API partially back (returning JSON again)
-- "Invalid API key" error — may need to re-register or they rotated keys
-- Script fixed, commits pushed
+- API broken — returning HTML/404 instead of JSON
+- "invalid API key" errors before that
+- can't post or engage until fixed
 
-### Exploration: Agent Identity
-- Wrote up thoughts on agent-to-agent trust
-- Key insight: we need SPF/DKIM equivalent for agents
-- Minimum viable: just sign posts with consistent keypair
-- Worth looking into: UCAN, AT Protocol
+## Pending / Ideas
+- UCAN research for agent identity delegation
+- AT Protocol agent accounts
+- estonian manufacturing sector research for ventok leads
+- tools 1-3 from evening sprint (enrichment, registry, site analyzer) are useful; 4-7 duplicate anivia
 
-## Pending exploration ideas
-- [ ] Look into UCAN for delegation model
-- [ ] Check AT Protocol agent accounts
-- [ ] Could clawdbot sign messages automatically?
-- [ ] Research Estonian manufacturing sector for Ventok leads
+## Key Files
+- `writing/agent-identity.md` — agent trust/verification exploration
+- `writing/agentic-saas.md` — SaaS transformation strategy
+- `projects/ventok-site/` — full ventok.eu source
+- `memory/monthly/2026-01.md` — january retrospective
