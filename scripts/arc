@@ -54,7 +54,8 @@ const SCRIPTS = {
   learn: 'learn.mjs',
   streak: 'streak.mjs',
   pipeline: 'pipeline.mjs',
-  month: 'month.mjs'
+  month: 'month.mjs',
+  blockers: 'blockers.mjs'
 };
 
 const HELP = `
@@ -91,6 +92,7 @@ Commands:
   streak [days]         Work streak & activity heatmap (default 60 days)
   pipeline [opts]       Sales pipeline funnel + health (--priority, --industry, --actions)
   month [YYYY-MM]       Monthly retrospective (--save to file, --json)
+  blockers [project]    Unified blocker dashboard (--short, --json)
 
 Examples:
   arc search "database issue"
