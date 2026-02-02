@@ -10,6 +10,10 @@ run `node scripts/status.mjs` for workspace overview (git, tasks, memory)
 - if significant telegram activity since last heartbeat, post summary to discord #logs
 - webhook: `https://discord.com/api/webhooks/1464653461915435049/nVhGT0f9Snavdcnc9SyUFYIiCLM2LlP68Z2y6GFTrcAosYVpBTRV12rm_gJDOGLf-ygj`
 
+## anivia sequence check (every heartbeat)
+- [ ] run `cd projects/anivia && node --env-file=.env.local scripts/advance-sequences.mjs` to advance wait steps
+- only log output if something actually advanced
+
 ## rotate checks (2-4x daily)
 - [ ] git status — uncommitted changes? push if stable
 - [ ] tasks/active.md — anything unblocked?
