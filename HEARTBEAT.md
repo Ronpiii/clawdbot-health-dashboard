@@ -23,6 +23,12 @@ run `node scripts/status.mjs` for workspace overview (git, tasks, memory)
 ## morning ritual (first heartbeat after 06:00 tallinn / 04:00 UTC)
 - **curiosity drop**: share one cool thing learned from night exploration
 - can be tech, dog stuff, random rabbit hole — whatever's interesting
+- **reddit pulse**: scan relevant subreddits for fresh discussions, save to `memory/reddit/YYYY-MM-DD.md`
+  - subreddits: r/sales, r/coldoutreach, r/SaaS, r/smallbusiness, r/Emailmarketing, r/EntrepreneurRideAlong
+  - topics: cold email tools, AI sales, outreach strategies, deliverability, pricing, estonian/EU startup stuff
+  - look for: pain points, tool recommendations, feature requests, market shifts, good ideas
+  - share highlights with ron if anything interesting — don't just file it silently
+  - search queries: "cold email", "outreach tool", "sales automation", "AI sales", "email deliverability"
 
 ## proactive work (if idle)
 - explore something curious (night time especially)
