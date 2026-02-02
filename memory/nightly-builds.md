@@ -18,6 +18,14 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-02: Blocker Dashboard
+**What:** `arc blockers` — unified blocker tracker across all projects
+**Scans:** markdown files in workspace for blocked/waiting/missing/stuck items
+**Features:** severity ranking (critical/high/medium), project grouping, source file + line + section context, auto-skips prose directories (writing/research/marketing), boosts items from tasks/active.md
+**Flags:** `--short` (one-liner per blocker), `--json` (machine-readable), `<project>` (filter to one project)
+**Current state:** 9 real blockers across 2 projects — vercel pro upgrade is the top critical blocker
+**Why:** ron has multiple projects with scattered blockers in different files. now they surface in one command. the kind of thing you run monday morning before deciding what to unblock.
+
 ### 2026-02-01: Monthly Retrospective
 **What:** `arc month` — generates structured month-in-review from daily logs + git history
 **Features:** calendar-month aware, activity heatmap (Mon-Sun grid with intensity blocks), git stats (commits/lines/busiest day), auto-extracts tools built, content published, key decisions, lessons learned, collaborators, most touched files
