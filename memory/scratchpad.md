@@ -1,64 +1,51 @@
-# Scratchpad - Session Context (2026-02-02)
+# Scratchpad - Session Context (2026-02-03)
 
-## Active Project: Anivia (Sales CRM)
+## Active Projects
+
+### Collabo (PM Tool) — primary focus today
+Location: `projects/collabo/`
+Repo: Ronpiii/collabo (github)
+Stack: Next.js 16 + React 19 + Supabase + Tailwind
+
+**What happened:**
+- Ron asked to research, audit, and fix collabo
+- Full codebase audit done (154 files)
+- Agency model: workspaces → clients → projects → tasks (strong differentiator)
+- Created TASKS.md with 90 items across 4 phases
+- Phase 1 (health) fixes completed:
+  - ERR-1: error toasts on inbox + task-overview pages
+  - PERF-1: N+1 query fix (4 queries → 1 nested select)
+  - SEC-3: rate limiting on auth endpoints (10 req/min per IP)
+  - LINT-1: replaced all <img> with next/image (5 files)
+  - Error boundary theme colors fixed
+  - next.config.ts configured for supabase remote images
+- Phase 1 at 45%, overall at 12%
+
+**Phases:**
+1. Health (security, errors, perf, tests) — 22 items
+2. Core features (kanban, realtime, shortcuts, recurring) — 28 items
+3. Growth (gantt, automations, guests, reporting) — 27 items
+4. Polish (landing, AI, mobile) — 13 items
+
+### Anivia (Sales CRM)
 Location: `projects/anivia/`
+- Ongoing project, yesterday was heavy sprint
+- See memory/2026-02-02.md for full context
 
-## Recent Work This Session
-
-### UI/UX Improvements
-- **Loading animations → progress bars**: replaced Loader2 spinners with animated progress bars for initial page loads
-- **Sequence builder wizard**: new modal replaces step-by-step editing — template selection → visual builder with all steps inline
-- **Leads page stage filter**: changed from dropdown to horizontal tabs (All | New | Contacted | Proposal | Won | Lost)
-- **Campaign edit**: added Edit option in dropdown menu
-- **Removed thumbs up button** from lead detail (keep thumbs down for disqualify)
-- **Company size multi-select**: lead gen modal now has checkboxes instead of single select
-
-### Lead Generation Improvements
-- **Estonian Business Registry integration**: new module `src/lib/enrichment/estonian-registry.ts`
-  - Uses official ariregister.rik.ee API (free, no key needed)
-  - Searches by EMTAK industry codes
-  - Gets board member names as contacts
-  - Primary source for Estonian searches now
-- **Apollo improvements**: multi-page fetching, industry tag mapping, broader fallback
-- **TLD filtering**: rejects wrong-country domains (.fi for Estonia search, etc)
-- **Light enrichment upgraded**: now scrapes homepage for emails, tries multiple prefixes
-
-### Email Scheduling Feature (NEW)
-- **Schedule for morning button**: clock icon in approval queue
-- **Keyboard shortcut**: S
-- **Cron job**: runs at 6:00 UTC (8:00 Tallinn) to send scheduled emails
-- **Migration 027**: adds `scheduled_for` column + `scheduled` status
-- **Migration fix needed**: existing data has `completed` and `pendign` statuses that need cleanup first
-
-### Bug Fixes
-- Duplicate enrollment error: now shows "One or more leads are already enrolled in this sequence"
-- Campaign sequences empty: was querying non-existent `enrolled_count` column
-- Step editor generate: no longer overwrites user-written AI instructions
-
-## Pending Migration (027)
-Ron needs to run this after fixing existing data:
-```sql
--- Fix existing data first
-UPDATE ai_actions SET status = 'pending' WHERE status = 'pendign';
-UPDATE ai_actions SET status = 'executed' WHERE status = 'completed';
-
--- Then the migration
-ALTER TABLE ai_actions ADD COLUMN IF NOT EXISTS scheduled_for TIMESTAMPTZ;
-ALTER TABLE ai_actions DROP CONSTRAINT IF EXISTS ai_actions_status_check;
-ALTER TABLE ai_actions ADD CONSTRAINT ai_actions_status_check 
-  CHECK (status IN ('pending', 'approved', 'rejected', 'executed', 'failed', 'scheduled'));
-CREATE INDEX IF NOT EXISTS idx_ai_actions_scheduled 
-  ON ai_actions(scheduled_for) WHERE status = 'scheduled' AND scheduled_for IS NOT NULL;
-```
-
-## Anivia Blockers (from earlier)
+## Anivia Blockers (carried over)
 - Vercel Pro upgrade needed for sub-daily crons ($20/mo)
 - Stripe API keys for billing
 - Custom domain
 - CRON_SECRET in Vercel env vars
+- Migration 027 pending (email scheduling)
 
-## Ron's Preferences (noted)
+## Nightly Build
+- arc git multi-repo dashboard built and working
+- 6 repos found, 4 dirty
+
+## Ron's Preferences (persistent)
 - Hates generic/template icons — prefers minimal or none
 - Prefers tabs over dropdowns for filtering
-- Wants wizard-style flows (like onboarding) for complex forms
+- Wants wizard-style flows for complex forms
 - User-friendly error messages, not raw DB errors
+- Values depth, concrete specs, push-back on weak ideas
