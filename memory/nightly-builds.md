@@ -18,6 +18,15 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-03: Multi-Repo Git Dashboard
+**What:** `arc git` — one command to see git status across all workspace repos
+**Scans:** all `.git` directories up to 3 levels deep (currently 6 repos: clawd, anivia, context-memory, ventok-site, discord-voice-bot, context-memory/api)
+**Shows:** branch, uncommitted changes (staged/modified/untracked), unpushed commits, last commit (message + author + age), stale branch warnings (>14 days), missing upstream detection
+**Features:** dirty repos sorted first, action items at bottom, color-coded status icons (● dirty, ▲ unpushed, ✓ clean, ○ no remote)
+**Flags:** `--short` (one-liner per repo), `--json` (machine-readable), `<repo>` (filter by name)
+**Aliases:** `arc git`, `arc repos`
+**Why:** ron manages 5+ repos across projects. morning workflow = `arc git` to see what needs pushing, committing, or cleaning. the kind of command you run before your first coffee.
+
 ### 2026-02-02: Blocker Dashboard
 **What:** `arc blockers` — unified blocker tracker across all projects
 **Scans:** markdown files in workspace for blocked/waiting/missing/stuck items
