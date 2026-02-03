@@ -1,44 +1,51 @@
-# Scratchpad - Context Preservation
+# Scratchpad — Active Context
 
-## Session Context (2026-02-03)
+## Current Date
+2026-02-03
 
-### Active Projects
+## Active Projects
 
-**Collabo (PM Tool)**
-- repo: Ronpiii/collabo
-- stack: next.js 16 + react 19 + supabase + tailwind
-- progress: phase 2 at 86%, phase 3 at 52%, overall at 62% (60/97 items)
-- recent work: automation rules, guest access, webhooks, mobile touch
-- TASKS.md has full 90-item breakdown across 4 phases
+### Collabo (PM Tool)
+- **repo**: Ronpiii/collabo
+- **status**: 82% complete (80/97 items)
+- **phase breakdown**:
+  - phase 1 (health): 68% — testing/TS/perf remaining
+  - phase 2 (core): 97% — swimlanes remaining
+  - phase 3 (growth): 93% — email inbound, integrations, swipe gestures
+  - phase 4 (polish): 46% — demo workspace, sample project, branding
+- **last commit**: 6ca4c34 (onboarding tour)
+- **remaining**: see projects/collabo/TASKS.md for full breakdown
+- **ron greenlit autonomous work** — can continue without asking
 
-**Anivia (Sales Automation)**
-- email scheduling feature in progress
-- migration 027 pending (needs status cleanup first)
-- crons configured but need vercel pro upgrade
-- Estonian Business Registry integration added
+### Anivia (Sales Tool)
+- **repo**: projects/anivia
+- **recent work**: 
+  - AI sequence generation
+  - campaigns feature (full CRUD)
+  - email scheduling (8:00 Tallinn)
+  - Estonian Business Registry integration
+  - unsubscribe/opt-out handling
+- **pending for ron**:
+  - migration 027 (needs status cleanup first)
+  - CRON_SECRET in vercel env
+  - vercel pro upgrade
+  - stripe keys
 
-### Recent Decisions
-- ron trusts autonomous work on collabo
-- ron hates template/generic icons — wants custom or none
+## Known Issues
+- sub-agents don't actually execute tools (clawdbot bug) — do file work in main session
+- vercel free tier blocks sub-daily crons
+
+## Ron Preferences (recent)
+- hates template/generic icons — wants custom or none
 - prefers minimal, clean UI over icon-heavy
-- AI generation as first-class feature
+- wants AI generation as first-class feature
+- likes workspace/dashboard feel for detail pages
+- writing: specific, concise, no corporate fluff
 
-### Pending for Ron
-- vercel pro upgrade ($20/mo) for frequent crons
-- stripe keys for billing
-- run migration 027 after status cleanup
-- custom domain setup
+## Habits
+- morning reddit pulse (r/sales, r/coldoutreach, r/SaaS, etc.)
+- curiosity drop on first morning heartbeat
+- cross-post significant activity to discord #logs
 
-### Known Issues
-- sessions_spawn sub-agents don't actually execute tools (clawdbot bug)
-- workaround: do file-writing in main session
-- morning.mjs wttr.in timeout issue
-
-### Tools/Scripts
-- `./scripts/arc` — unified CLI for workspace ops
-- `scripts/git-repos.mjs` — multi-repo dashboard
-- `scripts/blockers.mjs` — blocker scanner
-- discord webhooks configured for #logs and #tasks
-
----
-*Last updated: 2026-02-03 ~10:45 UTC*
+## Recent Conversation Topics
+(session compacted — context lost)
