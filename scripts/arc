@@ -57,7 +57,8 @@ const SCRIPTS = {
   month: 'month.mjs',
   blockers: 'blockers.mjs',
   git: 'git-repos.mjs',
-  deps: 'deps-check.mjs'
+  deps: 'deps-check.mjs',
+  wins: 'wins.mjs'
 };
 
 const HELP = `
@@ -97,6 +98,7 @@ Commands:
   blockers [project]    Unified blocker dashboard (--short, --json)
   git [repo]            Multi-repo git dashboard (--short, --json)
   deps [project]        Dependency health dashboard (--short, --json)
+  wins [days]           Recent accomplishments (--week, --project, --json)
 
 Examples:
   arc search "database issue"
@@ -270,6 +272,11 @@ switch (cmd) {
   case 'deps':
   case 'dependencies':
     run(SCRIPTS.deps, args);
+    break;
+
+  case 'wins':
+  case 'achievements':
+    run(SCRIPTS.wins, args);
     break;
 
   default:

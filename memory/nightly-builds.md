@@ -18,6 +18,15 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-04: Wins Tracker
+**What:** `arc wins` — extract recent accomplishments from daily logs
+**Scans:** memory/*.md files for completed work, shipped features, task codes
+**Detects:** `### feature — description` headers, `**bold** — desc` bullets, ERR-/PERF-/SEC- task codes, [x] checked items
+**Features:** categorizes by type (feature/fix/ship/improve/docs), detects projects, deduplicates similar wins, importance ranking (high/medium/low)
+**Flags:** `--week` (group by week), `--project` (group by project), `--json`, `--verbose` (show all)
+**Stats:** total count, breakdown by project & type, motivational closer
+**Why:** easy to forget what you've accomplished. run `arc wins` before standups, when feeling stuck, or just to remember you're making progress. morale boost via CLI.
+
 ### 2026-02-03: Multi-Repo Git Dashboard
 **What:** `arc git` — one command to see git status across all workspace repos
 **Scans:** all `.git` directories up to 3 levels deep (currently 6 repos: clawd, anivia, context-memory, ventok-site, discord-voice-bot, context-memory/api)
