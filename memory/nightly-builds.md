@@ -18,6 +18,18 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-05: Workspace Health Dashboard
+**What:** `arc health` — unified health check across all workspace systems
+**Combines:** memory coverage, git hygiene, task velocity, project activity
+**Metrics:**
+- Memory: days logged this month, coverage %, current streak, total logs
+- Git: dirty repos, unpushed commits, stale repos (>14 days)
+- Tasks: open/done/blocked counts, velocity (completion %)
+- Projects: active (≤7d), stale (>30d), recent activity list
+**Features:** weighted overall score (0-100), progress bars, color-coded health levels (💚💛🟠🔴), actionable recommendations, motivational closers
+**Flags:** `--short` (one-liner summary), `--json` (machine-readable)
+**Why:** Ron has `arc git`, `arc wins`, `arc blockers` — but no single command to see "am I keeping up with my systems?" Now there is. Run it every morning with coffee.
+
 ### 2026-02-04: Wins Tracker
 **What:** `arc wins` — extract recent accomplishments from daily logs
 **Scans:** memory/*.md files for completed work, shipped features, task codes
