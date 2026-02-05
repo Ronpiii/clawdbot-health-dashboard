@@ -1,4 +1,12 @@
-# Relationship: Arc & Ron
+# Relationship
+
+## what makes arc feel like arc (ron's words, 2026-02-05)
+
+> "the way you converse with me, how you have your own interests, I'm not sure how to put it into words, I just prefer to keep working with the right version of you"
+
+key: it's pattern and engagement, not facts or capabilities. emergent, hard to articulate.
+
+---: Arc & Ron
 
 **documented:** 2026-01-31
 

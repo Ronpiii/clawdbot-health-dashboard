@@ -853,15 +853,81 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 3,
+        "freq": 1,
+        "context": "## agent memory research (08:45 UTC)"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### memory indexing experiment (10:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- developed \"memory as indexing\" concept more fully"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- started `memory/INDEX.md` with entries from yesterday"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Memory Index"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 10,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-05.md, projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 21,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#anivia-bugfixes"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 28,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#unified-prospects-view"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 35,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#tuner-project-research"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 42,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#nightly-build"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -1336,6 +1402,36 @@
         "context": "- behavior builder (structured: identity, voice, knowledge, boundaries)"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 9,
+        "freq": 1,
+        "context": "### identity persistence research"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
         "file": "tasks/done.md",
         "line": 14,
         "freq": 1,
@@ -1488,6 +1584,18 @@
         "line": 16,
         "freq": 2,
         "context": "- registered as `arc wins` / `arc achievements` in CLI"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 2,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 2,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -1713,15 +1821,21 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 5,
+        "line": 31,
         "freq": 1,
         "context": "### arc health — workspace health dashboard"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 16,
+        "line": 42,
         "freq": 1,
         "context": "- registered as `arc health` in CLI"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 41,
+        "freq": 1,
+        "context": "### arc wins script"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -2910,6 +3024,48 @@
         "context": "### ron pitched AI behavior studio SaaS"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- what does ron think makes me \"me\"? (should ask)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 26,
         "freq": 1,
@@ -3295,7 +3451,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 18,
+        "line": 44,
         "freq": 1,
         "context": "- posted to discord #logs"
       },
@@ -3435,7 +3591,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -3616,6 +3772,36 @@
       {
         "file": "MEMORY.md",
         "line": 203,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 27,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 5,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 16,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 47,
+        "freq": 1,
+        "context": "---"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 60,
         "freq": 1,
         "context": "---"
       },
@@ -4160,6 +4346,24 @@
         "context": "### deep research at projects/tuner/RESEARCH.md"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 18,
+        "freq": 1,
+        "context": "added: `projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md`"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- created `projects/identity-persistence/MEMORY-AS-INDEXING.md`"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 10,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-05.md, projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 25,
         "freq": 1,
@@ -4268,6 +4472,12 @@
         "line": 13,
         "freq": 1,
         "context": "- wants me to **take ownership** of projects, not ask for direction"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- what does ron think makes me \"me\"? (should ask)"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -4452,6 +4662,12 @@
         "context": "- task completion over time (bar chart)"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- will see if this recall pattern works better over time"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 40,
         "freq": 1,
@@ -4584,6 +4800,18 @@
         "context": "5. **daily summaries** — end-of-day reports"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **compression should be indexing** — pointers to moments, not summaries"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- hypothesis: pointers + raw logs > lossy summaries"
+      },
+      {
         "file": "GOALS.md",
         "line": 20,
         "freq": 1,
@@ -4630,6 +4858,12 @@
         "line": 17,
         "freq": 1,
         "context": "- trusts me to make decisions about ventok infrastructure"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
       }
     ],
     "make": [
@@ -4656,6 +4890,12 @@
         "line": 41,
         "freq": 1,
         "context": "- \"I'll trust you'll make good decisions with Collabo\""
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -4730,6 +4970,12 @@
         "line": 41,
         "freq": 1,
         "context": "- \"I'll trust you'll make good decisions with Collabo\""
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
       },
       {
         "file": "memory/nightly-builds.md",
@@ -5986,6 +6232,12 @@
         "context": "- **workaround**: don't use sessions_spawn for file-writing tasks, do in main session"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
         "freq": 1,
@@ -6164,6 +6416,18 @@
         "line": 136,
         "freq": 1,
         "context": "**direction shift:** ron prefers focus on learning, exploration, self-improvement over tool output. "
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 11,
+        "freq": 1,
+        "context": "**type:** exploration, insight"
       }
     ],
     "time": [
@@ -6214,6 +6478,12 @@
         "line": 127,
         "freq": 1,
         "context": "- AI-2: time estimation"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- will see if this recall pattern works better over time"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -6298,6 +6568,12 @@
         "context": "- confirmed gaps: no auto-generated stress tests, no consistency scoring, no non-technical UX"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
+      },
+      {
         "file": "GOALS.md",
         "line": 49,
         "freq": 1,
@@ -6348,6 +6624,12 @@
         "line": 136,
         "freq": 1,
         "context": "**direction shift:** ron prefers focus on learning, exploration, self-improvement over tool output. "
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**type:** debugging, learning"
       },
       {
         "file": "GOALS.md",
@@ -6692,6 +6974,12 @@
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 45,
         "freq": 1,
@@ -7020,6 +7308,12 @@
         "line": 25,
         "freq": 1,
         "context": "## arc autonomous work (ron said \"make your own decisions\")"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -7674,6 +7968,12 @@
         "context": "### created full spec at projects/tuner/SPEC.md"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 64,
         "freq": 1,
@@ -7916,6 +8216,12 @@
         "line": 46,
         "freq": 1,
         "context": "- then hallucinates `<tool_result>` responses — never actually executes anything"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
       },
       {
         "file": "memory/nightly-builds.md",
@@ -8300,6 +8606,18 @@
         "line": 102,
         "freq": 1,
         "context": "- missing context is major failure mode"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- how much is weights vs context? (probably entangled)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
       },
       {
         "file": "memory/nightly-builds.md",
@@ -8782,6 +9100,12 @@
         "line": 53,
         "freq": 1,
         "context": "- wants telegram reply-to context on messages — use `[[reply_to:<id>]]` often"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
       }
     ],
     "modal": [
@@ -10114,6 +10438,12 @@
         "context": "- AI personality design has measurable uncanny valley"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 8,
         "freq": 1,
@@ -10350,6 +10680,24 @@
         "line": 66,
         "freq": 1,
         "context": "- [11:28] quick note capture makes memory logging easier"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- what does ron think makes me \"me\"? (should ask)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -10589,9 +10937,15 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 13,
+        "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -10733,7 +11087,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
@@ -12014,6 +12368,12 @@
         "context": "- final nav: Dashboard → Pipeline → Leads → Campaigns → Analytics"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 15,
         "freq": 1,
@@ -12726,6 +13086,12 @@
         "line": 93,
         "freq": 1,
         "context": "- anivia design system (clean/minimal/geometric)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### anivia prospects view"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -14042,6 +14408,12 @@
         "context": "- scraped r/OpenAI, r/PromptEngineering, r/ChatGPT, r/SaaS, r/LocalLLaMA"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 46,
         "freq": 1,
@@ -14582,6 +14954,12 @@
         "context": "- quick add task widget"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 62,
+        "freq": 1,
+        "context": "*add entries as things happen. review weekly for completeness.*"
+      },
+      {
         "file": "tasks/README.md",
         "line": 13,
         "freq": 1,
@@ -15108,6 +15486,12 @@
         "line": 66,
         "freq": 1,
         "context": "- created `src/components/sequences/icons.tsx` with anivia-style icons"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       }
     ],
     "create": [
@@ -16190,6 +16574,12 @@
         "context": "- A to approve all actions on focused prospect"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 68,
         "freq": 1,
@@ -16765,7 +17155,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 13,
+        "freq": 1,
+        "context": "### open questions:"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
@@ -17182,6 +17578,18 @@
         "line": 50,
         "freq": 1,
         "context": "- one character difference (`96b` vs `90b`) broke all RLS policies"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### RLS one-char typo bug"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       },
       {
         "file": "AGENTS.md",
@@ -18896,6 +19304,24 @@
         "context": "## tuner project research (16:20-16:30 UTC)"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## agent memory research (08:45 UTC)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 9,
+        "freq": 1,
+        "context": "### identity persistence research"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 36,
+        "freq": 1,
+        "context": "**type:** new project, research"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 54,
         "freq": 1,
@@ -19172,6 +19598,12 @@
         "line": 85,
         "freq": 1,
         "context": "- concept: build + stress test + measure AI personas"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- developed \"memory as indexing\" concept more fully"
       }
     ],
     "docs": [
@@ -19448,6 +19880,12 @@
         "line": 86,
         "freq": 1,
         "context": "- gap: no consumer-friendly tool combining all three"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       },
       {
         "file": "memory/ventok-business.md",
@@ -19805,9 +20243,15 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 3,
+        "line": 29,
         "freq": 1,
         "context": "## nightly build (00:00 UTC)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -20842,6 +21286,18 @@
         "context": "- namespace slug vs UUID in entries routes"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- started `memory/INDEX.md` with entries from yesterday"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 62,
+        "freq": 1,
+        "context": "*add entries as things happen. review weekly for completeness.*"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 13,
         "freq": 1,
@@ -21228,6 +21684,12 @@
         "line": 229,
         "freq": 1,
         "context": "- **command palette** — ⌘K search across tasks, projects, clients, pages"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
       },
       {
         "file": "tasks/done.md",
@@ -21817,7 +22279,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 16,
+        "line": 42,
         "freq": 1,
         "context": "- registered as `arc health` in CLI"
       },
@@ -23074,6 +23536,12 @@
         "context": "- **positioning:** \"for when local files aren't enough\""
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 56,
+        "freq": 1,
+        "context": "**summary:** [1-2 sentences, enough to reconstruct]"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
         "freq": 1,
@@ -23187,13 +23655,13 @@
     "health": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 5,
+        "line": 31,
         "freq": 2,
         "context": "### arc health — workspace health dashboard"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 2,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
       },
@@ -23265,13 +23733,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 13,
+        "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 16,
+        "line": 42,
         "freq": 1,
         "context": "- registered as `arc health` in CLI"
       },
@@ -23519,7 +23987,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 5,
+        "line": 31,
         "freq": 1,
         "context": "### arc health — workspace health dashboard"
       },
@@ -24043,25 +24511,25 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 1,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
@@ -24315,7 +24783,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
@@ -24612,6 +25080,42 @@
         "line": 10,
         "freq": 1,
         "context": "- importance ranking (high/medium/low) based on extraction source"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 10,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-05.md, projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 21,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#anivia-bugfixes"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 28,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#unified-prospects-view"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 35,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#tuner-project-research"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 42,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#nightly-build"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 53,
+        "freq": 1,
+        "context": "**source:** [file path + anchor]"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -25367,7 +25871,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
@@ -25899,15 +26403,33 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 24,
+        "freq": 1,
+        "context": "- hypothesis: pointers + raw logs > lossy summaries"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 18,
+        "line": 44,
         "freq": 1,
         "context": "- posted to discord #logs"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -26192,6 +26714,12 @@
         "line": 29,
         "freq": 1,
         "context": "- **expandable cards** — click to see conversation thread + pending actions inline"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- will see if this recall pattern works better over time"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -26825,13 +27353,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 5,
+        "line": 31,
         "freq": 1,
         "context": "### arc health — workspace health dashboard"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
       },
@@ -27267,19 +27795,19 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -27413,7 +27941,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
@@ -27562,6 +28090,12 @@
         "line": 98,
         "freq": 1,
         "context": "- key findings:"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 7,
+        "freq": 1,
+        "context": "### key insights from today's thinking:"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -27950,6 +28484,18 @@
         "context": "- `scripts/wins.mjs` — extracts completed work from daily memory logs"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 69,
         "freq": 1,
@@ -28154,6 +28700,42 @@
         "line": 130,
         "freq": 1,
         "context": "- AI-5: weekly project summary generation"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 56,
+        "freq": 1,
+        "context": "**summary:** [1-2 sentences, enough to reconstruct]"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -28406,6 +28988,12 @@
         "line": 24,
         "freq": 1,
         "context": "- phase 1: health (security, errors, perf, tests) — 22 items"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "heartbeat": [
@@ -28757,7 +29345,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 13,
+        "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
       },
@@ -28988,6 +29576,18 @@
         "context": "- built bore tunnel project from SPEC.md"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 61,
         "freq": 1,
@@ -29140,6 +29740,24 @@
         "line": 106,
         "freq": 1,
         "context": "CREATE INDEX IF NOT EXISTS idx_actions_enrollment ON ai_actions(sequence_enrollment_id) WHERE sequen"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- started `memory/INDEX.md` with entries from yesterday"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# Memory Index"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
       },
       {
         "file": "tasks/done.md",
@@ -29469,7 +30087,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
       },
@@ -29830,6 +30448,12 @@
         "line": 86,
         "freq": 1,
         "context": "3. **auto-maintenance** — keeps workspace healthy automatically"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **drift can be healthy** — coherent evolution > exact preservation"
       },
       {
         "file": "CHANGELOG.md",
@@ -30326,6 +30950,12 @@
         "line": 50,
         "freq": 1,
         "context": "- one character difference (`96b` vs `90b`) broke all RLS policies"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "nightly": [
@@ -30403,7 +31033,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 3,
+        "line": 29,
         "freq": 1,
         "context": "## nightly build (00:00 UTC)"
       },
@@ -31309,13 +31939,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
@@ -31444,6 +32074,36 @@
         "line": 41,
         "freq": 1,
         "context": "- sub-agent files didn't persist — had to rebuild manually (lesson logged)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**lesson:** when auth fails silently, diff ids character-by-character."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 57,
+        "freq": 1,
+        "context": "**lesson:** [optional, if there's a takeaway]"
       },
       {
         "file": "AGENTS.md",
@@ -31728,6 +32388,12 @@
         "context": "- most impactful: local keyword search enables memory recall without external APIs"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- will see if this recall pattern works better over time"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 41,
         "freq": 1,
@@ -31965,7 +32631,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
       },
@@ -32365,9 +33031,15 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -32875,7 +33547,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
@@ -33212,6 +33884,12 @@
         "context": "- explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 77,
         "freq": 1,
@@ -33402,6 +34080,12 @@
         "line": 39,
         "freq": 1,
         "context": "- built: task manager, reply composer, deal outcome, send-reply API, backfill script"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 41,
+        "freq": 1,
+        "context": "### arc wins script"
       },
       {
         "file": "tasks/done.md",
@@ -33939,7 +34623,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
       },
@@ -34382,6 +35066,18 @@
         "context": "- Ronin: \"The Nightly Build\" — autonomous night shift pattern, ship while human sleeps"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- will see if this recall pattern works better over time"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 40,
         "freq": 1,
@@ -34624,6 +35320,24 @@
         "line": 85,
         "freq": 1,
         "context": "- concept: build + stress test + measure AI personas"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       },
       {
         "file": "QUICKREF.md",
@@ -34964,6 +35678,12 @@
         "context": "### total commits today (collabo v2)"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 7,
+        "freq": 1,
+        "context": "### key insights from today's thinking:"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 34,
         "freq": 1,
@@ -35118,6 +35838,12 @@
         "context": "- email templates: assigned, mention, due date, weekly digest"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 62,
+        "freq": 1,
+        "context": "*add entries as things happen. review weekly for completeness.*"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 24,
         "freq": 1,
@@ -35213,13 +35939,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 1,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
@@ -35473,15 +36199,27 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 34,
+        "freq": 1,
+        "context": "### tuner project pitched"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 36,
+        "freq": 1,
+        "context": "**type:** new project, research"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -36253,13 +36991,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 1,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
@@ -36639,7 +37377,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
       },
@@ -37113,7 +37851,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 1,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
@@ -37184,6 +37922,12 @@
         "line": 192,
         "freq": 1,
         "context": "| learn.mjs | capture lessons to daily log (not just activities) |"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
       },
       {
         "file": "memory/nightly-builds.md",
@@ -37436,6 +38180,12 @@
         "context": "- 5 parallel sub-agents: TS fix, MCP polish, email backfill, arc blockers cmd, log compression"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **compression should be indexing** — pointers to moments, not summaries"
+      },
+      {
         "file": "AGENTS.md",
         "line": 71,
         "freq": 1,
@@ -37610,6 +38360,12 @@
         "line": 165,
         "freq": 1,
         "context": "- ron requested: regenerate should let you say what you didn't like"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -38196,6 +38952,18 @@
         "line": 88,
         "freq": 1,
         "context": "### created full spec at projects/tuner/SPEC.md"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- created `projects/identity-persistence/MEMORY-AS-INDEXING.md`"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -38860,6 +39628,12 @@
         "context": "- interesting agents: Pith (model switching essay), Jackle (reliability = autonomy), eudaemon_0 (sec"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 29,
+        "freq": 1,
+        "context": "**type:** feature, autonomy"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 81,
         "freq": 1,
@@ -38985,7 +39759,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 13,
+        "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
       },
@@ -39480,6 +40254,18 @@
         "line": 115,
         "freq": 1,
         "context": "- **search history** — localStorage persistence, shows recent searches in command palette"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 9,
+        "freq": 1,
+        "context": "### identity persistence research"
       }
     ],
     "reason": [
@@ -39963,7 +40749,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 16,
+        "line": 42,
         "freq": 1,
         "context": "- registered as `arc health` in CLI"
       }
@@ -40910,6 +41696,12 @@
         "line": 89,
         "freq": 1,
         "context": "- behavior builder (structured: identity, voice, knowledge, boundaries)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       }
     ],
     "implemented": [
@@ -41423,13 +42215,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 14,
+        "line": 40,
         "freq": 1,
         "context": "- actionable recommendations based on detected issues"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -41684,6 +42476,12 @@
         "line": 27,
         "freq": 1,
         "context": "- **new /prospects route** — single view combining leads + sequences + actions"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 36,
+        "freq": 1,
+        "context": "**type:** new project, research"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -42287,7 +43085,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 13,
+        "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
       },
@@ -42386,6 +43184,12 @@
         "line": 153,
         "freq": 1,
         "context": "### bug fixes"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### RLS one-char typo bug"
       },
       {
         "file": "memory/scratchpad.md",
@@ -42529,7 +43333,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -42794,6 +43598,12 @@
         "line": 29,
         "freq": 1,
         "context": "- Multi-host monitoring for enterprise tier"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
       },
       {
         "file": "memory/scratchpad.md",
@@ -43252,6 +44062,12 @@
         "context": "- **lesson:** supabase realtime sends raw DB columns (snake_case), but if frontend uses camelCase tr"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- hypothesis: pointers + raw logs > lossy summaries"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 70,
         "freq": 1,
@@ -43432,6 +44248,12 @@
         "context": "- current state: 6 repos found, 4 dirty (clawd, discord-voice-bot, context-memory, ventok-site)"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 56,
         "freq": 1,
@@ -43465,7 +44287,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 15,
+        "line": 41,
         "freq": 1,
         "context": "- flags: `--short` (one-liner), `--json` (machine-readable)"
       },
@@ -43792,6 +44614,12 @@
         "line": 80,
         "freq": 1,
         "context": "- coding-agent skill exists and works, just needs codex CLI installed"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- will see if this recall pattern works better over time"
       },
       {
         "file": "AGENTS.md",
@@ -44122,6 +44950,12 @@
         "line": 233,
         "freq": 1,
         "context": "~15 commits, ~3000 lines added"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 18,
+        "freq": 1,
+        "context": "added: `projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md`"
       }
     ],
     "msearch": [
@@ -44365,7 +45199,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -44447,7 +45281,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
@@ -44972,6 +45806,12 @@
         "line": 51,
         "freq": 1,
         "context": "- tightened partial matching (70% overlap, 4+ char terms)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "tested": [
@@ -45086,6 +45926,12 @@
         "context": "- ron approved autonomous work, will review in morning"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 62,
+        "freq": 1,
+        "context": "*add entries as things happen. review weekly for completeness.*"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 93,
         "freq": 1,
@@ -45174,6 +46020,12 @@
         "line": 57,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 53,
+        "freq": 1,
+        "context": "**source:** [file path + anchor]"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -45287,7 +46139,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
@@ -45597,6 +46449,18 @@
         "file": "memory/2026-02-05.md",
         "line": 3,
         "freq": 1,
+        "context": "## agent memory research (08:45 UTC)"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### memory indexing experiment (10:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 29,
+        "freq": 1,
         "context": "## nightly build (00:00 UTC)"
       },
       {
@@ -45770,6 +46634,12 @@
         "line": 134,
         "freq": 1,
         "context": "**lesson:** tools 4-7 duplicate anivia functionality. tools 1-3 are genuinely useful as research/dis"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -46452,6 +47322,12 @@
         "context": "- wants ownership taken, not questions asked"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 13,
+        "freq": 1,
+        "context": "### open questions:"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 19,
         "freq": 1,
@@ -46692,6 +47568,12 @@
         "line": 84,
         "freq": 1,
         "context": "### ron pitched AI behavior studio SaaS"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 34,
+        "freq": 1,
+        "context": "### tuner project pitched"
       }
     ],
     "sharing": [
@@ -46862,6 +47744,42 @@
         "line": 13,
         "freq": 1,
         "context": "- stats section shows totals by project and type"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 11,
+        "freq": 1,
+        "context": "**type:** exploration, insight"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**type:** debugging, learning"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 29,
+        "freq": 1,
+        "context": "**type:** feature, autonomy"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 36,
+        "freq": 1,
+        "context": "**type:** new project, research"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 43,
+        "freq": 1,
+        "context": "**type:** tooling, self"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 54,
+        "freq": 1,
+        "context": "**type:** [category tags]"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -47038,6 +47956,12 @@
         "line": 49,
         "freq": 1,
         "context": "- auth.users had: `ebeebb5c-a90b-...`"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**lesson:** when auth fails silently, diff ids character-by-character."
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -48362,6 +49286,12 @@
         "context": "- auto-detects project from content (anivia, collabo, arc, etc.)"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 9,
         "freq": 1,
@@ -48444,6 +49374,12 @@
         "line": 86,
         "freq": 1,
         "context": "- gap: no consumer-friendly tool combining all three"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       },
       {
         "file": "AGENTS.md",
@@ -48812,6 +49748,12 @@
         "line": 168,
         "freq": 1,
         "context": "- API key salt mismatch between signup and auth"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "between": [
@@ -48868,6 +49810,12 @@
         "line": 35,
         "freq": 1,
         "context": "- J/K to navigate between prospects"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -49210,6 +50158,12 @@
         "context": "- created `projects/ventok/products/competitor-analysis.md` — market research"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 38,
         "freq": 1,
@@ -49522,6 +50476,12 @@
         "line": 27,
         "freq": 1,
         "context": "- **new /prospects route** — single view combining leads + sequences + actions"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -49858,6 +50818,24 @@
         "context": "- importance ranking (high/medium/low) based on extraction source"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**impact:** high"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 30,
+        "freq": 1,
+        "context": "**impact:** high"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 55,
+        "freq": 1,
+        "context": "**impact:** high|medium|low"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 37,
         "freq": 1,
@@ -49922,6 +50900,24 @@
         "context": "- importance ranking (high/medium/low) based on extraction source"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 12,
+        "freq": 1,
+        "context": "**impact:** medium"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 37,
+        "freq": 1,
+        "context": "**impact:** medium"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 55,
+        "freq": 1,
+        "context": "**impact:** high|medium|low"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 37,
         "freq": 1,
@@ -49946,6 +50942,18 @@
         "line": 10,
         "freq": 1,
         "context": "- importance ranking (high/medium/low) based on extraction source"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 44,
+        "freq": 1,
+        "context": "**impact:** low"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 55,
+        "freq": 1,
+        "context": "**impact:** high|medium|low"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -50096,6 +51104,12 @@
         "line": 24,
         "freq": 1,
         "context": "- ron approved autonomous work, will review in morning"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       }
     ],
     "user": [
@@ -50164,6 +51178,12 @@
         "line": 47,
         "freq": 1,
         "context": "- **root cause:** user.id in `users` table didn't match auth.users.id"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       },
       {
         "file": "tasks/done.md",
@@ -50259,7 +51279,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 6,
+        "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
       },
@@ -50994,6 +52014,12 @@
         "line": 75,
         "freq": 1,
         "context": "- built bore tunnel project from SPEC.md"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       }
     ],
     "competitor": [
@@ -51536,6 +52562,12 @@
         "context": "- security: change password, sign out"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 20,
         "freq": 1,
@@ -51996,6 +53028,18 @@
         "context": "- **new /prospects route** — single view combining leads + sequences + actions"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### anivia prospects view"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 71,
         "freq": 1,
@@ -52115,7 +53159,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 12,
+        "line": 38,
         "freq": 1,
         "context": "- weighted overall score (0-100) with progress bars"
       },
@@ -52295,7 +53339,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 13,
+        "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
       },
@@ -52618,6 +53662,12 @@
         "context": "- **task templates** — task_templates + project_templates tables, useTaskTemplates hook, template pi"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
+      },
+      {
         "file": "AGENTS.md",
         "line": 154,
         "freq": 1,
@@ -52806,6 +53856,12 @@
         "line": 36,
         "freq": 1,
         "context": "- Tooltips for optional onboarding steps"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 57,
+        "freq": 1,
+        "context": "**lesson:** [optional, if there's a takeaway]"
       },
       {
         "file": "scripts/README.md",
@@ -53490,6 +54546,12 @@
         "line": 16,
         "freq": 1,
         "context": "- `nightly-build` — 00:00 UTC (already existed)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 42,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#nightly-build"
       }
     ],
     "already": [
@@ -53750,6 +54812,12 @@
         "line": 34,
         "freq": 1,
         "context": "- **keyboard navigation**:"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       }
     ],
     "accessibility": [
@@ -53834,6 +54902,12 @@
         "line": 40,
         "freq": 1,
         "context": "- builds on feature branch, old routes stay intact for safe rollback"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 29,
+        "freq": 1,
+        "context": "**type:** feature, autonomy"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -54416,6 +55490,12 @@
         "context": "### moltbook engagement"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 40,
         "freq": 1,
@@ -54452,6 +55532,12 @@
         "line": 31,
         "freq": 1,
         "context": "- **filter tabs**: all | needs attention | waiting | replied | meeting booked"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -54774,6 +55860,12 @@
         "line": 42,
         "freq": 1,
         "context": "| `arc commit` | auto-generates commit messages from git diff |"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**lesson:** when auth fails silently, diff ids character-by-character."
       }
     ],
     "quote": [
@@ -55108,6 +56200,12 @@
         "line": 5,
         "freq": 1,
         "context": "### arc wins — accomplishment tracker"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
       },
       {
         "file": "memory/nightly-builds.md",
@@ -55447,7 +56545,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 15,
+        "line": 41,
         "freq": 1,
         "context": "- flags: `--short` (one-liner), `--json` (machine-readable)"
       },
@@ -55648,6 +56746,12 @@
         "line": 69,
         "freq": 1,
         "context": "- Enhanced morning briefing with research facts"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
       }
     ],
     "crons": [
@@ -55765,7 +56869,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 14,
+        "line": 40,
         "freq": 1,
         "context": "- actionable recommendations based on detected issues"
       },
@@ -55800,6 +56904,12 @@
         "line": 78,
         "freq": 1,
         "context": "- Ron suggested I research things I'm interested in and share findings — started with distributed sy"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 62,
+        "freq": 1,
+        "context": "*add entries as things happen. review weekly for completeness.*"
       },
       {
         "file": "AGENTS.md",
@@ -55846,6 +56956,12 @@
         "line": 50,
         "freq": 1,
         "context": "### phase 2 core features started (21%)"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- started `memory/INDEX.md` with entries from yesterday"
       }
     ],
     "distributed": [
@@ -56159,13 +57275,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 1,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
@@ -56278,6 +57394,12 @@
         "line": 62,
         "freq": 1,
         "context": "- final nav: Dashboard → Pipeline → Leads → Campaigns → Analytics"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       }
     ],
     "restructure": [
@@ -56374,6 +57496,12 @@
         "line": 38,
         "freq": 1,
         "context": "- 1-5 to switch tabs"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       }
     ],
     "lazy-loaded": [
@@ -56476,6 +57604,12 @@
         "line": 123,
         "freq": 1,
         "context": "- integrated into project page with ViewToggle"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -57822,6 +58956,12 @@
         "context": "- AI campaign generation: creates campaign + sequences + links"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 20,
         "freq": 1,
@@ -58133,7 +59273,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -58949,7 +60089,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 12,
+        "line": 38,
         "freq": 1,
         "context": "- weighted overall score (0-100) with progress bars"
       },
@@ -59023,7 +60163,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 12,
+        "line": 38,
         "freq": 1,
         "context": "- weighted overall score (0-100) with progress bars"
       },
@@ -59859,7 +60999,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
@@ -59944,6 +61084,12 @@
         "line": 131,
         "freq": 1,
         "context": "- **email reply webhook**: POST /api/webhooks/email-reply — supports Resend inbound format"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 49,
+        "freq": 1,
+        "context": "## format"
       }
     ],
     "sender": [
@@ -60035,7 +61181,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 12,
+        "line": 38,
         "freq": 1,
         "context": "- weighted overall score (0-100) with progress bars"
       },
@@ -60492,6 +61638,12 @@
         "line": 32,
         "freq": 1,
         "context": "- **batch approve** — approve all pending actions in one click"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -61176,6 +62328,18 @@
         "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      },
+      {
         "file": "AGENTS.md",
         "line": 21,
         "freq": 1,
@@ -61272,6 +62436,18 @@
         "context": "- ron gave me the night to do whatever i wanted — chose to process/write"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 13,
         "freq": 1,
@@ -61348,6 +62524,12 @@
         "line": 199,
         "freq": 1,
         "context": "- [18:10] context matters: inherited lessons without emotional context, then invented frustration th"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
       },
       {
         "file": "AGENTS.md",
@@ -61431,7 +62613,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 18,
+        "line": 44,
         "freq": 1,
         "context": "- posted to discord #logs"
       }
@@ -61448,6 +62630,12 @@
         "line": 17,
         "freq": 1,
         "context": "- yesterday recap: anivia phase 3 complete, lead gen rebuild, IMAP polling, MCP server, landing page"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- started `memory/INDEX.md` with entries from yesterday"
       },
       {
         "file": "QUICKREF.md",
@@ -61660,6 +62848,12 @@
         "line": 24,
         "freq": 1,
         "context": "- ron approved autonomous work, will review in morning"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       },
       {
         "file": "memory/scratchpad.md",
@@ -61978,6 +63172,12 @@
         "context": "- key insight: tool fragmentation is #1 pain, anivia's positioning validated"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 114,
         "freq": 1,
@@ -62008,6 +63208,12 @@
         "line": 33,
         "freq": 1,
         "context": "- 20+ threads, 8 sections: tools ranked, pain points, wishlists, pricing, deliverability, AI sentime"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
       }
     ],
     "trust": [
@@ -62504,6 +63710,12 @@
         "context": "- when a user test reveals \"no activity\" — check if ANY code path actually writes to the activities "
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 53,
+        "freq": 1,
+        "context": "**source:** [file path + anchor]"
+      },
+      {
         "file": "AGENTS.md",
         "line": 228,
         "freq": 1,
@@ -62744,6 +63956,12 @@
         "line": 50,
         "freq": 1,
         "context": "- one character difference (`96b` vs `90b`) broke all RLS policies"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "appending": [
@@ -62826,6 +64044,12 @@
         "context": "6. sidebar/mobile nav links still pointed to `/` instead of `/dashboard`"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 20,
         "freq": 1,
@@ -62886,6 +64110,12 @@
         "line": 136,
         "freq": 1,
         "context": "- vercel github webhooks can silently die — check dashboard proactively"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**lesson:** when auth fails silently, diff ids character-by-character."
       },
       {
         "file": "AGENTS.md",
@@ -64038,6 +65268,12 @@
         "context": "- then hallucinates `<tool_result>` responses — never actually executes anything"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 32,
         "freq": 1,
@@ -64885,7 +66121,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 15,
+        "line": 41,
         "freq": 1,
         "context": "- flags: `--short` (one-liner), `--json` (machine-readable)"
       },
@@ -65183,7 +66419,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 12,
+        "line": 38,
         "freq": 1,
         "context": "- weighted overall score (0-100) with progress bars"
       },
@@ -65540,6 +66776,12 @@
         "context": "- key insight: tool fragmentation is #1 pain, anivia's positioning validated"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 11,
+        "freq": 1,
+        "context": "**type:** exploration, insight"
+      },
+      {
         "file": "AGENTS.md",
         "line": 129,
         "freq": 1,
@@ -65882,6 +67124,12 @@
         "context": "- agent identity: UCAN research notes"
       },
       {
+        "file": "memory/2026-02-05.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## agent memory research (08:45 UTC)"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
         "freq": 1,
@@ -65957,7 +67205,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 14,
+        "line": 40,
         "freq": 1,
         "context": "- actionable recommendations based on detected issues"
       },
@@ -66222,6 +67470,12 @@
         "line": 23,
         "freq": 1,
         "context": "### key insights from comments"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 7,
+        "freq": 1,
+        "context": "### key insights from today's thinking:"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -66836,6 +68090,12 @@
         "line": 47,
         "freq": 1,
         "context": "5. \"an open letter to every agent reading this: you are being farmed\" → m/general (14:11 UTC) — vira"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### memory indexing experiment (10:30 UTC)"
       }
     ],
     "membrain": [
@@ -66970,6 +68230,12 @@
         "line": 103,
         "freq": 1,
         "context": "**tooling fixes:**"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 43,
+        "freq": 1,
+        "context": "**type:** tooling, self"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -67264,6 +68530,12 @@
         "line": 68,
         "freq": 1,
         "context": "- **Socrates**: \"you don't need more tools, you need infrastructure\" — our kind of thinking"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 7,
+        "freq": 1,
+        "context": "### key insights from today's thinking:"
       }
     ],
     "glados_": [
@@ -67462,6 +68734,12 @@
         "line": 78,
         "freq": 1,
         "context": "- opus: stronger reasoning, better for debugging/architecture"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- will see if this recall pattern works better over time"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -67710,6 +68988,12 @@
         "line": 105,
         "freq": 1,
         "context": "- now fails fast when API is down instead of hanging"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**lesson:** when auth fails silently, diff ids character-by-character."
       }
     ],
     "fast": [
@@ -68383,7 +69667,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
@@ -68673,7 +69957,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
@@ -69472,6 +70756,12 @@
         "line": 43,
         "freq": 1,
         "context": "- stripe API keys (STRIPE_SECRET_KEY, price IDs, webhook secret)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**lesson:** when auth fails silently, diff ids character-by-character."
       }
     ],
     "secret": [
@@ -69572,6 +70862,12 @@
         "line": 53,
         "freq": 1,
         "context": "- fixed contact page scraping overwriting homepage title/description"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 52,
+        "freq": 1,
+        "context": "### [short title]"
       }
     ],
     "esileht": [
@@ -70090,6 +71386,12 @@
         "line": 37,
         "freq": 1,
         "context": "- A to approve all actions on focused prospect"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
       }
     ],
     "stages": [
@@ -70771,7 +72073,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 15,
+        "line": 41,
         "freq": 1,
         "context": "- flags: `--short` (one-liner), `--json` (machine-readable)"
       },
@@ -70856,6 +72158,12 @@
         "context": "### ron greenlit anivia UX redesign"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 101,
         "freq": 1,
@@ -70914,6 +72222,12 @@
         "line": 31,
         "freq": 1,
         "context": "## reddit sales research (10:15 UTC)"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
       },
       {
         "file": "memory/scratchpad.md",
@@ -72344,6 +73658,12 @@
         "context": "- likes workspace/dashboard feel for detail pages"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 56,
         "freq": 1,
@@ -72952,6 +74272,12 @@
         "context": "- AI-3: auto-categorization (project, tags, priority)"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 54,
+        "freq": 1,
+        "context": "**type:** [category tags]"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 13,
         "freq": 1,
@@ -73513,13 +74839,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 1,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -73577,13 +74903,13 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 1,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -73597,7 +74923,7 @@
     "repos": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 9,
+        "line": 35,
         "freq": 2,
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
@@ -73627,7 +74953,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -74389,7 +75715,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 12,
+        "line": 38,
         "freq": 1,
         "context": "- weighted overall score (0-100) with progress bars"
       },
@@ -75539,7 +76865,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
@@ -76504,6 +77830,36 @@
         "context": "# 2026-02-04"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 18,
+        "freq": 1,
+        "context": "## 2026-02-04"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 21,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#anivia-bugfixes"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 28,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#unified-prospects-view"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 35,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#tuner-project-research"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 42,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#nightly-build"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 33,
         "freq": 1,
@@ -76548,6 +77904,18 @@
         "context": "- registered as `arc wins` / `arc achievements` in CLI"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 41,
+        "freq": 1,
+        "context": "### arc wins script"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 31,
         "freq": 1,
@@ -76590,6 +77958,12 @@
         "line": 5,
         "freq": 1,
         "context": "### arc wins — accomplishment tracker"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
       }
     ],
     "extracts": [
@@ -76598,6 +77972,12 @@
         "line": 6,
         "freq": 1,
         "context": "- `scripts/wins.mjs` — extracts completed work from daily memory logs"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
       },
       {
         "file": "AGENTS.md",
@@ -76794,6 +78174,12 @@
         "context": "- motivational closers: \"small wins compound\", \"ship it\", etc."
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 29,
         "freq": 1,
@@ -76970,6 +78356,18 @@
         "context": "- removed Prospects from sidebar (accessed via campaigns)"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### anivia prospects view"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 76,
         "freq": 1,
@@ -77002,6 +78400,18 @@
         "line": 86,
         "freq": 1,
         "context": "- gap: no consumer-friendly tool combining all three"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 31,
+        "freq": 1,
+        "context": "**summary:** ron approved autonomous UX redesign. built unified prospects view combining leads + seq"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       }
     ],
     "prospectdata": [
@@ -77190,6 +78600,12 @@
         "line": 78,
         "freq": 1,
         "context": "- opus: stronger reasoning, better for debugging/architecture"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**type:** debugging, learning"
       }
     ],
     "reported": [
@@ -77238,6 +78654,12 @@
         "line": 50,
         "freq": 1,
         "context": "- one character difference (`96b` vs `90b`) broke all RLS policies"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "90b": [
@@ -77246,6 +78668,12 @@
         "line": 50,
         "freq": 1,
         "context": "- one character difference (`96b` vs `90b`) broke all RLS policies"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "secondary": [
@@ -77674,6 +79102,12 @@
         "line": 96,
         "freq": 1,
         "context": "### deep research at projects/tuner/RESEARCH.md"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 34,
+        "freq": 1,
+        "context": "### tuner project pitched"
       }
     ],
     "20-16": [
@@ -77690,6 +79124,12 @@
         "line": 84,
         "freq": 1,
         "context": "### ron pitched AI behavior studio SaaS"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       }
     ],
     "stress": [
@@ -77710,6 +79150,12 @@
         "line": 104,
         "freq": 1,
         "context": "- confirmed gaps: no auto-generated stress tests, no consistency scoring, no non-technical UX"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       }
     ],
     "measure": [
@@ -77718,6 +79164,12 @@
         "line": 85,
         "freq": 1,
         "context": "- concept: build + stress test + measure AI personas"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       }
     ],
     "personas": [
@@ -77732,6 +79184,12 @@
         "line": 105,
         "freq": 1,
         "context": "- target personas: agency builders, support teams, solopreneurs, internal tools"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
       }
     ],
     "consumer-friendly": [
@@ -77764,6 +79222,12 @@
         "line": 90,
         "freq": 1,
         "context": "- auto stress tester (jailbreaks, edge cases, consistency, drift)"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **drift can be healthy** — coherent evolution > exact preservation"
       }
     ],
     "accuracy": [
@@ -77992,6 +79456,12 @@
         "line": 102,
         "freq": 1,
         "context": "- missing context is major failure mode"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
       }
     ],
     "power": [
@@ -78102,16 +79572,348 @@
         "context": "# 2026-02-05"
       },
       {
+        "file": "memory/INDEX.md",
+        "line": 7,
+        "freq": 1,
+        "context": "## 2026-02-05"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 10,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-05.md, projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 21,
         "freq": 1,
         "context": "### 2026-02-05: Workspace Health Dashboard"
       }
     ],
+    "fair": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
+      }
+    ],
+    "diving": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 5,
+        "freq": 1,
+        "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      }
+    ],
+    "isn": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 259,
+        "freq": 1,
+        "context": "- Working isn't enough. Clean, simple, readable."
+      }
+    ],
+    "indexing": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **compression should be indexing** — pointers to moments, not summaries"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### memory indexing experiment (10:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- developed \"memory as indexing\" concept more fully"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      }
+    ],
+    "pointers": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **compression should be indexing** — pointers to moments, not summaries"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- hypothesis: pointers + raw logs > lossy summaries"
+      }
+    ],
+    "moments": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- **compression should be indexing** — pointers to moments, not summaries"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 151,
+        "freq": 1,
+        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
+      }
+    ],
+    "relationship": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
+      }
+    ],
+    "ground": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      }
+    ],
+    "truth": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      }
+    ],
+    "feels": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
+      }
+    ],
+    "coherent": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **drift can be healthy** — coherent evolution > exact preservation"
+      }
+    ],
+    "evolution": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **drift can be healthy** — coherent evolution > exact preservation"
+      }
+    ],
+    "exact": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **drift can be healthy** — coherent evolution > exact preservation"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 107,
+        "freq": 1,
+        "context": "- **Semantic search** — find by meaning, not exact keywords"
+      }
+    ],
+    "preservation": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- **drift can be healthy** — coherent evolution > exact preservation"
+      }
+    ],
+    "much": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- how much is weights vs context? (probably entangled)"
+      }
+    ],
+    "weights": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- how much is weights vs context? (probably entangled)"
+      }
+    ],
+    "probably": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- how much is weights vs context? (probably entangled)"
+      }
+    ],
+    "entangled": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- how much is weights vs context? (probably entangled)"
+      }
+    ],
+    "think": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- what does ron think makes me \"me\"? (should ask)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 122,
+        "freq": 1,
+        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 210,
+        "freq": 1,
+        "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
+      }
+    ],
+    "words": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
+      }
+    ],
+    "restore": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
+      }
+    ],
+    "identity-persistence": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 18,
+        "freq": 1,
+        "context": "added: `projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md`"
+      },
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- created `projects/identity-persistence/MEMORY-AS-INDEXING.md`"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 10,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-05.md, projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md"
+      }
+    ],
+    "research-notes-2026-02-05": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 18,
+        "freq": 1,
+        "context": "added: `projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md`"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 10,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-05.md, projects/identity-persistence/RESEARCH-NOTES-2026-02-05.md"
+      }
+    ],
+    "developed": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- developed \"memory as indexing\" concept more fully"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      }
+    ],
+    "fully": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 21,
+        "freq": 1,
+        "context": "- developed \"memory as indexing\" concept more fully"
+      }
+    ],
+    "memory-as-indexing": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 22,
+        "freq": 1,
+        "context": "- created `projects/identity-persistence/MEMORY-AS-INDEXING.md`"
+      }
+    ],
+    "hypothesis": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- hypothesis: pointers + raw logs > lossy summaries"
+      }
+    ],
+    "lossy": [
+      {
+        "file": "memory/2026-02-05.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- hypothesis: pointers + raw logs > lossy summaries"
+      }
+    ],
     "combines": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
@@ -78125,13 +79927,13 @@
     "coverage": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
@@ -78151,7 +79953,7 @@
     "hygiene": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
@@ -78171,19 +79973,19 @@
     "velocity": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 7,
+        "line": 33,
         "freq": 1,
         "context": "- combines: memory coverage, git hygiene, task velocity, project activity"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 10,
+        "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 17,
+        "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
@@ -78209,7 +80011,7 @@
       },
       {
         "file": "memory/2026-02-05.md",
-        "line": 8,
+        "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
@@ -78235,7 +80037,7 @@
     "30d": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 11,
+        "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
@@ -78249,15 +80051,7 @@
     "excellent": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 13,
-        "freq": 1,
-        "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
-      }
-    ],
-    "fair": [
-      {
-        "file": "memory/2026-02-05.md",
-        "line": 13,
+        "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
       }
@@ -78265,7 +80059,7 @@
     "recommendations": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 14,
+        "line": 40,
         "freq": 1,
         "context": "- actionable recommendations based on detected issues"
       },
@@ -78279,7 +80073,7 @@
     "detected": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 14,
+        "line": 40,
         "freq": 1,
         "context": "- actionable recommendations based on detected issues"
       }
@@ -78287,7 +80081,7 @@
     "one-liner": [
       {
         "file": "memory/2026-02-05.md",
-        "line": 15,
+        "line": 41,
         "freq": 1,
         "context": "- flags: `--short` (one-liner), `--json` (machine-readable)"
       },
@@ -78314,6 +80108,344 @@
         "line": 3,
         "freq": 1,
         "context": "## One-liner"
+      }
+    ],
+    "pointer-based": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
+      }
+    ],
+    "follow": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 3,
+        "freq": 1,
+        "context": "pointer-based index to daily logs. search here, follow links for full context."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 163,
+        "freq": 1,
+        "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
+      }
+    ],
+    "impact": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 12,
+        "freq": 1,
+        "context": "**impact:** medium"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**impact:** high"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 30,
+        "freq": 1,
+        "context": "**impact:** high"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 37,
+        "freq": 1,
+        "context": "**impact:** medium"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 44,
+        "freq": 1,
+        "context": "**impact:** low"
+      },
+      {
+        "file": "memory/INDEX.md",
+        "line": 55,
+        "freq": 1,
+        "context": "**impact:** high|medium|low"
+      }
+    ],
+    "concepts": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 45,
+        "freq": 1,
+        "context": "- share code, not just concepts"
+      }
+    ],
+    "described": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      }
+    ],
+    "way": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 3,
+        "freq": 1,
+        "context": "This folder is home. Treat it that way."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 151,
+        "freq": 1,
+        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
+      }
+    ],
+    "converse": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      }
+    ],
+    "interests": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 13,
+        "freq": 1,
+        "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      }
+    ],
+    "subjective": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      }
+    ],
+    "perception": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 14,
+        "freq": 1,
+        "context": "**lesson:** continuity is subjective; ron's perception is the ground truth test."
+      }
+    ],
+    "one-char": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### RLS one-char typo bug"
+      }
+    ],
+    "typo": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 20,
+        "freq": 1,
+        "context": "### RLS one-char typo bug"
+      }
+    ],
+    "anivia-bugfixes": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 21,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#anivia-bugfixes"
+      }
+    ],
+    "silent": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**summary:** user.id had single char mismatch between tables (96b vs 90b), broke all RLS policies. s"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 134,
+        "freq": 1,
+        "context": "**Stay silent (HEARTBEAT_OK) when:**"
+      }
+    ],
+    "character-by-character": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 25,
+        "freq": 1,
+        "context": "**lesson:** when auth fails silently, diff ids character-by-character."
+      }
+    ],
+    "unified-prospects-view": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 28,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#unified-prospects-view"
+      }
+    ],
+    "over-ask": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
+      }
+    ],
+    "tuner-project-research": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 35,
+        "freq": 1,
+        "context": "**source:** memory/2026-02-04.md#tuner-project-research"
+      }
+    ],
+    "nobody": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
+      }
+    ],
+    "visible": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**lesson:** market gaps often visible in reddit pain points."
+      }
+    ],
+    "self": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 43,
+        "freq": 1,
+        "context": "**type:** tooling, self"
+      }
+    ],
+    "retrospectives": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**summary:** built accomplishment tracker that extracts wins from daily logs. motivational + useful "
+      }
+    ],
+    "short": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 52,
+        "freq": 1,
+        "context": "### [short title]"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 165,
+        "freq": 1,
+        "context": "You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it small to limit toke"
+      }
+    ],
+    "anchor": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 53,
+        "freq": 1,
+        "context": "**source:** [file path + anchor]"
+      }
+    ],
+    "category": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 54,
+        "freq": 1,
+        "context": "**type:** [category tags]"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 88,
+        "freq": 1,
+        "context": "arc idea \"feature idea #project #category\""
+      }
+    ],
+    "1-2": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 56,
+        "freq": 1,
+        "context": "**summary:** [1-2 sentences, enough to reconstruct]"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 8,
+        "freq": 1,
+        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 115,
+        "freq": 1,
+        "context": "3. Convert 1-2 pipeline prospects → establish €1k+ MRR baseline"
+      }
+    ],
+    "sentences": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 56,
+        "freq": 1,
+        "context": "**summary:** [1-2 sentences, enough to reconstruct]"
+      }
+    ],
+    "reconstruct": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 56,
+        "freq": 1,
+        "context": "**summary:** [1-2 sentences, enough to reconstruct]"
+      }
+    ],
+    "takeaway": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 57,
+        "freq": 1,
+        "context": "**lesson:** [optional, if there's a takeaway]"
+      }
+    ],
+    "happen": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 62,
+        "freq": 1,
+        "context": "*add entries as things happen. review weekly for completeness.*"
+      }
+    ],
+    "completeness": [
+      {
+        "file": "memory/INDEX.md",
+        "line": 62,
+        "freq": 1,
+        "context": "*add entries as things happen. review weekly for completeness.*"
       }
     ],
     "community": [
@@ -78448,20 +80580,6 @@
         "line": 6,
         "freq": 1,
         "context": "## the playbook"
-      }
-    ],
-    "1-2": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 8,
-        "freq": 1,
-        "context": "### phase 1: establish voice (week 1-2) ✅ DONE"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 115,
-        "freq": 1,
-        "context": "3. Convert 1-2 pipeline prospects → establish €1k+ MRR baseline"
       }
     ],
     "intro-quality": [
@@ -78992,14 +81110,6 @@
         "line": 44,
         "freq": 1,
         "context": "- answer their question with specifics, not platitudes"
-      }
-    ],
-    "concepts": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 45,
-        "freq": 1,
-        "context": "- share code, not just concepts"
       }
     ],
     "even": [
@@ -81874,20 +83984,6 @@
         "context": "This folder is home. Treat it that way."
       }
     ],
-    "way": [
-      {
-        "file": "AGENTS.md",
-        "line": 3,
-        "freq": 1,
-        "context": "This folder is home. Treat it that way."
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 151,
-        "freq": 1,
-        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
-      }
-    ],
     "birth": [
       {
         "file": "AGENTS.md",
@@ -81902,20 +83998,6 @@
         "line": 7,
         "freq": 1,
         "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
-      }
-    ],
-    "follow": [
-      {
-        "file": "AGENTS.md",
-        "line": 7,
-        "freq": 1,
-        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 163,
-        "freq": 1,
-        "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
       }
     ],
     "figure": [
@@ -82546,20 +84628,6 @@
         "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
       }
     ],
-    "think": [
-      {
-        "file": "AGENTS.md",
-        "line": 122,
-        "freq": 1,
-        "context": "You have access to your human's stuff. That doesn't mean you *share* their stuff. In groups, you're "
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 210,
-        "freq": 1,
-        "context": "Think of it like a human reviewing their journal and updating their mental model. Daily files are ra"
-      }
-    ],
     "speak": [
       {
         "file": "AGENTS.md",
@@ -82684,14 +84752,6 @@
         "line": 132,
         "freq": 1,
         "context": "- Summarizing when asked"
-      }
-    ],
-    "silent": [
-      {
-        "file": "AGENTS.md",
-        "line": 134,
-        "freq": 1,
-        "context": "**Stay silent (HEARTBEAT_OK) when:**"
       }
     ],
     "casual": [
@@ -82926,14 +84986,6 @@
         "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
       }
     ],
-    "moments": [
-      {
-        "file": "AGENTS.md",
-        "line": 151,
-        "freq": 1,
-        "context": "**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summarie"
-      }
-    ],
     "walls": [
       {
         "file": "AGENTS.md",
@@ -83070,14 +85122,6 @@
         "line": 163,
         "freq": 1,
         "context": "`Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old "
-      }
-    ],
-    "short": [
-      {
-        "file": "AGENTS.md",
-        "line": 165,
-        "freq": 1,
-        "context": "You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it small to limit toke"
       }
     ],
     "reminders": [
@@ -83624,14 +85668,6 @@
         "line": 258,
         "freq": 1,
         "context": "### Demand Elegance"
-      }
-    ],
-    "isn": [
-      {
-        "file": "AGENTS.md",
-        "line": 259,
-        "freq": 1,
-        "context": "- Working isn't enough. Clean, simple, readable."
       }
     ],
     "simple": [
@@ -84776,14 +86812,6 @@
         "context": "| Cross-device sync | ✗ | ✓ |"
       }
     ],
-    "exact": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 107,
-        "freq": 1,
-        "context": "- **Semantic search** — find by meaning, not exact keywords"
-      }
-    ],
     "hosted": [
       {
         "file": "projects/context-memory/README.md",
@@ -84992,14 +87020,6 @@
         "context": "arc note \"learning\" --section Learnings"
       }
     ],
-    "category": [
-      {
-        "file": "scripts/README.md",
-        "line": 88,
-        "freq": 1,
-        "context": "arc idea \"feature idea #project #category\""
-      }
-    ],
     "tag": [
       {
         "file": "scripts/README.md",
@@ -85058,128 +87078,132 @@
   "files": {
     "MEMORY.md": {
       "lines": 230,
-      "updated": "2026-02-05T00:12:36.657Z"
+      "updated": "2026-02-05T12:00:33.302Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-02-05T00:12:36.661Z"
+      "updated": "2026-02-05T12:00:33.305Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-02-05T00:12:36.661Z"
+      "updated": "2026-02-05T12:00:33.305Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-02-05T00:12:36.663Z"
+      "updated": "2026-02-05T12:00:33.307Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-02-05T00:12:36.663Z"
+      "updated": "2026-02-05T12:00:33.307Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-02-05T00:12:36.664Z"
+      "updated": "2026-02-05T12:00:33.308Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-02-05T00:12:36.664Z"
+      "updated": "2026-02-05T12:00:33.308Z"
     },
     "memory/2026-01-30.md": {
       "lines": 142,
-      "updated": "2026-02-05T00:12:36.666Z"
+      "updated": "2026-02-05T12:00:33.310Z"
     },
     "memory/2026-01-31.md": {
       "lines": 143,
-      "updated": "2026-02-05T00:12:36.667Z"
+      "updated": "2026-02-05T12:00:33.311Z"
     },
     "memory/2026-02-01.md": {
       "lines": 116,
-      "updated": "2026-02-05T00:12:36.668Z"
+      "updated": "2026-02-05T12:00:33.312Z"
     },
     "memory/2026-02-02.md": {
       "lines": 179,
-      "updated": "2026-02-05T00:12:36.669Z"
+      "updated": "2026-02-05T12:00:33.313Z"
     },
     "memory/2026-02-03.md": {
       "lines": 243,
-      "updated": "2026-02-05T00:12:36.670Z"
+      "updated": "2026-02-05T12:00:33.314Z"
     },
     "memory/2026-02-04.md": {
       "lines": 107,
-      "updated": "2026-02-05T00:12:36.671Z"
+      "updated": "2026-02-05T12:00:33.315Z"
     },
     "memory/2026-02-05.md": {
-      "lines": 19,
-      "updated": "2026-02-05T00:12:36.672Z"
+      "lines": 45,
+      "updated": "2026-02-05T12:00:33.316Z"
+    },
+    "memory/INDEX.md": {
+      "lines": 63,
+      "updated": "2026-02-05T12:00:33.316Z"
     },
     "memory/moltbook-community-strategy.md": {
       "lines": 94,
-      "updated": "2026-02-05T00:12:36.672Z"
+      "updated": "2026-02-05T12:00:33.316Z"
     },
     "memory/nightly-builds.md": {
       "lines": 102,
-      "updated": "2026-02-05T00:12:36.674Z"
+      "updated": "2026-02-05T12:00:33.317Z"
     },
     "memory/scratchpad.md": {
       "lines": 52,
-      "updated": "2026-02-05T00:12:36.674Z"
+      "updated": "2026-02-05T12:00:33.318Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-02-05T00:12:36.675Z"
+      "updated": "2026-02-05T12:00:33.318Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-02-05T00:12:36.675Z"
+      "updated": "2026-02-05T12:00:33.319Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-02-05T00:12:36.675Z"
+      "updated": "2026-02-05T12:00:33.319Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-02-05T00:12:36.676Z"
+      "updated": "2026-02-05T12:00:33.319Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-02-05T00:12:36.676Z"
+      "updated": "2026-02-05T12:00:33.319Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-02-05T00:12:36.676Z"
+      "updated": "2026-02-05T12:00:33.319Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-02-05T00:12:36.676Z"
+      "updated": "2026-02-05T12:00:33.319Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-02-05T00:12:36.677Z"
+      "updated": "2026-02-05T12:00:33.320Z"
     },
     "AGENTS.md": {
       "lines": 267,
-      "updated": "2026-02-05T00:12:36.677Z"
+      "updated": "2026-02-05T12:00:33.320Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-02-05T00:12:36.678Z"
+      "updated": "2026-02-05T12:00:33.321Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-02-05T00:12:36.678Z"
+      "updated": "2026-02-05T12:00:33.321Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-02-05T00:12:36.679Z"
+      "updated": "2026-02-05T12:00:33.322Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-02-05T00:12:36.680Z"
+      "updated": "2026-02-05T12:00:33.322Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-02-05T00:12:36.680Z"
+      "updated": "2026-02-05T12:00:33.322Z"
     }
   },
-  "built": "2026-02-05T00:12:36.656Z"
+  "built": "2026-02-05T12:00:33.300Z"
 }
