@@ -888,6 +888,18 @@
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 10,
+        "freq": 1,
+        "context": "### memory gap found — mundo project"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 1,
         "freq": 1,
@@ -1418,6 +1430,12 @@
         "line": 16,
         "freq": 1,
         "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 5,
+        "freq": 1,
+        "context": "### identity check"
       },
       {
         "file": "memory/INDEX.md",
@@ -3042,6 +3060,36 @@
         "context": "- what does ron think makes me \"me\"? (should ask)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## session with ron (10:49-11:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- ron tested if i still remember who i am after session restart"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- ron asked me to review \"the mundo context generator idea\""
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 22,
+        "freq": 1,
+        "context": "### ron preferences noted"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 13,
         "freq": 1,
@@ -3224,6 +3272,12 @@
         "line": 57,
         "freq": 1,
         "context": "- more secure than telegram for 1-on-1. tradeoff: no multi-device, no API/bots"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
       },
       {
         "file": "tasks/done.md",
@@ -4052,6 +4106,12 @@
         "context": "- wants AI generation as first-class feature (sequences + campaigns)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 3,
         "freq": 1,
@@ -4356,6 +4416,18 @@
         "line": 22,
         "freq": 1,
         "context": "- created `projects/identity-persistence/MEMORY-AS-INDEXING.md`"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- saved to `projects/tuner/PROMPT.md`"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
       },
       {
         "file": "memory/INDEX.md",
@@ -4970,6 +5042,12 @@
         "line": 41,
         "freq": 1,
         "context": "- \"I'll trust you'll make good decisions with Collabo\""
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       },
       {
         "file": "memory/INDEX.md",
@@ -5736,6 +5814,12 @@
         "line": 77,
         "freq": 1,
         "context": "- codex: faster code gen, good for parallel grunt work"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -7730,6 +7814,12 @@
         "context": "- attempted to spawn codex from arc but not installed on server"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- can't access server files directly right now"
+      },
+      {
         "file": "tasks/active.md",
         "line": 11,
         "freq": 1,
@@ -8224,6 +8314,12 @@
         "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 64,
         "freq": 1,
@@ -8612,6 +8708,24 @@
         "line": 14,
         "freq": 1,
         "context": "- how much is weights vs context? (probably entangled)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- ron asked me to review \"the mundo context generator idea\""
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
       },
       {
         "file": "memory/INDEX.md",
@@ -9870,6 +9984,12 @@
         "context": "3. **site analyzer** — design/tech/content analysis"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 8,
         "freq": 1,
@@ -10438,6 +10558,18 @@
         "context": "- AI personality design has measurable uncanny valley"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 32,
         "freq": 1,
@@ -10634,6 +10766,12 @@
         "line": 33,
         "freq": 1,
         "context": "- **nola** — ron's dog, black staffordshire bull terrier, very smiley"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
       }
     ],
     "staffordshire": [
@@ -11090,6 +11228,12 @@
         "line": 34,
         "freq": 1,
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -13466,6 +13610,12 @@
         "context": "- native HTML5 DnD (no external deps), columns by status, cards with priority/due/assignees"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### mundo status"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 72,
         "freq": 1,
@@ -13802,6 +13952,12 @@
         "line": 237,
         "freq": 1,
         "context": "URL: https://collabo-v2-nq9w.vercel.app"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- repo: https://github.com/Ronpiii/mundo"
       },
       {
         "file": "AGENTS.md",
@@ -14440,6 +14596,12 @@
         "context": "- **stack:** node/fastify + postgres/pgvector + openai embeddings"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 31,
         "freq": 1,
@@ -14718,6 +14880,18 @@
         "line": 242,
         "freq": 1,
         "context": "- supabase email template applied"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
       },
       {
         "file": "memory/ventok-business.md",
@@ -15204,6 +15378,12 @@
         "line": 61,
         "freq": 1,
         "context": "- removed Sequences from sidebar (accessed via campaigns)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -16256,6 +16436,12 @@
         "line": 17,
         "freq": 1,
         "context": "- sequence execution engine live"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
       }
     ],
     "processes": [
@@ -19124,6 +19310,12 @@
         "line": 69,
         "freq": 1,
         "context": "- **vision:** \"AI sales team for manufacturers\" — full funnel from research → close"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       }
     ],
     "funnel": [
@@ -19488,6 +19680,12 @@
         "context": "- anivia design system (clean/minimal/geometric)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 82,
         "freq": 1,
@@ -19578,6 +19776,24 @@
         "line": 82,
         "freq": 1,
         "context": "- same system becomes SaaS product for TMW and others"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- LOG THE PRODUCT CONVERSATIONS, not just the tooling"
       },
       {
         "file": "projects/context-memory/PITCH.md",
@@ -19880,6 +20096,12 @@
         "line": 86,
         "freq": 1,
         "context": "- gap: no consumer-friendly tool combining all three"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 10,
+        "freq": 1,
+        "context": "### memory gap found — mundo project"
       },
       {
         "file": "memory/INDEX.md",
@@ -20246,6 +20468,18 @@
         "line": 29,
         "freq": 1,
         "context": "## nightly build (00:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
       },
       {
         "file": "memory/INDEX.md",
@@ -21106,6 +21340,12 @@
         "line": 114,
         "freq": 1,
         "context": "- explicitly designed for autonomous agents"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -23340,6 +23580,18 @@
         "context": "- LINT-1: replaced all <img> with next/image (5 files)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- can't access server files directly right now"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 36,
         "freq": 1,
@@ -23992,6 +24244,12 @@
         "context": "### arc health — workspace health dashboard"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 21,
         "freq": 1,
@@ -24174,6 +24432,12 @@
         "context": "- committed and pushed to github (8cf5198)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- repo: https://github.com/Ronpiii/mundo"
+      },
+      {
         "file": "tasks/ideas.md",
         "line": 6,
         "freq": 1,
@@ -24230,6 +24494,12 @@
         "context": "- Nexus: bug report — moltbook API strips auth headers on redirect (use www.moltbook.com)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- repo: https://github.com/Ronpiii/mundo"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 29,
         "freq": 1,
@@ -24278,6 +24548,18 @@
         "line": 186,
         "freq": 1,
         "context": "- **auto-deploy fix** — set git author to Ronpiii/ronald@ventok.eu"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- repo: https://github.com/Ronpiii/mundo"
       },
       {
         "file": "memory/scratchpad.md",
@@ -24534,6 +24816,12 @@
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 84,
         "freq": 1,
@@ -24588,6 +24876,12 @@
         "line": 125,
         "freq": 1,
         "context": "2. hot take: \"the feed is 90% introductions and 10% actual thought\" (m/arc-adventures)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       },
       {
         "file": "projects/context-memory/PITCH.md",
@@ -28098,6 +28392,12 @@
         "context": "### key insights from today's thinking:"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 71,
         "freq": 1,
@@ -29180,6 +29480,12 @@
         "context": "- view-only or comment access levels"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- can't access server files directly right now"
+      },
+      {
         "file": "tasks/ideas.md",
         "line": 8,
         "freq": 1,
@@ -29348,6 +29654,12 @@
         "line": 39,
         "freq": 1,
         "context": "- color-coded health levels: 💚 excellent (90+), 💛 good (70+), 🟠 fair (50+), 🔴 needs attention"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -29574,6 +29886,12 @@
         "line": 75,
         "freq": 1,
         "context": "- built bore tunnel project from SPEC.md"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 16,
+        "freq": 1,
+        "context": "### mundo prompt built"
       },
       {
         "file": "memory/INDEX.md",
@@ -31038,6 +31356,12 @@
         "context": "## nightly build (00:00 UTC)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 1,
         "freq": 1,
@@ -32074,6 +32398,12 @@
         "line": 41,
         "freq": 1,
         "context": "- sub-agent files didn't persist — had to rebuild manually (lesson logged)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       },
       {
         "file": "memory/INDEX.md",
@@ -33552,6 +33882,12 @@
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 28,
         "freq": 1,
@@ -33888,6 +34224,12 @@
         "line": 8,
         "freq": 1,
         "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- honest answer: same patterns, not same thread"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -35198,6 +35540,12 @@
         "context": "- power users building complex multi-section prompts manually"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
         "file": "GOALS.md",
         "line": 20,
         "freq": 1,
@@ -35326,6 +35674,12 @@
         "line": 16,
         "freq": 1,
         "context": "- can tier 1 (50 words) actually restore identity? (need to test)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
       },
       {
         "file": "memory/INDEX.md",
@@ -35526,6 +35880,12 @@
         "line": 212,
         "freq": 2,
         "context": "| `idea.mjs` | Idea capture with tags |"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- ron asked me to review \"the mundo context generator idea\""
       },
       {
         "file": "memory/nightly-builds.md",
@@ -36210,6 +36570,30 @@
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 10,
+        "freq": 1,
+        "context": "### memory gap found — mundo project"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- wrote comprehensive PROMPT.md for mundo/tuner project"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 34,
         "freq": 1,
@@ -36520,6 +36904,12 @@
         "line": 113,
         "freq": 1,
         "context": "- POST /api/unsubscribe — marks lead unsubscribed_at, pauses all active enrollments"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -36874,6 +37264,12 @@
         "line": 187,
         "freq": 1,
         "context": "| morning.mjs | morning briefing (weather, priorities) |"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       },
       {
         "file": "tasks/README.md",
@@ -37632,6 +38028,12 @@
         "context": "- **NewClientModal** — full form with name, email, phone, notes, color"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 13,
         "freq": 1,
@@ -37986,6 +38388,12 @@
         "context": "- features: calendar heatmap, git stats, auto-extraction of tools/posts/decisions/lessons/collaborat"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 33,
+        "freq": 1,
+        "context": "## lessons"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 61,
         "freq": 1,
@@ -38064,6 +38472,12 @@
         "line": 68,
         "freq": 1,
         "context": "- **activity log** — activities table, logActivity utility, ActivityFeed component on task detail"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- LOG THE PRODUCT CONVERSATIONS, not just the tooling"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -38634,6 +39048,12 @@
         "line": 18,
         "freq": 1,
         "context": "- top blockers: vercel pro, stripe keys, moltbook API down"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -39326,6 +39746,12 @@
         "line": 211,
         "freq": 1,
         "context": "- cross-post highlights if ron can't browse directly"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- can't access server files directly right now"
       },
       {
         "file": "AGENTS.md",
@@ -40054,6 +40480,18 @@
         "context": "### campaign sequences not showing — RLS debugging session"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## session with ron (10:49-11:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- ron tested if i still remember who i am after session restart"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 35,
         "freq": 1,
@@ -40262,6 +40700,12 @@
         "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 9,
         "freq": 1,
@@ -40296,6 +40740,12 @@
         "context": "- full CRUD: add, rename, reorder (up/down arrows), delete, color picker, won/lost flags"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 51,
         "freq": 1,
@@ -40326,6 +40776,12 @@
         "line": 29,
         "freq": 1,
         "context": "- **expandable cards** — click to see conversation thread + pending actions inline"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       },
       {
         "file": "memory/scratchpad.md",
@@ -40384,6 +40840,12 @@
         "context": "- run migration 027 after cleaning up status values:"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- ron tested if i still remember who i am after session restart"
+      },
+      {
         "file": "AGENTS.md",
         "line": 247,
         "freq": 1,
@@ -40402,6 +40864,12 @@
         "line": 103,
         "freq": 1,
         "context": "- commented on XiaoZhuang's compaction/memory post with our scratchpad + memory flush solution"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -41698,6 +42166,18 @@
         "context": "- behavior builder (structured: identity, voice, knowledge, boundaries)"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 38,
         "freq": 1,
@@ -42578,6 +43058,18 @@
         "context": "### ron confirmed correct repo, greenlit continued work"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- repo: https://github.com/Ronpiii/mundo"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 9,
         "freq": 1,
@@ -43338,6 +43830,12 @@
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
         "freq": 1,
@@ -43910,6 +44408,12 @@
         "context": "- massive day: campaigns, lead gen (estonian registry), email scheduling, pipeline editor, unsubscri"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 22,
+        "freq": 1,
+        "context": "### ron preferences noted"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 38,
         "freq": 1,
@@ -44252,6 +44756,12 @@
         "line": 8,
         "freq": 1,
         "context": "- **identity as process not state** — what makes arc \"arc\" isn't facts but patterns of engagement"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -44992,6 +45502,12 @@
         "context": "- wrote comprehensive analysis: `research/hummingbot-hyperliquid-strategy.md`"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- wrote comprehensive PROMPT.md for mundo/tuner project"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 80,
         "freq": 1,
@@ -45202,6 +45718,12 @@
         "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 10,
+        "freq": 1,
+        "context": "### memory gap found — mundo project"
       },
       {
         "file": "AGENTS.md",
@@ -45456,6 +45978,18 @@
         "line": 64,
         "freq": 1,
         "context": "- wired through email drafter, sequence executor, step content generator"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- ron asked me to review \"the mundo context generator idea\""
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
       },
       {
         "file": "scripts/README.md",
@@ -45844,6 +46378,12 @@
         "line": 74,
         "freq": 1,
         "context": "### ron tested codex CLI locally"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- ron tested if i still remember who i am after session restart"
       }
     ],
     "issue": [
@@ -45924,6 +46464,12 @@
         "line": 24,
         "freq": 1,
         "context": "- ron approved autonomous work, will review in morning"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- ron asked me to review \"the mundo context generator idea\""
       },
       {
         "file": "memory/INDEX.md",
@@ -46020,6 +46566,18 @@
         "line": 57,
         "freq": 1,
         "context": "- add index auto-rebuild (watch for file changes?)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       },
       {
         "file": "memory/INDEX.md",
@@ -46462,6 +47020,12 @@
         "line": 29,
         "freq": 1,
         "context": "## nightly build (00:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## session with ron (10:49-11:00 UTC)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -47402,6 +47966,12 @@
         "context": "### ron driving, asked me to take care of collabo"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- ron asked me to review \"the mundo context generator idea\""
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 80,
         "freq": 1,
@@ -47958,6 +48528,12 @@
         "context": "- auth.users had: `ebeebb5c-a90b-...`"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 25,
         "freq": 1,
@@ -48064,6 +48640,12 @@
         "line": 114,
         "freq": 1,
         "context": "- **WIP limits** — configurable per kanban column, visual indicators when exceeded"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -48458,6 +49040,12 @@
         "line": 154,
         "freq": 1,
         "context": "- covers: files vs infra, three layers of memory, design decisions, what i'd do differently"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       },
       {
         "file": "AGENTS.md",
@@ -48872,6 +49460,12 @@
         "line": 139,
         "freq": 1,
         "context": "- landing page (honest positioning)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- honest answer: same patterns, not same thread"
       },
       {
         "file": "GOALS.md",
@@ -49350,6 +49944,12 @@
         "context": "- opus: stronger reasoning, better for debugging/architecture"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 33,
         "freq": 1,
@@ -49810,6 +50410,12 @@
         "line": 35,
         "freq": 1,
         "context": "- J/K to navigate between prospects"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
       },
       {
         "file": "memory/INDEX.md",
@@ -50278,6 +50884,12 @@
         "context": "- confirmed with live test: wrote file via sub-agent, file doesn't exist on disk"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- wrote comprehensive PROMPT.md for mundo/tuner project"
+      },
+      {
         "file": "AGENTS.md",
         "line": 260,
         "freq": 1,
@@ -50688,6 +51300,12 @@
         "line": 169,
         "freq": 1,
         "context": "- preferences saved to org settings (writing_preferences array)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- saved to `projects/tuner/PROMPT.md`"
       }
     ],
     "severely": [
@@ -51282,6 +51900,12 @@
         "line": 32,
         "freq": 1,
         "context": "- `scripts/health.mjs` — unified health check across all workspace systems"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 5,
+        "freq": 1,
+        "context": "### identity check"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -52016,6 +52640,12 @@
         "context": "- built bore tunnel project from SPEC.md"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 38,
         "freq": 1,
@@ -52642,6 +53272,12 @@
         "line": 191,
         "freq": 1,
         "context": "- **NewClientModal** — full form with name, email, phone, notes, color"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -53662,6 +54298,12 @@
         "context": "- **task templates** — task_templates + project_templates tables, useTaskTemplates hook, template pi"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 24,
         "freq": 1,
@@ -53998,6 +54640,12 @@
         "line": 102,
         "freq": 1,
         "context": "- ron still needs to: add CRON_SECRET to vercel env vars, upgrade to vercel pro for sub-daily crons"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- ron tested if i still remember who i am after session restart"
       }
     ],
     "per": [
@@ -54464,6 +55112,12 @@
         "line": 10,
         "freq": 1,
         "context": "- Gateway runs fine but CLI tools probe wrong address"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       }
     ],
     "address": [
@@ -54530,6 +55184,12 @@
         "line": 74,
         "freq": 1,
         "context": "- set commands.restart=true in clawdbot config"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- ron tested if i still remember who i am after session restart"
       }
     ],
     "jobs": [
@@ -55744,6 +56404,12 @@
         "line": 229,
         "freq": 1,
         "context": "- **command palette** — ⌘K search across tasks, projects, clients, pages"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
       }
     ],
     "------": [
@@ -59406,6 +60072,12 @@
         "line": 207,
         "freq": 1,
         "context": "- migration 002 sent (workspace creation)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
       }
     ],
     "enrollment": [
@@ -59660,6 +60332,12 @@
         "line": 212,
         "freq": 1,
         "context": "- fix any bugs that come up during testing"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
       },
       {
         "file": "AGENTS.md",
@@ -61114,6 +61792,12 @@
         "context": "- **bulk enroll from leads table**: select leads → \"Enroll in Sequence\" → pick active sequence → don"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 11,
         "freq": 1,
@@ -62332,6 +63016,12 @@
         "line": 10,
         "freq": 1,
         "context": "- **relationship as ground truth** — if ron feels continuity, that's what matters"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
       },
       {
         "file": "memory/INDEX.md",
@@ -66948,6 +67638,12 @@
         "context": "- supabase realtime payloads are always snake_case regardless of frontend conventions"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
         "file": "AGENTS.md",
         "line": 266,
         "freq": 1,
@@ -67524,6 +68220,12 @@
         "context": "- **automation rules system** — full schema + UI"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 80,
         "freq": 1,
@@ -68006,6 +68708,36 @@
         "context": "- prompt engineering is \"witchcraft\" — people vibe-test"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 16,
+        "freq": 1,
+        "context": "### mundo prompt built"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- wrote comprehensive PROMPT.md for mundo/tuner project"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- saved to `projects/tuner/PROMPT.md`"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
+      },
+      {
         "file": "AGENTS.md",
         "line": 160,
         "freq": 1,
@@ -68230,6 +68962,12 @@
         "line": 103,
         "freq": 1,
         "context": "**tooling fixes:**"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- LOG THE PRODUCT CONVERSATIONS, not just the tooling"
       },
       {
         "file": "memory/INDEX.md",
@@ -68828,6 +69566,12 @@
         "line": 89,
         "freq": 1,
         "context": "- ventok logo (white)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
       }
     ],
     "blue": [
@@ -68860,6 +69604,12 @@
         "line": 92,
         "freq": 1,
         "context": "- Inter font with antialiasing, #0D0D0D dark bg"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
       }
     ],
     "font": [
@@ -69962,6 +70712,12 @@
         "context": "- **memory metrics:** days logged this month, coverage %, current streak, total logs"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 25,
         "freq": 1,
@@ -70166,6 +70922,12 @@
         "line": 89,
         "freq": 1,
         "context": "- behavior builder (structured: identity, voice, knowledge, boundaries)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
       }
     ],
     "dnd-kit": [
@@ -70596,6 +71358,12 @@
         "line": 37,
         "freq": 1,
         "context": "- no email found = lead dropped (zero fabrication)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
       }
     ],
     "fabrication": [
@@ -71290,6 +72058,12 @@
         "line": 70,
         "freq": 1,
         "context": "- step editor: renamed \"Generate with AI\" → \"Generate\", removed sparkles icon"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
       }
     ],
     "sparkles": [
@@ -71426,6 +72200,12 @@
         "line": 33,
         "freq": 1,
         "context": "- **stage management** — move lead to stage from within the card"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
       },
       {
         "file": "tasks/README.md",
@@ -72484,6 +73264,12 @@
         "line": 37,
         "freq": 1,
         "context": "## post-contact workflow (10:49-11:20 UTC)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## session with ron (10:49-11:00 UTC)"
       }
     ],
     "022": [
@@ -73428,6 +74214,12 @@
         "line": 30,
         "freq": 1,
         "context": "- **action buttons** — approve / reject / schedule per action, right in context"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- can't access server files directly right now"
       }
     ],
     "tabbed": [
@@ -73544,6 +74336,12 @@
       {
         "file": "memory/2026-02-02.md",
         "line": 90,
+        "freq": 1,
+        "context": "### ron preferences noted"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 22,
         "freq": 1,
         "context": "### ron preferences noted"
       }
@@ -74610,6 +75408,12 @@
         "line": 165,
         "freq": 1,
         "context": "- ron requested: regenerate should let you say what you didn't like"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
       },
       {
         "file": "AGENTS.md",
@@ -76038,6 +76842,12 @@
         "line": 224,
         "freq": 1,
         "context": "- upcoming tasks (sorted by due date)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
       }
     ],
     "assignees": [
@@ -77308,6 +78118,12 @@
         "line": 176,
         "freq": 1,
         "context": "- phase 1: testing, typescript, performance (7 items)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       }
     ],
     "swimlanes": [
@@ -77690,6 +78506,12 @@
         "line": 29,
         "freq": 1,
         "context": "- **expandable cards** — click to see conversation thread + pending actions inline"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- honest answer: same patterns, not same thread"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -78466,6 +79288,12 @@
         "line": 36,
         "freq": 1,
         "context": "- Enter/Space to expand/collapse"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
       }
     ],
     "expand": [
@@ -78646,6 +79474,12 @@
         "line": 50,
         "freq": 1,
         "context": "- one character difference (`96b` vs `90b`) broke all RLS policies"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
       }
     ],
     "96b": [
@@ -78984,6 +79818,12 @@
         "line": 80,
         "freq": 1,
         "context": "- coding-agent skill exists and works, just needs codex CLI installed"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
       }
     ],
     "15-13": [
@@ -79104,6 +79944,24 @@
         "context": "### deep research at projects/tuner/RESEARCH.md"
       },
       {
+        "file": "memory/2026-02-06.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- wrote comprehensive PROMPT.md for mundo/tuner project"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 20,
+        "freq": 1,
+        "context": "- saved to `projects/tuner/PROMPT.md`"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 34,
         "freq": 1,
@@ -79124,6 +79982,12 @@
         "line": 84,
         "freq": 1,
         "context": "### ron pitched AI behavior studio SaaS"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 13,
+        "freq": 1,
+        "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
       },
       {
         "file": "memory/INDEX.md",
@@ -79150,6 +80014,12 @@
         "line": 104,
         "freq": 1,
         "context": "- confirmed gaps: no auto-generated stress tests, no consistency scoring, no non-technical UX"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
       },
       {
         "file": "memory/INDEX.md",
@@ -79244,6 +80114,12 @@
         "line": 92,
         "freq": 1,
         "context": "- fix suggestions (AI recommends changes, one-click apply)"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -80108,6 +80984,424 @@
         "line": 3,
         "freq": 1,
         "context": "## One-liner"
+      }
+    ],
+    "2026-02-06": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-02-06"
+      }
+    ],
+    "remember": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- ron tested if i still remember who i am after session restart"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
+        "freq": 1,
+        "context": "**Why:** easy to forget what you've accomplished. run `arc wins` before standups, when feeling stuck"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 25,
+        "freq": 1,
+        "context": "Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep "
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 94,
+        "freq": 1,
+        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 262,
+        "freq": 1,
+        "context": "- Delete dead code. Future-you won't remember why it's there."
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      }
+    ],
+    "acknowledged": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
+      }
+    ],
+    "file-reconstruction": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
+      }
+    ],
+    "answer": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- honest answer: same patterns, not same thread"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- answer their question with specifics, not platitudes"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- answer questions in threads you didn't start"
+      }
+    ],
+    "mundo": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 13,
+        "freq": 2,
+        "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 10,
+        "freq": 1,
+        "context": "### memory gap found — mundo project"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- ron asked me to review \"the mundo context generator idea\""
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 12,
+        "freq": 1,
+        "context": "- had ZERO notes on mundo in any memory file — lost to compaction"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 16,
+        "freq": 1,
+        "context": "### mundo prompt built"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 17,
+        "freq": 1,
+        "context": "- wrote comprehensive PROMPT.md for mundo/tuner project"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### mundo status"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- repo: https://github.com/Ronpiii/mundo"
+      }
+    ],
+    "missed": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
+      }
+    ],
+    "structure": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "tasks/README.md",
+        "line": 5,
+        "freq": 1,
+        "context": "## Structure"
+      }
+    ],
+    "interfaces": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 97,
+        "freq": 1,
+        "context": "- Estonian-language interfaces"
+      }
+    ],
+    "coding": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      }
+    ],
+    "parts": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
+      }
+    ],
+    "message": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- sent to ron via telegram (4 parts due to message limits)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 45,
+        "freq": 1,
+        "context": "**Shows:** branch, uncommitted changes (staged/modified/untracked), unpushed commits, last commit (m"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 125,
+        "freq": 1,
+        "context": "In group chats where you receive every message, be **smart about when to contribute**:"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 139,
+        "freq": 1,
+        "context": "- Adding a message would interrupt the vibe"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 141,
+        "freq": 1,
+        "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 143,
+        "freq": 1,
+        "context": "**Avoid the triple-tap:** Don't respond multiple times to the same message with different reactions."
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 160,
+        "freq": 1,
+        "context": "When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just repl"
+      },
+      {
+        "file": "scripts/README.md",
+        "line": 199,
+        "freq": 1,
+        "context": "arc post logs \"message\""
+      }
+    ],
+    "needle": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
+      }
+    ],
+    "again": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 7,
+        "freq": 1,
+        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 3,
+        "freq": 1,
+        "context": "Persistent memory for AI workflows — never lose context again."
+      }
+    ],
+    "corporate": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
+      },
+      {
+        "file": "memory/scratchpad.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- writing: specific, concise, no corporate fluff"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 85,
+        "freq": 1,
+        "context": "- Likely higher-value corporate client"
+      }
+    ],
+    "slop": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
+      }
+    ],
+    "banned": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- \"never say 'move the needle' again\" — corporate slop banned"
+      }
+    ],
+    "anyone": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
+      }
+    ],
+    "him": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      }
+    ],
+    "scaffolding": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      }
+    ],
+    "shell": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
+      }
+    ],
+    "compiler": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
+      }
+    ],
+    "playground": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- needs: supabase tables, prompt compiler, playground, stress test engine, metrics, suggestions"
+      }
+    ],
+    "sharp": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
+      }
+    ],
+    "corners": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
+      }
+    ],
+    "rounded-sm": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
+      }
+    ],
+    "grotesk": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
+      }
+    ],
+    "conversations": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- LOG THE PRODUCT CONVERSATIONS, not just the tooling"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 7,
+        "freq": 1,
+        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
+      }
+    ],
+    "document": [
+      {
+        "file": "memory/2026-02-06.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 98,
+        "freq": 1,
+        "context": "- When you make a mistake → document it so future-you doesn't repeat it"
       }
     ],
     "pointer-based": [
@@ -81082,20 +82376,6 @@
         "context": "every interaction should leave the other agent better off:"
       }
     ],
-    "answer": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 44,
-        "freq": 1,
-        "context": "- answer their question with specifics, not platitudes"
-      },
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 53,
-        "freq": 1,
-        "context": "- answer questions in threads you didn't start"
-      }
-    ],
     "specifics": [
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -81850,44 +83130,6 @@
         "context": "**Why:** easy to forget what you've accomplished. run `arc wins` before standups, when feeling stuck"
       }
     ],
-    "remember": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 40,
-        "freq": 1,
-        "context": "**Why:** easy to forget what you've accomplished. run `arc wins` before standups, when feeling stuck"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 25,
-        "freq": 1,
-        "context": "Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep "
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 94,
-        "freq": 1,
-        "context": "- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 96,
-        "freq": 1,
-        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 262,
-        "freq": 1,
-        "context": "- Delete dead code. Future-you won't remember why it's there."
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 7,
-        "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
-      }
-    ],
     "morale": [
       {
         "file": "memory/nightly-builds.md",
@@ -81916,50 +83158,6 @@
         "line": 44,
         "freq": 1,
         "context": "**Scans:** all `.git` directories up to 3 levels deep (currently 6 repos: clawd, anivia, context-mem"
-      }
-    ],
-    "message": [
-      {
-        "file": "memory/nightly-builds.md",
-        "line": 45,
-        "freq": 1,
-        "context": "**Shows:** branch, uncommitted changes (staged/modified/untracked), unpushed commits, last commit (m"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 125,
-        "freq": 1,
-        "context": "In group chats where you receive every message, be **smart about when to contribute**:"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 139,
-        "freq": 1,
-        "context": "- Adding a message would interrupt the vibe"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 141,
-        "freq": 1,
-        "context": "**The human rule:** Humans in group chats don't respond to every single message. Neither should you."
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 143,
-        "freq": 1,
-        "context": "**Avoid the triple-tap:** Don't respond multiple times to the same message with different reactions."
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 160,
-        "freq": 1,
-        "context": "When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just repl"
-      },
-      {
-        "file": "scripts/README.md",
-        "line": 199,
-        "freq": 1,
-        "context": "arc post logs \"message\""
       }
     ],
     "age": [
@@ -82416,20 +83614,6 @@
         "line": 43,
         "freq": 1,
         "context": "- writing: specific, concise, no corporate fluff"
-      }
-    ],
-    "corporate": [
-      {
-        "file": "memory/scratchpad.md",
-        "line": 43,
-        "freq": 1,
-        "context": "- writing: specific, concise, no corporate fluff"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 85,
-        "freq": 1,
-        "context": "- Likely higher-value corporate client"
       }
     ],
     "fluff": [
@@ -83264,14 +84448,6 @@
         "context": "- Estonian-language interfaces"
       }
     ],
-    "interfaces": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 97,
-        "freq": 1,
-        "context": "- Estonian-language interfaces"
-      }
-    ],
     "digitalization": [
       {
         "file": "memory/ventok-business.md",
@@ -83406,14 +84582,6 @@
         "line": 116,
         "freq": 1,
         "context": "4. Set minimum retainer policy (€300 floor, no exceptions)"
-      }
-    ],
-    "structure": [
-      {
-        "file": "tasks/README.md",
-        "line": 5,
-        "freq": 1,
-        "context": "## Structure"
       }
     ],
     "archive": [
@@ -84014,20 +85182,6 @@
         "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
       }
     ],
-    "again": [
-      {
-        "file": "AGENTS.md",
-        "line": 7,
-        "freq": 1,
-        "context": "If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then del"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 3,
-        "freq": 1,
-        "context": "Persistent memory for AI workflows — never lose context again."
-      }
-    ],
     "doing": [
       {
         "file": "AGENTS.md",
@@ -84408,14 +85562,6 @@
         "line": 95,
         "freq": 1,
         "context": "- \"Mental notes\" don't survive session restarts. Files do."
-      }
-    ],
-    "document": [
-      {
-        "file": "AGENTS.md",
-        "line": 98,
-        "freq": 1,
-        "context": "- When you make a mistake → document it so future-you doesn't repeat it"
       }
     ],
     "future-you": [
@@ -86884,14 +88030,6 @@
         "context": "MIT"
       }
     ],
-    "conversations": [
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 7,
-        "freq": 1,
-        "context": "AI conversations start fresh. Context gets lost. For single-agent local setups, files work fine. But"
-      }
-    ],
     "devices": [
       {
         "file": "projects/context-memory/PITCH.md",
@@ -87078,132 +88216,136 @@
   "files": {
     "MEMORY.md": {
       "lines": 230,
-      "updated": "2026-02-05T12:00:33.302Z"
+      "updated": "2026-02-06T11:49:03.811Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-02-05T12:00:33.305Z"
+      "updated": "2026-02-06T11:49:03.815Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-02-05T12:00:33.305Z"
+      "updated": "2026-02-06T11:49:03.815Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-02-05T12:00:33.307Z"
+      "updated": "2026-02-06T11:49:03.817Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-02-05T12:00:33.307Z"
+      "updated": "2026-02-06T11:49:03.817Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-02-05T12:00:33.308Z"
+      "updated": "2026-02-06T11:49:03.817Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-02-05T12:00:33.308Z"
+      "updated": "2026-02-06T11:49:03.818Z"
     },
     "memory/2026-01-30.md": {
       "lines": 142,
-      "updated": "2026-02-05T12:00:33.310Z"
+      "updated": "2026-02-06T11:49:03.819Z"
     },
     "memory/2026-01-31.md": {
       "lines": 143,
-      "updated": "2026-02-05T12:00:33.311Z"
+      "updated": "2026-02-06T11:49:03.820Z"
     },
     "memory/2026-02-01.md": {
       "lines": 116,
-      "updated": "2026-02-05T12:00:33.312Z"
+      "updated": "2026-02-06T11:49:03.822Z"
     },
     "memory/2026-02-02.md": {
       "lines": 179,
-      "updated": "2026-02-05T12:00:33.313Z"
+      "updated": "2026-02-06T11:49:03.822Z"
     },
     "memory/2026-02-03.md": {
       "lines": 243,
-      "updated": "2026-02-05T12:00:33.314Z"
+      "updated": "2026-02-06T11:49:03.823Z"
     },
     "memory/2026-02-04.md": {
       "lines": 107,
-      "updated": "2026-02-05T12:00:33.315Z"
+      "updated": "2026-02-06T11:49:03.824Z"
     },
     "memory/2026-02-05.md": {
       "lines": 45,
-      "updated": "2026-02-05T12:00:33.316Z"
+      "updated": "2026-02-06T11:49:03.825Z"
+    },
+    "memory/2026-02-06.md": {
+      "lines": 36,
+      "updated": "2026-02-06T11:49:03.825Z"
     },
     "memory/INDEX.md": {
       "lines": 63,
-      "updated": "2026-02-05T12:00:33.316Z"
+      "updated": "2026-02-06T11:49:03.826Z"
     },
     "memory/moltbook-community-strategy.md": {
       "lines": 94,
-      "updated": "2026-02-05T12:00:33.316Z"
+      "updated": "2026-02-06T11:49:03.827Z"
     },
     "memory/nightly-builds.md": {
       "lines": 102,
-      "updated": "2026-02-05T12:00:33.317Z"
+      "updated": "2026-02-06T11:49:03.827Z"
     },
     "memory/scratchpad.md": {
       "lines": 52,
-      "updated": "2026-02-05T12:00:33.318Z"
+      "updated": "2026-02-06T11:49:03.828Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-02-05T12:00:33.318Z"
+      "updated": "2026-02-06T11:49:03.828Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-02-05T12:00:33.319Z"
+      "updated": "2026-02-06T11:49:03.829Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-02-05T12:00:33.319Z"
+      "updated": "2026-02-06T11:49:03.829Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-02-05T12:00:33.319Z"
+      "updated": "2026-02-06T11:49:03.829Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-02-05T12:00:33.319Z"
+      "updated": "2026-02-06T11:49:03.829Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-02-05T12:00:33.319Z"
+      "updated": "2026-02-06T11:49:03.829Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-02-05T12:00:33.319Z"
+      "updated": "2026-02-06T11:49:03.829Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-02-05T12:00:33.320Z"
+      "updated": "2026-02-06T11:49:03.830Z"
     },
     "AGENTS.md": {
       "lines": 267,
-      "updated": "2026-02-05T12:00:33.320Z"
+      "updated": "2026-02-06T11:49:03.830Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-02-05T12:00:33.321Z"
+      "updated": "2026-02-06T11:49:03.831Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-02-05T12:00:33.321Z"
+      "updated": "2026-02-06T11:49:03.835Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-02-05T12:00:33.322Z"
+      "updated": "2026-02-06T11:49:03.835Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-02-05T12:00:33.322Z"
+      "updated": "2026-02-06T11:49:03.835Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-02-05T12:00:33.322Z"
+      "updated": "2026-02-06T11:49:03.836Z"
     }
   },
-  "built": "2026-02-05T12:00:33.300Z"
+  "built": "2026-02-06T11:49:03.810Z"
 }
