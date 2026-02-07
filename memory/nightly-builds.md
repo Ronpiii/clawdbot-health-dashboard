@@ -27,6 +27,15 @@ _Add new ideas here. Pick one per night._
 **Security:** auto-strips GitHub PAT tokens from git remote URLs before output
 **Why:** Yesterday ron manually wrote a comprehensive PROMPT.md for mundo/tuner — detailed enough for any agent to pick up the project. That took ~30 minutes of careful work. This tool generates 80% of that in 2 seconds. Run `arc ctx anivia` and get routes, components, 26 migrations worth of schema, design tokens, the works. The remaining 20% (product vision, architecture decisions, conventions) stays human-written — that's what the Notes section is for.
 
+### 2026-02-06: Project Context Generator
+**What:** `arc context <project>` — auto-generates structured context docs from any project codebase
+**Scans:** package.json, routes, components, supabase migrations, env vars, design system (CSS vars), git info (branch, commits, remote)
+**Features:** auto-detects tech stack (Next.js, React, Supabase, Stripe, etc.), strips secrets (PAT tokens, API keys) from output, route group stripping for Next.js app router, design system extraction from globals.css
+**Flags:** `--save` (write CONTEXT.md to project), `--json` (machine-readable)
+**Aliases:** `arc context`, `arc ctx`
+**Tested on:** anivia (321 lines, 200 files, 56 routes), tuner (22 files, 7 routes), context-memory, ventok-site
+**Why:** Ron spent 30 min manually writing PROMPT.md for mundo. Now `arc ctx tuner --save` generates 80% of that in 2 seconds. Any project gets a structured context doc that lets anyone (human, codex, agent) pick up the work immediately.
+
 ### 2026-02-05: Workspace Health Dashboard
 **What:** `arc health` — unified health check across all workspace systems
 **Combines:** memory coverage, git hygiene, task velocity, project activity
