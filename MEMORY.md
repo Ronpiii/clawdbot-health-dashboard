@@ -179,6 +179,7 @@
 | task.mjs | task management + discord |
 | note.mjs | quick note capture |
 | idea.mjs | zero-friction idea capture (nightly build 01-28) |
+| context.mjs | auto-generate project context docs (nightly build 02-07) |
 | today.mjs | quick context for current day |
 | week.mjs | weekly overview (past 7 days) |
 | project.mjs | project context loading |
