@@ -59,7 +59,8 @@ const SCRIPTS = {
   git: 'git-repos.mjs',
   deps: 'deps-check.mjs',
   wins: 'wins.mjs',
-  health: 'health.mjs'
+  health: 'health.mjs',
+  context: 'context.mjs'
 };
 
 const HELP = `
@@ -101,6 +102,7 @@ Commands:
   deps [project]        Dependency health dashboard (--short, --json)
   wins [days]           Recent accomplishments (--week, --project, --json)
   health                 Workspace health dashboard (--short, --json)
+  context [project]      Auto-generate project context doc (--save, --json)
 
 Examples:
   arc search "database issue"
@@ -283,6 +285,11 @@ switch (cmd) {
 
   case 'health':
     run(SCRIPTS.health, args);
+    break;
+
+  case 'context':
+  case 'ctx':
+    run(SCRIPTS.context, args);
     break;
 
   default:
