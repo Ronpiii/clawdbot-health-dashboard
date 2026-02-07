@@ -60,7 +60,8 @@ const SCRIPTS = {
   deps: 'deps-check.mjs',
   wins: 'wins.mjs',
   health: 'health.mjs',
-  context: 'context.mjs'
+  context: 'context-gen.mjs',
+  ctx: 'context-gen.mjs'
 };
 
 const HELP = `
