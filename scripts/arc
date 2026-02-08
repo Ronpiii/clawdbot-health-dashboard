@@ -58,6 +58,7 @@ const SCRIPTS = {
   blockers: 'blockers.mjs',
   git: 'git-repos.mjs',
   deps: 'deps-check.mjs',
+  shield: 'shield.mjs',
   wins: 'wins.mjs',
   health: 'health.mjs',
   context: 'context-gen.mjs',
@@ -104,6 +105,7 @@ Commands:
   wins [days]           Recent accomplishments (--week, --project, --json)
   health                 Workspace health dashboard (--short, --json)
   context [project]      Auto-generate project context doc (--save, --json)
+  shield [opts]          Security scanner (--quick, --fix, --json)
 
 Examples:
   arc search "database issue"

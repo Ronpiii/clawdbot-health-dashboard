@@ -6,3 +6,10 @@ mockups/*.png
 memory/heartbeat-state.json
 projects/ventok-site/
 experiments/ucan-agent/.keys/
+
+# environment files
+.env
+.env.local
+.env.*.local
+discord-voice-bot/.env
+projects/context-memory/api/.env
