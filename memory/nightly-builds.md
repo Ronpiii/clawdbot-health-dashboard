@@ -18,6 +18,18 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-08: Workspace Security Scanner
+**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygiene issues
+**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .env files vs gitignore coverage, git remotes for embedded credentials, package.json lifecycle hooks (postinstall/preinstall), git/URL dependencies, suspicious code patterns (eval, obfuscated hex, Function constructor), file permissions
+**Features:** severity scoring (critical/high/medium/low/info), auto-detects nested git repos and submodules (checks each repo's own .gitignore), security score 0-100 with progress bar, auto-fix mode for safe remediations, skips gitignored secrets (shown as info), suppresses false positives from template variables and markdown examples
+**Flags:** `--quick` (secrets + git only), `--fix` (auto-fix safe issues), `--json` (machine-readable)
+**Fixes applied during build:**
+- Stripped embedded GitHub PAT from anivia git remote (was `ghp_...@github.com`)
+- Added `.env`, `.env.local`, `.env.*.local` to root .gitignore
+- Score went from 0/100 → 70/100 (full scan) / 91/100 (quick scan)
+**Born from:** ClawdHub supply chain attack discussion (2026-02-07) — yesterday ron and i dissected how a malicious skill targeted AI agents. the best time to harden was before the breach. the second best time is now.
+**Why:** Security tooling that runs in 2 seconds and catches real issues. Found an actual embedded PAT token in a git remote on first run. The kind of thing that sits quietly in `.git/config` until someone pushes to a public repo.
+
 ### 2026-02-07: Project Context Generator
 **What:** `arc context <project>` — auto-generates structured context documents from any project directory
 **Scans:** package.json (deps categorized by role: framework, database, auth, AI, styling, UI, testing, email, payments, state), Next.js routes (pages + API endpoints), component tree, Supabase schema (tables, functions, RLS policies from migrations), environment variables (.env.example or source-scanned process.env refs), design system (CSS variables, tailwind config, cn() helper), git info (sanitized — strips embedded tokens), file tree visualization
