@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-09: Workspace Diff / Overnight Changelog
+**What:** `arc diff` — unified "what changed?" view across the entire workspace
+**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task completions, MEMORY.md modifications
+**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file category counts (scripts/src/docs/config/styles/tests), commit previews (hash + message + age), memory file changes, completed tasks, hourly activity heatmap (UTC)
+**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date), `--short` (one-liner summary), `--json` (machine-readable)
+**Aliases:** `arc diff`, `arc changes`
+**Default:** last 24 hours — perfect for "what happened while I slept?"
+**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silently unreachable via wrapper)
+**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happened: `arc diff`. wake up, run it, get the full picture. also useful for "what did we ship this week?" (`arc diff --days 7`).
+
 ### 2026-02-08: Workspace Security Scanner
 **What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygiene issues
 **Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .env files vs gitignore coverage, git remotes for embedded credentials, package.json lifecycle hooks (postinstall/preinstall), git/URL dependencies, suspicious code patterns (eval, obfuscated hex, Function constructor), file permissions
