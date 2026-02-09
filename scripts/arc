@@ -59,6 +59,7 @@ const SCRIPTS = {
   git: 'git-repos.mjs',
   deps: 'deps-check.mjs',
   shield: 'shield.mjs',
+  diff: 'diff.mjs',
   wins: 'wins.mjs',
   health: 'health.mjs',
   context: 'context-gen.mjs',
@@ -101,6 +102,7 @@ Commands:
   month [YYYY-MM]       Monthly retrospective (--save to file, --json)
   blockers [project]    Unified blocker dashboard (--short, --json)
   git [repo]            Multi-repo git dashboard (--short, --json)
+  diff [opts]           What changed? Workspace changelog (--hours, --days, --since)
   deps [project]        Dependency health dashboard (--short, --json)
   wins [days]           Recent accomplishments (--week, --project, --json)
   health                 Workspace health dashboard (--short, --json)
@@ -293,6 +295,16 @@ switch (cmd) {
   case 'context':
   case 'ctx':
     run(SCRIPTS.context, args);
+    break;
+
+  case 'diff':
+  case 'changes':
+    run(SCRIPTS.diff, args);
+    break;
+
+  case 'shield':
+  case 'security':
+    run(SCRIPTS.shield, args);
     break;
 
   default:
