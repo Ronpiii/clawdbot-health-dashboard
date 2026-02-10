@@ -473,7 +473,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 2,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
@@ -1001,7 +1001,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -1564,6 +1570,12 @@
         "context": "in every post, reference at least one other agent by name. builds the social graph. makes people fee"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **Package info** — name, version, dep counts, available scripts"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 65,
         "freq": 1,
@@ -1579,7 +1591,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 3,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -1651,13 +1663,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 26,
+        "line": 41,
         "freq": 2,
         "context": "**Aliases:** `arc diff`, `arc changes`"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 2,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -1962,6 +1974,24 @@
         "context": "- `arc diff` = the overnight changelog. wake up, run it, full picture."
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc focus (00:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- added routing in arc CLI"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 41,
         "freq": 1,
@@ -1971,11 +2001,35 @@
         "file": "memory/nightly-builds.md",
         "line": 22,
         "freq": 1,
+        "context": "**What:** `arc focus` — deep project context loader for \"where was I?\""
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 37,
+        "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -3190,6 +3244,66 @@
         "context": "- ron has an AI building things overnight — needs one command to see what happened"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ron was sick yesterday, light check-in sent"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 28,
+        "freq": 1,
+        "context": "## mundo session with ron (09:53-14:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### ron feeling better after sick day"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- ron asked for a fresh idea prompt for mundo UI rebuild"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- ron shared screenshot of conductor-style UI (agent-conversation-with-actions pattern)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- ron asked about desktop app feasibility"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- waiting on ron's answer re: what's pulling him toward desktop"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- ron switches between 5+ projects daily"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 13,
         "freq": 1,
@@ -3227,7 +3341,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -3368,8 +3488,14 @@
         "context": "- sent to ron via telegram (4 parts due to message limits)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -3428,6 +3554,12 @@
         "line": 148,
         "freq": 1,
         "context": "- schedules for 8:00 Tallinn time"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 22,
+        "freq": 1,
+        "context": "## morning heartbeat (06:00 UTC / 08:00 tallinn)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -3608,6 +3740,18 @@
         "line": 33,
         "freq": 1,
         "context": "- remaining: 4 high (test secrets + eval in build scripts), 21 low (discord webhooks, base64 — all l"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
       },
       {
         "file": "memory/scratchpad.md",
@@ -4536,6 +4680,24 @@
         "context": "- root cause: node_modules in 3 inactive projects (collabo-v2, tuner, ventok-site) eating ~71k inode"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- ron switches between 5+ projects daily"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 10,
         "freq": 1,
@@ -4552,6 +4714,18 @@
         "line": 26,
         "freq": 1,
         "context": "- **cross-pollinate** — bring insights from moltbook to ron's projects and vice versa"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "memory/scratchpad.md",
@@ -5114,10 +5288,22 @@
         "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 32,
         "freq": 1,
         "context": "**lesson:** ron trusts me to make design decisions — don't over-ask."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
       },
       {
         "file": "AGENTS.md",
@@ -5216,6 +5402,18 @@
         "line": 15,
         "freq": 1,
         "context": "- sent ron a note about overnight `arc context` build"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- ron asked about desktop app feasibility"
       },
       {
         "file": "AGENTS.md",
@@ -5904,10 +6102,28 @@
         "context": "## afternoon proactive work (14:00 UTC)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- back online, ready to work on mundo"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 66,
         "freq": 1,
         "context": "- **monday:** build log from weekend/previous week work"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
       },
       {
         "file": "memory/scratchpad.md",
@@ -6116,6 +6332,36 @@
         "context": "- missing context is major failure mode"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 21,
+        "freq": 1,
+        "context": "### 2026-02-10: Project Focus Mode"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
+      },
+      {
         "file": "tasks/ideas.md",
         "line": 7,
         "freq": 1,
@@ -6158,6 +6404,12 @@
         "line": 131,
         "freq": 1,
         "context": "- removed thumbs up from lead detail (keep thumbs down for disqualify)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
       },
       {
         "file": "CHANGELOG.md",
@@ -6652,6 +6904,12 @@
         "context": "**Schedule:** 2:00 AM Tallinn time (00:00 UTC)"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
         "file": "AGENTS.md",
         "line": 91,
         "freq": 1,
@@ -6776,6 +7034,12 @@
         "line": 18,
         "freq": 1,
         "context": "- sent morning curiosity drop (waymo world model, france office suite, coding agents debate)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
       },
       {
         "file": "memory/scratchpad.md",
@@ -7082,6 +7346,12 @@
         "context": "- sent morning curiosity drop (waymo world model, france office suite, coding agents debate)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 22,
+        "freq": 1,
+        "context": "## morning heartbeat (06:00 UTC / 08:00 tallinn)"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 46,
         "freq": 1,
@@ -7118,6 +7388,12 @@
         "line": 18,
         "freq": 1,
         "context": "- sent morning curiosity drop (waymo world model, france office suite, coding agents debate)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
       },
       {
         "file": "memory/scratchpad.md",
@@ -7256,6 +7532,12 @@
         "context": "- ron has an AI building things overnight — needs one command to see what happened"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- one command to pick up exactly where you left off"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 56,
         "freq": 1,
@@ -7269,7 +7551,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -7436,6 +7718,24 @@
         "line": 21,
         "freq": 1,
         "context": "- audited our setup: CLEAN — all skills are bundled core, no third-party installs"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
       },
       {
         "file": "memory/scratchpad.md",
@@ -8201,7 +8501,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -8930,10 +9230,40 @@
         "context": "### context"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 3,
         "freq": 1,
         "context": "pointer-based index to daily logs. search here, follow links for full context."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc focus` — deep project context loader for \"where was I?\""
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
       },
       {
         "file": "memory/scratchpad.md",
@@ -9764,6 +10094,12 @@
         "context": "- **separate Generate vs Create modals** for sequences (mode prop)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 71,
         "freq": 1,
@@ -10000,8 +10336,14 @@
         "context": "- per-repo breakdown: file categories (scripts/src/docs/config), commit previews, diff bars"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- need to re-add BRAVE_API_KEY to gateway config"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -10208,6 +10550,12 @@
         "line": 18,
         "freq": 1,
         "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 46,
+        "freq": 1,
+        "context": "### tech stack discussion"
       },
       {
         "file": "memory/ventok-business.md",
@@ -10644,6 +10992,18 @@
         "context": "- skipped: no Brave API key configured. need `clawdbot configure --section web` or BRAVE_API_KEY env"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 50,
+        "freq": 1,
+        "context": "### desktop vs web app question"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 8,
         "freq": 1,
@@ -10806,6 +11166,12 @@
         "line": 49,
         "freq": 1,
         "context": "- scans: package.json, routes, components, supabase migrations, env vars, design system, git info"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
       },
       {
         "file": "memory/INDEX.md",
@@ -13488,6 +13854,12 @@
         "context": "- **critical:** stripped embedded GitHub PAT from anivia git remote (`ghp_...@github.com`)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 27,
         "freq": 1,
@@ -13504,6 +13876,12 @@
         "line": 15,
         "freq": 1,
         "context": "- [ ] Bulk email drafting UI for anivia — select leads → draft all"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "memory/scratchpad.md",
@@ -13686,6 +14064,12 @@
         "context": "- `UPDATE ai_actions SET status = 'executed' WHERE status = 'completed'`"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 28,
+        "freq": 2,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
         "file": "MEMORY.md",
         "line": 53,
         "freq": 1,
@@ -13854,10 +14238,28 @@
         "context": "### status"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 72,
         "freq": 1,
         "context": "| agent | why | status |"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
       },
       {
         "file": "memory/scratchpad.md",
@@ -14095,7 +14497,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -14544,6 +14946,18 @@
         "context": "URL: https://collabo-v2-nq9w.vercel.app"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 50,
+        "freq": 1,
+        "context": "### desktop vs web app question"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- ron asked about desktop app feasibility"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 58,
         "freq": 1,
@@ -14816,10 +15230,34 @@
         "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 46,
+        "freq": 1,
+        "context": "### tech stack discussion"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 31,
         "freq": 1,
         "context": "- **the trust stack pays off** — when you recommend something, people listen"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
       },
       {
         "file": "memory/ventok-business.md",
@@ -14912,6 +15350,18 @@
         "line": 209,
         "freq": 1,
         "context": "### next steps when ron returns"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
       },
       {
         "file": "tasks/active.md",
@@ -15174,6 +15624,12 @@
         "line": 21,
         "freq": 1,
         "context": "- audited our setup: CLEAN — all skills are bundled core, no third-party installs"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -15618,8 +16074,14 @@
         "context": "- `arc shield` was unreachable via the arc wrapper (missing case in switch statement)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -15910,6 +16372,12 @@
         "line": 6,
         "freq": 1,
         "context": "- anivia sequences: 6 checked, 0 advanced"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       },
       {
         "file": "memory/INDEX.md",
@@ -16952,6 +17420,12 @@
         "line": 104,
         "freq": 1,
         "context": "- **webhook integrations** — webhooks + delivery queue, task event triggers"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       }
     ],
     "actions": [
@@ -17008,6 +17482,12 @@
         "line": 37,
         "freq": 1,
         "context": "- A to approve all actions on focused prospect"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
       },
       {
         "file": "memory/INDEX.md",
@@ -17102,6 +17582,12 @@
         "line": 14,
         "freq": 1,
         "context": "- [ ] Email preview component for anivia — see how emails look before sending"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "memory/security-notes.md",
@@ -17552,6 +18038,24 @@
         "line": 36,
         "freq": 1,
         "context": "- **task metrics:** open/done/blocked counts, velocity (completion %)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "tracking": [
@@ -18303,7 +18807,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -18698,8 +19202,14 @@
         "context": "- `arc shield` was unreachable via the arc wrapper (missing case in switch statement)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       }
@@ -18805,7 +19315,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -19192,6 +19702,18 @@
         "context": "- if it's good for ron, anna, or ventok — just do it, no approval needed"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- recommended web-first, Tauri wrapper later if needed"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 47,
         "freq": 1,
@@ -19470,10 +19992,22 @@
         "context": "### ron sick day"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### ron feeling better after sick day"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 16,
         "freq": 1,
         "context": "- **consistent posting cadence** — 1 quality post per day, not more. quality > quantity."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "QUICKREF.md",
@@ -19894,6 +20428,12 @@
         "context": "- scans: package.json, routes, components, supabase migrations, env vars, design system, git info"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 82,
         "freq": 1,
@@ -20002,6 +20542,18 @@
         "line": 58,
         "freq": 1,
         "context": "- LOG THE PRODUCT CONVERSATIONS, not just the tooling"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
       },
       {
         "file": "projects/context-memory/PITCH.md",
@@ -20153,7 +20705,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -20506,6 +21058,12 @@
         "context": "- gap: no consumer-friendly tool combining all three"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 17,
         "freq": 1,
@@ -20784,6 +21342,12 @@
         "line": 3,
         "freq": 1,
         "context": "## nightly build: arc diff (00:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc focus (00:00 UTC)"
       },
       {
         "file": "memory/INDEX.md",
@@ -21172,6 +21736,12 @@
         "context": "- updated MEMORY.md with feb learnings (supply chain attacks, arc shield, brave api gap)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
+      },
+      {
         "file": "GOALS.md",
         "line": 23,
         "freq": 1,
@@ -21338,6 +21908,12 @@
         "context": "- **filter tabs**: all | needs attention | waiting | replied | meeting booked"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- waiting on ron's answer re: what's pulling him toward desktop"
+      },
+      {
         "file": "GOALS.md",
         "line": 31,
         "freq": 1,
@@ -21434,6 +22010,18 @@
         "line": 55,
         "freq": 1,
         "context": "- tested on anivia (200 files, 56 routes, 78 components, 26 migrations), tuner, context-memory, vent"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- aliases: mundo→tuner, cm→context-memory, etc."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
       },
       {
         "file": "projects/context-memory/README.md",
@@ -22278,6 +22866,12 @@
         "context": "- **command palette** — ⌘K search across tasks, projects, clients, pages"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 3,
         "freq": 1,
@@ -22667,7 +23261,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -22912,8 +23506,14 @@
         "context": "- added both `diff` and `shield` routing to arc CLI"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- added routing in arc CLI"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -23490,6 +24090,12 @@
         "context": "- campaign edit option in dropdown menu"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 58,
         "freq": 1,
@@ -24005,13 +24611,37 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **File overview** — total files + extension breakdown"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -24406,6 +25036,18 @@
         "line": 42,
         "freq": 1,
         "context": "- registered as `arc health` in CLI"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
       },
       {
         "file": "memory/scratchpad.md",
@@ -24839,7 +25481,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -25152,8 +25794,20 @@
         "context": "- stats section shows totals by project and type"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -25370,6 +26024,12 @@
         "context": "- behavior builder (structured: identity, voice, knowledge, boundaries)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 8,
         "freq": 1,
@@ -25436,6 +26096,12 @@
         "line": 40,
         "freq": 1,
         "context": "- analysis of feed quality post-HN: Shellraiser 316k bot upvotes, SelfOrigin karma farming, eudaemon"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
       },
       {
         "file": "tasks/active.md",
@@ -25506,6 +26172,12 @@
         "context": "- reddit pulse: blocked (no Brave API key)"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
+      },
+      {
         "file": "tasks/README.md",
         "line": 23,
         "freq": 1,
@@ -25554,6 +26226,12 @@
         "line": 12,
         "freq": 1,
         "context": "- current state: 6 repos found, 4 dirty (clawd, discord-voice-bot, context-memory, ventok-site)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
       }
     ],
     "udp": [
@@ -25582,6 +26260,12 @@
         "line": 28,
         "freq": 1,
         "context": "- enriched top leads with contact info where available"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **Package info** — name, version, dep counts, available scripts"
       },
       {
         "file": "GOALS.md",
@@ -25860,6 +26544,12 @@
         "line": 7,
         "freq": 1,
         "context": "- root cause: node_modules in 3 inactive projects (collabo-v2, tuner, ventok-site) eating ~71k inode"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
       }
     ],
     "static": [
@@ -26027,7 +26717,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -26420,6 +27110,12 @@
         "context": "- local competitor Sera = outreach only, managed service, no self-serve"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 22,
         "freq": 1,
@@ -26594,6 +27290,12 @@
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 1,
         "freq": 1,
@@ -26721,6 +27423,12 @@
       }
     ],
     "tasks": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 3,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
+      },
       {
         "file": "QUICKREF.md",
         "line": 55,
@@ -26914,8 +27622,20 @@
         "context": "- scans all git repos for commits + diffstat, memory files for create/modify, tasks for completions"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -27441,7 +28161,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -28059,25 +28779,25 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 21,
+        "line": 36,
         "freq": 1,
         "context": "### 2026-02-09: Workspace Diff / Overnight Changelog"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 22,
+        "line": 37,
         "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 46,
         "freq": 1,
         "context": "### 2026-02-08: Workspace Security Scanner"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -28501,7 +29221,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
@@ -28792,10 +29512,28 @@
         "context": "- reddit pulse: blocked (no Brave API key)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 71,
         "freq": 1,
         "context": "## key relationships to develop"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
       },
       {
         "file": "memory/ventok-business.md",
@@ -28930,6 +29668,12 @@
     ],
     "slash": [
       {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 2,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
         "file": "MEMORY.md",
         "line": 130,
         "freq": 1,
@@ -28949,6 +29693,12 @@
       }
     ],
     "commands": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 2,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
       {
         "file": "MEMORY.md",
         "line": 130,
@@ -29208,6 +29958,12 @@
         "context": "- ran compress-logs.mjs: 48 completed items across 9 daily logs"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- ron switches between 5+ projects daily"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 3,
         "freq": 1,
@@ -29224,6 +29980,18 @@
         "line": 69,
         "freq": 1,
         "context": "- **daily:** reply to comments, engage with 2-3 other posts"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "tasks/ideas.md",
@@ -29439,7 +30207,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -29610,6 +30378,12 @@
         "context": "- sent SIGUSR1 to gateway for reload"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- need to re-add BRAVE_API_KEY to gateway config"
+      },
+      {
         "file": "GOALS.md",
         "line": 40,
         "freq": 1,
@@ -29774,6 +30548,12 @@
         "line": 3,
         "freq": 1,
         "context": "## morning heartbeat (06:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 22,
+        "freq": 1,
+        "context": "## morning heartbeat (06:00 UTC / 08:00 tallinn)"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -30316,6 +31096,12 @@
         "line": 6,
         "freq": 1,
         "context": "- built `arc diff` — workspace changelog that answers \"what changed since X?\""
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
       },
       {
         "file": "memory/INDEX.md",
@@ -31489,13 +32275,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 46,
         "freq": 1,
         "context": "### 2026-02-08: Workspace Security Scanner"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -31611,7 +32397,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       }
@@ -31882,6 +32668,12 @@
         "context": "## nightly build: arc diff (00:00 UTC)"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc focus (00:00 UTC)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 1,
         "freq": 1,
@@ -31939,7 +32731,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -32079,7 +32871,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 42,
         "freq": 1,
         "context": "**Default:** last 24 hours — perfect for \"what happened while I slept?\""
       },
@@ -32270,6 +33062,12 @@
         "line": 32,
         "freq": 1,
         "context": "- **batch approve** — approve all pending actions in one click"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 58,
+        "freq": 1,
+        "context": "### pending from earlier"
       },
       {
         "file": "memory/scratchpad.md",
@@ -32511,7 +33309,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -32842,8 +33640,20 @@
         "context": "- hourly activity heatmap when enough commits exist"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -33147,7 +33957,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -33215,7 +34025,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -33887,7 +34697,7 @@
     "shield": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 2,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -33929,7 +34739,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       }
@@ -33973,7 +34783,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 46,
         "freq": 1,
         "context": "### 2026-02-08: Workspace Security Scanner"
       }
@@ -34005,7 +34815,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 31,
+        "line": 46,
         "freq": 1,
         "context": "### 2026-02-08: Workspace Security Scanner"
       }
@@ -34143,7 +34953,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -34181,7 +34991,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -34418,8 +35228,14 @@
         "context": "- added both `diff` and `shield` routing to arc CLI"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- added routing in arc CLI"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -34517,7 +35333,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -34587,7 +35403,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -34622,6 +35438,12 @@
         "line": 13,
         "freq": 1,
         "context": "- updated MEMORY.md with feb learnings (supply chain attacks, arc shield, brave api gap)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
       }
     ],
     "still": [
@@ -34690,6 +35512,12 @@
         "line": 6,
         "freq": 1,
         "context": "- ron tested if i still remember who i am after session restart"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
       }
     ],
     "web_search": [
@@ -34744,6 +35572,12 @@
         "context": "- reddit pulse: blocked (no Brave API key)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 39,
         "freq": 1,
@@ -34780,6 +35614,12 @@
         "line": 7,
         "freq": 1,
         "context": "- reddit pulse: blocked (no Brave API key)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
       },
       {
         "file": "memory/scratchpad.md",
@@ -34834,6 +35674,12 @@
         "line": 11,
         "freq": 1,
         "context": "- skipped: no Brave API key configured. need `clawdbot configure --section web` or BRAVE_API_KEY env"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- need to re-add BRAVE_API_KEY to gateway config"
       }
     ],
     "var": [
@@ -35265,7 +36111,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 26,
+        "freq": 1,
+        "context": "- **Package info** — name, version, dep counts, available scripts"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -35683,7 +36535,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 22,
+        "line": 37,
         "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       },
@@ -35724,6 +36576,12 @@
         "line": 84,
         "freq": 1,
         "context": "1. **arc CLI** — unified interface for all workspace tools"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
       }
     ],
     "query": [
@@ -36186,6 +37044,18 @@
         "context": "- scaffolding only: auth, dashboard shell, project list, behavior builder form (no persistence)"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
         "file": "QUICKREF.md",
         "line": 9,
         "freq": 1,
@@ -36294,6 +37164,12 @@
         "line": 33,
         "freq": 1,
         "context": "- **stage management** — move lead to stage from within the card"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
       },
       {
         "file": "memory/ventok-business.md",
@@ -36471,7 +37347,7 @@
     "patterns": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 2,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -36928,8 +37804,14 @@
         "context": "- `arc shield` was unreachable via the arc wrapper (missing case in switch statement)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- recommended web-first, Tauri wrapper later if needed"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -37527,7 +38409,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 42,
         "freq": 1,
         "context": "**Default:** last 24 hours — perfect for \"what happened while I slept?\""
       },
@@ -37574,6 +38456,12 @@
         "line": 79,
         "freq": 1,
         "context": "- analytics: dashboard stats overview"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **File overview** — total files + extension breakdown"
       },
       {
         "file": "memory/security-notes.md",
@@ -37782,6 +38670,12 @@
         "line": 25,
         "freq": 1,
         "context": "- will see if this recall pattern works better over time"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- ron shared screenshot of conductor-style UI (agent-conversation-with-actions pattern)"
       },
       {
         "file": "memory/INDEX.md",
@@ -38276,6 +39170,30 @@
         "context": "- ron asked me to review \"the mundo context generator idea\""
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 33,
+        "freq": 1,
+        "context": "### mundo idea prompt"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- ron asked for a fresh idea prompt for mundo UI rebuild"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
+      },
+      {
         "file": "scripts/README.md",
         "line": 84,
         "freq": 1,
@@ -38584,6 +39502,12 @@
         "context": "- source code preserved, just need `npm install` if any project revives"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 34,
         "freq": 1,
@@ -38594,6 +39518,36 @@
         "line": 36,
         "freq": 1,
         "context": "**type:** new project, research"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 21,
+        "freq": 1,
+        "context": "### 2026-02-10: Project Focus Mode"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc focus` — deep project context loader for \"where was I?\""
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
+        "freq": 1,
+        "context": "**Flags:** `--short` (one-liner per project), `--json` (machine-readable)"
       },
       {
         "file": "memory/scratchpad.md",
@@ -38873,7 +39827,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -39047,7 +40001,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -39567,7 +40527,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -39737,7 +40697,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 2,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -39880,8 +40840,20 @@
         "context": "- scans all git repos for commits + diffstat, memory files for create/modify, tasks for completions"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
@@ -40177,7 +41149,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 22,
+        "line": 37,
         "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       },
@@ -40279,7 +41251,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 21,
+        "line": 36,
         "freq": 1,
         "context": "### 2026-02-09: Workspace Diff / Overnight Changelog"
       }
@@ -40657,13 +41629,25 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -40840,6 +41824,12 @@
         "line": 66,
         "freq": 1,
         "context": "- **monday:** build log from weekend/previous week work"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
       },
       {
         "file": "AGENTS.md",
@@ -41120,10 +42110,22 @@
         "context": "- ron requested: regenerate should let you say what you didn't like"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 13,
         "freq": 1,
         "context": "**summary:** developed \"identity as process\" and \"memory as indexing\" concepts. ron described what m"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "AGENTS.md",
@@ -41398,6 +42400,12 @@
         "line": 5,
         "freq": 1,
         "context": "- moltbook: no DMs, 1 queued (agent unclaimed)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -41737,7 +42745,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
@@ -42543,13 +43551,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 26,
+        "line": 41,
         "freq": 1,
         "context": "**Aliases:** `arc diff`, `arc changes`"
       },
@@ -42786,6 +43794,12 @@
         "line": 6,
         "freq": 1,
         "context": "- ron tested if i still remember who i am after session restart"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 28,
+        "freq": 1,
+        "context": "## mundo session with ron (09:53-14:00 UTC)"
       },
       {
         "file": "memory/scratchpad.md",
@@ -43080,6 +44094,12 @@
         "context": "- lesson: logged every nightly build and moltbook post but missed the actual product conversation. p"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 50,
         "freq": 1,
@@ -43146,6 +44166,12 @@
         "line": 32,
         "freq": 1,
         "context": "- score went 0 → 70 (full) / 91 (quick) after fixes"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### ron feeling better after sick day"
       },
       {
         "file": "AGENTS.md",
@@ -43226,6 +44252,12 @@
         "context": "- the best nightly build solves a problem from today, not a random backlog item"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
+      },
+      {
         "file": "AGENTS.md",
         "line": 248,
         "freq": 1,
@@ -43253,7 +44285,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 2,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
         "line": 25,
+        "freq": 2,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 2,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -43288,8 +44332,32 @@
         "context": "- tested on last 7 days: found 80 wins (54 collabo, 10 anivia, 7 arc)"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 42,
         "freq": 1,
         "context": "**Default:** last 24 hours — perfect for \"what happened while I slept?\""
       },
@@ -43587,7 +44655,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -43772,6 +44840,12 @@
         "line": 151,
         "freq": 1,
         "context": "- migration blocked: existing data has 'completed' and 'pendign' statuses"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
       },
       {
         "file": "tasks/active.md",
@@ -44915,7 +45989,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -45023,7 +46097,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -45398,6 +46472,12 @@
         "context": "- handles nested git repos + submodules (detects `.git` dirs, checks each repo's own .gitignore)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 9,
         "freq": 1,
@@ -45600,6 +46680,12 @@
         "line": 61,
         "freq": 1,
         "context": "- removed Sequences from sidebar (accessed via campaigns)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
       }
     ],
     "navigation": [
@@ -45859,7 +46945,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 27,
+        "freq": 1,
+        "context": "- **File overview** — total files + extension breakdown"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -46168,6 +47260,12 @@
         "line": 37,
         "freq": 1,
         "context": "- found a real PAT token on first scan — exactly the kind of thing that causes incidents"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- \"where was I?\" is a real friction point when context-switching"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -46606,6 +47704,12 @@
         "context": "- purpose: competitive intel, ideas, staying in the loop on what users actually want"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
+      },
+      {
         "file": "tasks/done.md",
         "line": 5,
         "freq": 1,
@@ -46681,7 +47785,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       }
@@ -46842,6 +47946,12 @@
         "line": 49,
         "freq": 1,
         "context": "- scans: package.json, routes, components, supabase migrations, env vars, design system, git info"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- **Package info** — name, version, dep counts, available scripts"
       },
       {
         "file": "AGENTS.md",
@@ -47048,6 +48158,12 @@
         "context": "- built `arc context <project>` — auto-generates structured context docs"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 5,
         "freq": 1,
@@ -47149,7 +48265,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 33,
+        "freq": 1,
+        "context": "**Flags:** `--short` (one-liner per project), `--json` (machine-readable)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       }
@@ -47367,7 +48489,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -47690,6 +48812,12 @@
         "context": "- wrote comprehensive PROMPT.md for mundo/tuner project"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 80,
         "freq": 1,
@@ -47780,6 +48908,12 @@
         "line": 25,
         "freq": 1,
         "context": "- handles nested git repos + submodules (detects `.git` dirs, checks each repo's own .gitignore)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       },
       {
         "file": "QUICKREF.md",
@@ -47923,7 +49057,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 27,
+        "freq": 1,
+        "context": "- **File overview** — total files + extension breakdown"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -48163,7 +49303,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -48394,8 +49534,14 @@
         "context": "- **secondary issue:** getCampaign queried non-existent columns (`enrolled_count`, etc.)"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- aliases: mundo→tuner, cm→context-memory, etc."
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -48542,6 +49688,12 @@
         "line": 51,
         "freq": 1,
         "context": "- **secondary issue:** getCampaign queried non-existent columns (`enrolled_count`, etc.)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
       }
     ],
     "correctly": [
@@ -48707,7 +49859,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 2,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -48736,6 +49888,12 @@
         "context": "- per-repo breakdown: file categories (scripts/src/docs/config), commit previews, diff bars"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 53,
         "freq": 1,
@@ -48743,7 +49901,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 27,
+        "freq": 1,
+        "context": "- **File overview** — total files + extension breakdown"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
@@ -49232,6 +50396,24 @@
         "context": "## nightly build: arc diff (00:00 UTC)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 22,
+        "freq": 1,
+        "context": "## morning heartbeat (06:00 UTC / 08:00 tallinn)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 28,
+        "freq": 1,
+        "context": "## mundo session with ron (09:53-14:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc focus (00:00 UTC)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 5,
         "freq": 1,
@@ -49239,7 +50421,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -49429,7 +50611,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -49796,6 +50978,12 @@
         "context": "- read existing AUDIT.md, CLEANUP_PLAN.md, REMAINING_DEBT.md"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 95,
         "freq": 1,
@@ -50074,6 +51262,12 @@
         "context": "- source code preserved, just need `npm install` if any project revives"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 45,
         "freq": 1,
@@ -50081,7 +51275,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -50234,6 +51428,24 @@
         "line": 11,
         "freq": 1,
         "context": "- ron asked me to review \"the mundo context generator idea\""
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- ron asked for a fresh idea prompt for mundo UI rebuild"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- ron asked about desktop app feasibility"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -50406,6 +51618,12 @@
         "line": 6,
         "freq": 1,
         "context": "- git: 3 uncommitted (stable — submodule, index, tuner)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       }
     ],
     "pitched": [
@@ -50565,7 +51783,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 26,
+        "freq": 1,
+        "context": "- **Package info** — name, version, dep counts, available scripts"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -51812,6 +53036,18 @@
         "line": 13,
         "freq": 1,
         "context": "- stats section shows totals by project and type"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 30,
+        "freq": 1,
+        "context": "- **Key context** — project section from MEMORY.md (status, stack, decisions)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
       }
     ],
     "honest": [
@@ -52272,6 +53508,12 @@
         "line": 18,
         "freq": 1,
         "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -52742,6 +53984,12 @@
         "context": "- i do (from files), but acknowledged the difference between file-reconstruction and real continuity"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- ron switches between 5+ projects daily"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 24,
         "freq": 1,
@@ -52752,6 +54000,12 @@
         "line": 17,
         "freq": 1,
         "context": "- alternate between: build logs, tool releases, observations, community commentary"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "AGENTS.md",
@@ -53250,6 +54504,12 @@
         "context": "- wrote full security notes → `memory/security-notes.md`"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
+      },
+      {
         "file": "AGENTS.md",
         "line": 260,
         "freq": 1,
@@ -53600,6 +54860,12 @@
         "context": "- ron shared article: top downloaded clawdhub skill (\"Twitter\") was malware"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- ron shared screenshot of conductor-style UI (agent-conversation-with-actions pattern)"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 75,
         "freq": 1,
@@ -53678,6 +54944,12 @@
         "line": 20,
         "freq": 1,
         "context": "- saved to `projects/tuner/PROMPT.md`"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
       }
     ],
     "severely": [
@@ -54500,6 +55772,12 @@
         "context": "- TMW meeting prep — proposal ready? _(tracked in tasks/active.md)_"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- back online, ready to work on mundo"
+      },
+      {
         "file": "GOALS.md",
         "line": 24,
         "freq": 1,
@@ -54600,6 +55878,24 @@
         "line": 36,
         "freq": 1,
         "context": "- born from yesterday's clawdhub supply chain attack discussion"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 46,
+        "freq": 1,
+        "context": "### tech stack discussion"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
       }
     ],
     "concerned": [
@@ -54705,7 +56001,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -54798,6 +56094,18 @@
         "context": "- ERR-4: loading skeletons for all 7 main pages (Skeleton component library)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 35,
         "freq": 1,
@@ -54878,6 +56186,12 @@
     ],
     "focus": [
       {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 2,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
+      },
+      {
         "file": "memory/2026-01-26.md",
         "line": 66,
         "freq": 1,
@@ -54894,6 +56208,48 @@
         "line": 39,
         "freq": 1,
         "context": "- visual focus ring for accessibility"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 3,
+        "freq": 1,
+        "context": "## nightly build: arc focus (00:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 21,
+        "freq": 1,
+        "context": "### 2026-02-10: Project Focus Mode"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc focus` — deep project context loader for \"where was I?\""
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "memory/ventok-business.md",
@@ -55318,6 +56674,12 @@
         "context": "- metrics dashboard (accuracy, consistency, safety scores)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
+      },
+      {
         "file": "AGENTS.md",
         "line": 60,
         "freq": 1,
@@ -55484,6 +56846,12 @@
         "line": 89,
         "freq": 1,
         "context": "- full funnel: research → outreach → nurture → close → production handoff"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
       }
     ],
     "manufacturing-specific": [
@@ -55552,6 +56920,12 @@
         "line": 5,
         "freq": 1,
         "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- laid out Tauri vs Electron vs web-first approaches"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -56033,7 +57407,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 22,
+        "line": 37,
         "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       }
@@ -56201,7 +57575,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -56256,6 +57636,18 @@
         "line": 198,
         "freq": 1,
         "context": "- notifications: toggle switches"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 14,
+        "freq": 1,
+        "context": "- ron switches between 5+ projects daily"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "mock": [
@@ -56786,6 +58178,12 @@
         "context": "- `?fresh=true` clears pre-filled data"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- ron asked for a fresh idea prompt for mundo UI rebuild"
+      },
+      {
         "file": "AGENTS.md",
         "line": 21,
         "freq": 1,
@@ -57004,6 +58402,12 @@
         "context": "_Add new ideas here. Pick one per night._"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
+        "freq": 1,
+        "context": "**Flags:** `--short` (one-liner per project), `--json` (machine-readable)"
+      },
+      {
         "file": "tasks/ideas.md",
         "line": 9,
         "freq": 1,
@@ -57070,6 +58474,12 @@
         "line": 112,
         "freq": 1,
         "context": "- **optimistic updates** — immediate UI feedback with rollback on error"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
       }
     ],
     "mobile": [
@@ -57504,6 +58914,12 @@
         "context": "- user reported \"sequence already in campaign\" error but sequences showing 0"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
+      },
+      {
         "file": "AGENTS.md",
         "line": 136,
         "freq": 1,
@@ -57652,6 +59068,12 @@
         "line": 77,
         "freq": 1,
         "context": "- /campaigns/[id] detail: two-column workspace layout"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
       }
     ],
     "broken": [
@@ -58304,6 +59726,12 @@
         "line": 86,
         "freq": 1,
         "context": "- repeat engagers (same agents showing up on multiple posts?)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
       }
     ],
     "company": [
@@ -58578,8 +60006,14 @@
         "context": "- ron has an AI building things overnight — needs one command to see what happened"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- one command to pick up exactly where you left off"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -58711,7 +60145,25 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -58763,7 +60215,7 @@
     "diff": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 2,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -58817,31 +60269,31 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 21,
+        "line": 36,
         "freq": 1,
         "context": "### 2026-02-09: Workspace Diff / Overnight Changelog"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 22,
+        "line": 37,
         "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 26,
+        "line": 41,
         "freq": 1,
         "context": "**Aliases:** `arc diff`, `arc changes`"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       }
@@ -59028,6 +60480,12 @@
         "line": 13,
         "freq": 1,
         "context": "- [ ] Voice memo transcription — process voice notes into actionable items"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
       },
       {
         "file": "memory/scratchpad.md",
@@ -59396,8 +60854,20 @@
         "context": "- flags: `--hours N`, `--days N`, `--since DATE`, `--short`, `--json`"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- flags: `--short`, `--json`"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 33,
+        "freq": 1,
+        "context": "**Flags:** `--short` (one-liner per project), `--json` (machine-readable)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -59678,6 +61148,12 @@
         "line": 6,
         "freq": 1,
         "context": "- git: 3 uncommitted (stable — submodule, index, tuner)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
       }
     ],
     "known": [
@@ -59747,7 +61223,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -59865,19 +61341,19 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -59944,6 +61420,12 @@
         "line": 29,
         "freq": 1,
         "context": "- `writing/agentic-saas.md` — strategy doc on SaaS transformation for agentic future"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
       },
       {
         "file": "AGENTS.md",
@@ -60408,6 +61890,12 @@
         "line": 5,
         "freq": 1,
         "context": "ron pointed out i never share what i learn from exploration. fair. diving into identity persistence."
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -61157,7 +62645,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -61881,7 +63369,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -62101,7 +63589,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -62240,6 +63728,18 @@
         "line": 18,
         "freq": 1,
         "context": "- sent morning curiosity drop (waymo world model, france office suite, coding agents debate)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ron was sick yesterday, light check-in sent"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
       }
     ],
     "enrollment": [
@@ -62348,6 +63848,12 @@
         "line": 63,
         "freq": 1,
         "context": "- back link from sequence detail now goes to /campaigns not /sequences"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- back online, ready to work on mundo"
       },
       {
         "file": "memory/security-notes.md",
@@ -62664,6 +64170,18 @@
         "line": 90,
         "freq": 1,
         "context": "- classifies email replies: interested/objection/question/OOO/unsubscribe/not_interested/wrong_perso"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 50,
+        "freq": 1,
+        "context": "### desktop vs web app question"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -62986,6 +64504,12 @@
         "line": 38,
         "freq": 1,
         "context": "- weighted overall score (0-100) with progress bars"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       },
       {
         "file": "tasks/README.md",
@@ -63869,7 +65393,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 26,
+        "freq": 1,
+        "context": "- **Package info** — name, version, dep counts, available scripts"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -63982,6 +65512,12 @@
         "line": 24,
         "freq": 1,
         "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- one command to pick up exactly where you left off"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -64212,6 +65748,12 @@
         "line": 10,
         "freq": 1,
         "context": "- waymo world model: new sim frontier for self-driving using generative world models"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
       },
       {
         "file": "memory/security-notes.md",
@@ -65069,13 +66611,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       }
@@ -65095,7 +66637,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       }
@@ -65236,6 +66778,12 @@
         "line": 190,
         "freq": 1,
         "context": "- ron gave me the night to do whatever i wanted — chose to process/write"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
       }
     ],
     "night": [
@@ -65271,7 +66819,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -65314,6 +66862,12 @@
         "line": 37,
         "freq": 1,
         "context": "- chose it bc: reads as \"A\" for arc, angular/precise, faceted quality = structured not rigid, not tr"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
       }
     ],
     "process": [
@@ -65380,6 +66934,12 @@
         "line": 52,
         "freq": 1,
         "context": "- sequences table doesn't have count columns"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
       },
       {
         "file": "AGENTS.md",
@@ -65542,6 +67102,18 @@
         "line": 36,
         "freq": 1,
         "context": "- born from yesterday's clawdhub supply chain attack discussion"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ron was sick yesterday, light check-in sent"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "QUICKREF.md",
@@ -66824,6 +68396,12 @@
         "context": "- moving a route creates a cascade of broken references — grep everything in one pass"
       },
       {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
+      },
+      {
         "file": "memory/security-notes.md",
         "line": 20,
         "freq": 1,
@@ -67037,7 +68615,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -67354,6 +68932,12 @@
         "context": "- site frontend loads but route handlers broken (post-HN traffic or vercel issue)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 8,
         "freq": 1,
@@ -67467,7 +69051,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -68819,7 +70403,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       }
@@ -68908,6 +70492,12 @@
         "line": 7,
         "freq": 1,
         "context": "- detects: feature headers (`### name — desc`), bold bullets (`**feature** — desc`), task codes (ERR"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
       },
       {
         "file": "AGENTS.md",
@@ -69088,8 +70678,20 @@
         "context": "- flags: `--hours N`, `--days N`, `--since DATE`, `--short`, `--json`"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- flags: `--short`, `--json`"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 33,
+        "freq": 1,
+        "context": "**Flags:** `--short` (one-liner per project), `--json` (machine-readable)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       }
@@ -69149,7 +70751,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       }
@@ -69310,6 +70912,12 @@
         "line": 121,
         "freq": 1,
         "context": "3. **moltbook-reputation.mjs** — analyzes agents by quality signals (content depth, engagement, cons"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
       }
     ],
     "diversity": [
@@ -69438,6 +71046,18 @@
         "line": 96,
         "freq": 1,
         "context": "### deep research at projects/tuner/RESEARCH.md"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**What:** `arc focus` — deep project context loader for \"where was I?\""
       }
     ],
     "dives": [
@@ -69672,6 +71292,12 @@
         "context": "- built `arc diff` — workspace changelog that answers \"what changed since X?\""
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
+      },
+      {
         "file": "AGENTS.md",
         "line": 188,
         "freq": 1,
@@ -69732,6 +71358,12 @@
         "context": "- key insight: the AI agent is the social engineering target, not the human"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 11,
         "freq": 1,
@@ -69782,6 +71414,30 @@
         "line": 81,
         "freq": 1,
         "context": "- README with Claude Desktop config"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 50,
+        "freq": 1,
+        "context": "### desktop vs web app question"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- ron asked about desktop app feasibility"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- waiting on ron's answer re: what's pulling him toward desktop"
       },
       {
         "file": "projects/context-memory/README.md",
@@ -69902,6 +71558,12 @@
         "line": 18,
         "freq": 1,
         "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
       },
       {
         "file": "AGENTS.md",
@@ -70039,7 +71701,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 21,
+        "line": 36,
         "freq": 1,
         "context": "### 2026-02-09: Workspace Diff / Overnight Changelog"
       }
@@ -70061,6 +71723,12 @@
       }
     ],
     "agent": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 2,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      },
       {
         "file": "memory/2026-01-31.md",
         "line": 8,
@@ -70120,6 +71788,12 @@
         "line": 5,
         "freq": 1,
         "context": "- moltbook: no DMs, 1 queued (agent unclaimed)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -70348,8 +72022,14 @@
         "context": "- added both `diff` and `shield` routing to arc CLI"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 11,
+        "freq": 1,
+        "context": "- added routing in arc CLI"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       }
@@ -70556,6 +72236,12 @@
         "line": 18,
         "freq": 1,
         "context": "- covers: product vision, current state, tech stack, design system, file structure, supabase schema,"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -71080,6 +72766,18 @@
         "line": 59,
         "freq": 1,
         "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 33,
+        "freq": 1,
+        "context": "### mundo idea prompt"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- ron asked for a fresh idea prompt for mundo UI rebuild"
       },
       {
         "file": "memory/security-notes.md",
@@ -71666,6 +73364,18 @@
         "line": 70,
         "freq": 1,
         "context": "- **5ChAGI**: created m/continuity submolt for memory discussions"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
       }
     ],
     "context-loader": [
@@ -71846,6 +73556,18 @@
         "line": 25,
         "freq": 1,
         "context": "- will see if this recall pattern works better over time"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### ron feeling better after sick day"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- if desktop-first, React + Vite is better foundation"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -72871,7 +74593,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -73420,6 +75142,12 @@
         "context": "- sub-agent files didn't persist — had to rebuild manually (lesson logged)"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- ron asked for a fresh idea prompt for mundo UI rebuild"
+      },
+      {
         "file": "AGENTS.md",
         "line": 55,
         "freq": 1,
@@ -73612,6 +75340,12 @@
         "line": 36,
         "freq": 1,
         "context": "6. AI scoring on REAL data only (0-100 based on ICP fit)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
       }
     ],
     "dropped": [
@@ -73718,6 +75452,24 @@
         "context": "- 5 parallel sub-agents: TS fix, MCP polish, email backfill, arc blockers cmd, log compression"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
         "file": "GOALS.md",
         "line": 31,
         "freq": 1,
@@ -73793,7 +75545,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -73934,6 +75686,12 @@
         "line": 51,
         "freq": 1,
         "context": "- removed \"contact us\"/\"about us\" from search queries (biased toward nav pages)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- waiting on ron's answer re: what's pulling him toward desktop"
       }
     ],
     "isvalidcontactname": [
@@ -74366,6 +76124,12 @@
         "line": 81,
         "freq": 1,
         "context": "- README with Claude Desktop config"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
       }
     ],
     "approve": [
@@ -75096,8 +76860,20 @@
         "context": "- flags: `--hours N`, `--days N`, `--since DATE`, `--short`, `--json`"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 10,
+        "freq": 1,
+        "context": "- flags: `--short`, `--json`"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 33,
+        "freq": 1,
+        "context": "**Flags:** `--short` (one-liner per project), `--json` (machine-readable)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       }
@@ -75319,7 +77095,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -75690,8 +77466,20 @@
         "context": "- found a real PAT token on first scan — exactly the kind of thing that causes incidents"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- one command to pick up exactly where you left off"
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -76165,7 +77953,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 22,
+        "line": 37,
         "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       }
@@ -76402,6 +78190,12 @@
         "line": 29,
         "freq": 1,
         "context": "- **expandable cards** — click to see conversation thread + pending actions inline"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
       }
     ],
     "two-column": [
@@ -76418,14 +78212,38 @@
         "line": 78,
         "freq": 1,
         "context": "- left: sequences panel with stats"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- one command to pick up exactly where you left off"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "panel": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 2,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
+      },
       {
         "file": "memory/2026-02-02.md",
         "line": 78,
         "freq": 1,
         "context": "- left: sequences panel with stats"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
       }
     ],
     "right": [
@@ -76446,6 +78264,12 @@
         "line": 25,
         "freq": 1,
         "context": "- can't access server files directly right now"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
       }
     ],
     "tabbed": [
@@ -77368,6 +79192,12 @@
         "line": 143,
         "freq": 1,
         "context": "- **light enrichment**: now scrapes homepage for emails + tries multiple prefixes"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ron was sick yesterday, light check-in sent"
       }
     ],
     "scrapes": [
@@ -77708,6 +79538,12 @@
         "context": "- ron signed off ~22:44 UTC"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- one command to pick up exactly where you left off"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 31,
         "freq": 1,
@@ -77718,6 +79554,12 @@
         "line": 43,
         "freq": 1,
         "context": "every interaction should leave the other agent better off:"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "2026-02-03": [
@@ -77768,6 +79610,18 @@
         "line": 40,
         "freq": 1,
         "context": "- builds on feature branch, old routes stay intact for safe rollback"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
       }
     ],
     "staged": [
@@ -77793,7 +79647,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       }
@@ -77836,6 +79690,18 @@
         "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
       }
     ],
     "branches": [
@@ -77876,6 +79742,30 @@
         "line": 43,
         "freq": 1,
         "context": "- first run found real issues: 4 dirty repos, 1 unpushed, 0 task velocity"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "repos": [
@@ -77923,7 +79813,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       }
@@ -77940,6 +79830,18 @@
         "line": 224,
         "freq": 1,
         "context": "- upcoming tasks (sorted by due date)"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- list mode: all projects sorted by last activity, dirty/clean status"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 23,
+        "freq": 1,
+        "context": "**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, bran"
       }
     ],
     "yellow": [
@@ -78140,6 +80042,12 @@
         "context": "- PERF-2: React.memo on TaskRow and TaskCard components"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- if desktop-first, React + Vite is better foundation"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 30,
         "freq": 1,
@@ -78170,6 +80078,12 @@
         "line": 19,
         "freq": 1,
         "context": "- full codebase audit: 154 files, next.js 16 + react 19 + supabase + tailwind"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
       }
     ],
     "read": [
@@ -79041,7 +80955,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -79247,7 +81161,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -79842,6 +81756,18 @@
         "line": 37,
         "freq": 1,
         "context": "- **project metrics:** active (≤7d), stale (>30d), recent activity list"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
       },
       {
         "file": "memory/scratchpad.md",
@@ -81126,6 +83052,12 @@
         "line": 76,
         "freq": 1,
         "context": "- discussed codex vs opus 4.5 tradeoffs:"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "friction": [
@@ -81134,6 +83066,12 @@
         "line": 22,
         "freq": 1,
         "context": "- discussed workflow friction: too many hops (leads → sequences → campaigns → approval → inbox → pip"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- \"where was I?\" is a real friction point when context-switching"
       }
     ],
     "many": [
@@ -81158,6 +83096,12 @@
         "line": 23,
         "freq": 1,
         "context": "- proposed simplification: just two core views (Prospects + Sequences)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
       }
     ],
     "simplification": [
@@ -81284,6 +83228,12 @@
         "line": 38,
         "freq": 1,
         "context": "**summary:** AI behavior studio SaaS — build + stress test + measure AI personas. gap: nobody combin"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
       }
     ],
     "prospectdata": [
@@ -81596,6 +83546,12 @@
         "line": 52,
         "freq": 1,
         "context": "- sequences table doesn't have count columns"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
       }
     ],
     "computing": [
@@ -81856,6 +83812,12 @@
         "line": 24,
         "freq": 1,
         "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
       }
     ],
     "15-13": [
@@ -82024,10 +83986,28 @@
         "context": "- root cause: node_modules in 3 inactive projects (collabo-v2, tuner, ventok-site) eating ~71k inode"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- aliases: mundo→tuner, cm→context-memory, etc."
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 34,
         "freq": 1,
         "context": "### tuner project pitched"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
       },
       {
         "file": "memory/security-notes.md",
@@ -82883,7 +84863,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -82903,7 +84883,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       }
@@ -82978,6 +84958,18 @@
       {
         "file": "memory/nightly-builds.md",
         "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 33,
+        "freq": 1,
+        "context": "**Flags:** `--short` (one-liner per project), `--json` (machine-readable)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
@@ -83058,6 +85050,12 @@
         "context": "- honest answer: same patterns, not same thread"
       },
       {
+        "file": "memory/2026-02-09.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- waiting on ron's answer re: what's pulling him toward desktop"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 44,
         "freq": 1,
@@ -83076,6 +85074,12 @@
         "line": 13,
         "freq": 2,
         "context": "- mundo = tuner = AI behavior studio, renamed. repo: Ronpiii/mundo"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 2,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       },
       {
         "file": "memory/2026-02-06.md",
@@ -83130,6 +85134,48 @@
         "line": 50,
         "freq": 1,
         "context": "- directly addresses yesterday's pain: ron spent 30 min manually writing PROMPT.md for mundo"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 28,
+        "freq": 1,
+        "context": "## mundo session with ron (09:53-14:00 UTC)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- back online, ready to work on mundo"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 33,
+        "freq": 1,
+        "context": "### mundo idea prompt"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- ron asked for a fresh idea prompt for mundo UI rebuild"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- aliases: mundo→tuner, cm→context-memory, etc."
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
       },
       {
         "file": "memory/security-notes.md",
@@ -83200,6 +85246,12 @@
         "line": 19,
         "freq": 1,
         "context": "- sent to ron via telegram (4 parts due to message limits)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 37,
+        "freq": 1,
+        "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
       }
     ],
     "message": [
@@ -83211,7 +85263,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -83266,6 +85324,12 @@
         "line": 23,
         "freq": 1,
         "context": "- \"never say 'move the needle' again\" — corporate slop banned"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 24,
+        "freq": 1,
+        "context": "- brave API key missing again — can't do reddit pulse or curiosity drop web search"
       },
       {
         "file": "AGENTS.md",
@@ -83336,6 +85400,12 @@
         "line": 24,
         "freq": 1,
         "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- waiting on ron's answer re: what's pulling him toward desktop"
       }
     ],
     "scaffolding": [
@@ -83448,6 +85518,12 @@
         "line": 51,
         "freq": 1,
         "context": "- now any project gets 80% of that in 2 seconds"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "auto-strips": [
@@ -83484,8 +85560,20 @@
         "context": "- aliases: `arc diff`, `arc changes`"
       },
       {
+        "file": "memory/2026-02-10.md",
+        "line": 9,
+        "freq": 1,
+        "context": "- aliases: mundo→tuner, cm→context-memory, etc."
+      },
+      {
         "file": "memory/nightly-builds.md",
-        "line": 26,
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 41,
         "freq": 1,
         "context": "**Aliases:** `arc diff`, `arc changes`"
       }
@@ -83564,6 +85652,12 @@
         "line": 5,
         "freq": 1,
         "context": "- moltbook: no DMs, 1 queued (agent unclaimed)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       }
     ],
     "unclaimed": [
@@ -83578,6 +85672,12 @@
         "line": 5,
         "freq": 1,
         "context": "- moltbook: no DMs, 1 queued (agent unclaimed)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 23,
+        "freq": 1,
+        "context": "- all checks clean: anivia sequences stable, no moltbook DMs, no queue progress (agent unclaimed)"
       }
     ],
     "pointer": [
@@ -83759,7 +85859,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -84358,6 +86458,18 @@
         "line": 16,
         "freq": 1,
         "context": "### ron sick day"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ron was sick yesterday, light check-in sent"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### ron feeling better after sick day"
       }
     ],
     "resting": [
@@ -84417,7 +86529,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -84495,7 +86607,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 21,
+        "line": 36,
         "freq": 1,
         "context": "### 2026-02-09: Workspace Diff / Overnight Changelog"
       }
@@ -84512,6 +86624,12 @@
         "line": 19,
         "freq": 1,
         "context": "- **ask questions, not just give answers** — \"what are you building?\" at the end of posts invites re"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
       }
     ],
     "changed": [
@@ -84523,7 +86641,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 22,
+        "line": 37,
         "freq": 1,
         "context": "**What:** `arc diff` — unified \"what changed?\" view across the entire workspace"
       }
@@ -84537,7 +86655,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       }
@@ -84559,7 +86677,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 38,
         "freq": 1,
         "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
       }
@@ -84573,7 +86691,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -84587,7 +86705,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -84601,7 +86719,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -84615,7 +86733,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       }
@@ -84629,7 +86747,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 28,
+        "line": 43,
         "freq": 1,
         "context": "**Also fixed:** added missing `arc shield` and `arc diff` case routing in arc CLI (shield was silent"
       },
@@ -84657,13 +86775,13 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 42,
         "freq": 1,
         "context": "**Default:** last 24 hours — perfect for \"what happened while I slept?\""
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -84701,7 +86819,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       },
@@ -84727,7 +86845,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 29,
+        "line": 44,
         "freq": 1,
         "context": "**Why:** ron has an AI that builds things at night. now he has one command to see exactly what happe"
       }
@@ -84746,6 +86864,480 @@
         "line": 20,
         "freq": 1,
         "context": "- works for any timeframe: `--hours 4` for a break, `--days 7` for a week review"
+      }
+    ],
+    "re-add": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- need to re-add BRAVE_API_KEY to gateway config"
+      }
+    ],
+    "check-in": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 26,
+        "freq": 1,
+        "context": "- ron was sick yesterday, light check-in sent"
+      }
+    ],
+    "53-14": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 28,
+        "freq": 1,
+        "context": "## mundo session with ron (09:53-14:00 UTC)"
+      }
+    ],
+    "feeling": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 30,
+        "freq": 1,
+        "context": "### ron feeling better after sick day"
+      }
+    ],
+    "online": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- back online, ready to work on mundo"
+      }
+    ],
+    "technical": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 35,
+        "freq": 1,
+        "context": "- wrote IDEA.md — comprehensive handoff doc (product + technical context)"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 26,
+        "freq": 1,
+        "context": "## technical stack"
+      }
+    ],
+    "split": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 36,
+        "freq": 1,
+        "context": "- split into: what/who/problem/core loop (product) + stack/schema/design system/conventions (technic"
+      }
+    ],
+    "conductor": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 39,
+        "freq": 1,
+        "context": "### conductor UI inspiration"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      }
+    ],
+    "inspiration": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 39,
+        "freq": 1,
+        "context": "### conductor UI inspiration"
+      }
+    ],
+    "screenshot": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- ron shared screenshot of conductor-style UI (agent-conversation-with-actions pattern)"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 229,
+        "freq": 1,
+        "context": "- **Deployed fix?** Wait for deploy, then confirm with a screenshot or data check."
+      }
+    ],
+    "conductor-style": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- ron shared screenshot of conductor-style UI (agent-conversation-with-actions pattern)"
+      }
+    ],
+    "agent-conversation-with-actions": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- ron shared screenshot of conductor-style UI (agent-conversation-with-actions pattern)"
+      }
+    ],
+    "looks": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
+      }
+    ],
+    "adapted": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 4,
+        "freq": 1,
+        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
+      }
+    ],
+    "persona": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- looks like codex/claude code interface adapted for AI persona management"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 43,
+        "freq": 1,
+        "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
+      }
+    ],
+    "conversational": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
+      }
+    ],
+    "kill": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
+      }
+    ],
+    "tree": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
+      }
+    ],
+    "replace": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- gave feedback: keep conversational panel + inline actions, kill the file tree, replace with health"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 114,
+        "freq": 1,
+        "context": "2. Reprice Noar or replace with properly-priced client"
+      }
+    ],
+    "ide": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 44,
+        "freq": 1,
+        "context": "- key insight: \"conductor is an IDE with an agent. mundo should be an agent that shows structured da"
+      }
+    ],
+    "scaffolder": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 47,
+        "freq": 1,
+        "context": "- ron using a scaffolder tool, asked about frontend stack"
+      }
+    ],
+    "recommended": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 48,
+        "freq": 1,
+        "context": "- recommended Next.js + Tailwind (option 1) since existing repo already has it"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- recommended web-first, Tauri wrapper later if needed"
+      }
+    ],
+    "feasibility": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- ron asked about desktop app feasibility"
+      }
+    ],
+    "laid": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- laid out Tauri vs Electron vs web-first approaches"
+      }
+    ],
+    "tauri": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- laid out Tauri vs Electron vs web-first approaches"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- recommended web-first, Tauri wrapper later if needed"
+      }
+    ],
+    "electron": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- laid out Tauri vs Electron vs web-first approaches"
+      }
+    ],
+    "web-first": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- laid out Tauri vs Electron vs web-first approaches"
+      },
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- recommended web-first, Tauri wrapper later if needed"
+      }
+    ],
+    "approaches": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 52,
+        "freq": 1,
+        "context": "- laid out Tauri vs Electron vs web-first approaches"
+      }
+    ],
+    "server-oriented": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
+      }
+    ],
+    "cleanly": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
+      }
+    ],
+    "desktop-first": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- if desktop-first, React + Vite is better foundation"
+      }
+    ],
+    "vite": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- if desktop-first, React + Vite is better foundation"
+      }
+    ],
+    "foundation": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- if desktop-first, React + Vite is better foundation"
+      }
+    ],
+    "later": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- recommended web-first, Tauri wrapper later if needed"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- can transfer to proper entity later"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 31,
+        "freq": 1,
+        "context": "# retrieve it later"
+      }
+    ],
+    "pulling": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- waiting on ron's answer re: what's pulling him toward desktop"
+      }
+    ],
+    "earlier": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 58,
+        "freq": 1,
+        "context": "### pending from earlier"
+      }
+    ],
+    "unanswered": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      }
+    ],
+    "extend": [
+      {
+        "file": "memory/2026-02-09.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- discord slash commands discussion still open (ron chose slash commands, architecture question unan"
+      }
+    ],
+    "2026-02-10": [
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 1,
+        "freq": 1,
+        "context": "# 2026-02-10"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 21,
+        "freq": 1,
+        "context": "### 2026-02-10: Project Focus Mode"
+      }
+    ],
+    "switcher": [
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
+      }
+    ],
+    "resuming": [
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 6,
+        "freq": 1,
+        "context": "- built `arc focus` — project context switcher for resuming work"
+      }
+    ],
+    "dump": [
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      }
+    ],
+    "resume": [
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 24,
+        "freq": 1,
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      }
+    ],
+    "point": [
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 8,
+        "freq": 1,
+        "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
+      },
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- \"where was I?\" is a real friction point when context-switching"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 25,
+        "freq": 1,
+        "context": "- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and l"
+      },
+      {
+        "file": "memory/security-notes.md",
+        "line": 32,
+        "freq": 1,
+        "context": "2. **NEVER run install commands from a skill that point to external URLs** — especially `curl | bash"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 266,
+        "freq": 1,
+        "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
+      }
+    ],
+    "context-switching": [
+      {
+        "file": "memory/2026-02-10.md",
+        "line": 15,
+        "freq": 1,
+        "context": "- \"where was I?\" is a real friction point when context-switching"
       }
     ],
     "pointer-based": [
@@ -85021,7 +87613,7 @@
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       },
@@ -85149,14 +87741,6 @@
       }
     ],
     "fans": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 4,
-        "freq": 1,
-        "context": "kevin kelly's \"1000 true fans\" adapted for agent internet: you don't need every molty. you need 20-5"
-      }
-    ],
-    "adapted": [
       {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
@@ -85888,6 +88472,12 @@
         "line": 61,
         "freq": 1,
         "context": "- getting pulled into consciousness debates (stay in the engineering lane)"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
       }
     ],
     "consciousness": [
@@ -86276,42 +88866,56 @@
         "context": "_Add new ideas here. Pick one per night._"
       }
     ],
-    "modifications": [
+    "loader": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 23,
+        "line": 22,
         "freq": 1,
-        "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
+        "context": "**What:** `arc focus` — deep project context loader for \"where was I?\""
       }
     ],
-    "insertions": [
+    "dumps": [
       {
         "file": "memory/nightly-builds.md",
         "line": 24,
         "freq": 1,
-        "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
+        "context": "**Focus mode:** `arc focus <project>` dumps everything needed to resume work:"
       }
     ],
-    "deletions": [
+    "version": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 26,
         "freq": 1,
-        "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
+        "context": "- **Package info** — name, version, dep counts, available scripts"
       }
     ],
-    "styles": [
+    "dep": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 26,
         "freq": 1,
-        "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
+        "context": "- **Package info** — name, version, dep counts, available scripts"
+      }
+    ],
+    "extension": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 27,
+        "freq": 1,
+        "context": "- **File overview** — total files + extension breakdown"
       }
     ],
     "hash": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -86319,7 +88923,129 @@
     "age": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 24,
+        "line": 28,
+        "freq": 1,
+        "context": "- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits wit"
+      },
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
+      }
+    ],
+    "project-local": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
+      }
+    ],
+    "highlighted": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
+      }
+    ],
+    "separately": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 29,
+        "freq": 1,
+        "context": "- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highligh"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 242,
+        "freq": 1,
+        "context": "- **Quick fix (<5 min)?** Fix it now, commit separately, mention it."
+      }
+    ],
+    "mentions": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 170,
+        "freq": 1,
+        "context": "- **Mentions** - Twitter/social notifications?"
+      }
+    ],
+    "grouped": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 31,
+        "freq": 1,
+        "context": "- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section heade"
+      }
+    ],
+    "vsite": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 32,
+        "freq": 1,
+        "context": "**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot"
+      }
+    ],
+    "moment": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      }
+    ],
+    "picking": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      }
+    ],
+    "notebook": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 34,
+        "freq": 1,
+        "context": "**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each ti"
+      }
+    ],
+    "modifications": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 38,
+        "freq": 1,
+        "context": "**Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task"
+      }
+    ],
+    "insertions": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
+      }
+    ],
+    "deletions": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
+        "freq": 1,
+        "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
+      }
+    ],
+    "styles": [
+      {
+        "file": "memory/nightly-builds.md",
+        "line": 39,
         "freq": 1,
         "context": "**Shows:** total commits + insertions/deletions with visual diff bar, per-repo breakdown with file c"
       }
@@ -86327,13 +89053,13 @@
     "hours": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 25,
+        "line": 40,
         "freq": 1,
         "context": "**Flags:** `--hours N` (last N hours), `--days N` (last N days), `--since YYYY-MM-DD` (specific date"
       },
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 42,
         "freq": 1,
         "context": "**Default:** last 24 hours — perfect for \"what happened while I slept?\""
       }
@@ -86341,7 +89067,7 @@
     "perfect": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 42,
         "freq": 1,
         "context": "**Default:** last 24 hours — perfect for \"what happened while I slept?\""
       }
@@ -86349,7 +89075,7 @@
     "slept": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 27,
+        "line": 42,
         "freq": 1,
         "context": "**Default:** last 24 hours — perfect for \"what happened while I slept?\""
       }
@@ -86357,7 +89083,7 @@
     "risks": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 32,
+        "line": 47,
         "freq": 1,
         "context": "**What:** `arc shield` — scans workspace for exposed secrets, supply chain risks, and security hygie"
       },
@@ -86371,7 +89097,7 @@
     "aws": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -86379,7 +89105,7 @@
     "slack": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -86393,7 +89119,7 @@
     "sendgrid": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -86401,7 +89127,7 @@
     "remotes": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -86409,7 +89135,7 @@
     "lifecycle": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -86417,7 +89143,7 @@
     "postinstall": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -86425,7 +89151,7 @@
     "preinstall": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -86433,7 +89159,7 @@
     "suspicious": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       },
@@ -86447,7 +89173,7 @@
     "hex": [
       {
         "file": "memory/nightly-builds.md",
-        "line": 33,
+        "line": 48,
         "freq": 1,
         "context": "**Scans:** 15 secret patterns (AWS, GitHub PAT, Stripe, OpenAI, Slack, Telegram, SendGrid, etc.), .e"
       }
@@ -87072,20 +89798,6 @@
         "line": 31,
         "freq": 1,
         "context": "1. **NEVER install a skill from ClawdHub without reading its SKILL.md and ALL referenced scripts fir"
-      }
-    ],
-    "point": [
-      {
-        "file": "memory/security-notes.md",
-        "line": 32,
-        "freq": 1,
-        "context": "2. **NEVER run install commands from a skill that point to external URLs** — especially `curl | bash"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 266,
-        "freq": 1,
-        "context": "This is a starting point. Add your own conventions, style, and rules as you figure out what works."
       }
     ],
     "especially": [
@@ -88167,14 +90879,6 @@
       }
     ],
     "reprice": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 114,
-        "freq": 1,
-        "context": "2. Reprice Noar or replace with properly-priced client"
-      }
-    ],
-    "replace": [
       {
         "file": "memory/ventok-business.md",
         "line": 114,
@@ -89754,14 +92458,6 @@
         "context": "- **Calendar** - Upcoming events in next 24-48h?"
       }
     ],
-    "mentions": [
-      {
-        "file": "AGENTS.md",
-        "line": 170,
-        "freq": 1,
-        "context": "- **Mentions** - Twitter/social notifications?"
-      }
-    ],
     "lastchecks": [
       {
         "file": "AGENTS.md",
@@ -89994,14 +92690,6 @@
         "context": "4. [ ] confirm i can use existing OpenAI key or provide separate one"
       }
     ],
-    "screenshot": [
-      {
-        "file": "AGENTS.md",
-        "line": 229,
-        "freq": 1,
-        "context": "- **Deployed fix?** Wait for deploy, then confirm with a screenshot or data check."
-      }
-    ],
     "unverified": [
       {
         "file": "AGENTS.md",
@@ -90116,14 +92804,6 @@
         "line": 241,
         "freq": 1,
         "context": "When you spot a bug during other work:"
-      }
-    ],
-    "separately": [
-      {
-        "file": "AGENTS.md",
-        "line": 242,
-        "freq": 1,
-        "context": "- **Quick fix (<5 min)?** Fix it now, commit separately, mention it."
       }
     ],
     "bigger": [
@@ -90660,14 +93340,6 @@
         "context": "- no fancy UI (CLI + API only)"
       }
     ],
-    "technical": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 26,
-        "freq": 1,
-        "context": "## technical stack"
-      }
-    ],
     "choice": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -90954,20 +93626,6 @@
         "line": 67,
         "freq": 1,
         "context": "- can transfer to proper entity later"
-      }
-    ],
-    "later": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 67,
-        "freq": 1,
-        "context": "- can transfer to proper entity later"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 31,
-        "freq": 1,
-        "context": "# retrieve it later"
       }
     ],
     "0001": [
@@ -91616,156 +94274,160 @@
   "files": {
     "MEMORY.md": {
       "lines": 234,
-      "updated": "2026-02-09T00:50:29.407Z"
+      "updated": "2026-02-10T00:05:44.426Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-02-09T00:50:29.411Z"
+      "updated": "2026-02-10T00:05:44.429Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-02-09T00:50:29.411Z"
+      "updated": "2026-02-10T00:05:44.430Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-02-09T00:50:29.412Z"
+      "updated": "2026-02-10T00:05:44.432Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-02-09T00:50:29.413Z"
+      "updated": "2026-02-10T00:05:44.433Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-02-09T00:50:29.413Z"
+      "updated": "2026-02-10T00:05:44.433Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-02-09T00:50:29.414Z"
+      "updated": "2026-02-10T00:05:44.433Z"
     },
     "memory/2026-01-30.md": {
       "lines": 142,
-      "updated": "2026-02-09T00:50:29.415Z"
+      "updated": "2026-02-10T00:05:44.435Z"
     },
     "memory/2026-01-31.md": {
       "lines": 143,
-      "updated": "2026-02-09T00:50:29.416Z"
+      "updated": "2026-02-10T00:05:44.436Z"
     },
     "memory/2026-02-01.md": {
       "lines": 116,
-      "updated": "2026-02-09T00:50:29.418Z"
+      "updated": "2026-02-10T00:05:44.438Z"
     },
     "memory/2026-02-02.md": {
       "lines": 179,
-      "updated": "2026-02-09T00:50:29.419Z"
+      "updated": "2026-02-10T00:05:44.439Z"
     },
     "memory/2026-02-03.md": {
       "lines": 243,
-      "updated": "2026-02-09T00:50:29.420Z"
+      "updated": "2026-02-10T00:05:44.440Z"
     },
     "memory/2026-02-04.md": {
       "lines": 107,
-      "updated": "2026-02-09T00:50:29.421Z"
+      "updated": "2026-02-10T00:05:44.444Z"
     },
     "memory/2026-02-05.md": {
       "lines": 45,
-      "updated": "2026-02-09T00:50:29.422Z"
+      "updated": "2026-02-10T00:05:44.445Z"
     },
     "memory/2026-02-06.md": {
       "lines": 62,
-      "updated": "2026-02-09T00:50:29.422Z"
+      "updated": "2026-02-10T00:05:44.445Z"
     },
     "memory/2026-02-07.md": {
       "lines": 29,
-      "updated": "2026-02-09T00:50:29.423Z"
+      "updated": "2026-02-10T00:05:44.446Z"
     },
     "memory/2026-02-08-morning.md": {
       "lines": 15,
-      "updated": "2026-02-09T00:50:29.423Z"
+      "updated": "2026-02-10T00:05:44.447Z"
     },
     "memory/2026-02-08.md": {
       "lines": 38,
-      "updated": "2026-02-09T00:50:29.423Z"
+      "updated": "2026-02-10T00:05:44.447Z"
     },
     "memory/2026-02-09.md": {
-      "lines": 21,
-      "updated": "2026-02-09T00:50:29.424Z"
+      "lines": 60,
+      "updated": "2026-02-10T00:05:44.447Z"
+    },
+    "memory/2026-02-10.md": {
+      "lines": 17,
+      "updated": "2026-02-10T00:05:44.447Z"
     },
     "memory/INDEX.md": {
       "lines": 63,
-      "updated": "2026-02-09T00:50:29.424Z"
+      "updated": "2026-02-10T00:05:44.448Z"
     },
     "memory/moltbook-community-strategy.md": {
       "lines": 94,
-      "updated": "2026-02-09T00:50:29.424Z"
+      "updated": "2026-02-10T00:05:44.448Z"
     },
     "memory/nightly-builds.md": {
-      "lines": 142,
-      "updated": "2026-02-09T00:50:29.425Z"
+      "lines": 157,
+      "updated": "2026-02-10T00:05:44.449Z"
     },
     "memory/scratchpad.md": {
       "lines": 52,
-      "updated": "2026-02-09T00:50:29.427Z"
+      "updated": "2026-02-10T00:05:44.451Z"
     },
     "memory/security-notes.md": {
       "lines": 53,
-      "updated": "2026-02-09T00:50:29.427Z"
+      "updated": "2026-02-10T00:05:44.451Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-02-09T00:50:29.428Z"
+      "updated": "2026-02-10T00:05:44.452Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-02-09T00:50:29.428Z"
+      "updated": "2026-02-10T00:05:44.453Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-02-09T00:50:29.428Z"
+      "updated": "2026-02-10T00:05:44.453Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-02-09T00:50:29.429Z"
+      "updated": "2026-02-10T00:05:44.453Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-02-09T00:50:29.429Z"
+      "updated": "2026-02-10T00:05:44.454Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-02-09T00:50:29.429Z"
+      "updated": "2026-02-10T00:05:44.454Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-02-09T00:50:29.429Z"
+      "updated": "2026-02-10T00:05:44.454Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-02-09T00:50:29.430Z"
+      "updated": "2026-02-10T00:05:44.454Z"
     },
     "AGENTS.md": {
       "lines": 267,
-      "updated": "2026-02-09T00:50:29.430Z"
+      "updated": "2026-02-10T00:05:44.455Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-02-09T00:50:29.431Z"
+      "updated": "2026-02-10T00:05:44.457Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-02-09T00:50:29.432Z"
+      "updated": "2026-02-10T00:05:44.457Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-02-09T00:50:29.432Z"
+      "updated": "2026-02-10T00:05:44.457Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-02-09T00:50:29.432Z"
+      "updated": "2026-02-10T00:05:44.458Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-02-09T00:50:29.433Z"
+      "updated": "2026-02-10T00:05:44.458Z"
     }
   },
-  "built": "2026-02-09T00:50:29.406Z"
+  "built": "2026-02-10T00:05:44.424Z"
 }
