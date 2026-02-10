@@ -18,6 +18,21 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-10: Project Focus Mode
+**What:** `arc focus` — deep project context loader for "where was I?"
+**List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, branch, and last commit
+**Focus mode:** `arc focus <project>` dumps everything needed to resume work:
+- **Resume point** — one-liner combining last commit, dirty files, unpushed commits, blockers, and last discussion topic
+- **Package info** — name, version, dep counts, available scripts
+- **File overview** — total files + extension breakdown
+- **Git status** — branch, uncommitted files (with M/?/A status), unpushed count, last 5 commits with hash + message + age
+- **Open tasks** — pulled from tasks/active.md + project-local TASKS.md, with blocked items highlighted separately
+- **Key context** — project section from MEMORY.md (status, stack, decisions)
+- **Recent discussions** — last 7 days of daily log mentions, grouped by date, showing section headers
+**Aliases:** mundo→tuner, cm→context-memory, vsite→ventok-site, discord→discord-voice-bot
+**Flags:** `--short` (one-liner per project), `--json` (machine-readable)
+**Why:** ron switches between 5+ projects daily. yesterday was mundo, day before was anivia. each time there's a "where was I?" moment. `arc focus mundo` answers that in 2 seconds — last commit, dirty files, open tasks, what was discussed, blockers. like picking up a notebook exactly where you left off.
+
 ### 2026-02-09: Workspace Diff / Overnight Changelog
 **What:** `arc diff` — unified "what changed?" view across the entire workspace
 **Scans:** all git repos (commits, diffstat, file categories), memory files (created/modified), task completions, MEMORY.md modifications
