@@ -63,7 +63,8 @@ const SCRIPTS = {
   wins: 'wins.mjs',
   health: 'health.mjs',
   context: 'context-gen.mjs',
-  ctx: 'context-gen.mjs'
+  ctx: 'context-gen.mjs',
+  focus: 'focus.mjs'
 };
 
 const HELP = `
@@ -106,6 +107,7 @@ Commands:
   deps [project]        Dependency health dashboard (--short, --json)
   wins [days]           Recent accomplishments (--week, --project, --json)
   health                 Workspace health dashboard (--short, --json)
+  focus [project]        Project focus mode — resume context for any project
   context [project]      Auto-generate project context doc (--save, --json)
   shield [opts]          Security scanner (--quick, --fix, --json)
 
@@ -305,6 +307,10 @@ switch (cmd) {
   case 'shield':
   case 'security':
     run(SCRIPTS.shield, args);
+    break;
+
+  case 'focus':
+    run(SCRIPTS.focus, args);
     break;
 
   default:
