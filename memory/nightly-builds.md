@@ -18,6 +18,17 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-11: Workspace Hygiene Scanner
+**What:** `arc clean` — finds and fixes workspace cruft
+**Scans:** large files (>5MB), temp/junk files (.DS_Store, *.swp, *~), empty directories, .next build caches, stale git branches (merged or >30 days), node_modules installs (with orphan detection), git gc opportunities (loose objects)
+**Report:** disk breakdown (node_modules/caches/git), per-category listings, hygiene score 0-100 with progress bar, actionable recommendations
+**Fix mode:** `--fix` safely cleans temp files, empty dirs, .next caches, runs git gc — never touches node_modules or branches (manual review only)
+**Flags:** `--fix` (apply safe cleanups), `--short` (one-liner), `--json` (machine-readable)
+**Aliases:** `arc clean`, `arc tidy`, `arc sweep`
+**First run:** reclaimed 155MB — cleared 4 .next caches (139MB), removed 2 empty dirs, git gc'd 6 repos (16.3MB saved, 14k+ loose objects packed). Hygiene score went from 78 → 90/100.
+**Also found:** 2 merged branches in anivia (feature/campaign-hub, feature/prospects-view) — flagged for manual review.
+**Why:** Ron has 1.5GB workspace across 5+ repos. Caches accumulate, git objects pile up, stale branches linger. No existing tool covered disk hygiene — `arc health` checks project health, not file system health. First run actually reclaimed 155MB. The kind of tool you run weekly to keep things tight.
+
 ### 2026-02-10: Project Focus Mode
 **What:** `arc focus` — deep project context loader for "where was I?"
 **List mode:** `arc focus` shows all projects sorted by last activity, with dirty/clean status, branch, and last commit

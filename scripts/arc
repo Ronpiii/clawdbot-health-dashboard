@@ -64,7 +64,8 @@ const SCRIPTS = {
   health: 'health.mjs',
   context: 'context-gen.mjs',
   ctx: 'context-gen.mjs',
-  focus: 'focus.mjs'
+  focus: 'focus.mjs',
+  clean: 'clean.mjs'
 };
 
 const HELP = `
@@ -110,6 +111,7 @@ Commands:
   focus [project]        Project focus mode — resume context for any project
   context [project]      Auto-generate project context doc (--save, --json)
   shield [opts]          Security scanner (--quick, --fix, --json)
+  clean [opts]           Workspace hygiene scanner (--fix, --short, --json)
 
 Examples:
   arc search "database issue"
@@ -311,6 +313,12 @@ switch (cmd) {
 
   case 'focus':
     run(SCRIPTS.focus, args);
+    break;
+
+  case 'clean':
+  case 'tidy':
+  case 'sweep':
+    run(SCRIPTS.clean, args);
     break;
 
   default:
