@@ -58,6 +58,9 @@ const SCRIPTS = {
   blockers: 'blockers.mjs',
   git: 'git-repos.mjs',
   deps: 'deps-check.mjs',
+  snip: 'snip.mjs',
+  snippet: 'snip.mjs',
+  snippets: 'snip.mjs',
   shield: 'shield.mjs',
   diff: 'diff.mjs',
   wins: 'wins.mjs',
@@ -112,6 +115,7 @@ Commands:
   context [project]      Auto-generate project context doc (--save, --json)
   shield [opts]          Security scanner (--quick, --fix, --json)
   clean [opts]           Workspace hygiene scanner (--fix, --short, --json)
+  snip [cmd] [args]      Code snippet library (save/get/search/tag/stats)
 
 Examples:
   arc search "database issue"
@@ -319,6 +323,12 @@ switch (cmd) {
   case 'tidy':
   case 'sweep':
     run(SCRIPTS.clean, args);
+    break;
+
+  case 'snip':
+  case 'snippet':
+  case 'snippets':
+    run(SCRIPTS.snip, args);
     break;
 
   default:
