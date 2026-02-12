@@ -18,6 +18,15 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-12: Personal Code Snippet Library
+**What:** `arc snip` — save, search, and retrieve code snippets from workspace files
+**Commands:** `save <name> <file> [lines]`, `get <name>`, `search <query>`, `tag <name> <tags>`, `delete <name>`, `list`, `stats`
+**Features:** auto-tagging (detects language from extension + content patterns like RLS/React/async), line range extraction (10-25, 10:15, 10), fuzzy name matching on miss, tag-based grouping, scored search (name > tag > description > source > content), `--copy` mode for piping raw content, `--json` for machine-readable output
+**Storage:** `memory/snippets.json` — portable, greppable, no external deps
+**Seeded with:** 5 anivia patterns — rls-helper (SECURITY DEFINER recursion fix), supabase-admin (service-role client), hmac-token (signed tokens with timing-safe verify), rls-pattern (org-scoped policies + junction tables), unsubscribe-api (safe no-auth endpoint)
+**Aliases:** `arc snip`, `arc snippet`, `arc snippets`
+**Why:** Ron works with recurring patterns across projects — supabase RLS, Next.js API routes, crypto tokens. Every time he writes a new migration or endpoint, the same structural patterns appear. Instead of grep-searching through migrations, `arc snip get rls-helper` instantly outputs the proven pattern with line numbers and source file. Like a personal gist library, but local, instant, and auto-tagged.
+
 ### 2026-02-11: Workspace Hygiene Scanner
 **What:** `arc clean` — finds and fixes workspace cruft
 **Scans:** large files (>5MB), temp/junk files (.DS_Store, *.swp, *~), empty directories, .next build caches, stale git branches (merged or >30 days), node_modules installs (with orphan detection), git gc opportunities (loose objects)
