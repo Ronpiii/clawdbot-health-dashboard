@@ -196,6 +196,7 @@
 | learn.mjs | capture lessons to daily log (not just activities) |
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
+| snip.mjs | personal code snippet library (nightly build 02-12) |
 
 ---
 
