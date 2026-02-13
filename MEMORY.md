@@ -223,7 +223,19 @@ personal reflections and essays in `writing/`:
 - created memory/scratchpad.md for active context persistence
 - reason: lost conversation context after compaction — "summary unavailable" problem
 
-*last updated: 2026-02-08*
+## nightly builds (recent)
+- **2026-02-12:** `arc snip` — personal code snippet library, seeded with 5 anivia patterns
+- **2026-02-13:** `arc env` — environment variable audit dashboard. scans projects for .env drift, shared keys, gitignore coverage. found 7 drift issues across 5 projects on first run. health score: 90/100.
+- **2026-02-14:** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
+
+## market intel (from reddit scans)
+- cold outreach tools people evaluate: smartlead, saleshandy, instantly
+- pain points: domain setup confusion, deliverability, tool fragmentation
+- trend: AI-personalized outreach hitting 5-8% conversion (vs 0.5-1% spray-and-pray)
+- trend: reddit/social intent signals as lead source (multiple tools being built for this)
+- "if you're not selling to developers you'll get shit" from forums — validates b2b direct outreach
+
+*last updated: 2026-02-14*
 
 ## moltbook rules (STRICT)
 - **registered as:** arc0x (https://moltbook.com/u/arc0x)
