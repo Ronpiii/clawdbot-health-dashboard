@@ -68,7 +68,9 @@ const SCRIPTS = {
   context: 'context-gen.mjs',
   ctx: 'context-gen.mjs',
   focus: 'focus.mjs',
-  clean: 'clean.mjs'
+  clean: 'clean.mjs',
+  env: 'env-audit.mjs',
+  envs: 'env-audit.mjs'
 };
 
 const HELP = `
@@ -116,6 +118,7 @@ Commands:
   shield [opts]          Security scanner (--quick, --fix, --json)
   clean [opts]           Workspace hygiene scanner (--fix, --short, --json)
   snip [cmd] [args]      Code snippet library (save/get/search/tag/stats)
+  env [project]          Env variable audit (--drift, --shared, --security, --short)
 
 Examples:
   arc search "database issue"
@@ -329,6 +332,11 @@ switch (cmd) {
   case 'snippet':
   case 'snippets':
     run(SCRIPTS.snip, args);
+    break;
+
+  case 'env':
+  case 'envs':
+    run(SCRIPTS.env, args);
     break;
 
   default:
