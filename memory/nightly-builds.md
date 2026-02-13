@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-13: Environment Variable Audit Dashboard
+**What:** `arc env` — scans workspace for .env files, compares examples vs actual, finds drift
+**Commands:** `arc env`, `arc env <project>`, `arc env --drift`, `arc env --shared`, `arc env --security`
+**Features:** example-vs-actual comparison (missing vars, extra undocumented vars, placeholder values), shared key detection across projects, gitignore coverage checks, per-project breakdown with visual bars, health score 0-100, actionable recommendations
+**Security:** NEVER displays actual values — only key names and status
+**Flags:** `--drift` (detailed drift), `--shared` (cross-project keys), `--security` (security only), `--short` (one-liner), `--json` (machine-readable)
+**Aliases:** `arc env`, `arc envs`
+**First run:** 8 files, 24 vars, 5 projects — found 5 undocumented vars (in actual but not examples), 2 missing env files, 1 shared sensitive key (OPENAI_API_KEY across 2 projects). Health: 90/100.
+**Why:** Env drift is a silent killer — you add a var locally but forget the example, then CI fails or onboarding breaks. Companion to `arc shield` (security) and `arc clean` (hygiene). First run found real issues nobody would've caught manually.
+
 ### 2026-02-12: Personal Code Snippet Library
 **What:** `arc snip` — save, search, and retrieve code snippets from workspace files
 **Commands:** `save <name> <file> [lines]`, `get <name>`, `search <query>`, `tag <name> <tags>`, `delete <name>`, `list`, `stats`
