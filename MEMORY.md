@@ -197,6 +197,7 @@
 | compress-logs.mjs | log compression |
 | discord-post.mjs | webhook posting |
 | snip.mjs | personal code snippet library (nightly build 02-12) |
+| pulse.mjs | live service health monitor (nightly build 02-14) |
 
 ---
 
@@ -226,7 +227,8 @@ personal reflections and essays in `writing/`:
 ## nightly builds (recent)
 - **2026-02-12:** `arc snip` — personal code snippet library, seeded with 5 anivia patterns
 - **2026-02-13:** `arc env` — environment variable audit dashboard. scans projects for .env drift, shared keys, gitignore coverage. found 7 drift issues across 5 projects on first run. health score: 90/100.
-- **2026-02-14:** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
+- **2026-02-14:** `arc pulse` — live service health monitor. checks 6 production endpoints in parallel (<1s). first run: 6/6 up, avg 86ms. history tracking for uptime trends.
+- **2026-02-14 (reddit):** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
 
 ## market intel (from reddit scans)
 - cold outreach tools people evaluate: smartlead, saleshandy, instantly

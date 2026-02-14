@@ -18,6 +18,15 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-14: Live Service Health Monitor
+**What:** `arc pulse` — checks all production endpoints in parallel, reports status + response times
+**Commands:** `arc pulse`, `arc pulse --short`, `arc pulse --history`, `arc pulse --watch N`, `arc pulse --json`
+**Features:** parallel HTTP checks (6 services in <1s), status icons (up/degraded/down/timeout), latency bars, category grouping (infra/app/site/social), critical service alerts, history tracking (last 100 checks), uptime percentages, latency stats (avg/min/p95/max), watch mode for continuous monitoring
+**Services:** anivia, ventok.eu, collabo, supabase api, health dashboard, moltbook profile
+**Aliases:** `arc pulse`, `arc ping`, `arc uptime`
+**First run:** 6/6 up, 100% operational, avg 86ms. ventok.eu fastest (11ms), anivia slowest (195ms vercel cold start).
+**Why:** 6+ production services, no unified way to check them. Pairs with `arc health` (workspace) and `arc shield` (security) — now we have operational monitoring. History accumulates over heartbeats for real uptime trends over time.
+
 ### 2026-02-13: Environment Variable Audit Dashboard
 **What:** `arc env` — scans workspace for .env files, compares examples vs actual, finds drift
 **Commands:** `arc env`, `arc env <project>`, `arc env --drift`, `arc env --shared`, `arc env --security`

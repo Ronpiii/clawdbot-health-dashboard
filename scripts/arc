@@ -70,7 +70,10 @@ const SCRIPTS = {
   focus: 'focus.mjs',
   clean: 'clean.mjs',
   env: 'env-audit.mjs',
-  envs: 'env-audit.mjs'
+  envs: 'env-audit.mjs',
+  pulse: 'pulse.mjs',
+  ping: 'pulse.mjs',
+  uptime: 'pulse.mjs'
 };
 
 const HELP = `
@@ -119,6 +122,7 @@ Commands:
   clean [opts]           Workspace hygiene scanner (--fix, --short, --json)
   snip [cmd] [args]      Code snippet library (save/get/search/tag/stats)
   env [project]          Env variable audit (--drift, --shared, --security, --short)
+  pulse [opts]           Live service health monitor (--short, --history, --watch N, --json)
 
 Examples:
   arc search "database issue"
@@ -337,6 +341,12 @@ switch (cmd) {
   case 'env':
   case 'envs':
     run(SCRIPTS.env, args);
+    break;
+
+  case 'pulse':
+  case 'ping':
+  case 'uptime':
+    run(SCRIPTS.pulse, args);
     break;
 
   default:

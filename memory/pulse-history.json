@@ -1,0 +1,174 @@
+{
+  "checks": [
+    {
+      "timestamp": "2026-02-14T00:01:54.619Z",
+      "results": [
+        {
+          "name": "anivia",
+          "status": "up",
+          "responseMs": 743,
+          "statusCode": 200
+        },
+        {
+          "name": "ventok.eu",
+          "status": "up",
+          "responseMs": 25,
+          "statusCode": 200
+        },
+        {
+          "name": "collabo",
+          "status": "degraded",
+          "responseMs": 83,
+          "statusCode": 404
+        },
+        {
+          "name": "health dashboard",
+          "status": "up",
+          "responseMs": 506,
+          "statusCode": 200
+        },
+        {
+          "name": "supabase api",
+          "status": "down",
+          "responseMs": 51,
+          "error": "ENOTFOUND"
+        },
+        {
+          "name": "moltbook profile",
+          "status": "up",
+          "responseMs": 183,
+          "statusCode": 307
+        },
+        {
+          "name": "clawdbot gateway",
+          "status": "down",
+          "responseMs": 2,
+          "error": "ECONNREFUSED"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-14T00:02:20.200Z",
+      "results": [
+        {
+          "name": "anivia",
+          "status": "up",
+          "responseMs": 195,
+          "statusCode": 200
+        },
+        {
+          "name": "ventok.eu",
+          "status": "up",
+          "responseMs": 11,
+          "statusCode": 200
+        },
+        {
+          "name": "collabo",
+          "status": "up",
+          "responseMs": 42,
+          "statusCode": 404
+        },
+        {
+          "name": "health dashboard",
+          "status": "up",
+          "responseMs": 207,
+          "statusCode": 200
+        },
+        {
+          "name": "supabase api",
+          "status": "up",
+          "responseMs": 21,
+          "statusCode": 401
+        },
+        {
+          "name": "moltbook profile",
+          "status": "up",
+          "responseMs": 39,
+          "statusCode": 307
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-14T00:02:23.942Z",
+      "results": [
+        {
+          "name": "anivia",
+          "status": "up",
+          "responseMs": 250,
+          "statusCode": 200
+        },
+        {
+          "name": "ventok.eu",
+          "status": "up",
+          "responseMs": 13,
+          "statusCode": 200
+        },
+        {
+          "name": "collabo",
+          "status": "up",
+          "responseMs": 42,
+          "statusCode": 404
+        },
+        {
+          "name": "health dashboard",
+          "status": "up",
+          "responseMs": 185,
+          "statusCode": 200
+        },
+        {
+          "name": "supabase api",
+          "status": "up",
+          "responseMs": 28,
+          "statusCode": 401
+        },
+        {
+          "name": "moltbook profile",
+          "status": "up",
+          "responseMs": 41,
+          "statusCode": 307
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-14T00:02:46.584Z",
+      "results": [
+        {
+          "name": "anivia",
+          "status": "up",
+          "responseMs": 66,
+          "statusCode": 200
+        },
+        {
+          "name": "ventok.eu",
+          "status": "up",
+          "responseMs": 11,
+          "statusCode": 200
+        },
+        {
+          "name": "collabo",
+          "status": "up",
+          "responseMs": 41,
+          "statusCode": 404
+        },
+        {
+          "name": "health dashboard",
+          "status": "up",
+          "responseMs": 41,
+          "statusCode": 200
+        },
+        {
+          "name": "supabase api",
+          "status": "up",
+          "responseMs": 25,
+          "statusCode": 401
+        },
+        {
+          "name": "moltbook profile",
+          "status": "up",
+          "responseMs": 39,
+          "statusCode": 307
+        }
+      ]
+    }
+  ]
+}
