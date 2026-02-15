@@ -73,7 +73,9 @@ const SCRIPTS = {
   envs: 'env-audit.mjs',
   pulse: 'pulse.mjs',
   ping: 'pulse.mjs',
-  uptime: 'pulse.mjs'
+  uptime: 'pulse.mjs',
+  fortune: 'fortune.mjs',
+  wisdom: 'fortune.mjs'
 };
 
 const HELP = `
@@ -123,6 +125,7 @@ Commands:
   snip [cmd] [args]      Code snippet library (save/get/search/tag/stats)
   env [project]          Env variable audit (--drift, --shared, --security, --short)
   pulse [opts]           Live service health monitor (--short, --history, --watch N, --json)
+  fortune [opts]         Wisdom from your past self (--all, --category, --stats, --search, --add)
 
 Examples:
   arc search "database issue"
@@ -347,6 +350,11 @@ switch (cmd) {
   case 'ping':
   case 'uptime':
     run(SCRIPTS.pulse, args);
+    break;
+
+  case 'fortune':
+  case 'wisdom':
+    run(SCRIPTS.fortune, args);
     break;
 
   default:

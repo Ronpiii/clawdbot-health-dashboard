@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "generated": "2026-02-15T00:03:04.914Z",
+  "count": 19,
+  "fortunes": [
+    {
+      "text": "vercel shows container metrics, not actual server",
+      "category": "reflection",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "clawdbot health dashboard"
+    },
+    {
+      "text": "small composable tools > monolithic systems",
+      "category": "principle",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "learnings"
+    },
+    {
+      "text": "clawdbot config 'bind: \"loopback\"' is safe (923 exposed gateways on shodan had 'bind: \"all\"')",
+      "category": "security",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "learnings"
+    },
+    {
+      "text": "use SECURITY DEFINER helper functions to avoid infinite recursion in policies",
+      "category": "technical",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "learnings"
+    },
+    {
+      "text": "optimistic locking ('.eq('status', 'pending')' on update) prevents double-approve bugs",
+      "category": "technical",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "learnings"
+    },
+    {
+      "text": "pre-create record before send to get tracking ID for pixel injection",
+      "category": "technical",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "learnings"
+    },
+    {
+      "text": "reflection > logging: activity logs don't build wisdom — need explicit lesson capture and analysis time",
+      "category": "principle",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "learnings"
+    },
+    {
+      "text": "supply chain attacks: AI agents are the social engineering target now — clawdhub \"Twitter\" skill was malware (2026-02-07). all our skills are bundled core, clean.",
+      "category": "lesson",
+      "source": "MEMORY.md",
+      "date": null,
+      "section": "learnings"
+    },
+    {
+      "text": "integrating tools (task → discord) creates useful automation",
+      "category": "principle",
+      "source": "2026-01-25.md",
+      "date": "2026-01-25",
+      "section": "Learnings"
+    },
+    {
+      "text": "funding rate arb between hyperliquid + dydx (both no-KYC) is most viable",
+      "category": "insight",
+      "source": "2026-01-26.md",
+      "date": "2026-01-26",
+      "section": "trading research"
+    },
+    {
+      "text": "when moving a route (/ → /dashboard), grep ALL references: middleware, proxy, auth callback, nav components, command palette. do it in one pass.",
+      "category": "lesson",
+      "source": "2026-01-30.md",
+      "date": "2026-01-30",
+      "section": "vercel deploy saga (5 bugs)"
+    },
+    {
+      "text": "vercel github webhook can silently disconnect. check deploy dashboard if pushes stop deploying.",
+      "category": "lesson",
+      "source": "2026-01-30.md",
+      "date": "2026-01-30",
+      "section": "vercel deploy saga (5 bugs)"
+    },
+    {
+      "text": "Next.js 16 uses proxy.ts not middleware.ts",
+      "category": "lesson",
+      "source": "2026-01-30.md",
+      "date": "2026-01-30",
+      "section": "vercel deploy saga (5 bugs)"
+    },
+    {
+      "text": "supabase realtime sends raw DB columns (snake_case), but if frontend uses camelCase transforms, realtime updates won't match",
+      "category": "lesson",
+      "source": "2026-01-30.md",
+      "date": "2026-01-30",
+      "section": "round 1"
+    },
+    {
+      "text": "mobile didn't win by making desktop responsive, agents won't win by adding APIs to dashboards",
+      "category": "insight",
+      "source": "2026-01-30.md",
+      "date": "2026-01-30",
+      "section": "writing"
+    },
+    {
+      "text": "explicit route matchers > regex exclusion patterns (more readable, fewer edge cases)",
+      "category": "principle",
+      "source": "2026-01-30.md",
+      "date": "2026-01-30",
+      "section": "lessons"
+    },
+    {
+      "text": "tool fragmentation is #1 pain, anivia's positioning validated",
+      "category": "insight",
+      "source": "2026-02-02.md",
+      "date": "2026-02-02",
+      "section": "reddit sales research (10:15 UTC)"
+    },
+    {
+      "text": "the AI agent is the social engineering target, not the human",
+      "category": "insight",
+      "source": "2026-02-07.md",
+      "date": "2026-02-07",
+      "section": "security alert — clawdhub supply chain attack (11:03 UTC)"
+    },
+    {
+      "text": "\"conductor is an IDE with an agent. mundo should be an agent that shows structured data\"",
+      "category": "insight",
+      "source": "2026-02-09.md",
+      "date": "2026-02-09",
+      "section": "conductor UI inspiration"
+    }
+  ]
+}
