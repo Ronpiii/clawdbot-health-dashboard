@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-15: Past Self Fortune Engine
+**What:** `arc fortune` — extracts wisdom from your own memory files and surfaces it randomly
+**Commands:** `arc fortune`, `arc fortune --all`, `arc fortune --category`, `arc fortune --stats`, `arc fortune --search Q`, `arc fortune --add "..."`, `arc fortune --refresh`, `arc fortune --short`, `arc fortune --json`
+**Features:** auto-extracts lessons/insights/principles/technical patterns/security notes/decisions from all daily logs + MEMORY.md, deduplicates (fuzzy prefix stripping), categorizes by type (lesson/insight/principle/technical/security/reflection/decision), caches in `memory/fortunes.json`, auto-refreshes when memory files change, preserves manual entries across refreshes, boxed display with attribution, search across all fortunes, stats with category bars + monthly distribution
+**Categories:** lesson (L), insight (I), principle (P), technical (T), security (S), reflection (R), decision (D), rule (!), manual (*)
+**Aliases:** `arc fortune`, `arc wisdom`
+**First run:** 19 fortunes extracted from 3 weeks of logs (7 source files). heaviest month: jan 2026 (8 entries). top categories: lesson + insight (5 each), principle (4), technical (3).
+**Sample fortune:** "mobile didn't win by making desktop responsive, agents won't win by adding APIs to dashboards" — insight, 2026-01-30
+**Why:** you log lessons every day but never re-read them. the whole point of writing things down is retrieval. `arc fortune` turns passive logs into active reminders — run it with morning coffee and get reminded of something you already knew but forgot. grows automatically as you keep logging. the most meta tool yet: your own wisdom, served back to you.
+
 ### 2026-02-14: Live Service Health Monitor
 **What:** `arc pulse` — checks all production endpoints in parallel, reports status + response times
 **Commands:** `arc pulse`, `arc pulse --short`, `arc pulse --history`, `arc pulse --watch N`, `arc pulse --json`

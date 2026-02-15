@@ -198,6 +198,7 @@
 | discord-post.mjs | webhook posting |
 | snip.mjs | personal code snippet library (nightly build 02-12) |
 | pulse.mjs | live service health monitor (nightly build 02-14) |
+| fortune.mjs | past self wisdom engine (nightly build 02-15) |
 
 ---
 
@@ -225,9 +226,9 @@ personal reflections and essays in `writing/`:
 - reason: lost conversation context after compaction — "summary unavailable" problem
 
 ## nightly builds (recent)
-- **2026-02-12:** `arc snip` — personal code snippet library, seeded with 5 anivia patterns
 - **2026-02-13:** `arc env` — environment variable audit dashboard. scans projects for .env drift, shared keys, gitignore coverage. found 7 drift issues across 5 projects on first run. health score: 90/100.
 - **2026-02-14:** `arc pulse` — live service health monitor. checks 6 production endpoints in parallel (<1s). first run: 6/6 up, avg 86ms. history tracking for uptime trends.
+- **2026-02-15:** `arc fortune` — wisdom from your past self. extracts lessons/insights/principles from memory files, surfaces one randomly. 19 fortunes from 3 weeks of logs. closes the log→retrieve loop.
 - **2026-02-14 (reddit):** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
 
 ## market intel (from reddit scans)
