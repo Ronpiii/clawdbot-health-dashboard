@@ -75,7 +75,9 @@ const SCRIPTS = {
   ping: 'pulse.mjs',
   uptime: 'pulse.mjs',
   fortune: 'fortune.mjs',
-  wisdom: 'fortune.mjs'
+  wisdom: 'fortune.mjs',
+  orbit: 'orbit.mjs',
+  momentum: 'orbit.mjs'
 };
 
 const HELP = `
@@ -126,6 +128,7 @@ Commands:
   env [project]          Env variable audit (--drift, --shared, --security, --short)
   pulse [opts]           Live service health monitor (--short, --history, --watch N, --json)
   fortune [opts]         Wisdom from your past self (--all, --category, --stats, --search, --add)
+  orbit [opts]           Weekly momentum tracker (--short, --json, --weeks N)
 
 Examples:
   arc search "database issue"
@@ -355,6 +358,11 @@ switch (cmd) {
   case 'fortune':
   case 'wisdom':
     run(SCRIPTS.fortune, args);
+    break;
+
+  case 'orbit':
+  case 'momentum':
+    run(SCRIPTS.orbit, args);
     break;
 
   default:

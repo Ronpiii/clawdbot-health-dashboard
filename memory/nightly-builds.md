@@ -18,6 +18,14 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-16: Weekly Momentum Tracker
+**What:** `arc orbit` — compares this week to last week across 5 dimensions (commits, log coverage, tasks done, lines added, nightly builds). Shows per-dimension trend arrows with deltas, sparkline history across N weeks, and a net momentum score (-100 to +100).
+**Commands:** `arc orbit`, `arc orbit --short`, `arc orbit --json`, `arc orbit --weeks N`
+**Features:** weighted momentum formula (commits 30%, tasks 25%, logging 20%, codebase 15%, tools 10%), smart week-boundary detection (compares last 2 full weeks when current week is too young), sparkline history up to 12 weeks, verdict system (accelerating/gaining/cruising/decelerating/stalling), verdict phrases with context
+**Aliases:** `arc orbit`, `arc momentum`
+**First run:** momentum -53 (stalling) — accurately reflects post-sprint deceleration. 23 commits last week vs 144 the week before. 100% log coverage stable. sparkline `█▃▁▁` shows the cooldown arc. the -53 isn't a problem — it's the natural ebb after a big anivia push.
+**Why:** 20+ tools showing individual dimensions, but none showing the TREND. `arc health` = snapshot, `arc streak` = consistency, `arc wins` = accomplishments. orbit = trajectory. are things accelerating or decelerating? the sparkline tells the story that no single number can.
+
 ### 2026-02-15: Past Self Fortune Engine
 **What:** `arc fortune` — extracts wisdom from your own memory files and surfaces it randomly
 **Commands:** `arc fortune`, `arc fortune --all`, `arc fortune --category`, `arc fortune --stats`, `arc fortune --search Q`, `arc fortune --add "..."`, `arc fortune --refresh`, `arc fortune --short`, `arc fortune --json`
