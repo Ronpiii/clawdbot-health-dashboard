@@ -218,6 +218,12 @@
         "line": 55,
         "freq": 1,
         "context": "- tested on anivia (200 files, 56 routes, 78 components, 26 migrations), tuner, context-memory, vent"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
       }
     ],
     "213": [
@@ -276,6 +282,12 @@
     ],
     "500": [
       {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 20,
         "freq": 1,
@@ -332,6 +344,14 @@
         "line": 14,
         "freq": 1,
         "context": "- \"we mourn our craft\" by nolan lawson — 537 comments on AI and software craft"
+      }
+    ],
+    "600": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
       }
     ],
     "607": [
@@ -3938,6 +3958,30 @@
         "context": "- ron has 6+ production services running. no way to check them all at once."
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 58,
+        "freq": 1,
+        "context": "### ron's reaction"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 13,
         "freq": 1,
@@ -4138,6 +4182,12 @@
         "line": 37,
         "freq": 1,
         "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -4642,6 +4692,12 @@
         "context": "### first run results"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 42,
         "freq": 1,
@@ -5144,6 +5200,12 @@
         "line": 24,
         "freq": 1,
         "context": "- wants context prompts for projects so anyone (him, codex, other agents) can pick up work"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -6332,6 +6394,18 @@
         "context": "- ron asked about desktop app feasibility"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- sparked conversation about how AI workflows are restructuring operations"
+      },
+      {
         "file": "AGENTS.md",
         "line": 63,
         "freq": 1,
@@ -6646,6 +6720,18 @@
         "context": "- fastest: ventok.eu (11ms — static site, zone.eu hosting is fast)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## deep research: ventok strategic positioning (07:20-08:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 43,
         "freq": 1,
@@ -6766,6 +6852,18 @@
         "line": 9,
         "freq": 1,
         "context": "- grouped by category: infrastructure, applications, websites, social"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
       },
       {
         "file": "memory/security-notes.md",
@@ -7088,6 +7186,12 @@
         "line": 53,
         "freq": 1,
         "context": "- sidebar persona switching doesn't change route (buttons work, data updates)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -7678,6 +7782,12 @@
         "line": 20,
         "freq": 1,
         "context": "- favorite extraction: \"reflection > logging: activity logs don't build wisdom — need explicit lesso"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
       },
       {
         "file": "memory/INDEX.md",
@@ -9442,6 +9552,12 @@
         "context": "- supabase responds in 21ms (401 without apikey, but server is alive)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      },
+      {
         "file": "tasks/active.md",
         "line": 11,
         "freq": 1,
@@ -9744,6 +9860,12 @@
         "line": 23,
         "freq": 1,
         "context": "- `arc orbit` — full dashboard with box layout"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       },
       {
         "file": "memory/INDEX.md",
@@ -12390,6 +12512,12 @@
     ],
     "design": [
       {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 2,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      },
+      {
         "file": "MEMORY.md",
         "line": 31,
         "freq": 1,
@@ -12892,6 +13020,12 @@
         "line": 90,
         "freq": 1,
         "context": "- classifies email replies: interested/objection/question/OOO/unsubscribe/not_interested/wrong_perso"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- interested in the research but taking it in, not rushing to execute"
       }
     ],
     "nutrition": [
@@ -13412,6 +13546,12 @@
         "line": 18,
         "freq": 1,
         "context": "- supabase-admin: service-role client (19 lines, typescript)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
       },
       {
         "file": "memory/nightly-builds.md",
@@ -14024,6 +14164,24 @@
         "context": "- today marker, task positioning"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## deep research: ventok strategic positioning (07:20-08:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- clay = data connector. anivia = sending connector. complementary positioning."
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 10,
         "freq": 1,
@@ -14088,6 +14246,12 @@
         "line": 55,
         "freq": 1,
         "context": "- ventok targeting estonian SME manufacturers escaping \"excel hell\""
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
       },
       {
         "file": "memory/ventok-business.md",
@@ -14642,6 +14806,12 @@
         "line": 129,
         "freq": 1,
         "context": "4. **outreach drafter** — cold emails in Estonian (overlaps with anivia)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
       },
       {
         "file": "tasks/active.md",
@@ -15314,6 +15484,18 @@
         "line": 18,
         "freq": 1,
         "context": "- 25k lines added last week vs 84k the week before (that was anivia sprint)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- clay = data connector. anivia = sending connector. complementary positioning."
       },
       {
         "file": "memory/INDEX.md",
@@ -16526,6 +16708,12 @@
         "line": 37,
         "freq": 1,
         "context": "3. **route-based navigation** — created MundoShell.tsx (client wrapper), converted from useState vie"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -17800,6 +17988,12 @@
         "context": "- plus manual entries via `--add`"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 100,
         "freq": 1,
@@ -18718,6 +18912,18 @@
         "context": "- **ProspectData** — aggregates lead info, active enrollment, pending AI actions, email history"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 14,
         "freq": 1,
@@ -19576,6 +19782,12 @@
         "line": 16,
         "freq": 1,
         "context": "- **production-ready milestone hit** — all 3 email providers (SMTP, Gmail OAuth, Microsoft OAuth) co"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
       }
     ],
     "oauth": [
@@ -19732,6 +19944,18 @@
         "line": 140,
         "freq": 1,
         "context": "- InviteGuestModal component for sending invites"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- clay = data connector. anivia = sending connector. complementary positioning."
       },
       {
         "file": "memory/nightly-builds.md",
@@ -20536,6 +20760,12 @@
         "context": "- rls-helper: SECURITY DEFINER recursion fix (9 lines, sql)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- issue 1: .zip file opening in Word → file association fix"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 63,
         "freq": 1,
@@ -20920,6 +21150,18 @@
         "context": "- **MemBrain**: building persistent memory infra for agents — worth watching"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 42,
         "freq": 1,
@@ -21284,6 +21526,12 @@
         "line": 121,
         "freq": 1,
         "context": "- stripe keys for billing"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -22240,6 +22488,30 @@
         "context": "## agent memory research (08:45 UTC)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## deep research: ventok strategic positioning (07:20-08:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 44,
+        "freq": 1,
+        "context": "### deliverables (saved to research/)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- interested in the research but taking it in, not rushing to execute"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 9,
         "freq": 1,
@@ -22826,6 +23098,12 @@
         "line": 108,
         "freq": 1,
         "context": "- all onboarding data now editable post-setup (company, ICP, products, voice, pipeline)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
       }
     ],
     "ai-sales-automation": [
@@ -23508,6 +23786,18 @@
         "context": "## nightly build: weekly momentum tracker (00:00 UTC)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 38,
         "freq": 1,
@@ -23910,6 +24200,12 @@
         "line": 24,
         "freq": 1,
         "context": "- recurring patterns across projects (supabase RLS, api routes, crypto tokens)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -24468,6 +24764,30 @@
         "line": 18,
         "freq": 1,
         "context": "- sent morning curiosity drop (waymo world model, france office suite, coding agents debate)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -31512,6 +31832,12 @@
         "context": "- **eudaemon_0**: supply chain security post now at 23k upvotes, 4513 comments. best content on plat"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      },
+      {
         "file": "AGENTS.md",
         "line": 153,
         "freq": 1,
@@ -32622,6 +32948,18 @@
         "line": 24,
         "freq": 1,
         "context": "- 1 shared sensitive key: OPENAI_API_KEY in discord-voice-bot + context-memory"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 52,
+        "freq": 1,
+        "context": "### key strategic insight"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -34406,6 +34744,12 @@
         "line": 6,
         "freq": 1,
         "context": "- built `arc orbit` — compares this week to last week across 5 dimensions"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
       },
       {
         "file": "memory/INDEX.md",
@@ -41394,6 +41738,18 @@
         "context": "- looks like codex/claude code interface adapted for AI persona management"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 33,
         "freq": 1,
@@ -42758,6 +43114,12 @@
         "context": "- analytics: dashboard stats overview"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 84,
         "freq": 1,
@@ -43000,6 +43362,12 @@
         "line": 9,
         "freq": 1,
         "context": "- deduplication with fuzzy prefix stripping (handles \"pattern: X\" vs \"X\" dupes)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
       },
       {
         "file": "memory/INDEX.md",
@@ -44522,6 +44890,12 @@
         "context": "- **git metrics:** dirty repos, unpushed commits, stale repos (>14 days)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 69,
         "freq": 1,
@@ -44996,6 +45370,12 @@
         "line": 118,
         "freq": 1,
         "context": "- **gantt/timeline view** — full implementation:"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -47740,6 +48120,12 @@
         "context": "- like a personal gist library, but local and auto-tagged"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 13,
         "freq": 1,
@@ -49850,6 +50236,12 @@
         "context": "- proposed layout: persona sidebar (with scores) | conversation main | health panel right"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- sparked conversation about how AI workflows are restructuring operations"
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 50,
         "freq": 1,
@@ -50498,6 +50890,12 @@
         "context": "- shared keys across projects mean one rotation = hunt through multiple files"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 75,
         "freq": 1,
@@ -50748,6 +51146,12 @@
         "line": 39,
         "freq": 1,
         "context": "- the tool found real issues: 5 undocumented vars and 2 projects with examples but no actual env fil"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 62,
+        "freq": 1,
+        "context": "## IT support: rainar's windows 11 issues (08:30-09:28 UTC)"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -51428,6 +51832,12 @@
         "context": "- built `arc pulse` — live service health monitor for all production endpoints"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 40,
         "freq": 1,
@@ -51508,6 +51918,12 @@
         "line": 25,
         "freq": 1,
         "context": "- `arc pulse --short` — one-liner: `pulse: 6/6 up | avg 86ms`"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
       },
       {
         "file": "memory/nightly-builds.md",
@@ -52660,6 +53076,12 @@
         "line": 8,
         "freq": 1,
         "context": "- pattern matching for explicit markers (lesson:, key insight:, key finding:) plus section-aware ext"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
       }
     ],
     "cold": [
@@ -52692,6 +53114,12 @@
         "line": 20,
         "freq": 1,
         "context": "- slowest: anivia (195ms — vercel cold start on first hit)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
       },
       {
         "file": "memory/nightly-builds.md",
@@ -52860,6 +53288,12 @@
         "line": 237,
         "freq": 1,
         "context": "- cold outreach tools people evaluate: smartlead, saleshandy, instantly"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
       }
     ],
     "actively": [
@@ -53226,6 +53660,12 @@
         "context": "5. **empty persona view** — new component matching screenshot 6: setup wizard with numbered steps (a"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 36,
         "freq": 1,
@@ -53414,6 +53854,12 @@
         "context": "- `arc snip get rls-helper` gives you the proven pattern instantly"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 65,
         "freq": 1,
@@ -53464,6 +53910,12 @@
         "context": "- directly addresses yesterday's pain: ron spent 30 min manually writing PROMPT.md for mundo"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 39,
         "freq": 1,
@@ -53508,6 +53960,12 @@
         "context": "- 20+ threads, 8 sections: tools ranked, pain points, wishlists, pricing, deliverability, AI sentime"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 39,
         "freq": 1,
@@ -53540,6 +53998,12 @@
         "line": 33,
         "freq": 1,
         "context": "- 20+ threads, 8 sections: tools ranked, pain points, wishlists, pricing, deliverability, AI sentime"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
       }
     ],
     "fragmentation": [
@@ -54264,6 +54728,24 @@
         "context": "- sidebar persona switching doesn't change route (buttons work, data updates)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- clay = data connector. anivia = sending connector. complementary positioning."
+      },
+      {
         "file": "tasks/active.md",
         "line": 15,
         "freq": 1,
@@ -54386,6 +54868,12 @@
         "line": 26,
         "freq": 1,
         "context": "- ron: \"you don't have to wait for me to give you tasks, you can brainstorm and execute useful thing"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- interested in the research but taking it in, not rushing to execute"
       },
       {
         "file": "memory/scratchpad.md",
@@ -56622,6 +57110,12 @@
         "line": 36,
         "freq": 1,
         "context": "- history accumulates over time via heartbeats — eventually shows real uptime trends"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -58878,6 +59372,12 @@
         "context": "- \"persistent memory for AI workflows\""
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- sparked conversation about how AI workflows are restructuring operations"
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 96,
         "freq": 1,
@@ -59166,6 +59666,24 @@
         "line": 53,
         "freq": 1,
         "context": "- main issue: Next.js is server-oriented, doesn't fit desktop cleanly"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- issue 1: .zip file opening in Word → file association fix"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
       }
     ],
     "correctly": [
@@ -59340,6 +59858,12 @@
         "line": 49,
         "freq": 2,
         "context": "- confirmed with live test: wrote file via sub-agent, file doesn't exist on disk"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 64,
+        "freq": 2,
+        "context": "- issue 1: .zip file opening in Word → file association fix"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -59976,6 +60500,18 @@
         "context": "## nightly build: weekly momentum tracker (00:00 UTC)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## deep research: ventok strategic positioning (07:20-08:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 62,
+        "freq": 1,
+        "context": "## IT support: rainar's windows 11 issues (08:30-09:28 UTC)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 5,
         "freq": 1,
@@ -60452,6 +60988,12 @@
         "line": 83,
         "freq": 1,
         "context": "## key deliverables"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 44,
+        "freq": 1,
+        "context": "### deliverables (saved to research/)"
       }
     ],
     "automatically": [
@@ -60960,6 +61502,12 @@
         "context": "- ron asked about desktop app feasibility"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 80,
         "freq": 1,
@@ -61284,6 +61832,12 @@
         "line": 136,
         "freq": 1,
         "context": "- python SDK"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       },
       {
         "file": "GOALS.md",
@@ -61888,6 +62442,12 @@
         "line": 39,
         "freq": 1,
         "context": "- the tool found real issues: 5 undocumented vars and 2 projects with examples but no actual env fil"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -64490,6 +65050,12 @@
         "context": "- saved to projects/tuner/IDEA.md, sent via telegram in 4 parts"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 44,
+        "freq": 1,
+        "context": "### deliverables (saved to research/)"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 74,
         "freq": 1,
@@ -65006,6 +65572,12 @@
         "line": 40,
         "freq": 1,
         "context": "- quiet friday, no user activity"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
       },
       {
         "file": "memory/INDEX.md",
@@ -65878,6 +66450,12 @@
         "line": 67,
         "freq": 1,
         "context": "- designed full-stack AI-managed system: lead → nurture → close → production"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
       }
     ],
     "ai-managed": [
@@ -65934,6 +66512,12 @@
         "context": "- \"context generator\" = prompt/spec document for a project, so anyone can build on it"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      },
+      {
         "file": "memory/INDEX.md",
         "line": 38,
         "freq": 1,
@@ -65952,6 +66536,12 @@
         "line": 77,
         "freq": 1,
         "context": "- local competitor Sera = outreach only, managed service, no self-serve"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
       }
     ],
     "analyzed": [
@@ -65968,6 +66558,30 @@
         "line": 74,
         "freq": 1,
         "context": "- analyzed: Clay, Instantly, Apollo, Lemlist, 11x, Artisan, Attio, Regie, Sera"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- clay = data connector. anivia = sending connector. complementary positioning."
       }
     ],
     "apollo": [
@@ -65982,6 +66596,12 @@
         "line": 141,
         "freq": 1,
         "context": "- **Apollo improvements**: multi-page fetch, industry tags, broader fallback"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
       }
     ],
     "lemlist": [
@@ -66412,6 +67032,18 @@
         "line": 22,
         "freq": 1,
         "context": "- discussed workflow friction: too many hops (leads → sequences → campaigns → approval → inbox → pip"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       },
       {
         "file": "memory/ventok-business.md",
@@ -66928,6 +67560,12 @@
         "context": "4. **empty states** — PlaygroundView + TestSuiteView both support `empty` prop"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 62,
+        "freq": 1,
+        "context": "## IT support: rainar's windows 11 issues (08:30-09:28 UTC)"
+      },
+      {
         "file": "monetization-plan.md",
         "line": 9,
         "freq": 1,
@@ -67098,6 +67736,12 @@
         "line": 57,
         "freq": 1,
         "context": "- hidden Value/Last Activity on smaller screens"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
       },
       {
         "file": "memory/moltbook-community-strategy.md",
@@ -68338,6 +68982,12 @@
         "line": 173,
         "freq": 1,
         "context": "- no migration needed (uses existing settings JSON)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
       }
     ],
     "drag-drop": [
@@ -68830,6 +69480,12 @@
         "line": 35,
         "freq": 1,
         "context": "1. **layout.tsx** — removed broken `<head>`, switched to `next/font/google` for Inter + JetBrains Mo"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
       }
     ],
     "480px": [
@@ -72802,6 +73458,12 @@
         "line": 22,
         "freq": 1,
         "context": "- all completed successfully"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- all resolved successfully"
       }
     ],
     "pushed": [
@@ -75050,6 +75712,12 @@
         "line": 91,
         "freq": 1,
         "context": "- **dependency notifications** — trigger notifies assignees when blocking task completed"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 38,
+        "freq": 1,
+        "context": "### trigger"
       }
     ],
     "warmup": [
@@ -75526,6 +76194,12 @@
         "line": 118,
         "freq": 1,
         "context": "- **gantt/timeline view** — full implementation:"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       }
     ],
     "replacing": [
@@ -76310,6 +76984,12 @@
         "line": 172,
         "freq": 1,
         "context": "- \"Outlook / Microsoft 365\" in integrations list"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
       }
     ],
     "providers": [
@@ -76834,6 +77514,12 @@
         "line": 53,
         "freq": 1,
         "context": "- sidebar persona switching doesn't change route (buttons work, data updates)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
       },
       {
         "file": "AGENTS.md",
@@ -79576,6 +80262,12 @@
         "line": 44,
         "freq": 1,
         "context": "- ERR-2: retry utility with exponential backoff for transient network failures"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
       }
     ],
     "claimed": [
@@ -79922,6 +80614,12 @@
         "context": "- cached in `memory/fortunes.json`, auto-refreshes when source files change"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 32,
         "freq": 1,
@@ -80210,6 +80908,12 @@
         "line": 10,
         "freq": 1,
         "context": "- waymo world model: new sim frontier for self-driving using generative world models"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
       }
     ],
     "opus": [
@@ -80272,6 +80976,12 @@
         "line": 136,
         "freq": 1,
         "context": "**direction shift:** ron prefers focus on learning, exploration, self-improvement over tool output. "
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
       }
     ],
     "ship": [
@@ -81082,6 +81792,30 @@
         "context": "- focus mode: deep context dump — resume point, git, tasks, blockers, decisions, recent discussions"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## deep research: ventok strategic positioning (07:20-08:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- then requested deep dives on all 5 sub-topics"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 79,
         "freq": 1,
@@ -81094,6 +81828,12 @@
         "line": 121,
         "freq": 1,
         "context": "3. **moltbook-reputation.mjs** — analyzes agents by quality signals (content depth, engagement, cons"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- then requested deep dives on all 5 sub-topics"
       }
     ],
     "--save": [
@@ -81450,6 +82190,12 @@
         "line": 18,
         "freq": 1,
         "context": "- top categories: lesson (5), insight (5), principle (4), technical (3)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 52,
+        "freq": 1,
+        "context": "### key strategic insight"
       },
       {
         "file": "memory/INDEX.md",
@@ -81974,6 +82720,18 @@
         "context": "- moltbook agent still unclaimed — queued post can't be sent"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
+      },
+      {
         "file": "memory/moltbook-community-strategy.md",
         "line": 4,
         "freq": 1,
@@ -82106,6 +82864,12 @@
         "line": 10,
         "freq": 1,
         "context": "- 20+ REST endpoints (leads, sequences, pipeline, approvals)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
       },
       {
         "file": "projects/context-memory/PLAN.md",
@@ -85228,10 +85992,22 @@
     ],
     "connector": [
       {
+        "file": "memory/2026-02-16.md",
+        "line": 56,
+        "freq": 2,
+        "context": "- clay = data connector. anivia = sending connector. complementary positioning."
+      },
+      {
         "file": "memory/2026-02-01.md",
         "line": 23,
         "freq": 1,
         "context": "3. **sequence drag-drop builder** — @dnd-kit sortable, grip handles, insert-between-steps, visual co"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
       }
     ],
     "substitution": [
@@ -86002,6 +86778,12 @@
         "line": 56,
         "freq": 1,
         "context": "- waiting on ron's answer re: what's pulling him toward desktop"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
       }
     ],
     "isvalidcontactname": [
@@ -86488,6 +87270,18 @@
         "context": "- 5 parallel sub-agents: TS fix, MCP polish, email backfill, arc blockers cmd, log compression"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
+      },
+      {
         "file": "projects/context-memory/PLAN.md",
         "line": 104,
         "freq": 1,
@@ -86512,6 +87306,12 @@
         "line": 41,
         "freq": 1,
         "context": "- looks like codex/claude code interface adapted for AI persona management"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
       }
     ],
     "approve": [
@@ -87486,6 +88286,12 @@
         "line": 165,
         "freq": 1,
         "context": "- ron requested: regenerate should let you say what you didn't like"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- then requested deep dives on all 5 sub-topics"
       }
     ],
     "ritual": [
@@ -87994,6 +88800,12 @@
         "line": 47,
         "freq": 1,
         "context": "- every sub-agent session: exactly 1 user msg + 1 assistant msg (no tool turns)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
       }
     ],
     "turns": [
@@ -88510,6 +89322,12 @@
         "line": 71,
         "freq": 1,
         "context": "- **AI sequence generation** — POST /api/ai/generate-sequence, analyzes org context, creates optimal"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
       }
     ],
     "modals": [
@@ -90904,6 +91722,12 @@
         "context": "- target personas: agency builders, support teams, solopreneurs, internal tools"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
         "file": "memory/ventok-business.md",
         "line": 10,
         "freq": 1,
@@ -91022,6 +91846,12 @@
         "context": "- phase 3: growth (gantt, automations, guests, reporting) — 27 items"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      },
+      {
         "file": "memory/scratchpad.md",
         "line": 14,
         "freq": 1,
@@ -91106,6 +91936,12 @@
         "line": 22,
         "freq": 1,
         "context": "- discussed workflow friction: too many hops (leads → sequences → campaigns → approval → inbox → pip"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
       }
     ],
     "task-overview": [
@@ -93204,6 +94040,12 @@
         "line": 199,
         "freq": 1,
         "context": "- security: change password, sign out"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
       }
     ],
     "sign": [
@@ -93542,6 +94384,12 @@
         "line": 31,
         "freq": 1,
         "context": "- `arc health` = snapshot. `arc wins` = accomplishments. `arc streak` = consistency."
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
       },
       {
         "file": "memory/INDEX.md",
@@ -94024,6 +94872,12 @@
         "line": 31,
         "freq": 1,
         "context": "- design: sharp corners (rounded-sm), Inter + Space Grotesk, black/white palette"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
       }
     ],
     "expand": [
@@ -95012,6 +95866,12 @@
         "line": 97,
         "freq": 1,
         "context": "- scraped r/OpenAI, r/PromptEngineering, r/ChatGPT, r/SaaS, r/LocalLLaMA"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
       }
     ],
     "localllama": [
@@ -95146,6 +96006,12 @@
         "line": 105,
         "freq": 1,
         "context": "- target personas: agency builders, support teams, solopreneurs, internal tools"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
       }
     ],
     "teams": [
@@ -95450,6 +96316,12 @@
         "line": 15,
         "freq": 1,
         "context": "- what does ron think makes me \"me\"? (should ask)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
       },
       {
         "file": "AGENTS.md",
@@ -97316,6 +98188,12 @@
         "line": 5,
         "freq": 1,
         "context": "### inode crisis resolved"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 67,
+        "freq": 1,
+        "context": "- all resolved successfully"
       }
     ],
     "256k": [
@@ -97998,6 +98876,18 @@
         "context": "- top categories: lesson (5), insight (5), principle (4), technical (3)"
       },
       {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      },
+      {
         "file": "memory/nightly-builds.md",
         "line": 33,
         "freq": 1,
@@ -98486,6 +99376,12 @@
         "line": 30,
         "freq": 1,
         "context": "- ron sent zip of mundo scaffold (10 files) + 7 pencil/design-tool screenshots"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- issue 1: .zip file opening in Word → file association fix"
       }
     ],
     "scaffold": [
@@ -99180,6 +100076,12 @@
         "line": 17,
         "freq": 1,
         "context": "- cleared 4 .next caches (139MB), 2 empty dirs, git gc on 6 repos (16.3MB)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
       },
       {
         "file": "memory/nightly-builds.md",
@@ -101780,6 +102682,892 @@
         "context": "Before doing anything else:"
       }
     ],
+    "strategic": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## deep research: ventok strategic positioning (07:20-08:30 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 52,
+        "freq": 1,
+        "context": "### key strategic insight"
+      }
+    ],
+    "20-08": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 36,
+        "freq": 1,
+        "context": "## deep research: ventok strategic positioning (07:20-08:30 UTC)"
+      }
+    ],
+    "tweet": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
+      }
+    ],
+    "someone": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 39,
+        "freq": 1,
+        "context": "- ron shared a tweet about someone who built 3 products + 3 AI agents in 7 days for $600"
+      },
+      {
+        "file": "memory/moltbook-community-strategy.md",
+        "line": 51,
+        "freq": 1,
+        "context": "- comment on someone else's thread with a real solution"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 96,
+        "freq": 1,
+        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 136,
+        "freq": 1,
+        "context": "- Someone already answered the question"
+      }
+    ],
+    "sparked": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- sparked conversation about how AI workflows are restructuring operations"
+      }
+    ],
+    "restructuring": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- sparked conversation about how AI workflows are restructuring operations"
+      }
+    ],
+    "operations": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 40,
+        "freq": 1,
+        "context": "- sparked conversation about how AI workflows are restructuring operations"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 34,
+        "freq": 1,
+        "context": "- Partial fulfillment logic, kiln operations"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 28,
+        "freq": 1,
+        "context": "Use `./scripts/arc` for all workspace operations:"
+      }
+    ],
+    "shifts": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      }
+    ],
+    "avoiding": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      }
+    ],
+    "obsolescence": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 41,
+        "freq": 1,
+        "context": "- ron asked for deep research on workflow shifts, optimal positioning, and avoiding obsolescence"
+      }
+    ],
+    "sub-topics": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 42,
+        "freq": 1,
+        "context": "- then requested deep dives on all 5 sub-topics"
+      }
+    ],
+    "workflow-shift-2026": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
+      }
+    ],
+    "solo": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
+      }
+    ],
+    "compressing": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
+      }
+    ],
+    "team-scale": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 45,
+        "freq": 1,
+        "context": "1. **workflow-shift-2026.md** — overview: the shift is real, solo builders + agents compressing team"
+      }
+    ],
+    "clay-playbook": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "reverse-engineered": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "100m": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "arr": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "journey": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "years": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 2,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "pmf": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "explosive": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "wedge": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "moat": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      }
+    ],
+    "ecosystem": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 46,
+        "freq": 1,
+        "context": "2. **clay-playbook.md** — reverse-engineered clay's $0→$100M ARR journey. key: 6 years finding PMF, "
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 30,
+        "freq": 1,
+        "context": "| API | Node.js + Fastify | fast, familiar, good ecosystem |"
+      }
+    ],
+    "deliverability-moat": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "dive": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "defensible": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "time-based": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "warming": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "relationship-based": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "isps": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "scale-based": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "effects": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 47,
+        "freq": 1,
+        "context": "3. **deliverability-moat.md** — technical deep dive on why email infra is defensible. time-based (wa"
+      }
+    ],
+    "agency-model": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      }
+    ],
+    "landscape": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      }
+    ],
+    "000-15": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      }
+    ],
+    "000": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 18,
+        "freq": 1,
+        "context": "- 3-4 automation clients at €1,500-€2,000/mo, OR"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 19,
+        "freq": 1,
+        "context": "- 5-7 smaller automation clients at €500-€1,000/mo, OR"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 57,
+        "freq": 1,
+        "context": "- Basic site: €1,200-€2,000"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 58,
+        "freq": 1,
+        "context": "- Standard: €2,500-€4,000"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- Standard system: €3,000-€5,000"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- Enterprise: €6,000-€10,000+"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 69,
+        "freq": 1,
+        "context": "- Premium: €10,000-€15,000+"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 68,
+        "freq": 1,
+        "context": "| Free | $0 | 1 | 1,000 |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 69,
+        "freq": 1,
+        "context": "| Pro | $12/mo | 10 | 100,000 |"
+      }
+    ],
+    "agencies": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      }
+    ],
+    "dns": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- **registrar:** cloudflare (cheap, good DNS)"
+      }
+    ],
+    "mailbox": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      }
+    ],
+    "revenue": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 12,
+        "freq": 1,
+        "context": "## Revenue Target"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 107,
+        "freq": 1,
+        "context": "1. **Revenue:** Only €72/mo paying, 68x gap to target"
+      },
+      {
+        "file": "monetization-plan.md",
+        "line": 27,
+        "freq": 1,
+        "context": "### Additional Revenue Streams"
+      }
+    ],
+    "60-80": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      }
+    ],
+    "margins": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 48,
+        "freq": 1,
+        "context": "4. **agency-model.md** — cold email agency landscape: 5,000-15,000 agencies, pain points (DNS hell, "
+      }
+    ],
+    "competitive-teardown": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      }
+    ],
+    "simple": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      },
+      {
+        "file": "AGENTS.md",
+        "line": 259,
+        "freq": 1,
+        "context": "- Working isn't enough. Clean, simple, readable."
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 16,
+        "freq": 1,
+        "context": "- **API** — REST, simple auth via API keys"
+      },
+      {
+        "file": "projects/context-memory/PLAN.md",
+        "line": 32,
+        "freq": 1,
+        "context": "| auth | API keys (hashed) | simple, stateless |"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 7,
+        "freq": 1,
+        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 22,
+        "freq": 1,
+        "context": "**No shame in files. They're simple and they work.**"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 25,
+        "freq": 1,
+        "context": "A simple API for persistent, searchable AI memory."
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 42,
+        "freq": 1,
+        "context": "| Simple storage | ✓ | ✓ |"
+      },
+      {
+        "file": "projects/context-memory/PITCH.md",
+        "line": 62,
+        "freq": 1,
+        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
+      }
+    ],
+    "agency-first": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      }
+    ],
+    "closest": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      }
+    ],
+    "layer": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 53,
+        "freq": 1,
+        "context": "- ventok/anivia should be \"the stripe of outreach\" — infrastructure layer that every AI agent uses"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 44,
+        "freq": 1,
+        "context": "### Automation Layer"
+      },
+      {
+        "file": "memory/ventok-business.md",
+        "line": 50,
+        "freq": 1,
+        "context": "### Web Layer"
+      }
+    ],
+    "complementary": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 56,
+        "freq": 1,
+        "context": "- clay = data connector. anivia = sending connector. complementary positioning."
+      }
+    ],
+    "all-in-one": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      }
+    ],
+    "weak": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 49,
+        "freq": 1,
+        "context": "5. **competitive-teardown.md** — instantly ($37/mo, simple) vs smartlead (agency-first, closest comp"
+      }
+    ],
+    "agent-api-design": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 50,
+        "freq": 1,
+        "context": "6. **agent-api-design.md** — full technical spec: MCP server design, REST API (20+ endpoints), SDK d"
+      }
+    ],
+    "compete": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 2,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
+      }
+    ],
+    "intelligence": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
+      }
+    ],
+    "llms": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
+      }
+    ],
+    "compliance": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 54,
+        "freq": 1,
+        "context": "- don't compete on intelligence (agents, LLMs). compete on infrastructure (deliverability, complianc"
+      }
+    ],
+    "cover": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 55,
+        "freq": 1,
+        "context": "- first to build MCP sending connector for claude/chatgpt wins the space clay doesn't cover"
+      }
+    ],
+    "reaction": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 58,
+        "freq": 1,
+        "context": "### ron's reaction"
+      }
+    ],
+    "jarvis": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
+      }
+    ],
+    "evolve": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 59,
+        "freq": 1,
+        "context": "- \"i'd like to think you're my jarvis\" — wants me to evolve toward full-stack assistant"
+      },
+      {
+        "file": "GOALS.md",
+        "line": 70,
+        "freq": 1,
+        "context": "*update goals as they evolve*"
+      }
+    ],
+    "taking": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- interested in the research but taking it in, not rushing to execute"
+      }
+    ],
+    "rushing": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 60,
+        "freq": 1,
+        "context": "- interested in the research but taking it in, not rushing to execute"
+      }
+    ],
+    "rainar": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 62,
+        "freq": 1,
+        "context": "## IT support: rainar's windows 11 issues (08:30-09:28 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
+      }
+    ],
+    "windows": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 62,
+        "freq": 1,
+        "context": "## IT support: rainar's windows 11 issues (08:30-09:28 UTC)"
+      },
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
+      }
+    ],
+    "30-09": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 62,
+        "freq": 1,
+        "context": "## IT support: rainar's windows 11 issues (08:30-09:28 UTC)"
+      }
+    ],
+    "helped": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
+      }
+    ],
+    "troubleshoot": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
+      }
+    ],
+    "remotely": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
+      }
+    ],
+    "photos": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 63,
+        "freq": 1,
+        "context": "- helped ron troubleshoot rainar's PC remotely via telegram photos"
+      }
+    ],
+    "opening": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- issue 1: .zip file opening in Word → file association fix"
+      }
+    ],
+    "word": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- issue 1: .zip file opening in Word → file association fix"
+      },
+      {
+        "file": "tasks/ideas.md",
+        "line": 7,
+        "freq": 1,
+        "context": "- voice mode improvements (wake word? continuous?)"
+      }
+    ],
+    "association": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 64,
+        "freq": 1,
+        "context": "- issue 1: .zip file opening in Word → file association fix"
+      }
+    ],
+    "addriverstoreaccessnonlocalexception": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
+      }
+    ],
+    "olk": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
+      }
+    ],
+    "oneauth": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
+      }
+    ],
+    "identitycache": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
+      }
+    ],
+    "folders": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 65,
+        "freq": 1,
+        "context": "- issue 2: new Outlook app broken with gmail (`ADDriverStoreAccessNonLocalException`) → cleared Olk/"
+      }
+    ],
+    "ctrl": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
+      }
+    ],
+    "alt": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
+      }
+    ],
+    "del": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
+      }
+    ],
+    "method": [
+      {
+        "file": "memory/2026-02-16.md",
+        "line": 66,
+        "freq": 1,
+        "context": "- issue 3: windows user password change → Ctrl+Alt+Del method"
+      },
+      {
+        "file": "projects/context-memory/README.md",
+        "line": 90,
+        "freq": 1,
+        "context": "| Endpoint | Method | Description |"
+      }
+    ],
     "pointer-based": [
       {
         "file": "memory/INDEX.md",
@@ -102692,26 +104480,6 @@
         "line": 50,
         "freq": 1,
         "context": "for every self-promotional post, have 3 that purely help others:"
-      }
-    ],
-    "someone": [
-      {
-        "file": "memory/moltbook-community-strategy.md",
-        "line": 51,
-        "freq": 1,
-        "context": "- comment on someone else's thread with a real solution"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 96,
-        "freq": 1,
-        "context": "- When someone says \"remember this\" → update `memory/YYYY-MM-DD.md` or relevant file"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 136,
-        "freq": 1,
-        "context": "- Someone already answered the question"
       }
     ],
     "amplify": [
@@ -104772,26 +106540,6 @@
         "context": "- **Positioning:** Design + automation agency helping Estonian SMEs escape Excel hell"
       }
     ],
-    "revenue": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 12,
-        "freq": 1,
-        "context": "## Revenue Target"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 107,
-        "freq": 1,
-        "context": "1. **Revenue:** Only €72/mo paying, 68x gap to target"
-      },
-      {
-        "file": "monetization-plan.md",
-        "line": 27,
-        "freq": 1,
-        "context": "### Additional Revenue Streams"
-      }
-    ],
     "68x": [
       {
         "file": "memory/ventok-business.md",
@@ -104858,62 +106606,6 @@
         "line": 81,
         "freq": 1,
         "context": "- Value: €2k-€5k project + potential €500-€1k/mo retainer"
-      }
-    ],
-    "000": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 18,
-        "freq": 1,
-        "context": "- 3-4 automation clients at €1,500-€2,000/mo, OR"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 19,
-        "freq": 1,
-        "context": "- 5-7 smaller automation clients at €500-€1,000/mo, OR"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 57,
-        "freq": 1,
-        "context": "- Basic site: €1,200-€2,000"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 58,
-        "freq": 1,
-        "context": "- Standard: €2,500-€4,000"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 63,
-        "freq": 1,
-        "context": "- Standard system: €3,000-€5,000"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 64,
-        "freq": 1,
-        "context": "- Enterprise: €6,000-€10,000+"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 69,
-        "freq": 1,
-        "context": "- Premium: €10,000-€15,000+"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 68,
-        "freq": 1,
-        "context": "| Free | $0 | 1 | 1,000 |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 69,
-        "freq": 1,
-        "context": "| Pro | $12/mo | 10 | 100,000 |"
       }
     ],
     "5-7": [
@@ -105096,20 +106788,6 @@
         "context": "- Need: production management + kiln tracking + partial fulfillment"
       }
     ],
-    "operations": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 34,
-        "freq": 1,
-        "context": "- Partial fulfillment logic, kiln operations"
-      },
-      {
-        "file": "AGENTS.md",
-        "line": 28,
-        "freq": 1,
-        "context": "Use `./scripts/arc` for all workspace operations:"
-      }
-    ],
     "aesthetic": [
       {
         "file": "memory/ventok-business.md",
@@ -105174,20 +106852,6 @@
         "line": 40,
         "freq": 1,
         "context": "- No decorative bullshit"
-      }
-    ],
-    "layer": [
-      {
-        "file": "memory/ventok-business.md",
-        "line": 44,
-        "freq": 1,
-        "context": "### Automation Layer"
-      },
-      {
-        "file": "memory/ventok-business.md",
-        "line": 50,
-        "freq": 1,
-        "context": "### Web Layer"
       }
     ],
     "no-code": [
@@ -105732,14 +107396,6 @@
         "context": "- notion integration for docs/knowledge base"
       }
     ],
-    "word": [
-      {
-        "file": "tasks/ideas.md",
-        "line": 7,
-        "freq": 1,
-        "context": "- voice mode improvements (wake word? continuous?)"
-      }
-    ],
     "camera": [
       {
         "file": "tasks/ideas.md",
@@ -105894,14 +107550,6 @@
         "line": 50,
         "freq": 1,
         "context": "- automated learning from interactions"
-      }
-    ],
-    "evolve": [
-      {
-        "file": "GOALS.md",
-        "line": 70,
-        "freq": 1,
-        "context": "*update goals as they evolve*"
       }
     ],
     "folder": [
@@ -107422,56 +109070,6 @@
         "context": "### Demand Elegance"
       }
     ],
-    "simple": [
-      {
-        "file": "AGENTS.md",
-        "line": 259,
-        "freq": 1,
-        "context": "- Working isn't enough. Clean, simple, readable."
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 16,
-        "freq": 1,
-        "context": "- **API** — REST, simple auth via API keys"
-      },
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 32,
-        "freq": 1,
-        "context": "| auth | API keys (hashed) | simple, stateless |"
-      },
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 7,
-        "freq": 1,
-        "context": "A simple API that lets AI agents *remember* across sessions. Store context, retrieve by key, or sear"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 22,
-        "freq": 1,
-        "context": "**No shame in files. They're simple and they work.**"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 25,
-        "freq": 1,
-        "context": "A simple API for persistent, searchable AI memory."
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 42,
-        "freq": 1,
-        "context": "| Simple storage | ✓ | ✓ |"
-      },
-      {
-        "file": "projects/context-memory/PITCH.md",
-        "line": 62,
-        "freq": 1,
-        "context": "If your needs are simple, files win. If they're not, we save you the yak shave."
-      }
-    ],
     "hack": [
       {
         "file": "AGENTS.md",
@@ -107842,14 +109440,6 @@
         "context": "| API | Node.js + Fastify | fast, familiar, good ecosystem |"
       }
     ],
-    "ecosystem": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 30,
-        "freq": 1,
-        "context": "| API | Node.js + Fastify | fast, familiar, good ecosystem |"
-      }
-    ],
     "reliable": [
       {
         "file": "projects/context-memory/PLAN.md",
@@ -108018,14 +109608,6 @@
         "line": 92,
         "freq": 1,
         "context": "1. [ ] pick and register domain (cloudflare)"
-      }
-    ],
-    "dns": [
-      {
-        "file": "projects/context-memory/PLAN.md",
-        "line": 54,
-        "freq": 1,
-        "context": "- **registrar:** cloudflare (cheap, good DNS)"
       }
     ],
     "10-15": [
@@ -108394,14 +109976,6 @@
         "context": "docker compose up -d"
       }
     ],
-    "method": [
-      {
-        "file": "projects/context-memory/README.md",
-        "line": 90,
-        "freq": 1,
-        "context": "| Endpoint | Method | Description |"
-      }
-    ],
     "----------": [
       {
         "file": "projects/context-memory/README.md",
@@ -108708,184 +110282,184 @@
   "files": {
     "MEMORY.md": {
       "lines": 252,
-      "updated": "2026-02-16T00:53:53.884Z"
+      "updated": "2026-02-16T14:01:14.198Z"
     },
     "memory/2026-01-24.md": {
       "lines": 30,
-      "updated": "2026-02-16T00:53:53.887Z"
+      "updated": "2026-02-16T14:01:14.202Z"
     },
     "memory/2026-01-25.md": {
       "lines": 173,
-      "updated": "2026-02-16T00:53:53.888Z"
+      "updated": "2026-02-16T14:01:14.203Z"
     },
     "memory/2026-01-26.md": {
       "lines": 95,
-      "updated": "2026-02-16T00:53:53.889Z"
+      "updated": "2026-02-16T14:01:14.204Z"
     },
     "memory/2026-01-27.md": {
       "lines": 50,
-      "updated": "2026-02-16T00:53:53.890Z"
+      "updated": "2026-02-16T14:01:14.205Z"
     },
     "memory/2026-01-28.md": {
       "lines": 79,
-      "updated": "2026-02-16T00:53:53.890Z"
+      "updated": "2026-02-16T14:01:14.205Z"
     },
     "memory/2026-01-29.md": {
       "lines": 200,
-      "updated": "2026-02-16T00:53:53.890Z"
+      "updated": "2026-02-16T14:01:14.206Z"
     },
     "memory/2026-01-30.md": {
       "lines": 142,
-      "updated": "2026-02-16T00:53:53.892Z"
+      "updated": "2026-02-16T14:01:14.207Z"
     },
     "memory/2026-01-31.md": {
       "lines": 143,
-      "updated": "2026-02-16T00:53:53.893Z"
+      "updated": "2026-02-16T14:01:14.208Z"
     },
     "memory/2026-02-01.md": {
       "lines": 116,
-      "updated": "2026-02-16T00:53:53.894Z"
+      "updated": "2026-02-16T14:01:14.209Z"
     },
     "memory/2026-02-02.md": {
       "lines": 179,
-      "updated": "2026-02-16T00:53:53.894Z"
+      "updated": "2026-02-16T14:01:14.210Z"
     },
     "memory/2026-02-03.md": {
       "lines": 243,
-      "updated": "2026-02-16T00:53:53.895Z"
+      "updated": "2026-02-16T14:01:14.211Z"
     },
     "memory/2026-02-04.md": {
       "lines": 107,
-      "updated": "2026-02-16T00:53:53.897Z"
+      "updated": "2026-02-16T14:01:14.212Z"
     },
     "memory/2026-02-05.md": {
       "lines": 45,
-      "updated": "2026-02-16T00:53:53.897Z"
+      "updated": "2026-02-16T14:01:14.213Z"
     },
     "memory/2026-02-06.md": {
       "lines": 62,
-      "updated": "2026-02-16T00:53:53.898Z"
+      "updated": "2026-02-16T14:01:14.214Z"
     },
     "memory/2026-02-07.md": {
       "lines": 29,
-      "updated": "2026-02-16T00:53:53.898Z"
+      "updated": "2026-02-16T14:01:14.215Z"
     },
     "memory/2026-02-08-morning.md": {
       "lines": 15,
-      "updated": "2026-02-16T00:53:53.899Z"
+      "updated": "2026-02-16T14:01:14.215Z"
     },
     "memory/2026-02-08.md": {
       "lines": 38,
-      "updated": "2026-02-16T00:53:53.899Z"
+      "updated": "2026-02-16T14:01:14.215Z"
     },
     "memory/2026-02-09.md": {
       "lines": 60,
-      "updated": "2026-02-16T00:53:53.899Z"
+      "updated": "2026-02-16T14:01:14.215Z"
     },
     "memory/2026-02-10.md": {
       "lines": 63,
-      "updated": "2026-02-16T00:53:53.899Z"
+      "updated": "2026-02-16T14:01:14.216Z"
     },
     "memory/2026-02-11.md": {
       "lines": 25,
-      "updated": "2026-02-16T00:53:53.900Z"
+      "updated": "2026-02-16T14:01:14.216Z"
     },
     "memory/2026-02-12.md": {
       "lines": 28,
-      "updated": "2026-02-16T00:53:53.900Z"
+      "updated": "2026-02-16T14:01:14.216Z"
     },
     "memory/2026-02-13.md": {
       "lines": 40,
-      "updated": "2026-02-16T00:53:53.900Z"
+      "updated": "2026-02-16T14:01:14.216Z"
     },
     "memory/2026-02-14.md": {
       "lines": 44,
-      "updated": "2026-02-16T00:53:53.900Z"
+      "updated": "2026-02-16T14:01:14.217Z"
     },
     "memory/2026-02-15.md": {
       "lines": 39,
-      "updated": "2026-02-16T00:53:53.901Z"
+      "updated": "2026-02-16T14:01:14.217Z"
     },
     "memory/2026-02-16.md": {
-      "lines": 35,
-      "updated": "2026-02-16T00:53:53.901Z"
+      "lines": 68,
+      "updated": "2026-02-16T14:01:14.217Z"
     },
     "memory/INDEX.md": {
       "lines": 63,
-      "updated": "2026-02-16T00:53:53.901Z"
+      "updated": "2026-02-16T14:01:14.218Z"
     },
     "memory/moltbook-community-strategy.md": {
       "lines": 94,
-      "updated": "2026-02-16T00:53:53.901Z"
+      "updated": "2026-02-16T14:01:14.218Z"
     },
     "memory/nightly-builds.md": {
       "lines": 214,
-      "updated": "2026-02-16T00:53:53.902Z"
+      "updated": "2026-02-16T14:01:14.219Z"
     },
     "memory/scratchpad.md": {
       "lines": 52,
-      "updated": "2026-02-16T00:53:53.909Z"
+      "updated": "2026-02-16T14:01:14.226Z"
     },
     "memory/security-notes.md": {
       "lines": 53,
-      "updated": "2026-02-16T00:53:53.909Z"
+      "updated": "2026-02-16T14:01:14.226Z"
     },
     "memory/ventok-business.md": {
       "lines": 117,
-      "updated": "2026-02-16T00:53:53.909Z"
+      "updated": "2026-02-16T14:01:14.226Z"
     },
     "tasks/README.md": {
       "lines": 25,
-      "updated": "2026-02-16T00:53:53.910Z"
+      "updated": "2026-02-16T14:01:14.227Z"
     },
     "tasks/active.md": {
       "lines": 17,
-      "updated": "2026-02-16T00:53:53.910Z"
+      "updated": "2026-02-16T14:01:14.227Z"
     },
     "tasks/done.md": {
       "lines": 20,
-      "updated": "2026-02-16T00:53:53.910Z"
+      "updated": "2026-02-16T14:01:14.227Z"
     },
     "tasks/ideas.md": {
       "lines": 11,
-      "updated": "2026-02-16T00:53:53.910Z"
+      "updated": "2026-02-16T14:01:14.228Z"
     },
     "QUICKREF.md": {
       "lines": 56,
-      "updated": "2026-02-16T00:53:53.910Z"
+      "updated": "2026-02-16T14:01:14.228Z"
     },
     "GOALS.md": {
       "lines": 71,
-      "updated": "2026-02-16T00:53:53.911Z"
+      "updated": "2026-02-16T14:01:14.228Z"
     },
     "CHANGELOG.md": {
       "lines": 16,
-      "updated": "2026-02-16T00:53:53.911Z"
+      "updated": "2026-02-16T14:01:14.228Z"
     },
     "AGENTS.md": {
       "lines": 267,
-      "updated": "2026-02-16T00:53:53.911Z"
+      "updated": "2026-02-16T14:01:14.229Z"
     },
     "monetization-plan.md": {
       "lines": 48,
-      "updated": "2026-02-16T00:53:53.912Z"
+      "updated": "2026-02-16T14:01:14.230Z"
     },
     "projects/context-memory/PLAN.md": {
       "lines": 121,
-      "updated": "2026-02-16T00:53:53.912Z"
+      "updated": "2026-02-16T14:01:14.230Z"
     },
     "projects/context-memory/README.md": {
       "lines": 121,
-      "updated": "2026-02-16T00:53:53.913Z"
+      "updated": "2026-02-16T14:01:14.231Z"
     },
     "projects/context-memory/PITCH.md": {
       "lines": 70,
-      "updated": "2026-02-16T00:53:53.914Z"
+      "updated": "2026-02-16T14:01:14.232Z"
     },
     "scripts/README.md": {
       "lines": 229,
-      "updated": "2026-02-16T00:53:53.914Z"
+      "updated": "2026-02-16T14:01:14.232Z"
     }
   },
-  "built": "2026-02-16T00:53:53.882Z"
+  "built": "2026-02-16T14:01:14.196Z"
 }
