@@ -251,6 +251,47 @@
           "statusCode": 307
         }
       ]
+    },
+    {
+      "timestamp": "2026-02-15T06:00:36.156Z",
+      "results": [
+        {
+          "name": "anivia",
+          "status": "up",
+          "responseMs": 432,
+          "statusCode": 200
+        },
+        {
+          "name": "ventok.eu",
+          "status": "up",
+          "responseMs": 25,
+          "statusCode": 200
+        },
+        {
+          "name": "collabo",
+          "status": "up",
+          "responseMs": 68,
+          "statusCode": 404
+        },
+        {
+          "name": "health dashboard",
+          "status": "up",
+          "responseMs": 436,
+          "statusCode": 200
+        },
+        {
+          "name": "supabase api",
+          "status": "up",
+          "responseMs": 48,
+          "statusCode": 401
+        },
+        {
+          "name": "moltbook profile",
+          "status": "up",
+          "responseMs": 165,
+          "statusCode": 307
+        }
+      ]
     }
   ]
 }
