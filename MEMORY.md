@@ -200,6 +200,7 @@
 | pulse.mjs | live service health monitor (nightly build 02-14) |
 | fortune.mjs | past self wisdom engine (nightly build 02-15) |
 | orbit.mjs | weekly momentum tracker (nightly build 02-16) |
+| plan.mjs | daily action planner (nightly build 02-17) |
 
 ---
 
@@ -231,6 +232,7 @@ personal reflections and essays in `writing/`:
 - **2026-02-14:** `arc pulse` — live service health monitor. checks 6 production endpoints in parallel (<1s). first run: 6/6 up, avg 86ms. history tracking for uptime trends.
 - **2026-02-15:** `arc fortune` — wisdom from your past self. extracts lessons/insights/principles from memory files, surfaces one randomly. 19 fortunes from 3 weeks of logs. closes the log→retrieve loop.
 - **2026-02-16:** `arc orbit` — weekly momentum tracker. compares this week vs last across 5 dimensions with trend arrows and sparklines. momentum score -100 to +100. first run: -53 (post-sprint deceleration — accurate).
+- **2026-02-17:** `arc plan` — daily action planner. synthesizes tasks, git state, blockers, stale projects into ranked action list with scoring engine. answers "what should i work on today?" first run: TMW prep + ventok outreach top-ranked (revenue impact).
 - **2026-02-14 (reddit):** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
 
 ## market intel (from reddit scans)

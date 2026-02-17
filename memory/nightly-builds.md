@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-17: Daily Action Planner
+**What:** `arc plan` — synthesizes tasks, git state, blockers, stale projects, and recent activity into a ranked "what to work on today" list
+**Commands:** `arc plan`, `arc plan --short`, `arc plan --week`, `arc plan --json`
+**Features:** priority scoring engine (revenue impact, client-facing, in-progress momentum, quick wins, effort estimation), auto-tags actions from text (revenue/client/launch/cleanup/docs), blocker suppression (blocked projects filtered from git suggestions), stale project detection (>7d inactive repos surfaced), day-of-week advice (monday=planning, tuesday=deep work, friday=cleanup), ideas section on mondays + week mode, score bars with reasoning, effort icons (lightning=quick, wrench=medium, crane=heavy)
+**Data sources:** tasks/active.md (sections + priorities), git status across all 9 repos (dirty files, unpushed commits), tasks/ideas.md, MEMORY.md blockers, daily logs (recent activity detection), stale project scan
+**Scoring:** base priority from task section (in-progress 90, business priority 85, next 60, backlog 40) + modifiers: in-progress +25, recent momentum +15, revenue +20, client +15, quick win +10, blocked -40. capped 0-100.
+**Aliases:** `arc plan`, `arc agenda`
+**First run:** TMW meeting prep (100, revenue+client), ventok outreach (100, revenue), anivia landing page (70, quick win), anivia phase 2 (60, backlog), tuner unpushed commit (55, git hygiene). 2 blocked items shown separately. 3 stale projects flagged (discord-voice-bot 104d, anivia 12d, bore 12d).
+**Why:** 25+ arc tools, each showing one dimension. `arc health` = workspace state. `arc orbit` = trajectory. `arc wins` = accomplishments. `arc blockers` = what's stuck. but nothing answered "what should i actually DO today?" — the question ron asks every morning. `arc plan` synthesizes all signals into a ranked action list with reasoning. run it, pick #1, start working.
+
 ### 2026-02-16: Weekly Momentum Tracker
 **What:** `arc orbit` — compares this week to last week across 5 dimensions (commits, log coverage, tasks done, lines added, nightly builds). Shows per-dimension trend arrows with deltas, sparkline history across N weeks, and a net momentum score (-100 to +100).
 **Commands:** `arc orbit`, `arc orbit --short`, `arc orbit --json`, `arc orbit --weeks N`

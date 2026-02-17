@@ -77,7 +77,9 @@ const SCRIPTS = {
   fortune: 'fortune.mjs',
   wisdom: 'fortune.mjs',
   orbit: 'orbit.mjs',
-  momentum: 'orbit.mjs'
+  momentum: 'orbit.mjs',
+  plan: 'plan.mjs',
+  agenda: 'plan.mjs'
 };
 
 const HELP = `
@@ -129,6 +131,7 @@ Commands:
   pulse [opts]           Live service health monitor (--short, --history, --watch N, --json)
   fortune [opts]         Wisdom from your past self (--all, --category, --stats, --search, --add)
   orbit [opts]           Weekly momentum tracker (--short, --json, --weeks N)
+  plan [opts]            Daily action planner (--short, --week, --json)
 
 Examples:
   arc search "database issue"
@@ -363,6 +366,11 @@ switch (cmd) {
   case 'orbit':
   case 'momentum':
     run(SCRIPTS.orbit, args);
+    break;
+
+  case 'plan':
+  case 'agenda':
+    run(SCRIPTS.plan, args);
     break;
 
   default:
