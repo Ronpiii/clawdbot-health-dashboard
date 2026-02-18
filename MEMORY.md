@@ -96,13 +96,16 @@
 - **blocker:** UDP not available on current server
 
 ### ventok.eu website
-- **status:** coming soon placeholder (jan 31)
+- **status:** coming soon placeholder live; full rebuild in progress
 - **url:** https://www.ventok.eu
 - **webroot:** /data02/virt137413/domeenid/www.ventok.eu/htdocs/
-- **source:** projects/ventok-site/ (Next.js 16 static export)
-- **design source:** projects/ventok-web.json (Pencil.dev export, 863KB)
-- **full build:** 10 pages complete (homepage, about, book, terms, 5 service pages)
-- **next:** anna joining feb 1 to finalize design
+- **old source:** removed projects/ventok-site/ (2026-02-18)
+- **new positioning:** "build the backbone. then make it think."
+- **content:** projects/ventok/website-content-en-et.md (full bilingual EN/ET)
+- **playbook:** projects/ventok/services-playbook.md (tier-based service architecture)
+- **design workflow:** pencil.dev for exploration → claude code + master-design-prompt.md for implementation
+- **service tiers:** infrastructure → automation → AI workflows → local hosting → SaaS products
+- **key differentiator:** reliability framework (confidence scoring, human checkpoints, fallback rules)
 
 ### discord hub (ventok)
 - **status:** active
