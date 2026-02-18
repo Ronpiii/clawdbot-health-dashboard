@@ -79,7 +79,9 @@ const SCRIPTS = {
   orbit: 'orbit.mjs',
   momentum: 'orbit.mjs',
   plan: 'plan.mjs',
-  agenda: 'plan.mjs'
+  agenda: 'plan.mjs',
+  colors: 'colors.mjs',
+  palette: 'colors.mjs'
 };
 
 const HELP = `
@@ -132,6 +134,7 @@ Commands:
   fortune [opts]         Wisdom from your past self (--all, --category, --stats, --search, --add)
   orbit [opts]           Weekly momentum tracker (--short, --json, --weeks N)
   plan [opts]            Daily action planner (--short, --week, --json)
+  colors [project]       Color palette auditor (--generate, --accent, --contrast, --short)
 
 Examples:
   arc search "database issue"
@@ -371,6 +374,11 @@ switch (cmd) {
   case 'plan':
   case 'agenda':
     run(SCRIPTS.plan, args);
+    break;
+
+  case 'colors':
+  case 'palette':
+    run(SCRIPTS.colors, args);
     break;
 
   default:

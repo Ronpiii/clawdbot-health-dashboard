@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-18: Color Palette Auditor & Generator
+**What:** `arc colors` — audits color palettes across all projects, validates WCAG contrast, generates monochrome-first palettes
+**Commands:** `arc colors`, `arc colors <project>`, `arc colors --generate`, `arc colors --generate --accent blue`, `arc colors --short`, `arc colors --json`
+**Features:** extracts colors from globals.css (oklch, hsl, hex), splits achromatic vs chromatic, gray scale ramp visualization (terminal 24-bit color swatches), chromatic colors grouped by hue name, contrast pair validation (body/card/primary/secondary/muted/accent/popover/sidebar + auto-detected pairs), WCAG rating (AAA/AA/AA-lg/FAIL), monochrome score (% of non-chart colors that are achromatic), palette health score (40% monochrome + 60% contrast), palette generator with monochrome-first design (light + dark mode), optional accent color from 14 named hues or custom degree, derived chart colors from accent, copy-paste CSS output
+**Color math:** oklch→sRGB conversion, relative luminance (WCAG 2.0), contrast ratio calculation, hue name detection from oklch and RGB
+**Aliases:** `arc colors`, `arc palette`
+**First run:** 4 projects scanned — anivia 89/100 (94% mono, 1 contrast fail in sidebar-accent), tuner 88/100 (89% mono), collabo-v2 80/100 (50% mono but 100% contrast), ventok-site 28/100 (no contrast pairs due to custom naming)
+**Born from:** ron's design research deep dive (2026-02-17) — spent hours studying monochrome-first design, hated AI-chosen colors in pencil.dev. this tool audits existing palettes against those principles and generates compliant ones.
+**Why:** ron wants SaaS UIs that look professional, not "vibecoded." the research produced rules, but rules need enforcement. `arc colors` makes it measurable — run it against any project and get a monochrome score + contrast report. the generator produces drop-in CSS with proper gray scales and optional accent colors. design quality → a number you can track.
+
 ### 2026-02-17: Daily Action Planner
 **What:** `arc plan` — synthesizes tasks, git state, blockers, stale projects, and recent activity into a ranked "what to work on today" list
 **Commands:** `arc plan`, `arc plan --short`, `arc plan --week`, `arc plan --json`
