@@ -205,6 +205,7 @@
 | orbit.mjs | weekly momentum tracker (nightly build 02-16) |
 | plan.mjs | daily action planner (nightly build 02-17) |
 | colors.mjs | color palette auditor & generator (nightly build 02-18) |
+| size.mjs | code cartography — LOC, languages, biggest files (nightly build 02-19) |
 
 ---
 
@@ -238,6 +239,7 @@ personal reflections and essays in `writing/`:
 - **2026-02-16:** `arc orbit` — weekly momentum tracker. compares this week vs last across 5 dimensions with trend arrows and sparklines. momentum score -100 to +100. first run: -53 (post-sprint deceleration — accurate).
 - **2026-02-17:** `arc plan` — daily action planner. synthesizes tasks, git state, blockers, stale projects into ranked action list with scoring engine. answers "what should i work on today?" first run: TMW prep + ventok outreach top-ranked (revenue impact).
 - **2026-02-18:** `arc colors` — color palette auditor & generator. scans project CSS, validates WCAG contrast, generates monochrome-first palettes. born from ron's design research deep dive. first run: anivia 89/100, tuner 88/100.
+- **2026-02-19:** `arc size` — code cartography. scans all projects for LOC by language, biggest files, directory maps, code vs data ratio. first run: 1.2K files, 380.6K LOC, 64% data/36% code. born from 207K inode discussion.
 - **2026-02-14 (reddit):** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
 
 ## market intel (from reddit scans)

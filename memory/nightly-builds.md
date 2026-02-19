@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-19: Code Cartography — Project Size Analyzer
+**What:** `arc size` — shows where your code actually lives: LOC by language, file counts, biggest files, project comparisons, directory maps
+**Commands:** `arc size`, `arc size <project>`, `arc size --short`, `arc size --top N`, `arc size --lang`, `arc size --tree`, `arc size --json`
+**Features:** scans all projects (excluding node_modules, .git, build artifacts), language detection (30+ extensions), proportional treemap visualization by LOC, directory depth map (where code concentrates), project comparison bars with top-3 language breakdown, biggest files across all projects, code vs data ratio (code/JSON/markdown/config split), binary file tracking (size but not LOC), project aliases (mundo→tuner, cm→context-memory, etc.)
+**Aliases:** `arc size`, `arc loc`, `arc lines`
+**First run:** 10 projects, 1.2K files, 380.6K total LOC (136.6K code, 244K data/docs), 64.1MB on disk. clawd workspace itself is the biggest (279K LOC, mostly JSON indexes + scripts). anivia is 75.8K LOC — but 43% is a design-spec.json blob (32.5K lines). real anivia code: ~40.5K LOC across 280 files. biggest surprise: 64% of all LOC is data (JSON, Markdown, configs), only 36% is actual code.
+**Key finding:** the 118K-line keyword-index.json is the single largest file in the entire workspace. anivia's design-spec.json (32.5K lines) appears twice (once in projects/ mirror, once in repo). these two JSON files alone account for ~40% of clawd's total LOC.
+**Born from:** yesterday ron was surprised by 207K inodes (80% of zone quota). `arc clean` tells you what to remove. `arc size` tells you where code actually lives — the cartography before the cleanup.
+**Why:** ron manages 10 projects. before you can decide what to trim, you need to see the terrain. `arc size --short` gives a leaderboard. `arc size anivia` gives the full map. the code vs data split was the most revealing — we're more of a documentation/data workspace than a code workspace. that's not bad (it's ops + tooling), but it's worth knowing.
+
 ### 2026-02-18: Color Palette Auditor & Generator
 **What:** `arc colors` — audits color palettes across all projects, validates WCAG contrast, generates monochrome-first palettes
 **Commands:** `arc colors`, `arc colors <project>`, `arc colors --generate`, `arc colors --generate --accent blue`, `arc colors --short`, `arc colors --json`
