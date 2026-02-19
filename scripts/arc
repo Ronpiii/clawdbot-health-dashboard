@@ -81,7 +81,10 @@ const SCRIPTS = {
   plan: 'plan.mjs',
   agenda: 'plan.mjs',
   colors: 'colors.mjs',
-  palette: 'colors.mjs'
+  palette: 'colors.mjs',
+  size: 'size.mjs',
+  loc: 'size.mjs',
+  lines: 'size.mjs',
 };
 
 const HELP = `
@@ -135,6 +138,7 @@ Commands:
   orbit [opts]           Weekly momentum tracker (--short, --json, --weeks N)
   plan [opts]            Daily action planner (--short, --week, --json)
   colors [project]       Color palette auditor (--generate, --accent, --contrast, --short)
+  size [project]         Code cartography — LOC, languages, biggest files (--top N, --lang, --tree)
 
 Examples:
   arc search "database issue"
@@ -379,6 +383,12 @@ switch (cmd) {
   case 'colors':
   case 'palette':
     run(SCRIPTS.colors, args);
+    break;
+
+  case 'size':
+  case 'loc':
+  case 'lines':
+    run(SCRIPTS.size, args);
     break;
 
   default:
