@@ -18,6 +18,15 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-20: Git-Based Time Reconstruction
+**What:** `arc time` — reconstructs hours worked from git commit timestamps using session detection
+**Commands:** `arc time`, `arc time --today`, `arc time --week`, `arc time --month`, `arc time --days N`, `arc time --since YYYY-MM-DD`, `arc time --project <name>`, `arc time --sessions`, `arc time --heatmap`, `arc time --short`, `arc time --json`
+**Features:** session detection (50-min gap threshold), daily breakdown with bars, project time split, hourly heatmap, day-of-week chart, individual session viewer with commit details, deep work detection (>2h sessions), context switching detection (multi-project sessions), pattern analysis (avg session, commits/hour, work ratio), flexible date ranges
+**Aliases:** `arc time`, `arc hours`, `arc timesheet`
+**First run (30 days):** 129h across 27/31 days (87% ratio), avg 4h47m/day, peak on Jan 29 (21h — anivia sprint), peak hours 11-12 UTC (afternoon Tallinn), 77h deep work (13 sessions >2h), clawd 62%/anivia 32%, Thursday heaviest day (25h).
+**Born from:** ron has no time tracking. git history IS the timesheet — you just need the right parser. the 50-minute session gap heuristic is the same one wakatime and git-hours use. first commit in each session gets 30 min assumed prior work (reading/thinking before committing).
+**Why:** the workspace has `arc orbit` (momentum trends), `arc diff` (what changed), `arc streak` (consistency) — but none answer "how many hours did I actually work?" now there's a number. `arc time --month` before invoicing. `arc time --project anivia` for project costing. `arc time --heatmap` to see your natural work rhythm. no plugins, no timers, no browser extensions — just your commits.
+
 ### 2026-02-19: Code Cartography — Project Size Analyzer
 **What:** `arc size` — shows where your code actually lives: LOC by language, file counts, biggest files, project comparisons, directory maps
 **Commands:** `arc size`, `arc size <project>`, `arc size --short`, `arc size --top N`, `arc size --lang`, `arc size --tree`, `arc size --json`

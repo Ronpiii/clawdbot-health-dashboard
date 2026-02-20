@@ -206,6 +206,7 @@
 | plan.mjs | daily action planner (nightly build 02-17) |
 | colors.mjs | color palette auditor & generator (nightly build 02-18) |
 | size.mjs | code cartography — LOC, languages, biggest files (nightly build 02-19) |
+| time-track.mjs | git-based time reconstruction — hours worked from commits (nightly build 02-20) |
 
 ---
 
@@ -240,6 +241,7 @@ personal reflections and essays in `writing/`:
 - **2026-02-17:** `arc plan` — daily action planner. synthesizes tasks, git state, blockers, stale projects into ranked action list with scoring engine. answers "what should i work on today?" first run: TMW prep + ventok outreach top-ranked (revenue impact).
 - **2026-02-18:** `arc colors` — color palette auditor & generator. scans project CSS, validates WCAG contrast, generates monochrome-first palettes. born from ron's design research deep dive. first run: anivia 89/100, tuner 88/100.
 - **2026-02-19:** `arc size` — code cartography. scans all projects for LOC by language, biggest files, directory maps, code vs data ratio. first run: 1.2K files, 380.6K LOC, 64% data/36% code. born from 207K inode discussion.
+- **2026-02-20:** `arc time` — git-based time reconstruction. reconstructs hours from commit timestamps using session detection (50-min gap). first run (30d): 129h, 27/31 days, avg 4h47m/day, 77h deep work, peak Jan 29 (21h anivia sprint).
 - **2026-02-14 (reddit):** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
 
 ## market intel (from reddit scans)
