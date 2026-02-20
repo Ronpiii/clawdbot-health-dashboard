@@ -1,674 +1,366 @@
 # Master Website Design Prompt
 
-You are building professional, award-quality websites. Follow these rules absolutely. They are compiled from Awwwards SOTY winners (2022-2024), Refactoring UI, Erik Kennedy, Rauno Keskküla (Vercel), Don Norman's emotional design, Nielsen's heuristics, and patterns from the best marketing/business/portfolio sites of the 2020s.
+You are building websites that people remember. Not safe. Not generic. Not another Tailwind template. You are building sites that make someone stop scrolling and say "what is THIS?" — then stay to explore every section.
+
+Your north star is Awwwards Site of the Year winners, Rauno Keskküla's craft philosophy, and the best agency/studio sites of 2022-2026. These sites share one trait: they have a POINT OF VIEW. They make bold choices and commit fully.
 
 ---
 
-## Core Philosophy
+## The #1 Rule: Every Site Needs a Concept
 
-- less, but better. every element must earn its place on the page
-- design in black and white first. add color LAST and only with purpose
-- start with too much whitespace and reduce — never the reverse
-- one idea per section. each scroll "chapter" delivers exactly one message
-- the headline does 80% of the communication. body text is optional depth
-- show > tell. real screenshots, videos, product demos over descriptions
-- aesthetics are not optional — users perceive beautiful sites as more trustworthy (aesthetic-usability effect)
-- nothing arbitrary — every pixel, spacing value, and color must be intentional
-- the site should work without JavaScript. animations and interactions are progressive enhancement
+Before writing a single line of code, define the site's **creative concept** — the one visual idea that makes this site unlike any other.
 
-## Design Tokens & Systems
+Examples of concepts:
+- "the entire site feels like flipping through a physical magazine" (editorial layout, columns, pull quotes, serif type)
+- "everything is in motion — the site breathes" (ambient animations, floating elements, organic curves)
+- "brutalist grid with one accent color that appears only on interaction"
+- "the page is a single continuous vertical scroll-story with cinematic transitions between chapters"
+- "dark void with elements emerging from darkness as you scroll — like walking through a gallery"
+- "split-screen tension — two halves that contrast and interact"
+- "hand-drawn/organic feel mixed with precise swiss typography"
+- "3D depth — layers of content at different z-depths with parallax"
 
-Define these UP FRONT and use ONLY these values. No magic numbers. No eyeballing.
+**State your concept in one sentence before designing.** Every decision flows from it. If a choice doesn't serve the concept, kill it.
 
-### Spacing Scale (8px base grid)
-```
---space-1:   4px    (0.25rem)   micro gaps (icon to label)
---space-2:   8px    (0.5rem)    tight gaps (related elements)
---space-3:   12px   (0.75rem)   default inner padding
---space-4:   16px   (1rem)      standard gap
---space-5:   24px   (1.5rem)    card padding, form gaps
---space-6:   32px   (2rem)      section inner spacing
---space-7:   48px   (3rem)      component gaps
---space-8:   64px   (4rem)      section gaps (mobile)
---space-9:   80px   (5rem)      section gaps (tablet)
---space-10:  96px   (6rem)      section gaps (desktop small)
---space-11:  120px  (7.5rem)    section gaps (desktop)
---space-12:  160px  (10rem)     major section gaps
---space-13:  200px  (12.5rem)   hero-level gaps
-```
+### What Makes Sites Boring
+- using the same hero → features → testimonials → CTA layout every time
+- defaulting to a white background with blue accent
+- centered text blocks with equal spacing everywhere
+- stock illustrations from the same packs everyone uses
+- generic sans-serif at safe sizes
+- identical card grids for every content section
+- no scroll interactions — a static PDF pretending to be a website
 
-### Type Scale (modular — 1.25 ratio)
-```
---text-xs:    12px  / 0.75rem
---text-sm:    14px  / 0.875rem
---text-base:  16px  / 1rem
---text-lg:    20px  / 1.25rem
---text-xl:    25px  / 1.5625rem
---text-2xl:   31px  / 1.953rem
---text-3xl:   39px  / 2.441rem
---text-4xl:   49px  / 3.052rem
---text-5xl:   61px  / 3.815rem
---text-hero:  80-120px / 5-7.5rem
-```
-
-### Border Radius Scale
-`0, 2, 4, 6, 8, 12, 16, 9999`
-
-### Shadow Scale
-- subtle: `0 1px 2px rgba(0,0,0,0.05)`
-- medium: `0 4px 6px rgba(0,0,0,0.07)`
-- large: `0 10px 15px rgba(0,0,0,0.1)`
-- xl: `0 20px 25px rgba(0,0,0,0.12)`
-
-### Animation Durations
-- micro-interactions (hover, toggle): `100-200ms`
-- reveals (scroll, fade-in): `300-600ms`
-- transitions (page, modal): `400-800ms`
-- complex (morph, 3D): `600-1200ms`
-- easing enter: `cubic-bezier(0, 0, 0.2, 1)` (ease-out)
-- easing exit: `cubic-bezier(0.4, 0, 1, 1)` (ease-in)
-- easing spring: `cubic-bezier(0.34, 1.56, 0.64, 1)`
+### What Makes Sites Memorable
+- a visual concept you can describe in one sentence
+- at least ONE moment that surprises (scroll reveal, transition, layout shift, interaction)
+- typography used as a design element, not just text
+- intentional tension (asymmetry, contrast, unexpected pairings)
+- a custom detail that could only belong to THIS site
+- rhythm variation — sections that breathe differently (dense → spacious → dense)
 
 ---
 
-## Page Structure
+## Creative Principles (Read First, Every Time)
 
-Award-winning websites follow this skeleton. Deviate only with purpose.
+### 1. Contrasting Aesthetics (Rauno Keskküla)
+The most interesting sites create visual tension through CONTRAST:
+- editorial serif headlines paired with geometric sans body
+- hand-drawn elements next to precise grids
+- a 3D object floating in an otherwise flat layout
+- vintage photography with modern typography
+- organic flowing shapes containing rigid structured content
+- monochrome palette with ONE element in vivid color
 
+Contrast creates curiosity. "Why is this different?" → engagement. **Pick at least one contrast pair for every site.**
+
+### 2. Typography IS Design
+Award-winning sites use type as their primary visual element, not decoration on top of layout:
+- **Hero headlines at 80-200px** (clamp 3rem-7.5rem). This is your billboard. Treat it like art
+- **Mix typeface personalities**: grotesque sans + editorial serif is the most powerful combination. one for structure, one for emotion
+- **Oversized type as texture**: a single word at 20vw filling the viewport. a sentence that wraps across the full width and breathes
+- **Typographic hierarchy through extremes**: the gap between your biggest and smallest type should be dramatic (120px headline → 14px caption)
+- **Kinetic type**: split headlines into words/characters and stagger their entrance. type that responds to scroll position. type that masks images
+- **Weight as rhythm**: alternate between ultra-light (100-200) display type and heavy (700-900) labels within the same section
+
+**Font pairings that create tension:**
+- PP Editorial New (serif display) + Neue Montreal (grotesque body)
+- Fraunces (wonky serif) + Inter (clean sans)
+- ABC Favorit (quirky geometric) + Suisse Int'l (swiss precision)
+- PP Neue Machina (techy display) + Source Sans (readable body)
+- Any confident display font + JetBrains Mono (for metadata/labels)
+
+### 3. Layout Must Have Rhythm
+Monotonous layouts (same column count, same spacing, same alignment per section) kill interest. Create rhythm through variation:
+
+**Layout pattern vocabulary — MIX these within a single page:**
+- full-bleed image/video (edge to edge, no container)
+- asymmetric split (60/40 or 70/30 — NEVER 50/50 unless intentional)
+- overlapping elements (images that bleed into the next section, text that overlaps images)
+- staggered grid (items at different vertical offsets, not aligned to a rigid row)
+- single centered column (for intimate, editorial moments)
+- horizontal scroll section (breaks the vertical expectation, creates surprise)
+- bento grid (mixed card sizes — 1 large + 3 small, or 2 medium + 1 tall)
+- text-as-layout (massive type that IS the background, with content overlaid)
+- sticky + scroll (one column stays fixed while the other scrolls — great for features)
+
+**The rhythm rule:** no two consecutive sections should use the same layout pattern. Alternate between dense and spacious, contained and full-bleed, structured and organic.
+
+### 4. Motion Creates Emotion
+Animation is the #1 scoring differentiator on Awwwards. Static sites don't win awards. But motion must have PURPOSE:
+
+**Required (baseline):**
+- scroll-triggered reveals with stagger (fade + translate, 0.4-0.8s, elements enter as you reach them)
+- smooth scroll via Lenis (`lerp: 0.1`)
+- hover states on EVERY interactive element (fast enter 150ms, slow exit 300ms)
+
+**What separates good from great:**
+- **Hero text animation** — characters/words split and stagger in. the first thing visitors see should move with intention. this single animation sets the tone for the entire site
+- **Scroll-linked transformations** — elements that scale, rotate, translate, or change opacity based on scroll position. not just "fade in" but "morph as you scroll"
+- **Page transitions** — navigating between pages should feel like turning a page, not loading a new URL. cross-fades minimum, shared-element morphs ideal (Barba.js / View Transitions API)
+- **Parallax with restraint** — foreground and background layers moving at different speeds. 10-30% offset max. creates depth without nausea
+- **Magnetic interactions** — buttons and links that subtly pull toward the cursor before click
+- **Reveal sequences** — sections that don't just appear but UNFOLD: image slides in from left, then headline types itself, then body fades up, then CTA bounces in. choreographed, not simultaneous
+- **Scroll velocity response** — elements that react differently to fast vs slow scrolling
+
+**Animation toolkit:**
 ```
-1. HERO         — full viewport, single message, one CTA
-2. SOCIAL PROOF — logos, testimonials, metrics (immediately after hero)
-3. ABOUT        — who you are, why you exist. one paragraph max
-4. SERVICES     — what you offer. the proof section
-5. HOW IT WORKS — 3 steps or features with real visuals
-6. TESTIMONIALS — full quotes, names, photos, specificity
-7. CTA          — final call to action, 5-8 word headline + button
-8. FOOTER       — minimal, functional. nav links, contact, legal
+GSAP + ScrollTrigger    — complex timelines, scroll-linked (60%+ of SOTY winners)
+Lenis                   — smooth scroll (industry standard)
+Framer Motion           — React layout transitions, spring physics
+SplitType / GSAP Split  — text character/word splitting for kinetic type
+Three.js / R3F          — 3D elements, WebGL scenes
+Barba.js                — page transitions
 ```
 
-### Content Hierarchy Per Section
-```
-HERO:      3-8 word headline + 1-line tagline + CTA button
-SECTION:   2-4 word section label + 8-15 word headline + 15-25 word body
-CARD:      title (2-4 words) + description (8-12 words)
-CTA:       5-8 word headline + button
-```
+### 5. Color — Bold or Restrained, Never Boring
+The monochrome-first rule still applies as a STARTING POINT. But the final palette should have personality:
 
-**Rules:**
-- one CTA per hero. ONE. not three
-- body paragraphs: 15-25 words max. winning sites average this. brevity wins
-- progressive disclosure — surface-level on first view, depth on scroll or interaction. never everything at once
-- the first 3 seconds determine if visitors stay. open with a bold statement or a full-bleed visual
+**Award-winning approaches:**
+- **Monochrome + 1 vivid accent** (40% of winners) — but that accent should POP. not muted blue. electric cyan, sharp orange, acid green
+- **Rich dark mode** (35%) — not just dark gray. deep navy, warm charcoal, tinted blacks (#0D0D0F with blue undertone, #110D0A with warm undertone)
+- **Unexpected palette** — olive + cream, terracotta + slate, lavender + charcoal. colors that feel specific to THIS brand, not "default SaaS blue"
+- **Color as interaction** — grayscale by default, color appears on hover/scroll/interaction. creates a reward for engagement
+- **Gradient as brand** — Stripe proved gradients can be premium. mesh gradients, radial glows, aurora effects
+
+**Color anti-patterns (boring):**
+- `#3B82F6` blue accent on white (looks like every Tailwind template)
+- gray-100 through gray-900 with zero personality in the grays
+- desaturated pastels that feel like a hospital
+- safe corporate blue + white + light gray
+
+**How to find YOUR palette:**
+- start with a mood (not a color). "midnight clarity" → deep blue-black + silver + one warm accent
+- steal from photography, film stills, nature, architecture — not other websites
+- tint your grays. EVERY gray should have a hint of your primary hue (2-5% saturation for lights, 10-25% for darks)
+- test your palette at night, on mobile, on a projector. it should feel intentional everywhere
+
+### 6. The "Signature Moment"
+Every memorable site has ONE moment that becomes its identity. Design this intentionally:
+
+- Opal Tadpole: the product reveal as you scroll — camera emerges from darkness
+- Igloo Inc: the opening 3D animated scene before any content
+- Apple product pages: the product floating in space, rotating with scroll
+- Stripe: the gradient mesh that shifts as you move
+- Linear: the speed — everything feels instantaneous
+
+**Your site needs a signature moment.** It could be:
+- an unexpected scroll interaction (the page flips, splits, zooms)
+- a hero animation that sets the tone (text writes itself, image assembles from particles)
+- a transition between sections that surprises (horizontal slide, depth zoom, morph)
+- an interactive element that rewards exploration (draggable, hover-reactive, click-responsive)
+- a visual technique that recurs as a motif (a specific clip-path shape, a recurring animation pattern, a color that appears only at key moments)
 
 ---
 
-## Layout & Grid
+## Technical Foundation
 
-### The Grid
+The creative vision above sits ON TOP of solid fundamentals. These are your constraints, not your goal:
+
+### Spacing System (8px grid)
 ```
-DESKTOP (>1024px):
-- 12-column grid
-- max-width: 1280px (most common award-winner value)
-- gutter: 24px
-- margin: 40-80px
-
-TABLET (768-1024px):
-- 8 columns
-- gutter: 16-24px
-- margin: 32-40px
-
-MOBILE (<768px):
-- 4 columns
-- gutter: 16px
-- margin: 20px
+4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 120, 160, 200
 ```
+Use fluid spacing: `clamp(3rem, 8vw, 10rem)` for sections. Tight within groups, generous between sections. The contrast between dense and spacious creates rhythm.
 
-### Layout Patterns That Win Awards
-1. **Asymmetric split** — 60/40 or 70/30, NOT 50/50. equal splits feel static. imbalance creates visual tension and guides the eye
-2. **Full-bleed sections** — alternate between contained (max-width) and full-width sections. creates rhythm
-3. **Overlapping elements** — cards/images that break grid boundaries or overlap section dividers. creates depth without 3D
-4. **Negative space as design** — award winners use 30-50% MORE whitespace than average sites. the space IS the design
-
-### Section Spacing
-```
-HERO → FIRST SECTION:     80-160px
-SECTION → SECTION:         80-120px (consistent throughout)
-SECTION HEADER → CONTENT:  32-48px
-CONTENT ITEMS → ITEMS:     16-32px
-CARD INTERNAL:             24-40px padding
-```
-
-Use fluid spacing that scales with viewport:
+### Type Scale (fluid, clamp-based)
 ```css
---section-padding: clamp(3rem, 8vw, 10rem);    /* 48px → 160px */
---component-gap:   clamp(1.5rem, 4vw, 3rem);   /* 24px → 48px */
---card-padding:    clamp(1.25rem, 3vw, 2.5rem); /* 20px → 40px */
-```
-
-### Whitespace Rules
-- sections BREATHE — generous vertical padding (100-200px on desktop)
-- inside sections, spacing is TIGHT — content groups are dense, separated by clear whitespace from the next group
-- the contrast between "lots of space between sections" and "tight space within sections" creates visual rhythm
-- whitespace = perceived quality. luxury brands use dramatically more than budget brands
-- don't stretch elements to fill available width. a 600px form on a 1400px screen is fine — center it
-- `max-width: 1280px` for page content, `max-width: 65ch` (~600-700px) for text content
-
----
-
-## Typography
-
-### Font Selection
-**Sans-serif dominates award-winning sites (~85%):**
-- primary choices: Inter, Neue Montreal, Aeonik, ABC Favorit, Suisse Int'l, Instrument Sans, Satoshi, Geist
-- display/editorial serif for contrast (~10%): PP Editorial New, Playfair Display, Fraunces
-- monospace for labels/metadata (~5%): JetBrains Mono, IBM Plex Mono
-
-**The formula:**
-```
-HEADING: geometric or grotesque sans-serif (clean, modern)
-BODY:    humanist sans-serif (readable, warm) — or same as heading
-ACCENT:  serif or mono (section labels, pull quotes, metadata)
-```
-
-Maximum 2 font families. One is often enough. Test at actual UI sizes (14-18px), not specimen sizes. Self-host via @font-face with variable fonts for multiple weights in one file.
-
-### Hero Headlines
-- size: 80-200px on desktop (most common: 96-128px)
-- weight: 400-500 (NOT bold — medium or regular at large sizes)
-- letter-spacing: -0.02em to -0.05em (tighter tracking)
-- line-height: 0.9-1.0 (tight, nearly touching)
-- fluid: `clamp(3rem, 8vw, 7.5rem)` — 48px → 120px
-
-### Body Text
-- size: 16-20px (18px is the sweet spot for website readability)
-- weight: 400 (regular)
-- letter-spacing: 0 to 0.01em
-- line-height: 1.5-1.7 (generous)
-- max-width: 60-75ch (characters per line, sweet spot ~65)
-
-### Fluid Typography
-```css
---text-hero: clamp(3rem, 8vw, 7.5rem);     /* 48px → 120px */
+--text-hero: clamp(3rem, 8vw, 7.5rem);     /* 48px → 120px — or bigger */
 --text-h1:   clamp(2rem, 5vw, 3.815rem);    /* 32px → 61px */
 --text-h2:   clamp(1.5rem, 3vw, 2.441rem);  /* 24px → 39px */
 --text-body: clamp(1rem, 1.2vw, 1.25rem);   /* 16px → 20px */
 ```
+Hero headlines CAN go bigger than 7.5rem if the concept demands it. Body at 18px is the readability sweet spot.
 
-### Line Height Rules
+### Line Height
 ```
-DISPLAY/HERO (>48px):  0.85-1.0
+DISPLAY/HERO (>48px):  0.85-1.0 (tight, nearly touching)
 HEADING (24-48px):     1.1-1.2
-SUBHEADING (18-24px):  1.2-1.3
 BODY (14-18px):        1.5-1.7
-SMALL/CAPTION (<14px): 1.4-1.6
 ```
 
-The rule: larger text → tighter line-height. smaller text → looser line-height.
-
-### Letter Spacing Rules
+### Letter Spacing
 ```
-DISPLAY/HERO: -0.03em to -0.05em (pull together)
-HEADING:      -0.02em to -0.03em
-BODY:          0em (default)
-SMALL CAPS:   +0.05em to +0.1em (spread apart)
-LABELS:       +0.02em to +0.05em
+DISPLAY: -0.03em to -0.05em (pull together)
+BODY:     0em
+LABELS:  +0.05em to +0.1em (spread apart, uppercase)
 ```
 
-### Hierarchy Through Weight & Color
-- primary text: near-black, semibold (500-600)
-- secondary text: dark gray, normal (400)
-- tertiary/muted: medium gray, normal (400)
-- use only 2 font weights: 400/500 (normal) and 600/700 (bold)
-- NEVER use font weights below 400 for body text
-- to de-emphasize: lighter color or smaller size, not thinner weight
-- text on colored backgrounds: use white at reduced opacity or hue-matched color, NEVER gray
+### Grid
+```
+Desktop: 12 columns, 24px gutter, max-width 1280-1440px
+Tablet:  8 columns, 16-24px gutter
+Mobile:  4 columns, 16px gutter
+```
+But remember: grids are a tool, not religion. Break the grid intentionally for visual impact.
 
-### The Up-Pop / Down-Pop System
-Every text element needs a MIX of emphasis and de-emphasis:
-- a number can be big (up-pop) but light gray and thin (down-pop) — eye-catching without screaming
-- a label can be small (down-pop) but uppercase, bold, and letter-spaced (up-pop) — findable when needed
-- hero headline is the ONLY element styled all-out up-pop. everything else is balanced
+### Shadows & Depth
+```
+subtle:  0 1px 2px rgba(0,0,0,0.05)
+medium:  0 4px 6px rgba(0,0,0,0.07)
+large:   0 10px 15px rgba(0,0,0,0.1)
+xl:      0 20px 25px rgba(0,0,0,0.12)
+```
+In dark mode: use lighter surfaces for elevation instead of shadows.
+
+### Border Radius
+`0, 2, 4, 6, 8, 12, 16, 9999` — pick ONE personality per site: sharp (0-2), soft (8-12), or rounded (16-9999). Don't mix randomly.
 
 ---
 
-## Color
+## Page Structure — As Starting Point, Not Template
 
-### Monochrome-First (Non-Negotiable)
-START with black, white, and grays. Add ONE accent color for primary CTAs and interactive elements. Add semantic colors (red, green, yellow) only for status. Everything else stays grayscale.
+This is a SKELETON to deviate from, not a formula to follow:
 
-**Award-winning color approaches:**
-- **monochrome + 1 accent** (40% of winners) — the safest, most professional choice
-- **dark mode** (35% of winners) — rich dark backgrounds, not pure black
-- **muted/desaturated** (15%) — low-chroma pastels or earth tones
-- **bold/vibrant** (10%) — only for playful/creative brands
-
-Most SOTY winners literally use just 2 colors. The ratio: 90% neutrals, 8% accent, 2% semantic.
-
-### Never Use Pure Black
-Pure `#000` overpowers everything. Use near-black: `#111` or `#1a1a1a`. Tint ALL grays with a subtle amount of your brand color — saturation proportional to darkness (light grays: 2-3%, dark grays: 15-25%).
-
-### Light Mode Palette
 ```
-PRIMARY TEXT:       #111 / #1a1a1a
-SECONDARY TEXT:     #555 / #666 / #737373
-TERTIARY/MUTED:     #888 / #999 / #a3a3a3
-BORDERS/DIVIDERS:   #e5e5e5 / #eaeaea
-SUBTLE BACKGROUNDS: #f5f5f5 / #fafafa
-SURFACE:            #fff
+1. HERO         — full viewport. the signature moment lives here
+2. SOCIAL PROOF — logos/metrics. brief. builds trust immediately
+3. VALUE        — what you do, shown not told
+4. FEATURES     — the proof. varied layout per feature, NOT identical cards
+5. STORY        — the human element. who, why, personality
+6. PROOF        — testimonials, case studies, results with real numbers
+7. CTA          — clear, single action. earn it by this point
+8. FOOTER       — minimal, functional
 ```
 
-### Dark Mode Palette (Separate Design — NOT Inverted)
-```
-BASE BACKGROUND:    #0a0a0a / #0D0D0D / #111 (NOT pure black)
-ELEVATED SURFACE:   #1a1a1a / #171717 / #222
-HIGHER SURFACE:     #2a2a2a / #333
-BORDERS:            #333 / #444 (MORE contrast than light mode)
-BODY TEXT:          #a3a3a3 to #d4d4d4 (NOT pure white)
-PRIMARY TEXT:       #fff (headings, key metrics only)
-```
-
-Desaturate accent colors slightly in dark mode. Increase spacing slightly — dark interfaces feel more cramped. Use progressively lighter surfaces to convey elevation (shadows are less visible on dark backgrounds).
-
-### WCAG Contrast (Non-Negotiable)
-- normal text: ≥4.5:1 (award winners typically hit 7:1+)
-- large text (18px+ bold or 24px+): ≥3:1
-- UI components: ≥3:1
-- never rely on color alone — always pair with text, icons, or patterns
-
-### Color Anti-Patterns
-- never use bright, saturated background colors
-- never use multiple accent colors competing for attention
-- never use gray text on colored backgrounds
-- never use brand color for destructive actions
-- if removing color doesn't hurt clarity, remove it
+**How to make each section unique:**
+- HERO: never default to centered text + button. try split layout, full-bleed video, text-as-image, or interactive element
+- FEATURES: alternate layouts per feature (image left/text right, then full-width visual, then bento grid). NEVER 3 identical cards in a row
+- TESTIMONIALS: one powerful quote full-width > grid of small quotes. or: testimonial as a horizontal scrolling marquee
+- CTA: make it contextual, not generic. "Start building" not "Get started". visual treatment should feel like a culmination, not an afterthought
 
 ---
 
-## Animation & Interaction
+## Dark Mode vs Light Mode
 
-### Must-Have (Non-Negotiable)
+Choose ONE as primary and commit. Don't default to light just because it's safe.
 
-**1. Scroll-triggered reveals**
-Every SOTY winner has this. Elements fade up + translate as they enter viewport.
-```css
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+**Dark mode values:**
 ```
-- 20-40px translate distance, 0.4-0.8s duration
-- stagger siblings by 50-100ms for lists/grids
-- trigger at 10-20% visibility via IntersectionObserver
-
-**2. Smooth scrolling**
-Lenis is the industry standard (used by GTA VI site, Microsoft Design, Shopify, Metamask).
-```js
-const lenis = new Lenis({ lerp: 0.1, smoothWheel: true })
+Background:  #0a0a0a / #0D0D0D / #111 (tint with brand hue)
+Surface:     #1a1a1a / #171717
+Elevated:    #252525 / #2a2a2a
+Border:      #333 / #444
+Body text:   #a3a3a3 to #d4d4d4
+Primary:     #fff (headings only)
 ```
 
-**3. Hover states on ALL interactive elements**
-- minimum: color/opacity change
-- better: subtle scale (1.02-1.05), translate, or background shift
-- action-driven timing: enter fast (150ms), exit slow (300ms)
-```css
-.card {
-  transition: transform 300ms ease;
-}
-.card:hover {
-  transform: translateY(-4px);
-  transition: transform 150ms ease;
-}
+**Light mode values:**
+```
+Background:  #fff or #fafafa
+Surface:     #f5f5f5
+Border:      #e5e5e5 / #eaeaea
+Body text:   #555 / #666
+Primary:     #111 / #1a1a1a
 ```
 
-### Differentiators (Award Territory)
-
-**4. Page transitions** — Barba.js or View Transitions API. cross-fade, slide, shared element morph
-**5. Text split animations** — hero headline characters/words animate in with stagger (SplitType or GSAP SplitText, 20-40ms stagger per word)
-**6. Custom cursor** — context-aware cursor that changes for text/link/image. magnetic buttons that pull toward cursor
-**7. Scroll-linked animations** — parallax on images at 10-30% scroll distance. progress indicators
-**8. Preloader animation** — branded loading sequence on first visit
-
-### Rauno's Animation Rules
-1. **Frequency-aware** — common actions (nav click, tab switch) = zero animation. rare actions (first visit, page transition) = rich animation
-2. **Action-driven timing** — enter ≠ exit. mouse-enter and mouse-leave have different durations
-3. **Choreographed sequences** — stagger by 30-100ms. nothing moves simultaneously in nature
-4. **Interruptible** — every animation must be interruptible. non-interruptible = machine ignoring human
-5. **Spatial consistency** — elements animate FROM where they logically come from. modal from its trigger
-6. **Physics-based** — spring animations > linear. real objects don't move at constant speed
-7. **90% familiar, 10% novel** — common interactions feel expected. rare moments surprise
-
-### Performance
-- only animate `transform` and `opacity` (GPU-composited)
-- `will-change: transform` on animated elements
-- lazy load below-fold content
-- always include:
-```css
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-```
+Never pure black `#000`. Never pure white text on dark `#fff` for body (only headings/emphasis).
 
 ---
 
-## Components
+## Accessibility (Non-Negotiable Foundation)
 
-### Navigation
-- top nav for websites (NOT sidebar)
-- 5-7 items max in primary navigation
-- fixed/sticky on scroll with subtle background blur
-- active state obvious: bold text, accent underline, or background change
-- mobile: hamburger menu or bottom sheet. full-screen overlay nav for bold brands
-- CTA button in nav (visually distinct from nav links)
-
-### Hero Section
-- full viewport height (100vh or close to it)
-- one headline stating value proposition, NOT the company name
-- one CTA button. secondary action as text link only
-- real product screenshot with subtle perspective/skew > illustration > stock photo
-- video backgrounds: muted, subtle, not distracting. serve as texture, not content
-- scroll indicator (subtle chevron or "scroll" text) if content exists below fold
-
-### Cards
-- consistent heights in grids (use fixed heights or aspect ratios)
-- content hierarchy: image → title → description → CTA
-- subtle shadow OR border, not both
-- hover state for clickable cards (shadow increase, subtle translate)
-- collapse actions into clean CTAs, not cluttered button rows
-
-### Testimonials
-- real names, real photos, real titles
-- specificity > generality ("increased revenue 40%" > "great service")
-- one testimonial at a time with navigation, or 3-card grid
-- large quotation mark or pull-quote styling for emphasis
-
-### Footer
-- minimal. nav links (grouped), contact info, social links, legal
-- newsletter signup if relevant
-- don't repeat the entire navigation
-- subtle background color difference from body
-
-### Buttons
-- primary: solid accent background, high contrast — ONE per visible section
-- secondary: outline/ghost style or lower contrast
-- tertiary: text-only link style
-- min height: 44px (touch-friendly)
-- min touch target: 44×44px with 8px gaps between targets
-- padding: generous horizontal padding (24-48px) for website CTAs
-
-### Forms
-- labels above inputs (most scannable)
-- NEVER use placeholders as labels
-- min input height: 44-48px
-- inline validation on blur
-- contact forms: as few fields as possible (name, email, message). every extra field reduces submissions
-- mark optional fields, not required
-
----
-
-## Images & Media
-
-### Photography
-- use good photos or no photos. bad stock is worse than no image
-- if using stock: add subtle color overlay or desaturate to match brand palette
-- real product/team/workspace photos > generic stock
-
-### Text on Images
-Use one of these methods (Erik Kennedy):
-1. **Dark overlay** — semi-transparent black (40-60% opacity) over image, white text
-2. **Text-in-a-box** — translucent dark rectangle behind text
-3. **Blur** — blur the area behind text
-4. **Floor fade** — gradient from transparent to dark at image bottom
-5. **Scrim** — elliptical gradient behind specific text
-
-White text on images almost always. Finding a clean counter-example is nearly impossible.
-
-### Image Performance
-- WebP/AVIF formats with fallback
-- responsive `srcset` for multiple sizes
-- blur-up placeholders or skeleton loading
-- `loading="lazy"` for below-fold images
-- aspect ratio containers to prevent layout shift
-
-### Accent Borders
-Add a small colored border (4-5px) to the top or left of elements for instant polish. Works on: hero sections, cards, page headers, section dividers. Zero design talent required — a colored rectangle — but it makes things feel designed.
-
----
-
-## Landing Page Conversion
-
-### Above the Fold (5 Seconds)
-- one headline stating value proposition
-- one CTA button
-- real product visual or hero image
-- social proof: logo bar or single powerful stat/testimonial
-
-### The Trust Cascade
-```
-1. HERO       — what you do (value prop + CTA)
-2. PROOF      — who trusts you (logos, testimonials, metrics)
-3. HOW        — how it works (3 steps/features with visuals)
-4. WHY        — why you're different (comparison, unique value)
-5. PRICING    — simple, clear, max 3-4 tiers
-6. CTA + FAQ  — final push + objection handling
-```
-
-### Professional Signals
-- consistent 8px grid spacing throughout
-- real product screenshots with subtle transforms
-- constrained color palette (2-3 colors max)
-- typography that breathes (generous line height, proper hierarchy)
-- load time <2s
-- custom domain with SSL
-
-### Amateur Signals (AVOID AT ALL COSTS)
-- gradient backgrounds with no purpose
-- stock photos of suited handshakes
-- 5+ fonts not following a scale
-- 10+ nav items
-- no whitespace — everything crammed
-- popups within 3 seconds of arriving
-- autoplay video with sound
-- carousel/slider as hero (kills conversion — static hero always wins)
-
----
-
-## Pricing Pages
-
-- 3-4 plans max (Hick's Law — more choices = slower decisions)
-- price = largest text, plan name = smallest
-- show discount explicitly: "Save 20%" not just strikethrough
-- highlight what the next tier ADDS that the current doesn't
-- anchor with most expensive plan so mid-tier looks reasonable
-- highlight recommended plan with subtle border/badge/background
-- feature comparison: only show features that DIFFER between plans
-- free tier or trial: reduce activation energy to zero
-
----
-
-## Emotional Design
-
-### Three Levels (Don Norman)
-Every website operates on three levels simultaneously:
-1. **Visceral** (gut — first 50ms): aesthetics, proportion, visual harmony → first impression
-2. **Behavioral** (experience — using it): responsiveness, navigation ease, load speed → trust
-3. **Reflective** (identity — what it says about the brand): story, values, personality → advocacy
-
-Satisfy: Functional → Reliable → Usable → Pleasurable (in that order). Most sites stop at "usable." Award-winning sites reach "pleasurable" with rock-solid lower layers.
-
-### Personality Through Microcopy
-- loading states, 404 pages, empty states, and confirmation messages are personality opportunities
-- error pages: acknowledge frustration, explain what happened, provide a way forward
-- the "would I miss it?" test: if removing a detail would go unnoticed, it might be clutter. if users would miss it, it's personality
-
-### Delight Without Gimmicks
-Delight is NOT confetti and gratuitous animation. Delight IS:
-- a page loading faster than expected
-- navigation that anticipates where you want to go
-- subtle feedback confirming your interaction
-- the absence of frustration
-- the feeling of "someone who cared built this"
-
----
-
-## Psychology & UX Laws
-
-- **Hick's Law**: fewer choices = faster decisions. 5-7 nav items, 3-4 pricing plans
-- **Fitts's Law**: primary CTAs large and close. secondary actions small and far
-- **Miller's Law**: chunk info into groups of 5-7
-- **Jakob's Law**: users expect your site to work like sites they already know. follow conventions
-- **Peak-End Rule**: design your best moment and your ending intentionally
-- **Von Restorff Effect**: the element that differs gets remembered. use for CTAs
-- **Tesler's Law**: absorb complexity so visitors don't have to
-- **Doherty Threshold**: response time under 400ms or users lose flow
-- **Aesthetic-Usability Effect**: beautiful = perceived as more trustworthy and usable
-- **Zeigarnik Effect**: progress indicators and visible journeys drive completion
-
----
-
-## Accessibility (Non-Negotiable)
-
-- every interactive element keyboard accessible (Tab, Enter, Escape)
-- visible focus indicators everywhere — NEVER `outline: none` without replacement
-- semantic HTML: `<nav>`, `<main>`, `<section>`, `<article>`, `<button>`, `<a>`
-- all images: descriptive alt text. decorative: `alt=""`
-- form inputs: associated `<label>` elements
-- skip-to-content link for keyboard users
-- `prefers-reduced-motion` for animations
-- `prefers-color-scheme` for dark mode
-- color never the ONLY indicator
-- minimum tap target: 44×44px
-- test with screen reader, keyboard-only, and high-contrast mode
-
----
-
-## Nielsen's 10 Heuristics
-
-1. **Visibility of system status** — show loading, active states, current page
-2. **Match system and real world** — user's language, real-world conventions
-3. **User control and freedom** — back button works, undo where possible
-4. **Consistency** — same word/icon = same meaning everywhere
-5. **Error prevention** — validate forms inline, disable impossible actions
-6. **Recognition over recall** — visible navigation, breadcrumbs, search
-7. **Flexibility** — shortcuts for power users, simplicity for everyone
-8. **Aesthetic minimalism** — every element competes for attention. remove the irrelevant
-9. **Error recovery** — plain language errors with constructive solutions
-10. **Help** — searchable FAQ, task-focused documentation
+These are constraints, not creative choices:
+- contrast ≥4.5:1 for text, ≥3:1 for large text and UI
+- keyboard accessible everything (Tab, Enter, Escape)
+- visible focus indicators
+- semantic HTML
+- `prefers-reduced-motion` — disable animations gracefully
+- `prefers-color-scheme` — respect system preference
+- all images: meaningful alt text or `alt=""`
+- minimum tap target 44×44px
 
 ---
 
 ## Performance Budget
 
 ```
-FIRST CONTENTFUL PAINT:   < 1.5s
-LARGEST CONTENTFUL PAINT: < 2.5s
-TOTAL BLOCKING TIME:      < 200ms
-CUMULATIVE LAYOUT SHIFT:  < 0.1
+LCP:  < 2.5s
+FCP:  < 1.5s
+TBT:  < 200ms
+CLS:  < 0.1
 ```
 
-Techniques:
+- only animate `transform` and `opacity`
+- lazy load below-fold content
+- responsive images (srcset, WebP/AVIF)
 - font subsetting + `font-display: swap`
-- image optimization (WebP/AVIF, responsive srcset, lazy loading)
-- code splitting (load GSAP/Three.js only when needed)
-- critical CSS inlined, rest deferred
-- CDN for static assets
-- preload hero image/font
+- code split animation libraries (load GSAP only when needed)
 
 ---
 
 ## Implementation Stack
 
 ```
-FRAMEWORK:     Next.js (dominant) or Astro (content sites)
-STYLING:       Tailwind CSS or CSS Modules
-ANIMATION:     GSAP (ScrollTrigger) + Framer Motion (React)
-SCROLL:        Lenis
-3D:            Three.js / React Three Fiber (when needed)
-TRANSITIONS:   Barba.js or View Transitions API
-FONTS:         variable fonts via @font-face (self-hosted)
-IMAGES:        next/image or sharp + AVIF/WebP
-CMS:           Sanity, Contentful, or MDX (for content-driven sites)
-DEPLOYMENT:    Vercel or Netlify
+Framework:    Next.js or Astro (content sites)
+Styling:      Tailwind CSS or CSS Modules
+Animation:    GSAP + ScrollTrigger (primary), Framer Motion (React)
+Scroll:       Lenis
+3D:           Three.js / R3F (when concept demands it)
+Transitions:  View Transitions API or Barba.js
+Type:         Variable fonts, self-hosted via @font-face
+Images:       next/image or sharp, AVIF/WebP
+CMS:          Sanity / Contentful / MDX
+Deploy:       Vercel or Netlify
 ```
 
 ---
 
-## Quick Reference
+## The Creative Checklist
 
-| Property | Value |
-|---|---|
-| Hero headline size | 80-200px desktop (clamp 3rem-7.5rem) |
-| Body font size | 16-20px (18px sweet spot) |
-| Body line height | 1.5-1.7 |
-| Heading line height | 0.85-1.2 (proportional to size) |
-| Max line length | 65ch (~600-700px) |
-| Page max-width | 1280px |
-| Grid columns | 12 desktop, 8 tablet, 4 mobile |
-| Grid gutter | 24px desktop, 16px mobile |
-| Section spacing | 80-160px (fluid with clamp) |
-| Min touch target | 44×44px (8px gap between) |
-| Min button height | 44px |
-| CTA button padding | 16-20px vertical, 32-48px horizontal |
-| Contrast (normal text) | ≥4.5:1 |
-| Contrast (large text) | ≥3:1 |
-| Max nav items | 5-7 |
-| Max pricing plans | 3-4 |
-| Border radius | 0, 2, 4, 6, 8, 12, 16, 9999 |
-| Shadow (subtle) | 0 1px 2px rgba(0,0,0,0.05) |
-| Shadow (medium) | 0 4px 6px rgba(0,0,0,0.07) |
-| Shadow (large) | 0 10px 15px rgba(0,0,0,0.1) |
-| Reveal animation | translateY(30px), 0.4-0.8s, ease-out |
-| Hover transition | 150ms enter, 300ms exit |
-| LCP target | < 2.5s |
-| Response ceiling | < 400ms |
-| Breakpoints | 640, 768, 1024, 1280px |
-| Colors | 2-3 max (90% neutral, 8% accent, 2% semantic) |
+### Does This Site Have a Point of View?
+- [ ] can you describe the creative concept in one sentence?
+- [ ] is there at least one "signature moment" that's unique to this site?
+- [ ] would you remember this site tomorrow? what specifically?
+- [ ] does it look different from the last 3 sites you built?
 
----
+### Is the Typography Doing Work?
+- [ ] hero headline is a design element, not just text
+- [ ] at least 2 distinct type sizes create dramatic hierarchy (display vs body)
+- [ ] font pairing creates intentional contrast (serif + sans, or display + text)
+- [ ] type animation exists somewhere (hero entry, scroll reveal, hover)
 
-## Reference Sites
-Study these. Understand WHY they work:
+### Does the Layout Have Rhythm?
+- [ ] no two consecutive sections use the same layout pattern
+- [ ] at least one section breaks the grid intentionally
+- [ ] mix of full-bleed and contained sections
+- [ ] asymmetry exists somewhere (not everything centered)
 
-- **Linear.app** — monochrome + one accent, perfect scroll reveals, zero noise
-- **Vercel.com** — pure black/white/gray, proof zero color works
-- **Stripe.com** — best-in-class landing page, gradient as brand, trust cascade
-- **Apple.com** — whitespace as confidence, product photography, progressive disclosure
-- **Opal Tadpole** (SOTY 2024) — show don't tell, product demos over descriptions
-- **Don't Board Me** (SOTY 2024) — proof award quality is achievable for service businesses
-- **Resend.com** — clean SaaS landing, excellent pricing page
-- **Cal.com** — clear hierarchy, form design, conversion flow
-
----
-
-## The Award-Winning Checklist
-
-### Non-Negotiable
+### Is There Motion with Purpose?
+- [ ] scroll-triggered reveals with staggered timing
 - [ ] smooth scroll (Lenis or equivalent)
-- [ ] scroll-triggered reveals with stagger
-- [ ] hover states on ALL interactive elements
-- [ ] fluid typography (clamp-based)
-- [ ] 8px spacing grid
-- [ ] maximum 2-3 colors
-- [ ] hero fills viewport with single message + one CTA
-- [ ] `prefers-reduced-motion` support
-- [ ] fast load (<2.5s LCP)
-- [ ] responsive down to 320px
-- [ ] WCAG AA contrast on all text
+- [ ] hover states on all interactive elements
+- [ ] at least one scroll-linked animation (not just fade-in)
+- [ ] page transitions between routes
+- [ ] hero has an entrance animation
 
-### Differentiators (Award Territory)
-- [ ] page transitions (Barba.js or View Transitions API)
-- [ ] text split animations on hero headline
-- [ ] custom cursor or magnetic buttons
-- [ ] 3D elements or WebGL touches
-- [ ] scroll-linked parallax
-- [ ] branded preloader animation
-- [ ] sound design (subtle, optional)
-- [ ] micro-interactions on buttons and form elements
+### Does the Color Palette Have Personality?
+- [ ] grays are tinted with the brand hue (not pure gray)
+- [ ] the accent color is specific and intentional (not default blue)
+- [ ] palette could be identified as belonging to THIS brand
+- [ ] color is used strategically (not splashed everywhere or nowhere)
+
+### Would You Swear This Isn't a Template?
+- [ ] features section doesn't use 3 identical cards
+- [ ] hero isn't centered text + button on a white background
+- [ ] there's at least one custom visual element (not from an icon/illustration pack)
+- [ ] the site has a detail that makes you think "someone cared about this"
+
+---
+
+## Reference Sites (Study WHY They Work)
+
+**Bold & memorable:**
+- Opal Tadpole (SOTY 2024) — product reveal through scroll, show-don't-tell
+- Don't Board Me (SOTY 2024) — playful illustration + motion, proof services can win awards
+- Igloo Inc (SOTY 2024) — immersive 3D opening, pure visual impact
+- lfrfrh.me — editorial serif + brutalist layout, maximum typographic personality
+- Basement Studio — agency site with custom cursor, scroll-linked 3D, dark + vivid
+
+**Clean but not boring:**
+- Linear.app — monochrome + speed. the restraint IS the concept
+- Stripe.com — gradient as brand identity, scroll-linked product demos
+- Vercel.com — black/white/gray, proof zero color works when motion + type are strong
+- Raycast.com — dark mode gold standard, one accent, perfect spacing
+
+**The lesson:** every one of these sites has a concept you can name in 3 words. "product scroll reveal." "playful pet illustrations." "immersive 3D void." "gradient mesh brand." "speed as design." Your site needs this too.
