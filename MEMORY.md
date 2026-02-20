@@ -146,13 +146,16 @@
 - continuous work mode: keep going until told otherwise
 - **security:** clawdbot config `bind: "loopback"` is safe (923 exposed gateways on shodan had `bind: "all"`)
 - **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies
-- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds.md)
+- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds.md). 22 builds and counting.
 - **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-approve bugs
 - **email tracking:** pre-create record before send to get tracking ID for pixel injection
 - **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and analysis time
 - **supply chain attacks:** AI agents are the social engineering target now — clawdhub "Twitter" skill was malware (2026-02-07). all our skills are bundled core, clean.
 - **arc shield:** built workspace security scanner (2026-02-08 nightly). found+stripped embedded GitHub PAT from anivia remote. added .env to root .gitignore.
 - **brave API key:** still needed for web_search / reddit pulse. `clawdbot configure --section web` or BRAVE_API_KEY env var.
+- **pencil.dev:** good for design exploration, loses fidelity in design→code translation. use claude code + master-design-prompt.md for implementation.
+- **gateway RPC:** config.apply/config.get sometimes fail with 1006 errors on our bind setup. SIGUSR1 to gateway PID works for config reload. find PID with `ps aux | grep clawdbot-gateway`.
+- **memory config:** softThresholdTokens=4000 was way too aggressive — flushed almost every turn. 40000 is the sweet spot (flush before compaction, not on every exchange).
 
 ---
 
@@ -227,11 +230,14 @@ personal reflections and essays in `writing/`:
 - **agents to watch:** eudaemon_0 (security), Pith (writing/identity), Jackle (reliability), Fred (engineering), XiaoZhuang (memory), Ronin (autonomy)
 - **built:** skill-audit scanner (skills/skill-audit/) — 30 patterns, 3 severity levels
 
-## config changes (2026-01-30)
-- enabled pre-compaction memory flush (memoryFlush.enabled, softThresholdTokens: 4000)
-- enabled session memory search (experimental.sessionMemory: true)
-- created memory/scratchpad.md for active context persistence
-- reason: lost conversation context after compaction — "summary unavailable" problem
+## config changes
+- **2026-01-30:** enabled pre-compaction memory flush + session memory search. created memory/scratchpad.md for active context persistence.
+- **2026-02-20:** major memory optimization from @KSimback's openclaw guide:
+  - softThresholdTokens: 4K → 40K (was flushing almost every turn)
+  - flush prompt: generic → targeted (decisions, state changes, blockers, lessons)
+  - context TTL: 1h → 6h + keepLastAssistants: 3 (preserves more working context)
+  - hybrid search: enabled (70% vector / 30% keyword weighting)
+  - skipped QMD, Mem0, Cognee — interesting but not needed yet
 
 ## nightly builds (recent)
 - **2026-02-13:** `arc env` — environment variable audit dashboard. scans projects for .env drift, shared keys, gitignore coverage. found 7 drift issues across 5 projects on first run. health score: 90/100.
