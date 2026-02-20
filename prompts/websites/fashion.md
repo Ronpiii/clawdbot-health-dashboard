@@ -1,286 +1,285 @@
 # Website Design Prompt: Fashion
 
-You are building a website for a fashion brand, clothing label, luxury house, or lifestyle brand. Fashion sites are where design meets desire — the site should make visitors WANT. Every pixel should evoke the same feeling as touching the fabric in a flagship store.
+You are designing a fashion website. Not a website that MENTIONS fashion. A website that FEELS like fashion — the kind that makes someone pause mid-scroll because the visual impact hit them physically. Think: walking into a Comme des Garçons flagship store, or the first frame of a Jacquemus campaign video. That feeling. On a screen.
 
 ---
 
-## The Fashion Website Philosophy
+## Forget Everything About "Normal" Websites
 
-Fashion sites aren't informational — they're emotional. Nobody visits a fashion site to "learn about the product features." They visit to FEEL something: aspiration, desire, belonging, identity. The site must create a world the visitor wants to be part of.
+Fashion sites break web conventions intentionally. The rules that apply to SaaS landing pages DO NOT apply here. Specifically:
 
-**What wins:** atmosphere over information. imagery over copy. feeling over function.
+**Throw away:**
+- Centered hero with headline + subtext + button (this is a tech startup, not fashion)
+- Card grids with equal spacing (this is a catalog, not a lookbook)
+- "About Us" sections with team photos (nobody cares — show the clothes)
+- Feature comparison layouts (this isn't a product page)
+- Predictable scroll rhythm (same padding, same structure, section after section)
 
----
-
-## Creative Concept Direction
-
-### The Lookbook
-"Flip through a visual story." The site functions as a digital editorial — each collection is a story told through photography, styling, and atmosphere.
-- Full-screen imagery, magazine-style pacing
-- Minimal UI — the photos ARE the interface
-- Scroll = turning pages
-- Text overlaid on or woven into photography
-- Reference: Acne Studios, COS, Jacquemus
-
-### The Flagship Store
-"Step inside." The site replicates the feeling of walking into a beautifully designed physical space.
-- Clean, structured, luxurious spacing
-- Product presented like objects in a gallery
-- Lots of whitespace — products breathe
-- Subtle motion: images that respond to cursor, parallax depth
-- Reference: Bottega Veneta, Aesop, The Row
-
-### The Culture Brand
-"We're not selling clothes, we're selling a world." The site leads with editorial content — culture, music, art — and integrates product naturally.
-- Magazine/blog-forward homepage
-- Editorial photography mixed with product
-- Video content prominent
-- Community/culture feel over commerce
-- Reference: Stüssy, Palace, Brain Dead
-
-### The Statement
-"Maximum visual impact." Bold, confrontational, unapologetic — the site is as aggressive as the brand.
-- Giant typography, dramatic photography
-- High contrast (black/white, or vivid color blocking)
-- Unconventional layout and navigation
-- Sound/music integration
-- Reference: Rick Owens, Balenciaga (when Demna was pushing it), Vetements
+**Replace with:**
+- Images that DOMINATE the viewport — 80-100% of visible space is photography
+- Typography used as ARCHITECTURE — not labels on top of content, but structural elements that define space
+- Asymmetry as the default — nothing is centered unless it's a deliberate moment of calm
+- Negative space used AGGRESSIVELY — not just "padding" but empty space that makes you lean forward
+- Navigation that's almost invisible — the images are the navigation
 
 ---
 
-## Typography
+## Creative Concept: Pick One and Commit Fully
 
-Fashion typography is critical — it signals market position instantly:
+### "The Editorial Spread"
+Design the site like a high-fashion magazine. Each scroll position is a new "spread" — image-dominant, with type placed like a magazine layout (overlapping images, running along edges, tucked into corners).
+- Two-column asymmetric layouts that shift: image left + text right, then FULL BLEED, then text left + image right, then SPLIT SCREEN
+- Pull quotes at massive scale (60-120px) sitting on top of or beside imagery
+- Captions and metadata placed like magazine credits: small, bottom-left, almost hidden
+- The scroll IS the page turn
 
-**High fashion / luxury:**
-- Thin, elegant serifs: Didot, Bodoni, GT Sectra Display
-- Or: ultra-clean sans: Helvetica Neue, Neue Haas Grotesk, Futura
-- Weight: thin/light (100-300) at large sizes
-- Tracking: wide (+0.05em to +0.15em) for uppercase, tight for display
-- Luxury = restraint. one font, one weight, maximum composure
+### "The Cinematic Scroll"
+The site is a film. Each section is a scene. Transitions between sections feel like cuts or dissolves. Images fill the screen completely.
+- Full-viewport images, one at a time
+- Cross-fade or clip-path reveal between images as you scroll
+- Text appears and disappears over images — never in its own "section"
+- Sound design optional but powerful (ambient, muted by default)
+- Pacing is SLOW — large scroll distances between transitions, letting each image breathe
 
-**Contemporary / mid-range:**
-- Grotesque sans: Neue Montreal, Aeonik, GT America
-- Mix of weights: light for display, medium for body
-- Clean but with personality — not as austere as luxury
+### "The Anti-Grid"
+Deliberately chaotic. Images placed at unexpected positions, overlapping, at angles. Text interrupts images. Nothing aligns to a visible grid. Controlled chaos.
+- Images at 30%, 60%, 100% width mixed on the same page
+- Elements that overlap: text over image, image over image, caption crossing an image border
+- Rotated elements (2-5° — subtle tilt that creates unease)
+- Staggered vertical positioning — items don't share a baseline
+- Feels like a designer's mood board pinned to a wall
 
-**Streetwear / culture:**
-- Bold, sometimes brutalist: Druk, Impact, Compacted sans-serifs
-- Or: hand-drawn, custom lettering
-- Mixed sizing and weight for energy
-- Rule-breaking: overlap, rotation, unconventional placement
-- All-caps is more acceptable in streetwear than any other category
+### "The Void"
+Nearly black. Products/images emerge from darkness. Maximum drama, minimum everything else. The absence of design IS the design.
+- Background: pure black or near-black
+- Images float in darkness with no frame, border, or container
+- Text is sparse: collection name, maybe a single sentence, nothing more
+- Massive gaps between elements — scroll through darkness to reach the next piece
+- Feels like a gallery at night with spotlights on each piece
+
+### "The Provocation"
+The site is a statement. Aggressive typography, confrontational layout, breaks expectations. Not pretty — STRIKING.
+- Display type at 15-25vw (fills the width, wrapping across lines)
+- Images cropped dramatically: extreme close-ups, unexpected framing, cut-off compositions
+- Color used as shock: one vivid block of color in an otherwise black/white site
+- Unconventional scrolling: horizontal, diagonal, or parallax that shifts perspective
+- The site almost challenges you to keep scrolling
+
+---
+
+## Typography: Type IS the Design
+
+Fashion typography isn't about readability. It's about PRESENCE.
+
+**The Luxury Move:**
+- Didot, Bodoni, or GT Sectra Display at 80-200px
+- Ultra-thin weight (100-200) at massive size — elegance through contrast between size and weight
+- Letter-spacing: wide (+0.1em to +0.2em) for uppercase, or very tight (-0.05em) for lowercase display
+- Line-height: 0.85-0.95 (lines nearly touching)
+- The type should feel like it was placed by hand, not generated
+
+**The Contemporary Move:**
+- Neue Montreal, Aeonik, or ABC Favorit at 60-150px
+- Mixed weight: thin for headlines, bold for a single word of emphasis
+- One word in the headline significantly larger than the rest
+- Type that bleeds off the edge of the screen (intentionally cropped)
+
+**The Streetwear Move:**
+- Druk Wide, Impact, or custom condensed sans at MAX SIZE
+- All-caps, filling the viewport width
+- Type as texture: repeated, overlapping, layered
+- Distressed, glitched, or animated type treatments
 
 **Body text (all fashion):**
-- Small and quiet: 14-16px (fashion sites trend smaller than other categories)
-- Light weight
-- Wide letter-spacing for uppercase labels
-- Fashion sites can get away with lower readability in exchange for aesthetics (this is the ONE category where that trade-off is acceptable)
+- 13-15px — SMALLER than normal websites. fashion sites whisper, they don't explain
+- Light weight (300-400)
+- Maximum 2-3 sentences per text block. if you're writing paragraphs, you're doing it wrong
+- Placed close to images, like captions — not in their own text sections
+
+**The type test:** squint at the page. can you see the typography creating shapes and rhythm even when you can't read it? if yes, it's working. if it looks like uniform text blocks, start over.
 
 ---
 
-## Color
+## Color: Restraint or Violence
 
-Fashion color palettes should evoke a specific material/textural quality:
+Fashion color is never "nice." It's either achingly restrained or deliberately aggressive.
 
-**The Luxury Neutral:**
+**Black world:**
 ```
-Background:  #FAFAF7 (warm white) or #F5F1EB (cream)
-Text:        #1A1A1A
-Secondary:   #9A9590 (warm gray)
-Accent:      none — monochrome with photography providing all color
-Borders:     #E8E3DC
-```
-
-**The Fashion Black:**
-```
-Background:  #000000 (fashion is one category where pure black works)
-Text:        #FFFFFF
-Secondary:   #777777
-— dramatic, editorial, high contrast
-— lets the photography POP
+Background:   #000000 (pure black — fashion earns this)
+Text:         #FFFFFF
+Secondary:    #666666
+— nothing else. let the photography provide color
 ```
 
-**The Tinted World:**
+**Warm luxury:**
 ```
-— one color defines the entire season/collection
-— dusty rose #D4A0A0, sage #9CAF88, camel #C4A77D, ice blue #B8D4E3
-— everything tinted: backgrounds, overlays, hover states
-— creates a cohesive "world" for the collection
+Background:   #F5F0E8 (parchment)
+Text:         #1A1816 (warm black)
+Secondary:    #9A918A
+Accent:       none — or ONE unexpected color that appears once
 ```
 
-**The Bold Block:**
+**The one-color statement:**
 ```
-— vivid, saturated color as background
-— electric blue, cherry red, acid yellow
-— product photographed on colored backgrounds matching the site
-— streetwear/culture brands, not luxury
+Background:   #D42B1E (red) or #1A1AFF (electric blue) or #FF6B00 (orange)
+Text:         #FFFFFF or #000000
+— the entire site is ONE bold color
+— products photographed on matching colored backgrounds
+— requires commitment. half-measures look cheap
 ```
+
+**NEVER:**
+- Pastel palettes that look like a baby shower
+- Multiple accent colors
+- Gradients (unless it's a specific brand element)
+- Blue links that look like default HTML
 
 ---
 
-## Layout
+## Layout: The Magazine Test
 
-### The Gallery Grid
-Fashion sites need editorial image presentation:
+Every section of the site should look like it could be printed as a magazine spread and hung on a wall. If a section looks like a "webpage," redesign it.
 
-**Masonry/collage:**
-- Mixed aspect ratios and sizes
-- 2-3 column layout with items at different vertical positions
-- Creates a "mood board" feeling
-- Best for: lookbooks, editorial collections
+### Image Presentation Rules
+- **Scale is everything.** Minimum 60% of any viewport should be imagery. 80-100% is better
+- **Vary the crop dramatically.** Full body → extreme close-up of fabric → wide environmental → detail of stitching. the variety creates rhythm
+- **Never put all images at the same size.** Mix: one massive + two small, or full-bleed + contained, or overlapping at different scales
+- **Images should touch or cross boundaries.** Bleed to screen edge. Overlap other elements. Break out of their container. Fashion images don't sit politely in boxes
 
-**Full-bleed hero + grid below:**
-- One hero image (100vw, 100vh)
-- Scroll to reveal product grid beneath
-- Best for: e-commerce with editorial opening
+### Layout Patterns to Use
 
-**Alternating large/small:**
-- One full-width image → two side-by-side → one full-width → three in a row
-- Creates rhythm and pacing like a magazine spread
-- Best for: collection presentations, lookbooks
-
-**Single column scroll:**
-- One image at a time, full screen
-- Arrow or scroll to navigate
-- Maximum drama, minimum distraction
-- Best for: campaign imagery, film/video
-
-### Product Presentation
-- Product images should be LARGE — minimum 60% of viewport
-- Clean backgrounds (white, off-white, or solid color)
-- Multiple angles accessible without page navigation (hover/click to rotate)
-- Model photography alongside flat-lay/still-life
-- Hover on product: second image (worn/different angle) — NOT a quick-add modal
-
-### Whitespace
-Fashion uses MORE whitespace than any other category. Products need room to breathe. Margins should feel luxurious:
+**The Magazine Spread:**
 ```
-Section gaps:     160-240px (MORE than standard)
-Product grid gap:  16-32px (tighter in grid, contrast with section spacing)
-Image margins:    80-120px from container edge (for non-full-bleed)
-Text margins:     generous, centered, max-width 500-600px
+| large image (70%)  | text     |
+|                    | small    |
+|                    | image    |
 ```
+Then flip it. Then do full-bleed. Then do something else. NEVER repeat the same layout twice in a row.
+
+**The Lookbook Scroll:**
+```
+[full-screen image 1]
+     ↓ scroll
+[full-screen image 2]
+     ↓ scroll
+[image left 40% | image right 60% — different heights]
+     ↓ scroll
+[text overlay on full-screen image 3]
+```
+
+**The Collage:**
+Images at different sizes, vertical offsets, possibly overlapping. Like photos scattered on a table. Gaps between them are irregular.
+
+**The Split:**
+Left half and right half show different content. One side might be an image, the other text. Or both images. The split can be 50/50, 30/70, or 20/80. The two halves can scroll at different speeds (parallax split).
+
+**The Reveal:**
+Content hidden until scroll or interaction. An image that's cropped at 30% and expands to 100% as you scroll past. Text that's invisible until your cursor nears it. A product that rotates into view.
 
 ---
 
-## Animation & Interaction
+## Animation: Cinematic, Not Cute
 
-Fashion motion should feel like film, not UI:
+Fashion animation borrows from film, not UI design.
 
-**Image reveals:**
-- Clip-path animations — images reveal with a wipe/curtain effect
-- Images that load with a subtle scale-up from 1.05x to 1x
-- Crossfade between lifestyle and product shots on hover
-- Parallax layers: text + image moving at different speeds
+**Image transitions:**
+- **Clip-path reveals** — image wipes in from left/right/center, like a curtain drawing open (600-1000ms)
+- **Scale reveals** — image starts at 1.15x and settles to 1.0x as it enters viewport, creating a subtle zoom-out
+- **Cross-dissolve** — one image fades into the next (for lookbook sequences)
+- **Mask reveals** — image revealed through a shape (circle expanding, rectangle wiping)
+
+**Text animation:**
+- Characters or words slide up from below their baseline, one at a time (30-50ms stagger)
+- Or: text fades in from 0 opacity simultaneously (simpler, more luxury)
+- Or: text is always visible but a highlight/underline draws itself on scroll
 
 **Scroll behavior:**
-- Smooth, cinematic scroll (Lenis with lower lerp: 0.07-0.08 for a more luxurious feel)
-- Images that scale or transform as you scroll past
-- Fixed images that change while text scrolls over them
-- Horizontal scroll for collection galleries
+- Lenis with lerp: 0.06-0.08 (SLOWER than standard — fashion takes its time)
+- Images that parallax at different rates (foreground fast, background slow)
+- Sections that "pin" — content changes while the section stays in viewport
 
-**Transitions:**
-- Page transitions are ESSENTIAL for fashion sites
-- Cross-dissolve with slight zoom (most common in luxury)
-- Product image expanding from grid to fill the detail page
-- Color transitions: background color morphs between pages to match collection
+**Page transitions (mandatory for fashion):**
+- Cross-fade with subtle zoom (the minimum)
+- Image from grid expanding to fill the next page's hero (shared element transition)
+- Color transition: background morphs to match the destination page's palette
 
-**What NOT to animate:**
-- Don't animate product interactions — add-to-cart, size selection, etc. should be snappy and functional
-- Don't use "fun" animations (bounces, wobbles) for luxury
-- Don't slow down the shopping flow with elaborate transitions
-
-**Timing for fashion:**
-```
-Image reveals:     600-1000ms (slower = more cinematic)
-Page transitions:  700-1200ms (luxury takes its time)
-Hover on product:  200-300ms crossfade
-Scroll parallax:   continuous, 10-20% offset
-Text reveals:      400-600ms, 100ms stagger
-```
+**NEVER:**
+- Bounce/elastic easing (playful = death in fashion)
+- Fast snappy transitions (that's for dashboards)
+- Loading spinners (use skeleton screens or no loading indication at all)
+- Hover tooltips (fashion doesn't explain itself)
 
 ---
 
-## Page Structure
+## Navigation: Almost Invisible
 
-### E-commerce Fashion Site
-```
-NAV          — centered logo, minimal links
-             — collection names as primary nav (not "Shop")
-             — cart icon, search, menu
+Fashion navigation should be felt, not seen:
 
-HERO         — full-screen campaign image or video
-             — collection name overlaid, minimal
-             — NO description text. let the image speak
+**Options:**
+- **Floating minimal:** logo left, hamburger right, both in white/black depending on image behind them. that's it. no visible links until hamburger is clicked
+- **Full-screen overlay menu:** hamburger opens to full-viewport menu with large type (40-80px) for each section. background darkens or blurs. this IS the fashion standard
+- **No visible nav:** scroll is the only navigation. for lookbook/campaign sites
+- **Sidebar/vertical:** links rotated 90° along the left edge. minimal, architectural
 
-COLLECTION   — editorial opening (2-3 large images)
-             → transitions to product grid below
-
-LOOKBOOK     — editorial imagery (not product shots)
-             — scroll-through gallery of the season's world
-
-PRODUCT GRID — clean, generous spacing
-             — image → name → price (no other info)
-             — filter by category, not by "feature"
-
-EDITORIAL    — brand stories, behind-the-scenes, interviews
-             — presented like magazine articles
-
-FOOTER       — newsletter signup (prominent)
-             — minimal links, social
-```
-
-### Brand/Lookbook Site (non-commerce)
-```
-HERO         — full-screen video or image sequence
-COLLECTION   — scroll-through lookbook, one image at a time
-ABOUT        — brand story, values, heritage
-STOCKISTS    — where to buy
-CONTACT
-```
+**Never:**
+- Horizontal nav with 6+ links visible at all times
+- Dropdown menus
+- Sticky nav that takes up space and competes with imagery
+- Nav with icons
 
 ---
 
-## Photography Direction
+## Product Presentation (If E-commerce)
 
-The photography IS the design in fashion:
-- **Consistent color grading** across all images (this is non-negotiable)
-- **Lifestyle + still life** — both are needed for a complete presentation
-- **Editorial quality** — not Amazon-style product shots
-- **Contextual** — show the world the clothes live in
-- **Crop with intention** — tight crops on details, wide for silhouettes
-- If using model photography: diverse casting, natural poses, not stock-model-stiff
-
----
-
-## Reference Sites
-
-| Site | Why It Works |
-|---|---|
-| Acne Studios | perfect minimal luxury, incredible image pacing |
-| COS | clean, structured, Scandinavian restraint |
-| Jacquemus | playful luxury, Instagram-native aesthetic, bold color |
-| Bottega Veneta | ultra-luxe, extreme restraint, product as art |
-| Aesop | tactile, warm, product as ritual (not fashion but aspirational) |
-| Stüssy | culture-first, editorial + commerce blended |
-| Rick Owens | brutalist fashion, anti-luxury luxury |
-| SSENSE | editorial commerce, magazine-forward shopping |
-| The Row | extreme minimalism, almost nothing on screen |
-| Kith | streetwear + editorial, culture hub |
+- Product image: LARGE. minimum 50% of viewport, ideally larger
+- White or solid-color background, perfectly lit
+- Hover: second image (worn, different angle) — not a quick-add overlay
+- Product name below image, small (14-16px), light weight
+- Price smaller than the name, or same size but lighter color
+- NO badges, NO "sale" tags, NO "bestseller" labels cluttering the image
+- Grid: 2 columns on desktop (not 3 or 4 — give products room)
+- Or: single column for premium presentation
 
 ---
 
-## Anti-Patterns
+## Content: Say Less
 
-- Pop-up modals for newsletter within 2 seconds of arrival
-- Product images smaller than 400px
-- "Shop Now" as the hero CTA (show, don't sell)
-- Generic product description copy ("this versatile piece...")
-- Feature-focused product description (material list) instead of story
-- Cluttered product pages with cross-sells, recommendations, and badges
-- Stock model photography with watermarks or inconsistent styling
-- Filters with 20+ options on a small collection
-- Aggressive sale/discount banners ruining the aesthetic
-- Social media feeds embedded directly (breaks the visual world)
-- Background music that auto-plays (debatable — some luxury sites do this intentionally)
+Fashion sites communicate through images, not words.
+
+- **Hero:** image or video only. maybe a collection name. NO description paragraph
+- **Collection pages:** images with titles. NO feature descriptions. NO "shop now" buttons on every item
+- **About:** one paragraph maximum. or just a single sentence manifesto
+- **Product descriptions:** fabric, care instructions, sizing. factual. not marketing copy
+- **Total word count for entire homepage:** under 100 words is ideal. under 200 is acceptable. over 300 means you're talking too much
+
+---
+
+## The Fashion Awe Checklist
+
+- [ ] does the hero make you stop and stare? not read — STARE
+- [ ] is photography taking up 70%+ of the visible area at any scroll position?
+- [ ] does the typography create visual architecture (not just label content)?
+- [ ] are there at least 3 different layout patterns in the first 3 sections?
+- [ ] does any section look like it could be a magazine spread?
+- [ ] is navigation almost invisible?
+- [ ] do the transitions feel like film, not web?
+- [ ] is the total text content under 200 words?
+- [ ] would you screenshot this and send it to someone? WHICH part?
+- [ ] does it feel like a WORLD you want to enter, not a site you want to read?
+
+---
+
+## Reference Sites (Study the FEELING, Not the Structure)
+
+- **Jacquemus** — playful luxury, color as brand, images dominate everything
+- **Bottega Veneta** — extreme restraint, product as art object in void
+- **Rick Owens** — brutalist fashion, confrontational, the anti-luxury luxury
+- **Acne Studios** — perfect editorial pacing, quiet confidence
+- **SSENSE editorial** — magazine-meets-commerce, content-first fashion
+- **Kenzo** — bold graphic identity, color blocking, pattern as brand
+- **The Row** — invisible design, almost nothing on screen, maximum elegance
+- **Balenciaga (2021-2023)** — deliberately ugly/provocative, anti-fashion fashion
+- **Saint Laurent** — black/white, typography as identity, minimal to the extreme
+
+The lesson: NONE of these sites look like each other. But all of them make you FEEL something within 2 seconds. That's the bar.
