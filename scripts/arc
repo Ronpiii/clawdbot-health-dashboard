@@ -85,6 +85,9 @@ const SCRIPTS = {
   size: 'size.mjs',
   loc: 'size.mjs',
   lines: 'size.mjs',
+  time: 'time-track.mjs',
+  hours: 'time-track.mjs',
+  timesheet: 'time-track.mjs',
 };
 
 const HELP = `
@@ -139,6 +142,7 @@ Commands:
   plan [opts]            Daily action planner (--short, --week, --json)
   colors [project]       Color palette auditor (--generate, --accent, --contrast, --short)
   size [project]         Code cartography — LOC, languages, biggest files (--top N, --lang, --tree)
+  time [opts]            Git-based time tracking (--today, --week, --month, --days N, --sessions, --heatmap)
 
 Examples:
   arc search "database issue"
@@ -389,6 +393,12 @@ switch (cmd) {
   case 'loc':
   case 'lines':
     run(SCRIPTS.size, args);
+    break;
+
+  case 'time':
+  case 'hours':
+  case 'timesheet':
+    run(SCRIPTS.time, args);
     break;
 
   default:
