@@ -18,6 +18,15 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-21: Daily Log Browser
+**What:** `arc log` — browse your daily memory files like `git log` for your life
+**Commands:** `arc log`, `arc log --day YYYY-MM-DD`, `arc log --grep <pattern>`, `arc log --calendar`, `arc log --stats`, `arc log --sections`, `arc log --short`, `arc log --all`, `arc log --week`, `arc log --month`, `arc log --days N`, `arc log --since YYYY-MM-DD`, `arc log --today`, `arc log --json`
+**Features:** timeline view (default, last 7 days — sections with subsection counts and line counts), grep search with context lines (1 before/after, highlighted matches), calendar view (monthly grid with logged days marked in brackets), stats dashboard (total lines/words/sections, words/day distribution, streaks, day-of-week chart, monthly chart, recurring topic detection), section skim mode (shows subsection hierarchy), day detail view (full content with formatted headers), short mode (one-liner per day with top 3 section titles)
+**Aliases:** `arc log`, `arc journal`, `arc diary`
+**First run (28 days):** 2,398 lines, 16,680 words, 140 sections across 28 daily logs. avg 596 words/day, median 477. busiest day: Feb 3 (1,519 words — the collabo sprint). 28-day unbroken streak from Jan 24. recurring topics: nightly build (7x), notes (4x), lessons (4x), morning standup (3x). grep "anivia" returns 65 matches across 22 files with highlighted context.
+**Born from:** the workspace has `arc search` (keyword index search) and `arc diff` (git changes), but no way to BROWSE your daily logs. to find what happened on a specific day, you had to `cat memory/2026-02-14.md`. to find every mention of a topic, you had to grep manually. `arc log` makes your journal as browsable as your git history.
+**Why:** `arc time` answers "how many hours?" `arc diff` answers "what code changed?" `arc log` answers "what actually HAPPENED?" — the human story, not the git story. run `arc log --grep "decision"` to find every decision you made. run `arc log --calendar` to see your logging coverage. run `arc log --stats` to see your writing patterns. the daily logs are the most valuable files in the workspace — now they have a proper interface.
+
 ### 2026-02-20: Git-Based Time Reconstruction
 **What:** `arc time` — reconstructs hours worked from git commit timestamps using session detection
 **Commands:** `arc time`, `arc time --today`, `arc time --week`, `arc time --month`, `arc time --days N`, `arc time --since YYYY-MM-DD`, `arc time --project <name>`, `arc time --sessions`, `arc time --heatmap`, `arc time --short`, `arc time --json`
