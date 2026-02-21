@@ -88,6 +88,9 @@ const SCRIPTS = {
   time: 'time-track.mjs',
   hours: 'time-track.mjs',
   timesheet: 'time-track.mjs',
+  log: 'log-viewer.mjs',
+  journal: 'log-viewer.mjs',
+  diary: 'log-viewer.mjs',
 };
 
 const HELP = `
@@ -143,6 +146,7 @@ Commands:
   colors [project]       Color palette auditor (--generate, --accent, --contrast, --short)
   size [project]         Code cartography — LOC, languages, biggest files (--top N, --lang, --tree)
   time [opts]            Git-based time tracking (--today, --week, --month, --days N, --sessions, --heatmap)
+  log [opts]             Daily log browser (--day, --grep, --calendar, --stats, --sections, --all)
 
 Examples:
   arc search "database issue"
@@ -399,6 +403,12 @@ switch (cmd) {
   case 'hours':
   case 'timesheet':
     run(SCRIPTS.time, args);
+    break;
+
+  case 'log':
+  case 'journal':
+  case 'diary':
+    run(SCRIPTS.log, args);
     break;
 
   default:
