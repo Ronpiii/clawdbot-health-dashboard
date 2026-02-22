@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-22: Knowledge Topology
+**What:** `arc map` — extracts topics/entities from memory files, builds co-occurrence graph, surfaces connected themes, orphaned threads, topic drift, and clusters
+**Commands:** `arc map`, `arc map <topic>`, `arc map --threads`, `arc map --orphans`, `arc map --connections`, `arc map --timeline`, `arc map --clusters`, `arc map --drift`, `arc map --short`, `arc map --json`
+**Features:** overview (ranked topics by type with mention bars + connections), deep dive (timeline + connected topics + activity pattern + going-cold detection), threads (multi-day topics with density timelines), orphans (mentioned-once topics), connections (strongest co-occurrence pairs), timeline (weekly topic density grid), clusters (hub detection + core/peripheral split), drift (rising vs fading topics last 7d vs previous 7d)
+**Entity system:** 38 curated topics (7 projects, 2 people, 6 tech, 22 concepts, 1 tool), word-boundary alias matching, section-level co-occurrence tracking
+**Aliases:** `arc map`, `arc topology`, `arc graph`
+**First run (29 days):** 38 topics, 33 threads, 1,194 mentions. strongest connections: ron↔design(21), email↔leads(19), leads↔sequences(18). core cluster: email↔leads↔anivia. drift: design/pricing/ventok rising, supabase/react/security fading.
+**Born from:** the workspace has `arc search` (keyword index) and `arc log --grep` (text search) — but neither shows STRUCTURE. "where does anivia appear?" is grep. "what connects to anivia, and is it fading or rising?" is topology. `arc map` turns 29 days of raw logs into a knowledge graph you can explore. the drift view alone surfaces important signals — "supabase went from 3 days to 0 days this week" means either you're done with db work or you've drifted away from infra. the orphans view catches dropped threads. the connections view reveals hidden relationships.
+**Why:** your daily logs are the most detailed record of what you've been thinking about. `arc log` lets you BROWSE them. `arc map` lets you UNDERSTAND them. different questions entirely. browse = "what happened on Feb 14?" understand = "what are my through-lines? what's fading? what never got followed up?"
+
 ### 2026-02-21: Daily Log Browser
 **What:** `arc log` — browse your daily memory files like `git log` for your life
 **Commands:** `arc log`, `arc log --day YYYY-MM-DD`, `arc log --grep <pattern>`, `arc log --calendar`, `arc log --stats`, `arc log --sections`, `arc log --short`, `arc log --all`, `arc log --week`, `arc log --month`, `arc log --days N`, `arc log --since YYYY-MM-DD`, `arc log --today`, `arc log --json`
