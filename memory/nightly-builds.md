@@ -18,6 +18,16 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-02-23: Side-by-Side Project Comparison
+**What:** `arc compare` — side-by-side project comparison dashboard across every dimension
+**Commands:** `arc compare`, `arc compare anivia tuner`, `arc compare --by size`, `arc compare --by activity`, `arc compare --by commits`, `arc compare --by tasks`, `arc compare --by age`, `arc compare --by churn`, `arc compare --by velocity`, `arc compare --short`, `arc compare --json`
+**Features:** per-project analysis (LOC, file count, disk size, top languages, code density), git stats (7d/30d commits, velocity per week, churn +/-, dirty files, unpushed, total commits, contributors, repo age), task tracking (open/blocked/done from tasks/active.md + project-local TASKS.md), package info (deps/devDeps, version, scripts), memory mentions (last 7d of daily logs), status detection (active/recent/idle/stale), activity scoring (weighted: commits×10, mentions×5, tasks×3), comparison summary (superlatives: biggest/busiest/stalest/most tasks/heaviest deps/most churn), totals (LOC, files, disk, velocity), focus suggestion (which project needs attention based on open tasks + dirty files)
+**Sort modes:** activity (default — weighted composite), size (code LOC), commits (30d count), tasks (open + blocked), age (repo age), velocity (commits/week), churn (7d insertions + deletions)
+**Aliases:** `arc compare`, `arc vs`
+**First run (9 projects):** anivia dominates at 40.5K LOC / 271 commits / 7 open tasks. ventok is the only "recent" project (1 commit this week). discord-voice-bot flagged stale (110d idle). total workspace: 56.8K LOC, 487 files, 15.9MB. focus suggestion: anivia needs attention (7 open tasks, 1 dirty file).
+**Born from:** 22 arc tools that each show one dimension. `arc size` = LOC. `arc time` = hours. `arc git` = repo status. `arc plan` = what to do. but nothing answers "how do my projects compare AGAINST each other?" — the relative view. `arc compare anivia tuner` puts two codebases side by side and shows exactly where they differ: size, velocity, churn, tasks, deps, age. the comparison summary surfaces superlatives automatically: "anivia has the most code, ventok has the most churn, discord-voice-bot is the most stale." one command, whole portfolio view.
+**Why:** ron manages 9 projects. deciding where to focus is partly gut feel, partly "what has open tasks?" `arc compare` makes it data-driven. sort by any dimension to see the ranking change. `--by churn` shows where code is actively changing. `--by tasks` shows where work is piling up. `--by age` shows the project timeline. the focus suggestion at the bottom synthesizes it all into one recommendation.
+
 ### 2026-02-22: Knowledge Topology
 **What:** `arc map` — extracts topics/entities from memory files, builds co-occurrence graph, surfaces connected themes, orphaned threads, topic drift, and clusters
 **Commands:** `arc map`, `arc map <topic>`, `arc map --threads`, `arc map --orphans`, `arc map --connections`, `arc map --timeline`, `arc map --clusters`, `arc map --drift`, `arc map --short`, `arc map --json`
