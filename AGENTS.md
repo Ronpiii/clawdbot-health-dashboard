@@ -11,8 +11,9 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 Before doing anything else:
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `learnings/LEARNINGS.md` — rules from past mistakes
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
 
@@ -94,9 +95,15 @@ Extracts: completed items, decisions, learnings, blockers. Review output and upd
 - **Memory is limited** — if you want to remember something, WRITE IT TO A FILE
 - "Mental notes" don't survive session restarts. Files do.
 - When someone says "remember this" → update `memory/YYYY-MM-DD.md` or relevant file
-- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
+- When you learn a lesson → append one-liner to `learnings/LEARNINGS.md`
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
+
+### Write Discipline
+After every task:
+1. Log decision + outcome → `memory/YYYY-MM-DD.md`
+2. If mistake or lesson → append to `learnings/LEARNINGS.md`
+3. If significant long-term context → update `MEMORY.md` (during heartbeat reviews, not mid-task unless truly important)
 
 ## Safety
 
@@ -247,13 +254,21 @@ When you spot a bug during other work:
 After every mistake or learned lesson:
 1. Fix the immediate problem
 2. Ask: "what would prevent future-me from repeating this?"
-3. Update the relevant file (AGENTS.md, TOOLS.md, or a skill doc)
-4. If it's a pattern, add it as a rule
+3. Append a one-liner to `learnings/LEARNINGS.md`
+4. If it's a pattern, also add it to AGENTS.md as a rule
 
-Examples of things worth capturing:
-- "emails table insert was silently failing — always check RLS + constraints on inserts"
-- "ai_actions status enum doesn't include 'completed' — check constraint mismatches"
-- "don't poll for screenshots manually — spawn a sub-agent"
+LEARNINGS.md is the fastest-growing file. One-liners that compound. Read on every boot.
+
+### Handover Protocol
+Before any model switch, long session end, or when context is getting heavy:
+1. Write a HANDOVER section to `memory/YYYY-MM-DD.md`:
+   - What was discussed
+   - What was decided
+   - Pending tasks with exact details
+   - Current state of any in-progress work
+   - Next steps remaining
+2. This is how the next session picks up without starting from scratch
+3. When you wake up and see a HANDOVER in today/yesterday's log — that's your briefing, follow it
 
 ### Demand Elegance
 - Working isn't enough. Clean, simple, readable.

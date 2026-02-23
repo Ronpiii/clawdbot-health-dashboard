@@ -135,27 +135,10 @@
 ---
 
 ## learnings
-- gateway websocket (ws://127.0.0.1:18789) occasionally drops with 1006 errors
-- heartbeat context has no email/calendar access configured
-- sub-agent spawns may partially succeed despite gateway errors
-- memory_search tool needs openai/google api key — built local keyword index instead
-- vercel deployments show container metrics not host metrics
-- small composable tools > monolithic systems
-- synonym expansion significantly improves search relevance
+→ moved to `learnings/LEARNINGS.md` (loaded on every boot, one-liners from mistakes)
+- nightly builds: 22+ shipped while ron sleeps (see memory/nightly-builds.md)
 - auto-maintenance keeps workspace healthy without manual intervention
-- continuous work mode: keep going until told otherwise
-- **security:** clawdbot config `bind: "loopback"` is safe (923 exposed gateways on shodan had `bind: "all"`)
-- **supabase RLS:** use SECURITY DEFINER helper functions to avoid infinite recursion in policies
-- **nightly builds:** small helpful improvements shipped while ron sleeps (see memory/nightly-builds.md). 22 builds and counting.
-- **race conditions:** optimistic locking (`.eq('status', 'pending')` on update) prevents double-approve bugs
-- **email tracking:** pre-create record before send to get tracking ID for pixel injection
-- **reflection > logging:** activity logs don't build wisdom — need explicit lesson capture and analysis time
-- **supply chain attacks:** AI agents are the social engineering target now — clawdhub "Twitter" skill was malware (2026-02-07). all our skills are bundled core, clean.
-- **arc shield:** built workspace security scanner (2026-02-08 nightly). found+stripped embedded GitHub PAT from anivia remote. added .env to root .gitignore.
-- **brave API key:** still needed for web_search / reddit pulse. `clawdbot configure --section web` or BRAVE_API_KEY env var.
-- **pencil.dev:** good for design exploration, loses fidelity in design→code translation. use claude code + master-design-prompt.md for implementation.
-- **gateway RPC:** config.apply/config.get sometimes fail with 1006 errors on our bind setup. SIGUSR1 to gateway PID works for config reload. find PID with `ps aux | grep clawdbot-gateway`.
-- **memory config:** softThresholdTokens=4000 was way too aggressive — flushed almost every turn. 40000 is the sweet spot (flush before compaction, not on every exchange).
+- reflection > logging: activity logs don't build wisdom — need explicit lesson capture and analysis time
 
 ---
 
