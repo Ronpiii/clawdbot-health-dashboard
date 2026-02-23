@@ -410,6 +410,66 @@ Delight is NOT confetti explosions and gratuitous animations. Delight IS:
 
 ---
 
+---
+
+## Payload CMS 3 — App Content & Settings
+
+For SaaS apps that need editable marketing pages, docs, changelogs, or admin-configurable settings, embed Payload CMS 3 in the same Next.js app.
+
+### When to Use Payload in a SaaS App
+- marketing/landing pages that need content editing without deploys
+- blog/changelog/docs that non-devs should manage
+- admin-configurable settings (feature flags, pricing tiers, copy)
+- NOT for the core app data model — use your own DB tables for that
+
+### Structure
+```
+src/
+├── app/
+│   ├── (app)/           # your SaaS app (dashboard, settings, etc.)
+│   ├── (marketing)/     # payload-powered marketing pages
+│   └── (payload)/admin/ # CMS admin panel
+├── collections/
+│   ├── Pages.ts         # marketing pages with blocks
+│   ├── Posts.ts         # blog/changelog
+│   ├── Media.ts
+│   └── Users.ts         # can extend with app roles
+├── globals/
+│   ├── SiteSettings.ts  # logo, nav, footer, social links
+│   └── Pricing.ts       # editable pricing config
+└── blocks/              # marketing page sections
+```
+
+### Pricing as a Global (Client-Editable)
+```ts
+export const Pricing: GlobalConfig = {
+  slug: 'pricing',
+  fields: [
+    { name: 'headline', type: 'text' },
+    { name: 'plans', type: 'array', fields: [
+        { name: 'name', type: 'text', required: true },
+        { name: 'price', type: 'number', required: true },
+        { name: 'interval', type: 'select', options: ['month', 'year'] },
+        { name: 'description', type: 'textarea' },
+        { name: 'features', type: 'array', fields: [
+            { name: 'text', type: 'text' },
+            { name: 'included', type: 'checkbox', defaultValue: true },
+          ],
+        },
+        { name: 'highlighted', type: 'checkbox', defaultValue: false },
+        { name: 'ctaLabel', type: 'text', defaultValue: 'Get started' },
+        { name: 'stripePriceId', type: 'text', admin: { position: 'sidebar' } },
+      ],
+    },
+  ],
+}
+```
+
+### Key Principle
+Payload handles CONTENT. Your app handles LOGIC. They share the same Next.js process and database, but the boundary is clear: if a client/admin should edit it without a developer, it goes in Payload. If it's core business logic, it stays in your app code.
+
+---
+
 ## Reference Products
 Study these pixel by pixel. Understand WHY they work:
 

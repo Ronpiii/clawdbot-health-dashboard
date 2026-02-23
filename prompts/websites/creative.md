@@ -248,6 +248,38 @@ What separates a memorable portfolio from a template:
 
 ## Anti-Patterns
 
+## Payload CMS — Portfolio Content Model
+
+Build with Payload 3 embedded in Next.js. The creative can manage their own work without a developer.
+
+### Collections
+- **Works** — title, slug, category (select or tag), year, thumbnail, hero media, description, content (rich text — process shots, sketches, final), client (optional), link (optional), featured (checkbox)
+- **Media** — with image sizes: thumbnail (600w), work (1400w), fullscreen (2400w — creatives need HIGH quality)
+- **Exhibitions** — for physical shows/events (title, venue, date, description, images)
+- **Pages** — block-based (about, contact)
+
+### Blocks
+- **WorkShowcase** — variant (grid / masonry / single-scroll / horizontal-scroll)
+- **Bio** — photo, text, keep short — variant (split / centered / minimal)
+- **SelectedClients** — logo list or text list
+- **Press** — publications, features, awards (title, publisher, link, year)
+- **Contact** — email, social links, optional form
+- **FullBleedMedia** — single image or video, edge to edge
+
+### Globals
+- **Header** — name/logo, minimal nav (work / about / contact)
+- **SiteSettings** — name, profession, OG image, social links
+
+### Portfolio-Specific Rules
+- image quality is EVERYTHING — use lossless or high-quality AVIF, never over-compress
+- `Media` collection should support ordering (drag-and-drop in admin)
+- `Works` should have a `sortOrder` number field for custom portfolio ordering
+- featured checkbox lets the creative highlight pieces for the homepage
+
+---
+
+## Anti-Patterns
+
 - "Welcome to my portfolio" as a headline
 - Identical thumbnail sizes in a grid (Pinterest clone)
 - Biography longer than 100 words on the homepage

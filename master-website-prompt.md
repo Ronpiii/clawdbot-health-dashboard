@@ -292,7 +292,9 @@ CLS:  < 0.1
 ## Implementation Stack
 
 ```
-Framework:    Next.js or Astro (content sites)
+Framework:    Next.js 15 (App Router)
+CMS:          Payload CMS 3 (embedded in Next.js)
+DB:           PostgreSQL (via Payload adapter) or MongoDB
 Styling:      Tailwind CSS or CSS Modules
 Animation:    GSAP + ScrollTrigger (primary), Framer Motion (React)
 Scroll:       Lenis
@@ -300,8 +302,335 @@ Scroll:       Lenis
 Transitions:  View Transitions API or Barba.js
 Type:         Variable fonts, self-hosted via @font-face
 Images:       next/image or sharp, AVIF/WebP
-CMS:          Sanity / Contentful / MDX
-Deploy:       Vercel or Netlify
+Deploy:       Vercel or self-hosted
+```
+
+---
+
+## Payload CMS 3 — Content Architecture
+
+Payload 3 runs INSIDE your Next.js app — same repo, same deploy, same process. No separate CMS server. The admin panel lives at `/admin` and is auto-generated from your collection/global configs.
+
+### Project Structure
+```
+src/
+├── app/                          # Next.js App Router
+│   ├── (frontend)/               # your website routes (grouped)
+│   │   ├── page.tsx              # homepage — fetches from Payload
+│   │   ├── [slug]/page.tsx       # dynamic pages
+│   │   ├── blog/[slug]/page.tsx  # blog posts
+│   │   └── layout.tsx            # site layout (nav, footer)
+│   └── (payload)/                # auto-generated admin UI
+│       └── admin/
+│           └── [[...segments]]/page.tsx
+├── collections/                  # Payload collection configs
+│   ├── Pages.ts
+│   ├── Posts.ts
+│   ├── Projects.ts
+│   ├── Media.ts
+│   ├── Testimonials.ts
+│   └── Users.ts
+├── globals/                      # Payload globals (singletons)
+│   ├── Header.ts
+│   ├── Footer.ts
+│   └── SiteSettings.ts
+├── blocks/                       # reusable page section blocks
+│   ├── Hero/
+│   │   ├── config.ts             # Payload block config
+│   │   └── Component.tsx         # frontend render component
+│   ├── Features/
+│   │   ├── config.ts
+│   │   └── Component.tsx
+│   ├── Testimonials/
+│   │   ├── config.ts
+│   │   └── Component.tsx
+│   ├── CTA/
+│   │   ├── config.ts
+│   │   └── Component.tsx
+│   ├── RichContent/
+│   │   ├── config.ts
+│   │   └── Component.tsx
+│   └── MediaSection/
+│       ├── config.ts
+│       └── Component.tsx
+├── components/                   # shared UI components
+│   ├── RichText.tsx              # Lexical rich text renderer
+│   ├── Media.tsx                 # responsive image/video
+│   └── Button.tsx
+├── payload.config.ts             # main Payload config
+└── payload-types.ts              # auto-generated TypeScript types
+```
+
+### Collections (Content Types)
+
+Define collections for each content type. Payload auto-generates the admin UI, REST/GraphQL API, and TypeScript types.
+
+```ts
+// collections/Pages.ts
+import { CollectionConfig } from 'payload'
+import { Hero } from '@/blocks/Hero/config'
+import { Features } from '@/blocks/Features/config'
+import { Testimonials } from '@/blocks/Testimonials/config'
+import { CTA } from '@/blocks/CTA/config'
+import { RichContent } from '@/blocks/RichContent/config'
+import { MediaSection } from '@/blocks/MediaSection/config'
+
+export const Pages: CollectionConfig = {
+  slug: 'pages',
+  admin: {
+    useAsTitle: 'title',
+    defaultColumns: ['title', 'slug', 'updatedAt'],
+  },
+  fields: [
+    { name: 'title', type: 'text', required: true },
+    { name: 'slug', type: 'text', required: true, unique: true,
+      admin: { position: 'sidebar' } },
+    { name: 'hero', type: 'blocks', blocks: [Hero],
+      maxRows: 1 },
+    { name: 'layout', type: 'blocks',
+      blocks: [Features, Testimonials, CTA, RichContent, MediaSection] },
+    { name: 'meta', type: 'group', fields: [
+        { name: 'title', type: 'text' },
+        { name: 'description', type: 'textarea' },
+        { name: 'image', type: 'upload', relationTo: 'media' },
+      ],
+    },
+  ],
+}
+```
+
+```ts
+// collections/Posts.ts
+export const Posts: CollectionConfig = {
+  slug: 'posts',
+  admin: { useAsTitle: 'title' },
+  fields: [
+    { name: 'title', type: 'text', required: true },
+    { name: 'slug', type: 'text', required: true, unique: true },
+    { name: 'excerpt', type: 'textarea' },
+    { name: 'content', type: 'richText' },  // Lexical editor
+    { name: 'featuredImage', type: 'upload', relationTo: 'media' },
+    { name: 'publishedAt', type: 'date', admin: { position: 'sidebar' } },
+    { name: 'status', type: 'select', defaultValue: 'draft',
+      options: ['draft', 'published'], admin: { position: 'sidebar' } },
+    { name: 'author', type: 'relationship', relationTo: 'users' },
+  ],
+}
+```
+
+```ts
+// collections/Media.ts
+export const Media: CollectionConfig = {
+  slug: 'media',
+  upload: {
+    staticDir: 'public/media',
+    imageSizes: [
+      { name: 'thumbnail', width: 400, height: 300 },
+      { name: 'card', width: 768, height: 512 },
+      { name: 'hero', width: 1920, height: undefined },  // preserve aspect
+    ],
+    adminThumbnail: 'thumbnail',
+    mimeTypes: ['image/*', 'video/*'],
+  },
+  fields: [
+    { name: 'alt', type: 'text', required: true },
+    { name: 'caption', type: 'text' },
+  ],
+}
+```
+
+### Blocks (Reusable Page Sections)
+
+Blocks are the bridge between your design and the CMS. Each block = one section type the client can add/reorder on a page.
+
+```ts
+// blocks/Hero/config.ts
+import { Block } from 'payload'
+
+export const Hero: Block = {
+  slug: 'hero',
+  labels: { singular: 'Hero', plural: 'Heroes' },
+  fields: [
+    { name: 'headline', type: 'text', required: true },
+    { name: 'subheadline', type: 'textarea' },
+    { name: 'backgroundImage', type: 'upload', relationTo: 'media' },
+    { name: 'cta', type: 'group', fields: [
+        { name: 'label', type: 'text' },
+        { name: 'url', type: 'text' },
+      ],
+    },
+    { name: 'style', type: 'select', defaultValue: 'default',
+      options: [
+        { label: 'Default', value: 'default' },
+        { label: 'Split Layout', value: 'split' },
+        { label: 'Full Bleed Video', value: 'video' },
+        { label: 'Minimal Text', value: 'minimal' },
+      ],
+    },
+  ],
+}
+```
+
+```tsx
+// blocks/Hero/Component.tsx
+import { HeroBlock } from '@/payload-types'
+import { Media } from '@/components/Media'
+
+export const HeroComponent: React.FC<HeroBlock> = ({ headline, subheadline, backgroundImage, cta, style }) => {
+  // render your custom design here
+  // the style field lets client choose layout variant without breaking design
+  return (
+    <section className={styles[style]}>
+      {backgroundImage && <Media resource={backgroundImage} fill />}
+      <h1>{headline}</h1>
+      {subheadline && <p>{subheadline}</p>}
+      {cta?.label && <a href={cta.url}>{cta.label}</a>}
+    </section>
+  )
+}
+```
+
+### Globals (Singletons — Site-Wide Content)
+
+```ts
+// globals/Header.ts
+import { GlobalConfig } from 'payload'
+
+export const Header: GlobalConfig = {
+  slug: 'header',
+  fields: [
+    { name: 'logo', type: 'upload', relationTo: 'media' },
+    { name: 'nav', type: 'array', fields: [
+        { name: 'label', type: 'text', required: true },
+        { name: 'url', type: 'text', required: true },
+        { name: 'newTab', type: 'checkbox', defaultValue: false },
+      ],
+    },
+    { name: 'ctaButton', type: 'group', fields: [
+        { name: 'label', type: 'text' },
+        { name: 'url', type: 'text' },
+      ],
+    },
+  ],
+}
+```
+
+### Fetching Content in Pages
+
+```tsx
+// app/(frontend)/[slug]/page.tsx
+import { getPayload } from 'payload'
+import config from '@payload-config'
+import { RenderBlocks } from '@/blocks/RenderBlocks'
+
+export default async function Page({ params }: { params: { slug: string } }) {
+  const payload = await getPayload({ config })
+
+  const page = await payload.find({
+    collection: 'pages',
+    where: { slug: { equals: params.slug } },
+    limit: 1,
+  }).then(res => res.docs[0])
+
+  if (!page) return notFound()
+
+  return (
+    <>
+      {page.hero && <RenderBlocks blocks={page.hero} />}
+      {page.layout && <RenderBlocks blocks={page.layout} />}
+    </>
+  )
+}
+```
+
+```tsx
+// blocks/RenderBlocks.tsx — maps block slugs to components
+import { HeroComponent } from './Hero/Component'
+import { FeaturesComponent } from './Features/Component'
+import { TestimonialsComponent } from './Testimonials/Component'
+import { CTAComponent } from './CTA/Component'
+
+const blockComponents = {
+  hero: HeroComponent,
+  features: FeaturesComponent,
+  testimonials: TestimonialsComponent,
+  cta: CTAComponent,
+}
+
+export const RenderBlocks: React.FC<{ blocks: any[] }> = ({ blocks }) => (
+  <>
+    {blocks.map((block, i) => {
+      const Component = blockComponents[block.blockType]
+      return Component ? <Component key={i} {...block} /> : null
+    })}
+  </>
+)
+```
+
+### Payload Config
+
+```ts
+// payload.config.ts
+import { buildConfig } from 'payload'
+import { postgresAdapter } from '@payloadcms/db-postgres'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
+import { Pages } from './collections/Pages'
+import { Posts } from './collections/Posts'
+import { Media } from './collections/Media'
+import { Users } from './collections/Users'
+import { Header } from './globals/Header'
+import { Footer } from './globals/Footer'
+
+export default buildConfig({
+  editor: lexicalEditor(),
+  db: postgresAdapter({ pool: { connectionString: process.env.DATABASE_URL } }),
+  collections: [Pages, Posts, Media, Users],
+  globals: [Header, Footer],
+  plugins: [
+    vercelBlobStorage({ collections: { media: true } }),  // or s3, cloudinary
+  ],
+  typescript: { outputFile: 'src/payload-types.ts' },
+  admin: { user: Users.slug },
+})
+```
+
+### Design + CMS Rules
+
+**What the client CAN edit (via admin panel):**
+- text content (headlines, body, CTAs)
+- images and media
+- reorder/add/remove page sections (blocks)
+- choose section layout variants (from your predefined options)
+- navigation links
+- SEO metadata
+- blog posts
+
+**What the client CANNOT break:**
+- design system (spacing, typography, colors)
+- animation and interactions
+- responsive behavior
+- layout within a block (they pick a variant, you control how it renders)
+- component styling
+
+**Block design rules:**
+- every block gets a `style` or `variant` select field — lets clients choose between 2-4 layout options you've designed (never freeform)
+- keep block fields simple — text, textarea, upload, select, checkbox. avoid deeply nested groups
+- use `admin.description` on fields to guide the client ("Recommended: 6-10 words", "Square image works best")
+- set sensible `defaultValue` on every field — the page should look good with zero edits
+- max 8-12 block types per site. more = decision fatigue for the client
+- name blocks by what they DO, not what they look like: "Social Proof" not "Logo Grid"
+
+### Live Preview (Optional)
+Payload 3 supports live preview — client sees changes in real-time before publishing:
+```ts
+// in payload.config.ts
+admin: {
+  livePreview: {
+    url: ({ data }) => `${process.env.NEXT_PUBLIC_SITE_URL}/${data.slug}`,
+    collections: ['pages', 'posts'],
+  },
+}
 ```
 
 ---

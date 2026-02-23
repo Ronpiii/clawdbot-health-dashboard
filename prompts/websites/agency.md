@@ -200,6 +200,34 @@ FOOTER       — minimal: email, social links, legal
 
 ---
 
+## Payload CMS — Agency Content Model
+
+Build with Payload 3 embedded in Next.js. The agency can update content without touching code.
+
+### Collections
+- **Projects** — title, slug, client, year, services (tag array), hero image/video, challenge, approach, results, gallery (media array), testimonial, next project link
+- **Services** — title, slug, description, icon, related projects (relationship)
+- **Team** — name, role, photo, bio, links
+- **Posts** — blog/insights (title, slug, content, author, category)
+- **Media** — with image sizes: thumbnail (400w), card (768w), hero (1920w)
+
+### Blocks (for Pages collection)
+- **ProjectShowcase** — featured projects grid/list with variant select (grid / staggered / featured-single)
+- **ServiceOverview** — services with layout variant (cards / accordion / split)
+- **TeamGrid** — team display with variant (grid / staggered / carousel)
+- **ClientLogos** — logo bar with optional animation (static / marquee / fade-in)
+- **Metrics** — key numbers with animated counters (stat, label, prefix/suffix)
+- **ProcessSteps** — how-you-work section (step number, title, description)
+- **Testimonials** — variant (single-featured / carousel / marquee)
+- **CTA** — headline, body, button, background style
+
+### Globals
+- **Header** — logo, nav links, CTA button
+- **Footer** — columns of links, social, newsletter signup, copyright
+- **SiteSettings** — brand name, description, OG image, social links
+
+---
+
 ## Anti-Patterns (What Makes Agency Sites Boring)
 
 - "We're a full-service digital agency" as a hero headline

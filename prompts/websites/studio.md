@@ -230,6 +230,32 @@ Studios can experiment with navigation more than agencies:
 
 ---
 
+## Payload CMS — Studio Content Model
+
+Build with Payload 3 embedded in Next.js. Studio owners can manage their portfolio and content.
+
+### Collections
+- **Projects** — title, slug, category (select: design/development/branding/etc), year, description, hero media, content (rich text + images), collaborators, link
+- **Media** — with image sizes: thumbnail (400w), project (1200w), fullscreen (1920w)
+- **Posts** — journal/thoughts (studios often have editorial voice)
+- **Pages** — block-based (about, contact, etc.)
+
+### Blocks
+- **ProjectGallery** — variant (masonry / sequential / cinema — full-bleed images one at a time)
+- **EditorialText** — rich text with pull quotes, custom typography options
+- **StudioInfo** — bios, location, philosophy (variant: side-by-side / stacked)
+- **ContactForm** — fields config, optional map embed
+- **Marquee** — scrolling text/logos with speed + direction
+- **Testimonials** — single featured or stacked
+- **CTA** — minimal, personality-driven
+
+### Globals
+- **Header** — logo (image or text), nav (keep minimal — 3-5 links)
+- **Footer** — contact info, social, one-liner
+- **SiteSettings** — studio name, tagline, OG defaults
+
+---
+
 ## Anti-Patterns
 
 - Looking like an agency (too corporate, too systematic)
