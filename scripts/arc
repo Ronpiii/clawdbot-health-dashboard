@@ -94,6 +94,8 @@ const SCRIPTS = {
   map: 'topic-map.mjs',
   topology: 'topic-map.mjs',
   graph: 'topic-map.mjs',
+  compare: 'compare.mjs',
+  vs: 'compare.mjs',
 };
 
 const HELP = `
@@ -151,6 +153,7 @@ Commands:
   time [opts]            Git-based time tracking (--today, --week, --month, --days N, --sessions, --heatmap)
   log [opts]             Daily log browser (--day, --grep, --calendar, --stats, --sections, --all)
   map [topic]            Knowledge topology (--threads, --orphans, --connections, --drift, --clusters, --timeline)
+  compare [p1 p2..]     Side-by-side project comparison (--by size|activity|tasks|age|commits|churn, --short)
 
 Examples:
   arc search "database issue"
@@ -419,6 +422,11 @@ switch (cmd) {
   case 'topology':
   case 'graph':
     run(SCRIPTS.map, args);
+    break;
+
+  case 'compare':
+  case 'vs':
+    run(SCRIPTS.compare, args);
     break;
 
   default:
