@@ -193,6 +193,7 @@
 | colors.mjs | color palette auditor & generator (nightly build 02-18) |
 | size.mjs | code cartography — LOC, languages, biggest files (nightly build 02-19) |
 | time-track.mjs | git-based time reconstruction — hours worked from commits (nightly build 02-20) |
+| hotspots.mjs | file change hotspot analyzer — coupling, cold code, complexity risk (nightly build 02-24) |
 
 ---
 
