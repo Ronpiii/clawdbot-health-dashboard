@@ -96,6 +96,9 @@ const SCRIPTS = {
   graph: 'topic-map.mjs',
   compare: 'compare.mjs',
   vs: 'compare.mjs',
+  hotspots: 'hotspots.mjs',
+  hot: 'hotspots.mjs',
+  churn: 'hotspots.mjs',
 };
 
 const HELP = `
@@ -154,6 +157,7 @@ Commands:
   log [opts]             Daily log browser (--day, --grep, --calendar, --stats, --sections, --all)
   map [topic]            Knowledge topology (--threads, --orphans, --connections, --drift, --clusters, --timeline)
   compare [p1 p2..]     Side-by-side project comparison (--by size|activity|tasks|age|commits|churn, --short)
+  hotspots [project]     File change hotspots (--cold, --coupling, --authors, --category, --top N, --days N)
 
 Examples:
   arc search "database issue"
@@ -427,6 +431,12 @@ switch (cmd) {
   case 'compare':
   case 'vs':
     run(SCRIPTS.compare, args);
+    break;
+
+  case 'hotspots':
+  case 'hot':
+  case 'churn':
+    run(SCRIPTS.hotspots, args);
     break;
 
   default:
