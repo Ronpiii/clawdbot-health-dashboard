@@ -8,7 +8,6 @@
 ## Blocked
 
 - [ ] context memory deploy — needs domain, railway, stripe from ron
-- [ ] discord voice bot — needs UDP-capable server
 
 ## Next (when ron picks direction)
 
