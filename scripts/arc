@@ -97,6 +97,7 @@ const SCRIPTS = {
   compare: 'compare.mjs',
   vs: 'compare.mjs',
   hotspots: 'hotspots.mjs',
+  debt: 'debt.mjs',
   hot: 'hotspots.mjs',
   churn: 'hotspots.mjs',
 };
@@ -158,6 +159,7 @@ Commands:
   map [topic]            Knowledge topology (--threads, --orphans, --connections, --drift, --clusters, --timeline)
   compare [p1 p2..]     Side-by-side project comparison (--by size|activity|tasks|age|commits|churn, --short)
   hotspots [project]     File change hotspots (--cold, --coupling, --authors, --category, --top N, --days N)
+  debt [project]         Technical debt scanner (--type todos|large|console|any|lint|nesting|imports, --severity, --trend)
 
 Examples:
   arc search "database issue"
@@ -437,6 +439,10 @@ switch (cmd) {
   case 'hot':
   case 'churn':
     run(SCRIPTS.hotspots, args);
+    break;
+
+  case 'debt':
+    run(SCRIPTS.debt, args);
     break;
 
   default:

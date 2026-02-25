@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-02-25",
+    "total": 411,
+    "byType": {
+      "deep_nesting": 222,
+      "large_file": 57,
+      "any_type": 32,
+      "god_file": 8,
+      "hack": 2,
+      "lint_disable": 7,
+      "console": 71,
+      "todo": 12
+    },
+    "bySeverity": {
+      "high": 114,
+      "medium": 214,
+      "low": 83
+    },
+    "score": 36
+  }
+]
