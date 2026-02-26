@@ -13,3 +13,4 @@ experiments/ucan-agent/.keys/
 .env.*.local
 discord-voice-bot/.env
 projects/context-memory/api/.env
+projects/ventok-website/
