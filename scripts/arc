@@ -100,6 +100,9 @@ const SCRIPTS = {
   debt: 'debt.mjs',
   hot: 'hotspots.mjs',
   churn: 'hotspots.mjs',
+  review: 'review.mjs',
+  cr: 'review.mjs',
+  codereview: 'review.mjs',
 };
 
 const HELP = `
@@ -160,6 +163,7 @@ Commands:
   compare [p1 p2..]     Side-by-side project comparison (--by size|activity|tasks|age|commits|churn, --short)
   hotspots [project]     File change hotspots (--cold, --coupling, --authors, --category, --top N, --days N)
   debt [project]         Technical debt scanner (--type todos|large|console|any|lint|nesting|imports, --severity, --trend)
+  review [opts]          Diff-aware code review (--commits N, --since, --project, --strict, --short)
 
 Examples:
   arc search "database issue"
