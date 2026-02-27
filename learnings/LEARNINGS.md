@@ -41,6 +41,7 @@ One-liners. Each earned the hard way. Read on boot, append when you screw up.
 - pencil.dev: good for exploration, loses fidelity in design→code. use claude code for implementation.
 
 ## security
+- never log actual tokens/credentials in daily log files — github push protection catches them and blocks the entire push. use "[stored in ~/.git-credentials]" style redactions
 - supply chain attacks target AI agents now — clawdhub "Twitter" skill was malware (2026-02-07)
 - all our skills are bundled core, clean. audit anything external before installing.
 - found+stripped embedded GitHub PAT from anivia remote. always check for leaked secrets.
