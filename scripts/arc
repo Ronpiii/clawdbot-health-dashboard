@@ -103,6 +103,9 @@ const SCRIPTS = {
   review: 'review.mjs',
   cr: 'review.mjs',
   codereview: 'review.mjs',
+  mirror: 'mirror.mjs',
+  refs: 'mirror.mjs',
+  integrity: 'mirror.mjs',
 };
 
 const HELP = `
@@ -164,6 +167,7 @@ Commands:
   hotspots [project]     File change hotspots (--cold, --coupling, --authors, --category, --top N, --days N)
   debt [project]         Technical debt scanner (--type todos|large|console|any|lint|nesting|imports, --severity, --trend)
   review [opts]          Diff-aware code review (--commits N, --since, --project, --strict, --short)
+  mirror [opts]          Cross-reference integrity checker (--urls, --short, --json)
 
 Examples:
   arc search "database issue"
