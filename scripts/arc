@@ -106,6 +106,9 @@ const SCRIPTS = {
   mirror: 'mirror.mjs',
   refs: 'mirror.mjs',
   integrity: 'mirror.mjs',
+  contacts: 'contacts.mjs',
+  people: 'contacts.mjs',
+  relationships: 'contacts.mjs',
 };
 
 const HELP = `
@@ -168,6 +171,7 @@ Commands:
   debt [project]         Technical debt scanner (--type todos|large|console|any|lint|nesting|imports, --severity, --trend)
   review [opts]          Diff-aware code review (--commits N, --since, --project, --strict, --short)
   mirror [opts]          Cross-reference integrity checker (--urls, --short, --json)
+  contacts [name]        Relationship intelligence (--cold, --companies, --people, --timeline, --graph, --new)
 
 Examples:
   arc search "database issue"
@@ -289,7 +293,6 @@ switch (cmd) {
     break;
     
   case 'reflect':
-  case 'review':
     run(SCRIPTS.reflect, args);
     break;
     
@@ -451,6 +454,24 @@ switch (cmd) {
 
   case 'debt':
     run(SCRIPTS.debt, args);
+    break;
+
+  case 'review':
+  case 'cr':
+  case 'codereview':
+    run(SCRIPTS.review, args);
+    break;
+
+  case 'mirror':
+  case 'refs':
+  case 'integrity':
+    run(SCRIPTS.mirror, args);
+    break;
+
+  case 'contacts':
+  case 'people':
+  case 'relationships':
+    run(SCRIPTS.contacts, args);
     break;
 
   default:
