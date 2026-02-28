@@ -22,11 +22,14 @@ const shouldPost = args.includes('--post');
 // Get weather (using wttr.in for Tallinn)
 async function getWeather() {
   try {
-    const res = await fetch('https://wttr.in/Tallinn?format=%c+%t+%w&m');
+    const res = await fetch('https://wttr.in/Tallinn?format=%c+%t+%w&m', {
+      signal: AbortSignal.timeout(5000),
+    });
     if (!res.ok) return null;
     const text = await res.text();
     return text.trim();
-  } catch {
+  } catch (e) {
+    console.error('weather fetch failed:', e.message);
     return null;
   }
 }
