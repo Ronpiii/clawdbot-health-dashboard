@@ -18,5 +18,125 @@
       "low": 83
     },
     "score": 36
+  },
+  {
+    "date": "2026-03-01",
+    "total": 525,
+    "byType": {
+      "deep_nesting": 297,
+      "god_file": 11,
+      "large_file": 64,
+      "any_type": 45,
+      "hack": 2,
+      "lint_disable": 20,
+      "console": 72,
+      "todo": 14
+    },
+    "bySeverity": {
+      "high": 152,
+      "medium": 287,
+      "low": 86
+    },
+    "score": 40
+  },
+  {
+    "date": "2026-03-01",
+    "total": 525,
+    "byType": {
+      "deep_nesting": 297,
+      "god_file": 11,
+      "large_file": 64,
+      "any_type": 45,
+      "hack": 2,
+      "lint_disable": 20,
+      "console": 72,
+      "todo": 14
+    },
+    "bySeverity": {
+      "high": 152,
+      "medium": 287,
+      "low": 86
+    },
+    "score": 40
+  },
+  {
+    "date": "2026-03-01",
+    "total": 527,
+    "byType": {
+      "deep_nesting": 298,
+      "god_file": 11,
+      "large_file": 65,
+      "any_type": 45,
+      "hack": 2,
+      "lint_disable": 20,
+      "console": 72,
+      "todo": 14
+    },
+    "bySeverity": {
+      "high": 152,
+      "medium": 289,
+      "low": 86
+    },
+    "score": 40
+  },
+  {
+    "date": "2026-03-01",
+    "total": 527,
+    "byType": {
+      "deep_nesting": 298,
+      "god_file": 11,
+      "large_file": 65,
+      "any_type": 45,
+      "hack": 2,
+      "lint_disable": 20,
+      "console": 72,
+      "todo": 14
+    },
+    "bySeverity": {
+      "high": 152,
+      "medium": 289,
+      "low": 86
+    },
+    "score": 40
+  },
+  {
+    "date": "2026-03-01",
+    "total": 527,
+    "byType": {
+      "deep_nesting": 298,
+      "god_file": 11,
+      "large_file": 65,
+      "any_type": 45,
+      "hack": 2,
+      "lint_disable": 20,
+      "console": 72,
+      "todo": 14
+    },
+    "bySeverity": {
+      "high": 152,
+      "medium": 289,
+      "low": 86
+    },
+    "score": 40
+  },
+  {
+    "date": "2026-03-01",
+    "total": 527,
+    "byType": {
+      "deep_nesting": 298,
+      "god_file": 11,
+      "large_file": 65,
+      "any_type": 45,
+      "hack": 2,
+      "lint_disable": 20,
+      "console": 72,
+      "todo": 14
+    },
+    "bySeverity": {
+      "high": 152,
+      "medium": 289,
+      "low": 86
+    },
+    "score": 40
   }
 ]
