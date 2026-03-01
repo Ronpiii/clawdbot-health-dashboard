@@ -109,6 +109,9 @@ const SCRIPTS = {
   contacts: 'contacts.mjs',
   people: 'contacts.mjs',
   relationships: 'contacts.mjs',
+  bench: 'bench.mjs',
+  benchmark: 'bench.mjs',
+  score: 'bench.mjs',
 };
 
 const HELP = `
@@ -172,6 +175,7 @@ Commands:
   review [opts]          Diff-aware code review (--commits N, --since, --project, --strict, --short)
   mirror [opts]          Cross-reference integrity checker (--urls, --short, --json)
   contacts [name]        Relationship intelligence (--cold, --companies, --people, --timeline, --graph, --new)
+  bench [opts]           Workspace benchmark — composite score from all quality checks (--short, --trend, --fast, --json)
 
 Examples:
   arc search "database issue"
@@ -472,6 +476,12 @@ switch (cmd) {
   case 'people':
   case 'relationships':
     run(SCRIPTS.contacts, args);
+    break;
+
+  case 'bench':
+  case 'benchmark':
+  case 'score':
+    run(SCRIPTS.bench, args);
     break;
 
   default:

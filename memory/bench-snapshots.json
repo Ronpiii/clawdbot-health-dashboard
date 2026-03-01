@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2026-03-01T00:03:21.106Z",
+    "composite": 57,
+    "grade": "C",
+    "dimensions": {
+      "health": 26,
+      "security": 86,
+      "integrity": 27,
+      "debt": 40,
+      "services": 100,
+      "env": 63,
+      "momentum": 56,
+      "hygiene": 85
+    },
+    "elapsed": 1.9
+  },
+  {
+    "timestamp": "2026-03-01T00:03:27.515Z",
+    "composite": 57,
+    "grade": "C",
+    "dimensions": {
+      "health": 26,
+      "security": 86,
+      "integrity": 27,
+      "debt": 40,
+      "services": 100,
+      "env": 63,
+      "momentum": 56,
+      "hygiene": 85
+    },
+    "elapsed": 1.9
+  },
+  {
+    "timestamp": "2026-03-01T00:03:36.566Z",
+    "composite": 55,
+    "grade": "C",
+    "dimensions": {
+      "health": 26,
+      "security": 86,
+      "integrity": 27,
+      "env": 63,
+      "momentum": 56,
+      "hygiene": 85
+    },
+    "elapsed": 1.8
+  },
+  {
+    "timestamp": "2026-03-01T00:03:42.853Z",
+    "composite": 57,
+    "grade": "C",
+    "dimensions": {
+      "health": 26,
+      "security": 86,
+      "integrity": 27,
+      "debt": 40,
+      "services": 100,
+      "env": 63,
+      "momentum": 56,
+      "hygiene": 85
+    },
+    "elapsed": 1.9
+  },
+  {
+    "timestamp": "2026-03-01T00:03:48.867Z",
+    "composite": 57,
+    "grade": "C",
+    "dimensions": {
+      "health": 26,
+      "security": 86,
+      "integrity": 27,
+      "debt": 40,
+      "services": 100,
+      "env": 63,
+      "momentum": 56,
+      "hygiene": 85
+    },
+    "elapsed": 1.9
+  }
+]
