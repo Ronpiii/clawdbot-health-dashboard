@@ -18,6 +18,17 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-03-01: Workspace Benchmark
+**What:** `arc bench` — runs all 8 quality/health tools in parallel, extracts scores, produces a weighted composite rating with radar chart visualization and trend tracking
+**Commands:** `arc bench`, `arc bench --short`, `arc bench --trend`, `arc bench --fast`, `arc bench --json`
+**Dimensions (8):** health ♥ (20%, workspace state), security ⛨ (15%, secrets/deps/permissions), debt △ (15%, TODOs/any/nesting/console.logs), integrity ⚯ (10%, broken references), services ◉ (10%, production endpoints), env ⚙ (10%, env var coverage), momentum → (10%, week-over-week trajectory), hygiene ✦ (10%, disk cruft/caches)
+**Features:** parallel execution (all 8 checks in ~2s), weighted composite score 0-100 with letter grade (A-F), ASCII radar chart showing score shape, dimension breakdown with score bars, focus areas (weakest dimensions) and strengths (strongest), snapshot persistence (keeps last 90 runs in `memory/bench-snapshots.json`), trend view with sparkline history and delta tracking, fast mode (skips slow checks like pulse/debt), JSON output for automation
+**Scoring:** weighted average — health 20%, security+debt 15% each, the rest 10% each. momentum maps from -100..100 → 0..100. hygiene derived from issue counts. env from missing/total ratio.
+**Aliases:** `arc bench`, `arc benchmark`, `arc score`
+**First run:** 57/100 grade C ("middling"). strengths: services 100 (all 6 endpoints up), security 86, hygiene 85. weaknesses: health 26 (start of new month = 0 days logged), integrity 27 (broken references from project renames), debt 40 (525 items across 7 projects). the composite score is deliberately honest — it weights health heavily (20%) because workspace discipline matters most.
+**Born from:** 30 nightly builds, each adding a quality tool with its own score. health 0-100. shield 0-100. debt 0-100. clean, env, mirror, pulse, orbit — all producing scores. but no single number answers "how healthy is my workspace RIGHT NOW?" across all dimensions. `arc bench` is the unified credit score. run it daily (or on every heartbeat), watch the sparkline. the radar chart shows the SHAPE of your quality — some workspaces are secure but indebted, others are clean but stale. the shape matters as much as the number.
+**Why:** you can't improve what you don't measure. `arc bench --short` gives the one-liner: `bench: 57/100 C — middling`. that number should go up over time. `arc bench --trend` shows if it is. the first snapshot establishes the baseline. from here, every improvement is visible: fix broken references → integrity goes up → composite climbs. delete debug console.logs → debt drops → score improves. the gamification is quiet but real — "can i get to 70 this month?"
+
 ### 2026-02-28: Relationship Intelligence
 **What:** `arc contacts` — extracts people, companies, and agents from daily logs + MEMORY.md, builds a relationship map with timelines, co-occurrence graphs, and cold contact detection
 **Commands:** `arc contacts`, `arc contacts <name>`, `arc contacts --cold`, `arc contacts --companies`, `arc contacts --people`, `arc contacts --timeline`, `arc contacts --graph`, `arc contacts --new`, `arc contacts --short`, `arc contacts --json`
