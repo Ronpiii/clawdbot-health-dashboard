@@ -18,6 +18,18 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-03-02: Morning Intelligence Brief
+**What:** `arc brief` — one command, one screen, everything that matters. the daily standup for a solo operator.
+**Commands:** `arc brief`, `arc brief --short`, `arc brief --json`
+**Sections (6):** overnight changes (commits + modified files from last 8h), service status (4 endpoints checked in parallel), top priorities (ranked from tasks/active.md + git state, max 3), contacts needing follow-up (company/prospect cold detection, 7d threshold), workspace vitals (bench score + streak + momentum + disk usage), fortune (random wisdom from past self)
+**Features:** all 6 data collectors run in parallel (<2s total), service health with critical-down alerts, priority scoring engine (section weight + revenue/launch/block modifiers), company-focused cold contact tracking (not agents/people — the ones that matter for sales), vitals pulled from bench snapshots + orbit snapshots + disk, contextual closers (rotating motivational one-liners), short mode gives 3-line executive summary
+**Design:** deliberately NOT another dashboard. no bars, no charts, no scores-within-scores. just FACTS in priority order. the brief reads like a telegram dispatch, not a spreadsheet. optimized for "glance at phone, know everything" speed.
+**Aliases:** `arc brief`, `arc intel`
+**First run:** quiet night (no overnight commits, it's midnight), 4/4 services up (avg 279ms), top priority: TMW meeting prep [105], bench 57/100 C, 38d streak, disk 37%. the short mode: `brief: quiet night · 4/4 up · bench 57 C → TMW meeting prep`
+**Relationship to other tools:** `arc diff` answers "what changed?" (git-focused, detailed). `arc plan` answers "what should I do?" (task-focused, ranked). `arc bench` answers "how healthy is the workspace?" (score-focused). `arc brief` answers "what do I need to know RIGHT NOW?" — it's the executive summary of all three plus services + contacts + fortune. run `arc brief` first, then dive into whichever section needs attention.
+**Born from:** 31 nightly builds, each producing its own view. plan shows tasks. diff shows changes. bench shows health. pulse shows services. contacts shows relationships. fortune shows wisdom. but to get the morning picture, you had to run 3-4 of them. `arc brief` collapses that into one call. the morning ritual becomes: `arc brief` → read → start working. 10 seconds, full situational awareness.
+**Why:** ron manages 9 projects, 6 production services, a sales pipeline, and a workspace with 38 days of accumulated context. the cognitive load of "what's going on?" is real. `arc brief` is the newspaper on the doorstep. scan it with coffee, know where you stand, start your day. it doesn't tell you everything — it tells you what MATTERS.
+
 ### 2026-03-01: Workspace Benchmark
 **What:** `arc bench` — runs all 8 quality/health tools in parallel, extracts scores, produces a weighted composite rating with radar chart visualization and trend tracking
 **Commands:** `arc bench`, `arc bench --short`, `arc bench --trend`, `arc bench --fast`, `arc bench --json`
