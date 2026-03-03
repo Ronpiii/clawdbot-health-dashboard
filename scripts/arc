@@ -115,6 +115,9 @@ const SCRIPTS = {
   brief: 'brief.mjs',
   morning_brief: 'brief.mjs',
   intel: 'brief.mjs',
+  ship: 'ship.mjs',
+  deploy: 'ship.mjs',
+  preflight: 'ship.mjs',
 };
 
 const HELP = `
@@ -180,6 +183,7 @@ Commands:
   contacts [name]        Relationship intelligence (--cold, --companies, --people, --timeline, --graph, --new)
   bench [opts]           Workspace benchmark — composite score from all quality checks (--short, --trend, --fast, --json)
   brief [opts]           Morning intelligence brief — one screen, everything that matters (--short, --json)
+  ship [project]         Pre-deploy flight checklist — git, review, services, env, lockfiles (--quick, --fix, --short, --json)
 
 Examples:
   arc search "database issue"
@@ -492,6 +496,12 @@ switch (cmd) {
   case 'morning_brief':
   case 'intel':
     run(SCRIPTS.brief, args);
+    break;
+
+  case 'ship':
+  case 'deploy':
+  case 'preflight':
+    run(SCRIPTS.ship, args);
     break;
 
   default:
