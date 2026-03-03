@@ -18,6 +18,19 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-03-03: Pre-Deploy Flight Checklist
+**What:** `arc ship` — 5-check battery that answers "is it safe to deploy?" in one command
+**Commands:** `arc ship`, `arc ship anivia`, `arc ship --quick`, `arc ship --fix`, `arc ship --short`, `arc ship --json`
+**Checks (5):** git state (uncommitted, unpushed, merge conflicts, stale branches, wrong branch), code review (console.logs, debuggers, `any` types, hardcoded secrets, eslint-disable, TODOs in diff), service health (production endpoints up + latency, parallel checks), env audit (.env drift vs example, gitignore coverage, undocumented vars), lockfiles (stale node_modules, missing lockfiles, non-reproducible builds)
+**Features:** weighted composite score (git 30%, review 25%, services 20%, env 15%, lockfiles 10%), three-tier verdict engine (SHIP ≥75 green, HOLD 50-75 yellow, ABORT <50 or criticals red), per-project filtering, auto-fix mode (pushes unpushed commits), quick mode (git + review only, skips network checks), CI-friendly exit codes (0=ship, 1=hold, 2=abort), fixable issue detection
+**Verdict engine:** criticals (merge conflicts, exposed secrets, .env not gitignored) are instant ABORT. high-severity count >3 triggers HOLD. otherwise score-based: ≥75 SHIP, ≥70 HOLD, <70 HOLD. score ≥90 gets "clean slate, send it" message.
+**Aliases:** `arc ship`, `arc deploy`, `arc preflight`
+**First run (full workspace):** score 86/100 HOLD — 4 dirty repos (clawd, anivia, context-memory, tuner), 1 unpushed commit in tuner, 2 stale lockfiles. review: clean (100). services: 3/3 up (100), avg 51ms. env: 85 (3 undocumented vars in anivia, 4 deployed-only projects without local .env). per-project: `arc ship anivia` → 98/100 SHIP.
+**Design decisions:** env severity tuned carefully — missing .env.example→actual is low severity (many projects deploy remotely, don't need local .env). service checks use HEAD requests with 8s timeout. stale branch detection at 14d threshold (info-level, doesn't tank score). diff-based review is lightweight (just checks git diff HEAD for added lines) rather than running full `arc review` which would be slow.
+**Relationship to other tools:** `arc review` checks code quality in depth (13 checks, per-commit analysis). `arc pulse` checks services in depth (6 endpoints, history tracking). `arc env` does full env audit (shared keys, security). `arc shield` does security scanning. `arc ship` is the INTERSECTION — it runs a lightweight version of each, combined into a single go/no-go gate. run `arc ship` before every deploy; if something flags, run the dedicated tool for details.
+**Born from:** 32 nightly builds, each solving one dimension. but the pre-deploy ritual was: check git, run review, check services, hope nothing's wrong. `arc ship` collapses that into one command. the solo developer's CI pipeline — no GitHub Actions needed, just `arc ship && git push`.
+**Why:** ron deploys from multiple machines to multiple services. the "oh shit, I pushed debug console.logs" or "wait, is production even up?" moment happens after the push, not before. `arc ship` moves the quality gate to BEFORE the push. the three-tier verdict (SHIP/HOLD/ABORT) is deliberately simple — you don't need a 47-item checklist, you need a traffic light.
+
 ### 2026-03-02: Morning Intelligence Brief
 **What:** `arc brief` — one command, one screen, everything that matters. the daily standup for a solo operator.
 **Commands:** `arc brief`, `arc brief --short`, `arc brief --json`

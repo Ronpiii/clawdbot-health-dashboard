@@ -195,6 +195,7 @@
 | time-track.mjs | git-based time reconstruction — hours worked from commits (nightly build 02-20) |
 | hotspots.mjs | file change hotspot analyzer — coupling, cold code, complexity risk (nightly build 02-24) |
 | brief.mjs | morning intelligence brief — one screen, everything that matters (nightly build 03-02) |
+| ship.mjs | pre-deploy flight checklist — SHIP/HOLD/ABORT verdict (nightly build 03-03) |
 
 ---
 
