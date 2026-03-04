@@ -118,6 +118,9 @@ const SCRIPTS = {
   ship: 'ship.mjs',
   deploy: 'ship.mjs',
   preflight: 'ship.mjs',
+  pace: 'pace.mjs',
+  rhythm: 'pace.mjs',
+  tempo: 'pace.mjs',
 };
 
 const HELP = `
@@ -184,6 +187,7 @@ Commands:
   bench [opts]           Workspace benchmark — composite score from all quality checks (--short, --trend, --fast, --json)
   brief [opts]           Morning intelligence brief — one screen, everything that matters (--short, --json)
   ship [project]         Pre-deploy flight checklist — git, review, services, env, lockfiles (--quick, --fix, --short, --json)
+  pace [opts]            Work rhythm analyzer — peak hours, flow states, break patterns (--sessions, --recs, --days N, --week)
 
 Examples:
   arc search "database issue"
@@ -502,6 +506,12 @@ switch (cmd) {
   case 'deploy':
   case 'preflight':
     run(SCRIPTS.ship, args);
+    break;
+
+  case 'pace':
+  case 'rhythm':
+  case 'tempo':
+    run(SCRIPTS.pace, args);
     break;
 
   default:
