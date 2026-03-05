@@ -121,6 +121,10 @@ const SCRIPTS = {
   pace: 'pace.mjs',
   rhythm: 'pace.mjs',
   tempo: 'pace.mjs',
+  stale: 'stale.mjs',
+  cold: 'stale.mjs',
+  rot: 'stale.mjs',
+  entropy: 'stale.mjs',
 };
 
 const HELP = `
@@ -188,6 +192,7 @@ Commands:
   brief [opts]           Morning intelligence brief — one screen, everything that matters (--short, --json)
   ship [project]         Pre-deploy flight checklist — git, review, services, env, lockfiles (--quick, --fix, --short, --json)
   pace [opts]            Work rhythm analyzer — peak hours, flow states, break patterns (--sessions, --recs, --days N, --week)
+  stale [opts]           Unified staleness detector — tasks, projects, branches, contacts, ideas, threads (--top N, --days N)
 
 Examples:
   arc search "database issue"
@@ -512,6 +517,13 @@ switch (cmd) {
   case 'rhythm':
   case 'tempo':
     run(SCRIPTS.pace, args);
+    break;
+
+  case 'stale':
+  case 'cold':
+  case 'rot':
+  case 'entropy':
+    run(SCRIPTS.stale, args);
     break;
 
   default:
