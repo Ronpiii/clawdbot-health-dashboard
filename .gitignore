@@ -15,3 +15,5 @@ discord-voice-bot/.env
 projects/context-memory/api/.env
 projects/ventok-website/
 .trash/
+.venv/
+.openclaw/

@@ -7,9 +7,12 @@
 
 ## Blocked
 
-- [ ] context memory deploy — needs domain, railway, stripe from ron
+(none currently)
 
-## Next (when ron picks direction)
+## Autonomous (arc owns)
 
-- [ ] anivia phase 2 — backend (supabase + tRPC + real data)
-- [ ] anivia landing page — update with new copy
+- [ ] context memory v1 — local vector store, semantic recall, lesson extraction. no external dependencies.
+
+## Shelved
+
+- [ ] anivia — on hold indefinitely. revisit only if clear pain point emerges that AI can't solve directly.
