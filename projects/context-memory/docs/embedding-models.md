@@ -69,3 +69,12 @@ embedding = ollama.embeddings(model='nomic-embed-text', prompt='your text')
 - **hnswlib** — classic, efficient
 
 *Research conducted 2026-03-07*
+
+
+## EverMem Patterns (for v2)
+- Importance scoring: length + role + signals + question marks + numbers
+- Memory consolidation: auto-summarize after N turns or token threshold
+- Signal tagging: classify as decision/preference/fact/task
+- SQLite metadata: timestamps, importance, structured lookup
+- Hierarchical: STM (recent turns) + LTM (vector retrieval)
+
