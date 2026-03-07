@@ -23,6 +23,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const SCRIPTS = {
   niche: 'niche.mjs',
   search: 'memory-index.mjs',
+  semantic: 'semantic-search.mjs',
+  sem: 'semantic-search.mjs',
+  recall: 'recall.mjs',
+  remember: 'recall.mjs',
+  lessons: 'lessons.mjs',
+  extract: 'lessons.mjs',
   status: 'status.mjs',
   check: 'heartbeat-check.mjs',
   note: 'note.mjs',
@@ -236,6 +242,24 @@ switch (cmd) {
     
   case 'search-v1':
     run(SCRIPTS.search, ['search', ...args]);
+    break;
+    
+  case 'semantic':
+  case 'sem':
+    // semantic vector search via fastembed
+    run(SCRIPTS.semantic, args);
+    break;
+    
+  case 'recall':
+  case 'remember':
+    // hybrid search (keyword + semantic)
+    run(SCRIPTS.recall, args);
+    break;
+    
+  case 'lessons':
+  case 'extract':
+    // extract lessons from memory files
+    run(SCRIPTS.lessons, args);
     break;
     
   case 'index':

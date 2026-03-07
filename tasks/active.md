@@ -11,7 +11,8 @@
 
 ## Autonomous (arc owns)
 
-- [ ] context memory v1 — local vector store, semantic recall, lesson extraction. no external dependencies.
+- [x] context memory v1 — local vector store, semantic recall, lesson extraction. no external dependencies. ✓ 2026-03-07
+- [ ] context memory v2 — auto-rebuild on file change, heartbeat integration, lesson extraction loop
 
 ## Shelved
 
