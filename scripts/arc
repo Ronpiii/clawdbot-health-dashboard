@@ -29,6 +29,7 @@ const SCRIPTS = {
   remember: 'recall.mjs',
   lessons: 'lessons.mjs',
   extract: 'lessons.mjs',
+  watch: 'memory-watch.mjs',
   status: 'status.mjs',
   check: 'heartbeat-check.mjs',
   note: 'note.mjs',
@@ -260,6 +261,11 @@ switch (cmd) {
   case 'extract':
     // extract lessons from memory files
     run(SCRIPTS.lessons, args);
+    break;
+    
+  case 'watch':
+    // auto-rebuild semantic index on memory changes
+    run(SCRIPTS.watch, args);
     break;
     
   case 'index':
