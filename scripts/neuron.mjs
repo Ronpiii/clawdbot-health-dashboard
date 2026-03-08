@@ -502,6 +502,7 @@ function generateHTML(mentions) {
 
     function hide() { selected = null; sidebar.classList.remove('open'); }
 
+    // mouse events
     c.onmousedown = e => {
       const w = toWorld(e.clientX, e.clientY);
       const n = hit(w.x, w.y);
@@ -527,6 +528,53 @@ function generateHTML(mentions) {
     c.onwheel = e => {
       e.preventDefault();
       scale = Math.max(0.3, Math.min(3, scale * (e.deltaY > 0 ? 0.9 : 1.1)));
+    };
+
+    // touch events
+    let lastTouch = null;
+    let pinchDist = 0;
+
+    c.ontouchstart = e => {
+      e.preventDefault();
+      if (e.touches.length === 1) {
+        const t = e.touches[0];
+        lastTouch = { x: t.clientX, y: t.clientY };
+        const w = toWorld(t.clientX, t.clientY);
+        const n = hit(w.x, w.y);
+        if (n) { drag = n; }
+        else { pan = true; panX = t.clientX - ox; panY = t.clientY - oy; }
+      } else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        pinchDist = Math.sqrt(dx*dx + dy*dy);
+      }
+    };
+
+    c.ontouchmove = e => {
+      e.preventDefault();
+      if (e.touches.length === 1) {
+        const t = e.touches[0];
+        const w = toWorld(t.clientX, t.clientY);
+        if (drag) { drag.x = w.x; drag.y = w.y; drag.vx = 0; drag.vy = 0; }
+        else if (pan) { ox = t.clientX - panX; oy = t.clientY - panY; }
+        lastTouch = { x: t.clientX, y: t.clientY };
+      } else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (pinchDist > 0) {
+          scale = Math.max(0.3, Math.min(3, scale * (d / pinchDist)));
+        }
+        pinchDist = d;
+      }
+    };
+
+    c.ontouchend = e => {
+      if (drag && lastTouch) {
+        const w = toWorld(lastTouch.x, lastTouch.y);
+        if (hit(w.x, w.y) === drag) show(drag);
+      }
+      drag = null; pan = false; lastTouch = null; pinchDist = 0;
     };
 
     onkeydown = e => {

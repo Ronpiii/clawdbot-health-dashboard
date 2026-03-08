@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Neuron</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { 
+      width: 100%; 
+      height: 100%; 
+      overflow: hidden;
+      background: #000;
+      -webkit-overflow-scrolling: touch;
+    }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #000;
       color: #fff;
-      min-height: 100vh;
-      overflow: hidden;
+      touch-action: none;
     }
-    canvas { display: block; position: fixed; top: 0; left: 0; }
+    #c { 
+      display: block; 
+      width: 100%; 
+      height: 100%;
+      touch-action: none;
+    }
     
     #sidebar {
       position: fixed;
       top: 0;
       right: 0;
-      width: 340px;
+      width: min(340px, 90vw);
       height: 100%;
       background: #000;
       border-left: 1px solid #222;
@@ -28,6 +38,7 @@
       transform: translateX(100%);
       transition: transform 0.2s ease;
       z-index: 100;
+      -webkit-overflow-scrolling: touch;
     }
     #sidebar.open { transform: translateX(0); }
     
@@ -70,8 +81,8 @@
       font-size: 1.5rem;
       cursor: pointer;
       line-height: 1;
+      padding: 8px;
     }
-    #close:hover { color: #fff; }
   </style>
 </head>
 <body>
@@ -86,8 +97,47 @@
   </div>
 
   <script>
-    const nodes = [{"id":"cold-email","label":"Cold Email","cluster":"sales","threads":["what makes \"human\" emails outperform polished ones?","optimal send times for estonian SMEs","domain reputation recovery strategies","AI personalization at scale without sounding robotic"],"mentions":13,"files":["MEMORY.md","2026-01-26.md","2026-01-29.md","2026-01-31.md","2026-02-02.md","2026-02-16.md","2026-02-17.md","2026-02-27.md","2026-03-05.md","2026-03-07.md","2026-03-08.md","nightly-builds.md","scratchpad.md"],"radius":50},{"id":"anivia","label":"Anivia","cluster":"sales","threads":["multi-channel sequences (email + linkedin + phone)","intent signals that predict reply likelihood","A/B testing at small volume — statistical validity","when to auto-send vs require human approval"],"mentions":43,"files":["MEMORY.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-04.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-21.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07.md","2026-03-08.md","INDEX.md","nightly-builds.md","scratchpad.md","security-notes.md"],"radius":50},{"id":"sales-automation","label":"Sales Automation","cluster":"sales","threads":["full-funnel ownership vs point solutions","where human judgment beats AI in sales","SMB pricing psychology (€300-800/mo sweet spot)","sales AI that improves from rejection feedback"],"mentions":28,"files":["MEMORY.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-04.md","2026-02-11.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-24.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-05.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","ventok-business.md"],"radius":50},{"id":"context-memory","label":"Context Memory API","cluster":"products","threads":["memory decay models — what to forget and when","cross-agent memory sharing protocols","semantic vs keyword search tradeoffs","memory as competitive moat for AI products"],"mentions":8,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-31.md","2026-03-07.md","2026-03-08.md","nightly-builds.md"],"radius":44},{"id":"collabo","label":"Collabo","cluster":"products","threads":["natural language → structured task decomposition","proactive AI (stale detection, smart triage)","cmd+K as universal AI interface pattern","project health scoring from task velocity"],"mentions":49,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","ventok-business.md"],"radius":50},{"id":"ventok-saas","label":"Ventok Products","cluster":"products","threads":["vertical SaaS for manufacturing niches","language barriers in estonian B2B","build vs buy for estonian companies","trust signals for AI in conservative industries"],"mentions":33,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-07.md","2026-02-08.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-03-03.md","2026-03-04.md","2026-03-07.md","2026-03-08.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"web-design","label":"Web Design","cluster":"design","threads":["few ingredients principle — what to cut","typography as primary design tool","animation that enhances vs distracts","dark mode as default — accessibility tradeoffs"],"mentions":36,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-04.md","2026-02-06.md","2026-02-09.md","2026-02-10.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"excalidraw-style","label":"Excalidraw Aesthetic","cluster":"design","threads":["when hand-drawn feels authentic vs lazy","hybrid approaches — clean + sketchy","excalidraw for technical documentation","SVG animation of hand-drawn elements"],"mentions":2,"files":["2026-03-03.md","2026-03-08.md"],"radius":26},{"id":"ux-patterns","label":"UX Patterns","cluster":"design","threads":["progressive disclosure in complex UIs","command palette as power user interface","when modals beat separate pages","mobile-first that doesn't feel stripped down"],"mentions":8,"files":["MEMORY.md","2026-01-27.md","2026-01-29.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-10.md","collabo-v2-prompt.md"],"radius":44},{"id":"agentic-ai","label":"Agentic AI","cluster":"ai","threads":["reactive vs proactive agent architectures","tool design for LLM reliability","human-in-the-loop patterns that don't bottleneck","agent confidence thresholds for auto-action"],"mentions":38,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-28.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-20.md","2026-02-23.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"memory-systems","label":"Memory Systems","cluster":"ai","threads":["spaced repetition for code/architecture","when to distill vs when to preserve raw logs","memory as identity — what makes an AI \"the same\"","distributed memory across agent instances"],"mentions":37,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-13.md","2026-02-14.md","2026-02-15.md","2026-02-20.md","2026-02-21.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-27.md","2026-02-28.md","2026-03-02.md","2026-03-03.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","moltbook-community-strategy.md","nightly-builds.md"],"radius":50},{"id":"llm-patterns","label":"LLM Patterns","cluster":"ai","threads":["model selection by task type","chain-of-thought vs direct answer","context window management strategies","fine-tuning vs prompting economics"],"mentions":32,"files":["MEMORY.md","2026-01-25.md","2026-01-27.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-20.md","2026-02-23.md","2026-02-24.md","2026-02-27.md","2026-03-02.md","2026-03-03.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"supabase","label":"Supabase","cluster":"infra","threads":["RLS patterns that don't kill performance","edge functions vs server functions","realtime subscriptions at scale","supabase vs planetscale vs neon"],"mentions":31,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-10.md","2026-02-12.md","2026-02-14.md","2026-02-16.md","2026-02-22.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-03-02.md","2026-03-03.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"vercel","label":"Vercel","cluster":"infra","threads":["hobby vs pro tier decision points","cold start mitigation strategies","vercel cron limitations and workarounds","preview deployments for client review"],"mentions":30,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-10.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-22.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-03-02.md","2026-03-03.md","2026-03-07-exploration.md","2026-03-08.md","nightly-builds.md","scratchpad.md","ventok-business.md"],"radius":50},{"id":"dev-workflow","label":"Dev Workflow","cluster":"infra","threads":["commit granularity — atomic vs batched","nightly builds as forcing function","CLI tools that compound over time","workspace health as daily metric"],"mentions":53,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-15.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-21.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"pricing","label":"Pricing","cluster":"business","threads":["freemium vs free trial for dev tools","pricing anchoring psychology","self-host option as trust signal","usage-based vs seat-based for AI products"],"mentions":51,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"go-to-market","label":"Go-to-Market","cluster":"business","threads":["dogfooding → SaaS transition timing","estonian market size constraints","referral loops for B2B","content marketing for technical products"],"mentions":32,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-05.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","security-notes.md","ventok-business.md"],"radius":50}];
-    const links = [{"source":"cold-email","target":"anivia","strength":0.9},{"source":"cold-email","target":"sales-automation","strength":0.8},{"source":"anivia","target":"sales-automation","strength":0.9},{"source":"anivia","target":"supabase","strength":0.7},{"source":"anivia","target":"vercel","strength":0.6},{"source":"context-memory","target":"memory-systems","strength":0.9},{"source":"context-memory","target":"agentic-ai","strength":0.7},{"source":"context-memory","target":"supabase","strength":0.6},{"source":"collabo","target":"agentic-ai","strength":0.8},{"source":"collabo","target":"ux-patterns","strength":0.7},{"source":"collabo","target":"supabase","strength":0.6},{"source":"ventok-saas","target":"anivia","strength":0.8},{"source":"ventok-saas","target":"go-to-market","strength":0.9},{"source":"ventok-saas","target":"pricing","strength":0.7},{"source":"web-design","target":"excalidraw-style","strength":0.7},{"source":"web-design","target":"ux-patterns","strength":0.8},{"source":"excalidraw-style","target":"ux-patterns","strength":0.5},{"source":"agentic-ai","target":"llm-patterns","strength":0.8},{"source":"agentic-ai","target":"memory-systems","strength":0.7},{"source":"memory-systems","target":"llm-patterns","strength":0.6},{"source":"supabase","target":"vercel","strength":0.6},{"source":"supabase","target":"dev-workflow","strength":0.5},{"source":"vercel","target":"dev-workflow","strength":0.6},{"source":"pricing","target":"go-to-market","strength":0.8},{"source":"sales-automation","target":"go-to-market","strength":0.7},{"source":"cold-email","target":"go-to-market","strength":0.6},{"source":"llm-patterns","target":"dev-workflow","strength":0.4}];
+    const nodes = [
+      {id:"cold-email",label:"Cold Email",cluster:"sales",threads:["what makes human emails outperform polished ones?","optimal send times for estonian SMEs","domain reputation recovery","AI personalization at scale"],mentions:13,radius:40},
+      {id:"anivia",label:"Anivia",cluster:"sales",threads:["multi-channel sequences","intent signals that predict replies","A/B testing at small volume","auto-send vs human approval"],mentions:43,radius:50},
+      {id:"sales-automation",label:"Sales Automation",cluster:"sales",threads:["full-funnel ownership vs point solutions","where human judgment beats AI","SMB pricing psychology","sales AI that learns from rejection"],mentions:28,radius:48},
+      {id:"context-memory",label:"Context Memory",cluster:"products",threads:["memory decay models","cross-agent memory sharing","semantic vs keyword search","memory as competitive moat"],mentions:8,radius:35},
+      {id:"collabo",label:"Collabo",cluster:"products",threads:["natural language to tasks","proactive AI detection","cmd+K as universal interface","project health scoring"],mentions:49,radius:50},
+      {id:"ventok-saas",label:"Ventok",cluster:"products",threads:["vertical SaaS for manufacturing","language barriers in estonian B2B","trust signals for AI"],mentions:33,radius:48},
+      {id:"web-design",label:"Web Design",cluster:"design",threads:["few ingredients principle","typography as primary tool","animation that enhances","dark mode accessibility"],mentions:36,radius:48},
+      {id:"excalidraw-style",label:"Excalidraw",cluster:"design",threads:["when hand-drawn feels authentic","hybrid clean + sketchy","excalidraw for docs"],mentions:2,radius:28},
+      {id:"ux-patterns",label:"UX Patterns",cluster:"design",threads:["progressive disclosure","command palette patterns","when modals beat pages"],mentions:8,radius:35},
+      {id:"agentic-ai",label:"Agentic AI",cluster:"ai",threads:["reactive vs proactive agents","tool design for LLM reliability","human-in-the-loop patterns","confidence thresholds"],mentions:38,radius:50},
+      {id:"memory-systems",label:"Memory Systems",cluster:"ai",threads:["spaced repetition for code","when to distill vs preserve","memory as identity"],mentions:37,radius:50},
+      {id:"llm-patterns",label:"LLM Patterns",cluster:"ai",threads:["model selection by task","chain-of-thought vs direct","context window strategies"],mentions:32,radius:48},
+      {id:"supabase",label:"Supabase",cluster:"infra",threads:["RLS patterns for performance","edge vs server functions","realtime at scale"],mentions:31,radius:48},
+      {id:"vercel",label:"Vercel",cluster:"infra",threads:["hobby vs pro decision","cold start mitigation","cron workarounds"],mentions:30,radius:46},
+      {id:"dev-workflow",label:"Dev Workflow",cluster:"infra",threads:["commit granularity","nightly builds as forcing function","CLI tools that compound"],mentions:53,radius:50},
+      {id:"pricing",label:"Pricing",cluster:"business",threads:["freemium vs free trial","pricing anchoring","self-host as trust signal"],mentions:51,radius:50},
+      {id:"go-to-market",label:"Go-to-Market",cluster:"business",threads:["dogfooding to SaaS timing","estonian market constraints","referral loops for B2B"],mentions:32,radius:48}
+    ];
+
+    const links = [
+      {source:"cold-email",target:"anivia",strength:0.9},
+      {source:"cold-email",target:"sales-automation",strength:0.8},
+      {source:"anivia",target:"sales-automation",strength:0.9},
+      {source:"anivia",target:"supabase",strength:0.7},
+      {source:"context-memory",target:"memory-systems",strength:0.9},
+      {source:"context-memory",target:"agentic-ai",strength:0.7},
+      {source:"collabo",target:"agentic-ai",strength:0.8},
+      {source:"collabo",target:"ux-patterns",strength:0.7},
+      {source:"ventok-saas",target:"anivia",strength:0.8},
+      {source:"ventok-saas",target:"go-to-market",strength:0.9},
+      {source:"ventok-saas",target:"pricing",strength:0.7},
+      {source:"web-design",target:"ux-patterns",strength:0.8},
+      {source:"agentic-ai",target:"llm-patterns",strength:0.8},
+      {source:"agentic-ai",target:"memory-systems",strength:0.7},
+      {source:"memory-systems",target:"llm-patterns",strength:0.6},
+      {source:"supabase",target:"vercel",strength:0.6},
+      {source:"vercel",target:"dev-workflow",strength:0.6},
+      {source:"pricing",target:"go-to-market",strength:0.8},
+      {source:"sales-automation",target:"go-to-market",strength:0.7}
+    ];
 
     const c = document.getElementById('c');
     const ctx = c.getContext('2d');
@@ -95,11 +145,13 @@
 
     let W, H, ox = 0, oy = 0, scale = 1;
     let drag = null, pan = false, panX = 0, panY = 0;
-    let selected = null, hovered = null;
+    let selected = null;
+    let dpr = window.devicePixelRatio || 1;
 
+    // initialize positions
     nodes.forEach((n, i) => {
       const a = (i / nodes.length) * Math.PI * 2;
-      const r = 250 + Math.random() * 100;
+      const r = 180 + Math.random() * 80;
       n.x = Math.cos(a) * r;
       n.y = Math.sin(a) * r;
       n.vx = 0;
@@ -107,63 +159,77 @@
     });
 
     function resize() {
-      W = innerWidth; H = innerHeight;
-      c.width = W * devicePixelRatio;
-      c.height = H * devicePixelRatio;
+      W = window.innerWidth;
+      H = window.innerHeight;
+      c.width = W * dpr;
+      c.height = H * dpr;
       c.style.width = W + 'px';
       c.style.height = H + 'px';
-      ctx.scale(devicePixelRatio, devicePixelRatio);
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(dpr, dpr);
     }
 
-    function node(id) { return nodes.find(n => n.id === id); }
+    function getNode(id) { 
+      return nodes.find(n => n.id === id); 
+    }
 
-    function sim() {
+    function simulate() {
+      // repulsion
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[j].x - nodes[i].x;
           const dy = nodes[j].y - nodes[i].y;
           const d = Math.sqrt(dx*dx + dy*dy) || 1;
-          const f = 8000 / (d * d);
+          const f = 6000 / (d * d);
           nodes[i].vx -= (dx/d) * f;
           nodes[i].vy -= (dy/d) * f;
           nodes[j].vx += (dx/d) * f;
           nodes[j].vy += (dy/d) * f;
         }
       }
+      // attraction
       links.forEach(l => {
-        const s = node(l.source), t = node(l.target);
+        const s = getNode(l.source), t = getNode(l.target);
         if (!s || !t) return;
         const dx = t.x - s.x, dy = t.y - s.y;
         const d = Math.sqrt(dx*dx + dy*dy) || 1;
-        const f = d * 0.008 * l.strength;
-        s.vx += (dx/d) * f; s.vy += (dy/d) * f;
-        t.vx -= (dx/d) * f; t.vy -= (dy/d) * f;
+        const f = d * 0.006 * l.strength;
+        s.vx += (dx/d) * f; 
+        s.vy += (dy/d) * f;
+        t.vx -= (dx/d) * f; 
+        t.vy -= (dy/d) * f;
       });
+      // center + damping
       nodes.forEach(n => {
-        n.vx -= n.x * 0.001; n.vy -= n.y * 0.001;
+        n.vx -= n.x * 0.001; 
+        n.vy -= n.y * 0.001;
         if (n !== drag) {
-          n.vx *= 0.85; n.vy *= 0.85;
-          n.x += n.vx; n.y += n.vy;
+          n.vx *= 0.85; 
+          n.vy *= 0.85;
+          n.x += n.vx; 
+          n.y += n.vy;
         }
       });
     }
 
     function draw() {
-      ctx.clearRect(0, 0, W, H);
+      ctx.fillStyle = '#000';
+      ctx.fillRect(0, 0, W, H);
+      
       ctx.save();
       ctx.translate(W/2 + ox, H/2 + oy);
       ctx.scale(scale, scale);
 
       // links
       links.forEach(l => {
-        const s = node(l.source), t = node(l.target);
+        const s = getNode(l.source), t = getNode(l.target);
         if (!s || !t) return;
         const hi = selected && (l.source === selected.id || l.target === selected.id);
         ctx.beginPath();
         ctx.moveTo(s.x, s.y);
         ctx.lineTo(t.x, t.y);
-        ctx.strokeStyle = hi ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.06)';
-        ctx.lineWidth = hi ? 1.5 : 1;
+        ctx.strokeStyle = hi ? 'rgba(255,255,255,0.4)' : 'rgba(255,255,255,0.08)';
+        ctx.lineWidth = hi ? 2 : 1;
         ctx.stroke();
       });
 
@@ -184,7 +250,7 @@
         ctx.stroke();
 
         ctx.fillStyle = sel ? '#000' : (dim ? '#333' : '#888');
-        ctx.font = (sel ? '500 ' : '400 ') + '11px -apple-system, sans-serif';
+        ctx.font = (sel ? '600 ' : '400 ') + '11px -apple-system, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(n.label, n.x, n.y);
@@ -193,13 +259,20 @@
       ctx.restore();
     }
 
-    function loop() { sim(); draw(); requestAnimationFrame(loop); }
-
-    function toWorld(x, y) {
-      return { x: (x - W/2 - ox) / scale, y: (y - H/2 - oy) / scale };
+    function loop() { 
+      simulate(); 
+      draw(); 
+      requestAnimationFrame(loop); 
     }
 
-    function hit(wx, wy) {
+    function toWorld(x, y) {
+      return { 
+        x: (x - W/2 - ox) / scale, 
+        y: (y - H/2 - oy) / scale 
+      };
+    }
+
+    function hitTest(wx, wy) {
       for (let i = nodes.length - 1; i >= 0; i--) {
         const n = nodes[i];
         const dx = wx - n.x, dy = wy - n.y;
@@ -208,7 +281,7 @@
       return null;
     }
 
-    function show(n) {
+    function showPanel(n) {
       selected = n;
       document.getElementById('title').textContent = n.label;
       document.getElementById('meta').textContent = n.mentions + ' mentions · ' + n.cluster;
@@ -216,42 +289,100 @@
       sidebar.classList.add('open');
     }
 
-    function hide() { selected = null; sidebar.classList.remove('open'); }
+    function hidePanel() { 
+      selected = null; 
+      sidebar.classList.remove('open'); 
+    }
 
-    c.onmousedown = e => {
+    // mouse events
+    c.addEventListener('mousedown', e => {
       const w = toWorld(e.clientX, e.clientY);
-      const n = hit(w.x, w.y);
+      const n = hitTest(w.x, w.y);
       if (n) { drag = n; } 
       else { pan = true; panX = e.clientX - ox; panY = e.clientY - oy; }
-    };
+    });
 
-    c.onmousemove = e => {
+    c.addEventListener('mousemove', e => {
       const w = toWorld(e.clientX, e.clientY);
       if (drag) { drag.x = w.x; drag.y = w.y; drag.vx = 0; drag.vy = 0; }
       else if (pan) { ox = e.clientX - panX; oy = e.clientY - panY; }
-      else { c.style.cursor = hit(w.x, w.y) ? 'pointer' : 'default'; }
-    };
+    });
 
-    c.onmouseup = e => {
+    c.addEventListener('mouseup', e => {
       if (drag) {
         const w = toWorld(e.clientX, e.clientY);
-        if (hit(w.x, w.y) === drag) show(drag);
+        if (hitTest(w.x, w.y) === drag) showPanel(drag);
       }
       drag = null; pan = false;
-    };
+    });
 
-    c.onwheel = e => {
+    c.addEventListener('wheel', e => {
       e.preventDefault();
       scale = Math.max(0.3, Math.min(3, scale * (e.deltaY > 0 ? 0.9 : 1.1)));
-    };
+    }, { passive: false });
 
-    onkeydown = e => {
-      if (e.code === 'Space') { e.preventDefault(); scale = 1; ox = 0; oy = 0; hide(); }
-      if (e.code === 'Escape') hide();
-    };
+    // touch events
+    let lastTouch = null;
+    let pinchDist = 0;
 
-    document.getElementById('close').onclick = hide;
-    onresize = resize;
+    c.addEventListener('touchstart', e => {
+      e.preventDefault();
+      if (e.touches.length === 1) {
+        const t = e.touches[0];
+        lastTouch = { x: t.clientX, y: t.clientY };
+        const w = toWorld(t.clientX, t.clientY);
+        const n = hitTest(w.x, w.y);
+        if (n) { drag = n; }
+        else { pan = true; panX = t.clientX - ox; panY = t.clientY - oy; }
+      } else if (e.touches.length === 2) {
+        drag = null;
+        pan = false;
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        pinchDist = Math.sqrt(dx*dx + dy*dy);
+      }
+    }, { passive: false });
+
+    c.addEventListener('touchmove', e => {
+      e.preventDefault();
+      if (e.touches.length === 1 && (drag || pan)) {
+        const t = e.touches[0];
+        const w = toWorld(t.clientX, t.clientY);
+        if (drag) { drag.x = w.x; drag.y = w.y; drag.vx = 0; drag.vy = 0; }
+        else if (pan) { ox = t.clientX - panX; oy = t.clientY - panY; }
+        lastTouch = { x: t.clientX, y: t.clientY };
+      } else if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (pinchDist > 0) {
+          scale = Math.max(0.3, Math.min(3, scale * (d / pinchDist)));
+        }
+        pinchDist = d;
+      }
+    }, { passive: false });
+
+    c.addEventListener('touchend', e => {
+      if (drag && lastTouch) {
+        const w = toWorld(lastTouch.x, lastTouch.y);
+        if (hitTest(w.x, w.y) === drag) showPanel(drag);
+      }
+      drag = null; 
+      pan = false; 
+      lastTouch = null; 
+      pinchDist = 0;
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.code === 'Space') { e.preventDefault(); scale = 1; ox = 0; oy = 0; hidePanel(); }
+      if (e.code === 'Escape') hidePanel();
+    });
+
+    document.getElementById('close').addEventListener('click', hidePanel);
+    
+    window.addEventListener('resize', resize);
+    
+    // init
     resize();
     loop();
   </script>
