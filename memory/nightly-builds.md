@@ -18,6 +18,21 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-03-08: Session Handover Generator
+**What:** `arc handover` — auto-generates handover context for session transitions, model switches, or long breaks
+**Commands:** `arc handover`, `arc handover --hours N`, `arc handover --append`, `arc handover --json`
+**Extracts:**
+- Recent commits (last N hours) with file category breakdown
+- Decisions from today's daily log (pattern matching for "decided", "chose", "going with", Key Decisions sections)
+- In-progress items (WIP, "working on", "started" patterns)
+- Open tasks from tasks/active.md (in-progress/active sections)
+- Next steps derived from context (continues, tasks, review suggestions)
+**Features:** multi-repo scanning (clawd + projects/*), file categorization (scripts/source/docs/config/styles/tests/database/component), configurable time window (default 8h), markdown output ready for daily log, JSON mode for automation, --append to directly add to today's log
+**Aliases:** `arc handover`, `arc handoff`
+**First run:** extracted 8 commits from past 8 hours, 17 files touched across 4 categories (docs, config, other, scripts), auto-derived review suggestion for docs changes
+**Born from:** AGENTS.md mandates a handover protocol — before any model switch or long session end, write a HANDOVER section covering: what was discussed, what was decided, pending tasks, current state, next steps. this is tedious to do manually, especially when context is heavy. `arc handover` auto-generates 80% of it from git activity + daily log patterns + task state.
+**Why:** context loss between sessions is real. you come back after sleep and wonder "where was I?" the handover protocol exists, but compliance is inconsistent because it's manual. now it's one command: `arc handover --append` and the draft is in your log. review it, add nuance, done. the tool that automates the thing AGENTS.md already told us to do.
+
 ### 2026-03-05: Unified Staleness Detector
 **What:** `arc stale` — scans 6 dimensions for things going cold: stale tasks, idle projects, dead branches, cold contacts, aging ideas, and dropped threads (TODO/WIP markers in daily logs)
 **Commands:** `arc stale`, `arc stale --tasks`, `arc stale --projects`, `arc stale --branches`, `arc stale --contacts`, `arc stale --ideas`, `arc stale --threads`, `arc stale --top N`, `arc stale --days N`, `arc stale --short`, `arc stale --json`

@@ -132,6 +132,8 @@ const SCRIPTS = {
   cold: 'stale.mjs',
   rot: 'stale.mjs',
   entropy: 'stale.mjs',
+  handover: 'handover.mjs',
+  handoff: 'handover.mjs',
 };
 
 const HELP = `
@@ -200,6 +202,7 @@ Commands:
   ship [project]         Pre-deploy flight checklist — git, review, services, env, lockfiles (--quick, --fix, --short, --json)
   pace [opts]            Work rhythm analyzer — peak hours, flow states, break patterns (--sessions, --recs, --days N, --week)
   stale [opts]           Unified staleness detector — tasks, projects, branches, contacts, ideas, threads (--top N, --days N)
+  handover [opts]        Auto-generate session handover context (--hours N, --append, --json)
 
 Examples:
   arc search "database issue"
@@ -554,6 +557,11 @@ switch (cmd) {
   case 'rot':
   case 'entropy':
     run(SCRIPTS.stale, args);
+    break;
+
+  case 'handover':
+  case 'handoff':
+    run(SCRIPTS.handover, args);
     break;
 
   default:
