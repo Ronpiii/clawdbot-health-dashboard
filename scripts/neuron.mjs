@@ -3,10 +3,7 @@
  * arc neuron — knowledge network visualization
  * nightly build 2026-03-08
  * 
- * extracts topics from memory, finds connections, generates interactive graph
- * with "deepening threads" — suggested questions/explorations per topic
- * 
- * design: monochrome-first per ui-design-rules.md
+ * pure black/white minimalist design
  */
 
 import fs from 'fs';
@@ -18,12 +15,8 @@ const WORKSPACE = path.resolve(__dirname, '..');
 const MEMORY_DIR = path.join(WORKSPACE, 'memory');
 const OUTPUT_FILE = path.join(WORKSPACE, 'neuron.html');
 
-// single accent color
-const ACCENT = '#3b82f6'; // blue-500
-
 // topic definitions with deepening threads
 const TOPICS = {
-  // sales & outreach cluster
   'cold-email': {
     label: 'Cold Email',
     cluster: 'sales',
@@ -57,8 +50,6 @@ const TOPICS = {
       'sales AI that improves from rejection feedback'
     ]
   },
-
-  // products cluster
   'context-memory': {
     label: 'Context Memory API',
     cluster: 'products',
@@ -92,8 +83,6 @@ const TOPICS = {
       'trust signals for AI in conservative industries'
     ]
   },
-
-  // design cluster
   'web-design': {
     label: 'Web Design',
     cluster: 'design',
@@ -127,8 +116,6 @@ const TOPICS = {
       'mobile-first that doesn\'t feel stripped down'
     ]
   },
-
-  // AI architecture cluster
   'agentic-ai': {
     label: 'Agentic AI',
     cluster: 'ai',
@@ -162,8 +149,6 @@ const TOPICS = {
       'fine-tuning vs prompting economics'
     ]
   },
-
-  // infrastructure cluster
   'supabase': {
     label: 'Supabase',
     cluster: 'infra',
@@ -197,8 +182,6 @@ const TOPICS = {
       'workspace health as daily metric'
     ]
   },
-
-  // business cluster
   'pricing': {
     label: 'Pricing',
     cluster: 'business',
@@ -223,7 +206,6 @@ const TOPICS = {
   }
 };
 
-// connection definitions (topic pairs that relate)
 const CONNECTIONS = [
   ['cold-email', 'anivia', 0.9],
   ['cold-email', 'sales-automation', 0.8],
@@ -254,17 +236,6 @@ const CONNECTIONS = [
   ['llm-patterns', 'dev-workflow', 0.4],
 ];
 
-// cluster labels for legend
-const CLUSTERS = {
-  sales: 'Sales',
-  products: 'Products', 
-  design: 'Design',
-  ai: 'AI',
-  infra: 'Infra',
-  business: 'Business'
-};
-
-// scan memory files for topic mentions
 function scanMemory() {
   const mentions = {};
   Object.keys(TOPICS).forEach(id => mentions[id] = { count: 0, files: [] });
@@ -290,15 +261,12 @@ function scanMemory() {
           }
         }
       }
-    } catch (e) {
-      // skip unreadable files
-    }
+    } catch (e) {}
   }
 
   return mentions;
 }
 
-// generate HTML visualization
 function generateHTML(mentions) {
   const nodes = Object.entries(TOPICS).map(([id, topic]) => ({
     id,
@@ -307,14 +275,11 @@ function generateHTML(mentions) {
     threads: topic.threads,
     mentions: mentions[id].count,
     files: mentions[id].files,
-    // size based on mention count
     radius: Math.max(25, Math.min(50, 20 + mentions[id].count * 3))
   }));
 
   const links = CONNECTIONS.map(([source, target, strength]) => ({
-    source,
-    target,
-    strength
+    source, target, strength
   }));
 
   const html = `<!DOCTYPE html>
@@ -322,38 +287,27 @@ function generateHTML(mentions) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neuron Network</title>
+  <title>Neuron</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #d4d4d4;
+      background: #000;
+      color: #fff;
       min-height: 100vh;
       overflow: hidden;
     }
+    canvas { display: block; position: fixed; top: 0; left: 0; }
     
-    #canvas-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    
-    canvas { display: block; }
-    
-    /* sidebar panel */
     #sidebar {
       position: fixed;
       top: 0;
       right: 0;
-      width: 360px;
+      width: 340px;
       height: 100%;
-      background: #111;
+      background: #000;
       border-left: 1px solid #222;
-      padding: 24px;
+      padding: 32px 24px;
       overflow-y: auto;
       transform: translateX(100%);
       transition: transform 0.2s ease;
@@ -362,459 +316,226 @@ function generateHTML(mentions) {
     #sidebar.open { transform: translateX(0); }
     
     #sidebar h2 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #fff;
+      font-size: 1.125rem;
+      font-weight: 500;
       margin-bottom: 4px;
     }
-    
-    #sidebar .cluster-tag {
-      font-size: 0.75rem;
-      color: #666;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 16px;
-    }
-    
     #sidebar .meta {
       color: #666;
-      font-size: 0.875rem;
-      padding-bottom: 16px;
+      font-size: 0.8rem;
+      margin-bottom: 24px;
+      padding-bottom: 24px;
       border-bottom: 1px solid #222;
     }
-    
     #sidebar h3 {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       color: #666;
-      margin: 20px 0 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      margin-bottom: 12px;
     }
-    
     #sidebar ul { list-style: none; }
-    
     #sidebar li {
-      padding: 12px 14px;
-      margin-bottom: 8px;
-      background: #1a1a1a;
-      border-radius: 6px;
-      border-left: 2px solid ${ACCENT};
+      padding: 12px 0;
+      border-bottom: 1px solid #111;
       font-size: 0.875rem;
       line-height: 1.5;
-      color: #a3a3a3;
-      cursor: pointer;
-      transition: background 0.15s ease;
+      color: #999;
     }
-    #sidebar li:hover {
-      background: #222;
-      color: #d4d4d4;
-    }
+    #sidebar li:last-child { border-bottom: none; }
     
-    #sidebar .files {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 8px;
-    }
-    
-    #sidebar .file-tag {
-      font-size: 0.7rem;
-      padding: 4px 8px;
-      background: #1a1a1a;
-      border-radius: 4px;
-      color: #666;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-    }
-    
-    #close-sidebar {
+    #close {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 24px;
+      right: 24px;
       background: none;
       border: none;
       color: #666;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       cursor: pointer;
-      width: 28px;
-      height: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 4px;
-      transition: background 0.15s, color 0.15s;
+      line-height: 1;
     }
-    #close-sidebar:hover { 
-      background: #222;
-      color: #a3a3a3;
-    }
-    
-    /* header */
-    #header {
-      position: fixed;
-      top: 24px;
-      left: 24px;
-      z-index: 50;
-    }
-    #header h1 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #fff;
-    }
-    #header p {
-      color: #666;
-      font-size: 0.8rem;
-      margin-top: 2px;
-    }
-    
-    /* legend */
-    #legend {
-      position: fixed;
-      bottom: 24px;
-      left: 24px;
-      display: flex;
-      gap: 16px;
-      z-index: 50;
-    }
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.75rem;
-      color: #666;
-    }
-    .legend-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #333;
-      border: 1px solid #444;
-    }
-    .legend-dot.active {
-      background: ${ACCENT};
-      border-color: ${ACCENT};
-    }
-    
-    /* instructions */
-    #instructions {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      color: #444;
-      font-size: 0.75rem;
-      text-align: right;
-      z-index: 50;
-    }
+    #close:hover { color: #fff; }
   </style>
 </head>
 <body>
-  <div id="header">
-    <h1>Neuron Network</h1>
-    <p>${nodes.length} topics · ${links.length} connections</p>
-  </div>
-
-  <div id="legend">
-    ${Object.entries(CLUSTERS).map(([key, label]) => 
-      `<div class="legend-item"><div class="legend-dot"></div> ${label}</div>`
-    ).join('\n    ')}
-  </div>
-
-  <div id="instructions">
-    drag nodes · click to explore · scroll to zoom · space to reset
-  </div>
-
-  <div id="canvas-container">
-    <canvas id="graph"></canvas>
-  </div>
-
+  <canvas id="c"></canvas>
+  
   <div id="sidebar">
-    <button id="close-sidebar">×</button>
-    <h2 id="topic-title">Select a topic</h2>
-    <div class="cluster-tag" id="topic-cluster"></div>
-    <div class="meta" id="topic-meta"></div>
-    <h3>Deepening Threads</h3>
-    <ul id="threads-list"></ul>
-    <h3>Source Files</h3>
-    <div class="files" id="files-list"></div>
+    <button id="close">×</button>
+    <h2 id="title"></h2>
+    <div class="meta" id="meta"></div>
+    <h3>Threads</h3>
+    <ul id="threads"></ul>
   </div>
 
   <script>
     const nodes = ${JSON.stringify(nodes)};
     const links = ${JSON.stringify(links)};
-    const ACCENT = '${ACCENT}';
 
-    const canvas = document.getElementById('graph');
-    const ctx = canvas.getContext('2d');
+    const c = document.getElementById('c');
+    const ctx = c.getContext('2d');
     const sidebar = document.getElementById('sidebar');
 
-    let width, height;
-    let offsetX = 0, offsetY = 0;
-    let scale = 1;
-    let dragging = null;
-    let panning = false;
-    let panStart = { x: 0, y: 0 };
-    let selectedNode = null;
-    let hoveredNode = null;
+    let W, H, ox = 0, oy = 0, scale = 1;
+    let drag = null, pan = false, panX = 0, panY = 0;
+    let selected = null, hovered = null;
 
-    // physics
-    const REPULSION = 8000;
-    const ATTRACTION = 0.008;
-    const DAMPING = 0.85;
-    const CENTER_PULL = 0.001;
-
-    // initialize node positions
-    nodes.forEach((node, i) => {
-      const angle = (i / nodes.length) * Math.PI * 2;
-      const radius = 250 + Math.random() * 100;
-      node.x = Math.cos(angle) * radius;
-      node.y = Math.sin(angle) * radius;
-      node.vx = 0;
-      node.vy = 0;
+    nodes.forEach((n, i) => {
+      const a = (i / nodes.length) * Math.PI * 2;
+      const r = 250 + Math.random() * 100;
+      n.x = Math.cos(a) * r;
+      n.y = Math.sin(a) * r;
+      n.vx = 0;
+      n.vy = 0;
     });
 
     function resize() {
-      width = window.innerWidth;
-      height = window.innerHeight;
-      canvas.width = width * devicePixelRatio;
-      canvas.height = height * devicePixelRatio;
-      canvas.style.width = width + 'px';
-      canvas.style.height = height + 'px';
+      W = innerWidth; H = innerHeight;
+      c.width = W * devicePixelRatio;
+      c.height = H * devicePixelRatio;
+      c.style.width = W + 'px';
+      c.style.height = H + 'px';
       ctx.scale(devicePixelRatio, devicePixelRatio);
     }
 
-    function getNodeById(id) {
-      return nodes.find(n => n.id === id);
-    }
+    function node(id) { return nodes.find(n => n.id === id); }
 
-    function simulate() {
-      // repulsion between nodes
+    function sim() {
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[j].x - nodes[i].x;
           const dy = nodes[j].y - nodes[i].y;
-          const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-          const force = REPULSION / (dist * dist);
-          const fx = (dx / dist) * force;
-          const fy = (dy / dist) * force;
-          nodes[i].vx -= fx;
-          nodes[i].vy -= fy;
-          nodes[j].vx += fx;
-          nodes[j].vy += fy;
+          const d = Math.sqrt(dx*dx + dy*dy) || 1;
+          const f = 8000 / (d * d);
+          nodes[i].vx -= (dx/d) * f;
+          nodes[i].vy -= (dy/d) * f;
+          nodes[j].vx += (dx/d) * f;
+          nodes[j].vy += (dy/d) * f;
         }
       }
-
-      // attraction along links
-      links.forEach(link => {
-        const source = getNodeById(link.source);
-        const target = getNodeById(link.target);
-        if (!source || !target) return;
-        const dx = target.x - source.x;
-        const dy = target.y - source.y;
-        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-        const force = dist * ATTRACTION * link.strength;
-        const fx = (dx / dist) * force;
-        const fy = (dy / dist) * force;
-        source.vx += fx;
-        source.vy += fy;
-        target.vx -= fx;
-        target.vy -= fy;
+      links.forEach(l => {
+        const s = node(l.source), t = node(l.target);
+        if (!s || !t) return;
+        const dx = t.x - s.x, dy = t.y - s.y;
+        const d = Math.sqrt(dx*dx + dy*dy) || 1;
+        const f = d * 0.008 * l.strength;
+        s.vx += (dx/d) * f; s.vy += (dy/d) * f;
+        t.vx -= (dx/d) * f; t.vy -= (dy/d) * f;
       });
-
-      // center pull
-      nodes.forEach(node => {
-        node.vx -= node.x * CENTER_PULL;
-        node.vy -= node.y * CENTER_PULL;
-      });
-
-      // apply velocity
-      nodes.forEach(node => {
-        if (node === dragging) return;
-        node.vx *= DAMPING;
-        node.vy *= DAMPING;
-        node.x += node.vx;
-        node.y += node.vy;
+      nodes.forEach(n => {
+        n.vx -= n.x * 0.001; n.vy -= n.y * 0.001;
+        if (n !== drag) {
+          n.vx *= 0.85; n.vy *= 0.85;
+          n.x += n.vx; n.y += n.vy;
+        }
       });
     }
 
     function draw() {
-      ctx.clearRect(0, 0, width, height);
+      ctx.clearRect(0, 0, W, H);
       ctx.save();
-      ctx.translate(width / 2 + offsetX, height / 2 + offsetY);
+      ctx.translate(W/2 + ox, H/2 + oy);
       ctx.scale(scale, scale);
 
-      // draw links
-      links.forEach(link => {
-        const source = getNodeById(link.source);
-        const target = getNodeById(link.target);
-        if (!source || !target) return;
-        
-        const isHighlighted = selectedNode && 
-          (link.source === selectedNode.id || link.target === selectedNode.id);
-        
+      // links
+      links.forEach(l => {
+        const s = node(l.source), t = node(l.target);
+        if (!s || !t) return;
+        const hi = selected && (l.source === selected.id || l.target === selected.id);
         ctx.beginPath();
-        ctx.moveTo(source.x, source.y);
-        ctx.lineTo(target.x, target.y);
-        ctx.strokeStyle = isHighlighted 
-          ? 'rgba(59, 130, 246, 0.4)'
-          : 'rgba(255,255,255,' + (link.strength * 0.08) + ')';
-        ctx.lineWidth = isHighlighted ? 2 : link.strength * 1.5;
+        ctx.moveTo(s.x, s.y);
+        ctx.lineTo(t.x, t.y);
+        ctx.strokeStyle = hi ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.06)';
+        ctx.lineWidth = hi ? 1.5 : 1;
         ctx.stroke();
       });
 
-      // draw nodes
-      nodes.forEach(node => {
-        const isSelected = selectedNode === node;
-        const isHovered = hoveredNode === node;
-        const isConnected = selectedNode && links.some(l => 
-          (l.source === selectedNode.id && l.target === node.id) ||
-          (l.target === selectedNode.id && l.source === node.id)
-        );
+      // nodes
+      nodes.forEach(n => {
+        const sel = n === selected;
+        const conn = selected && links.some(l => 
+          (l.source === selected.id && l.target === n.id) ||
+          (l.target === selected.id && l.source === n.id));
+        const dim = selected && !sel && !conn;
 
-        // determine opacity
-        const dimmed = selectedNode && !isSelected && !isConnected;
-        
-        // node circle
         ctx.beginPath();
-        ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-        
-        if (isSelected) {
-          ctx.fillStyle = ACCENT;
-        } else if (isHovered) {
-          ctx.fillStyle = '#333';
-        } else if (dimmed) {
-          ctx.fillStyle = '#1a1a1a';
-        } else {
-          ctx.fillStyle = '#222';
-        }
+        ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
+        ctx.fillStyle = sel ? '#fff' : (dim ? '#0a0a0a' : '#111');
         ctx.fill();
-        
-        // border
-        ctx.strokeStyle = isSelected ? ACCENT : (dimmed ? '#222' : '#333');
-        ctx.lineWidth = isSelected ? 2 : 1;
+        ctx.strokeStyle = sel ? '#fff' : (dim ? '#111' : '#333');
+        ctx.lineWidth = sel ? 2 : 1;
         ctx.stroke();
 
-        // label
-        ctx.fillStyle = isSelected ? '#fff' : (dimmed ? '#444' : '#999');
-        ctx.font = (isSelected ? '600 ' : '400 ') + '12px -apple-system, sans-serif';
+        ctx.fillStyle = sel ? '#000' : (dim ? '#333' : '#888');
+        ctx.font = (sel ? '500 ' : '400 ') + '11px -apple-system, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText(node.label, node.x, node.y);
+        ctx.fillText(n.label, n.x, n.y);
       });
 
       ctx.restore();
     }
 
-    function loop() {
-      simulate();
-      draw();
-      requestAnimationFrame(loop);
+    function loop() { sim(); draw(); requestAnimationFrame(loop); }
+
+    function toWorld(x, y) {
+      return { x: (x - W/2 - ox) / scale, y: (y - H/2 - oy) / scale };
     }
 
-    function screenToWorld(sx, sy) {
-      return {
-        x: (sx - width / 2 - offsetX) / scale,
-        y: (sy - height / 2 - offsetY) / scale
-      };
-    }
-
-    function getNodeAt(wx, wy) {
+    function hit(wx, wy) {
       for (let i = nodes.length - 1; i >= 0; i--) {
-        const node = nodes[i];
-        const dx = wx - node.x;
-        const dy = wy - node.y;
-        if (dx * dx + dy * dy < node.radius * node.radius) {
-          return node;
-        }
+        const n = nodes[i];
+        const dx = wx - n.x, dy = wy - n.y;
+        if (dx*dx + dy*dy < n.radius * n.radius) return n;
       }
       return null;
     }
 
-    function showSidebar(node) {
-      selectedNode = node;
-      document.getElementById('topic-title').textContent = node.label;
-      document.getElementById('topic-cluster').textContent = node.cluster;
-      document.getElementById('topic-meta').textContent = 
-        node.mentions + ' mentions across ' + node.files.length + ' files';
-      
-      const threadsList = document.getElementById('threads-list');
-      threadsList.innerHTML = node.threads.map(t => 
-        '<li>' + t + '</li>'
-      ).join('');
-
-      const filesList = document.getElementById('files-list');
-      filesList.innerHTML = node.files.slice(0, 10).map(f => 
-        '<span class="file-tag">' + f + '</span>'
-      ).join('');
-
+    function show(n) {
+      selected = n;
+      document.getElementById('title').textContent = n.label;
+      document.getElementById('meta').textContent = n.mentions + ' mentions · ' + n.cluster;
+      document.getElementById('threads').innerHTML = n.threads.map(t => '<li>' + t + '</li>').join('');
       sidebar.classList.add('open');
     }
 
-    function closeSidebar() {
-      selectedNode = null;
-      sidebar.classList.remove('open');
-    }
+    function hide() { selected = null; sidebar.classList.remove('open'); }
 
-    canvas.addEventListener('mousedown', e => {
-      const world = screenToWorld(e.clientX, e.clientY);
-      const node = getNodeAt(world.x, world.y);
-      if (node) {
-        dragging = node;
-      } else {
-        panning = true;
-        panStart = { x: e.clientX - offsetX, y: e.clientY - offsetY };
+    c.onmousedown = e => {
+      const w = toWorld(e.clientX, e.clientY);
+      const n = hit(w.x, w.y);
+      if (n) { drag = n; } 
+      else { pan = true; panX = e.clientX - ox; panY = e.clientY - oy; }
+    };
+
+    c.onmousemove = e => {
+      const w = toWorld(e.clientX, e.clientY);
+      if (drag) { drag.x = w.x; drag.y = w.y; drag.vx = 0; drag.vy = 0; }
+      else if (pan) { ox = e.clientX - panX; oy = e.clientY - panY; }
+      else { c.style.cursor = hit(w.x, w.y) ? 'pointer' : 'default'; }
+    };
+
+    c.onmouseup = e => {
+      if (drag) {
+        const w = toWorld(e.clientX, e.clientY);
+        if (hit(w.x, w.y) === drag) show(drag);
       }
-    });
+      drag = null; pan = false;
+    };
 
-    canvas.addEventListener('mousemove', e => {
-      const world = screenToWorld(e.clientX, e.clientY);
-      
-      if (dragging) {
-        dragging.x = world.x;
-        dragging.y = world.y;
-        dragging.vx = 0;
-        dragging.vy = 0;
-      } else if (panning) {
-        offsetX = e.clientX - panStart.x;
-        offsetY = e.clientY - panStart.y;
-      } else {
-        // hover detection
-        hoveredNode = getNodeAt(world.x, world.y);
-        canvas.style.cursor = hoveredNode ? 'pointer' : 'default';
-      }
-    });
-
-    canvas.addEventListener('mouseup', e => {
-      if (dragging && !panning) {
-        const world = screenToWorld(e.clientX, e.clientY);
-        const node = getNodeAt(world.x, world.y);
-        if (node === dragging) {
-          showSidebar(node);
-        }
-      }
-      dragging = null;
-      panning = false;
-    });
-
-    canvas.addEventListener('wheel', e => {
+    c.onwheel = e => {
       e.preventDefault();
-      const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
-      scale = Math.max(0.3, Math.min(3, scale * zoomFactor));
-    });
+      scale = Math.max(0.3, Math.min(3, scale * (e.deltaY > 0 ? 0.9 : 1.1)));
+    };
 
-    document.addEventListener('keydown', e => {
-      if (e.code === 'Space') {
-        e.preventDefault();
-        scale = 1;
-        offsetX = 0;
-        offsetY = 0;
-        closeSidebar();
-      } else if (e.code === 'Escape') {
-        closeSidebar();
-      }
-    });
+    onkeydown = e => {
+      if (e.code === 'Space') { e.preventDefault(); scale = 1; ox = 0; oy = 0; hide(); }
+      if (e.code === 'Escape') hide();
+    };
 
-    document.getElementById('close-sidebar').addEventListener('click', closeSidebar);
-
-    window.addEventListener('resize', resize);
+    document.getElementById('close').onclick = hide;
+    onresize = resize;
     resize();
     loop();
   </script>
@@ -824,63 +545,47 @@ function generateHTML(mentions) {
   return html;
 }
 
-// main
 function main() {
   const args = process.argv.slice(2);
   
   if (args.includes('--help') || args.includes('-h')) {
     console.log(`
-arc neuron — knowledge network visualization
+arc neuron — knowledge network
 
 usage:
-  arc neuron           generate and open neuron.html
+  arc neuron           generate neuron.html
   arc neuron --json    output topic data as JSON
   arc neuron --stats   show topic statistics
-
-the visualization shows:
-  • topic nodes sized by mention frequency
-  • connections based on semantic relationships
-  • "deepening threads" — questions to explore each topic further
 `);
     return;
   }
 
-  console.log('scanning memory for topics...');
+  console.log('scanning...');
   const mentions = scanMemory();
 
   if (args.includes('--json')) {
     const data = Object.entries(TOPICS).map(([id, topic]) => ({
-      id,
-      ...topic,
-      mentions: mentions[id].count,
-      files: mentions[id].files
+      id, ...topic, mentions: mentions[id].count, files: mentions[id].files
     }));
     console.log(JSON.stringify(data, null, 2));
     return;
   }
 
   if (args.includes('--stats')) {
-    console.log('\n  topic statistics\n');
-    const sorted = Object.entries(mentions)
-      .sort((a, b) => b[1].count - a[1].count);
-    
-    for (const [id, data] of sorted) {
-      const topic = TOPICS[id];
-      const bar = '█'.repeat(Math.min(20, data.count));
-      console.log(`  ${topic.label.padEnd(20)} ${bar} ${data.count}`);
-    }
+    console.log('\n  topics\n');
+    Object.entries(mentions)
+      .sort((a, b) => b[1].count - a[1].count)
+      .forEach(([id, data]) => {
+        const bar = '█'.repeat(Math.min(20, data.count));
+        console.log(`  ${TOPICS[id].label.padEnd(20)} ${bar} ${data.count}`);
+      });
     console.log();
     return;
   }
 
-  console.log('generating visualization...');
   const html = generateHTML(mentions);
   fs.writeFileSync(OUTPUT_FILE, html);
-  console.log(`\n  ✓ saved to neuron.html\n`);
-  console.log(`  topics: ${Object.keys(TOPICS).length}`);
-  console.log(`  connections: ${CONNECTIONS.length}`);
-  console.log(`  total threads: ${Object.values(TOPICS).reduce((sum, t) => sum + t.threads.length, 0)}`);
-  console.log(`\n  open in browser: file://${OUTPUT_FILE}\n`);
+  console.log('saved to neuron.html');
 }
 
 main();
