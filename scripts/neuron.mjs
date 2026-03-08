@@ -5,6 +5,8 @@
  * 
  * extracts topics from memory, finds connections, generates interactive graph
  * with "deepening threads" — suggested questions/explorations per topic
+ * 
+ * design: monochrome-first per ui-design-rules.md
  */
 
 import fs from 'fs';
@@ -16,13 +18,15 @@ const WORKSPACE = path.resolve(__dirname, '..');
 const MEMORY_DIR = path.join(WORKSPACE, 'memory');
 const OUTPUT_FILE = path.join(WORKSPACE, 'neuron.html');
 
+// single accent color
+const ACCENT = '#3b82f6'; // blue-500
+
 // topic definitions with deepening threads
 const TOPICS = {
   // sales & outreach cluster
   'cold-email': {
     label: 'Cold Email',
     cluster: 'sales',
-    color: '#22d3ee',
     keywords: ['cold email', 'outreach', 'deliverability', 'warmup', 'reply rate', 'open rate'],
     threads: [
       'what makes "human" emails outperform polished ones?',
@@ -34,7 +38,6 @@ const TOPICS = {
   'anivia': {
     label: 'Anivia',
     cluster: 'sales',
-    color: '#22d3ee',
     keywords: ['anivia', 'sequence', 'enrollment', 'AI draft', 'approval queue'],
     threads: [
       'multi-channel sequences (email + linkedin + phone)',
@@ -46,7 +49,6 @@ const TOPICS = {
   'sales-automation': {
     label: 'Sales Automation',
     cluster: 'sales',
-    color: '#22d3ee',
     keywords: ['sales automation', 'pipeline', 'CRM', 'lead', 'prospect'],
     threads: [
       'full-funnel ownership vs point solutions',
@@ -60,7 +62,6 @@ const TOPICS = {
   'context-memory': {
     label: 'Context Memory API',
     cluster: 'products',
-    color: '#a78bfa',
     keywords: ['context memory', 'persistent memory', 'namespace', 'semantic search', 'pgvector', 'embedding'],
     threads: [
       'memory decay models — what to forget and when',
@@ -72,7 +73,6 @@ const TOPICS = {
   'collabo': {
     label: 'Collabo',
     cluster: 'products',
-    color: '#a78bfa',
     keywords: ['collabo', 'task', 'project', 'linear', 'notion', 'workspace'],
     threads: [
       'natural language → structured task decomposition',
@@ -84,7 +84,6 @@ const TOPICS = {
   'ventok-saas': {
     label: 'Ventok Products',
     cluster: 'products',
-    color: '#a78bfa',
     keywords: ['ventok', 'manufacturer', 'estonian', 'SME', 'excel hell'],
     threads: [
       'vertical SaaS for manufacturing niches',
@@ -98,7 +97,6 @@ const TOPICS = {
   'web-design': {
     label: 'Web Design',
     cluster: 'design',
-    color: '#f472b6',
     keywords: ['design', 'awwward', 'composition', 'typography', 'animation', 'art direction'],
     threads: [
       'few ingredients principle — what to cut',
@@ -110,7 +108,6 @@ const TOPICS = {
   'excalidraw-style': {
     label: 'Excalidraw Aesthetic',
     cluster: 'design',
-    color: '#f472b6',
     keywords: ['excalidraw', 'hand-drawn', 'sketch', 'diagram', 'whiteboard'],
     threads: [
       'when hand-drawn feels authentic vs lazy',
@@ -122,7 +119,6 @@ const TOPICS = {
   'ux-patterns': {
     label: 'UX Patterns',
     cluster: 'design',
-    color: '#f472b6',
     keywords: ['modal', 'overlay', 'single-column', 'notion-style', 'settings'],
     threads: [
       'progressive disclosure in complex UIs',
@@ -136,7 +132,6 @@ const TOPICS = {
   'agentic-ai': {
     label: 'Agentic AI',
     cluster: 'ai',
-    color: '#4ade80',
     keywords: ['agentic', 'autonomous', 'function calling', 'tools', 'agent'],
     threads: [
       'reactive vs proactive agent architectures',
@@ -148,7 +143,6 @@ const TOPICS = {
   'memory-systems': {
     label: 'Memory Systems',
     cluster: 'ai',
-    color: '#4ade80',
     keywords: ['memory', 'file-based', 'MEMORY.md', 'daily log', 'recall'],
     threads: [
       'spaced repetition for code/architecture',
@@ -160,7 +154,6 @@ const TOPICS = {
   'llm-patterns': {
     label: 'LLM Patterns',
     cluster: 'ai',
-    color: '#4ade80',
     keywords: ['LLM', 'prompt', 'claude', 'opus', 'haiku', 'model'],
     threads: [
       'model selection by task type',
@@ -174,7 +167,6 @@ const TOPICS = {
   'supabase': {
     label: 'Supabase',
     cluster: 'infra',
-    color: '#fb923c',
     keywords: ['supabase', 'postgres', 'RLS', 'migration', 'auth'],
     threads: [
       'RLS patterns that don\'t kill performance',
@@ -186,7 +178,6 @@ const TOPICS = {
   'vercel': {
     label: 'Vercel',
     cluster: 'infra',
-    color: '#fb923c',
     keywords: ['vercel', 'deploy', 'serverless', 'edge', 'cron'],
     threads: [
       'hobby vs pro tier decision points',
@@ -198,7 +189,6 @@ const TOPICS = {
   'dev-workflow': {
     label: 'Dev Workflow',
     cluster: 'infra',
-    color: '#fb923c',
     keywords: ['git', 'commit', 'nightly build', 'arc', 'script', 'CLI'],
     threads: [
       'commit granularity — atomic vs batched',
@@ -212,7 +202,6 @@ const TOPICS = {
   'pricing': {
     label: 'Pricing',
     cluster: 'business',
-    color: '#facc15',
     keywords: ['pricing', 'MRR', 'tier', 'subscription', 'free', 'pro'],
     threads: [
       'freemium vs free trial for dev tools',
@@ -224,7 +213,6 @@ const TOPICS = {
   'go-to-market': {
     label: 'Go-to-Market',
     cluster: 'business',
-    color: '#facc15',
     keywords: ['launch', 'market', 'positioning', 'pipeline', 'lead', 'TMW', 'Luminor'],
     threads: [
       'dogfooding → SaaS transition timing',
@@ -266,6 +254,16 @@ const CONNECTIONS = [
   ['llm-patterns', 'dev-workflow', 0.4],
 ];
 
+// cluster labels for legend
+const CLUSTERS = {
+  sales: 'Sales',
+  products: 'Products', 
+  design: 'Design',
+  ai: 'AI',
+  infra: 'Infra',
+  business: 'Business'
+};
+
 // scan memory files for topic mentions
 function scanMemory() {
   const mentions = {};
@@ -306,7 +304,6 @@ function generateHTML(mentions) {
     id,
     label: topic.label,
     cluster: topic.cluster,
-    color: topic.color,
     threads: topic.threads,
     mentions: mentions[id].count,
     files: mentions[id].files,
@@ -325,16 +322,18 @@ function generateHTML(mentions) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neuron Network — Knowledge Graph</title>
+  <title>Neuron Network</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    
     body {
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      background: #0a0a0f;
-      color: #e5e5e5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #d4d4d4;
       min-height: 100vh;
       overflow: hidden;
     }
+    
     #canvas-container {
       position: fixed;
       top: 0;
@@ -342,111 +341,132 @@ function generateHTML(mentions) {
       width: 100%;
       height: 100%;
     }
-    canvas {
-      display: block;
-    }
+    
+    canvas { display: block; }
+    
+    /* sidebar panel */
     #sidebar {
       position: fixed;
       top: 0;
       right: 0;
-      width: 380px;
+      width: 360px;
       height: 100%;
-      background: linear-gradient(135deg, #12121a 0%, #0a0a0f 100%);
-      border-left: 1px solid #2a2a3a;
+      background: #111;
+      border-left: 1px solid #222;
       padding: 24px;
       overflow-y: auto;
       transform: translateX(100%);
-      transition: transform 0.3s ease;
+      transition: transform 0.2s ease;
       z-index: 100;
     }
     #sidebar.open { transform: translateX(0); }
+    
     #sidebar h2 {
-      font-size: 1.4rem;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
     }
-    #sidebar .cluster-badge {
-      font-size: 0.7rem;
-      padding: 3px 8px;
-      border-radius: 4px;
+    
+    #sidebar .cluster-tag {
+      font-size: 0.75rem;
+      color: #666;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      margin-bottom: 16px;
     }
+    
     #sidebar .meta {
-      color: #888;
-      font-size: 0.85rem;
-      margin-bottom: 20px;
+      color: #666;
+      font-size: 0.875rem;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #222;
     }
+    
     #sidebar h3 {
-      font-size: 0.9rem;
-      color: #888;
+      font-size: 0.75rem;
+      color: #666;
       margin: 20px 0 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
-    #sidebar ul {
-      list-style: none;
-    }
+    
+    #sidebar ul { list-style: none; }
+    
     #sidebar li {
       padding: 12px 14px;
       margin-bottom: 8px;
-      background: rgba(255,255,255,0.03);
-      border-radius: 8px;
-      border-left: 3px solid;
-      font-size: 0.9rem;
-      line-height: 1.4;
+      background: #1a1a1a;
+      border-radius: 6px;
+      border-left: 2px solid ${ACCENT};
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: #a3a3a3;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: background 0.15s ease;
     }
     #sidebar li:hover {
-      background: rgba(255,255,255,0.08);
-      transform: translateX(4px);
+      background: #222;
+      color: #d4d4d4;
     }
+    
     #sidebar .files {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin-top: 10px;
+      margin-top: 8px;
     }
+    
     #sidebar .file-tag {
-      font-size: 0.75rem;
-      padding: 3px 8px;
-      background: rgba(255,255,255,0.08);
+      font-size: 0.7rem;
+      padding: 4px 8px;
+      background: #1a1a1a;
       border-radius: 4px;
-      color: #aaa;
+      color: #666;
+      font-family: 'SF Mono', 'Fira Code', monospace;
     }
+    
     #close-sidebar {
       position: absolute;
       top: 20px;
       right: 20px;
       background: none;
       border: none;
-      color: #888;
-      font-size: 1.5rem;
+      color: #666;
+      font-size: 1.25rem;
       cursor: pointer;
-      transition: color 0.2s;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
     }
-    #close-sidebar:hover { color: #fff; }
+    #close-sidebar:hover { 
+      background: #222;
+      color: #a3a3a3;
+    }
+    
+    /* header */
     #header {
       position: fixed;
-      top: 20px;
+      top: 24px;
       left: 24px;
       z-index: 50;
     }
     #header h1 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 600;
-      background: linear-gradient(135deg, #22d3ee, #a78bfa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #fff;
     }
     #header p {
       color: #666;
-      font-size: 0.85rem;
-      margin-top: 4px;
+      font-size: 0.8rem;
+      margin-top: 2px;
     }
+    
+    /* legend */
     #legend {
       position: fixed;
       bottom: 24px;
@@ -459,20 +479,28 @@ function generateHTML(mentions) {
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.8rem;
-      color: #888;
+      font-size: 0.75rem;
+      color: #666;
     }
     .legend-dot {
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
+      background: #333;
+      border: 1px solid #444;
     }
+    .legend-dot.active {
+      background: ${ACCENT};
+      border-color: ${ACCENT};
+    }
+    
+    /* instructions */
     #instructions {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      color: #555;
-      font-size: 0.8rem;
+      color: #444;
+      font-size: 0.75rem;
       text-align: right;
       z-index: 50;
     }
@@ -480,22 +508,18 @@ function generateHTML(mentions) {
 </head>
 <body>
   <div id="header">
-    <h1>⌁ Neuron Network</h1>
-    <p>knowledge graph · ${nodes.length} topics · ${links.length} connections</p>
+    <h1>Neuron Network</h1>
+    <p>${nodes.length} topics · ${links.length} connections</p>
   </div>
 
   <div id="legend">
-    <div class="legend-item"><div class="legend-dot" style="background: #22d3ee"></div> sales</div>
-    <div class="legend-item"><div class="legend-dot" style="background: #a78bfa"></div> products</div>
-    <div class="legend-item"><div class="legend-dot" style="background: #f472b6"></div> design</div>
-    <div class="legend-item"><div class="legend-dot" style="background: #4ade80"></div> AI</div>
-    <div class="legend-item"><div class="legend-dot" style="background: #fb923c"></div> infra</div>
-    <div class="legend-item"><div class="legend-dot" style="background: #facc15"></div> business</div>
+    ${Object.entries(CLUSTERS).map(([key, label]) => 
+      `<div class="legend-item"><div class="legend-dot"></div> ${label}</div>`
+    ).join('\n    ')}
   </div>
 
   <div id="instructions">
-    drag to move · click node to explore threads<br>
-    scroll to zoom · spacebar to reset
+    drag nodes · click to explore · scroll to zoom · space to reset
   </div>
 
   <div id="canvas-container">
@@ -505,16 +529,18 @@ function generateHTML(mentions) {
   <div id="sidebar">
     <button id="close-sidebar">×</button>
     <h2 id="topic-title">Select a topic</h2>
+    <div class="cluster-tag" id="topic-cluster"></div>
     <div class="meta" id="topic-meta"></div>
     <h3>Deepening Threads</h3>
     <ul id="threads-list"></ul>
-    <h3>Mentioned In</h3>
+    <h3>Source Files</h3>
     <div class="files" id="files-list"></div>
   </div>
 
   <script>
     const nodes = ${JSON.stringify(nodes)};
     const links = ${JSON.stringify(links)};
+    const ACCENT = '${ACCENT}';
 
     const canvas = document.getElementById('graph');
     const ctx = canvas.getContext('2d');
@@ -527,6 +553,7 @@ function generateHTML(mentions) {
     let panning = false;
     let panStart = { x: 0, y: 0 };
     let selectedNode = null;
+    let hoveredNode = null;
 
     // physics
     const REPULSION = 8000;
@@ -619,50 +646,55 @@ function generateHTML(mentions) {
         const source = getNodeById(link.source);
         const target = getNodeById(link.target);
         if (!source || !target) return;
+        
+        const isHighlighted = selectedNode && 
+          (link.source === selectedNode.id || link.target === selectedNode.id);
+        
         ctx.beginPath();
         ctx.moveTo(source.x, source.y);
         ctx.lineTo(target.x, target.y);
-        ctx.strokeStyle = 'rgba(255,255,255,' + (link.strength * 0.15) + ')';
-        ctx.lineWidth = link.strength * 2;
+        ctx.strokeStyle = isHighlighted 
+          ? 'rgba(59, 130, 246, 0.4)'
+          : 'rgba(255,255,255,' + (link.strength * 0.08) + ')';
+        ctx.lineWidth = isHighlighted ? 2 : link.strength * 1.5;
         ctx.stroke();
       });
 
       // draw nodes
       nodes.forEach(node => {
         const isSelected = selectedNode === node;
+        const isHovered = hoveredNode === node;
         const isConnected = selectedNode && links.some(l => 
           (l.source === selectedNode.id && l.target === node.id) ||
           (l.target === selectedNode.id && l.source === node.id)
         );
 
-        // glow for selected
-        if (isSelected) {
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, node.radius + 15, 0, Math.PI * 2);
-          const glow = ctx.createRadialGradient(node.x, node.y, node.radius, node.x, node.y, node.radius + 20);
-          glow.addColorStop(0, node.color + '40');
-          glow.addColorStop(1, 'transparent');
-          ctx.fillStyle = glow;
-          ctx.fill();
-        }
-
+        // determine opacity
+        const dimmed = selectedNode && !isSelected && !isConnected;
+        
         // node circle
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
         
-        const opacity = selectedNode ? (isSelected || isConnected ? 1 : 0.3) : 1;
-        ctx.fillStyle = node.color + (opacity < 1 ? '4d' : '');
+        if (isSelected) {
+          ctx.fillStyle = ACCENT;
+        } else if (isHovered) {
+          ctx.fillStyle = '#333';
+        } else if (dimmed) {
+          ctx.fillStyle = '#1a1a1a';
+        } else {
+          ctx.fillStyle = '#222';
+        }
         ctx.fill();
         
-        if (isSelected) {
-          ctx.strokeStyle = '#fff';
-          ctx.lineWidth = 3;
-          ctx.stroke();
-        }
+        // border
+        ctx.strokeStyle = isSelected ? ACCENT : (dimmed ? '#222' : '#333');
+        ctx.lineWidth = isSelected ? 2 : 1;
+        ctx.stroke();
 
         // label
-        ctx.fillStyle = opacity < 1 ? '#666' : '#fff';
-        ctx.font = (isSelected ? 'bold ' : '') + '13px SF Mono, monospace';
+        ctx.fillStyle = isSelected ? '#fff' : (dimmed ? '#444' : '#999');
+        ctx.font = (isSelected ? '600 ' : '400 ') + '12px -apple-system, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(node.label, node.x, node.y);
@@ -698,22 +730,27 @@ function generateHTML(mentions) {
 
     function showSidebar(node) {
       selectedNode = node;
-      document.getElementById('topic-title').innerHTML = 
-        '<span style="color:' + node.color + '">●</span> ' + node.label;
+      document.getElementById('topic-title').textContent = node.label;
+      document.getElementById('topic-cluster').textContent = node.cluster;
       document.getElementById('topic-meta').textContent = 
-        node.mentions + ' mentions · ' + node.cluster + ' cluster';
+        node.mentions + ' mentions across ' + node.files.length + ' files';
       
       const threadsList = document.getElementById('threads-list');
       threadsList.innerHTML = node.threads.map(t => 
-        '<li style="border-color:' + node.color + '">' + t + '</li>'
+        '<li>' + t + '</li>'
       ).join('');
 
       const filesList = document.getElementById('files-list');
-      filesList.innerHTML = node.files.slice(0, 8).map(f => 
+      filesList.innerHTML = node.files.slice(0, 10).map(f => 
         '<span class="file-tag">' + f + '</span>'
       ).join('');
 
       sidebar.classList.add('open');
+    }
+
+    function closeSidebar() {
+      selectedNode = null;
+      sidebar.classList.remove('open');
     }
 
     canvas.addEventListener('mousedown', e => {
@@ -728,8 +765,9 @@ function generateHTML(mentions) {
     });
 
     canvas.addEventListener('mousemove', e => {
+      const world = screenToWorld(e.clientX, e.clientY);
+      
       if (dragging) {
-        const world = screenToWorld(e.clientX, e.clientY);
         dragging.x = world.x;
         dragging.y = world.y;
         dragging.vx = 0;
@@ -737,6 +775,10 @@ function generateHTML(mentions) {
       } else if (panning) {
         offsetX = e.clientX - panStart.x;
         offsetY = e.clientY - panStart.y;
+      } else {
+        // hover detection
+        hoveredNode = getNodeAt(world.x, world.y);
+        canvas.style.cursor = hoveredNode ? 'pointer' : 'default';
       }
     });
 
@@ -764,18 +806,13 @@ function generateHTML(mentions) {
         scale = 1;
         offsetX = 0;
         offsetY = 0;
-        selectedNode = null;
-        sidebar.classList.remove('open');
+        closeSidebar();
       } else if (e.code === 'Escape') {
-        selectedNode = null;
-        sidebar.classList.remove('open');
+        closeSidebar();
       }
     });
 
-    document.getElementById('close-sidebar').addEventListener('click', () => {
-      selectedNode = null;
-      sidebar.classList.remove('open');
-    });
+    document.getElementById('close-sidebar').addEventListener('click', closeSidebar);
 
     window.addEventListener('resize', resize);
     resize();
