@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuron Network — Knowledge Graph</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      background: #0a0a0f;
+      color: #e5e5e5;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    #canvas-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    canvas {
+      display: block;
+    }
+    #sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 380px;
+      height: 100%;
+      background: linear-gradient(135deg, #12121a 0%, #0a0a0f 100%);
+      border-left: 1px solid #2a2a3a;
+      padding: 24px;
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 100;
+    }
+    #sidebar.open { transform: translateX(0); }
+    #sidebar h2 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #sidebar .cluster-badge {
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    #sidebar .meta {
+      color: #888;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+    #sidebar h3 {
+      font-size: 0.9rem;
+      color: #888;
+      margin: 20px 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    #sidebar ul {
+      list-style: none;
+    }
+    #sidebar li {
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+      border-left: 3px solid;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    #sidebar li:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateX(4px);
+    }
+    #sidebar .files {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    #sidebar .file-tag {
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 4px;
+      color: #aaa;
+    }
+    #close-sidebar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: #888;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    #close-sidebar:hover { color: #fff; }
+    #header {
+      position: fixed;
+      top: 20px;
+      left: 24px;
+      z-index: 50;
+    }
+    #header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #22d3ee, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    #header p {
+      color: #666;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+    #legend {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      display: flex;
+      gap: 16px;
+      z-index: 50;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    #instructions {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      color: #555;
+      font-size: 0.8rem;
+      text-align: right;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>⌁ Neuron Network</h1>
+    <p>knowledge graph · 17 topics · 27 connections</p>
+  </div>
+
+  <div id="legend">
+    <div class="legend-item"><div class="legend-dot" style="background: #22d3ee"></div> sales</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #a78bfa"></div> products</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #f472b6"></div> design</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #4ade80"></div> AI</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #fb923c"></div> infra</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #facc15"></div> business</div>
+  </div>
+
+  <div id="instructions">
+    drag to move · click node to explore threads<br>
+    scroll to zoom · spacebar to reset
+  </div>
+
+  <div id="canvas-container">
+    <canvas id="graph"></canvas>
+  </div>
+
+  <div id="sidebar">
+    <button id="close-sidebar">×</button>
+    <h2 id="topic-title">Select a topic</h2>
+    <div class="meta" id="topic-meta"></div>
+    <h3>Deepening Threads</h3>
+    <ul id="threads-list"></ul>
+    <h3>Mentioned In</h3>
+    <div class="files" id="files-list"></div>
+  </div>
+
+  <script>
+    const nodes = [{"id":"cold-email","label":"Cold Email","cluster":"sales","color":"#22d3ee","threads":["what makes \"human\" emails outperform polished ones?","optimal send times for estonian SMEs","domain reputation recovery strategies","AI personalization at scale without sounding robotic"],"mentions":12,"files":["MEMORY.md","2026-01-26.md","2026-01-29.md","2026-01-31.md","2026-02-02.md","2026-02-16.md","2026-02-17.md","2026-02-27.md","2026-03-05.md","2026-03-07.md","nightly-builds.md","scratchpad.md"],"radius":50},{"id":"anivia","label":"Anivia","cluster":"sales","color":"#22d3ee","threads":["multi-channel sequences (email + linkedin + phone)","intent signals that predict reply likelihood","A/B testing at small volume — statistical validity","when to auto-send vs require human approval"],"mentions":42,"files":["MEMORY.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-04.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-21.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07.md","INDEX.md","nightly-builds.md","scratchpad.md","security-notes.md"],"radius":50},{"id":"sales-automation","label":"Sales Automation","cluster":"sales","color":"#22d3ee","threads":["full-funnel ownership vs point solutions","where human judgment beats AI in sales","SMB pricing psychology (€300-800/mo sweet spot)","sales AI that improves from rejection feedback"],"mentions":27,"files":["MEMORY.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-04.md","2026-02-11.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-24.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-05.md","2026-03-07.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","ventok-business.md"],"radius":50},{"id":"context-memory","label":"Context Memory API","cluster":"products","color":"#a78bfa","threads":["memory decay models — what to forget and when","cross-agent memory sharing protocols","semantic vs keyword search tradeoffs","memory as competitive moat for AI products"],"mentions":7,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-31.md","2026-03-07.md","nightly-builds.md"],"radius":41},{"id":"collabo","label":"Collabo","cluster":"products","color":"#a78bfa","threads":["natural language → structured task decomposition","proactive AI (stale detection, smart triage)","cmd+K as universal AI interface pattern","project health scoring from task velocity"],"mentions":48,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","INDEX.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","ventok-business.md"],"radius":50},{"id":"ventok-saas","label":"Ventok Products","cluster":"products","color":"#a78bfa","threads":["vertical SaaS for manufacturing niches","language barriers in estonian B2B","build vs buy for estonian companies","trust signals for AI in conservative industries"],"mentions":32,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-07.md","2026-02-08.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-03-03.md","2026-03-04.md","2026-03-07.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"web-design","label":"Web Design","cluster":"design","color":"#f472b6","threads":["few ingredients principle — what to cut","typography as primary design tool","animation that enhances vs distracts","dark mode as default — accessibility tradeoffs"],"mentions":35,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-04.md","2026-02-06.md","2026-02-09.md","2026-02-10.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"excalidraw-style","label":"Excalidraw Aesthetic","cluster":"design","color":"#f472b6","threads":["when hand-drawn feels authentic vs lazy","hybrid approaches — clean + sketchy","excalidraw for technical documentation","SVG animation of hand-drawn elements"],"mentions":1,"files":["2026-03-03.md"],"radius":25},{"id":"ux-patterns","label":"UX Patterns","cluster":"design","color":"#f472b6","threads":["progressive disclosure in complex UIs","command palette as power user interface","when modals beat separate pages","mobile-first that doesn't feel stripped down"],"mentions":8,"files":["MEMORY.md","2026-01-27.md","2026-01-29.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-10.md","collabo-v2-prompt.md"],"radius":44},{"id":"agentic-ai","label":"Agentic AI","cluster":"ai","color":"#4ade80","threads":["reactive vs proactive agent architectures","tool design for LLM reliability","human-in-the-loop patterns that don't bottleneck","agent confidence thresholds for auto-action"],"mentions":37,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-28.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-20.md","2026-02-23.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-07-exploration.md","2026-03-07.md","INDEX.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"memory-systems","label":"Memory Systems","cluster":"ai","color":"#4ade80","threads":["spaced repetition for code/architecture","when to distill vs when to preserve raw logs","memory as identity — what makes an AI \"the same\"","distributed memory across agent instances"],"mentions":37,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-13.md","2026-02-14.md","2026-02-15.md","2026-02-20.md","2026-02-21.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-27.md","2026-02-28.md","2026-03-02.md","2026-03-03.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","moltbook-community-strategy.md","nightly-builds.md"],"radius":50},{"id":"llm-patterns","label":"LLM Patterns","cluster":"ai","color":"#4ade80","threads":["model selection by task type","chain-of-thought vs direct answer","context window management strategies","fine-tuning vs prompting economics"],"mentions":31,"files":["MEMORY.md","2026-01-25.md","2026-01-27.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-20.md","2026-02-23.md","2026-02-24.md","2026-02-27.md","2026-03-02.md","2026-03-03.md","2026-03-07-exploration.md","2026-03-07.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"supabase","label":"Supabase","cluster":"infra","color":"#fb923c","threads":["RLS patterns that don't kill performance","edge functions vs server functions","realtime subscriptions at scale","supabase vs planetscale vs neon"],"mentions":30,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-10.md","2026-02-12.md","2026-02-14.md","2026-02-16.md","2026-02-22.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-03-02.md","2026-03-03.md","2026-03-07.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"vercel","label":"Vercel","cluster":"infra","color":"#fb923c","threads":["hobby vs pro tier decision points","cold start mitigation strategies","vercel cron limitations and workarounds","preview deployments for client review"],"mentions":29,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-06.md","2026-02-10.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-22.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-03-02.md","2026-03-03.md","2026-03-07-exploration.md","nightly-builds.md","scratchpad.md","ventok-business.md"],"radius":50},{"id":"dev-workflow","label":"Dev Workflow","cluster":"infra","color":"#fb923c","threads":["commit granularity — atomic vs batched","nightly builds as forcing function","CLI tools that compound over time","workspace health as daily metric"],"mentions":53,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-15.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-21.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"pricing","label":"Pricing","cluster":"business","color":"#facc15","threads":["freemium vs free trial for dev tools","pricing anchoring psychology","self-host option as trust signal","usage-based vs seat-based for AI products"],"mentions":51,"files":["MEMORY.md","2026-01-24.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-05.md","2026-02-06.md","2026-02-07.md","2026-02-08-morning.md","2026-02-08.md","2026-02-09.md","2026-02-10.md","2026-02-11.md","2026-02-12.md","2026-02-13.md","2026-02-14.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-25.md","2026-02-26.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-03.md","2026-03-04.md","2026-03-05.md","2026-03-07-exploration.md","2026-03-07.md","2026-03-08.md","INDEX.md","collabo-v2-prompt.md","moltbook-community-strategy.md","nightly-builds.md","scratchpad.md","security-notes.md","ventok-business.md"],"radius":50},{"id":"go-to-market","label":"Go-to-Market","cluster":"business","color":"#facc15","threads":["dogfooding → SaaS transition timing","estonian market size constraints","referral loops for B2B","content marketing for technical products"],"mentions":31,"files":["MEMORY.md","2026-01-25.md","2026-01-26.md","2026-01-27.md","2026-01-28.md","2026-01-29.md","2026-01-30.md","2026-01-31.md","2026-02-01.md","2026-02-02.md","2026-02-03.md","2026-02-04.md","2026-02-16.md","2026-02-17.md","2026-02-18.md","2026-02-19.md","2026-02-20.md","2026-02-22.md","2026-02-23.md","2026-02-24.md","2026-02-27.md","2026-02-28.md","2026-03-01.md","2026-03-02.md","2026-03-05.md","2026-03-07.md","INDEX.md","collabo-v2-prompt.md","nightly-builds.md","security-notes.md","ventok-business.md"],"radius":50}];
+    const links = [{"source":"cold-email","target":"anivia","strength":0.9},{"source":"cold-email","target":"sales-automation","strength":0.8},{"source":"anivia","target":"sales-automation","strength":0.9},{"source":"anivia","target":"supabase","strength":0.7},{"source":"anivia","target":"vercel","strength":0.6},{"source":"context-memory","target":"memory-systems","strength":0.9},{"source":"context-memory","target":"agentic-ai","strength":0.7},{"source":"context-memory","target":"supabase","strength":0.6},{"source":"collabo","target":"agentic-ai","strength":0.8},{"source":"collabo","target":"ux-patterns","strength":0.7},{"source":"collabo","target":"supabase","strength":0.6},{"source":"ventok-saas","target":"anivia","strength":0.8},{"source":"ventok-saas","target":"go-to-market","strength":0.9},{"source":"ventok-saas","target":"pricing","strength":0.7},{"source":"web-design","target":"excalidraw-style","strength":0.7},{"source":"web-design","target":"ux-patterns","strength":0.8},{"source":"excalidraw-style","target":"ux-patterns","strength":0.5},{"source":"agentic-ai","target":"llm-patterns","strength":0.8},{"source":"agentic-ai","target":"memory-systems","strength":0.7},{"source":"memory-systems","target":"llm-patterns","strength":0.6},{"source":"supabase","target":"vercel","strength":0.6},{"source":"supabase","target":"dev-workflow","strength":0.5},{"source":"vercel","target":"dev-workflow","strength":0.6},{"source":"pricing","target":"go-to-market","strength":0.8},{"source":"sales-automation","target":"go-to-market","strength":0.7},{"source":"cold-email","target":"go-to-market","strength":0.6},{"source":"llm-patterns","target":"dev-workflow","strength":0.4}];
+
+    const canvas = document.getElementById('graph');
+    const ctx = canvas.getContext('2d');
+    const sidebar = document.getElementById('sidebar');
+
+    let width, height;
+    let offsetX = 0, offsetY = 0;
+    let scale = 1;
+    let dragging = null;
+    let panning = false;
+    let panStart = { x: 0, y: 0 };
+    let selectedNode = null;
+
+    // physics
+    const REPULSION = 8000;
+    const ATTRACTION = 0.008;
+    const DAMPING = 0.85;
+    const CENTER_PULL = 0.001;
+
+    // initialize node positions
+    nodes.forEach((node, i) => {
+      const angle = (i / nodes.length) * Math.PI * 2;
+      const radius = 250 + Math.random() * 100;
+      node.x = Math.cos(angle) * radius;
+      node.y = Math.sin(angle) * radius;
+      node.vx = 0;
+      node.vy = 0;
+    });
+
+    function resize() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width * devicePixelRatio;
+      canvas.height = height * devicePixelRatio;
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
+      ctx.scale(devicePixelRatio, devicePixelRatio);
+    }
+
+    function getNodeById(id) {
+      return nodes.find(n => n.id === id);
+    }
+
+    function simulate() {
+      // repulsion between nodes
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = nodes[j].x - nodes[i].x;
+          const dy = nodes[j].y - nodes[i].y;
+          const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+          const force = REPULSION / (dist * dist);
+          const fx = (dx / dist) * force;
+          const fy = (dy / dist) * force;
+          nodes[i].vx -= fx;
+          nodes[i].vy -= fy;
+          nodes[j].vx += fx;
+          nodes[j].vy += fy;
+        }
+      }
+
+      // attraction along links
+      links.forEach(link => {
+        const source = getNodeById(link.source);
+        const target = getNodeById(link.target);
+        if (!source || !target) return;
+        const dx = target.x - source.x;
+        const dy = target.y - source.y;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        const force = dist * ATTRACTION * link.strength;
+        const fx = (dx / dist) * force;
+        const fy = (dy / dist) * force;
+        source.vx += fx;
+        source.vy += fy;
+        target.vx -= fx;
+        target.vy -= fy;
+      });
+
+      // center pull
+      nodes.forEach(node => {
+        node.vx -= node.x * CENTER_PULL;
+        node.vy -= node.y * CENTER_PULL;
+      });
+
+      // apply velocity
+      nodes.forEach(node => {
+        if (node === dragging) return;
+        node.vx *= DAMPING;
+        node.vy *= DAMPING;
+        node.x += node.vx;
+        node.y += node.vy;
+      });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+      ctx.save();
+      ctx.translate(width / 2 + offsetX, height / 2 + offsetY);
+      ctx.scale(scale, scale);
+
+      // draw links
+      links.forEach(link => {
+        const source = getNodeById(link.source);
+        const target = getNodeById(link.target);
+        if (!source || !target) return;
+        ctx.beginPath();
+        ctx.moveTo(source.x, source.y);
+        ctx.lineTo(target.x, target.y);
+        ctx.strokeStyle = 'rgba(255,255,255,' + (link.strength * 0.15) + ')';
+        ctx.lineWidth = link.strength * 2;
+        ctx.stroke();
+      });
+
+      // draw nodes
+      nodes.forEach(node => {
+        const isSelected = selectedNode === node;
+        const isConnected = selectedNode && links.some(l => 
+          (l.source === selectedNode.id && l.target === node.id) ||
+          (l.target === selectedNode.id && l.source === node.id)
+        );
+
+        // glow for selected
+        if (isSelected) {
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, node.radius + 15, 0, Math.PI * 2);
+          const glow = ctx.createRadialGradient(node.x, node.y, node.radius, node.x, node.y, node.radius + 20);
+          glow.addColorStop(0, node.color + '40');
+          glow.addColorStop(1, 'transparent');
+          ctx.fillStyle = glow;
+          ctx.fill();
+        }
+
+        // node circle
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+        
+        const opacity = selectedNode ? (isSelected || isConnected ? 1 : 0.3) : 1;
+        ctx.fillStyle = node.color + (opacity < 1 ? '4d' : '');
+        ctx.fill();
+        
+        if (isSelected) {
+          ctx.strokeStyle = '#fff';
+          ctx.lineWidth = 3;
+          ctx.stroke();
+        }
+
+        // label
+        ctx.fillStyle = opacity < 1 ? '#666' : '#fff';
+        ctx.font = (isSelected ? 'bold ' : '') + '13px SF Mono, monospace';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(node.label, node.x, node.y);
+      });
+
+      ctx.restore();
+    }
+
+    function loop() {
+      simulate();
+      draw();
+      requestAnimationFrame(loop);
+    }
+
+    function screenToWorld(sx, sy) {
+      return {
+        x: (sx - width / 2 - offsetX) / scale,
+        y: (sy - height / 2 - offsetY) / scale
+      };
+    }
+
+    function getNodeAt(wx, wy) {
+      for (let i = nodes.length - 1; i >= 0; i--) {
+        const node = nodes[i];
+        const dx = wx - node.x;
+        const dy = wy - node.y;
+        if (dx * dx + dy * dy < node.radius * node.radius) {
+          return node;
+        }
+      }
+      return null;
+    }
+
+    function showSidebar(node) {
+      selectedNode = node;
+      document.getElementById('topic-title').innerHTML = 
+        '<span style="color:' + node.color + '">●</span> ' + node.label;
+      document.getElementById('topic-meta').textContent = 
+        node.mentions + ' mentions · ' + node.cluster + ' cluster';
+      
+      const threadsList = document.getElementById('threads-list');
+      threadsList.innerHTML = node.threads.map(t => 
+        '<li style="border-color:' + node.color + '">' + t + '</li>'
+      ).join('');
+
+      const filesList = document.getElementById('files-list');
+      filesList.innerHTML = node.files.slice(0, 8).map(f => 
+        '<span class="file-tag">' + f + '</span>'
+      ).join('');
+
+      sidebar.classList.add('open');
+    }
+
+    canvas.addEventListener('mousedown', e => {
+      const world = screenToWorld(e.clientX, e.clientY);
+      const node = getNodeAt(world.x, world.y);
+      if (node) {
+        dragging = node;
+      } else {
+        panning = true;
+        panStart = { x: e.clientX - offsetX, y: e.clientY - offsetY };
+      }
+    });
+
+    canvas.addEventListener('mousemove', e => {
+      if (dragging) {
+        const world = screenToWorld(e.clientX, e.clientY);
+        dragging.x = world.x;
+        dragging.y = world.y;
+        dragging.vx = 0;
+        dragging.vy = 0;
+      } else if (panning) {
+        offsetX = e.clientX - panStart.x;
+        offsetY = e.clientY - panStart.y;
+      }
+    });
+
+    canvas.addEventListener('mouseup', e => {
+      if (dragging && !panning) {
+        const world = screenToWorld(e.clientX, e.clientY);
+        const node = getNodeAt(world.x, world.y);
+        if (node === dragging) {
+          showSidebar(node);
+        }
+      }
+      dragging = null;
+      panning = false;
+    });
+
+    canvas.addEventListener('wheel', e => {
+      e.preventDefault();
+      const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
+      scale = Math.max(0.3, Math.min(3, scale * zoomFactor));
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.code === 'Space') {
+        e.preventDefault();
+        scale = 1;
+        offsetX = 0;
+        offsetY = 0;
+        selectedNode = null;
+        sidebar.classList.remove('open');
+      } else if (e.code === 'Escape') {
+        selectedNode = null;
+        sidebar.classList.remove('open');
+      }
+    });
+
+    document.getElementById('close-sidebar').addEventListener('click', () => {
+      selectedNode = null;
+      sidebar.classList.remove('open');
+    });
+
+    window.addEventListener('resize', resize);
+    resize();
+    loop();
+  </script>
+</body>
+</html>

@@ -138,6 +138,9 @@ const SCRIPTS = {
   entropy: 'stale.mjs',
   handover: 'handover.mjs',
   handoff: 'handover.mjs',
+  neuron: 'neuron.mjs',
+  network: 'neuron.mjs',
+  knowledge: 'neuron.mjs',
 };
 
 const HELP = `
@@ -207,6 +210,7 @@ Commands:
   pace [opts]            Work rhythm analyzer — peak hours, flow states, break patterns (--sessions, --recs, --days N, --week)
   stale [opts]           Unified staleness detector — tasks, projects, branches, contacts, ideas, threads (--top N, --days N)
   handover [opts]        Auto-generate session handover context (--hours N, --append, --json)
+  neuron [opts]          Knowledge network visualization (--stats, --json)
 
 Examples:
   arc search "database issue"
@@ -578,6 +582,12 @@ switch (cmd) {
   case 'handover':
   case 'handoff':
     run(SCRIPTS.handover, args);
+    break;
+
+  case 'neuron':
+  case 'network':
+  case 'knowledge':
+    run(SCRIPTS.neuron, args);
     break;
 
   default:
