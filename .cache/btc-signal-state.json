@@ -1,12 +1,22 @@
 {
-  "price": 67395,
-  "ema20": 68793.56474320099,
-  "ema200": 95604.06398943724,
+  "price": 67238.06,
+  "ema20": 68647.28523952437,
+  "ema200": 95443.18469999995,
+  "ema4H50": 68110.70075729118,
+  "fundingRate": -0.00004496,
+  "fundingSentiment": "neutral",
   "regime": "BEAR",
   "above20": false,
+  "above4H50": false,
+  "baseAction": "SHORT",
   "action": "SHORT",
   "direction": "short",
-  "stopPrice": 71438.7,
+  "confirmed": true,
+  "confirmations": [
+    "4H EMA ✓"
+  ],
+  "warnings": [],
+  "stopPrice": 71272.34360000001,
   "leverage": 3,
-  "timestamp": "2026-03-08T00:08:37.069Z"
+  "timestamp": "2026-03-08T00:47:02.617Z"
 }
