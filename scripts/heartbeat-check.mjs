@@ -127,6 +127,18 @@ async function runChecks() {
     info.push(`last heartbeat: ${hoursSinceLast.toFixed(1)}h ago`);
   }
 
+  // BTC signal check
+  try {
+    const btcAlert = execSync('./scripts/btc-signal.mjs --alert', { cwd: WORKSPACE, encoding: 'utf-8' }).trim();
+    if (btcAlert) {
+      actions.push(`BTC SIGNAL CHANGE:\n${btcAlert}`);
+    } else {
+      info.push('btc: signal unchanged');
+    }
+  } catch (err) {
+    info.push('btc: check failed');
+  }
+
   // save state
   state.lastChecks.git = Date.now();
   state.lastChecks.tasks = Date.now();

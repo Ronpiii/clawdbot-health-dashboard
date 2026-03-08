@@ -3,6 +3,11 @@
 ## quick check
 run `node scripts/heartbeat-check.mjs` — returns HEARTBEAT_OK or action items
 
+## BTC signal check (every heartbeat)
+- [ ] run `./scripts/arc btc --alert`
+- if signal changed → notify ron immediately via telegram
+- current strategy: regime-filtered 20/200 EMA, 3x leverage
+
 ## detailed status
 run `node scripts/status.mjs` for workspace overview (git, tasks, memory)
 
