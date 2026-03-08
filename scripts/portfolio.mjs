@@ -3,13 +3,15 @@
  * portfolio.mjs - trading portfolio tracker
  * 
  * usage:
- *   arc portfolio                    # dashboard
+ *   arc portfolio                    # dashboard (main)
+ *   arc portfolio --degen            # dashboard (degen account)
  *   arc portfolio add <amount>       # log deposit
  *   arc portfolio withdraw <amount>  # log withdrawal
  *   arc portfolio trade              # log trade (interactive)
  *   arc portfolio trade <entry> <exit> <size> [leverage]
  *   arc portfolio history            # trade history
  *   arc portfolio stats              # detailed stats
+ *   arc portfolio compare            # compare main vs degen
  *   arc portfolio export             # CSV export
  *   arc portfolio reset              # clear all data (careful!)
  */
@@ -21,7 +23,17 @@ import * as readline from 'readline';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const DATA_FILE = join(WORKSPACE, 'data', 'portfolio.json');
+
+// Support multiple portfolios
+const PORTFOLIOS = {
+  main: join(WORKSPACE, 'data', 'portfolio.json'),
+  degen: join(WORKSPACE, 'data', 'portfolio-degen.json'),
+};
+
+// Determine which portfolio from args
+const isDegen = process.argv.includes('--degen') || process.argv.includes('-d');
+const DATA_FILE = isDegen ? PORTFOLIOS.degen : PORTFOLIOS.main;
+const PORTFOLIO_NAME = isDegen ? 'DEGEN' : 'MAIN';
 
 // Ensure data dir exists
 const dataDir = dirname(DATA_FILE);
@@ -157,9 +169,11 @@ function showDashboard(data) {
   const avgWin = getAvgWin(data);
   const avgLoss = getAvgLoss(data);
   
+  const header = `${PORTFOLIO_NAME} — ${new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`;
+  
   console.log(`
 ┌─────────────────────────────────────────────┐
-│  PORTFOLIO — ${new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }).padEnd(20)}       │
+│  ${header.padEnd(40)} │
 ├─────────────────────────────────────────────┤
 │  Balance:     ${formatCurrency(balance).padEnd(10)}                    │
 │  Invested:    ${formatCurrency(deposited).padEnd(10)}                    │
@@ -370,9 +384,48 @@ function resetData() {
   console.log('✓ portfolio reset');
 }
 
+function comparePortfolios() {
+  const mainData = existsSync(PORTFOLIOS.main) 
+    ? JSON.parse(readFileSync(PORTFOLIOS.main, 'utf8')) 
+    : { deposits: [], withdrawals: [], trades: [] };
+  const degenData = existsSync(PORTFOLIOS.degen) 
+    ? JSON.parse(readFileSync(PORTFOLIOS.degen, 'utf8')) 
+    : { deposits: [], withdrawals: [], trades: [] };
+  
+  const mainBalance = getBalance(mainData);
+  const mainDeposited = getTotalDeposited(mainData);
+  const mainPnL = getTotalPnL(mainData);
+  const mainWinRate = getWinRate(mainData);
+  
+  const degenBalance = getBalance(degenData);
+  const degenDeposited = getTotalDeposited(degenData);
+  const degenPnL = getTotalPnL(degenData);
+  const degenWinRate = getWinRate(degenData);
+  
+  const totalBalance = mainBalance + degenBalance;
+  const totalDeposited = mainDeposited + degenDeposited;
+  const totalPnL = mainPnL + degenPnL;
+  
+  console.log(`
+┌─────────────────────────────────────────────────────────────┐
+│  PORTFOLIO COMPARISON                                       │
+├─────────────────────────────────────────────────────────────┤
+│                    MAIN          DEGEN         TOTAL        │
+├─────────────────────────────────────────────────────────────┤
+│  Balance:      ${formatCurrency(mainBalance).padEnd(12)} ${formatCurrency(degenBalance).padEnd(12)} ${formatCurrency(totalBalance).padEnd(12)} │
+│  Invested:     ${formatCurrency(mainDeposited).padEnd(12)} ${formatCurrency(degenDeposited).padEnd(12)} ${formatCurrency(totalDeposited).padEnd(12)} │
+│  P&L:          ${formatCurrency(mainPnL).padEnd(12)} ${formatCurrency(degenPnL).padEnd(12)} ${formatCurrency(totalPnL).padEnd(12)} │
+│  Win Rate:     ${formatPercent(mainWinRate).padEnd(12)} ${formatPercent(degenWinRate).padEnd(12)} ${'—'.padEnd(12)} │
+│  Trades:       ${String(mainData.trades.length).padEnd(12)} ${String(degenData.trades.length).padEnd(12)} ${String(mainData.trades.length + degenData.trades.length).padEnd(12)} │
+├─────────────────────────────────────────────────────────────┤
+│  Allocation:   ${formatPercent(mainBalance/totalBalance || 0).padEnd(12)} ${formatPercent(degenBalance/totalBalance || 0).padEnd(12)} 100%          │
+└─────────────────────────────────────────────────────────────┘`);
+}
+
 // --- Main ---
 async function main() {
-  const args = process.argv.slice(2);
+  // Filter out portfolio selection flags
+  const args = process.argv.slice(2).filter(a => a !== '--degen' && a !== '-d');
   const command = args[0] || 'dashboard';
   const data = loadData();
   
@@ -420,6 +473,11 @@ async function main() {
     case 'export':
     case 'csv':
       exportCSV(data);
+      break;
+      
+    case 'compare':
+    case 'cmp':
+      comparePortfolios();
       break;
       
     case 'reset':
