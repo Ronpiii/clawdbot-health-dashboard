@@ -32,6 +32,8 @@ const SCRIPTS = {
   watch: 'memory-watch.mjs',
   btc: 'btc-signal.mjs',
   signal: 'btc-signal.mjs',
+  portfolio: 'portfolio.mjs',
+  port: 'portfolio.mjs',
   status: 'status.mjs',
   check: 'heartbeat-check.mjs',
   note: 'note.mjs',
@@ -277,6 +279,12 @@ switch (cmd) {
   case 'signal':
     // BTC EMA trading signal
     run(SCRIPTS.btc, args);
+    break;
+    
+  case 'portfolio':
+  case 'port':
+    // trading portfolio tracker
+    run(SCRIPTS.portfolio, args);
     break;
     
   case 'index':
