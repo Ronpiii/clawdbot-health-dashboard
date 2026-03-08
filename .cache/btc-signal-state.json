@@ -1,0 +1,12 @@
+{
+  "price": 67374,
+  "ema20": 68793.36490869932,
+  "ema200": 95604.04311120573,
+  "regime": "BEAR",
+  "above20": false,
+  "action": "SHORT",
+  "direction": "short",
+  "stopPrice": 71416.44,
+  "leverage": 3,
+  "timestamp": "2026-03-08T00:06:37.353Z"
+}

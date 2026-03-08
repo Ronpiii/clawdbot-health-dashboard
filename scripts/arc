@@ -30,6 +30,8 @@ const SCRIPTS = {
   lessons: 'lessons.mjs',
   extract: 'lessons.mjs',
   watch: 'memory-watch.mjs',
+  btc: 'btc-signal.mjs',
+  signal: 'btc-signal.mjs',
   status: 'status.mjs',
   check: 'heartbeat-check.mjs',
   note: 'note.mjs',
@@ -269,6 +271,12 @@ switch (cmd) {
   case 'watch':
     // auto-rebuild semantic index on memory changes
     run(SCRIPTS.watch, args);
+    break;
+    
+  case 'btc':
+  case 'signal':
+    // BTC EMA trading signal
+    run(SCRIPTS.btc, args);
     break;
     
   case 'index':
