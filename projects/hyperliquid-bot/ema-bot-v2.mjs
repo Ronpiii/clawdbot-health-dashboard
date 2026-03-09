@@ -79,21 +79,21 @@ const CONFIG = {
       allowShort: true,
       minSize: 0.1,
     },
-    APE: {  // quality: 9.7 - DISABLED: low margin room
+    APE: {  // DISABLED: old position stuck open (348.3 SHORT @ $0.09), needs manual close
       ema: 200,
       slopeLookback: 48,
       enabled: false,
       allowShort: true,
       minSize: 0.1,
     },
-    DYDX: {  // quality: 9.4 - DISABLED: low margin room
+    DYDX: {  // DISABLED: old position stuck open (201 SHORT @ $0.08), needs manual close
       ema: 200,
       slopeLookback: 48,
       enabled: false,
       allowShort: true,
       minSize: 1,
     },
-    ARB: {  // quality: 6.9 - DISABLED: margin blocked
+    ARB: {  // DISABLED: margin blocked, never opened
       ema: 200,
       slopeLookback: 48,
       enabled: false,
@@ -115,7 +115,7 @@ const CONFIG = {
       allowShort: true,
       minSize: 1,
     },
-    VVV: {  // strong momentum - DISABLED: low margin room
+    VVV: {  // DISABLED: old position stuck open (3.1 LONG @ $5.27), needs manual close
       ema: 200,
       slopeLookback: 48,
       enabled: false,
