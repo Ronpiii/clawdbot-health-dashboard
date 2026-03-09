@@ -54,9 +54,9 @@ const CONFIG = {
   },
   
   // Asset configurations for TREND mode (200 EMA + slope)
-  // FULL DEGEN: all assets enabled, 10x leverage, 50% position sizing
+  // DEGEN MODE: high-volume assets only, 10x leverage, 50% position sizing
   trend: {
-    // === CORE POSITIONS ===
+    // === TIER-1: ESTABLISHED, HIGH VOLUME ===
     BTC: {
       ema: 200,
       slopeLookback: 48,
@@ -71,89 +71,90 @@ const CONFIG = {
       allowShort: true,
       minSize: 0.01,
     },
-    // === HIGH QUALITY SHORTS (from scanner) ===
-    OP: {  // quality: 13.3
-      ema: 200,
-      slopeLookback: 48,
-      enabled: false,  // Disabled: JSON deserialization error on order
-      allowShort: true,
-      minSize: 1,
-    },
-    APE: {  // quality: 9.7
+    // === TIER-2: STRONG VOLUME, GOOD LIQUIDITY ===
+    APE: {  // quality: 9.7, high volume
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 0.1,
     },
-    DYDX: {  // quality: 9.4
+    DYDX: {  // quality: 9.4, high volume
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 1,
     },
-    LDO: {  // quality: 7.8
+    LDO: {  // quality: 7.8, high volume
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 0.1,
     },
-    ARB: {  // quality: 6.9
+    ARB: {  // quality: 6.9, high volume
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 1,
     },
-    // === ADDITIONAL MOMENTUM SHORTS ===
-    HYPE: {
+    // === TIER-3: VOLUME + MOMENTUM ===
+    HYPE: {  // active, decent volume
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 0.1,
     },
-    VVV: {
+    VVV: {  // strong momentum, 30% slope
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 0.1,
     },
-    GRASS: {
+    GRASS: {  // 13% slope, reasonable volume
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 1,
     },
-    MORPHO: {
+    // === DISABLED: LOW VOLUME / LOW LIQUIDITY ===
+    OP: {  // JSON deserialization error
       ema: 200,
       slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 0.1,
-    },
-    IP: {
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
+      enabled: false,
       allowShort: true,
       minSize: 1,
     },
-    AR: {
+    MORPHO: {  // low volume, skip
       ema: 200,
       slopeLookback: 48,
-      enabled: true,
+      enabled: false,
       allowShort: true,
       minSize: 0.1,
     },
-    MERL: {
+    IP: {  // low volume, illiquid
       ema: 200,
       slopeLookback: 48,
-      enabled: true,
+      enabled: false,
+      allowShort: true,
+      minSize: 1,
+    },
+    AR: {  // low volume, illiquid
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,
+      allowShort: true,
+      minSize: 0.1,
+    },
+    MERL: {  // micro-cap, avoid
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,
       allowShort: true,
       minSize: 100,
     },
