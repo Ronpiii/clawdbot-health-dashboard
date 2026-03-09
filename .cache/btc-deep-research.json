@@ -1,0 +1,1432 @@
+{
+  "runDate": "2026-03-09T02:10:43.141Z",
+  "buyHold": 0.5669588525853299,
+  "atrResults": [
+    {
+      "name": "ATR(10) 1.5/2 [signal]",
+      "params": {
+        "atrPeriod": 10,
+        "atrMult": 1.5,
+        "exitMult": 2,
+        "exitType": "signal"
+      },
+      "trades": 7,
+      "wins": 2,
+      "losses": 5,
+      "winRate": 0.2857142857142857,
+      "avgWin": 0.8931129581430415,
+      "avgLoss": 0.06155328769255107,
+      "ev": 0.2112084968319039,
+      "totalPnl": 1.4784594778233273,
+      "pf": 5.803835938733276,
+      "maxDD": 0.1327106083520488,
+      "totalRet": 1.3902670436996891,
+      "kelly": 0.23648576017869918,
+      "sharpe": 0.6991879053341781,
+      "beatsBH": false,
+      "avgBars": 101.42857142857143,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 0.3333333333333333
+        },
+        "bear": {
+          "count": 1,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.3333333333333333
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 2,
+        "TRAIL": 0,
+        "SIG": 4
+      }
+    },
+    {
+      "name": "ATR(20) 1.5/2 [signal]",
+      "params": {
+        "atrPeriod": 20,
+        "atrMult": 1.5,
+        "exitMult": 2,
+        "exitType": "signal"
+      },
+      "trades": 6,
+      "wins": 2,
+      "losses": 4,
+      "winRate": 0.3333333333333333,
+      "avgWin": 0.7719387161238008,
+      "avgLoss": 0.08,
+      "ev": 0.2039795720412669,
+      "totalPnl": 1.2238774322476014,
+      "pf": 4.824616975773755,
+      "maxDD": 0.14437499999999992,
+      "totalRet": 1.1179150716764001,
+      "kelly": 0.264243220064834,
+      "sharpe": 0.695890289675999,
+      "beatsBH": false,
+      "avgBars": 118.16666666666667,
+      "byRegime": {
+        "bull": {
+          "count": 2,
+          "wr": 0.5
+        },
+        "bear": {
+          "count": 1,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.3333333333333333
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 4,
+        "TRAIL": 0,
+        "SIG": 2
+      }
+    },
+    {
+      "name": "ATR(14) 1.5/2 [signal]",
+      "params": {
+        "atrPeriod": 14,
+        "atrMult": 1.5,
+        "exitMult": 2,
+        "exitType": "signal"
+      },
+      "trades": 6,
+      "wins": 2,
+      "losses": 4,
+      "winRate": 0.3333333333333333,
+      "avgWin": 0.7372447464154112,
+      "avgLoss": 0.07057501190232636,
+      "ev": 0.19869824087025278,
+      "totalPnl": 1.1921894452215167,
+      "pf": 5.223128743043892,
+      "maxDD": 0.11149784924717154,
+      "totalRet": 1.127878602794655,
+      "kelly": 0.26951462433113554,
+      "sharpe": 0.7220759284579006,
+      "beatsBH": false,
+      "avgBars": 113.5,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 0.3333333333333333
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.3333333333333333
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 2,
+        "TRAIL": 0,
+        "SIG": 4
+      }
+    },
+    {
+      "name": "ATR(10) 2.5/1.5 [signal]",
+      "params": {
+        "atrPeriod": 10,
+        "atrMult": 2.5,
+        "exitMult": 1.5,
+        "exitType": "signal"
+      },
+      "trades": 5,
+      "wins": 4,
+      "losses": 1,
+      "winRate": 0.8,
+      "avgWin": 0.21808617216959947,
+      "avgLoss": 0.06406184943610886,
+      "ev": 0.16165656784845778,
+      "totalPnl": 0.8082828392422889,
+      "pf": 13.61722610816002,
+      "maxDD": 0.060057983846352,
+      "totalRet": 0.9283288622363991,
+      "kelly": 0.7412508837228894,
+      "sharpe": 1.26820354978948,
+      "beatsBH": false,
+      "avgBars": 41.8,
+      "byRegime": {
+        "bull": {
+          "count": 2,
+          "wr": 1
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 0,
+        "TRAIL": 0,
+        "SIG": 5
+      }
+    },
+    {
+      "name": "ATR(14) 2/1.5 [signal]",
+      "params": {
+        "atrPeriod": 14,
+        "atrMult": 2,
+        "exitMult": 1.5,
+        "exitType": "signal"
+      },
+      "trades": 7,
+      "wins": 4,
+      "losses": 3,
+      "winRate": 0.5714285714285714,
+      "avgWin": 0.30227554637523263,
+      "avgLoss": 0.07242772654640789,
+      "ev": 0.14168842940881526,
+      "totalPnl": 0.9918190058617069,
+      "pf": 5.56463775754994,
+      "maxDD": 0.07499999999999997,
+      "totalRet": 1.173227330069814,
+      "kelly": 0.4687393046109293,
+      "sharpe": 1.1379921338638719,
+      "beatsBH": false,
+      "avgBars": 36.857142857142854,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 4,
+          "wr": 0.5
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 0,
+        "SIG": 6
+      }
+    },
+    {
+      "name": "ATR(14) 2.5/1.5 [signal]",
+      "params": {
+        "atrPeriod": 14,
+        "atrMult": 2.5,
+        "exitMult": 1.5,
+        "exitType": "signal"
+      },
+      "trades": 5,
+      "wins": 4,
+      "losses": 1,
+      "winRate": 0.8,
+      "avgWin": 0.18491947810436743,
+      "avgLoss": 0.06406184943610886,
+      "ev": 0.13512321259627216,
+      "totalPnl": 0.6756160629813608,
+      "pf": 11.546309058017075,
+      "maxDD": 0.060057983846352,
+      "totalRet": 0.751531167617844,
+      "kelly": 0.7307137894906314,
+      "sharpe": 1.2879889076070954,
+      "beatsBH": false,
+      "avgBars": 39.4,
+      "byRegime": {
+        "bull": {
+          "count": 2,
+          "wr": 1
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 0,
+        "TRAIL": 0,
+        "SIG": 5
+      }
+    },
+    {
+      "name": "ATR(10) 2/1.5 [signal]",
+      "params": {
+        "atrPeriod": 10,
+        "atrMult": 2,
+        "exitMult": 1.5,
+        "exitType": "signal"
+      },
+      "trades": 7,
+      "wins": 4,
+      "losses": 3,
+      "winRate": 0.5714285714285714,
+      "avgWin": 0.28646205353326315,
+      "avgLoss": 0.07242772654640789,
+      "ev": 0.13265214778483267,
+      "totalPnl": 0.9285650344938288,
+      "pf": 5.273524697289572,
+      "maxDD": 0.075,
+      "totalRet": 1.076975515784237,
+      "kelly": 0.4630705747888158,
+      "sharpe": 1.11350699977474,
+      "beatsBH": false,
+      "avgBars": 39.142857142857146,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 4,
+          "wr": 0.5
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 0,
+        "SIG": 6
+      }
+    },
+    {
+      "name": "ATR(20) 2.5/1.5 [signal]",
+      "params": {
+        "atrPeriod": 20,
+        "atrMult": 2.5,
+        "exitMult": 1.5,
+        "exitType": "signal"
+      },
+      "trades": 5,
+      "wins": 4,
+      "losses": 1,
+      "winRate": 0.8,
+      "avgWin": 0.17417012507026047,
+      "avgLoss": 0.06406184943610886,
+      "ev": 0.1265237301689866,
+      "totalPnl": 0.6326186508449331,
+      "pf": 10.875123125751559,
+      "maxDD": 0.060057983846352,
+      "totalRet": 0.6974518298939453,
+      "kelly": 0.7264376144757706,
+      "sharpe": 1.305431516310522,
+      "beatsBH": false,
+      "avgBars": 43.4,
+      "byRegime": {
+        "bull": {
+          "count": 2,
+          "wr": 1
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 0,
+        "TRAIL": 0,
+        "SIG": 5
+      }
+    },
+    {
+      "name": "ATR(10) 2.5/2 [fixed]",
+      "params": {
+        "atrPeriod": 10,
+        "atrMult": 2.5,
+        "exitMult": 2,
+        "exitType": "fixed"
+      },
+      "trades": 7,
+      "wins": 6,
+      "losses": 1,
+      "winRate": 0.8571428571428571,
+      "avgWin": 0.16,
+      "avgLoss": 0.08,
+      "ev": 0.12571428571428572,
+      "totalPnl": 0.8800000000000001,
+      "pf": 12,
+      "maxDD": 0.075,
+      "totalRet": 1.1395812082031236,
+      "kelly": 0.7857142857142856,
+      "sharpe": 2.410254726447992,
+      "beatsBH": false,
+      "avgBars": 25.571428571428573,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 1
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 4,
+          "wr": 0.75
+        }
+      },
+      "byReason": {
+        "TP": 6,
+        "STOP": 1,
+        "TRAIL": 0,
+        "SIG": 0
+      }
+    },
+    {
+      "name": "ATR(14) 2.5/2 [fixed]",
+      "params": {
+        "atrPeriod": 14,
+        "atrMult": 2.5,
+        "exitMult": 2,
+        "exitType": "fixed"
+      },
+      "trades": 6,
+      "wins": 5,
+      "losses": 1,
+      "winRate": 0.8333333333333334,
+      "avgWin": 0.16,
+      "avgLoss": 0.08,
+      "ev": 0.12000000000000001,
+      "totalPnl": 0.7200000000000001,
+      "pf": 10,
+      "maxDD": 0.075,
+      "totalRet": 0.8605053984374991,
+      "kelly": 0.75,
+      "sharpe": 2,
+      "beatsBH": false,
+      "avgBars": 28.666666666666668,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 1
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        }
+      },
+      "byReason": {
+        "TP": 5,
+        "STOP": 1,
+        "TRAIL": 0,
+        "SIG": 0
+      }
+    }
+  ],
+  "donchianResults": [
+    {
+      "name": "Donchian(30) [signal]",
+      "params": {
+        "period": 30,
+        "exitType": "signal"
+      },
+      "trades": 8,
+      "wins": 4,
+      "losses": 4,
+      "winRate": 0.5,
+      "avgWin": 0.2902404398073692,
+      "avgLoss": 0.08,
+      "ev": 0.10512021990368461,
+      "totalPnl": 0.8409617592294769,
+      "pf": 3.628005497592115,
+      "maxDD": 0.144375,
+      "totalRet": 0.8967527447975358,
+      "kelly": 0.3621832297851128,
+      "sharpe": 0.9140244800677231,
+      "beatsBH": false,
+      "avgBars": 67.625,
+      "byRegime": {
+        "bull": {
+          "count": 4,
+          "wr": 0.25
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 4,
+          "wr": 0.75
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 4,
+        "TRAIL": 0,
+        "SIG": 4
+      }
+    },
+    {
+      "name": "Donchian(15) [signal]",
+      "params": {
+        "period": 15,
+        "exitType": "signal"
+      },
+      "trades": 14,
+      "wins": 5,
+      "losses": 9,
+      "winRate": 0.35714285714285715,
+      "avgWin": 0.3275173415514231,
+      "avgLoss": 0.058861971501425976,
+      "ev": 0.07913064030316297,
+      "totalPnl": 1.1078289642442816,
+      "pf": 3.091199190215223,
+      "maxDD": 0.26499678888133277,
+      "totalRet": 1.1653918897478885,
+      "kelly": 0.2416074823040745,
+      "sharpe": 0.8166477389928545,
+      "beatsBH": false,
+      "avgBars": 36.92857142857143,
+      "byRegime": {
+        "bull": {
+          "count": 6,
+          "wr": 0.3333333333333333
+        },
+        "bear": {
+          "count": 1,
+          "wr": 0
+        },
+        "range": {
+          "count": 7,
+          "wr": 0.42857142857142855
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 5,
+        "TRAIL": 0,
+        "SIG": 9
+      }
+    },
+    {
+      "name": "Donchian(50) [fixed]",
+      "params": {
+        "period": 50,
+        "exitType": "fixed"
+      },
+      "trades": 12,
+      "wins": 7,
+      "losses": 5,
+      "winRate": 0.5833333333333334,
+      "avgWin": 0.16,
+      "avgLoss": 0.07305026869725058,
+      "ev": 0.0628957213761456,
+      "totalPnl": 0.7547486565137472,
+      "pf": 3.0663816026241504,
+      "maxDD": 0.13205452385570216,
+      "totalRet": 0.865310794520472,
+      "kelly": 0.39309825860090997,
+      "sharpe": 1.1526674818710496,
+      "beatsBH": false,
+      "avgBars": 33.416666666666664,
+      "byRegime": {
+        "bull": {
+          "count": 7,
+          "wr": 0.42857142857142855
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.8
+        }
+      },
+      "byReason": {
+        "TP": 7,
+        "STOP": 3,
+        "TRAIL": 0,
+        "SIG": 2
+      }
+    },
+    {
+      "name": "Donchian(20) [signal]",
+      "params": {
+        "period": 20,
+        "exitType": "signal"
+      },
+      "trades": 13,
+      "wins": 5,
+      "losses": 8,
+      "winRate": 0.38461538461538464,
+      "avgWin": 0.26336168268699406,
+      "avgLoss": 0.0652856244860528,
+      "ev": 0.06111718596511907,
+      "totalPnl": 0.794523417546548,
+      "pf": 2.5212449597466224,
+      "maxDD": 0.2949947771943762,
+      "totalRet": 0.7289505417333683,
+      "kelly": 0.232065596413116,
+      "sharpe": 0.6823929451302609,
+      "beatsBH": false,
+      "avgBars": 41.30769230769231,
+      "byRegime": {
+        "bull": {
+          "count": 7,
+          "wr": 0.2857142857142857
+        },
+        "bear": {
+          "count": 1,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.6
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 5,
+        "TRAIL": 0,
+        "SIG": 8
+      }
+    },
+    {
+      "name": "Donchian(50) [trailing]",
+      "params": {
+        "period": 50,
+        "exitType": "trailing"
+      },
+      "trades": 11,
+      "wins": 7,
+      "losses": 4,
+      "winRate": 0.6363636363636364,
+      "avgWin": 0.1262868362550948,
+      "avgLoss": 0.08,
+      "ev": 0.05127344125324214,
+      "totalPnl": 0.5640078537856635,
+      "pf": 2.762524543080198,
+      "maxDD": 0.07499999999999998,
+      "totalRet": 0.5671305374000863,
+      "kelly": 0.4060078055140415,
+      "sharpe": 0.8237735417728856,
+      "beatsBH": false,
+      "avgBars": 20.454545454545453,
+      "byRegime": {
+        "bull": {
+          "count": 6,
+          "wr": 0.5
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.8
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 4,
+        "TRAIL": 7,
+        "SIG": 0
+      }
+    },
+    {
+      "name": "Donchian(30) [fixed]",
+      "params": {
+        "period": 30,
+        "exitType": "fixed"
+      },
+      "trades": 16,
+      "wins": 9,
+      "losses": 7,
+      "winRate": 0.5625,
+      "avgWin": 0.14269647428919724,
+      "avgLoss": 0.07706553420005688,
+      "ev": 0.046550595575148575,
+      "totalPnl": 0.7448095292023772,
+      "pf": 2.3806607897950154,
+      "maxDD": 0.20854687499999983,
+      "totalRet": 0.8165940749410238,
+      "kelly": 0.32622106332358525,
+      "sharpe": 0.9842630893639681,
+      "beatsBH": false,
+      "avgBars": 30.6875,
+      "byRegime": {
+        "bull": {
+          "count": 9,
+          "wr": 0.3333333333333333
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 7,
+          "wr": 0.8571428571428571
+        }
+      },
+      "byReason": {
+        "TP": 8,
+        "STOP": 6,
+        "TRAIL": 0,
+        "SIG": 2
+      }
+    },
+    {
+      "name": "Donchian(10) [signal]",
+      "params": {
+        "period": 10,
+        "exitType": "signal"
+      },
+      "trades": 21,
+      "wins": 7,
+      "losses": 14,
+      "winRate": 0.3333333333333333,
+      "avgWin": 0.22988666241843722,
+      "avgLoss": 0.06073670009465027,
+      "ev": 0.036137754076378883,
+      "totalPnl": 0.7588928356039565,
+      "pf": 1.892485614629941,
+      "maxDD": 0.350448462420054,
+      "totalRet": 0.5772931641764577,
+      "kelly": 0.15719813275030867,
+      "sharpe": 0.5566064374507809,
+      "beatsBH": false,
+      "avgBars": 25.61904761904762,
+      "byRegime": {
+        "bull": {
+          "count": 8,
+          "wr": 0.25
+        },
+        "bear": {
+          "count": 2,
+          "wr": 0
+        },
+        "range": {
+          "count": 11,
+          "wr": 0.45454545454545453
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 7,
+        "TRAIL": 0,
+        "SIG": 14
+      }
+    },
+    {
+      "name": "Donchian(30) [trailing]",
+      "params": {
+        "period": 30,
+        "exitType": "trailing"
+      },
+      "trades": 15,
+      "wins": 7,
+      "losses": 8,
+      "winRate": 0.4666666666666667,
+      "avgWin": 0.167906907892096,
+      "avgLoss": 0.08,
+      "ev": 0.0356898903496448,
+      "totalPnl": 0.5353483552446721,
+      "pf": 1.8364818050698,
+      "maxDD": 0.20854687499999985,
+      "totalRet": 0.44831606024451304,
+      "kelly": 0.21255760586443898,
+      "sharpe": 0.576567898697802,
+      "beatsBH": false,
+      "avgBars": 20.4,
+      "byRegime": {
+        "bull": {
+          "count": 10,
+          "wr": 0.3
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.8
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 8,
+        "TRAIL": 7,
+        "SIG": 0
+      }
+    },
+    {
+      "name": "Donchian(20) [fixed]",
+      "params": {
+        "period": 20,
+        "exitType": "fixed"
+      },
+      "trades": 24,
+      "wins": 11,
+      "losses": 13,
+      "winRate": 0.4583333333333333,
+      "avgWin": 0.1471413581733098,
+      "avgLoss": 0.07049865356634281,
+      "ev": 0.029253018480997987,
+      "totalPnl": 0.7020724435439517,
+      "pf": 1.7660511208129948,
+      "maxDD": 0.3433232381672486,
+      "totalRet": 0.6873244525755057,
+      "kelly": 0.19880894701639512,
+      "sharpe": 0.7721542740798549,
+      "beatsBH": false,
+      "avgBars": 18.958333333333332,
+      "byRegime": {
+        "bull": {
+          "count": 15,
+          "wr": 0.4
+        },
+        "bear": {
+          "count": 1,
+          "wr": 0
+        },
+        "range": {
+          "count": 8,
+          "wr": 0.625
+        }
+      },
+      "byReason": {
+        "TP": 10,
+        "STOP": 9,
+        "TRAIL": 0,
+        "SIG": 5
+      }
+    },
+    {
+      "name": "Donchian(15) [fixed]",
+      "params": {
+        "period": 15,
+        "exitType": "fixed"
+      },
+      "trades": 26,
+      "wins": 11,
+      "losses": 15,
+      "winRate": 0.4230769230769231,
+      "avgWin": 0.14916970505424662,
+      "avgLoss": 0.061866924876638536,
+      "ev": 0.02741780317104366,
+      "totalPnl": 0.7128628824471351,
+      "pf": 1.7681680034671945,
+      "maxDD": 0.35570960471151825,
+      "totalRet": 0.706103413570295,
+      "kelly": 0.1838027578124725,
+      "sharpe": 0.78515898105407,
+      "beatsBH": false,
+      "avgBars": 17.76923076923077,
+      "byRegime": {
+        "bull": {
+          "count": 15,
+          "wr": 0.4
+        },
+        "bear": {
+          "count": 1,
+          "wr": 0
+        },
+        "range": {
+          "count": 10,
+          "wr": 0.5
+        }
+      },
+      "byReason": {
+        "TP": 10,
+        "STOP": 9,
+        "TRAIL": 0,
+        "SIG": 7
+      }
+    }
+  ],
+  "combinedResults": [
+    {
+      "name": "ATR + SMA200 filter",
+      "trades": 7,
+      "wins": 5,
+      "losses": 2,
+      "winRate": 0.7142857142857143,
+      "avgWin": 0.17008910063050303,
+      "avgLoss": 0.07203092471805443,
+      "ev": 0.10091195053091519,
+      "totalPnl": 0.7063836537164063,
+      "pf": 5.9033360079809745,
+      "maxDD": 0.07499999999999997,
+      "totalRet": 0.7985507900892728,
+      "kelly": 0.5932887536993543,
+      "sharpe": 1.2315261482846205,
+      "beatsBH": false,
+      "avgBars": 23.714285714285715,
+      "byRegime": {
+        "bull": {
+          "count": 4,
+          "wr": 0.75
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 4,
+        "SIG": 2
+      }
+    },
+    {
+      "name": "ATR + ADX>20 filter",
+      "trades": 7,
+      "wins": 4,
+      "losses": 3,
+      "winRate": 0.5714285714285714,
+      "avgWin": 0.18069308454660285,
+      "avgLoss": 0.07242772654640789,
+      "ev": 0.07221273693531254,
+      "totalPnl": 0.5054891585471878,
+      "pf": 3.3264072229912154,
+      "maxDD": 0.07499999999999997,
+      "totalRet": 0.4970018384025534,
+      "kelly": 0.3996430583744228,
+      "sharpe": 0.8107182626917053,
+      "beatsBH": false,
+      "avgBars": 17.428571428571427,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 4,
+          "wr": 0.5
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 4,
+        "SIG": 2
+      }
+    },
+    {
+      "name": "Trend EMA(12/26) + SMA200",
+      "trades": 13,
+      "wins": 7,
+      "losses": 6,
+      "winRate": 0.5384615384615384,
+      "avgWin": 0.11209496605120063,
+      "avgLoss": 0.041846790473865136,
+      "ev": 0.041044924578093354,
+      "totalPnl": 0.5335840195152136,
+      "pf": 3.12514911925546,
+      "maxDD": 0.11444021041246155,
+      "totalRet": 0.4883251149521413,
+      "kelly": 0.3661620679678481,
+      "sharpe": 0.6213441739798687,
+      "beatsBH": false,
+      "avgBars": 15.615384615384615,
+      "byRegime": {
+        "bull": {
+          "count": 8,
+          "wr": 0.625
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.4
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 0,
+        "TRAIL": 7,
+        "SIG": 6
+      }
+    },
+    {
+      "name": "ATR + RSI<70 filter",
+      "trades": 5,
+      "wins": 2,
+      "losses": 3,
+      "winRate": 0.4,
+      "avgWin": 0.19873956901342993,
+      "avgLoss": 0.07242772654640789,
+      "ev": 0.03603919167752724,
+      "totalPnl": 0.18019595838763622,
+      "pf": 1.8293138874662687,
+      "maxDD": 0.07500000000000002,
+      "totalRet": 0.13678159928102068,
+      "kelly": 0.18133878349656618,
+      "sharpe": 0.35330243832722746,
+      "beatsBH": false,
+      "avgBars": 22.2,
+      "byRegime": {
+        "bull": {
+          "count": 1,
+          "wr": 0
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 4,
+          "wr": 0.5
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 2,
+        "SIG": 2
+      }
+    },
+    {
+      "name": "Trend EMA(9/21) + SMA200",
+      "trades": 17,
+      "wins": 6,
+      "losses": 11,
+      "winRate": 0.35294117647058826,
+      "avgWin": 0.13257199847837245,
+      "avgLoss": 0.03656494361682804,
+      "ev": 0.023130447710889773,
+      "totalPnl": 0.39321761108512615,
+      "pf": 1.9776319068831179,
+      "maxDD": 0.20081961130445275,
+      "totalRet": 0.3008324500272345,
+      "kelly": 0.17447460984502883,
+      "sharpe": 0.44295793863282523,
+      "beatsBH": false,
+      "avgBars": 13.764705882352942,
+      "byRegime": {
+        "bull": {
+          "count": 11,
+          "wr": 0.36363636363636365
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 6,
+          "wr": 0.3333333333333333
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 6,
+        "SIG": 10
+      }
+    },
+    {
+      "name": "Multi-Indicator + trailing",
+      "trades": 88,
+      "wins": 34,
+      "losses": 54,
+      "winRate": 0.38636363636363635,
+      "avgWin": 0.05870432578829464,
+      "avgLoss": 0.01669081611388409,
+      "ev": 0.012439125075594052,
+      "totalPnl": 1.0946430066522765,
+      "pf": 2.2145102223608237,
+      "maxDD": 0.1977796589725056,
+      "totalRet": 1.493691397972231,
+      "kelly": 0.21189452239777457,
+      "sharpe": 1.2908335171951983,
+      "beatsBH": false,
+      "avgBars": 3.022727272727273,
+      "byRegime": {
+        "bull": {
+          "count": 55,
+          "wr": 0.34545454545454546
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 33,
+          "wr": 0.45454545454545453
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 0,
+        "TRAIL": 0,
+        "SIG": 88
+      }
+    },
+    {
+      "name": "Trend EMA(20/50) + SMA200",
+      "trades": 8,
+      "wins": 3,
+      "losses": 5,
+      "winRate": 0.375,
+      "avgWin": 0.06301504524831787,
+      "avgLoss": 0.05203002180720985,
+      "ev": -0.008888121661386948,
+      "totalPnl": -0.07110497329109558,
+      "pf": 0.7266771343876602,
+      "maxDD": 0.12277790376542777,
+      "totalRet": -0.07888889689335538,
+      "kelly": -0.14104761214345415,
+      "sharpe": -0.23076137083616977,
+      "beatsBH": false,
+      "avgBars": 13.375,
+      "byRegime": {
+        "bull": {
+          "count": 4,
+          "wr": 0.25
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 4,
+          "wr": 0.5
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 3,
+        "SIG": 4
+      }
+    }
+  ],
+  "topOverall": [
+    {
+      "name": "ATR(10) 2/1 [fixed]",
+      "params": {
+        "atrPeriod": 10,
+        "atrMult": 2,
+        "exitMult": 1,
+        "exitType": "fixed"
+      },
+      "trades": 11,
+      "wins": 8,
+      "losses": 3,
+      "winRate": 0.7272727272727273,
+      "avgWin": 0.10239745664128513,
+      "avgLoss": 0.0678464529884558,
+      "ev": 0.055967299469537594,
+      "totalPnl": 0.6156402941649135,
+      "pf": 4.024674428053327,
+      "maxDD": 0.06864499706542018,
+      "totalRet": 0.6902757497787934,
+      "kelly": 0.5465692342887003,
+      "sharpe": 1.224380173259961,
+      "beatsBH": false,
+      "avgBars": 14.363636363636363,
+      "byRegime": {
+        "bull": {
+          "count": 6,
+          "wr": 0.8333333333333334
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.6
+        }
+      },
+      "byReason": {
+        "TP": 4,
+        "STOP": 0,
+        "TRAIL": 0,
+        "SIG": 7
+      }
+    },
+    {
+      "name": "ATR(14) 2/1.5 [fixed]",
+      "params": {
+        "atrPeriod": 14,
+        "atrMult": 2,
+        "exitMult": 1.5,
+        "exitType": "fixed"
+      },
+      "trades": 11,
+      "wins": 7,
+      "losses": 4,
+      "winRate": 0.6363636363636364,
+      "avgWin": 0.13995676481091532,
+      "avgLoss": 0.07088483974134185,
+      "ev": 0.06328709042827634,
+      "totalPnl": 0.6961579947110397,
+      "pf": 3.455242888505194,
+      "maxDD": 0.13245653050939027,
+      "totalRet": 0.7891273397319183,
+      "kelly": 0.45219029257913046,
+      "sharpe": 1.174207627975517,
+      "beatsBH": false,
+      "avgBars": 17.727272727272727,
+      "byRegime": {
+        "bull": {
+          "count": 6,
+          "wr": 0.6666666666666666
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.6
+        }
+      },
+      "byReason": {
+        "TP": 6,
+        "STOP": 1,
+        "TRAIL": 0,
+        "SIG": 4
+      }
+    },
+    {
+      "name": "Donchian(50) [trailing]",
+      "params": {
+        "period": 50,
+        "exitType": "trailing"
+      },
+      "trades": 11,
+      "wins": 7,
+      "losses": 4,
+      "winRate": 0.6363636363636364,
+      "avgWin": 0.1262868362550948,
+      "avgLoss": 0.08,
+      "ev": 0.05127344125324214,
+      "totalPnl": 0.5640078537856635,
+      "pf": 2.762524543080198,
+      "maxDD": 0.07499999999999998,
+      "totalRet": 0.5671305374000863,
+      "kelly": 0.4060078055140415,
+      "sharpe": 0.8237735417728856,
+      "beatsBH": false,
+      "avgBars": 20.454545454545453,
+      "byRegime": {
+        "bull": {
+          "count": 6,
+          "wr": 0.5
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.8
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 4,
+        "TRAIL": 7,
+        "SIG": 0
+      }
+    },
+    {
+      "name": "ATR(14) 2/1 [fixed]",
+      "params": {
+        "atrPeriod": 14,
+        "atrMult": 2,
+        "exitMult": 1,
+        "exitType": "fixed"
+      },
+      "trades": 11,
+      "wins": 7,
+      "losses": 4,
+      "winRate": 0.6363636363636364,
+      "avgWin": 0.11463543761881376,
+      "avgLoss": 0.06534451607032701,
+      "ev": 0.04918818173185346,
+      "totalPnl": 0.541069999050388,
+      "pf": 3.070066593147854,
+      "maxDD": 0.1129708347540396,
+      "totalRet": 0.5739340806522719,
+      "kelly": 0.4290835604903801,
+      "sharpe": 1.0183984994227715,
+      "beatsBH": false,
+      "avgBars": 13.909090909090908,
+      "byRegime": {
+        "bull": {
+          "count": 6,
+          "wr": 0.6666666666666666
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.6
+        }
+      },
+      "byReason": {
+        "TP": 4,
+        "STOP": 0,
+        "TRAIL": 0,
+        "SIG": 7
+      }
+    },
+    {
+      "name": "ATR(10) 2/1.5 [fixed]",
+      "params": {
+        "atrPeriod": 10,
+        "atrMult": 2,
+        "exitMult": 1.5,
+        "exitType": "fixed"
+      },
+      "trades": 11,
+      "wins": 7,
+      "losses": 4,
+      "winRate": 0.6363636363636364,
+      "avgWin": 0.12412906181231535,
+      "avgLoss": 0.07432079490980592,
+      "ev": 0.0519654775497258,
+      "totalPnl": 0.5716202530469838,
+      "pf": 2.9228139773689503,
+      "maxDD": 0.144375,
+      "totalRet": 0.6051720138873096,
+      "kelly": 0.4186407017906752,
+      "sharpe": 0.9904235630429165,
+      "beatsBH": false,
+      "avgBars": 18.181818181818183,
+      "byRegime": {
+        "bull": {
+          "count": 6,
+          "wr": 0.6666666666666666
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 5,
+          "wr": 0.6
+        }
+      },
+      "byReason": {
+        "TP": 5,
+        "STOP": 2,
+        "TRAIL": 0,
+        "SIG": 4
+      }
+    }
+  ],
+  "walkForward": {
+    "inSample": {
+      "trades": 6,
+      "wins": 4,
+      "losses": 2,
+      "winRate": 0.6666666666666666,
+      "avgWin": 0.20231563524458726,
+      "avgLoss": 0.07203092471805443,
+      "ev": 0.1108667819237067,
+      "totalPnl": 0.6652006915422403,
+      "pf": 5.6174659991246,
+      "maxDD": 0.07499999999999997,
+      "totalRet": 0.7343807910017797,
+      "kelly": 0.5479891941602808,
+      "sharpe": 1.2009319392931017,
+      "beatsBH": false,
+      "avgBars": 19.166666666666668,
+      "byRegime": {
+        "bull": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 3,
+          "wr": 0.6666666666666666
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 1,
+        "TRAIL": 3,
+        "SIG": 1
+      }
+    },
+    "outSample": {
+      "trades": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "avgWin": 0.019697353676407178,
+      "avgLoss": 0.0732213302031148,
+      "ev": -0.02676198826335381,
+      "totalPnl": -0.05352397652670762,
+      "pf": 0.2690111422691589,
+      "maxDD": 0.06864499706542009,
+      "totalRet": -0.051446344980019786,
+      "kelly": -1.3586590718228517,
+      "sharpe": -0.49576793876990916,
+      "beatsBH": true,
+      "avgBars": 21,
+      "byRegime": {
+        "bull": {
+          "count": 0,
+          "wr": 0
+        },
+        "bear": {
+          "count": 0,
+          "wr": 0
+        },
+        "range": {
+          "count": 2,
+          "wr": 0.5
+        }
+      },
+      "byReason": {
+        "TP": 0,
+        "STOP": 0,
+        "TRAIL": 0,
+        "SIG": 2
+      }
+    }
+  }
+}

@@ -57,3 +57,4 @@ One-liners. Each earned the hard way. Read on boot, append when you screw up.
 - keep going until told otherwise — don't wait for permission between steps
 - moltbook API times out intermittently — skip and retry next heartbeat
 - vercel hobby plan blocks deploys from unrecognized git authors — use account owner's git config
+- walk-forward validation essential: in-sample EV can degrade 100%+ out-of-sample (btc strategy research 2026-03-09)
