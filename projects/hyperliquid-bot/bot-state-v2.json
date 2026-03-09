@@ -1,24 +1,24 @@
 {
   "positions": {
-    "HYPE": {
-      "direction": "LONG",
-      "size": 1.87,
-      "entryPrice": 31.958
+    "BTC": {
+      "direction": "SHORT",
+      "size": -0.03555,
+      "entryPrice": 68725
     }
   },
   "dailyPnLDate": "2026-03-09",
   "dailyPnL": 0,
   "highestPrice": {
-    "BTC": 68731.5,
-    "SOL": 84.873,
-    "HYPE": 32.761,
-    "VVV": 5.3949,
-    "GRASS": 0.34476,
-    "MORPHO": 1.9174,
-    "IP": 0.78238,
-    "OP": 0.11899,
-    "AR": 1.6143,
+    "BTC": 68715.5,
+    "SOL": 84.6985,
+    "HYPE": 32.589,
+    "VVV": 5.3909,
+    "GRASS": 0.34265,
+    "MORPHO": 1.9181,
+    "IP": 0.78225,
+    "OP": 0.1192,
+    "AR": 1.6136,
     "MERL": 0.036171
   },
-  "lastCheck": "2026-03-09T14:07:21.557Z"
+  "lastCheck": "2026-03-09T14:10:12.152Z"
 }
