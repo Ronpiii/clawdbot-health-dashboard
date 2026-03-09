@@ -18,6 +18,22 @@ _Add new ideas here. Pick one per night._
 
 ## Completed Builds
 
+### 2026-03-09: End of Day Closing Ritual
+**What:** `arc eod` — the evening counterpart to `arc brief`. a structured closing ritual that summarizes the day, captures loose threads, and sets up tomorrow.
+**Commands:** `arc eod`, `arc eod --quick`, `arc eod --append`, `arc eod --post`, `arc eod --short`, `arc eod --json`
+**Sections (4):**
+- **Today's Work** — commits (by repo), completed tasks, log sections covered
+- **Loose Threads** — in-progress tasks, dirty repos, unpushed commits, TODOs added today
+- **Closure Rate** — finished vs started ratio with visual bar (target: 80%+)
+- **Tomorrow's Top 3** — auto-generated priorities from in-progress, git hygiene, and open tasks
+**Features:** multi-repo git scanning, task extraction from daily logs + tasks/active.md, closure rate calculation (measures how much you tied up vs left hanging), priority scoring for tomorrow's suggestions, motivational closers, optional --append to daily log, optional --post to Discord #logs
+**Closure formula:** `finished / (finished + in_progress + todos_added)`. 80%+ = clean close. <50% = open-heavy (lots carrying forward). the number gamifies daily closure — aim to tie up threads before bed.
+**Aliases:** `arc eod`, `arc evening`, `arc close`
+**First run:** 100% closure (quiet night — it's midnight), 2 loose threads (uncommitted clawd + anivia), tomorrow's priorities auto-derived from tasks/active.md (TMW meeting prep, ventok outreach)
+**Relationship to other tools:** `arc brief` answers "what do I need to know this morning?" `arc eod` answers "what happened today and what's carrying over?" they're bookends. run brief with morning coffee, run eod before bed. together they frame the workday with context.
+**Born from:** 35 nightly builds, each adding a specialized tool. `arc brief` handles the morning ritual. but there was no evening counterpart — no structured way to close the day, capture what's unfinished, and set up tomorrow. `arc eod` fills that gap. the closure rate is the key insight: it measures whether you're finishing things or just starting them. a low closure rate over time means too many open threads, too much context switching, not enough completion.
+**Why:** ron works across multiple projects with lots of in-flight work. the danger isn't starting things — it's forgetting what's unfinished. `arc eod` forces the review: what did I do, what's hanging, what's tomorrow's focus. the --append flag makes it easy to log the summary. the --post flag shares it. the closure rate turns daily completion into a game you can win.
+
 ### 2026-03-08: Session Handover Generator
 **What:** `arc handover` — auto-generates handover context for session transitions, model switches, or long breaks
 **Commands:** `arc handover`, `arc handover --hours N`, `arc handover --append`, `arc handover --json`

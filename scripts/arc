@@ -138,6 +138,9 @@ const SCRIPTS = {
   entropy: 'stale.mjs',
   handover: 'handover.mjs',
   handoff: 'handover.mjs',
+  eod: 'eod.mjs',
+  evening: 'eod.mjs',
+  close: 'eod.mjs',
   neuron: 'neuron.mjs',
   network: 'neuron.mjs',
   knowledge: 'neuron.mjs',
@@ -210,6 +213,7 @@ Commands:
   pace [opts]            Work rhythm analyzer — peak hours, flow states, break patterns (--sessions, --recs, --days N, --week)
   stale [opts]           Unified staleness detector — tasks, projects, branches, contacts, ideas, threads (--top N, --days N)
   handover [opts]        Auto-generate session handover context (--hours N, --append, --json)
+  eod [opts]             End of day closing ritual (--quick, --append, --post, --short, --json)
   neuron [opts]          Knowledge network visualization (--stats, --json)
 
 Examples:
@@ -582,6 +586,12 @@ switch (cmd) {
   case 'handover':
   case 'handoff':
     run(SCRIPTS.handover, args);
+    break;
+
+  case 'eod':
+  case 'evening':
+  case 'close':
+    run(SCRIPTS.eod, args);
     break;
 
   case 'neuron':
