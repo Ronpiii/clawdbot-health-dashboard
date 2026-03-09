@@ -100,3 +100,8 @@
 2026-03-09T15:18:59.319Z | SHORT | OP   |      555.8 | $   0.11896 | Price below EMA 200 ($0.16), slope ↘ falling
 2026-03-09T15:19:01.882Z | SHORT | APE  |      348.3 | $   0.09492 | Price below EMA 200 ($0.12), slope ↘ falling
 2026-03-09T15:19:05.133Z | SHORT | LDO  |       57.7 | $   0.28634 | Price below EMA 200 ($0.35), slope ↘ falling
+2026-03-09T15:19:54.155Z | SHORT | LDO  |      231.4 | $   0.28582 | Price below EMA 200 ($0.35), slope ↘ falling
+2026-03-09T15:19:56.555Z | SHORT | ARB  |      336.2 | $   0.09841 | Price below EMA 200 ($0.11), slope ↘ falling
+2026-03-09T15:20:53.682Z | SHORT | LDO  |      230.9 | $   0.28631 | Price below EMA 200 ($0.35), slope ↘ falling
+2026-03-09T15:20:56.004Z | SHORT | ARB  |      335.5 | $   0.09853 | Price below EMA 200 ($0.11), slope ↘ falling
+2026-03-09T15:20:58.410Z | LONG  | HYPE |        0.5 | $   32.6875 | Price above EMA 200 ($29.70), slope ↗ rising

@@ -54,7 +54,7 @@ const CONFIG = {
   },
   
   // Asset configurations for TREND mode (200 EMA + slope)
-  // DEGEN MODE: high leverage, multiple assets, market-wide SHORT bias
+  // FULL DEGEN: all assets enabled, 10x leverage, 50% position sizing
   trend: {
     // === CORE POSITIONS ===
     BTC: {
@@ -72,7 +72,7 @@ const CONFIG = {
       minSize: 0.01,
     },
     // === HIGH QUALITY SHORTS (from scanner) ===
-    OP: {  // quality: 13.3 - highest
+    OP: {  // quality: 13.3
       ema: 200,
       slopeLookback: 48,
       enabled: false,  // Disabled: JSON deserialization error on order
@@ -82,30 +82,80 @@ const CONFIG = {
     APE: {  // quality: 9.7
       ema: 200,
       slopeLookback: 48,
-      enabled: true,  // ENABLED: degen mode
+      enabled: true,
       allowShort: true,
       minSize: 0.1,
     },
     DYDX: {  // quality: 9.4
       ema: 200,
       slopeLookback: 48,
-      enabled: true,  // ENABLED: degen mode
+      enabled: true,
       allowShort: true,
       minSize: 1,
     },
     LDO: {  // quality: 7.8
       ema: 200,
       slopeLookback: 48,
-      enabled: true,  // ENABLED: degen mode
+      enabled: true,
       allowShort: true,
       minSize: 0.1,
     },
     ARB: {  // quality: 6.9
       ema: 200,
       slopeLookback: 48,
-      enabled: true,  // ENABLED: degen mode
+      enabled: true,
       allowShort: true,
       minSize: 1,
+    },
+    // === ADDITIONAL MOMENTUM SHORTS ===
+    HYPE: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: true,
+      allowShort: true,
+      minSize: 0.1,
+    },
+    VVV: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: true,
+      allowShort: true,
+      minSize: 0.1,
+    },
+    GRASS: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: true,
+      allowShort: true,
+      minSize: 1,
+    },
+    MORPHO: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: true,
+      allowShort: true,
+      minSize: 0.1,
+    },
+    IP: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: true,
+      allowShort: true,
+      minSize: 1,
+    },
+    AR: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: true,
+      allowShort: true,
+      minSize: 0.1,
+    },
+    MERL: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: true,
+      allowShort: true,
+      minSize: 100,
     },
   },
   
