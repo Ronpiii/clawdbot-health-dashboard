@@ -1,0 +1,17 @@
+{
+  "name": "hyperliquid-bot",
+  "version": "1.0.0",
+  "description": "EMA signal trading bot for Hyperliquid",
+  "type": "module",
+  "main": "bot.mjs",
+  "scripts": {
+    "start": "node bot.mjs",
+    "test": "node test-connection.mjs",
+    "signal": "node check-signals.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "ethers": "^6.16.0",
+    "hyperliquid": "^1.0.0"
+  }
+}

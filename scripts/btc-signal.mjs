@@ -33,6 +33,9 @@ const CONFIG = {
   // Daily EMAs
   shortEMA: 20,
   longEMA: 200,
+  // EMA 10/30 strategy (backtested winner)
+  ema10: 10,
+  ema30: 30,
   // 4H EMA
   ema4H: 50,
   // Regime
@@ -119,7 +122,7 @@ function calculateEMA(prices, period) {
 }
 
 // --- Determine Signal ---
-function analyzeSignal(price, ema20, ema200, ema4H50, fundingRate) {
+function analyzeSignal(price, ema20, ema200, ema4H50, fundingRate, ema10 = null, ema30 = null) {
   // Determine regime from daily 200 EMA
   let regime;
   const chopThreshold = ema200 * CONFIG.chopZone;
@@ -223,11 +226,26 @@ function analyzeSignal(price, ema20, ema200, ema4H50, fundingRate) {
     stopPrice = price * (1 + CONFIG.stopPercent);
   }
   
+  // EMA 10/30 Strategy (backtested: 63.4% annual, beats B&H)
+  let ema1030Signal = 'N/A';
+  let ema1030Action = 'N/A';
+  if (ema10 !== null && ema30 !== null) {
+    if (ema10 > ema30) {
+      ema1030Signal = 'BULLISH';
+      ema1030Action = 'LONG';
+    } else {
+      ema1030Signal = 'BEARISH';
+      ema1030Action = 'FLAT (cash)';
+    }
+  }
+  
   return {
     price,
     ema20,
     ema200,
     ema4H50,
+    ema10,
+    ema30,
     fundingRate,
     fundingSentiment,
     regime,
@@ -241,6 +259,8 @@ function analyzeSignal(price, ema20, ema200, ema4H50, fundingRate) {
     warnings,
     stopPrice,
     leverage: CONFIG.leverage,
+    ema1030Signal,
+    ema1030Action,
     timestamp: new Date().toISOString(),
   };
 }
@@ -263,7 +283,8 @@ function hasSignalChanged(current, previous) {
   if (!previous) return true;
   return current.action !== previous.action || 
          current.direction !== previous.direction || 
-         current.regime !== previous.regime;
+         current.regime !== previous.regime ||
+         current.ema1030Action !== previous.ema1030Action;
 }
 
 // --- Output Formatting ---
@@ -294,9 +315,12 @@ function formatSignal(signal) {
 │  20 EMA:    $${signal.ema20.toFixed(0).padEnd(10)}               │
 │  200 EMA:   $${signal.ema200.toFixed(0).padEnd(10)}               │
 │  4H 50 EMA: $${signal.ema4H50 ? signal.ema4H50.toFixed(0).padEnd(10) : 'N/A'.padEnd(10)}               │
+│  EMA 10:    $${signal.ema10 ? signal.ema10.toFixed(0).padEnd(10) : 'N/A'.padEnd(10)}               │
+│  EMA 30:    $${signal.ema30 ? signal.ema30.toFixed(0).padEnd(10) : 'N/A'.padEnd(10)}               │
 ├─────────────────────────────────────────────┤
 │  Funding:   ${fundingStr.padEnd(10)} ${signal.fundingSentiment.padEnd(14)}│
 ├─────────────────────────────────────────────┤
+│  EMA 10/30: ${signal.ema1030Action.padEnd(15)} (${signal.ema1030Signal.padEnd(8)}) │
 │  Regime:    ${regimeEmoji[signal.regime]} ${signal.regime.padEnd(6)}                     │
 │  Signal:    ${actionEmoji[signal.action]} ${signal.action.padEnd(8)}                   │
 │  Position:  ${signal.direction.padEnd(12)}                  │
@@ -323,12 +347,16 @@ function formatAlert(signal, changed) {
                 signal.action === 'SHORT' ? '🔻' : 
                 signal.action === 'WAIT' ? '⏳' : '⏸️';
   
+  const ema1030Emoji = signal.ema1030Action === 'LONG' ? '📈' : '💵';
+  
   let alert = `${emoji} **BTC SIGNAL CHANGE**
 
 Regime: ${signal.regime}
 Action: **${signal.action}**
 Price: $${signal.price.toLocaleString()}
-Funding: ${signal.fundingRate !== null ? (signal.fundingRate * 100).toFixed(4) + '%' : 'N/A'}`;
+Funding: ${signal.fundingRate !== null ? (signal.fundingRate * 100).toFixed(4) + '%' : 'N/A'}
+
+${ema1030Emoji} **EMA 10/30:** ${signal.ema1030Action} (${signal.ema1030Signal})`;
 
   if (signal.stopPrice) {
     alert += `\nStop: $${signal.stopPrice.toFixed(0)}`;
@@ -369,13 +397,17 @@ async function main() {
   const ema200 = calculateEMA(dailyPrices, CONFIG.longEMA);
   const ema4H50 = prices4H ? calculateEMA(prices4H, CONFIG.ema4H) : null;
   
+  // EMA 10/30 strategy EMAs
+  const ema10 = calculateEMA(dailyPrices, CONFIG.ema10);
+  const ema30 = calculateEMA(dailyPrices, CONFIG.ema30);
+  
   if (!ema20 || !ema200) {
     console.error('Insufficient data for EMA calculation');
     process.exit(1);
   }
   
   // Analyze
-  const signal = analyzeSignal(currentPrice, ema20, ema200, ema4H50, fundingRate);
+  const signal = analyzeSignal(currentPrice, ema20, ema200, ema4H50, fundingRate, ema10, ema30);
   
   // Check for changes
   const previousState = loadState();
