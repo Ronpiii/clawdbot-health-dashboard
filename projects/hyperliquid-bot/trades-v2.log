@@ -93,3 +93,10 @@
 2026-03-09T14:40:51.881Z | SHORT | BTC  |     0.0003 | $   69329.5 | Price below EMA 200 ($71331.94), slope ↘ falling
 2026-03-09T14:45:33.599Z | SHORT | BTC  |     0.0003 | $   69350.5 | Price below EMA 200 ($71332.19), slope ↘ falling
 2026-03-09T14:45:36.938Z | SHORT | SOL  |       0.26 | $   85.5235 | Price below EMA 200 ($91.35), slope ↘ falling
+2026-03-09T15:18:11.264Z | SHORT | OP   |      555.3 | $   0.11905 | Price below EMA 200 ($0.16), slope ↘ falling
+2026-03-09T15:18:13.748Z | SHORT | APE  |      347.9 | $     0.095 | Price below EMA 200 ($0.12), slope ↘ falling
+2026-03-09T15:18:16.676Z | SHORT | DYDX |        201 | $   0.08222 | Price below EMA 200 ($0.11), slope ↘ falling
+2026-03-09T15:18:19.136Z | SHORT | LDO  |       28.8 | $   0.28681 | Price below EMA 200 ($0.35), slope ↘ falling
+2026-03-09T15:18:59.319Z | SHORT | OP   |      555.8 | $   0.11896 | Price below EMA 200 ($0.16), slope ↘ falling
+2026-03-09T15:19:01.882Z | SHORT | APE  |      348.3 | $   0.09492 | Price below EMA 200 ($0.12), slope ↘ falling
+2026-03-09T15:19:05.133Z | SHORT | LDO  |       57.7 | $   0.28634 | Price below EMA 200 ($0.35), slope ↘ falling

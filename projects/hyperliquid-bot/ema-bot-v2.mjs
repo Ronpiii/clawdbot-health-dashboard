@@ -54,7 +54,7 @@ const CONFIG = {
   },
   
   // Asset configurations for TREND mode (200 EMA + slope)
-  // Status: BTC + SOL enabled for testing, others disabled (re-enable when funded)
+  // DEGEN MODE: high leverage, multiple assets, market-wide SHORT bias
   trend: {
     // === CORE POSITIONS ===
     BTC: {
@@ -71,73 +71,51 @@ const CONFIG = {
       allowShort: true,
       minSize: 0.01,
     },
-    // === HIGH MOMENTUM LONGS (from scanner) ===
-    HYPE: {
+    // === HIGH QUALITY SHORTS (from scanner) ===
+    OP: {  // quality: 13.3 - highest
       ema: 200,
       slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
-      allowShort: true,
-      minSize: 0.1,
-    },
-    VVV: {  // 30% slope - strongest
-      ema: 200,
-      slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
-      allowShort: true,
-      minSize: 0.1,
-    },
-    GRASS: {  // 13% slope
-      ema: 200,
-      slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
+      enabled: false,  // Disabled: JSON deserialization error on order
       allowShort: true,
       minSize: 1,
     },
-    MORPHO: {  // 12% slope
+    APE: {  // quality: 9.7
       ema: 200,
       slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
+      enabled: true,  // ENABLED: degen mode
       allowShort: true,
       minSize: 0.1,
     },
-    // === STRONG SHORTS (from scanner) ===
-    IP: {  // -15% slope - steepest decline
+    DYDX: {  // quality: 9.4
       ema: 200,
       slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
+      enabled: true,  // ENABLED: degen mode
       allowShort: true,
       minSize: 1,
     },
-    OP: {  // -13% slope
+    LDO: {  // quality: 7.8
       ema: 200,
       slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
-      allowShort: true,
-      minSize: 1,
-    },
-    AR: {  // -11% slope
-      ema: 200,
-      slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
+      enabled: true,  // ENABLED: degen mode
       allowShort: true,
       minSize: 0.1,
     },
-    MERL: {  // -16% slope - steepest decline in market
+    ARB: {  // quality: 6.9
       ema: 200,
       slopeLookback: 48,
-      enabled: false,  // Disabled: low capital
+      enabled: true,  // ENABLED: degen mode
       allowShort: true,
-      minSize: 100,
+      minSize: 1,
     },
   },
   
   // Risk management
-  maxPositionPct: 0.20,  // % of available margin per position (1x leverage only)
+  maxPositionPct: 0.50,  // % of available margin per position (10x leverage) - DEGEN MODE
   dailyLossLimit: 0.10,
   
   // Execution
   slippagePct: 0.002,
-  minOrderUsd: 5,
+  minOrderUsd: 10,  // Hyperliquid minimum
   
   // Files
   stateFile: './bot-state-v2.json',
@@ -566,23 +544,29 @@ async function runBot(paperMode = true) {
     // Decision logic
     if (signal.signal === 'LONG' && !hasPosition) {
       const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
-      if (size > 0) {
+      const orderValue = size * currentPrice;
+      if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
         console.log(`→ OPENING LONG: ${size} ${symbol}`);
-        cumulativeMarginUsed += size * currentPrice;
+        cumulativeMarginUsed += orderValue;
         if (!paperMode) {
           await executeLiveOrder(symbol, 'LONG', size, currentPrice);
         }
         logTrade('LONG', symbol, size, currentPrice, signal.reason);
+      } else if (size > 0) {
+        console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
       }
     } else if (signal.signal === 'SHORT' && !hasPosition) {
       const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
-      if (size > 0) {
+      const orderValue = size * currentPrice;
+      if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
         console.log(`→ OPENING SHORT: ${size} ${symbol}`);
-        cumulativeMarginUsed += size * currentPrice;
+        cumulativeMarginUsed += orderValue;
         if (!paperMode) {
           await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
         }
         logTrade('SHORT', symbol, size, currentPrice, signal.reason);
+      } else if (size > 0) {
+        console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
       }
 
     } else if (signal.signal === 'EXIT' && hasPosition) {

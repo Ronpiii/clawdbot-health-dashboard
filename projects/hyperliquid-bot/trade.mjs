@@ -33,6 +33,10 @@ const TICK_SIZES = {
   OP: 0.0001,
   AR: 0.0001,
   MERL: 0.000001,
+  APE: 0.01,
+  DYDX: 0.01,
+  LDO: 0.01,
+  ARB: 0.01,
 };
 
 // --- Price / Size Validation ---
@@ -65,11 +69,11 @@ async function placeOrder(symbol, isBuy, size, price = null) {
     // Round price to tick size
     const limitPrice = roundToTick(currentPrice, symbol);
     
-    // Set leverage to 3x (cross margin)
+    // Set leverage to 10x (cross margin) - DEGEN MODE
     try {
-      await sdk.exchange.updateLeverage(`${symbol}-PERP`, 'Cross', 3);
+      await sdk.exchange.updateLeverage(`${symbol}-PERP`, 'Cross', 10);
     } catch (err) {
-      console.log(`⚠️  Leverage update failed (may already be 3x): ${err.message}`);
+      console.log(`⚠️  Leverage update failed (may already be 10x): ${err.message}`);
     }
     
     const result = await sdk.exchange.placeOrder({
