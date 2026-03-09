@@ -71,44 +71,37 @@ const CONFIG = {
       allowShort: true,
       minSize: 0.01,
     },
-    // === TIER-2: STRONG VOLUME, GOOD LIQUIDITY ===
-    APE: {  // quality: 9.7, high volume
+    // === TIER-2: SHORT POSITIONS ===
+    LDO: {  // quality: 7.8, high volume short
       ema: 200,
       slopeLookback: 48,
       enabled: true,
       allowShort: true,
       minSize: 0.1,
     },
-    DYDX: {  // quality: 9.4, high volume
+    APE: {  // quality: 9.7 - DISABLED: low margin room
       ema: 200,
       slopeLookback: 48,
-      enabled: true,
+      enabled: false,
+      allowShort: true,
+      minSize: 0.1,
+    },
+    DYDX: {  // quality: 9.4 - DISABLED: low margin room
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,
       allowShort: true,
       minSize: 1,
     },
-    LDO: {  // quality: 7.8, high volume
+    ARB: {  // quality: 6.9 - DISABLED: margin blocked
       ema: 200,
       slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 0.1,
-    },
-    ARB: {  // quality: 6.9, high volume
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
+      enabled: false,
       allowShort: true,
       minSize: 1,
     },
-    // === TIER-3: VOLUME + MOMENTUM ===
-    HYPE: {  // active, decent volume
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 0.1,
-    },
-    VVV: {  // strong momentum, 30% slope
+    // === TIER-3: LONG POSITIONS ===
+    HYPE: {  // active, strong momentum
       ema: 200,
       slopeLookback: 48,
       enabled: true,
@@ -121,6 +114,13 @@ const CONFIG = {
       enabled: true,
       allowShort: true,
       minSize: 1,
+    },
+    VVV: {  // strong momentum - DISABLED: low margin room
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,
+      allowShort: true,
+      minSize: 0.1,
     },
     // === DISABLED: LOW VOLUME / LOW LIQUIDITY ===
     OP: {  // JSON deserialization error
@@ -161,7 +161,7 @@ const CONFIG = {
   },
   
   // Risk management
-  maxPositionPct: 0.50,  // % of available margin per position (10x leverage) - DEGEN MODE
+  maxPositionPct: 0.70,  // % of available margin per position (10x leverage) - COMBO MODE: 5 assets
   dailyLossLimit: 0.10,
   
   // Execution

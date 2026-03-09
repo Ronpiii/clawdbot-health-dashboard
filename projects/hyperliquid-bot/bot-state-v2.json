@@ -20,6 +20,16 @@
       "size": -348.3,
       "entryPrice": 0.09484
     },
+    "LDO": {
+      "direction": "SHORT",
+      "size": -1897.2,
+      "entryPrice": 0.29
+    },
+    "GRASS": {
+      "direction": "LONG",
+      "size": 49.5,
+      "entryPrice": 0.33189
+    },
     "HYPE": {
       "direction": "LONG",
       "size": 0.5,
@@ -34,15 +44,11 @@
   "dailyPnLDate": "2026-03-09",
   "dailyPnL": 0,
   "highestPrice": {
-    "BTC": 68760.5,
-    "SOL": 84.8535,
-    "APE": 0.09489,
-    "DYDX": 0.08219,
-    "LDO": 0.2868,
-    "ARB": 0.09851,
-    "HYPE": 32.2645,
-    "VVV": 5.1406,
-    "GRASS": 0.33226
+    "BTC": 68326.5,
+    "SOL": 84.5325,
+    "LDO": 0.286,
+    "HYPE": 33.8375,
+    "GRASS": 0.33304
   },
-  "lastCheck": "2026-03-09T15:51:15.746Z"
+  "lastCheck": "2026-03-09T18:10:15.289Z"
 }
