@@ -42,8 +42,9 @@ const CONFIG = {
   fundingBearish: 0.03,  // above this = bearish (longs paying)
   // Position
   leverage: 3,
-  riskPercent: 0.02,
-  stopPercent: 0.06,
+  riskPercent: 0.025,    // quarter-kelly based on backtest
+  stopPercent: 0.08,     // widened from 0.06 — reduces stop-outs
+  takeProfitPercent: 0.16, // 2:1 RR
 };
 
 // --- Fetch Price Data ---
