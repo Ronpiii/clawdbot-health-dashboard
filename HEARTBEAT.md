@@ -19,6 +19,10 @@ run `node scripts/status.mjs` for workspace overview (git, tasks, memory)
 - [ ] run `cd projects/anivia && node --env-file=.env.local scripts/advance-sequences.mjs` to advance wait steps
 - only log output if something actually advanced
 
+## paper trading check (every heartbeat)
+- [ ] run `cd projects/hyperliquid-bot && node paper-trade.mjs` to check EMA signals and update positions
+- report significant changes (new trades, P&L milestones)
+
 ## rotate checks (2-4x daily)
 - [ ] git status — uncommitted changes? push if stable
 - [ ] tasks/active.md — anything unblocked?

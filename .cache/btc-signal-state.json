@@ -1,26 +1,26 @@
 {
-  "price": 67764.99,
-  "ema20": 68454.09457923089,
-  "ema200": 95213.17534999995,
-  "ema4H50": 67982.78145427846,
-  "ema10": 67925.22706403628,
-  "ema30": 69845.5478280625,
+  "price": 68141.07,
+  "ema20": 68489.91172208803,
+  "ema200": 95215.05574999996,
+  "ema4H50": 68033.39076016763,
+  "ema10": 67993.60524585446,
+  "ema30": 69869.81105386894,
   "fundingRate": -0.00004579,
   "fundingSentiment": "neutral",
   "regime": "BEAR",
   "above20": false,
-  "above4H50": false,
+  "above4H50": true,
   "baseAction": "SHORT",
-  "action": "SHORT",
+  "action": "WAIT",
   "direction": "short",
-  "confirmed": true,
-  "confirmations": [
-    "4H EMA ✓"
+  "confirmed": false,
+  "confirmations": [],
+  "warnings": [
+    "4H EMA not confirmed"
   ],
-  "warnings": [],
-  "stopPrice": 73186.18920000001,
+  "stopPrice": 73592.35560000001,
   "leverage": 3,
   "ema1030Signal": "BEARISH",
   "ema1030Action": "FLAT (cash)",
-  "timestamp": "2026-03-09T11:59:56.275Z"
+  "timestamp": "2026-03-09T12:30:17.397Z"
 }

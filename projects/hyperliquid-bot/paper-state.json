@@ -1,0 +1,20 @@
+{
+  "capital": 45,
+  "positions": {
+    "HYPE": {
+      "size": 1.3977566867989648,
+      "entryPrice": 31.8725,
+      "direction": "long",
+      "openedAt": "2026-03-09T12:18:49.090Z"
+    }
+  },
+  "highestPrice": {
+    "BTC": 68090.5,
+    "SOL": 83.8715,
+    "HYPE": 31.8905
+  },
+  "totalPnL": 0,
+  "trades": [],
+  "startDate": "2026-03-09T12:18:47.822Z",
+  "lastUpdate": "2026-03-09T12:30:27.166Z"
+}
