@@ -72,10 +72,10 @@ const CONFIG = {
       minSize: 0.01,
     },
     // === TIER-2: SHORT POSITIONS ===
-    LDO: {  // quality: 7.8, high volume short
+    LDO: {  // quality: 7.8 - DISABLED: liquidation risk at 10x (liq at $0.30)
       ema: 200,
       slopeLookback: 48,
-      enabled: true,
+      enabled: false,  // Manually closed position at liquidation level
       allowShort: true,
       minSize: 0.1,
     },
