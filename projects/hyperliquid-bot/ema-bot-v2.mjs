@@ -555,10 +555,24 @@ async function runBot(paperMode = true) {
     const hasPosition = !!currentPos;
     
     // Decision logic
-    // NOTE: Only manage EXISTING positions. Don't open new ones via bot.
     if (signal.signal === 'LONG' && !hasPosition) {
-      // Skip opening new positions - handle manually via CLI
-      console.log(`→ SKIP OPEN: ${symbol} (open manually if desired)`)
+      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      if (size > 0) {
+        console.log(`→ OPENING LONG: ${size} ${symbol}`);
+        if (!paperMode) {
+          await executeLiveOrder(symbol, 'LONG', size);
+        }
+        logTrade('LONG', symbol, size, currentPrice, signal.reason);
+      }
+    } else if (signal.signal === 'SHORT' && !hasPosition) {
+      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      if (size > 0) {
+        console.log(`→ OPENING SHORT: ${size} ${symbol}`);
+        if (!paperMode) {
+          await executeLiveOrder(symbol, 'SHORT', size);
+        }
+        logTrade('SHORT', symbol, size, currentPrice, signal.reason);
+      }
 
     } else if (signal.signal === 'EXIT' && hasPosition) {
       console.log(`→ CLOSING: ${currentPos.direction} ${symbol}`);
@@ -569,11 +583,31 @@ async function runBot(paperMode = true) {
       }
       logTrade('EXIT', symbol, Math.abs(currentPos.size), currentPrice, signal.reason);
     } else if (signal.signal === 'LONG' && currentPos?.direction === 'SHORT') {
-      // Would flip SHORT → LONG
-      console.log(`→ FLIP SIGNAL: SHORT → LONG ${symbol} (manual execution)`);
+      // Flip from SHORT to LONG
+      console.log(`→ FLIPPING: SHORT → LONG ${symbol}`);
+      if (!paperMode) {
+        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size));
+      }
+      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      if (size > 0) {
+        if (!paperMode) {
+          await executeLiveOrder(symbol, 'LONG', size);
+        }
+        logTrade('FLIP→L', symbol, size, currentPrice, signal.reason);
+      }
     } else if (signal.signal === 'SHORT' && currentPos?.direction === 'LONG') {
-      // Would flip LONG → SHORT
-      console.log(`→ FLIP SIGNAL: LONG → SHORT ${symbol} (manual execution)`);
+      // Flip from LONG to SHORT
+      console.log(`→ FLIPPING: LONG → SHORT ${symbol}`);
+      if (!paperMode) {
+        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size));
+      }
+      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      if (size > 0) {
+        if (!paperMode) {
+          await executeLiveOrder(symbol, 'SHORT', size);
+        }
+        logTrade('FLIP→S', symbol, size, currentPrice, signal.reason);
+      }
     } else if (hasPosition) {
       const pnlPct = currentPos.direction === 'LONG'
         ? (currentPrice - currentPos.entryPrice) / currentPos.entryPrice
