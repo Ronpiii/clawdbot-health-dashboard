@@ -23,7 +23,7 @@ const wallet = new ethers.Wallet(HL_PRIVATE_KEY);
 async function closeAll() {
   try {
     console.log('Fetching positions...');
-    const account = await sdk.info.clearinghouseState(wallet.address);
+    const account = await sdk.info.portfolio(wallet.address);
     
     if (!account.assetPositions || account.assetPositions.length === 0) {
       console.log('No open positions');

@@ -90,3 +90,6 @@
 2026-03-09T14:19:07.545Z | SHORT | BTC  |     0.0027 | $   69096.5 | Price below EMA 200 ($71329.69), slope ↘ falling
 2026-03-09T14:19:35.698Z | SHORT | BTC  |     0.0027 | $   69033.5 | Price below EMA 200 ($71329.01), slope ↘ falling
 2026-03-09T14:19:58.844Z | SHORT | SOL  |        2.2 | $   85.1495 | Price below EMA 200 ($91.34), slope ↘ falling
+2026-03-09T14:40:51.881Z | SHORT | BTC  |     0.0003 | $   69329.5 | Price below EMA 200 ($71331.94), slope ↘ falling
+2026-03-09T14:45:33.599Z | SHORT | BTC  |     0.0003 | $   69350.5 | Price below EMA 200 ($71332.19), slope ↘ falling
+2026-03-09T14:45:36.938Z | SHORT | SOL  |       0.26 | $   85.5235 | Price below EMA 200 ($91.35), slope ↘ falling
