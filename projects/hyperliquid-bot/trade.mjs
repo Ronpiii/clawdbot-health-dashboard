@@ -19,10 +19,40 @@ const sdk = new Hyperliquid({
   enableWs: false,
 });
 
+// Hyperliquid tick sizes per asset (price precision)
+// Standard: $1 for BTC/ETH, $0.01 for mid-cap, $0.0001 for small
+const TICK_SIZES = {
+  BTC: 1.0,
+  ETH: 1.0,
+  SOL: 0.01,
+  HYPE: 0.01,
+  VVV: 0.0001,
+  GRASS: 0.00001,
+  MORPHO: 0.01,
+  IP: 0.0001,
+  OP: 0.0001,
+  AR: 0.0001,
+  MERL: 0.000001,
+};
+
+// --- Price / Size Validation ---
+function roundToTick(price, symbol) {
+  const tick = TICK_SIZES[symbol] || 0.0001;
+  return Math.round(price / tick) * tick;
+}
+
+function roundSize(size, decimals = 2) {
+  return Math.round(size * Math.pow(10, decimals)) / Math.pow(10, decimals);
+}
+
 // --- Order Execution (WORKING VERSION) ---
 async function placeOrder(symbol, isBuy, size, price = null) {
   try {
     console.log(`\n📍 PLACING: ${isBuy ? 'BUY' : 'SELL'} ${size} ${symbol}`);
+    
+    // Validate size
+    size = parseFloat(size);
+    if (size <= 0) throw new Error(`Invalid size: ${size}`);
     
     // Get market price with realistic slippage
     let currentPrice = price;
@@ -32,14 +62,14 @@ async function placeOrder(symbol, isBuy, size, price = null) {
       if (!currentPrice) throw new Error(`No price for ${symbol}`);
     }
     
-    // Apply 1% slippage for market orders (not extreme)
-    const limitPrice = isBuy ? currentPrice * 1.01 : currentPrice * 0.99;
+    // Round price to tick size
+    const limitPrice = roundToTick(currentPrice, symbol);
     
     const result = await sdk.exchange.placeOrder({
       coin: `${symbol}-PERP`,  // CRITICAL: Must include -PERP
       is_buy: isBuy,
-      sz: parseFloat(size),
-      limit_px: currentPrice.toString(),  // Use mid price, not slipped price
+      sz: roundSize(size, 8),  // 8 decimals for size precision
+      limit_px: limitPrice.toString(),
       order_type: { limit: { tif: 'Gtc' } },  // Good til Cancel
       reduce_only: false,  // Opening new positions
     });

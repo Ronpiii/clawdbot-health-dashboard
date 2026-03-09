@@ -54,7 +54,7 @@ const CONFIG = {
   },
   
   // Asset configurations for TREND mode (200 EMA + slope)
-  // Updated from scanner: best slope/momentum pairs
+  // TEST MODE: BTC + SOL only (limited capital)
   trend: {
     // === CORE POSITIONS ===
     BTC: {
@@ -71,69 +71,11 @@ const CONFIG = {
       allowShort: true,
       minSize: 0.01,
     },
-    HYPE: {
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 0.1,
-    },
-    // === HIGH MOMENTUM LONGS (from scanner) ===
-    VVV: {  // 30% slope - strongest
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 0.1,
-    },
-    GRASS: {  // 13% slope
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 1,
-    },
-    MORPHO: {  // 12% slope
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 0.1,
-    },
-    // === STRONG SHORTS (from scanner) ===
-    IP: {  // -15% slope - steepest decline
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 1,
-    },
-    OP: {  // -13% slope
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 1,
-    },
-    AR: {  // -11% slope
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 0.1,
-    },
-    MERL: {  // -16% slope - steepest decline in market
-      ema: 200,
-      slopeLookback: 48,
-      enabled: true,
-      allowShort: true,
-      minSize: 100,
-    },
   },
   
   // Risk management
-  maxPositionPct: 0.33,
-  maxLeverage: 3,
+  maxPositionPct: 0.20,  // Reduced for low capital testing
+  maxLeverage: 2,        // Reduced leverage
   dailyLossLimit: 0.10,
   
   // Execution
@@ -388,15 +330,20 @@ function logTrade(action, symbol, size, price, reason) {
 
 // ==================== POSITION SIZING ====================
 
-function calculatePositionSize(symbol, accountValue, currentPrice) {
+function calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed = 0) {
   const cfg = CONFIG.mode === 'trend' ? CONFIG.trend[symbol] : CONFIG.crossover[symbol];
   if (!cfg) return 0;
   
-  const maxPositionValue = accountValue * CONFIG.maxPositionPct;
+  // Track cumulative margin: don't overcommit
+  const availableMargin = accountValue - cumulativeMarginUsed;
+  const maxPositionValue = availableMargin * CONFIG.maxPositionPct;
   const leveragedValue = maxPositionValue * CONFIG.maxLeverage;
+  
+  if (leveragedValue < CONFIG.minOrderUsd) return 0;
+  
   let size = leveragedValue / currentPrice;
   
-  // Round appropriately
+  // Round down appropriately
   if (symbol === 'BTC') {
     size = Math.floor(size * 10000) / 10000;
   } else if (symbol === 'SOL') {
@@ -514,6 +461,9 @@ async function runBot(paperMode = true) {
   const interval = CONFIG.mode === 'trend' ? '4h' : '1d';
   const lookback = CONFIG.mode === 'trend' ? 300 : 50;
   
+  // Track cumulative margin used in this run
+  let cumulativeMarginUsed = 0;
+  
   // Check each asset
   for (const [symbol, cfg] of Object.entries(assets)) {
     if (!cfg.enabled) continue;
@@ -556,18 +506,20 @@ async function runBot(paperMode = true) {
     
     // Decision logic
     if (signal.signal === 'LONG' && !hasPosition) {
-      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
       if (size > 0) {
         console.log(`→ OPENING LONG: ${size} ${symbol}`);
+        cumulativeMarginUsed += size * currentPrice;
         if (!paperMode) {
           await executeLiveOrder(symbol, 'LONG', size, currentPrice);
         }
         logTrade('LONG', symbol, size, currentPrice, signal.reason);
       }
     } else if (signal.signal === 'SHORT' && !hasPosition) {
-      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
       if (size > 0) {
         console.log(`→ OPENING SHORT: ${size} ${symbol}`);
+        cumulativeMarginUsed += size * currentPrice;
         if (!paperMode) {
           await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
         }
@@ -576,6 +528,7 @@ async function runBot(paperMode = true) {
 
     } else if (signal.signal === 'EXIT' && hasPosition) {
       console.log(`→ CLOSING: ${currentPos.direction} ${symbol}`);
+      cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
       if (paperMode) {
         await executePaperOrder(symbol, 'EXIT', 0, currentPrice, state);
       } else {
@@ -585,11 +538,13 @@ async function runBot(paperMode = true) {
     } else if (signal.signal === 'LONG' && currentPos?.direction === 'SHORT') {
       // Flip from SHORT to LONG
       console.log(`→ FLIPPING: SHORT → LONG ${symbol}`);
+      cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
       if (!paperMode) {
         await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
       }
-      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
       if (size > 0) {
+        cumulativeMarginUsed += size * currentPrice;
         if (!paperMode) {
           await executeLiveOrder(symbol, 'LONG', size, currentPrice);
         }
@@ -598,11 +553,13 @@ async function runBot(paperMode = true) {
     } else if (signal.signal === 'SHORT' && currentPos?.direction === 'LONG') {
       // Flip from LONG to SHORT
       console.log(`→ FLIPPING: LONG → SHORT ${symbol}`);
+      cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
       if (!paperMode) {
         await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
       }
-      const size = calculatePositionSize(symbol, accountValue, currentPrice);
+      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
       if (size > 0) {
+        cumulativeMarginUsed += size * currentPrice;
         if (!paperMode) {
           await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
         }
