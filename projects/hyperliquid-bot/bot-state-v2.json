@@ -2,28 +2,13 @@
   "positions": {
     "BTC": {
       "direction": "SHORT",
-      "size": -0.0003,
-      "entryPrice": 69363
-    },
-    "DYDX": {
-      "direction": "SHORT",
-      "size": -201,
-      "entryPrice": 0.08203
+      "size": -0.0012,
+      "entryPrice": 69018
     },
     "SOL": {
       "direction": "SHORT",
-      "size": -0.26,
-      "entryPrice": 85.52
-    },
-    "APE": {
-      "direction": "SHORT",
-      "size": -348.3,
-      "entryPrice": 0.09484
-    },
-    "LDO": {
-      "direction": "SHORT",
-      "size": -1897.2,
-      "entryPrice": 0.29
+      "size": -0.31,
+      "entryPrice": 86.27
     },
     "GRASS": {
       "direction": "LONG",
@@ -32,23 +17,17 @@
     },
     "HYPE": {
       "direction": "LONG",
-      "size": 0.5,
-      "entryPrice": 32.63
-    },
-    "VVV": {
-      "direction": "LONG",
-      "size": 3.1,
-      "entryPrice": 5.2666
+      "size": 2.4,
+      "entryPrice": 34.2846
     }
   },
   "dailyPnLDate": "2026-03-09",
   "dailyPnL": 0,
   "highestPrice": {
-    "BTC": 68337.5,
-    "SOL": 85.1765,
-    "LDO": 0.28718,
-    "HYPE": 33.9205,
-    "GRASS": 0.33132
+    "BTC": 68609.5,
+    "SOL": 85.6535,
+    "HYPE": 35.0165,
+    "GRASS": 0.32958
   },
-  "lastCheck": "2026-03-09T18:56:02.330Z"
+  "lastCheck": "2026-03-09T22:52:09.784Z"
 }

@@ -544,6 +544,29 @@ async function runBot(paperMode = true) {
   // Get current prices
   const mids = await getMids();
   
+  // Check liquidation levels
+  console.log('\n--- LIQUIDATION ALERT ---');
+  let hasLiqAlert = false;
+  if (account.assetPositions) {
+    for (const ap of account.assetPositions) {
+      const p = ap.position;
+      const size = Math.abs(parseFloat(p.szi));
+      if (size === 0) continue;
+      
+      const symbol = p.coin.replace('-PERP', '');
+      const currentPrice = parseFloat(mids[symbol] || 0);
+      const liqPrice = parseFloat(p.liquidationPx);
+      const distToLiq = Math.abs((currentPrice - liqPrice) / currentPrice * 100);
+      
+      if (distToLiq < 5) {
+        console.log(`🚨 ${symbol}: ${distToLiq.toFixed(2)}% from liquidation (liq @ $${liqPrice.toFixed(4)})`);
+        hasLiqAlert = true;
+      }
+    }
+  }
+  if (!hasLiqAlert) console.log('✓ All positions safe (>5% from liquidation)');
+  console.log('---------------------\n');
+  
   // Get assets based on mode
   const assets = CONFIG.mode === 'trend' ? CONFIG.trend : CONFIG.crossover;
   const interval = CONFIG.mode === 'trend' ? '4h' : '1d';
@@ -682,21 +705,35 @@ async function showStatus() {
   
   const state = loadState();
   const mids = await getMids();
+  const wallet = getWallet();
+  const account = await getAccountState(wallet.address);
   
   console.log(`Mode: ${CONFIG.mode}`);
   console.log(`Last check: ${state.lastCheck || 'Never'}`);
   console.log(`Daily PnL: $${(state.dailyPnL || 0).toFixed(2)}`);
   
   console.log('\nPositions:');
-  if (!state.positions || Object.keys(state.positions).length === 0) {
+  if (!account.assetPositions || account.assetPositions.length === 0) {
     console.log('  None');
   } else {
-    for (const [symbol, pos] of Object.entries(state.positions)) {
+    for (const ap of account.assetPositions) {
+      const p = ap.position;
+      const size = Math.abs(parseFloat(p.szi));
+      if (size === 0) continue;
+      
+      const symbol = p.coin.replace('-PERP', '');
       const currentPrice = parseFloat(mids[symbol] || 0);
-      const pnlPct = pos.direction === 'LONG'
-        ? (currentPrice - pos.entryPrice) / pos.entryPrice
-        : (pos.entryPrice - currentPrice) / pos.entryPrice;
-      console.log(`  ${symbol}: ${pos.direction} ${Math.abs(pos.size)} @ $${pos.entryPrice.toFixed(2)} → $${currentPrice.toFixed(2)} (${(pnlPct * 100).toFixed(2)}%)`);
+      const entryPrice = parseFloat(p.entryPx);
+      const liqPrice = parseFloat(p.liquidationPx);
+      
+      const pnlPct = parseFloat(p.szi) > 0
+        ? (currentPrice - entryPrice) / entryPrice
+        : (entryPrice - currentPrice) / entryPrice;
+      
+      const distToLiq = Math.abs((currentPrice - liqPrice) / currentPrice * 100);
+      const liqWarning = distToLiq < 3 ? '🚨' : distToLiq < 5 ? '⚠️' : '';
+      
+      console.log(`  ${symbol}: ${parseFloat(p.szi) > 0 ? 'LONG' : 'SHORT'} ${size} @ $${entryPrice.toFixed(4)} → $${currentPrice.toFixed(4)} (${(pnlPct * 100).toFixed(2)}%) | Liq: $${liqPrice.toFixed(4)} (${distToLiq.toFixed(2)}% away) ${liqWarning}`);
     }
   }
 }
