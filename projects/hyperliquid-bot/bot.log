@@ -1,0 +1,74 @@
+[dotenv@17.3.1] injecting env (2) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Starting bot loop (every 4h for trend mode)...
+════════════════════════════════════════════════════════════
+EMA BOT V2 | Mode: TREND | LIVE
+2026-03-09T13:59:18.839Z
+════════════════════════════════════════════════════════════
+⚠️  LIVE TRADING - REAL MONEY AT RISK
+
+Account: $61.34
+Daily PnL: $0.00
+
+─── BTC ───
+Price: $69028.50
+Signal: SHORT
+Reason: Price below EMA 200 ($71328.94), slope ↘ falling
+→ WAITING: no entry signal
+
+─── SOL ───
+Price: $85.2705
+Signal: SHORT
+Reason: Price below EMA 200 ($91.35), slope ↘ falling
+→ WAITING: no entry signal
+
+─── HYPE ───
+Price: $32.8310
+Signal: LONG
+Reason: Price above EMA 200 ($29.70), slope ↗ rising
+→ HOLDING: LONG (PnL: 2.73%)
+
+─── VVV ───
+Price: $5.4596
+Signal: LONG
+Reason: Price above EMA 200 ($4.46), slope ↗ rising
+→ SKIP OPEN: VVV (open manually if desired)
+
+─── GRASS ───
+Price: $0.3419
+Signal: LONG
+Reason: Price above EMA 200 ($0.25), slope ↗ rising
+→ SKIP OPEN: GRASS (open manually if desired)
+
+─── MORPHO ───
+Price: $1.9226
+Signal: LONG
+Reason: Price above EMA 200 ($1.60), slope ↗ rising
+→ SKIP OPEN: MORPHO (open manually if desired)
+
+─── IP ───
+Price: $0.7836
+Signal: SHORT
+Reason: Price below EMA 200 ($1.17), slope ↘ falling
+→ WAITING: no entry signal
+
+─── OP ───
+Price: $0.1196
+Signal: SHORT
+Reason: Price below EMA 200 ($0.16), slope ↘ falling
+→ WAITING: no entry signal
+
+─── AR ───
+Price: $1.6224
+Signal: SHORT
+Reason: Price below EMA 200 ($2.02), slope ↘ falling
+→ WAITING: no entry signal
+
+─── MERL ───
+Price: $0.0361
+Signal: SHORT
+Reason: Price below EMA 200 ($0.06), slope ↘ falling
+→ WAITING: no entry signal
+
+════════════════════════════════════════════════════════════
+Run complete

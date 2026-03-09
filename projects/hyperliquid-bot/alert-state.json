@@ -1,0 +1,14 @@
+{
+  "signals": {
+    "BTC": "SHORT",
+    "SOL": "SHORT",
+    "HYPE": "LONG",
+    "VVV": "LONG",
+    "GRASS": "LONG",
+    "MORPHO": "LONG",
+    "IP": "SHORT",
+    "OP": "SHORT",
+    "AR": "SHORT"
+  },
+  "lastCheck": "2026-03-09T13:25:27.353Z"
+}

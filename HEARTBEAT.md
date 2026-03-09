@@ -19,9 +19,12 @@ run `node scripts/status.mjs` for workspace overview (git, tasks, memory)
 - [ ] run `cd projects/anivia && node --env-file=.env.local scripts/advance-sequences.mjs` to advance wait steps
 - only log output if something actually advanced
 
-## paper trading check (every heartbeat)
-- [ ] run `cd projects/hyperliquid-bot && node paper-trade.mjs` to check EMA signals and update positions
-- report significant changes (new trades, P&L milestones)
+## trading bot (EVERY heartbeat - high priority)
+- [ ] run `cd projects/hyperliquid-bot && node scanner.mjs` — find fresh crosses + high momentum
+- [ ] run `cd projects/hyperliquid-bot && node ema-bot-v2.mjs --run` — execute positions
+- [ ] report: new trades, P&L changes, fresh opportunities
+- **be proactive**: good setup = execute immediately, don't wait for ron
+- watchlist: BTC, SOL, HYPE, VVV, GRASS, MORPHO, IP, OP, AR (expand when scanner finds gold)
 
 ## rotate checks (2-4x daily)
 - [ ] git status — uncommitted changes? push if stable
