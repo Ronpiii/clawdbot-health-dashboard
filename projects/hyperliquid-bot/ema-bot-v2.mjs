@@ -54,7 +54,7 @@ const CONFIG = {
   },
   
   // Asset configurations for TREND mode (200 EMA + slope)
-  // TEST MODE: BTC + SOL only (limited capital)
+  // Status: BTC + SOL enabled for testing, others disabled (re-enable when funded)
   trend: {
     // === CORE POSITIONS ===
     BTC: {
@@ -70,6 +70,64 @@ const CONFIG = {
       enabled: true,
       allowShort: true,
       minSize: 0.01,
+    },
+    // === HIGH MOMENTUM LONGS (from scanner) ===
+    HYPE: {
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 0.1,
+    },
+    VVV: {  // 30% slope - strongest
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 0.1,
+    },
+    GRASS: {  // 13% slope
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 1,
+    },
+    MORPHO: {  // 12% slope
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 0.1,
+    },
+    // === STRONG SHORTS (from scanner) ===
+    IP: {  // -15% slope - steepest decline
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 1,
+    },
+    OP: {  // -13% slope
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 1,
+    },
+    AR: {  // -11% slope
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 0.1,
+    },
+    MERL: {  // -16% slope - steepest decline in market
+      ema: 200,
+      slopeLookback: 48,
+      enabled: false,  // Disabled: low capital
+      allowShort: true,
+      minSize: 100,
     },
   },
   

@@ -2,7 +2,7 @@
   "positions": {
     "BTC": {
       "direction": "SHORT",
-      "size": -0.00021,
+      "size": -0.0027,
       "entryPrice": 69034
     },
     "SOL": {
@@ -14,8 +14,8 @@
   "dailyPnLDate": "2026-03-09",
   "dailyPnL": 0,
   "highestPrice": {
-    "BTC": 69012.5,
-    "SOL": 85.1075
+    "BTC": 69036.5,
+    "SOL": 85.0105
   },
-  "lastCheck": "2026-03-09T14:20:44.638Z"
+  "lastCheck": "2026-03-09T14:21:05.977Z"
 }
