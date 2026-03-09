@@ -413,11 +413,11 @@ function calculatePositionSize(symbol, accountValue, currentPrice) {
 
 // ==================== LIVE ORDER EXECUTION ====================
 
-async function executeLiveOrder(symbol, direction, size) {
+async function executeLiveOrder(symbol, direction, size, price) {
   try {
     const isBuy = direction === 'LONG';
     console.log(`✅ LIVE ${direction}: ${size} ${symbol}`);
-    const result = await placeOrder(symbol, isBuy, size);
+    const result = await placeOrder(symbol, isBuy, size, price);
     console.log(`   Order response:`, result);
     return true;
   } catch (err) {
@@ -560,7 +560,7 @@ async function runBot(paperMode = true) {
       if (size > 0) {
         console.log(`→ OPENING LONG: ${size} ${symbol}`);
         if (!paperMode) {
-          await executeLiveOrder(symbol, 'LONG', size);
+          await executeLiveOrder(symbol, 'LONG', size, currentPrice);
         }
         logTrade('LONG', symbol, size, currentPrice, signal.reason);
       }
@@ -569,7 +569,7 @@ async function runBot(paperMode = true) {
       if (size > 0) {
         console.log(`→ OPENING SHORT: ${size} ${symbol}`);
         if (!paperMode) {
-          await executeLiveOrder(symbol, 'SHORT', size);
+          await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
         }
         logTrade('SHORT', symbol, size, currentPrice, signal.reason);
       }
@@ -579,19 +579,19 @@ async function runBot(paperMode = true) {
       if (paperMode) {
         await executePaperOrder(symbol, 'EXIT', 0, currentPrice, state);
       } else {
-        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size));
+        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
       }
       logTrade('EXIT', symbol, Math.abs(currentPos.size), currentPrice, signal.reason);
     } else if (signal.signal === 'LONG' && currentPos?.direction === 'SHORT') {
       // Flip from SHORT to LONG
       console.log(`→ FLIPPING: SHORT → LONG ${symbol}`);
       if (!paperMode) {
-        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size));
+        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
       }
       const size = calculatePositionSize(symbol, accountValue, currentPrice);
       if (size > 0) {
         if (!paperMode) {
-          await executeLiveOrder(symbol, 'LONG', size);
+          await executeLiveOrder(symbol, 'LONG', size, currentPrice);
         }
         logTrade('FLIP→L', symbol, size, currentPrice, signal.reason);
       }
@@ -599,12 +599,12 @@ async function runBot(paperMode = true) {
       // Flip from LONG to SHORT
       console.log(`→ FLIPPING: LONG → SHORT ${symbol}`);
       if (!paperMode) {
-        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size));
+        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
       }
       const size = calculatePositionSize(symbol, accountValue, currentPrice);
       if (size > 0) {
         if (!paperMode) {
-          await executeLiveOrder(symbol, 'SHORT', size);
+          await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
         }
         logTrade('FLIP→S', symbol, size, currentPrice, signal.reason);
       }

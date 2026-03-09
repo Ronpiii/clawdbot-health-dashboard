@@ -25,21 +25,22 @@ async function placeOrder(symbol, isBuy, size, price = null) {
     console.log(`\n📍 PLACING: ${isBuy ? 'BUY' : 'SELL'} ${size} ${symbol}`);
     
     // Get market price with realistic slippage
-    let limitPrice = price;
-    if (!limitPrice) {
+    let currentPrice = price;
+    if (!currentPrice) {
       const mids = await sdk.info.getAllMids();
-      const currentPrice = parseFloat(mids[symbol]);
+      currentPrice = parseFloat(mids[symbol]);
       if (!currentPrice) throw new Error(`No price for ${symbol}`);
-      // 1% slippage for market orders (not extreme)
-      limitPrice = isBuy ? currentPrice * 1.01 : currentPrice * 0.99;
     }
+    
+    // Apply 1% slippage for market orders (not extreme)
+    const limitPrice = isBuy ? currentPrice * 1.01 : currentPrice * 0.99;
     
     const result = await sdk.exchange.placeOrder({
       coin: `${symbol}-PERP`,  // CRITICAL: Must include -PERP
       is_buy: isBuy,
       sz: parseFloat(size),
-      limit_px: limitPrice,
-      order_type: { limit: { tif: 'Ioc' } },  // Immediate or Cancel
+      limit_px: currentPrice.toString(),  // Use mid price, not slipped price
+      order_type: { limit: { tif: 'Gtc' } },  // Good til Cancel
       reduce_only: false,  // Opening new positions
     });
     
