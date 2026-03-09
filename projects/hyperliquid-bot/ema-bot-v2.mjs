@@ -132,8 +132,7 @@ const CONFIG = {
   },
   
   // Risk management
-  maxPositionPct: 0.20,  // Reduced for low capital testing
-  maxLeverage: 2,        // Reduced leverage
+  maxPositionPct: 0.20,  // % of available margin per position (1x leverage only)
   dailyLossLimit: 0.10,
   
   // Execution
@@ -395,11 +394,13 @@ function calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMar
   // Track cumulative margin: don't overcommit
   const availableMargin = accountValue - cumulativeMarginUsed;
   const maxPositionValue = availableMargin * CONFIG.maxPositionPct;
-  const leveragedValue = maxPositionValue * CONFIG.maxLeverage;
+  // NOTE: No leverage multiplier here - Hyperliquid applies its own defaults
+  // To use actual leverage, must explicitly set in order placement
+  const positionValue = maxPositionValue;
   
-  if (leveragedValue < CONFIG.minOrderUsd) return 0;
+  if (positionValue < CONFIG.minOrderUsd) return 0;
   
-  let size = leveragedValue / currentPrice;
+  let size = positionValue / currentPrice;
   
   // Round down appropriately
   if (symbol === 'BTC') {
