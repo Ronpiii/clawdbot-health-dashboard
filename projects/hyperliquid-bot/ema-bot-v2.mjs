@@ -701,6 +701,67 @@ async function showStatus() {
   }
 }
 
+// ==================== CLOSE ALL POSITIONS ====================
+
+async function closeAllPositions() {
+  console.log('═'.repeat(60));
+  console.log('CLOSING ALL POSITIONS');
+  console.log('═'.repeat(60));
+  
+  const wallet = getWallet();
+  const account = await getAccountState(wallet.address);
+  const mids = await getMids();
+  
+  const positions = [];
+  if (account.assetPositions) {
+    for (const ap of account.assetPositions) {
+      const p = ap.position;
+      const size = Math.abs(parseFloat(p.szi));
+      if (size > 0) {
+        positions.push({
+          coin: p.coin,
+          symbol: p.coin.replace('-PERP', ''),
+          size: size,
+          isLong: parseFloat(p.szi) > 0,
+          entryPrice: parseFloat(p.entryPx),
+        });
+      }
+    }
+  }
+  
+  if (positions.length === 0) {
+    console.log('No open positions');
+    return;
+  }
+  
+  console.log(`\nFound ${positions.length} position(s) to close:\n`);
+  
+  for (const pos of positions) {
+    try {
+      const currentPrice = parseFloat(mids[pos.symbol] || 0);
+      const isBuy = !pos.isLong;  // Opposite direction to close
+      
+      console.log(`${pos.isLong ? 'LONG' : 'SHORT'} ${pos.size} ${pos.symbol} @ $${currentPrice.toFixed(4)}`);
+      
+      // placeOrder handles the close
+      await placeOrder(pos.coin.replace('-PERP', ''), isBuy, pos.size, currentPrice);
+      console.log(`  ✅ Close order submitted`);
+      if (status.filled) {
+        console.log(`  ✅ Filled ${status.filled.totalSz} @ $${status.filled.avgPx}`);
+      } else if (status.resting) {
+        console.log(`  ⏳ Resting (oid ${status.resting.oid})`);
+      } else if (status.error) {
+        console.log(`  ⚠️ ${status.error}`);
+      }
+    } catch (err) {
+      console.error(`  ❌ Error: ${err.message}`);
+    }
+  }
+  
+  console.log('\n' + '═'.repeat(60));
+  console.log('Close all complete');
+}
+
 // ==================== CLI ====================
 
 const args = process.argv.slice(2);
@@ -709,6 +770,8 @@ if (args.includes('--run') || args.includes('-r')) {
   runBot(false).catch(console.error);  // LIVE MODE
 } else if (args.includes('--status') || args.includes('-s')) {
   showStatus().catch(console.error);
+} else if (args.includes('--closeall')) {
+  closeAllPositions().catch(console.error);
 } else if (args.includes('--loop')) {
   const intervalHours = CONFIG.mode === 'trend' ? 4 : 24;
   console.log(`Starting bot loop (every ${intervalHours}h for ${CONFIG.mode} mode)...`);
@@ -719,9 +782,10 @@ if (args.includes('--run') || args.includes('-r')) {
 EMA Trading Bot V2 - Hyperliquid
 
 Usage:
-  node ema-bot-v2.mjs --run      Run once (paper trading)
-  node ema-bot-v2.mjs --status   Show current positions
-  node ema-bot-v2.mjs --loop     Run continuously
+  node ema-bot-v2.mjs --run       Run once (paper trading)
+  node ema-bot-v2.mjs --status    Show current positions
+  node ema-bot-v2.mjs --closeall  Close ALL open positions (emergency cleanup)
+  node ema-bot-v2.mjs --loop      Run continuously
 
 Modes (set BOT_MODE env):
   trend     - 200 EMA + slope filter (4H, shorts enabled)
