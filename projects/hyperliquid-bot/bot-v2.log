@@ -1,39 +1,39 @@
-[dotenv@17.3.1] injecting env (2) from .env -- tip: ⚙️  enable debug logging with { debug: true }
-[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.3.1] injecting env (2) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
 Starting bot loop (every 4h for trend mode)...
 ════════════════════════════════════════════════════════════
 EMA BOT V2 | Mode: TREND | LIVE
-2026-03-10T20:54:45.685Z
+2026-03-10T21:15:05.265Z
 ════════════════════════════════════════════════════════════
 ⚠️  LIVE TRADING - REAL MONEY AT RISK
 
-Account: $122.07
+Account: $122.18
 Daily PnL: $0.00
 
 🔗 BTC REGIME: EXIT
 
 --- LIQUIDATION ALERT ---
-🚨 HYPE: 3.92% from liquidation (liq @ $32.7081)
+🚨 HYPE: 3.26% from liquidation (liq @ $32.7086)
 ---------------------
 
 
 ─── SOL ───
-Price: $86.1175
+Price: $86.0135
 Signal: SHORT
 Reason: Price below EMA 200 ($90.70), slope ↘ falling
-→ HOLDING: SHORT (PnL: 0.34%)
+→ HOLDING: SHORT (PnL: 0.46%)
 
 ─── HYPE ───
-Price: $34.0435
+Price: $33.8095
 Signal: LONG
-Reason: Price above EMA 200 ($30.12), slope ↗ rising
-→ HOLDING: LONG (PnL: -1.36%)
+Reason: Price above EMA 200 ($30.11), slope ↗ rising
+→ HOLDING: LONG (PnL: -2.04%)
 
 ─── GRASS ───
-Price: $0.3590
+Price: $0.3666
 Signal: LONG
 Reason: Price above EMA 200 ($0.25), slope ↗ rising
-→ HOLDING: LONG (PnL: 8.17%)
+→ HOLDING: LONG (PnL: 10.47%)
 
 ════════════════════════════════════════════════════════════
 Run complete
