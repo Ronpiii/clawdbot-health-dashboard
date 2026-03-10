@@ -48,8 +48,8 @@ function getWinrate(positions, pnlArray) {
 
 function getAccountHealth(account) {
   if (account > 120) return '🟢 Excellent';
-  if (account > 110) return '🟡 Healthy';
-  if (account > 100) return '🟠 Caution';
+  if (account > 110) return '🟢 Healthy';
+  if (account > 100) return '🟡 Caution';
   return '🔴 Critical';
 }
 
