@@ -892,12 +892,40 @@ async function runBot(paperMode = true) {
         : (currentPos.entryPrice - currentPrice) / currentPos.entryPrice;
       console.log(`→ HOLDING: ${currentPos.direction} (PnL: ${(pnlPct * 100).toFixed(2)}%)`);
       
-      // === SCALING LOGIC: Add to winners ===
-      const tranches = currentPos.tranches || 1;
-      const SCALING_THRESHOLD = 0.05; // 5% profit
-      const MAX_TRANCHES = 2;
-      
-      if (tranches < MAX_TRANCHES && pnlPct >= SCALING_THRESHOLD) {
+      // === HARD STOP LOSS: Emergency exit ===
+      const HARD_STOP = -0.07; // -7% max loss
+      if (pnlPct < HARD_STOP) {
+        console.log(`🛑 HARD STOP HIT: PnL ${(pnlPct*100).toFixed(2)}% < ${HARD_STOP*100}%`);
+        cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
+        if (paperMode) {
+          await executePaperOrder(symbol, 'EXIT', 0, currentPrice, state);
+        } else {
+          await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
+        }
+        logTrade('STOP', symbol, Math.abs(currentPos.size), currentPrice, `Hard stop at ${(pnlPct*100).toFixed(2)}%`);
+        
+        // Discord notification
+        await notifyDiscord({
+          title: `🛑 HARD STOP: ${symbol}`,
+          color: 0xff0000,
+          fields: [
+            { name: 'Direction', value: currentPos.direction, inline: true },
+            { name: 'Stop Price', value: `$${currentPrice.toFixed(2)}`, inline: true },
+            { name: 'Entry', value: `$${currentPos.entryPrice.toFixed(4)}`, inline: true },
+            { name: 'Loss', value: `${(pnlPct*100).toFixed(2)}%`, inline: true },
+            { name: 'Tranches', value: String(currentPos.tranches || 1), inline: true },
+          ],
+          timestamp: new Date().toISOString(),
+        });
+        
+        delete state.positions[symbol];
+      } else {
+        // === SCALING LOGIC: Add to winners ===
+        const tranches = currentPos.tranches || 1;
+        const SCALING_THRESHOLD = 0.05; // 5% profit
+        const MAX_TRANCHES = 2;
+        
+        if (tranches < MAX_TRANCHES && pnlPct >= SCALING_THRESHOLD) {
         // Only scale if position is actually profitable (pnlPct > 0)
         if (pnlPct > 0) {
           // Add 50% of original position size as the scale-in tranche
@@ -941,6 +969,7 @@ async function runBot(paperMode = true) {
             });
           }
         }
+      }
       }
     } else {
       console.log(`→ WAITING: no entry signal`);
