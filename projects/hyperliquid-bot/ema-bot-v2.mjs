@@ -532,17 +532,29 @@ async function runBot(paperMode = true) {
   const account = await getAccountState(address);
   const accountValue = parseFloat(account.marginSummary?.accountValue || 0);
   
+  // Load old state if exists (to preserve tranche tracking)
+  let oldState = {};
+  if (existsSync(CONFIG.stateFile)) {
+    try {
+      oldState = JSON.parse(readFileSync(CONFIG.stateFile, 'utf8'));
+    } catch (e) {
+      console.log('⚠️ Could not load old state, starting fresh');
+    }
+  }
+  
   // Load real positions from API, not state.json
   const realPositions = {};
   if (account.assetPositions) {
     for (const ap of account.assetPositions) {
       const p = ap.position;
       if (Math.abs(parseFloat(p.szi)) > 0) {
-        realPositions[p.coin] = {
+        const coin = p.coin;
+        const oldPos = oldState.positions?.[coin];
+        realPositions[coin] = {
           direction: parseFloat(p.szi) > 0 ? 'LONG' : 'SHORT',
           size: parseFloat(p.szi),
           entryPrice: parseFloat(p.entryPx),
-          tranches: 1, // Start with 1 tranche, increment on scale-in
+          tranches: oldPos?.tranches || 1, // Preserve tranche count from old state
         };
       }
     }
@@ -741,10 +753,11 @@ async function runBot(paperMode = true) {
       const SCALING_THRESHOLD = 0.02; // 2% profit
       const MAX_TRANCHES = 2;
       
-      if (tranches < MAX_TRANCHES && Math.abs(pnlPct) >= SCALING_THRESHOLD) {
-        const shouldScale = currentPos.direction === 'LONG' ? pnlPct > 0 : pnlPct > 0;
-        if (shouldScale) {
-          const addSize = Math.abs(calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal)) * 0.5;
+      if (tranches < MAX_TRANCHES && pnlPct >= SCALING_THRESHOLD) {
+        // Only scale if position is actually profitable (pnlPct > 0)
+        if (pnlPct > 0) {
+          const baseSize = Math.abs(calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal));
+          const addSize = baseSize * 0.5;
           if (addSize > 0 && addSize * currentPrice >= CONFIG.minOrderUsd) {
             console.log(`📈 SCALING IN: +${addSize.toFixed(4)} ${symbol} @ ${currentPrice.toFixed(2)} (${(pnlPct*100).toFixed(1)}% profit)`);
             
