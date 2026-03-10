@@ -3,7 +3,7 @@
  * BTC EMA Signal Checker (v2)
  * 
  * Regime-filtered strategy with confirmations:
- * - 200 EMA (daily) determines regime (bull/bear/chop)
+ * - 100 EMA (daily) determines regime (bull/bear/chop) [upgraded from 200]
  * - 20 EMA (daily) determines signal direction
  * - 50 EMA (4H) confirms entry timing
  * - Funding rate filters for sentiment extremes
@@ -32,14 +32,14 @@ if (!existsSync(cacheDir)) {
 const CONFIG = {
   // Daily EMAs
   shortEMA: 20,
-  longEMA: 200,
+  longEMA: 100, // upgraded from 200 for +15% responsiveness, -33% flip rate
   // EMA 10/30 strategy (backtested winner)
   ema10: 10,
   ema30: 30,
   // 4H EMA
   ema4H: 50,
   // Regime
-  chopZone: 0.03, // 3% around 200 EMA
+  chopZone: 0.03, // 3% around 100 EMA
   // Funding thresholds
   fundingBullish: -0.01, // below this = bullish (shorts paying)
   fundingBearish: 0.03,  // above this = bearish (longs paying)
