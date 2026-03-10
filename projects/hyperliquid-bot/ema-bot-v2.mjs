@@ -623,10 +623,29 @@ async function runBot(paperMode = true) {
   // REGIME FILTER: Get BTC signal (master regime)
   // Read BTC signal from cache (updated by arc btc --alert)
   let btcSignal = null;
+  let btcSignalChanged = false;
   try {
     const btcState = JSON.parse(readFileSync('../../.cache/btc-signal-state.json', 'utf8'));
     btcSignal = btcState.action;  // 'SHORT', 'WAIT', 'EXIT', etc.
     console.log(`\n🔗 BTC REGIME: ${btcSignal || 'UNKNOWN'}`);
+    
+    // Check if signal changed from previous run
+    if (oldState.btcSignal && oldState.btcSignal !== btcSignal) {
+      btcSignalChanged = true;
+      console.log(`⚠️  BTC REGIME CHANGED: ${oldState.btcSignal} → ${btcSignal}`);
+      
+      // Post to Discord
+      await notifyDiscord({
+        title: `🔗 BTC REGIME CHANGE`,
+        color: btcSignal === 'EXIT' ? 0xff0000 : btcSignal === 'SHORT' ? 0xffaa00 : 0x00ff00,
+        fields: [
+          { name: 'Previous', value: oldState.btcSignal, inline: true },
+          { name: 'Current', value: btcSignal, inline: true },
+          { name: 'Effect', value: btcSignal === 'EXIT' ? '🔒 Blocks new altcoin LONG positions' : btcSignal === 'SHORT' ? '⚠️ 50% position sizing on longs' : '✅ Full position sizing', inline: false },
+        ],
+        timestamp: new Date().toISOString(),
+      });
+    }
   } catch {
     console.log(`\n🔗 BTC REGIME: not available`);
   }
@@ -880,8 +899,9 @@ async function runBot(paperMode = true) {
     }
   }
   
-  // Save account balance to state for dashboard/card display
+  // Save account balance and BTC signal to state for dashboard/card display
   state.account = accountValue;
+  state.btcSignal = btcSignal; // Track for regime change detection
   saveState(state);
   
   console.log('\n' + '═'.repeat(60));
