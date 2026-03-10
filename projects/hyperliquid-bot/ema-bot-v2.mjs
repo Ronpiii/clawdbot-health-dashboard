@@ -756,8 +756,8 @@ async function runBot(paperMode = true) {
       if (tranches < MAX_TRANCHES && pnlPct >= SCALING_THRESHOLD) {
         // Only scale if position is actually profitable (pnlPct > 0)
         if (pnlPct > 0) {
-          const baseSize = Math.abs(calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal));
-          const addSize = baseSize * 0.5;
+          // Add 50% of original position size as the scale-in tranche
+          const addSize = Math.abs(currentPos.size) * 0.5;
           if (addSize > 0 && addSize * currentPrice >= CONFIG.minOrderUsd) {
             console.log(`📈 SCALING IN: +${addSize.toFixed(4)} ${symbol} @ ${currentPrice.toFixed(2)} (${(pnlPct*100).toFixed(1)}% profit)`);
             
