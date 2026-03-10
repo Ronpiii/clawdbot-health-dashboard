@@ -734,10 +734,10 @@ async function runBot(paperMode = true) {
         // Track pending signals in state to confirm on next qualifying bar
         if (!state.pendingSignals) state.pendingSignals = {};
         if (!state.pendingSignals[symbol]) {
-          state.pendingSignals[symbol] = { signal: 'LONG', bar: i, emaPrice: signal.emaPrice };
-          console.log(`⏳ PENDING LONG: waiting for 4H candle close above EMA (bars until 4H close: ${4 - (i % 4)})`);
-        } else if (state.pendingSignals[symbol].signal === 'LONG' && (i - state.pendingSignals[symbol].bar) >= 4) {
-          // 4H candle closed; check if price stayed above EMA
+          state.pendingSignals[symbol] = { signal: 'LONG', time: Date.now(), emaPrice: signal.emaPrice };
+          console.log(`⏳ PENDING LONG: waiting for next run to confirm above EMA`);
+        } else if (state.pendingSignals[symbol].signal === 'LONG') {
+          // Confirm on next run if signal still valid (price stayed above EMA)
           if (currentPrice > signal.emaPrice) {
             const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
             const orderValue = size * currentPrice;
@@ -774,10 +774,10 @@ async function runBot(paperMode = true) {
       // CONFIRMATION: wait for 4H candle close below EMA
       if (!state.pendingSignals) state.pendingSignals = {};
       if (!state.pendingSignals[symbol]) {
-        state.pendingSignals[symbol] = { signal: 'SHORT', bar: i, emaPrice: signal.emaPrice };
-        console.log(`⏳ PENDING SHORT: waiting for 4H candle close below EMA (bars until 4H close: ${4 - (i % 4)})`);
-      } else if (state.pendingSignals[symbol].signal === 'SHORT' && (i - state.pendingSignals[symbol].bar) >= 4) {
-        // 4H candle closed; check if price stayed below EMA
+        state.pendingSignals[symbol] = { signal: 'SHORT', time: Date.now(), emaPrice: signal.emaPrice };
+        console.log(`⏳ PENDING SHORT: waiting for next run to confirm below EMA`);
+      } else if (state.pendingSignals[symbol].signal === 'SHORT') {
+        // Confirm on next run if signal still valid (price stayed below EMA)
         if (currentPrice < signal.emaPrice) {
           const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
           const orderValue = size * currentPrice;
@@ -810,13 +810,13 @@ async function runBot(paperMode = true) {
         }
       }
     } else if (signal.signal === 'EXIT' && hasPosition) {
-      // CONFIRMATION: wait for 4H candle close to confirm exit
+      // CONFIRMATION: wait for next run to confirm exit (sanity check)
       if (!state.pendingSignals) state.pendingSignals = {};
       if (!state.pendingSignals[symbol]) {
-        state.pendingSignals[symbol] = { signal: 'EXIT', bar: i, reason: signal.reason };
-        console.log(`⏳ PENDING EXIT: waiting for 4H candle close to confirm (${signal.reason})`);
-      } else if (state.pendingSignals[symbol].signal === 'EXIT' && (i - state.pendingSignals[symbol].bar) >= 4) {
-        // 4H candle closed; check if signal is STILL 'EXIT' (not bounced back to LONG/SHORT)
+        state.pendingSignals[symbol] = { signal: 'EXIT', time: Date.now(), reason: signal.reason };
+        console.log(`⏳ PENDING EXIT: will confirm on next run if still valid (${signal.reason})`);
+      } else if (state.pendingSignals[symbol].signal === 'EXIT') {
+        // Previous run confirmed EXIT signal, proceed now
         if (signal.signal === 'EXIT') {
           const pnlPct = currentPos.direction === 'LONG'
             ? (currentPrice - currentPos.entryPrice) / currentPos.entryPrice
