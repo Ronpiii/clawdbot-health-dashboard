@@ -596,7 +596,10 @@ async function runBot(paperMode = true) {
     }
   }
   
-  let state = { positions: realPositions };
+  let state = { 
+    positions: realPositions,
+    pendingSignals: oldState.pendingSignals || {}, // Preserve pending signal confirmations
+  };
   
   // Reset daily P&L if new day
   const today = new Date().toISOString().slice(0, 10);
@@ -727,57 +730,85 @@ async function runBot(paperMode = true) {
       if (!shouldAllowLongPosition(btcSignal)) {
         console.log(`→ SKIP LONG: BTC in EXIT regime`);
       } else {
-        const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
-        const orderValue = size * currentPrice;
-        if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
-          console.log(`→ OPENING LONG: ${size} ${symbol}`);
-          cumulativeMarginUsed += orderValue;
-          if (!paperMode) {
-            await executeLiveOrder(symbol, 'LONG', size, currentPrice);
+        // CONFIRMATION: wait for 4H candle close above EMA
+        // Track pending signals in state to confirm on next qualifying bar
+        if (!state.pendingSignals) state.pendingSignals = {};
+        if (!state.pendingSignals[symbol]) {
+          state.pendingSignals[symbol] = { signal: 'LONG', bar: i, emaPrice: signal.emaPrice };
+          console.log(`⏳ PENDING LONG: waiting for 4H candle close above EMA (bars until 4H close: ${4 - (i % 4)})`);
+        } else if (state.pendingSignals[symbol].signal === 'LONG' && (i - state.pendingSignals[symbol].bar) >= 4) {
+          // 4H candle closed; check if price stayed above EMA
+          if (currentPrice > signal.emaPrice) {
+            const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
+            const orderValue = size * currentPrice;
+            if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
+              console.log(`✓ 4H CLOSE CONFIRMED → OPENING LONG: ${size} ${symbol}`);
+              cumulativeMarginUsed += orderValue;
+              if (!paperMode) {
+                await executeLiveOrder(symbol, 'LONG', size, currentPrice);
+              }
+              logTrade('LONG', symbol, size, currentPrice, signal.reason + ' (4H confirmed)');
+              
+              // Discord notification
+              await notifyDiscord({
+                title: `📈 LONG Entry: ${symbol}`,
+                color: 0x00ff00,
+                fields: [
+                  { name: 'Size', value: `${size.toFixed(4)}`, inline: true },
+                  { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
+                  { name: 'Confirmation', value: '4H candle closed above EMA ✓', inline: true },
+                  { name: 'Reason', value: signal.reason, inline: false },
+                ],
+                timestamp: new Date().toISOString(),
+              });
+              
+              delete state.pendingSignals[symbol];
+            }
+          } else {
+            console.log(`✗ 4H CLOSE REJECTED: price fell below EMA (retest, skipping)`);
+            delete state.pendingSignals[symbol];
           }
-          logTrade('LONG', symbol, size, currentPrice, signal.reason);
-          
-          // Discord notification
-          await notifyDiscord({
-            title: `📈 LONG Entry: ${symbol}`,
-            color: 0x00ff00,
-            fields: [
-              { name: 'Size', value: `${size.toFixed(4)}`, inline: true },
-              { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
-              { name: 'Reason', value: signal.reason, inline: false },
-            ],
-            timestamp: new Date().toISOString(),
-          });
-        } else if (size > 0) {
-          console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
         }
       }
     } else if (signal.signal === 'SHORT' && !hasPosition) {
-      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
-      const orderValue = size * currentPrice;
-      if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
-        console.log(`→ OPENING SHORT: ${size} ${symbol}`);
-        cumulativeMarginUsed += orderValue;
-        if (!paperMode) {
-          await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
+      // CONFIRMATION: wait for 4H candle close below EMA
+      if (!state.pendingSignals) state.pendingSignals = {};
+      if (!state.pendingSignals[symbol]) {
+        state.pendingSignals[symbol] = { signal: 'SHORT', bar: i, emaPrice: signal.emaPrice };
+        console.log(`⏳ PENDING SHORT: waiting for 4H candle close below EMA (bars until 4H close: ${4 - (i % 4)})`);
+      } else if (state.pendingSignals[symbol].signal === 'SHORT' && (i - state.pendingSignals[symbol].bar) >= 4) {
+        // 4H candle closed; check if price stayed below EMA
+        if (currentPrice < signal.emaPrice) {
+          const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
+          const orderValue = size * currentPrice;
+          if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
+            console.log(`✓ 4H CLOSE CONFIRMED → OPENING SHORT: ${size} ${symbol}`);
+            cumulativeMarginUsed += orderValue;
+            if (!paperMode) {
+              await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
+            }
+            logTrade('SHORT', symbol, size, currentPrice, signal.reason + ' (4H confirmed)');
+            
+            // Discord notification
+            await notifyDiscord({
+              title: `📉 SHORT Entry: ${symbol}`,
+              color: 0xff0000,
+              fields: [
+                { name: 'Size', value: `${size.toFixed(4)}`, inline: true },
+                { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
+                { name: 'Confirmation', value: '4H candle closed below EMA ✓', inline: true },
+                { name: 'Reason', value: signal.reason, inline: false },
+              ],
+              timestamp: new Date().toISOString(),
+            });
+            
+            delete state.pendingSignals[symbol];
+          }
+        } else {
+          console.log(`✗ 4H CLOSE REJECTED: price rose above EMA (retest, skipping)`);
+          delete state.pendingSignals[symbol];
         }
-        logTrade('SHORT', symbol, size, currentPrice, signal.reason);
-        
-        // Discord notification
-        await notifyDiscord({
-          title: `📉 SHORT Entry: ${symbol}`,
-          color: 0xff0000,
-          fields: [
-            { name: 'Size', value: `${size.toFixed(4)}`, inline: true },
-            { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
-            { name: 'Reason', value: signal.reason, inline: false },
-          ],
-          timestamp: new Date().toISOString(),
-        });
-      } else if (size > 0) {
-        console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
       }
-
     } else if (signal.signal === 'EXIT' && hasPosition) {
       console.log(`→ CLOSING: ${currentPos.direction} ${symbol}`);
       const pnlPct = currentPos.direction === 'LONG'
