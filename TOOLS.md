@@ -1,5 +1,19 @@
 # TOOLS.md - Local Notes
 
+## BTC Regime Filter
+
+**Current:** EMA100 (upgraded 2026-03-10 from EMA200)
+
+Determines if bot opens new LONG positions:
+- **BULL** (price > EMA100): allows full position sizing
+- **BEAR** (price < EMA100): blocks new longs, allows shorts only
+- flips ~33% less than EMA200, detects moves 15% faster
+- regime changes post to #btc-signals automatically
+
+Current: BTC $70.5k vs EMA100 $80.9k = BEAR/EXIT (no new longs)
+
+---
+
 ## Positions Card
 
 when ron asks **"-positions"**, respond with templated card from:
