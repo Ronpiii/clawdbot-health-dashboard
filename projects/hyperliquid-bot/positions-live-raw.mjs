@@ -48,23 +48,49 @@ function getCurrentTime() {
   });
 }
 
-function getLastTrades(count = 5) {
+function getLastTrades(count = 5, positionMetrics, positionMap) {
   try {
     const logFile = path.join(__dirname, 'trades-v2.log');
     const content = readFileSync(logFile, 'utf8');
     const lines = content.trim().split('\n');
     const lastLines = lines.slice(-count).reverse();
+    const now = new Date();
+    
+    // Track which symbols we've already added (avoid duplicates for scales)
+    const seenSymbols = new Set();
     
     return lastLines.map(line => {
       const parts = line.split('|').map(p => p.trim());
       if (parts.length >= 5) {
+        const fullTimestamp = parts[0];
+        const type = parts[1];
+        const symbol = parts[2];
+        
+        // Only show entry/scale trades, skip exits, avoid duplicate symbols
+        if (!['LONG', 'SHORT', 'SCALE'].includes(type) || seenSymbols.has(symbol)) {
+          return null;
+        }
+        
+        seenSymbols.add(symbol);
+        
+        // Calculate duration
+        const tradeTime = new Date(fullTimestamp);
+        const durationMs = now - tradeTime;
+        const durationStr = formatDuration(durationMs);
+        
+        // Get P&L from position metrics
+        const posIdx = positionMap[symbol];
+        let pnlStr = '-';
+        if (posIdx !== undefined && positionMetrics[posIdx]) {
+          const { pnlPct, pnlDollars } = positionMetrics[posIdx];
+          pnlStr = pnlDollars >= 0 ? `+$${pnlDollars.toFixed(0)}` : `-$${Math.abs(pnlDollars).toFixed(0)}`;
+        }
+        
         return {
-          timestamp: parts[0].split('T')[1].substring(0, 8),
-          type: parts[1],
-          symbol: parts[2],
-          size: parts[3],
-          price: parts[4],
-          reason: parts[5] || ''
+          type,
+          symbol,
+          duration: durationStr,
+          pnl: pnlStr
         };
       }
       return null;
@@ -72,6 +98,18 @@ function getLastTrades(count = 5) {
   } catch (err) {
     return [];
   }
+}
+
+function formatDuration(ms) {
+  const seconds = Math.floor(ms / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  
+  if (days > 0) return `${days}d${hours % 24}h`;
+  if (hours > 0) return `${hours}h${minutes % 60}m`;
+  if (minutes > 0) return `${minutes}m`;
+  return `${seconds}s`;
 }
 
 async function fetchPrices() {
@@ -159,18 +197,24 @@ async function generateCard() {
     const health = getAccountHealth(accountValue);
     const currentTime = getCurrentTime();
     
-    // Get last trades
-    const lastTrades = getLastTrades(5);
+    // Build position map for last trades lookup
+    const positionMap = {};
+    positions.forEach((pos, idx) => {
+      positionMap[pos.symbol] = idx;
+    });
+    
+    // Get last trades with P&L and duration
+    const lastTrades = getLastTrades(5, positionMetrics, positionMap);
     
     // Build compact single-block card
     let tradesStr = '';
     if (lastTrades.length > 0) {
       tradesStr = '\n\nLAST TRADES:\n' + lastTrades.map((t, i) => {
         const typeEmoji = {
-          'ENTRY': '📍', 'EXIT': '🚪', 'LONG': '▲', 'SHORT': '▼',
-          'SCALE': '📈', 'STOP': '🛑'
+          'LONG': '▲', 'SHORT': '▼',
+          'SCALE': '📈'
         }[t.type] || '●';
-        return `  ${typeEmoji} ${t.type.padEnd(6)} ${t.symbol.padEnd(5)} ${t.size.padEnd(10)} @ ${t.price.padEnd(12)} ${t.timestamp}`;
+        return `  ${typeEmoji} ${t.symbol.padEnd(5)} ${t.pnl.padEnd(8)} ${t.duration.padEnd(6)}`;
       }).join('\n');
     }
     
