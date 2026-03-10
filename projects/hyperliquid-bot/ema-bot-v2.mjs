@@ -96,7 +96,7 @@ const CONFIG = {
     BTC: {
       ema: 200,
       slopeLookback: 48,
-      enabled: true,
+      enabled: false,  // DISABLED: now using dedicated ema-bot-btc-slope.mjs with 0.01% slope filter
       allowShort: true,
       minSize: 0.0001,
     },
