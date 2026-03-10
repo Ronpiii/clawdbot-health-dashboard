@@ -48,6 +48,32 @@ function getCurrentTime() {
   });
 }
 
+function getLastTrades(count = 5) {
+  try {
+    const logFile = path.join(__dirname, 'trades-v2.log');
+    const content = readFileSync(logFile, 'utf8');
+    const lines = content.trim().split('\n');
+    const lastLines = lines.slice(-count).reverse();
+    
+    return lastLines.map(line => {
+      const parts = line.split('|').map(p => p.trim());
+      if (parts.length >= 5) {
+        return {
+          timestamp: parts[0].split('T')[1].substring(0, 8),
+          type: parts[1],
+          symbol: parts[2],
+          size: parts[3],
+          price: parts[4],
+          reason: parts[5] || ''
+        };
+      }
+      return null;
+    }).filter(t => t !== null);
+  } catch (err) {
+    return [];
+  }
+}
+
 async function fetchPrices() {
   try {
     const response = await fetch('https://api.hyperliquid.xyz/info', {
@@ -64,32 +90,6 @@ async function fetchPrices() {
   } catch (err) {
     console.warn(`⚠️  Price fetch failed: ${err.message}. Using entry prices.`);
     return {};
-  }
-}
-
-function getLastTrades(count = 5) {
-  try {
-    const logFile = path.join(__dirname, 'trades-v2.log');
-    const content = readFileSync(logFile, 'utf8');
-    const lines = content.trim().split('\n');
-    const lastLines = lines.slice(-count).reverse();
-    
-    return lastLines.map(line => {
-      const parts = line.split('|').map(p => p.trim());
-      if (parts.length >= 5) {
-        return {
-          timestamp: parts[0],
-          type: parts[1],
-          symbol: parts[2],
-          size: parts[3],
-          price: parts[4],
-          reason: parts[5] || ''
-        };
-      }
-      return null;
-    }).filter(t => t !== null);
-  } catch (err) {
-    return [];
   }
 }
 
@@ -117,6 +117,7 @@ async function generateCard() {
     // Build positions with live price data
     const positions = [];
     const positionMetrics = [];
+    let totalMarginUsed = 0;
     
     Object.entries(state.positions || {}).forEach(([symbol, pos]) => {
       const currentPrice = parseFloat(mids[symbol]) || pos.entryPrice;
@@ -143,6 +144,10 @@ async function generateCard() {
       });
       
       positionMetrics.push({ pnlPct, pnlDollars });
+      
+      const notional = absSize * currentPrice;
+      const margin = notional / LEVERAGE;
+      totalMarginUsed += margin;
     });
     
     // Calculate metrics
@@ -154,8 +159,20 @@ async function generateCard() {
     const health = getAccountHealth(accountValue);
     const currentTime = getCurrentTime();
     
-    // Calculate total margin used
-    let totalMarginUsed = 0;
+    // Get last trades
+    const lastTrades = getLastTrades(5);
+    
+    // Build compact single-block card
+    let tradesStr = '';
+    if (lastTrades.length > 0) {
+      tradesStr = '\n\nLAST TRADES:\n' + lastTrades.map((t, i) => {
+        const typeEmoji = {
+          'ENTRY': '📍', 'EXIT': '🚪', 'LONG': '▲', 'SHORT': '▼',
+          'SCALE': '📈', 'STOP': '🛑'
+        }[t.type] || '●';
+        return `  ${typeEmoji} ${t.type.padEnd(6)} ${t.symbol.padEnd(5)} ${t.size.padEnd(10)} @ ${t.price.padEnd(12)} ${t.timestamp}`;
+      }).join('\n');
+    }
     
     const card = `
 ╔════════════════════════════════════════════════════════════════╗
@@ -171,43 +188,16 @@ ${positions.map((pos, idx) => {
   const { pnlPct, pnlDollars } = positionMetrics[idx];
   const emoji = pnlPct > 0.5 ? '✓' : pnlPct < -0.5 ? '✗' : '─';
   const direction = pos.direction === 'LONG' ? '▲' : '▼';
-  
   const notional = pos.size * pos.currentPrice;
   const margin = notional / pos.leverage;
-  totalMarginUsed += margin;
-  
   const pnlStr = `${formatPnL(pnlPct)} ($${pnlDollars > 0 ? '+' : ''}${pnlDollars.toFixed(0)})`;
   
-  return `  ${emoji} ${pos.symbol} ${direction} ${pos.size.toFixed(4)} @ $${pos.entryPrice.toFixed(4)}
-      ├ Size: $${notional.toFixed(0)} | Margin: $${margin.toFixed(0)} | Lev: ${pos.leverage}x | PnL: ${pnlStr}`;
+  return `  ${emoji} ${pos.symbol.padEnd(5)} ${direction} ${pos.size.toFixed(4).padEnd(8)} @ $${pos.entryPrice.toFixed(4)} | Size: $${notional.toFixed(0)} | Mgn: $${margin.toFixed(0)} | PnL: ${pnlStr}`;
 }).join('\n')}
 
-─── SUMMARY ───
-Margin Used: $${totalMarginUsed.toFixed(0)} / $${accountValue.toFixed(0)} (${((totalMarginUsed / accountValue) * 100).toFixed(0)}%)
+Margin Used: $${totalMarginUsed.toFixed(0)} / $${accountValue.toFixed(0)} (${((totalMarginUsed / accountValue) * 100).toFixed(0)}%)${tradesStr}
 
-─── LAST TRADES (5 most recent) ───
-${(() => {
-  const lastTrades = getLastTrades(5);
-  if (lastTrades.length === 0) return '  (no trades yet)';
-  
-  return lastTrades.map((trade, i) => {
-    const typeEmoji = {
-      'ENTRY': '📍',
-      'EXIT': '🚪',
-      'LONG': '▲',
-      'SHORT': '▼',
-      'SCALE': '📈',
-      'STOP': '🛑'
-    }[trade.type] || '●';
-    
-    const timeStr = trade.timestamp.split('T')[1].substring(0, 8);
-    return `  ${i + 1}. ${typeEmoji} ${trade.type.padEnd(6)} ${trade.symbol.padEnd(5)} ${trade.size.padEnd(8)} @ ${trade.price.padEnd(10)} [${timeStr}]`;
-  }).join('\n');
-})()}
-
-⏰ Last check: ${currentTime}
-🔗 BTC Regime: EXIT
-`;
+⏰ Last check: ${currentTime} | 🔗 BTC Regime: EXIT`;
 
     console.log(card);
   } catch (err) {
