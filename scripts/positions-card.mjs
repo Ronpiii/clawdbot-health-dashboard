@@ -71,12 +71,26 @@ async function generateCard() {
     const positions = Object.entries(state.positions);
     
     // Calculate position PnLs and metrics
-    const positionPnLs = positions.map(([symbol, pos]) => {
+    const positionMetrics = positions.map(([symbol, pos]) => {
       const highest = global.highestPrices[symbol] || pos.entryPrice;
-      return calculatePnL(symbol, pos.entryPrice, highest, pos.direction);
+      const currentPrice = parseFloat(mids[symbol]) || highest;
+      const pnlPct = calculatePnL(symbol, pos.entryPrice, highest, pos.direction);
+      
+      // Calculate PnL in dollars
+      let pnlDollars = 0;
+      if (pos.direction === 'LONG') {
+        pnlDollars = (currentPrice - pos.entryPrice) * Math.abs(pos.size);
+      } else {
+        pnlDollars = (pos.entryPrice - currentPrice) * Math.abs(pos.size);
+      }
+      
+      return { pnlPct, pnlDollars };
     });
+    
+    const positionPnLs = positionMetrics.map(m => m.pnlPct);
 
     const totalPnL = positionPnLs.reduce((a, b) => a + b, 0);
+    const totalPnLDollars = positionMetrics.reduce((a, b) => a + b.pnlDollars, 0);
     const avgPnL = positions.length > 0 ? totalPnL / positions.length : 0;
     const winrate = getWinrate(positions, positionPnLs);
     const health = getAccountHealth(account);
@@ -95,13 +109,13 @@ async function generateCard() {
 ╚════════════════════════════════════════════════════════════════╝
 
 💰 ACCOUNT: $${account.toFixed(2)} | ${health}
-📊 DAILY P&L: ${formatPnL(dailyPnL)} | Avg: ${formatPnL(avgPnL)}
+📊 TOTAL P&L: ${formatPnL(totalPnL)} ($${totalPnLDollars > 0 ? '+' : ''}${totalPnLDollars.toFixed(0)}) | Avg: ${formatPnL(avgPnL)}
 🏆 WINRATE: ${winrate}%
 
 OPEN POSITIONS (${positions.length}):
 ${positions.map(([symbol, pos], idx) => {
-  const pnl = positionPnLs[idx];
-  const emoji = pnl > 0.5 ? '✓' : pnl < -0.5 ? '✗' : '─';
+  const { pnlPct, pnlDollars } = positionMetrics[idx];
+  const emoji = pnlPct > 0.5 ? '✓' : pnlPct < -0.5 ? '✗' : '─';
   const direction = pos.direction === 'LONG' ? '▲' : '▼';
   
   const currentPrice = parseFloat(mids[symbol]) || pos.entryPrice;
@@ -109,8 +123,10 @@ ${positions.map(([symbol, pos], idx) => {
   const margin = notional / LEVERAGE;
   totalMarginUsed += margin;
   
+  const pnlStr = `${formatPnL(pnlPct)} ($${pnlDollars > 0 ? '+' : ''}${pnlDollars.toFixed(0)})`;
+  
   return `  ${emoji} ${symbol} ${direction} ${Math.abs(pos.size).toFixed(4)} @ $${pos.entryPrice.toFixed(4)}
-      ├ Size: $${notional.toFixed(0)} | Margin: $${margin.toFixed(0)} | Lev: ${LEVERAGE}x | PnL: ${formatPnL(pnl)}`;
+      ├ Size: $${notional.toFixed(0)} | Margin: $${margin.toFixed(0)} | Lev: ${LEVERAGE}x | PnL: ${pnlStr}`;
 }).join('\n')}
 
 ─── SUMMARY ───
