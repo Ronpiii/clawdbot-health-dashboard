@@ -15,9 +15,45 @@
 import { config } from 'dotenv';
 import { ethers } from 'ethers';
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'fs';
+import https from 'https';
 import { placeOrder, getPositions } from './trade.mjs';
 
 config();
+
+// ==================== DISCORD NOTIFICATIONS ====================
+const DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/1464653461915435049/nVhGT0f9Snavdcnc9SyUFYIiCLM2LlP68Z2y6GFTrcAosYVpBTRV12rm_gJDOGLf-ygj';
+
+async function notifyDiscord(embed) {
+  return new Promise((resolve) => {
+    const payload = JSON.stringify({ embeds: [embed] });
+    const url = new URL(DISCORD_WEBHOOK);
+    const options = {
+      hostname: url.hostname,
+      path: url.pathname + url.search,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(payload),
+      },
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', (chunk) => data += chunk);
+      res.on('end', () => {
+        resolve(res.statusCode === 204 || res.statusCode === 200);
+      });
+    });
+
+    req.on('error', (e) => {
+      console.error('Discord notification error:', e.message);
+      resolve(false);
+    });
+
+    req.write(payload);
+    req.end();
+  });
+}
 
 // ==================== CONFIGURATION ====================
 
@@ -681,6 +717,18 @@ async function runBot(paperMode = true) {
             await executeLiveOrder(symbol, 'LONG', size, currentPrice);
           }
           logTrade('LONG', symbol, size, currentPrice, signal.reason);
+          
+          // Discord notification
+          await notifyDiscord({
+            title: `📈 LONG Entry: ${symbol}`,
+            color: 0x00ff00,
+            fields: [
+              { name: 'Size', value: `${size.toFixed(4)}`, inline: true },
+              { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
+              { name: 'Reason', value: signal.reason, inline: false },
+            ],
+            timestamp: new Date().toISOString(),
+          });
         } else if (size > 0) {
           console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
         }
@@ -695,12 +743,27 @@ async function runBot(paperMode = true) {
           await executeLiveOrder(symbol, 'SHORT', size, currentPrice);
         }
         logTrade('SHORT', symbol, size, currentPrice, signal.reason);
+        
+        // Discord notification
+        await notifyDiscord({
+          title: `📉 SHORT Entry: ${symbol}`,
+          color: 0xff0000,
+          fields: [
+            { name: 'Size', value: `${size.toFixed(4)}`, inline: true },
+            { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
+            { name: 'Reason', value: signal.reason, inline: false },
+          ],
+          timestamp: new Date().toISOString(),
+        });
       } else if (size > 0) {
         console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
       }
 
     } else if (signal.signal === 'EXIT' && hasPosition) {
       console.log(`→ CLOSING: ${currentPos.direction} ${symbol}`);
+      const pnlPct = currentPos.direction === 'LONG'
+        ? (currentPrice - currentPos.entryPrice) / currentPos.entryPrice
+        : (currentPos.entryPrice - currentPrice) / currentPos.entryPrice;
       cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
       if (paperMode) {
         await executePaperOrder(symbol, 'EXIT', 0, currentPrice, state);
@@ -708,6 +771,20 @@ async function runBot(paperMode = true) {
         await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
       }
       logTrade('EXIT', symbol, Math.abs(currentPos.size), currentPrice, signal.reason);
+      
+      // Discord notification
+      await notifyDiscord({
+        title: `🚪 EXIT: ${symbol}`,
+        color: pnlPct > 0 ? 0x00ff00 : 0xff0000,
+        fields: [
+          { name: 'Direction', value: currentPos.direction, inline: true },
+          { name: 'Exit', value: `$${currentPrice.toFixed(2)}`, inline: true },
+          { name: 'Entry', value: `$${currentPos.entryPrice.toFixed(4)}`, inline: true },
+          { name: 'PnL', value: `${(pnlPct*100).toFixed(2)}%`, inline: true },
+          { name: 'Reason', value: signal.reason, inline: false },
+        ],
+        timestamp: new Date().toISOString(),
+      });
     } else if (signal.signal === 'LONG' && currentPos?.direction === 'SHORT') {
       // Flip from SHORT to LONG
       if (!shouldAllowLongPosition(btcSignal)) {
@@ -780,6 +857,21 @@ async function runBot(paperMode = true) {
             
             cumulativeMarginUsed += addSize * currentPrice;
             logTrade('SCALE', symbol, addSize, currentPrice, `+${(pnlPct*100).toFixed(1)}% profit`);
+            
+            // Discord notification
+            await notifyDiscord({
+              title: `📈 SCALE IN: ${symbol}`,
+              color: 0xffaa00,
+              fields: [
+                { name: 'Add Size', value: `${addSize.toFixed(4)}`, inline: true },
+                { name: 'Price', value: `$${currentPrice.toFixed(2)}`, inline: true },
+                { name: 'Profit', value: `${(pnlPct*100).toFixed(2)}%`, inline: true },
+                { name: 'Tranches', value: `${tranches} → ${tranches + 1}`, inline: true },
+                { name: 'Avg Entry', value: `$${avgEntry.toFixed(4)}`, inline: true },
+                { name: 'New Size', value: `${newSize.toFixed(4)}`, inline: true },
+              ],
+              timestamp: new Date().toISOString(),
+            });
           }
         }
       }
