@@ -6,6 +6,8 @@ import path from 'path';
 const botStateFile = path.join(process.cwd(), 'projects/hyperliquid-bot/bot-state-v2.json');
 const lastAccountFile = path.join(process.cwd(), '.cache/last-account-balance.txt');
 
+const LEVERAGE = 3; // default leverage per config
+
 function getLastAccountBalance() {
   try {
     if (fs.existsSync(lastAccountFile)) {
@@ -13,6 +15,22 @@ function getLastAccountBalance() {
     }
   } catch (e) {}
   return 119.00; // fallback estimate
+}
+
+async function getCurrentPrices() {
+  try {
+    const res = await fetch('https://api.hyperliquid.xyz/info', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'allMids' })
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const mids = await res.json();
+    return mids;
+  } catch (err) {
+    console.warn(`⚠️ Could not fetch current prices: ${err.message}`);
+    return {};
+  }
 }
 
 function calculatePnL(symbol, entry, highest, direction) {
@@ -47,9 +65,12 @@ async function generateCard() {
     global.highestPrices = state.highestPrice || {};
     const dailyPnL = state.dailyPnL || 0;
 
+    // Fetch current prices
+    const mids = await getCurrentPrices();
+
     const positions = Object.entries(state.positions);
     
-    // Calculate position PnLs
+    // Calculate position PnLs and metrics
     const positionPnLs = positions.map(([symbol, pos]) => {
       const highest = global.highestPrices[symbol] || pos.entryPrice;
       return calculatePnL(symbol, pos.entryPrice, highest, pos.direction);
@@ -65,10 +86,13 @@ async function generateCard() {
       hour12: false 
     });
 
+    // Calculate total margin used
+    let totalMarginUsed = 0;
+
     const card = `
-╔════════════════════════════════════════════╗
-║           POSITIONS CARD                   ║
-╚════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════╗
+║                    POSITIONS CARD                              ║
+╚════════════════════════════════════════════════════════════════╝
 
 💰 ACCOUNT: $${account.toFixed(2)} | ${health}
 📊 DAILY P&L: ${formatPnL(dailyPnL)} | Avg: ${formatPnL(avgPnL)}
@@ -79,8 +103,18 @@ ${positions.map(([symbol, pos], idx) => {
   const pnl = positionPnLs[idx];
   const emoji = pnl > 0.5 ? '✓' : pnl < -0.5 ? '✗' : '─';
   const direction = pos.direction === 'LONG' ? '▲' : '▼';
-  return `  ${emoji} ${symbol} ${direction} ${Math.abs(pos.size).toFixed(2)} @ $${pos.entryPrice.toFixed(4)} → ${formatPnL(pnl)}`;
+  
+  const currentPrice = parseFloat(mids[symbol]) || pos.entryPrice;
+  const notional = Math.abs(pos.size) * currentPrice;
+  const margin = notional / LEVERAGE;
+  totalMarginUsed += margin;
+  
+  return `  ${emoji} ${symbol} ${direction} ${Math.abs(pos.size).toFixed(4)} @ $${pos.entryPrice.toFixed(4)}
+      ├ Size: $${notional.toFixed(0)} | Margin: $${margin.toFixed(0)} | Lev: ${LEVERAGE}x | PnL: ${formatPnL(pnl)}`;
 }).join('\n')}
+
+─── SUMMARY ───
+Margin Used: $${totalMarginUsed.toFixed(0)} / $${account.toFixed(0)} (${((totalMarginUsed / account) * 100).toFixed(0)}%)
 
 ⏰ Last check: ${lastCheck}
 🔗 BTC Regime: EXIT
