@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kõrvalkulu Kalkulaator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .drop-zone {
+            border: 3px dashed #ccc;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            background: white;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .drop-zone:hover {
+            border-color: #007bff;
+            background: #f8f9ff;
+        }
+        .drop-zone.drag-over {
+            border-color: #007bff;
+            background: #e3f2fd;
+            transform: scale(1.02);
+        }
+        .drop-zone-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .drop-zone-text {
+            color: #666;
+            font-size: 16px;
+        }
+        .drop-zone-hint {
+            color: #999;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: none;
+        }
+        .status.success {
+            display: block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+        }
+        .status.error {
+            display: block;
+            background: #ffebee;
+            color: #c62828;
+            border: 1px solid #ef9a9a;
+        }
+        .status.loading {
+            display: block;
+            background: #e3f2fd;
+            color: #1565c0;
+            border: 1px solid #90caf9;
+        }
+        .calculator {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 100px 80px 80px;
+            gap: 10px;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .row:last-child {
+            border-bottom: none;
+        }
+        .header {
+            font-weight: bold;
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: 500;
+        }
+        .split {
+            font-size: 12px;
+            color: #666;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .result {
+            text-align: right;
+            font-weight: 500;
+        }
+        .andja { color: #2196F3; }
+        .kasutaja { color: #4CAF50; }
+        .totals {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 4px;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .clear-btn {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .clear-btn:hover {
+            background: #e64a19;
+        }
+        .extracted-text {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            font-size: 12px;
+            max-height: 150px;
+            overflow-y: auto;
+            display: none;
+        }
+        .extracted-text.show {
+            display: block;
+        }
+        .toggle-debug {
+            font-size: 11px;
+            color: #999;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .toggle-debug:hover {
+            color: #666;
+        }
+        .highlight {
+            animation: highlight 2s ease-out;
+        }
+        @keyframes highlight {
+            0% { background-color: #fff9c4; }
+            100% { background-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kõrvalkulu Kalkulaator</h1>
+
+    <div class="drop-zone" id="dropZone">
+        <div class="drop-zone-icon">📄</div>
+        <div class="drop-zone-text">Lohista PDF siia või kliki valimiseks</div>
+        <div class="drop-zone-hint">Toetab kommunaalarvete PDF-e</div>
+        <input type="file" id="fileInput" accept=".pdf">
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="calculator">
+        <div class="row header">
+            <span>Kõrvalkulu liik</span>
+            <span>Summa (€)</span>
+            <span class="andja">Andja</span>
+            <span class="kasutaja">Kasutaja</span>
+        </div>
+
+        <div class="row" id="row-elekter">
+            <div>
+                <div class="label">Elekter</div>
+                <div class="split">50% / 50%</div>
+            </div>
+            <input type="number" id="elekter" step="0.01" min="0" oninput="calculate()">
+            <div class="result andja" id="elekter-andja">0.00</div>
+            <div class="result kasutaja" id="elekter-kasutaja">0.00</div>
+        </div>
+
+        <div class="row" id="row-vesi">
+            <div>
+                <div class="label">Soe ja Külm Vesi</div>
+                <div class="split">70% / 30%</div>
+            </div>
+            <input type="number" id="vesi" step="0.01" min="0" oninput="calculate()">
+            <div class="result andja" id="vesi-andja">0.00</div>
+            <div class="result kasutaja" id="vesi-kasutaja">0.00</div>
+        </div>
+
+        <div class="row" id="row-hooldus">
+            <div>
+                <div class="label">Hooldustasu</div>
+                <div class="split">70% / 30%</div>
+            </div>
+            <input type="number" id="hooldus" step="0.01" min="0" oninput="calculate()">
+            <div class="result andja" id="hooldus-andja">0.00</div>
+            <div class="result kasutaja" id="hooldus-kasutaja">0.00</div>
+        </div>
+
+        <div class="row" id="row-prugi">
+            <div>
+                <div class="label">Prügivedu</div>
+                <div class="split">50% / 50%</div>
+            </div>
+            <input type="number" id="prugi" step="0.01" min="0" oninput="calculate()">
+            <div class="result andja" id="prugi-andja">0.00</div>
+            <div class="result kasutaja" id="prugi-kasutaja">0.00</div>
+        </div>
+
+        <div class="row" id="row-side">
+            <div>
+                <div class="label">Sidekulud</div>
+                <div class="split">50% / 50%</div>
+            </div>
+            <input type="number" id="side" step="0.01" min="0" oninput="calculate()">
+            <div class="result andja" id="side-andja">0.00</div>
+            <div class="result kasutaja" id="side-kasutaja">0.00</div>
+        </div>
+
+        <div class="row" id="row-soojus">
+            <div>
+                <div class="label">Soojus tsirkulatsioon</div>
+                <div class="split">50% / 50%</div>
+            </div>
+            <input type="number" id="soojus" step="0.01" min="0" oninput="calculate()">
+            <div class="result andja" id="soojus-andja">0.00</div>
+            <div class="result kasutaja" id="soojus-kasutaja">0.00</div>
+        </div>
+
+        <div class="totals">
+            <div class="total-row">
+                <span>Kokku:</span>
+                <span id="total">0.00 €</span>
+            </div>
+            <div class="total-row">
+                <span class="andja">Kasutusse andja:</span>
+                <span class="andja" id="total-andja">0.00 €</span>
+            </div>
+            <div class="total-row">
+                <span class="kasutaja">Kasutaja:</span>
+                <span class="kasutaja" id="total-kasutaja">0.00 €</span>
+            </div>
+        </div>
+
+        <button class="clear-btn" onclick="clearAll()">Tühjenda kõik</button>
+
+        <div class="toggle-debug" onclick="toggleDebug()">Näita/peida PDF tekst</div>
+        <div class="extracted-text" id="extractedText"></div>
+    </div>
+
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+        const splits = {
+            elekter: { andja: 0.50, kasutaja: 0.50 },
+            vesi: { andja: 0.70, kasutaja: 0.30 },
+            hooldus: { andja: 0.70, kasutaja: 0.30 },
+            prugi: { andja: 0.50, kasutaja: 0.50 },
+            side: { andja: 0.50, kasutaja: 0.50 },
+            soojus: { andja: 0.50, kasutaja: 0.50 }
+        };
+
+        // Keywords to match in PDF for each category
+        const keywords = {
+            elekter: ['elekter', 'elektri', 'electricity', 'elektrenergia'],
+            vesi: ['vesi', 'külm vesi', 'soe vesi', 'veevarustus', 'water', 'kanalisatsioon'],
+            hooldus: ['hooldus', 'hooldustasu', 'majahoid', 'haldus', 'maintenance', 'remondifond', 'koristus'],
+            prugi: ['prügi', 'jäätme', 'prügivedu', 'waste', 'garbage'],
+            side: ['side', 'internet', 'telefon', 'tv', 'kommunikatsioon'],
+            soojus: ['soojus', 'küte', 'kütte', 'heating', 'tsirkulatsioon', 'soojusenergia']
+        };
+
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const status = document.getElementById('status');
+        const extractedText = document.getElementById('extractedText');
+
+        // Drop zone events
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('drag-over');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('drag-over');
+            const file = e.dataTransfer.files[0];
+            if (file && file.type === 'application/pdf') {
+                processPDF(file);
+            } else {
+                showStatus('Palun lohista PDF fail', 'error');
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                processPDF(file);
+            }
+        });
+
+        async function processPDF(file) {
+            showStatus('PDF-i töötlemine...', 'loading');
+
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+
+                let fullText = '';
+
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const textContent = await page.getTextContent();
+                    const pageText = textContent.items.map(item => item.str).join(' ');
+                    fullText += pageText + '\n';
+                }
+
+                extractedText.textContent = fullText;
+
+                const extracted = extractData(fullText);
+
+                if (Object.keys(extracted).length > 0) {
+                    fillForm(extracted);
+                    showStatus(`Leiti ${Object.keys(extracted).length} väärtust PDF-ist`, 'success');
+                } else {
+                    showStatus('PDF-ist ei leitud tuntud välju. Kontrolli teksti allpool.', 'error');
+                    extractedText.classList.add('show');
+                }
+
+            } catch (error) {
+                console.error('PDF error:', error);
+                showStatus('Viga PDF-i lugemisel: ' + error.message, 'error');
+            }
+        }
+
+        function extractData(text) {
+            const extracted = {};
+            const lines = text.split(/[\n\r]+/);
+            const textLower = text.toLowerCase();
+
+            // Try to find amounts associated with each category
+            for (const [field, kwList] of Object.entries(keywords)) {
+                for (const keyword of kwList) {
+                    // Look for the keyword in the text
+                    const keywordLower = keyword.toLowerCase();
+                    const keywordIndex = textLower.indexOf(keywordLower);
+
+                    if (keywordIndex !== -1) {
+                        // Find numbers near the keyword (within ~100 characters after)
+                        const searchArea = text.substring(keywordIndex, keywordIndex + 150);
+
+                        // Match various number formats: 123.45, 123,45, 1 234.56, etc.
+                        const numberMatches = searchArea.match(/(\d[\d\s]*[.,]\d{2})\s*€?/g);
+
+                        if (numberMatches) {
+                            for (const match of numberMatches) {
+                                // Clean and parse the number
+                                let numStr = match.replace(/€/g, '').trim();
+                                numStr = numStr.replace(/\s/g, ''); // Remove spaces
+                                numStr = numStr.replace(',', '.'); // Convert comma to dot
+
+                                const num = parseFloat(numStr);
+
+                                // Accept reasonable values (0.01 to 10000)
+                                if (num > 0 && num < 10000) {
+                                    extracted[field] = num;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    if (extracted[field]) break;
+                }
+            }
+
+            return extracted;
+        }
+
+        function fillForm(data) {
+            for (const [field, value] of Object.entries(data)) {
+                const input = document.getElementById(field);
+                if (input) {
+                    input.value = value.toFixed(2);
+                    // Highlight the filled row
+                    const row = document.getElementById(`row-${field}`);
+                    if (row) {
+                        row.classList.add('highlight');
+                        setTimeout(() => row.classList.remove('highlight'), 2000);
+                    }
+                }
+            }
+            calculate();
+        }
+
+        function showStatus(message, type) {
+            status.textContent = message;
+            status.className = 'status ' + type;
+        }
+
+        function toggleDebug() {
+            extractedText.classList.toggle('show');
+        }
+
+        function calculate() {
+            let totalAndja = 0;
+            let totalKasutaja = 0;
+            let total = 0;
+
+            for (const [key, split] of Object.entries(splits)) {
+                const input = document.getElementById(key);
+                const value = parseFloat(input.value) || 0;
+
+                const andja = value * split.andja;
+                const kasutaja = value * split.kasutaja;
+
+                document.getElementById(`${key}-andja`).textContent = andja.toFixed(2);
+                document.getElementById(`${key}-kasutaja`).textContent = kasutaja.toFixed(2);
+
+                totalAndja += andja;
+                totalKasutaja += kasutaja;
+                total += value;
+            }
+
+            document.getElementById('total').textContent = total.toFixed(2) + ' €';
+            document.getElementById('total-andja').textContent = totalAndja.toFixed(2) + ' €';
+            document.getElementById('total-kasutaja').textContent = totalKasutaja.toFixed(2) + ' €';
+        }
+
+        function clearAll() {
+            for (const key of Object.keys(splits)) {
+                document.getElementById(key).value = '';
+            }
+            calculate();
+            status.className = 'status';
+            extractedText.classList.remove('show');
+            extractedText.textContent = '';
+        }
+    </script>
+</body>
+</html>
