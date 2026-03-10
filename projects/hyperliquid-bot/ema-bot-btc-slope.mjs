@@ -34,20 +34,24 @@ console.log(`${new Date().toISOString()}`);
 console.log(`════════════════════════════════════════════════════════`);
 console.log(`⚠️  LIVE TRADING - REAL MONEY AT RISK\n`);
 
+async function hlPost(endpoint, payload) {
+  const res = await fetch(`https://api.hyperliquid.xyz${endpoint}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+  return res.json();
+}
+
 async function getAccount() {
   try {
-    const res = await fetch('https://api.hyperliquid.xyz/info', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        type: 'clearinghouseState',
-        user: API_KEY
-      })
+    const data = await hlPost('/info', {
+      type: 'clearinghouseState',
+      user: API_KEY
     });
-    const data = await res.json();
     return {
-      balance: parseFloat(data.crossMaintenanceMarginUsed || 0),
-      marginUsed: parseFloat(data.crossMaintenanceMarginUsed || 0)
+      balance: parseFloat(data.marginSummary?.accountValue || 0),
+      marginUsed: parseFloat(data.marginSummary?.totalMarginUsed || 0)
     };
   } catch (e) {
     console.error(`Account fetch error: ${e.message}`);
@@ -57,15 +61,10 @@ async function getAccount() {
 
 async function getPositions() {
   try {
-    const res = await fetch('https://api.hyperliquid.xyz/info', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        type: 'clearinghouseState',
-        user: API_KEY
-      })
+    const data = await hlPost('/info', {
+      type: 'clearinghouseState',
+      user: API_KEY
     });
-    const data = await res.json();
     return data.assetPositions || [];
   } catch (e) {
     console.error(`Positions fetch error: ${e.message}`);
@@ -73,18 +72,22 @@ async function getPositions() {
   }
 }
 
-async function getCandles(symbol, limit = 100) {
+async function getCandles(symbol, interval = '5m', lookback = 100) {
   try {
+    const intervalMs = interval === '5m' ? 5 * 60 * 1000 : 60 * 60 * 1000;
+    const endTime = Date.now();
+    const startTime = endTime - (lookback * intervalMs);
+    
     const res = await fetch('https://api.hyperliquid.xyz/info', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        type: 'candles',
+        type: 'candleSnapshot',
         req: {
           coin: symbol,
-          interval: '5m',
-          startTime: Date.now() - (limit * 5 * 60 * 1000),
-          endTime: Date.now()
+          interval: interval,
+          startTime: startTime,
+          endTime: endTime
         }
       })
     });
@@ -124,15 +127,16 @@ function saveState(state) {
 }
 
 (async () => {
-  const candles = await getCandles(SYMBOL, LOOKBACK_CANDLES);
-  if (!candles.length) {
-    console.log(`❌ No candle data`);
+  const candles = await getCandles(SYMBOL, '5m', LOOKBACK_CANDLES);
+  if (!candles || candles.length < 50) {
+    console.log(`❌ No candle data (got ${candles?.length || 0})`);
     process.exit(1);
   }
 
-  const closes = candles.map(c => parseFloat(c.c));
-  const highs = candles.map(c => parseFloat(c.h));
-  const lows = candles.map(c => parseFloat(c.l));
+  // Parse candleSnapshot format: { t, o, h, l, c, v }
+  const closes = candles.map(c => parseFloat(c.c || c[4]));
+  const highs = candles.map(c => parseFloat(c.h || c[2]));
+  const lows = candles.map(c => parseFloat(c.l || c[3]));
   const emaVals = calculateEMA(closes, EMA_PERIOD);
 
   const currentClose = closes[closes.length - 1];
