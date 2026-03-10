@@ -21,7 +21,7 @@ import { placeOrder, getPositions } from './trade.mjs';
 config();
 
 // ==================== DISCORD NOTIFICATIONS ====================
-const DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/1464653461915435049/nVhGT0f9Snavdcnc9SyUFYIiCLM2LlP68Z2y6GFTrcAosYVpBTRV12rm_gJDOGLf-ygj';
+const DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/1480891035126075463/WWw6Xapr3n19Xr6S_PoabJk1mzCGmj8KxQjR06EFzL5oYu22MUbu2TgGgCS-SVCm_70g';
 
 async function notifyDiscord(embed) {
   return new Promise((resolve) => {

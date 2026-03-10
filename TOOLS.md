@@ -52,6 +52,8 @@ template keeps trading info compact & scannable.
   - bypasses channel binding restriction
 - **#tasks relay**: `https://discord.com/api/webhooks/1464653854716067841/QpNGZv94kh94S4vL83xOpnCQNkt_GE4bLckCl8fI5YF4j4eSrLxgY4U_VugiK2FE_Il9`
   - task updates from any context
+- **#btc-signals relay**: `https://discord.com/api/webhooks/1480891035126075463/WWw6Xapr3n19Xr6S_PoabJk1mzCGmj8KxQjR06EFzL5oYu22MUbu2TgGgCS-SVCm_70g`
+  - trading bot alerts (entry, exit, scale-in)
 
 ### Quick Post Script
 ```bash
