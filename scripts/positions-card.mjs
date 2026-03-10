@@ -1,146 +1,24 @@
 #!/usr/bin/env node
+/**
+ * Positions Card - LIVE DATA from Hyperliquid
+ * Fetches fresh prices + P&L every time you ask
+ * Uses raw API (not SDK) for speed and reliability
+ */
 
-import fs from 'fs';
+import { spawnSync } from 'child_process';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const botStateFile = path.join(process.cwd(), 'projects/hyperliquid-bot/bot-state-v2.json');
-const lastAccountFile = path.join(process.cwd(), '.cache/last-account-balance.txt');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const botDir = path.join(__dirname, '../projects/hyperliquid-bot');
 
-const LEVERAGE = 5; // default leverage per config
+const result = spawnSync('node', ['positions-live-raw.mjs'], {
+  cwd: botDir,
+  encoding: 'utf8',
+  timeout: 15000,
+});
 
-function getLastAccountBalance() {
-  try {
-    if (fs.existsSync(lastAccountFile)) {
-      return parseFloat(fs.readFileSync(lastAccountFile, 'utf8').trim());
-    }
-  } catch (e) {}
-  return 119.00; // fallback estimate
-}
-
-async function getCurrentPrices() {
-  try {
-    const res = await fetch('https://api.hyperliquid.xyz/info', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ type: 'allMids' })
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const mids = await res.json();
-    return mids;
-  } catch (err) {
-    console.warn(`⚠️ Could not fetch current prices: ${err.message}`);
-    return {};
-  }
-}
-
-function calculatePnL(symbol, entry, highest, direction) {
-  if (direction === 'LONG') {
-    return ((highest - entry) / entry) * 100;
-  } else {
-    return ((entry - highest) / entry) * 100;
-  }
-}
-
-function getWinrate(positions, pnlArray) {
-  const winners = pnlArray.filter(pnl => pnl > 0.5).length;
-  return positions.length > 0 ? Math.round((winners / positions.length) * 100) : 0;
-}
-
-function getAccountHealth(account) {
-  if (account > 120) return '🟢 Excellent';
-  if (account > 110) return '🟢 Healthy';
-  if (account > 100) return '🟡 Caution';
-  return '🔴 Critical';
-}
-
-function formatPnL(pnl) {
-  if (pnl >= 0) return `+${pnl.toFixed(2)}%`;
-  return `${pnl.toFixed(2)}%`;
-}
-
-async function generateCard() {
-  try {
-    const state = JSON.parse(fs.readFileSync(botStateFile, 'utf8'));
-    const account = getLastAccountBalance();
-    global.highestPrices = state.highestPrice || {};
-    const dailyPnL = state.dailyPnL || 0;
-
-    // Fetch current prices
-    const mids = await getCurrentPrices();
-
-    const positions = Object.entries(state.positions);
-    
-    // Calculate position PnLs and metrics
-    const positionMetrics = positions.map(([symbol, pos]) => {
-      const highest = global.highestPrices[symbol] || pos.entryPrice;
-      const currentPrice = parseFloat(mids[symbol]) || highest;
-      const pnlPct = calculatePnL(symbol, pos.entryPrice, highest, pos.direction);
-      
-      // Calculate PnL in dollars
-      let pnlDollars = 0;
-      if (pos.direction === 'LONG') {
-        pnlDollars = (currentPrice - pos.entryPrice) * Math.abs(pos.size);
-      } else {
-        pnlDollars = (pos.entryPrice - currentPrice) * Math.abs(pos.size);
-      }
-      
-      return { pnlPct, pnlDollars };
-    });
-    
-    const positionPnLs = positionMetrics.map(m => m.pnlPct);
-
-    const totalPnL = positionPnLs.reduce((a, b) => a + b, 0);
-    const totalPnLDollars = positionMetrics.reduce((a, b) => a + b.pnlDollars, 0);
-    const avgPnL = positions.length > 0 ? totalPnL / positions.length : 0;
-    const winrate = getWinrate(positions, positionPnLs);
-    const health = getAccountHealth(account);
-    const lastCheck = new Date(state.lastCheck).toLocaleTimeString('en-US', { 
-      hour: '2-digit', 
-      minute: '2-digit', 
-      hour12: false 
-    });
-
-    // Calculate total margin used
-    let totalMarginUsed = 0;
-
-    const card = `
-╔════════════════════════════════════════════════════════════════╗
-║                    POSITIONS CARD                              ║
-╚════════════════════════════════════════════════════════════════╝
-
-💰 ACCOUNT: $${account.toFixed(2)} | ${health}
-📊 TOTAL P&L: ${formatPnL(totalPnL)} ($${totalPnLDollars > 0 ? '+' : ''}${totalPnLDollars.toFixed(0)}) | Avg: ${formatPnL(avgPnL)}
-🏆 WINRATE: ${winrate}%
-
-OPEN POSITIONS (${positions.length}):
-${positions.map(([symbol, pos], idx) => {
-  const { pnlPct, pnlDollars } = positionMetrics[idx];
-  const emoji = pnlPct > 0.5 ? '✓' : pnlPct < -0.5 ? '✗' : '─';
-  const direction = pos.direction === 'LONG' ? '▲' : '▼';
-  
-  const currentPrice = parseFloat(mids[symbol]) || pos.entryPrice;
-  const notional = Math.abs(pos.size) * currentPrice;
-  const margin = notional / LEVERAGE;
-  totalMarginUsed += margin;
-  
-  const pnlStr = `${formatPnL(pnlPct)} ($${pnlDollars > 0 ? '+' : ''}${pnlDollars.toFixed(0)})`;
-  
-  return `  ${emoji} ${symbol} ${direction} ${Math.abs(pos.size).toFixed(4)} @ $${pos.entryPrice.toFixed(4)}
-      ├ Size: $${notional.toFixed(0)} | Margin: $${margin.toFixed(0)} | Lev: ${LEVERAGE}x | PnL: ${pnlStr}`;
-}).join('\n')}
-
-─── SUMMARY ───
-Margin Used: $${totalMarginUsed.toFixed(0)} / $${account.toFixed(0)} (${((totalMarginUsed / account) * 100).toFixed(0)}%)
-
-⏰ Last check: ${lastCheck}
-🔗 BTC Regime: EXIT
-`;
-
-    console.log(card);
-  } catch (err) {
-    console.error('Error reading bot state:', err.message);
-    process.exit(1);
-  }
-}
-
-generateCard();
+if (result.stdout) console.log(result.stdout);
+if (result.stderr) console.error(result.stderr);
+process.exit(result.status || 0);

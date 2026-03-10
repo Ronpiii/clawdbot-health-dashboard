@@ -181,3 +181,4 @@
 2026-03-09T19:38:37.814Z | SHORT | SOL  |       0.31 | $   86.2745 | Price below EMA 200 ($91.25), slope ↘ falling
 2026-03-09T19:40:07.409Z | LONG  | HYPE |        2.4 | $   34.3105 | Price above EMA 200 ($29.75), slope ↗ rising
 2026-03-10T11:25:45.911Z | SCALE | HYPE |        1.2 | $   34.9715 | +2.0% profit
+2026-03-10T16:28:37.020Z | EXIT  | BTC  |     0.0024 | $   71409.5 | Exit SHORT: price above EMA 200 ($71147.91) (4H confirmed)
