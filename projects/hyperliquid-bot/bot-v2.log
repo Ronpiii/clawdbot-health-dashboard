@@ -1,0 +1,39 @@
+[dotenv@17.3.1] injecting env (2) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.3.1] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Starting bot loop (every 4h for trend mode)...
+════════════════════════════════════════════════════════════
+EMA BOT V2 | Mode: TREND | LIVE
+2026-03-10T20:54:45.685Z
+════════════════════════════════════════════════════════════
+⚠️  LIVE TRADING - REAL MONEY AT RISK
+
+Account: $122.07
+Daily PnL: $0.00
+
+🔗 BTC REGIME: EXIT
+
+--- LIQUIDATION ALERT ---
+🚨 HYPE: 3.92% from liquidation (liq @ $32.7081)
+---------------------
+
+
+─── SOL ───
+Price: $86.1175
+Signal: SHORT
+Reason: Price below EMA 200 ($90.70), slope ↘ falling
+→ HOLDING: SHORT (PnL: 0.34%)
+
+─── HYPE ───
+Price: $34.0435
+Signal: LONG
+Reason: Price above EMA 200 ($30.12), slope ↗ rising
+→ HOLDING: LONG (PnL: -1.36%)
+
+─── GRASS ───
+Price: $0.3590
+Signal: LONG
+Reason: Price above EMA 200 ($0.25), slope ↗ rising
+→ HOLDING: LONG (PnL: 8.17%)
+
+════════════════════════════════════════════════════════════
+Run complete
