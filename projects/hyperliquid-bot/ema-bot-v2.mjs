@@ -894,7 +894,7 @@ async function runBot(paperMode = true) {
       
       // === SCALING LOGIC: Add to winners ===
       const tranches = currentPos.tranches || 1;
-      const SCALING_THRESHOLD = 0.02; // 2% profit
+      const SCALING_THRESHOLD = 0.05; // 5% profit
       const MAX_TRANCHES = 2;
       
       if (tranches < MAX_TRANCHES && pnlPct >= SCALING_THRESHOLD) {
@@ -1091,7 +1091,7 @@ Current mode: ${CONFIG.mode}
 Trend Mode Config (backtested +70% improvement with scaling):
   - Entry: price crosses EMA + slope confirms (48 candles = 8 days)
   - Exit: price crosses back
-  - Scaling: add 50% more when +2% profit (max 2 tranches)
+  - Scaling: add 50% more when +5% profit (max 2 tranches)
   - Shorts: enabled for all assets
 
 Risk:
