@@ -142,6 +142,32 @@
 
 ---
 
+## ironclad rules (9-month sprint: mar 10 - dec 10, 2026)
+
+**committed:** 2026-03-10 14:18 UTC
+
+### Rule 1: Ventok Revenue (€5k/mo target)
+- **Weekly minimum:** 1 customer conversation + 1 implementation hour
+- **Target:** €1.5k/mo by week 12, €5k/mo by week 39
+- **First customer:** signed by week 4, live by week 8
+
+### Rule 2: Energy Budget (non-negotiable daily)
+- Sleep 7-8 hrs (bed by 23:30)
+- Move 30 min (5/7 days minimum)
+- Deep work 2-3 hrs (zero interruption)
+
+### Rule 3: Cash Discipline
+- Ventok drawdown ≤€100/mo until €1.5k/mo revenue
+- Target: €500 saved by week 12, €1.5k by week 26
+- No new tool subscriptions
+
+**Weekly review:** Every Sunday 19:00, 15 minutes
+- Did I hit rule minimums?
+- What's trending toward €5k/mo?
+- If 2 weeks fail: stop, reassess
+
+---
+
 ## quick recall
 - **arc CLI:** `./scripts/arc <cmd>` — unified tool interface (16 commands)
 - **search:** `./scripts/arc search <query>` — TF-IDF + section-aware (v2), recency boost
