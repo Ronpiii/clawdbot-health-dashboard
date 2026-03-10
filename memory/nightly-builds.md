@@ -11,12 +11,26 @@ Ron wants me to build something small but helpful every night while he sleeps.
 _Add new ideas here. Pick one per night._
 
 - [ ] Voice memo transcription — process voice notes into actionable items
-- [ ] Email preview component for anivia — see how emails look before sending
+- [x] Email preview component for anivia — see how emails look before sending
 - [ ] Bulk email drafting UI for anivia — select leads → draft all
 
 ---
 
 ## Completed Builds
+
+### 2026-03-10: Email Preview Component for Anivia
+**What:** `<EmailRenderer>` component + live preview toggle in send-email-modal
+**Files:** `src/components/email/email-renderer.tsx` (new), `src/components/leads/send-email-modal.tsx` (updated)
+**Features:**
+- Renders email in realistic email client style (header with To/From/Subject, styled body)
+- Parses basic formatting: **bold**, *italic*, links
+- Integrated into send-email-modal with Preview/Edit toggle button
+- Preview disabled until subject and body are filled
+- Toggle between editing and preview without losing form data
+**UX:** Users compose email → click Preview button → see exactly how it renders → toggle back to Edit if needed → Save Draft. No surprises when the email lands in a recipient's inbox.
+**Why:** Users often wonder "how will this actually look?" Especially important for emails with formatting or links. The preview removes uncertainty. Small component but high UX value.
+**Size:** 2 files, ~220 lines of code
+**Tested:** Syntax verified, component structure follows existing anivia patterns
 
 ### 2026-03-09: End of Day Closing Ritual
 **What:** `arc eod` — the evening counterpart to `arc brief`. a structured closing ritual that summarizes the day, captures loose threads, and sets up tomorrow.

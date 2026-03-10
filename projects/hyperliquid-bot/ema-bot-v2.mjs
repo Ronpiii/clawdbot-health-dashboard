@@ -414,22 +414,48 @@ function logTrade(action, symbol, size, price, reason) {
   } catch {}
 }
 
+// ==================== BTC REGIME FILTER ====================
+
+function getBTCRegimeMultiplier(btcSignal) {
+  // btcSignal: 'SHORT', 'WAIT', 'EXIT', or null
+  // Returns position size multiplier
+  
+  if (btcSignal === 'SHORT') {
+    return 1.0;  // Full size - BTC is shorting, go full speed
+  } else if (btcSignal === 'WAIT') {
+    return 0.3;  // Reduce to 30% - uncertain, tighten up
+  } else if (btcSignal === 'EXIT') {
+    return 0.1;  // Emergency mode - 10% only
+  }
+  return 1.0;  // Unknown, default to normal
+}
+
+function shouldAllowLongPosition(btcSignal) {
+  // Longs allowed only if BTC is SHORT or WAIT
+  // Disabled if BTC is EXIT (market nuking)
+  return btcSignal !== 'EXIT';
+}
+
 // ==================== POSITION SIZING ====================
 
-function calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed = 0) {
+function calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed = 0, btcSignal = null) {
   const cfg = CONFIG.mode === 'trend' ? CONFIG.trend[symbol] : CONFIG.crossover[symbol];
   if (!cfg) return 0;
   
   // Track cumulative margin: don't overcommit
   const availableMargin = accountValue - cumulativeMarginUsed;
   const maxPositionValue = availableMargin * CONFIG.maxPositionPct;
-  // NOTE: No leverage multiplier here - Hyperliquid applies its own defaults
-  // To use actual leverage, must explicitly set in order placement
   const positionValue = maxPositionValue;
   
   if (positionValue < CONFIG.minOrderUsd) return 0;
   
   let size = positionValue / currentPrice;
+  
+  // Apply BTC regime multiplier (except for BTC itself)
+  if (symbol !== 'BTC' && btcSignal) {
+    const multiplier = getBTCRegimeMultiplier(btcSignal);
+    size *= multiplier;
+  }
   
   // Round down appropriately
   if (symbol === 'BTC') {
@@ -544,6 +570,17 @@ async function runBot(paperMode = true) {
   // Get current prices
   const mids = await getMids();
   
+  // REGIME FILTER: Get BTC signal (master regime)
+  // Read BTC signal from cache (updated by arc btc --alert)
+  let btcSignal = null;
+  try {
+    const btcState = JSON.parse(readFileSync('../../.cache/btc-signal-state.json', 'utf8'));
+    btcSignal = btcState.action;  // 'SHORT', 'WAIT', 'EXIT', etc.
+    console.log(`\n🔗 BTC REGIME: ${btcSignal || 'UNKNOWN'}`);
+  } catch {
+    console.log(`\n🔗 BTC REGIME: not available`);
+  }
+  
   // Check liquidation levels
   console.log('\n--- LIQUIDATION ALERT ---');
   let hasLiqAlert = false;
@@ -617,20 +654,25 @@ async function runBot(paperMode = true) {
     
     // Decision logic
     if (signal.signal === 'LONG' && !hasPosition) {
-      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
-      const orderValue = size * currentPrice;
-      if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
-        console.log(`→ OPENING LONG: ${size} ${symbol}`);
-        cumulativeMarginUsed += orderValue;
-        if (!paperMode) {
-          await executeLiveOrder(symbol, 'LONG', size, currentPrice);
+      // Check BTC regime: allow longs only if BTC is not in EXIT mode
+      if (!shouldAllowLongPosition(btcSignal)) {
+        console.log(`→ SKIP LONG: BTC in EXIT regime`);
+      } else {
+        const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
+        const orderValue = size * currentPrice;
+        if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
+          console.log(`→ OPENING LONG: ${size} ${symbol}`);
+          cumulativeMarginUsed += orderValue;
+          if (!paperMode) {
+            await executeLiveOrder(symbol, 'LONG', size, currentPrice);
+          }
+          logTrade('LONG', symbol, size, currentPrice, signal.reason);
+        } else if (size > 0) {
+          console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
         }
-        logTrade('LONG', symbol, size, currentPrice, signal.reason);
-      } else if (size > 0) {
-        console.log(`→ SKIP (order too small): ${size} ${symbol} = $${orderValue.toFixed(2)}`);
       }
     } else if (signal.signal === 'SHORT' && !hasPosition) {
-      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
+      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
       const orderValue = size * currentPrice;
       if (size > 0 && orderValue >= CONFIG.minOrderUsd) {
         console.log(`→ OPENING SHORT: ${size} ${symbol}`);
@@ -654,18 +696,22 @@ async function runBot(paperMode = true) {
       logTrade('EXIT', symbol, Math.abs(currentPos.size), currentPrice, signal.reason);
     } else if (signal.signal === 'LONG' && currentPos?.direction === 'SHORT') {
       // Flip from SHORT to LONG
-      console.log(`→ FLIPPING: SHORT → LONG ${symbol}`);
-      cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
-      if (!paperMode) {
-        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
-      }
-      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
-      if (size > 0) {
-        cumulativeMarginUsed += size * currentPrice;
+      if (!shouldAllowLongPosition(btcSignal)) {
+        console.log(`→ HOLD SHORT: BTC in EXIT regime, skip flip to LONG`);
+      } else {
+        console.log(`→ FLIPPING: SHORT → LONG ${symbol}`);
+        cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
         if (!paperMode) {
-          await executeLiveOrder(symbol, 'LONG', size, currentPrice);
+          await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
         }
-        logTrade('FLIP→L', symbol, size, currentPrice, signal.reason);
+        const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
+        if (size > 0) {
+          cumulativeMarginUsed += size * currentPrice;
+          if (!paperMode) {
+            await executeLiveOrder(symbol, 'LONG', size, currentPrice);
+          }
+          logTrade('FLIP→L', symbol, size, currentPrice, signal.reason);
+        }
       }
     } else if (signal.signal === 'SHORT' && currentPos?.direction === 'LONG') {
       // Flip from LONG to SHORT
@@ -674,7 +720,7 @@ async function runBot(paperMode = true) {
       if (!paperMode) {
         await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
       }
-      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed);
+      const size = calculatePositionSize(symbol, accountValue, currentPrice, cumulativeMarginUsed, btcSignal);
       if (size > 0) {
         cumulativeMarginUsed += size * currentPrice;
         if (!paperMode) {

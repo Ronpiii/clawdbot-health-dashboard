@@ -21,13 +21,13 @@
       "entryPrice": 34.2846
     }
   },
-  "dailyPnLDate": "2026-03-09",
+  "dailyPnLDate": "2026-03-10",
   "dailyPnL": 0,
   "highestPrice": {
-    "BTC": 68609.5,
-    "SOL": 85.6535,
-    "HYPE": 35.0165,
-    "GRASS": 0.32958
+    "BTC": 69077.5,
+    "SOL": 85.6335,
+    "HYPE": 34.2565,
+    "GRASS": 0.33049
   },
-  "lastCheck": "2026-03-09T22:52:09.784Z"
+  "lastCheck": "2026-03-10T00:42:05.310Z"
 }
