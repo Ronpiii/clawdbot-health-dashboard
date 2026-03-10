@@ -3,32 +3,36 @@
     "BTC": {
       "direction": "SHORT",
       "size": -0.0024,
-      "entryPrice": 69113.5
+      "entryPrice": 69113.5,
+      "tranches": 1
     },
     "SOL": {
       "direction": "SHORT",
       "size": -0.62,
-      "entryPrice": 86.41
+      "entryPrice": 86.41,
+      "tranches": 1
     },
     "GRASS": {
       "direction": "LONG",
       "size": 49.5,
-      "entryPrice": 0.33189
+      "entryPrice": 0.33189,
+      "tranches": 1
     },
     "HYPE": {
       "direction": "LONG",
-      "size": 2.4,
-      "entryPrice": 34.2846
+      "size": 3.6,
+      "entryPrice": 34.5131,
+      "tranches": 2
     }
   },
   "dailyPnLDate": "2026-03-10",
   "dailyPnL": 0,
   "highestPrice": {
-    "BTC": 70731.5,
-    "SOL": 86.9595,
-    "HYPE": 34.7925,
-    "GRASS": 0.35536
+    "BTC": 70667.5,
+    "SOL": 86.9155,
+    "HYPE": 34.9665,
+    "GRASS": 0.3554
   },
-  "account": 120.115598,
-  "lastCheck": "2026-03-10T11:08:21.684Z"
+  "account": 120.716596,
+  "lastCheck": "2026-03-10T11:26:29.079Z"
 }
