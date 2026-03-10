@@ -738,6 +738,8 @@ async function runBot(paperMode = true) {
     }
   }
   
+  // Save account balance to state for dashboard/card display
+  state.account = accountValue;
   saveState(state);
   
   console.log('\n' + '═'.repeat(60));
