@@ -810,31 +810,48 @@ async function runBot(paperMode = true) {
         }
       }
     } else if (signal.signal === 'EXIT' && hasPosition) {
-      console.log(`→ CLOSING: ${currentPos.direction} ${symbol}`);
-      const pnlPct = currentPos.direction === 'LONG'
-        ? (currentPrice - currentPos.entryPrice) / currentPos.entryPrice
-        : (currentPos.entryPrice - currentPrice) / currentPos.entryPrice;
-      cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
-      if (paperMode) {
-        await executePaperOrder(symbol, 'EXIT', 0, currentPrice, state);
-      } else {
-        await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
+      // CONFIRMATION: wait for 4H candle close to confirm exit
+      if (!state.pendingSignals) state.pendingSignals = {};
+      if (!state.pendingSignals[symbol]) {
+        state.pendingSignals[symbol] = { signal: 'EXIT', bar: i, reason: signal.reason };
+        console.log(`⏳ PENDING EXIT: waiting for 4H candle close to confirm (${signal.reason})`);
+      } else if (state.pendingSignals[symbol].signal === 'EXIT' && (i - state.pendingSignals[symbol].bar) >= 4) {
+        // 4H candle closed; check if signal is STILL 'EXIT' (not bounced back to LONG/SHORT)
+        if (signal.signal === 'EXIT') {
+          const pnlPct = currentPos.direction === 'LONG'
+            ? (currentPrice - currentPos.entryPrice) / currentPos.entryPrice
+            : (currentPos.entryPrice - currentPrice) / currentPos.entryPrice;
+          
+          console.log(`✓ 4H CLOSE CONFIRMED → CLOSING: ${currentPos.direction} ${symbol}`);
+          cumulativeMarginUsed -= Math.abs(currentPos.size) * currentPrice;
+          if (paperMode) {
+            await executePaperOrder(symbol, 'EXIT', 0, currentPrice, state);
+          } else {
+            await executeLiveOrder(symbol, 'EXIT', Math.abs(currentPos.size), currentPrice);
+          }
+          logTrade('EXIT', symbol, Math.abs(currentPos.size), currentPrice, signal.reason + ' (4H confirmed)');
+          
+          // Discord notification
+          await notifyDiscord({
+            title: `🚪 EXIT: ${symbol}`,
+            color: pnlPct > 0 ? 0x00ff00 : 0xff0000,
+            fields: [
+              { name: 'Direction', value: currentPos.direction, inline: true },
+              { name: 'Exit', value: `$${currentPrice.toFixed(2)}`, inline: true },
+              { name: 'Entry', value: `$${currentPos.entryPrice.toFixed(4)}`, inline: true },
+              { name: 'PnL', value: `${(pnlPct*100).toFixed(2)}%`, inline: true },
+              { name: 'Confirmation', value: '4H candle close confirmed ✓', inline: true },
+              { name: 'Reason', value: signal.reason, inline: false },
+            ],
+            timestamp: new Date().toISOString(),
+          });
+          
+          delete state.pendingSignals[symbol];
+        } else {
+          console.log(`✗ 4H CLOSE REJECTED: signal toggled to ${signal.signal} (price bounced back)`);
+          delete state.pendingSignals[symbol];
+        }
       }
-      logTrade('EXIT', symbol, Math.abs(currentPos.size), currentPrice, signal.reason);
-      
-      // Discord notification
-      await notifyDiscord({
-        title: `🚪 EXIT: ${symbol}`,
-        color: pnlPct > 0 ? 0x00ff00 : 0xff0000,
-        fields: [
-          { name: 'Direction', value: currentPos.direction, inline: true },
-          { name: 'Exit', value: `$${currentPrice.toFixed(2)}`, inline: true },
-          { name: 'Entry', value: `$${currentPos.entryPrice.toFixed(4)}`, inline: true },
-          { name: 'PnL', value: `${(pnlPct*100).toFixed(2)}%`, inline: true },
-          { name: 'Reason', value: signal.reason, inline: false },
-        ],
-        timestamp: new Date().toISOString(),
-      });
     } else if (signal.signal === 'LONG' && currentPos?.direction === 'SHORT') {
       // Flip from SHORT to LONG
       if (!shouldAllowLongPosition(btcSignal)) {
