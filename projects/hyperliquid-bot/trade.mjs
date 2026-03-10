@@ -69,11 +69,11 @@ async function placeOrder(symbol, isBuy, size, price = null) {
     // Round price to tick size
     const limitPrice = roundToTick(currentPrice, symbol);
     
-    // Set leverage to 10x (cross margin) - DEGEN MODE
+    // Set leverage to 5x (cross margin)
     try {
-      await sdk.exchange.updateLeverage(`${symbol}-PERP`, 'Cross', 10);
+      await sdk.exchange.updateLeverage(`${symbol}-PERP`, 'Cross', 5);
     } catch (err) {
-      console.log(`⚠️  Leverage update failed (may already be 10x): ${err.message}`);
+      console.log(`⚠️  Leverage update failed (may already be 5x): ${err.message}`);
     }
     
     const result = await sdk.exchange.placeOrder({

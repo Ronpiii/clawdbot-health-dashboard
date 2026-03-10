@@ -161,7 +161,7 @@ const CONFIG = {
   },
   
   // Risk management
-  maxPositionPct: 0.70,  // % of available margin per position (10x leverage) - COMBO MODE: 5 assets
+  maxPositionPct: 0.70,  // % of available margin per position (5x leverage) - COMBO MODE: 5 assets
   dailyLossLimit: 0.10,
   
   // Execution
@@ -885,7 +885,7 @@ Trend Mode Config (backtested +12.7% vs -85% B&H):
 
 Risk:
   - Max 33% per position
-  - 3x leverage
+  - 5x leverage
   - 10% daily loss limit
 `);
 }
