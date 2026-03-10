@@ -24,9 +24,10 @@ const PROFIT_TARGET = 2;
 const SL_PCT = 5;
 const SLOPE_THRESHOLD = 0.01;
 const EMA_PERIOD = 200;
-const LOOKBACK_CANDLES = 100; // for EMA calculation
+const LOOKBACK_CANDLES = 100;
 
 const STATE_FILE = path.join(__dirname, 'btc-slope-state.json');
+const TRADE_LOG = path.join(__dirname, 'btc-trades-5m.log');
 
 console.log(`\n════════════════════════════════════════════════════════`);
 console.log(`BTC SLOPE BOT v1 | 200 EMA + 0.01% slope + 2% profit`);
@@ -59,40 +60,22 @@ async function getAccount() {
   }
 }
 
-async function getPositions() {
-  try {
-    const data = await hlPost('/info', {
-      type: 'clearinghouseState',
-      user: API_KEY
-    });
-    return data.assetPositions || [];
-  } catch (e) {
-    console.error(`Positions fetch error: ${e.message}`);
-    return [];
-  }
-}
-
 async function getCandles(symbol, interval = '5m', lookback = 100) {
   try {
     const intervalMs = interval === '5m' ? 5 * 60 * 1000 : 60 * 60 * 1000;
     const endTime = Date.now();
     const startTime = endTime - (lookback * intervalMs);
     
-    const res = await fetch('https://api.hyperliquid.xyz/info', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        type: 'candleSnapshot',
-        req: {
-          coin: symbol,
-          interval: interval,
-          startTime: startTime,
-          endTime: endTime
-        }
-      })
+    const res = await hlPost('/info', {
+      type: 'candleSnapshot',
+      req: {
+        coin: symbol,
+        interval: interval,
+        startTime: startTime,
+        endTime: endTime
+      }
     });
-    const data = await res.json();
-    return data || [];
+    return res || [];
   } catch (e) {
     console.error(`Candles fetch error: ${e.message}`);
     return [];
@@ -119,11 +102,29 @@ function loadState() {
       return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
     }
   } catch (e) {}
-  return { position: null, entryPrice: null, profitTaken: false };
+  return { 
+    position: null, 
+    entryPrice: null, 
+    entryTime: null,
+    currentPrice: null,
+    peakPrice: null,
+    profitTaken: false 
+  };
 }
 
 function saveState(state) {
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+}
+
+function logTrade(action, price, reason) {
+  const entry = `${new Date().toISOString()} | ${action.padEnd(5)} | BTC | $${price.toFixed(2)} | ${reason}\n`;
+  console.log(entry.trim());
+  
+  try {
+    fs.appendFileSync(TRADE_LOG, entry);
+  } catch (e) {
+    console.error(`Log error: ${e.message}`);
+  }
 }
 
 (async () => {
@@ -133,10 +134,7 @@ function saveState(state) {
     process.exit(1);
   }
 
-  // Parse candleSnapshot format: { t, o, h, l, c, v }
   const closes = candles.map(c => parseFloat(c.c || c[4]));
-  const highs = candles.map(c => parseFloat(c.h || c[2]));
-  const lows = candles.map(c => parseFloat(c.l || c[3]));
   const emaVals = calculateEMA(closes, EMA_PERIOD);
 
   const currentClose = closes[closes.length - 1];
@@ -152,10 +150,13 @@ function saveState(state) {
 
   let state = loadState();
   const account = await getAccount();
-  if (account) {
+  if (account && account.balance > 0) {
     console.log(`\nAccount balance: $${account.balance.toFixed(2)}`);
   }
 
+  // Always track current price
+  state.currentPrice = currentPrice;
+  
   // Entry logic
   if (!state.position) {
     const hasSlope = Math.abs(slope) > SLOPE_THRESHOLD;
@@ -164,18 +165,18 @@ function saveState(state) {
       console.log(`\n✅ LONG signal: crossover above EMA + positive slope`);
       state.position = 'LONG';
       state.entryPrice = currentPrice;
-      state.profitTaken = false;
+      state.entryTime = new Date().toISOString();
       state.peakPrice = currentPrice;
       saveState(state);
-      console.log(`Entering LONG at $${currentPrice.toFixed(2)}`);
+      logTrade('LONG', currentPrice, `EMA crossover, slope ${slope.toFixed(3)}%`);
     } else if (prevClose >= prevEMA && currentClose < currentEMA && hasSlope && slope < 0) {
       console.log(`\n✅ SHORT signal: crossover below EMA + negative slope`);
       state.position = 'SHORT';
       state.entryPrice = currentPrice;
-      state.profitTaken = false;
+      state.entryTime = new Date().toISOString();
       state.peakPrice = currentPrice;
       saveState(state);
-      console.log(`Entering SHORT at $${currentPrice.toFixed(2)}`);
+      logTrade('SHORT', currentPrice, `EMA crossover, slope ${slope.toFixed(3)}%`);
     }
   }
 
@@ -197,22 +198,20 @@ function saveState(state) {
     let shouldExit = false;
     let exitReason = '';
 
-    // Profit target
     if (pnlPct >= PROFIT_TARGET) {
       shouldExit = true;
       exitReason = `+${PROFIT_TARGET}% profit`;
-    }
-    // Stoploss
-    else if (pnlPct < -SL_PCT) {
+    } else if (pnlPct < -SL_PCT) {
       shouldExit = true;
       exitReason = `-${SL_PCT}% stoploss`;
     }
 
     if (shouldExit) {
       console.log(`\n🚪 EXIT: ${exitReason}`);
+      logTrade('EXIT', currentPrice, exitReason);
       state.position = null;
       state.entryPrice = null;
-      state.profitTaken = false;
+      state.entryTime = null;
       saveState(state);
     } else {
       saveState(state);
