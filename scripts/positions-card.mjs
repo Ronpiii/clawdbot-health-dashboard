@@ -6,7 +6,7 @@ import path from 'path';
 const botStateFile = path.join(process.cwd(), 'projects/hyperliquid-bot/bot-state-v2.json');
 const lastAccountFile = path.join(process.cwd(), '.cache/last-account-balance.txt');
 
-const LEVERAGE = 3; // default leverage per config
+const LEVERAGE = 5; // default leverage per config
 
 function getLastAccountBalance() {
   try {
