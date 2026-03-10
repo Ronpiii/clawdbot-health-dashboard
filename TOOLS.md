@@ -1,5 +1,23 @@
 # TOOLS.md - Local Notes
 
+## Positions Card
+
+when ron asks **"-positions"**, respond with templated card from:
+```bash
+node scripts/positions-card.mjs
+```
+
+shows:
+- account balance & health (🟢🟡🟠🔴)
+- daily P&L + avg position P&L
+- winrate (% green positions)
+- 4 open positions with direction, size, entry, PnL
+- last check time, BTC regime
+
+template keeps trading info compact & scannable.
+
+---
+
 ## Model Switching
 
 **default:** haiku 3.5 (cheap, fast)
