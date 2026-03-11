@@ -44,9 +44,17 @@ function getAccountHealth(account) {
   return '🔴 Critical';
 }
 
-function formatPnL(pnl) {
-  if (pnl >= 0) return `+${pnl.toFixed(2)}%`;
-  return `${pnl.toFixed(2)}%`;
+function formatPnL(pnl, dollars) {
+  const pctStr = pnl >= 0 ? `+${pnl.toFixed(2)}%` : `${pnl.toFixed(2)}%`;
+  const dollarStr = dollars >= 0 ? `+$${dollars.toFixed(0)}` : `-$${Math.abs(dollars).toFixed(0)}`;
+  return `${pctStr} (${dollarStr})`;
+}
+
+function getTodayStart() {
+  const now = new Date();
+  const start = new Date(now);
+  start.setHours(0, 0, 0, 0);
+  return start.toISOString();
 }
 
 function getCurrentTime() {
@@ -68,12 +76,17 @@ async function generateCard() {
     // Fetch live prices from Hyperliquid
     const mids = await sdk.info.getAllMids();
     
-    // Get account value from state (will update when bot runs)
+    // Get account value from state
     const accountValue = state.account || 119.00;
+    const startingBalance = state.startingBalance || accountValue;
     
     // Build positions with live price data
     const positions = [];
     const positionMetrics = [];
+    const todayStart = getTodayStart();
+    
+    let dailyPnLDollars = 0;
+    let totalPnLDollars = 0;
     
     Object.entries(state.positions || {}).forEach(([symbol, pos]) => {
       const currentPrice = parseFloat(mids[symbol]) || pos.entryPrice;
@@ -90,6 +103,12 @@ async function generateCard() {
         pnlDollars = (pos.entryPrice - currentPrice) * absSize;
       }
       
+      // Track daily vs total P&L
+      totalPnLDollars += pnlDollars;
+      if (pos.entryTime && new Date(pos.entryTime) >= new Date(todayStart)) {
+        dailyPnLDollars += pnlDollars;
+      }
+      
       positions.push({
         symbol,
         size: absSize,
@@ -104,9 +123,9 @@ async function generateCard() {
     
     // Calculate metrics
     const positionPnLs = positionMetrics.map(m => m.pnlPct);
-    const totalPnL = positionPnLs.reduce((a, b) => a + b, 0);
-    const totalPnLDollars = positionMetrics.reduce((a, b) => a + b.pnlDollars, 0);
-    const avgPnL = positions.length > 0 ? totalPnL / positions.length : 0;
+    const totalPnL = (totalPnLDollars / startingBalance) * 100;
+    const dailyPnL = (dailyPnLDollars / startingBalance) * 100;
+    const avgPnL = positions.length > 0 ? positionPnLs.reduce((a, b) => a + b) / positions.length : 0;
     const winrate = getWinrate(positionPnLs);
     const health = getAccountHealth(accountValue);
     const currentTime = getCurrentTime();
@@ -120,7 +139,8 @@ async function generateCard() {
 ╚════════════════════════════════════════════════════════════════╝
 
 💰 ACCOUNT: $${accountValue.toFixed(2)} | ${health}
-📊 TOTAL P&L: ${formatPnL(totalPnL)} ($${totalPnLDollars > 0 ? '+' : ''}${totalPnLDollars.toFixed(0)}) | Avg: ${formatPnL(avgPnL)}
+📊 TOTAL P&L:  ${formatPnL(totalPnL, totalPnLDollars)} | Avg: ${formatPnL(avgPnL, 0)}
+📈 DAILY P&L:  ${formatPnL(dailyPnL, dailyPnLDollars)}
 🏆 WINRATE: ${winrate}%
 
 OPEN POSITIONS (${positions.length}):
@@ -133,7 +153,7 @@ ${positions.map((pos, idx) => {
   const margin = notional / pos.leverage;
   totalMarginUsed += margin;
   
-  const pnlStr = `${formatPnL(pnlPct)} ($${pnlDollars > 0 ? '+' : ''}${pnlDollars.toFixed(0)})`;
+  const pnlStr = formatPnL(pnlPct, pnlDollars);
   
   return `  ${emoji} ${pos.symbol} ${direction} ${pos.size.toFixed(4)} @ $${pos.entryPrice.toFixed(4)}
       ├ Size: $${notional.toFixed(0)} | Margin: $${margin.toFixed(0)} | Lev: ${pos.leverage}x | PnL: ${pnlStr}`;

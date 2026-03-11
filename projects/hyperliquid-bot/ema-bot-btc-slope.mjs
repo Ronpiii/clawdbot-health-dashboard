@@ -17,27 +17,39 @@ const DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/1480891035126075463/WW
 
 async function notifyDiscord(embed) {
   return new Promise((resolve) => {
-    const payload = JSON.stringify({ embeds: [embed] });
-    const url = new URL(DISCORD_WEBHOOK);
-    const options = {
-      hostname: url.hostname,
-      path: url.pathname + url.search,
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(payload),
-      },
-    };
+    try {
+      const payload = JSON.stringify({ embeds: [embed] });
+      const url = new URL(DISCORD_WEBHOOK);
+      const options = {
+        hostname: url.hostname,
+        path: url.pathname + url.search,
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(payload),
+        },
+      };
 
-    const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', (chunk) => data += chunk);
-      res.on('end', () => resolve(res.statusCode === 204 || res.statusCode === 200));
-    });
+      const req = https.request(options, (res) => {
+        let data = '';
+        res.on('data', (chunk) => data += chunk);
+        res.on('end', () => {
+          const success = res.statusCode === 204 || res.statusCode === 200;
+          resolve(success);
+        });
+      });
 
-    req.on('error', () => resolve(false));
-    req.write(payload);
-    req.end();
+      req.on('error', (err) => {
+        console.error(`Discord notify error: ${err.message}`);
+        resolve(false);
+      });
+      
+      req.write(payload);
+      req.end();
+    } catch (err) {
+      console.error(`Discord notify exception: ${err.message}`);
+      resolve(false);
+    }
   });
 }
 
@@ -321,8 +333,21 @@ const args = process.argv.slice(2);
 
 if (args.includes('--loop')) {
   console.log(`Starting BTC slope bot loop (every 5 minutes)...`);
-  runBot().catch(console.error);
-  setInterval(() => runBot().catch(console.error), 5 * 60 * 1000);
+  (async () => {
+    try {
+      await runBot();
+    } catch (err) {
+      console.error(`Error in runBot: ${err.message}`);
+    }
+  })();
+  
+  setInterval(async () => {
+    try {
+      await runBot();
+    } catch (err) {
+      console.error(`Error in loop: ${err.message}`);
+    }
+  }, 5 * 60 * 1000);
 } else {
   runBot().catch(console.error);
 }
