@@ -224,10 +224,17 @@ async function runBot() {
 
     if (prevClose <= prevEMA && currentPrice > currentEMA && hasSlope && slope > 0) {
       console.log(`✅ LONG SIGNAL: price crossed above EMA + positive slope`);
+      
+      // Execute live order
+      const positionSize = 0.01; // 0.01 BTC
+      const orderResult = await placeOrder('BTC', true, positionSize, currentPrice);
+      console.log(`Order result:`, orderResult);
+      
       state.position = 'LONG';
       state.entryPrice = currentPrice;
       state.entryTime = new Date().toISOString();
       state.peakPrice = currentPrice;
+      state.positionSize = positionSize;
       saveState(state);
       logTrade('LONG', currentPrice, `Slope ${slope.toFixed(3)}%`);
 
@@ -245,10 +252,17 @@ async function runBot() {
       });
     } else if (prevClose >= prevEMA && currentPrice < currentEMA && hasSlope && slope < 0) {
       console.log(`✅ SHORT SIGNAL: price crossed below EMA + negative slope`);
+      
+      // Execute live order
+      const positionSize = 0.01; // 0.01 BTC
+      const orderResult = await placeOrder('BTC', false, positionSize, currentPrice);
+      console.log(`Order result:`, orderResult);
+      
       state.position = 'SHORT';
       state.entryPrice = currentPrice;
       state.entryTime = new Date().toISOString();
       state.peakPrice = currentPrice;
+      state.positionSize = positionSize;
       saveState(state);
       logTrade('SHORT', currentPrice, `Slope ${slope.toFixed(3)}%`);
 
@@ -304,6 +318,12 @@ async function runBot() {
 
     if (shouldExit) {
       console.log(`🚪 EXIT: ${exitReason}`);
+      
+      // Execute close order
+      const isBuy = state.position === 'SHORT'; // close SHORT = buy, close LONG = sell
+      const closeResult = await placeOrder('BTC', isBuy, state.positionSize, currentPrice);
+      console.log(`Close order result:`, closeResult);
+      
       logTrade('EXIT', currentPrice, exitReason);
 
       await notifyDiscord({
@@ -323,6 +343,7 @@ async function runBot() {
       state.position = null;
       state.entryPrice = null;
       state.entryTime = null;
+      state.positionSize = null;
       saveState(state);
     } else {
       saveState(state);
