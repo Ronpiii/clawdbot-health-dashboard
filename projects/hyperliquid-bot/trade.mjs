@@ -70,8 +70,9 @@ async function placeOrder(symbol, isBuy, size, price = null) {
     let currentPrice = price;
     if (!currentPrice) {
       const mids = await withTimeout(sdk.info.getAllMids(), 10000);
-      currentPrice = parseFloat(mids[symbol]);
-      if (!currentPrice) throw new Error(`No price for ${symbol}`);
+      // SDK returns prices with -PERP suffix
+      currentPrice = parseFloat(mids[`${symbol}-PERP`] || mids[symbol]);
+      if (!currentPrice || isNaN(currentPrice)) throw new Error(`No valid price for ${symbol} (got: ${mids[`${symbol}-PERP`]})`);
     }
     
     // Round price to tick size
