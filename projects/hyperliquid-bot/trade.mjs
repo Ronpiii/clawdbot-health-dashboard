@@ -77,6 +77,11 @@ async function placeOrder(symbol, isBuy, size, price = null) {
     
     // Round price to tick size
     const limitPrice = roundToTick(currentPrice, symbol);
+    const tick = TICK_SIZES[symbol] || 0.0001;
+    const decimals = Math.max(0, -Math.floor(Math.log10(tick)));
+    const formattedPrice = limitPrice.toFixed(decimals);
+    
+    console.log(`  Rounded price: $${formattedPrice} (tick: ${tick}, decimals: ${decimals})`);
     
     // Set leverage to 5x (cross margin)
     try {
@@ -89,7 +94,7 @@ async function placeOrder(symbol, isBuy, size, price = null) {
       coin: `${symbol}-PERP`,  // CRITICAL: Must include -PERP
       is_buy: isBuy,
       sz: roundSize(size, 8),  // 8 decimals for size precision
-      limit_px: limitPrice.toString(),
+      limit_px: formattedPrice,
       order_type: { limit: { tif: 'Gtc' } },  // Good til Cancel
       reduce_only: false,  // Opening new positions
     }), 15000);

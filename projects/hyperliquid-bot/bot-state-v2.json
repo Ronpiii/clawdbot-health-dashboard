@@ -1,11 +1,4 @@
 {
-  "mode": "PAUSED",
-  "pausedAt": "2026-03-11T16:16:00Z",
-  "reason": "Ron: close all positions & pause 20/200 EMA",
-  "openPositions": {
-    "SOL": { "direction": "SHORT", "size": 0.62, "entryPrice": 86.41, "action": "BUY 0.62 to close" },
-    "GRASS": { "direction": "LONG", "size": 49.5, "entryPrice": 0.33189, "action": "SELL 49.5 to close" },
-    "HYPE": { "direction": "LONG", "size": 6.3, "entryPrice": 35.4803, "action": "SELL 6.3 to close" }
-  },
-  "positions": {}
+  "positions": {},
+  "mode": "READY"
 }

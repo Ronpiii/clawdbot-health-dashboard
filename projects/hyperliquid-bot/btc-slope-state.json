@@ -1,10 +1,8 @@
 {
-  "mode": "PAUSED",
-  "pausedAt": "2026-03-11T16:16:00Z",
-  "reason": "Ron: pause trading",
   "position": null,
   "entryPrice": null,
-  "entryTime": null,
-  "currentPrice": null,
-  "positionSize": null
+  "currentPrice": 70386.5,
+  "ema200": 69799.14310945274,
+  "slope": 0.0369958930997053,
+  "timestamp": "2026-03-11T16:25:17.109Z"
 }
