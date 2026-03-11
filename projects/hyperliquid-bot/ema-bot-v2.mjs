@@ -17,6 +17,7 @@ import { ethers } from 'ethers';
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'fs';
 import https from 'https';
 import { placeOrder, getPositions } from './trade.mjs';
+import { logEntry, logExit, logScale } from './trade-logger.mjs';
 
 config();
 
@@ -516,6 +517,12 @@ async function executeLiveOrder(symbol, direction, size, price) {
     console.log(`✅ LIVE ${direction}: ${size} ${symbol}`);
     const result = await placeOrder(symbol, isBuy, size, price);
     console.log(`   Order response:`, result);
+    
+    // Log the trade
+    if (direction === 'LONG' || direction === 'SHORT') {
+      logEntry(symbol, direction, size, price, `Live order executed`);
+    }
+    
     return true;
   } catch (err) {
     console.error(`❌ Order error (${symbol}):`, err.message);
@@ -534,6 +541,7 @@ async function executePaperOrder(symbol, direction, size, price, state) {
       tranches: 1, // Start with 1 tranche, increment on scale-in
     };
     console.log(`📝 PAPER ${direction}: ${size} ${symbol} @ $${price.toFixed(2)}`);
+    logEntry(symbol, direction, size, price, `Paper trading`);
   } else if (direction === 'EXIT') {
     const pos = state.positions[symbol];
     if (pos) {
@@ -542,6 +550,7 @@ async function executePaperOrder(symbol, direction, size, price, state) {
         : (pos.entryPrice - price) / pos.entryPrice;
       const pnlUsd = pnlPct * Math.abs(pos.size) * pos.entryPrice;
       console.log(`📝 PAPER EXIT: ${symbol} | PnL: ${(pnlPct * 100).toFixed(2)}% ($${pnlUsd.toFixed(2)})`);
+      logExit(symbol, pos.direction, Math.abs(pos.size), pos.entryPrice, price, pnlUsd, pnlPct * 100, `Paper exit`);
       state.dailyPnL = (state.dailyPnL || 0) + pnlUsd;
       delete state.positions[symbol];
     }
@@ -928,8 +937,8 @@ async function runBot(paperMode = true) {
         if (tranches < MAX_TRANCHES && pnlPct >= SCALING_THRESHOLD) {
         // Only scale if position is actually profitable (pnlPct > 0)
         if (pnlPct > 0) {
-          // Add 50% of original position size as the scale-in tranche
-          const addSize = Math.abs(currentPos.size) * 0.5;
+          // Add 75% of original position size as the scale-in tranche (increased to meet min order size)
+          const addSize = Math.abs(currentPos.size) * 0.75;
           if (addSize > 0 && addSize * currentPrice >= CONFIG.minOrderUsd) {
             console.log(`📈 SCALING IN: +${addSize.toFixed(4)} ${symbol} @ ${currentPrice.toFixed(2)} (${(pnlPct*100).toFixed(1)}% profit)`);
             
@@ -1136,7 +1145,7 @@ Current mode: ${CONFIG.mode}
 Trend Mode Config (backtested +70% improvement with scaling):
   - Entry: price crosses EMA + slope confirms (48 candles = 8 days)
   - Exit: price crosses back
-  - Scaling: add 50% more when +5% profit (max 2 tranches)
+  - Scaling: add 75% more when +5% profit (max 2 tranches)
   - Shorts: enabled for all assets
 
 Risk:
