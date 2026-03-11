@@ -49,6 +49,14 @@ function roundSize(size, decimals = 2) {
   return Math.round(size * Math.pow(10, decimals)) / Math.pow(10, decimals);
 }
 
+// --- Timeout Wrapper ---
+function withTimeout(promise, ms) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => setTimeout(() => reject(new Error(`Timeout after ${ms}ms`)), ms))
+  ]);
+}
+
 // --- Order Execution (WORKING VERSION) ---
 async function placeOrder(symbol, isBuy, size, price = null) {
   try {
@@ -58,10 +66,10 @@ async function placeOrder(symbol, isBuy, size, price = null) {
     size = parseFloat(size);
     if (size <= 0) throw new Error(`Invalid size: ${size}`);
     
-    // Get market price with realistic slippage
+    // Get market price with realistic slippage (with timeout)
     let currentPrice = price;
     if (!currentPrice) {
-      const mids = await sdk.info.getAllMids();
+      const mids = await withTimeout(sdk.info.getAllMids(), 10000);
       currentPrice = parseFloat(mids[symbol]);
       if (!currentPrice) throw new Error(`No price for ${symbol}`);
     }
@@ -71,19 +79,19 @@ async function placeOrder(symbol, isBuy, size, price = null) {
     
     // Set leverage to 5x (cross margin)
     try {
-      await sdk.exchange.updateLeverage(`${symbol}-PERP`, 'Cross', 5);
+      await withTimeout(sdk.exchange.updateLeverage(`${symbol}-PERP`, 'Cross', 5), 10000);
     } catch (err) {
       console.log(`⚠️  Leverage update failed (may already be 5x): ${err.message}`);
     }
     
-    const result = await sdk.exchange.placeOrder({
+    const result = await withTimeout(sdk.exchange.placeOrder({
       coin: `${symbol}-PERP`,  // CRITICAL: Must include -PERP
       is_buy: isBuy,
       sz: roundSize(size, 8),  // 8 decimals for size precision
       limit_px: limitPrice.toString(),
       order_type: { limit: { tif: 'Gtc' } },  // Good til Cancel
       reduce_only: false,  // Opening new positions
-    });
+    }), 15000);
     
     console.log(`✅ ORDER PLACED: ${JSON.stringify(result)}`);
     return result;
@@ -96,7 +104,7 @@ async function placeOrder(symbol, isBuy, size, price = null) {
 // --- Position Management ---
 async function getPositions(address) {
   try {
-    const portfolio = await sdk.info.portfolio(address);
+    const portfolio = await withTimeout(sdk.info.portfolio(address), 10000);
     const positions = {};
     
     if (portfolio?.assetPositions) {
