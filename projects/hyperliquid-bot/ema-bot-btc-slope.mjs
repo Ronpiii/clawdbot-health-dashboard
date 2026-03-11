@@ -222,8 +222,8 @@ async function runBot() {
   if (!state.position) {
     const hasSlope = Math.abs(slope) > 0.01;
 
-    if (prevClose <= prevEMA && currentPrice > currentEMA && hasSlope && slope > 0) {
-      console.log(`✅ LONG SIGNAL: price crossed above EMA + positive slope`);
+    if (prevClose <= prevEMA && currentPrice > currentEMA) {
+      console.log(`✅ LONG SIGNAL: price crossed above EMA200`);
       
       // Execute live order
       const positionSize = 0.01; // 0.01 BTC
@@ -239,19 +239,18 @@ async function runBot() {
       logTrade('LONG', currentPrice, `Slope ${slope.toFixed(3)}%`);
 
       await notifyDiscord({
-        title: '📈 BTC LONG: 5m Slope Signal',
+        title: '📈 BTC LONG: EMA Crossover',
         color: 0x00ff00,
         fields: [
           { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
           { name: 'EMA200', value: `$${currentEMA.toFixed(2)}`, inline: true },
-          { name: 'Slope', value: `${slope.toFixed(3)}%`, inline: true },
-          { name: 'Target', value: `+${(currentPrice * 1.02).toFixed(2)} (2%)`, inline: false },
-          { name: 'Stop', value: `$${(currentPrice * 0.95).toFixed(2)} (5%)`, inline: false },
+          { name: 'Target', value: `+${(currentPrice * 1.05).toFixed(2)} (5%)`, inline: false },
+          { name: 'Stop', value: `$${(currentPrice * 0.98).toFixed(2)} (-2%)`, inline: false },
         ],
         timestamp: new Date().toISOString(),
       });
-    } else if (prevClose >= prevEMA && currentPrice < currentEMA && hasSlope && slope < 0) {
-      console.log(`✅ SHORT SIGNAL: price crossed below EMA + negative slope`);
+    } else if (prevClose >= prevEMA && currentPrice < currentEMA) {
+      console.log(`✅ SHORT SIGNAL: price crossed below EMA200`);
       
       // Execute live order
       const positionSize = 0.01; // 0.01 BTC
@@ -267,14 +266,13 @@ async function runBot() {
       logTrade('SHORT', currentPrice, `Slope ${slope.toFixed(3)}%`);
 
       await notifyDiscord({
-        title: '📉 BTC SHORT: 5m Slope Signal',
+        title: '📉 BTC SHORT: EMA Crossover',
         color: 0xff0000,
         fields: [
           { name: 'Entry', value: `$${currentPrice.toFixed(2)}`, inline: true },
           { name: 'EMA200', value: `$${currentEMA.toFixed(2)}`, inline: true },
-          { name: 'Slope', value: `${slope.toFixed(3)}%`, inline: true },
-          { name: 'Target', value: `$${(currentPrice * 0.98).toFixed(2)} (2%)`, inline: false },
-          { name: 'Stop', value: `$${(currentPrice * 1.05).toFixed(2)} (5%)`, inline: false },
+          { name: 'Target', value: `$${(currentPrice * 0.95).toFixed(2)} (5%)`, inline: false },
+          { name: 'Stop', value: `$${(currentPrice * 1.02).toFixed(2)} (-2%)`, inline: false },
         ],
         timestamp: new Date().toISOString(),
       });
@@ -304,15 +302,15 @@ async function runBot() {
     let exitReason = '';
     let color = 0x00ff00;
 
-    // Profit target: +2%
-    if (pnlPct >= 2) {
+    // Profit target: +5%
+    if (pnlPct >= 5) {
       shouldExit = true;
-      exitReason = '+2% Profit Target';
+      exitReason = '+5% Profit Target';
     }
-    // Stoploss: -5%
-    else if (pnlPct < -5) {
+    // Stoploss: -2%
+    else if (pnlPct < -2) {
       shouldExit = true;
-      exitReason = '-5% Stoploss Hit';
+      exitReason = '-2% Stoploss Hit';
       color = 0xff0000;
     }
 
