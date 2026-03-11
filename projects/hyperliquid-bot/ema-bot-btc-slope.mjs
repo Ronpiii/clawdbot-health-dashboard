@@ -233,18 +233,24 @@ async function runBot() {
     if (prevClose <= prevEMA && currentPrice > currentEMA && hasSlope && slope5 > 0) {
       console.log(`✅ LONG SIGNAL: price crossed above EMA200 + 5-candle slope ${slope5.toFixed(3)}%`);
       
-      // Execute live order
+      // Execute live order with proper error handling
       const positionSize = 0.01; // 0.01 BTC
-      const orderResult = await placeOrder('BTC', true, positionSize, currentPrice);
-      console.log(`Order result:`, orderResult);
-      
-      state.position = 'LONG';
-      state.entryPrice = currentPrice;
-      state.entryTime = new Date().toISOString();
-      state.peakPrice = currentPrice;
-      state.positionSize = positionSize;
-      saveState(state);
-      logTrade('LONG', currentPrice, `Slope5c ${slope5.toFixed(3)}%`);
+      try {
+        const orderResult = await placeOrder('BTC', true, positionSize, currentPrice);
+        console.log(`✅ ORDER EXECUTED:`, orderResult);
+        
+        state.position = 'LONG';
+        state.entryPrice = currentPrice;
+        state.entryTime = new Date().toISOString();
+        state.peakPrice = currentPrice;
+        state.positionSize = positionSize;
+        saveState(state);
+        logTrade('LONG', currentPrice, `Slope5c ${slope5.toFixed(3)}%`);
+      } catch (err) {
+        console.error(`❌ LONG ORDER FAILED: ${err.message}`);
+        logTrade('LONG-FAILED', currentPrice, `Order error: ${err.message}`);
+        return; // Exit without updating state
+      }
 
       await notifyDiscord({
         title: '📈 BTC LONG: EMA Crossover',
@@ -260,18 +266,24 @@ async function runBot() {
     } else if (prevClose >= prevEMA && currentPrice < currentEMA && hasSlope && slope5 < 0) {
       console.log(`✅ SHORT SIGNAL: price crossed below EMA200 + 5-candle slope ${slope5.toFixed(3)}%`);
       
-      // Execute live order
+      // Execute live order with proper error handling
       const positionSize = 0.01; // 0.01 BTC
-      const orderResult = await placeOrder('BTC', false, positionSize, currentPrice);
-      console.log(`Order result:`, orderResult);
-      
-      state.position = 'SHORT';
-      state.entryPrice = currentPrice;
-      state.entryTime = new Date().toISOString();
-      state.peakPrice = currentPrice;
-      state.positionSize = positionSize;
-      saveState(state);
-      logTrade('SHORT', currentPrice, `Slope5c ${slope5.toFixed(3)}%`);
+      try {
+        const orderResult = await placeOrder('BTC', false, positionSize, currentPrice);
+        console.log(`✅ ORDER EXECUTED:`, orderResult);
+        
+        state.position = 'SHORT';
+        state.entryPrice = currentPrice;
+        state.entryTime = new Date().toISOString();
+        state.peakPrice = currentPrice;
+        state.positionSize = positionSize;
+        saveState(state);
+        logTrade('SHORT', currentPrice, `Slope5c ${slope5.toFixed(3)}%`);
+      } catch (err) {
+        console.error(`❌ SHORT ORDER FAILED: ${err.message}`);
+        logTrade('SHORT-FAILED', currentPrice, `Order error: ${err.message}`);
+        return; // Exit without updating state
+      }
 
       await notifyDiscord({
         title: '📉 BTC SHORT: EMA Crossover',
@@ -331,12 +343,17 @@ async function runBot() {
     if (shouldExit) {
       console.log(`🚪 EXIT: ${exitReason}`);
       
-      // Execute close order
+      // Execute close order with proper error handling
       const isBuy = state.position === 'SHORT'; // close SHORT = buy, close LONG = sell
-      const closeResult = await placeOrder('BTC', isBuy, state.positionSize, currentPrice);
-      console.log(`Close order result:`, closeResult);
-      
-      logTrade('EXIT', currentPrice, exitReason);
+      try {
+        const closeResult = await placeOrder('BTC', isBuy, state.positionSize, currentPrice);
+        console.log(`✅ EXIT ORDER EXECUTED:`, closeResult);
+        logTrade('EXIT', currentPrice, exitReason);
+      } catch (err) {
+        console.error(`❌ EXIT ORDER FAILED: ${err.message}`);
+        logTrade('EXIT-FAILED', currentPrice, `Order error: ${err.message}`);
+        return; // Exit without clearing state
+      }
 
       await notifyDiscord({
         title: `🚪 BTC EXIT`,
