@@ -976,13 +976,29 @@ async function runBot(paperMode = true) {
     }
   }
   
-  // Save account balance and BTC signal to state for dashboard/card display
+  // Save account balance and BTC signal to state
   state.account = accountValue;
-  state.btcSignal = btcSignal; // Track for regime change detection
+  state.btcSignal = btcSignal;
   saveState(state);
   
   console.log('\n' + '═'.repeat(60));
   console.log('Run complete');
+  
+  // Append BTC 5m strategy card
+  try {
+    const btcStateFile = './btc-slope-state.json';
+    let btcCard = '\nBTC 5M SLOPE BOT (200 EMA + 0.01% slope)\n\n📍 STATUS: WAITING';
+    
+    if (existsSync(btcStateFile)) {
+      const btcState = JSON.parse(readFileSync(btcStateFile));
+      if (btcState.position) {
+        btcCard = `\nBTC 5M SLOPE BOT (200 EMA + 0.01% slope)\n\n📍 STATUS: ${btcState.position}\nEntry: $${btcState.entryPrice.toFixed(2)}\nLeverage: 5x | Target: +2% | Stop: -5%`;
+      }
+    }
+    console.log(btcCard);
+  } catch (e) {
+    console.log('\nBTC 5M SLOPE BOT\n\n📍 STATUS: WAITING');
+  }
 }
 
 async function showStatus() {
