@@ -126,6 +126,12 @@ function getSlope(emaVals, index) {
   return ((emaVals[index] - emaVals[index - 10]) / emaVals[index - 10]) * 100;
 }
 
+function getSlope5Candles(emaVals, index) {
+  // slope over last 5 candles = 25 minutes (protection against whipsaws)
+  if (index < 4) return 0;
+  return ((emaVals[index] - emaVals[index - 4]) / emaVals[index - 4]) * 100;
+}
+
 function loadState() {
   try {
     if (existsSync(STATE_FILE)) {
@@ -220,10 +226,12 @@ async function runBot() {
 
   // ============ ENTRY LOGIC ============
   if (!state.position) {
-    const hasSlope = Math.abs(slope) > 0.01;
+    // 5-candle slope check (0.001% threshold)
+    const slope5 = getSlope5Candles(emaVals, emaVals.length - 1);
+    const hasSlope = Math.abs(slope5) > 0.001;
 
-    if (prevClose <= prevEMA && currentPrice > currentEMA) {
-      console.log(`✅ LONG SIGNAL: price crossed above EMA200`);
+    if (prevClose <= prevEMA && currentPrice > currentEMA && hasSlope && slope5 > 0) {
+      console.log(`✅ LONG SIGNAL: price crossed above EMA200 + 5-candle slope ${slope5.toFixed(3)}%`);
       
       // Execute live order
       const positionSize = 0.01; // 0.01 BTC
@@ -236,7 +244,7 @@ async function runBot() {
       state.peakPrice = currentPrice;
       state.positionSize = positionSize;
       saveState(state);
-      logTrade('LONG', currentPrice, `Slope ${slope.toFixed(3)}%`);
+      logTrade('LONG', currentPrice, `Slope5c ${slope5.toFixed(3)}%`);
 
       await notifyDiscord({
         title: '📈 BTC LONG: EMA Crossover',
@@ -249,8 +257,8 @@ async function runBot() {
         ],
         timestamp: new Date().toISOString(),
       });
-    } else if (prevClose >= prevEMA && currentPrice < currentEMA) {
-      console.log(`✅ SHORT SIGNAL: price crossed below EMA200`);
+    } else if (prevClose >= prevEMA && currentPrice < currentEMA && hasSlope && slope5 < 0) {
+      console.log(`✅ SHORT SIGNAL: price crossed below EMA200 + 5-candle slope ${slope5.toFixed(3)}%`);
       
       // Execute live order
       const positionSize = 0.01; // 0.01 BTC
@@ -263,7 +271,7 @@ async function runBot() {
       state.peakPrice = currentPrice;
       state.positionSize = positionSize;
       saveState(state);
-      logTrade('SHORT', currentPrice, `Slope ${slope.toFixed(3)}%`);
+      logTrade('SHORT', currentPrice, `Slope5c ${slope5.toFixed(3)}%`);
 
       await notifyDiscord({
         title: '📉 BTC SHORT: EMA Crossover',
