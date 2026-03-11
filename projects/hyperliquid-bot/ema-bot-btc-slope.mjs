@@ -214,6 +214,9 @@ async function runBot() {
 
   let state = loadState();
   state.currentPrice = currentPrice;
+  state.ema200 = currentEMA;
+  state.slope = slope;
+  state.timestamp = new Date().toISOString();
 
   // ============ ENTRY LOGIC ============
   if (!state.position) {
@@ -326,6 +329,9 @@ async function runBot() {
     }
   }
 
+  // Always save current state (slope, EMA, price)
+  saveState(state);
+  
   console.log(`═`.repeat(60) + '\n');
 }
 

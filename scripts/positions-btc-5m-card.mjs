@@ -82,6 +82,12 @@ function generateCard() {
   
   console.log(`${posColor} STATUS: ${posStatus}`);
   
+  // Always show EMA + slope
+  if (state.ema200) {
+    const slopeColor = state.slope > 0 ? '📈' : state.slope < -0.01 ? '📉' : '⚪';
+    console.log(`\n${slopeColor} EMA200: $${state.ema200.toFixed(2)} | Slope: ${state.slope.toFixed(3)}%`);
+  }
+  
   if (hasPosition) {
     console.log(`\nEntry: $${state.entryPrice?.toFixed(2) || 'N/A'}`);
     console.log(`Current: $${state.currentPrice?.toFixed(2) || 'N/A'}`);
