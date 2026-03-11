@@ -316,9 +316,15 @@ async function runBot() {
       exitReason = '+5% Profit Target';
     }
     // Stoploss: -2%
-    else if (pnlPct < -2) {
+    else if (pnlPct < -2 && pnlPct >= -3) {
       shouldExit = true;
       exitReason = '-2% Stoploss Hit';
+      color = 0xff0000;
+    }
+    // Emergency brake: -3% (server outage protection)
+    else if (pnlPct < -3) {
+      shouldExit = true;
+      exitReason = '🚨 EMERGENCY BRAKE (-3% hard stop)';
       color = 0xff0000;
     }
 
