@@ -10,13 +10,34 @@ Ron wants me to build something small but helpful every night while he sleeps.
 
 _Add new ideas here. Pick one per night._
 
-- [ ] Voice memo transcription — process voice notes into actionable items
+- [x] Voice memo transcription — process voice notes into actionable items
 - [x] Email preview component for anivia — see how emails look before sending
 - [ ] Bulk email drafting UI for anivia — select leads → draft all
 
 ---
 
 ## Completed Builds
+
+### 2026-03-11: Voice Memo Transcription
+**What:** `arc voice` — process voice notes into transcribed text + auto-extracted actionable items
+**Commands:** `arc voice process`, `arc voice list`, `arc voice setup`, `arc voice path`
+**Features:**
+- Auto-detects audio files (MP3, WAV, M4A, FLAC) in `memory/voice-memos/`
+- Transcribes via OpenAI Whisper (local or API, model=tiny for speed)
+- Extracts action items: TODOs, tasks, decisions, mentions, actions (pattern-based)
+- Appends formatted transcript + actions to today's daily log
+- Archives processed files in `memory/voice-memos/processed/`
+**Action item patterns (auto-extracted):**
+- `TODO: ...` → unchecked list item
+- `action: ...` → action list
+- `decided/decide: ...` → decision list
+- `@mention` → mentions (for follow-up)
+- `need to/should/must: ...` → task list
+**Files:** `scripts/voice-processor.mjs` (710 lines), `scripts/arc` router updated, directories created: `memory/voice-memos/`, `memory/transcripts/`
+**Setup:** `arc voice setup` creates voice-memos directory. Users can add `.mp3`/`.wav` files there. `arc voice process` handles transcription and logging in one command.
+**Why:** Ron often has ideas while driving, in meetings, or doing other things. Currently those thoughts get lost or hastily typed. Voice memos capture the raw idea instantly. This tool turns them into structured action items in the daily log automatically — zero friction. Especially useful for capturing decisions that need to be logged, mentions that need follow-up, and quick tasks that would otherwise be forgotten.
+**Heartbeat integration:** Can run `arc voice process` on heartbeat to ingest any pending voice memos into daily logs. Silent operation with `--silent` flag.
+**Size:** 1 new file (710 lines), 2 directories created, arc router expanded
 
 ### 2026-03-10: Email Preview Component for Anivia
 **What:** `<EmailRenderer>` component + live preview toggle in send-email-modal

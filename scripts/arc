@@ -144,6 +144,9 @@ const SCRIPTS = {
   neuron: 'neuron.mjs',
   network: 'neuron.mjs',
   knowledge: 'neuron.mjs',
+  voice: 'voice-processor.mjs',
+  memo: 'voice-processor.mjs',
+  memos: 'voice-processor.mjs',
 };
 
 const HELP = `
