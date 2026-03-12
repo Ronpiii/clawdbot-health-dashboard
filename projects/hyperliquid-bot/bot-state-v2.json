@@ -7,15 +7,20 @@
       "tranches": 1
     }
   },
-  "pendingSignals": {},
+  "pendingSignals": {
+    "SOL": {
+      "signal": "SHORT",
+      "time": 1773353341370
+    }
+  },
   "dailyPnLDate": "2026-03-12",
   "dailyPnL": 0,
   "highestPrice": {
-    "SOL": 86.5245,
-    "HYPE": 37.398,
-    "GRASS": 0.36651
+    "SOL": 86.4935,
+    "HYPE": 37.3955,
+    "GRASS": 0.3659
   },
-  "account": 131.570887,
+  "account": 131.458807,
   "btcSignal": "EXIT",
-  "lastCheck": "2026-03-12T22:08:24.726Z"
+  "lastCheck": "2026-03-12T22:09:02.422Z"
 }
