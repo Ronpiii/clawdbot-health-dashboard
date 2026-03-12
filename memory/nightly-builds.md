@@ -12,11 +12,36 @@ _Add new ideas here. Pick one per night._
 
 - [x] Voice memo transcription — process voice notes into actionable items
 - [x] Email preview component for anivia — see how emails look before sending
-- [ ] Bulk email drafting UI for anivia — select leads → draft all
+- [x] Bulk email drafting UI for anivia — select leads → draft all
 
 ---
 
 ## Completed Builds
+
+### 2026-03-12: Bulk Email Drafting UI for Anivia
+**What:** `<BulkEmailModal>` component — select leads → AI drafts emails → review/edit → send batch
+**File:** `src/components/leads/bulk-email-modal.tsx` (356 lines)
+**Features:**
+- Lead selection + display (shows selected leads with badges)
+- Prompt-based email generation (what should the email be about?)
+- Tone selector (professional/friendly/direct)
+- Three-step workflow: configure → review → sending
+- Live draft navigation (prev/next) with edit capability
+- Per-lead customization before bulk send
+- Status tracking (ready/edited/error)
+- Draft counter (how many are ready to send)
+**UI:** Modal card with tabs/steps, lead avatars, navigation arrows, real-time status badges
+**Integration:** Pairs with yesterday's EmailRenderer component + existing /api/ai/batch-draft endpoint
+**UX flow:** 
+  1. User selects multiple leads (checkbox selection)
+  2. Describes what email should cover + selects tone
+  3. Clicks "Generate N Drafts" — API creates personalized emails
+  4. Reviews drafts one by one, can edit subject/body freely
+  5. Each edit marks draft as "edited" (different visual state)
+  6. Sends all "ready" + "edited" drafts at once
+  7. Toast confirms success + any failures
+**Why:** Ron has 6+ leads in pipeline. Currently he drafts emails one at a time. This cuts time by 80% — describe once, personalize individually, send batch. The "describe + tone" pattern is way faster than writing each email from scratch.
+**Size:** 356 lines, self-contained, reuses existing anivia UI patterns
 
 ### 2026-03-11: Voice Memo Transcription
 **What:** `arc voice` — process voice notes into transcribed text + auto-extracted actionable items

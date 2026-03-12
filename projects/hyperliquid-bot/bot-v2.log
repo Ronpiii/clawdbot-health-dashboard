@@ -1,0 +1,42 @@
+[dotenv@17.3.1] injecting env (2) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+════════════════════════════════════════════════════════════
+EMA BOT V2 | Mode: TREND | LIVE
+2026-03-11T12:55:48.064Z
+════════════════════════════════════════════════════════════
+⚠️  LIVE TRADING - REAL MONEY AT RISK
+
+Account: $130.81
+Daily PnL: $0.00
+
+🔗 BTC REGIME: EXIT
+
+--- LIQUIDATION ALERT ---
+✓ All positions safe (>5% from liquidation)
+---------------------
+
+
+─── SOL ───
+Price: $85.1325
+Signal: SHORT
+Reason: Price below EMA 200 ($90.37), slope ↘ falling
+→ HOLDING: SHORT (PnL: 1.48%)
+
+─── HYPE ───
+Price: $35.4455
+Signal: LONG
+Reason: Price above EMA 200 ($30.34), slope ↗ rising
+→ HOLDING: LONG (PnL: 2.70%)
+
+─── GRASS ───
+Price: $0.3617
+Signal: LONG
+Reason: Price above EMA 200 ($0.26), slope ↗ rising
+→ HOLDING: LONG (PnL: 8.97%)
+
+════════════════════════════════════════════════════════════
+Run complete
+
+BTC 5M SLOPE BOT (200 EMA + 0.01% slope)
+
+📍 STATUS: WAITING

@@ -932,7 +932,7 @@ async function runBot(paperMode = true) {
         // === SCALING LOGIC: Add to winners ===
         const tranches = currentPos.tranches || 1;
         const SCALING_THRESHOLD = 0.05; // 5% profit
-        const MAX_TRANCHES = 2;
+        const MAX_TRANCHES = 3; // Allow up to 3 scale tranches
         
         if (tranches < MAX_TRANCHES && pnlPct >= SCALING_THRESHOLD) {
         // Only scale if position is actually profitable (pnlPct > 0)
@@ -942,40 +942,45 @@ async function runBot(paperMode = true) {
           if (addSize > 0 && addSize * currentPrice >= CONFIG.minOrderUsd) {
             console.log(`📈 SCALING IN: +${addSize.toFixed(4)} ${symbol} @ ${currentPrice.toFixed(2)} (${(pnlPct*100).toFixed(1)}% profit)`);
             
-            if (!paperMode) {
-              const orderType = currentPos.direction === 'LONG' ? 'LONG' : 'SHORT';
-              await executeLiveOrder(symbol, orderType, addSize, currentPrice);
-            }
-            
-            // Update position
             const oldSize = Math.abs(currentPos.size);
             const newSize = oldSize + addSize;
             const avgEntry = (currentPos.entryPrice * oldSize + currentPrice * addSize) / newSize;
             
-            state.positions[symbol] = {
-              direction: currentPos.direction,
-              size: currentPos.direction === 'LONG' ? newSize : -newSize,
-              entryPrice: avgEntry,
-              tranches: tranches + 1,
-            };
+            let orderSuccess = true;
+            if (!paperMode) {
+              const orderType = currentPos.direction === 'LONG' ? 'LONG' : 'SHORT';
+              orderSuccess = await executeLiveOrder(symbol, orderType, addSize, currentPrice);
+            }
             
-            cumulativeMarginUsed += addSize * currentPrice;
-            logTrade('SCALE', symbol, addSize, currentPrice, `+${(pnlPct*100).toFixed(1)}% profit`);
-            
-            // Discord notification
-            await notifyDiscord({
-              title: `📈 SCALE IN: ${symbol}`,
-              color: 0xffaa00,
-              fields: [
-                { name: 'Add Size', value: `${addSize.toFixed(4)}`, inline: true },
-                { name: 'Price', value: `$${currentPrice.toFixed(2)}`, inline: true },
-                { name: 'Profit', value: `${(pnlPct*100).toFixed(2)}%`, inline: true },
-                { name: 'Tranches', value: `${tranches} → ${tranches + 1}`, inline: true },
-                { name: 'Avg Entry', value: `$${avgEntry.toFixed(4)}`, inline: true },
-                { name: 'New Size', value: `${newSize.toFixed(4)}`, inline: true },
-              ],
-              timestamp: new Date().toISOString(),
-            });
+            // Only update state and notify if order succeeded
+            if (orderSuccess) {
+              state.positions[symbol] = {
+                direction: currentPos.direction,
+                size: currentPos.direction === 'LONG' ? newSize : -newSize,
+                entryPrice: avgEntry,
+                tranches: tranches + 1,
+              };
+              
+              cumulativeMarginUsed += addSize * currentPrice;
+              logTrade('SCALE', symbol, addSize, currentPrice, `+${(pnlPct*100).toFixed(1)}% profit`);
+              
+              // Discord notification
+              await notifyDiscord({
+                title: `📈 SCALE IN: ${symbol}`,
+                color: 0xffaa00,
+                fields: [
+                  { name: 'Add Size', value: `${addSize.toFixed(4)}`, inline: true },
+                  { name: 'Price', value: `$${currentPrice.toFixed(2)}`, inline: true },
+                  { name: 'Profit', value: `${(pnlPct*100).toFixed(2)}%`, inline: true },
+                  { name: 'Tranches', value: `${tranches} → ${tranches + 1}`, inline: true },
+                  { name: 'Avg Entry', value: `$${avgEntry.toFixed(4)}`, inline: true },
+                  { name: 'New Size', value: `${newSize.toFixed(4)}`, inline: true },
+                ],
+                timestamp: new Date().toISOString(),
+              });
+            } else {
+              console.error(`❌ Scale order failed for ${symbol}. Position NOT updated.`);
+            }
           }
         }
       }
@@ -1145,7 +1150,7 @@ Current mode: ${CONFIG.mode}
 Trend Mode Config (backtested +70% improvement with scaling):
   - Entry: price crosses EMA + slope confirms (48 candles = 8 days)
   - Exit: price crosses back
-  - Scaling: add 75% more when +5% profit (max 2 tranches)
+  - Scaling: add 75% more when +5% profit (max 3 tranches)
   - Shorts: enabled for all assets
 
 Risk:

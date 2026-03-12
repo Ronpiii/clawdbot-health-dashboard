@@ -17,20 +17,9 @@ const result = spawnSync('node', ['positions-live-raw.mjs'], {
   cwd: botDir,
   encoding: 'utf8',
   timeout: 15000,
+  stdio: ['ignore', 'pipe', 'ignore'], // only capture stdout, ignore stderr + stdin
 });
 
 if (result.stdout) console.log(result.stdout);
-if (result.stderr) console.error(result.stderr);
 
-// Also run BTC 5m card
-const btcResult = spawnSync('node', ['positions-btc-5m-card.mjs'], {
-  cwd: path.join(__dirname),
-  encoding: 'utf8',
-  timeout: 10000,
-});
-
-console.log('\n');
-if (btcResult.stdout) console.log(btcResult.stdout);
-if (btcResult.stderr) console.error(btcResult.stderr);
-
-process.exit(result.status || btcResult.status || 0);
+process.exit(result.status || 0);

@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 /**
- * Positions Card - RAW API (no SDK)
- * Uses fetch directly to avoid SDK hanging issues
+ * Positions Card - UNIFIED LIVE VIEW
+ * Combines positions + 5M slope bot metrics into single card
+ * Fetches LIVE positions from Hyperliquid API (not cached)
  */
 
 import { readFileSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -48,70 +50,6 @@ function getCurrentTime() {
   });
 }
 
-function getLastTrades(count = 5, positionMetrics, positionMap) {
-  try {
-    const logFile = path.join(__dirname, 'trades-v2.log');
-    const content = readFileSync(logFile, 'utf8');
-    const lines = content.trim().split('\n');
-    const lastLines = lines.slice(-count).reverse();
-    const now = new Date();
-    
-    // Track which symbols we've already added (avoid duplicates for scales)
-    const seenSymbols = new Set();
-    
-    return lastLines.map(line => {
-      const parts = line.split('|').map(p => p.trim());
-      if (parts.length >= 5) {
-        const fullTimestamp = parts[0];
-        const type = parts[1];
-        const symbol = parts[2];
-        
-        // Only show entry/scale trades, skip exits, avoid duplicate symbols
-        if (!['LONG', 'SHORT', 'SCALE'].includes(type) || seenSymbols.has(symbol)) {
-          return null;
-        }
-        
-        seenSymbols.add(symbol);
-        
-        // Calculate duration
-        const tradeTime = new Date(fullTimestamp);
-        const durationMs = now - tradeTime;
-        const durationStr = formatDuration(durationMs);
-        
-        // Get P&L from position metrics
-        const posIdx = positionMap[symbol];
-        let pnlStr = '-';
-        if (posIdx !== undefined && positionMetrics[posIdx]) {
-          const { pnlPct, pnlDollars } = positionMetrics[posIdx];
-          pnlStr = pnlDollars >= 0 ? `+$${pnlDollars.toFixed(0)}` : `-$${Math.abs(pnlDollars).toFixed(0)}`;
-        }
-        
-        return {
-          type,
-          symbol,
-          duration: durationStr,
-          pnl: pnlStr
-        };
-      }
-      return null;
-    }).filter(t => t !== null);
-  } catch (err) {
-    return [];
-  }
-}
-
-function formatDuration(ms) {
-  const seconds = Math.floor(ms / 1000);
-  const minutes = Math.floor(seconds / 60);
-  const hours = Math.floor(minutes / 60);
-  const days = Math.floor(hours / 24);
-  
-  if (days > 0) return `${days}d${hours % 24}h`;
-  if (hours > 0) return `${hours}h${minutes % 60}m`;
-  if (minutes > 0) return `${minutes}m`;
-  return `${seconds}s`;
-}
-
 async function fetchPrices() {
   try {
     const response = await fetch('https://api.hyperliquid.xyz/info', {
@@ -131,11 +69,114 @@ async function fetchPrices() {
   }
 }
 
+async function getPositionsFromAPI(address) {
+  try {
+    const response = await fetch('https://api.hyperliquid.xyz/info', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'clearinghouseState', user: address }),
+      timeout: 8000
+    });
+    
+    if (!response.ok) {
+      return null;
+    }
+    
+    const data = await response.json();
+    if (!data) return null;
+    
+    // Account value from marginSummary (correct field)
+    const accountValue = parseFloat(data.marginSummary?.accountValue || data.withdrawable || 0);
+    
+    const positions = {};
+    
+    if (data.assetPositions && Array.isArray(data.assetPositions)) {
+      for (const posData of data.assetPositions) {
+        const coin = posData.position.coin.replace('-PERP', '');
+        const szi = parseFloat(posData.position.szi);
+        
+        if (szi !== 0) {
+          // entry price comes from the position data
+          const entryPx = parseFloat(posData.position.entryPx);
+          positions[coin] = {
+            direction: szi > 0 ? 'LONG' : 'SHORT',
+            size: Math.abs(szi),
+            entryPrice: entryPx,
+          };
+        }
+      }
+    }
+    
+    return { positions, accountValue };
+  } catch (err) {
+    return null;
+  }
+}
+
+function getBotStatus() {
+  try {
+    const psSlope = execSync("pgrep -f 'ema-bot-btc-slope' > /dev/null 2>&1 && echo 1 || echo 0", { encoding: 'utf8' }).trim();
+    const psTrading = execSync("pgrep -f 'ema-bot-v2' > /dev/null 2>&1 && echo 1 || echo 0", { encoding: 'utf8' }).trim();
+    
+    const slopeRunning = psSlope === '1';
+    const tradingRunning = psTrading === '1';
+    
+    return {
+      slope: slopeRunning ? '🟢 SLOPE BOT' : '🔴 slope bot offline',
+      trading: tradingRunning ? '🟢 TRADING BOT' : '🔴 trading bot offline',
+      both: slopeRunning && tradingRunning
+    };
+  } catch (err) {
+    return {
+      slope: '⚠️  unknown',
+      trading: '⚠️  unknown',
+      both: false
+    };
+  }
+}
+
 async function generateCard() {
   try {
-    // Load bot state (cached positions)
-    const stateFile = path.join(__dirname, 'bot-state-v2.json');
-    const state = JSON.parse(readFileSync(stateFile, 'utf8'));
+    // Load slope bot state (real-time slope/EMA - updated every 5m)
+    const slopeStateFile = path.join(__dirname, 'btc-slope-state.json');
+    let slopeState = {};
+    try {
+      slopeState = JSON.parse(readFileSync(slopeStateFile, 'utf8'));
+    } catch (e) {
+      // slope state may not exist yet, use defaults
+    }
+    
+    // Fetch LIVE positions from Hyperliquid API
+    const address = process.env.HL_WALLET_ADDRESS || '0x18a4Cc59804AB711F30897C71f3C3580D91ff641';
+    let apiData = await getPositionsFromAPI(address);
+    
+    // Load bot state for entry prices (more accurate than API for scaled positions)
+    let botState = {};
+    try {
+      botState = JSON.parse(readFileSync(path.join(__dirname, 'bot-state-v2.json'), 'utf8'));
+    } catch (e) {
+      // no cached state
+    }
+    
+    // Use API for live positions, but fill in entry prices from bot state
+    let positions = {};
+    let accountValue = 119.00;
+    
+    if (apiData) {
+      positions = apiData.positions;
+      accountValue = apiData.accountValue;
+      
+      // Override entry prices with bot state (more accurate for scaled positions)
+      Object.keys(positions).forEach(symbol => {
+        if (botState.positions && botState.positions[symbol]) {
+          positions[symbol].entryPrice = botState.positions[symbol].entryPrice;
+        }
+      });
+    } else {
+      // Fallback to cached bot state only
+      positions = botState.positions || {};
+      accountValue = botState.account || 119.00;
+    }
     
     // Fetch live prices with timeout
     let mids = {};
@@ -146,20 +187,17 @@ async function generateCard() {
       );
       mids = await Promise.race([pricePromise, timeoutPromise]);
     } catch (err) {
-      console.warn(`⚠️  Using cached prices: ${err.message}`);
+      console.warn(`⚠️  Using entry prices: ${err.message}`);
     }
     
-    // Get account value from state
-    const accountValue = state.account || 119.00;
-    
     // Build positions with live price data
-    const positions = [];
+    const positionsList = [];
     const positionMetrics = [];
     let totalMarginUsed = 0;
     
-    Object.entries(state.positions || {}).forEach(([symbol, pos]) => {
+    Object.entries(positions || {}).forEach(([symbol, pos]) => {
       const currentPrice = parseFloat(mids[symbol]) || pos.entryPrice;
-      const direction = pos.size > 0 ? 'LONG' : 'SHORT';
+      const direction = pos.direction === 'LONG' ? 'LONG' : 'SHORT';
       const absSize = Math.abs(pos.size);
       
       // Calculate P&L with live prices
@@ -172,7 +210,7 @@ async function generateCard() {
         pnlDollars = (pos.entryPrice - currentPrice) * absSize;
       }
       
-      positions.push({
+      positionsList.push({
         symbol,
         size: absSize,
         entryPrice: pos.entryPrice,
@@ -192,43 +230,30 @@ async function generateCard() {
     const positionPnLs = positionMetrics.map(m => m.pnlPct);
     const totalPnL = positionPnLs.reduce((a, b) => a + b, 0);
     const totalPnLDollars = positionMetrics.reduce((a, b) => a + b.pnlDollars, 0);
-    const avgPnL = positions.length > 0 ? totalPnL / positions.length : 0;
+    const avgPnL = positionsList.length > 0 ? totalPnL / positionsList.length : 0;
     const winrate = getWinrate(positionPnLs);
     const health = getAccountHealth(accountValue);
     const currentTime = getCurrentTime();
     
-    // Build position map for last trades lookup
-    const positionMap = {};
-    positions.forEach((pos, idx) => {
-      positionMap[pos.symbol] = idx;
-    });
+    // Get bot metrics from slope state
+    const ema200 = slopeState.ema200 || 69716;
+    const slopeVal = slopeState.slope || -0.043;
+    const btcStatus = slopeState.status || 'FLAT';
     
-    // Get last trades with P&L and duration
-    const lastTrades = getLastTrades(5, positionMetrics, positionMap);
-    
-    // Build compact single-block card
-    let tradesStr = '';
-    if (lastTrades.length > 0) {
-      tradesStr = '\n\nLAST TRADES:\n' + lastTrades.map((t, i) => {
-        const typeEmoji = {
-          'LONG': '▲', 'SHORT': '▼',
-          'SCALE': '📈'
-        }[t.type] || '●';
-        return `  ${typeEmoji} ${t.symbol.padEnd(5)} ${t.pnl.padEnd(8)} ${t.duration.padEnd(6)}`;
-      }).join('\n');
-    }
+    // Get bot process status
+    const botStatus = getBotStatus();
     
     const card = `
 ╔════════════════════════════════════════════════════════════════╗
-║                    POSITIONS CARD (LIVE)                       ║
+║                  POSITIONS CARD (LIVE)                         ║
 ╚════════════════════════════════════════════════════════════════╝
 
 💰 ACCOUNT: $${accountValue.toFixed(2)} | ${health}
 📊 TOTAL P&L: ${formatPnL(totalPnL)} ($${totalPnLDollars > 0 ? '+' : ''}${totalPnLDollars.toFixed(0)}) | Avg: ${formatPnL(avgPnL)}
 🏆 WINRATE: ${winrate}%
 
-OPEN POSITIONS (${positions.length}):
-${positions.map((pos, idx) => {
+OPEN POSITIONS (${positionsList.length}):
+${positionsList.map((pos, idx) => {
   const { pnlPct, pnlDollars } = positionMetrics[idx];
   const emoji = pnlPct > 0.5 ? '✓' : pnlPct < -0.5 ? '✗' : '─';
   const direction = pos.direction === 'LONG' ? '▲' : '▼';
@@ -236,12 +261,23 @@ ${positions.map((pos, idx) => {
   const margin = notional / pos.leverage;
   const pnlStr = `${formatPnL(pnlPct)} ($${pnlDollars > 0 ? '+' : ''}${pnlDollars.toFixed(0)})`;
   
-  return `  ${emoji} ${pos.symbol.padEnd(5)} ${direction} ${pos.size.toFixed(4).padEnd(8)} @ $${pos.entryPrice.toFixed(4)} | Size: $${notional.toFixed(0)} | Mgn: $${margin.toFixed(0)} | PnL: ${pnlStr}`;
+  return `  ${emoji} ${pos.symbol.padEnd(6)} ${direction} ${pos.size.toFixed(4).padEnd(8)} @ $${pos.entryPrice.toFixed(4)} | Size: $${notional.toFixed(0).padEnd(4)} | Mgn: $${margin.toFixed(0).padEnd(2)} | PnL: ${pnlStr}`;
 }).join('\n')}
 
-Margin Used: $${totalMarginUsed.toFixed(0)} / $${accountValue.toFixed(0)} (${((totalMarginUsed / accountValue) * 100).toFixed(0)}%)${tradesStr}
+Margin Used: $${totalMarginUsed.toFixed(0)} / $${accountValue.toFixed(0)} (${((totalMarginUsed / accountValue) * 100).toFixed(0)}%)
 
-⏰ Last check: ${currentTime} | 🔗 BTC Regime: EXIT`;
+════════════════════════════════════════════════════════════════
+5M SLOPE BOT (200 EMA + 0.01% slope filter)
+════════════════════════════════════════════════════════════════
+
+📉 EMA200: $${ema200.toFixed(2)} | Slope: ${slopeVal.toFixed(3)}% | Status: ${btcStatus}
+
+BOT PROCESSES:
+  ${botStatus.slope}
+  ${botStatus.trading}
+
+⏰ Last check: ${currentTime} | 🔗 BTC Regime: EXIT
+════════════════════════════════════════════════════════════════`;
 
     console.log(card);
   } catch (err) {
