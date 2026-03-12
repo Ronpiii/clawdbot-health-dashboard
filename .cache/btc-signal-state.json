@@ -1,15 +1,15 @@
 {
-  "price": 69340.32,
-  "ema20": 68851.81220311367,
-  "ema200": 80520.43141288671,
-  "ema4H50": 69356.2258045631,
-  "ema10": 68832.41522208229,
-  "ema30": 69874.90904029591,
+  "price": 69442.48,
+  "ema20": 68861.5417269232,
+  "ema200": 80522.45438318374,
+  "ema4H50": 69360.23207907291,
+  "ema10": 68850.98976753683,
+  "ema30": 69881.50000803785,
   "fundingRate": -0.00007802,
   "fundingSentiment": "neutral",
   "regime": "BEAR",
   "above20": true,
-  "above4H50": false,
+  "above4H50": true,
   "baseAction": "EXIT",
   "action": "EXIT",
   "direction": "cash",
@@ -20,5 +20,5 @@
   "leverage": 3,
   "ema1030Signal": "BEARISH",
   "ema1030Action": "FLAT (cash)",
-  "timestamp": "2026-03-12T04:53:42.265Z"
+  "timestamp": "2026-03-12T05:54:39.456Z"
 }
