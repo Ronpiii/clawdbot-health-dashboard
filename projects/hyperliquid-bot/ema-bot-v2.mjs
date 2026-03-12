@@ -6,6 +6,8 @@
  * 1. CROSSOVER: Fast/slow EMA crossover (original)
  * 2. TREND: 200 EMA + slope filter (backtested +12.7% vs -85% B&H)
  * 
+ * BTC 5M Slope: 200 EMA + 0.01% slope + 5% profit take / 2% stoploss
+ * 
  * V2 Changes:
  * - Added SHORT support (both directions)
  * - Added 200 EMA trend mode with slope filter
@@ -1006,7 +1008,7 @@ async function runBot(paperMode = true) {
     if (existsSync(btcStateFile)) {
       const btcState = JSON.parse(readFileSync(btcStateFile));
       if (btcState.position) {
-        btcCard = `\nBTC 5M SLOPE BOT (200 EMA + 0.01% slope)\n\n📍 STATUS: ${btcState.position}\nEntry: $${btcState.entryPrice.toFixed(2)}\nLeverage: 5x | Target: +2% | Stop: -5%`;
+        btcCard = `\nBTC 5M SLOPE BOT (200 EMA + 0.01% slope)\n\n📍 STATUS: ${btcState.position}\nEntry: $${btcState.entryPrice.toFixed(2)}\nLeverage: 5x | Target: +5% | Stop: -2%`;
       }
     }
     console.log(btcCard);
