@@ -1,10 +1,10 @@
 {
   "position": "LONG",
   "entryPrice": 70160.5,
-  "currentPrice": 70222.5,
-  "ema200": 70037.09335820895,
-  "slope": 0.016851288946441,
-  "timestamp": "2026-03-12T22:05:32.541Z",
+  "currentPrice": 70399.5,
+  "ema200": 70082.20388059702,
+  "slope": 0.006566700655650261,
+  "timestamp": "2026-03-12T23:05:32.185Z",
   "entryTime": "2026-03-12T00:35:27.415Z",
   "peakPrice": 70689.5,
   "positionSize": 0.01
