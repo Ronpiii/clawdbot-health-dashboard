@@ -14,28 +14,32 @@ Map of content: how we think about market, competition, customers, and pricing.
 **files in this cluster:**
 
 ### market understanding
-- [[product-market-fit]] — first validation: Noar signed at $72/mo, solving real Excel pain
+- [[concept-product-market-fit]] — first validation: Noar signed at €72/mo, solving real Excel pain
   - evidence: Noar CFO's explicit pain points (manual reconciliation, 6hr/week wasted)
   - insight: they bought *reliability*, not features
+  - ref: see AGENT_BUSINESS.md for detailed customer context
   
 ### competitive landscape
-- [[competitive-landscape]] — what exists, what's missing, why we're different
-  - direct: Planisware (enterprise), Agora (workflow), niche spreadsheet tools
-  - adjacent: traditional CRM/ERP (overkill, expensive), consultant-led (slow, expensive)
-  - gap: no one owns "reliability for small manufacturers" positioning
+- [[concept-competitive-landscape]] — what exists, what's missing, why we're different
+  - direct: Airtable, Zapier, enterprise ERP (analysis vs us)
+  - adjacent: accounting software + manufacturing modules
+  - gap: no one owns "safe + affordable + smart for small manufacturers"
+  - ref: see products/competitor-analysis.md for detailed feature matrix
   
 ### customer definition
-- [[ideal-customer-profile]] — who buys, why, at what price
+- [[concept-ideal-customer-profile]] — who buys, why, at what price
   - segment: 5-50 person manufacturing companies
   - pain: Excel-dependent processes (quoting, order tracking, reconciliation)
   - buying signal: hiring ops person OR losing orders due to manual errors
   - veto: "we already use SAP" → target smaller, faster-moving companies
+  - ref: see leads-database.md for research on specific prospects
   
 ### economic model
-- [[pricing-model]] — why $72/mo works, why $500/mo is viable, how to grow per-customer value
+- [[concept-pricing-model]] — why €72/mo works, why €500/mo is viable, how to grow per-customer value
   - insight: manufacturers compare us to *consultant time*, not other SaaS
-  - payback: 2-4 weeks (saves 5hr/week at $20/hr = $400/mo value)
+  - payback: 2-4 weeks (saves 5hr/week at €20/hr = €400/mo value)
   - positioning: premium tool, not cheap automation
+  - ref: see services-playbook.md for tier-by-tier implementation approach
 
 ---
 

@@ -24,10 +24,18 @@ the core argument woven through every document:
 navigation by domain cluster. follow links that match your current context.
 
 ### strategy & positioning
-- [[product-market-fit]] — the hypothesis, evidence, and validation from first customer (Noar)
-- [[competitive-landscape]] — who exists, what they're missing, where we win
-- [[pricing-model]] — margin structure, tier design, why manufacturers balk at SaaS but buy tooling
-- [[ideal-customer-profile]] — revenue size, decision-maker role, pain intensity, buying signal
+- [[concept-product-market-fit]] — the hypothesis, evidence, and validation from first customer (Noar)
+  - read first if: questioning whether manufacturers actually want this
+  - includes: Noar case study, payback math, market size estimation, validation gaps
+- [[concept-competitive-landscape]] — who exists, what they're missing, where we win
+  - read if: sales push-back on "why not use Airtable?" or "why not enterprise ERP?"
+  - includes: competitor feature matrix, why we win sales, what could kill us
+- [[concept-pricing-model]] — margin structure, tier design, why manufacturers balk at SaaS but buy tooling
+  - read if: pricing a new deal or understanding revenue targets
+  - includes: payback logic, tier structure (€200-1200/mo), margin by tier
+- [[concept-ideal-customer-profile]] — revenue size, decision-maker role, pain intensity, buying signal
+  - read if: qualifying a prospect or researching new target
+  - includes: firmographic fit, hot/warm/cold signals, disqualifiers, discovery questions
 
 ### execution & sales
 - [[cold-outreach-strategy]] — 3-email sequence, timing, personalization per manufacturer type
