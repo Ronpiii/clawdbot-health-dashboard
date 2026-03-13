@@ -16,11 +16,11 @@
   "dailyPnLDate": "2026-03-13",
   "dailyPnL": 0,
   "highestPrice": {
-    "SOL": 90.1515,
-    "HYPE": 38.103,
-    "GRASS": 0.36572
+    "SOL": 90.1005,
+    "HYPE": 38.0555,
+    "GRASS": 0.36563
   },
-  "account": 144.053586,
+  "account": 143.792066,
   "btcSignal": "EXIT",
-  "lastCheck": "2026-03-13T02:15:45.509Z"
+  "lastCheck": "2026-03-13T02:16:14.872Z"
 }
