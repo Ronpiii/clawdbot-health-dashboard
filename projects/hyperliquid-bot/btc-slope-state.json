@@ -1,10 +1,10 @@
 {
   "position": null,
   "entryPrice": null,
-  "currentPrice": 72342.5,
-  "ema200": 71809.85820895522,
-  "slope": 0.05234645837397288,
-  "timestamp": "2026-03-13T15:40:37.585Z",
+  "currentPrice": 71987.5,
+  "ema200": 71814.00315920399,
+  "slope": 0.043810345554671476,
+  "timestamp": "2026-03-13T15:45:37.659Z",
   "entryTime": null,
   "peakPrice": 73752.5,
   "positionSize": null
