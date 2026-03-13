@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-03-13T12:20:00Z",
+  "name": "current_ema_bot_v2",
+  "config": {
+    "ema_period": 200,
+    "slope_threshold": 0.001,
+    "target_profit": 0.05,
+    "stop_loss": 0.02,
+    "leverage": 5
+  },
+  "account_snapshot": {
+    "balance": 150.97,
+    "btc_position": {
+      "direction": "LONG",
+      "size": 0.00934,
+      "entry_price": 70161
+    }
+  },
+  "metrics": {
+    "total_pnl": 1.02,
+    "total_pnl_pct": 0.0068,
+    "win_rate": 0.52,
+    "total_trades": 50,
+    "winning_trades": 26,
+    "losing_trades": 24,
+    "avg_win": 48.5,
+    "avg_loss": 45.2,
+    "profit_factor": 1.09,
+    "sharpe_ratio": 0.85,
+    "max_drawdown": 0.015,
+    "max_drawdown_pct": 1.5,
+    "regime_accuracy": 1.0
+  },
+  "notes": "stable baseline: holds positions within regime constraint, consistent ~0.7% daily volatility, regime filter at 100% accuracy (never violated). slightly underfunded (barely profitable). seeking: tighter stop-loss + higher target, or better slope threshold for entry quality."
+}
