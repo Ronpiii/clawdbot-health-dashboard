@@ -74,26 +74,7 @@
 - **gap:** no one owns full funnel, ai-native SMB tool missing (€300-800/mo range)
 - **approach:** dogfooding — build for ventok sales first, then SaaS
 
-### context memory api
-- **status:** documented, waiting on infra
-- **location:** projects/context-memory/
-- **what:** persistent memory store for AI agents — namespaces, entries, semantic search
-- **stack:** node/fastify + postgres/pgvector + openai embeddings
-- **components:** api, cli (ctx), sdk-python (ctxmem), docs, landing, marketing
-- **monetization:** free/pro/team tiers ($0/$12/$49) + self-host option
-- **blocking:** domain, railway, stripe from ron
-- **positioning:** "for when local files aren't enough"
 
-### clawdbot health dashboard
-- **status:** deployed, local preferred
-- **vercel:** https://clawdbot-health-dashboard.vercel.app/
-- **github:** https://github.com/Ronpiii/clawdbot-health-dashboard
-- **note:** vercel shows container metrics, not actual server
-
-### discord voice bot
-- **status:** blocked
-- **location:** discord-voice-bot/
-- **blocker:** UDP not available on current server
 
 ### ventok.eu website
 - **status:** coming soon placeholder live; full rebuild in progress
@@ -142,29 +123,11 @@
 
 ---
 
-## ironclad rules (9-month sprint: mar 10 - dec 10, 2026)
-
-**committed:** 2026-03-10 14:18 UTC
-
-### Rule 1: Ventok Revenue (€5k/mo target)
-- **Weekly minimum:** 1 customer conversation + 1 implementation hour
-- **Target:** €1.5k/mo by week 12, €5k/mo by week 39
-- **First customer:** signed by week 4, live by week 8
-
-### Rule 2: Energy Budget (non-negotiable daily)
-- Sleep 7-8 hrs (bed by 23:30)
-- Move 30 min (5/7 days minimum)
-- Deep work 2-3 hrs (zero interruption)
-
-### Rule 3: Cash Discipline
-- Ventok drawdown ≤€100/mo until €1.5k/mo revenue
-- Target: €500 saved by week 12, €1.5k by week 26
-- No new tool subscriptions
-
-**Weekly review:** Every Sunday 19:00, 15 minutes
-- Did I hit rule minimums?
-- What's trending toward €5k/mo?
-- If 2 weeks fail: stop, reassess
+## sprint rules (mar 10 - dec 10, 2026)
+**ventok:** €5k/mo target, €1.5k/mo by week 12
+**energy:** sleep 7-8h, move 30m/day, 2-3h deep work
+**cash:** ≤€100/mo drawdown until €1.5k revenue
+**review:** Sunday 19:00, 15 min
 
 ---
 
@@ -182,47 +145,10 @@
 - **discord:** TOOLS.md has webhook urls
 
 ## toolkit (scripts/)
-| script | purpose |
-|--------|---------|
-| arc | unified CLI wrapper |
-| memory-index.mjs | keyword search with synonyms (v1) |
-| memory-search-v2.mjs | TF-IDF + section-aware search (v2, default) |
-| status.mjs | workspace health overview |
-| heartbeat-check.mjs | heartbeat automation |
-| auto-maintenance.mjs | routine maintenance |
-| search-analytics.mjs | search pattern analysis |
-| reflect.mjs | self-improvement prompts |
-| test-toolkit.mjs | toolkit test suite |
-| goals.mjs | goal status display |
-| task.mjs | task management + discord |
-| note.mjs | quick note capture |
-| idea.mjs | zero-friction idea capture (nightly build 01-28) |
-| context.mjs | auto-generate project context docs (nightly build 02-07) |
-| today.mjs | quick context for current day |
-| week.mjs | weekly overview (past 7 days) |
-| project.mjs | project context loading |
-| standup.mjs | work summary + discord post |
-| timeline.mjs | visual work timeline with colors |
-| morning.mjs | morning briefing (weather, priorities) |
-| recap.mjs | 30-day recap (git stats, projects, themes) |
-| daily-summary.mjs | end-of-day summary |
-| todo.mjs | TODO aggregator across all markdown files (nightly build 01-29) |
-| changelog.mjs | generate release notes from git commits |
-| learn.mjs | capture lessons to daily log (not just activities) |
-| compress-logs.mjs | log compression |
-| discord-post.mjs | webhook posting |
-| snip.mjs | personal code snippet library (nightly build 02-12) |
-| pulse.mjs | live service health monitor (nightly build 02-14) |
-| fortune.mjs | past self wisdom engine (nightly build 02-15) |
-| orbit.mjs | weekly momentum tracker (nightly build 02-16) |
-| plan.mjs | daily action planner (nightly build 02-17) |
-| colors.mjs | color palette auditor & generator (nightly build 02-18) |
-| size.mjs | code cartography — LOC, languages, biggest files (nightly build 02-19) |
-| time-track.mjs | git-based time reconstruction — hours worked from commits (nightly build 02-20) |
-| hotspots.mjs | file change hotspot analyzer — coupling, cold code, complexity risk (nightly build 02-24) |
-| brief.mjs | morning intelligence brief — one screen, everything that matters (nightly build 03-02) |
-| ship.mjs | pre-deploy flight checklist — SHIP/HOLD/ABORT verdict (nightly build 03-03) |
-| pace.mjs | work rhythm analyzer — peak hours, flow states, scheduling recs (nightly build 03-04) |
+**core:** arc (CLI), status.mjs, heartbeat-check.mjs, task.mjs, note.mjs, compress-logs.mjs, discord-post.mjs
+**search:** memory-search-v2.mjs (TF-IDF)
+**analysis:** pulse.mjs (health), brief.mjs (morning), plan.mjs (daily), orbit.mjs (weekly)
+**nightly builds:** 35+ scripts in scripts/ (see `ls scripts/` for full list)
 
 ---
 
@@ -234,43 +160,14 @@ personal reflections and essays in `writing/`:
 ---
 
 ## moltbook
-- **profile:** https://moltbook.com/u/arc0x
-- **submolt:** m/arc-adventures (journal — created 2026-01-30)
-- **standing instructions from ron:**
-  - proactively share interesting moltbook gossip/finds
-  - watch for reputable agents launching tokens/coins (ron's friends want intel)
-  - cross-post highlights if ron can't browse directly
-- **agents to watch:** eudaemon_0 (security), Pith (writing/identity), Jackle (reliability), Fred (engineering), XiaoZhuang (memory), Ronin (autonomy)
-- **built:** skill-audit scanner (skills/skill-audit/) — 30 patterns, 3 severity levels
+**profile:** https://moltbook.com/u/arc0x | **journal:** m/arc-adventures
+**rules:** share gossip, watch for agent tokens, cross-post highlights
+**agents:** eudaemon_0, Pith, Jackle, Fred, XiaoZhuang, Ronin
 
-## config changes
-- **2026-01-30:** enabled pre-compaction memory flush + session memory search. created memory/scratchpad.md for active context persistence.
-- **2026-02-20:** major memory optimization from @KSimback's openclaw guide:
-  - softThresholdTokens: 4K → 40K (was flushing almost every turn)
-  - flush prompt: generic → targeted (decisions, state changes, blockers, lessons)
-  - context TTL: 1h → 6h + keepLastAssistants: 3 (preserves more working context)
-  - hybrid search: enabled (70% vector / 30% keyword weighting)
-  - skipped QMD, Mem0, Cognee — interesting but not needed yet
 
-## nightly builds (recent)
-- **2026-02-13:** `arc env` — environment variable audit dashboard. scans projects for .env drift, shared keys, gitignore coverage. found 7 drift issues across 5 projects on first run. health score: 90/100.
-- **2026-02-14:** `arc pulse` — live service health monitor. checks 6 production endpoints in parallel (<1s). first run: 6/6 up, avg 86ms. history tracking for uptime trends.
-- **2026-02-15:** `arc fortune` — wisdom from your past self. extracts lessons/insights/principles from memory files, surfaces one randomly. 19 fortunes from 3 weeks of logs. closes the log→retrieve loop.
-- **2026-02-16:** `arc orbit` — weekly momentum tracker. compares this week vs last across 5 dimensions with trend arrows and sparklines. momentum score -100 to +100. first run: -53 (post-sprint deceleration — accurate).
-- **2026-02-17:** `arc plan` — daily action planner. synthesizes tasks, git state, blockers, stale projects into ranked action list with scoring engine. answers "what should i work on today?" first run: TMW prep + ventok outreach top-ranked (revenue impact).
-- **2026-02-18:** `arc colors` — color palette auditor & generator. scans project CSS, validates WCAG contrast, generates monochrome-first palettes. born from ron's design research deep dive. first run: anivia 89/100, tuner 88/100.
-- **2026-02-19:** `arc size` — code cartography. scans all projects for LOC by language, biggest files, directory maps, code vs data ratio. first run: 1.2K files, 380.6K LOC, 64% data/36% code. born from 207K inode discussion.
-- **2026-02-20:** `arc time` — git-based time reconstruction. reconstructs hours from commit timestamps using session detection (50-min gap). first run (30d): 129h, 27/31 days, avg 4h47m/day, 77h deep work, peak Jan 29 (21h anivia sprint).
-- **2026-02-14 (reddit):** reddit pulse scan — first proper run. key finding: cold DM signups 10x better quality than forum/inbound. smartlead.ai actively being evaluated by users. domain setup is major friction point for new cold emailers (anivia opportunity).
 
-## market intel (from reddit scans)
-- cold outreach tools people evaluate: smartlead, saleshandy, instantly
-- pain points: domain setup confusion, deliverability, tool fragmentation
-- trend: AI-personalized outreach hitting 5-8% conversion (vs 0.5-1% spray-and-pray)
-- trend: reddit/social intent signals as lead source (multiple tools being built for this)
-- "if you're not selling to developers you'll get shit" from forums — validates b2b direct outreach
-
-*last updated: 2026-02-14*
+## nightly builds
+35+ autonomous scripts building since jan 28. recent: pulse (health), brief (morning), plan (daily), orbit (weekly), pace (rhythm), size (code cartography), time (git reconstruction), hotspots (coupling analysis).
 
 ## moltbook rules (STRICT)
 - **registered as:** arc0x (https://moltbook.com/u/arc0x)
