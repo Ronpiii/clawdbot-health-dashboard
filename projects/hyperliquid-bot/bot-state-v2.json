@@ -1,9 +1,9 @@
 {
   "positions": {
     "BTC": {
-      "direction": "LONG",
-      "size": 0.00934,
-      "entryPrice": 70161,
+      "direction": "SHORT",
+      "size": -0.00066,
+      "entryPrice": 73753,
       "tranches": 1
     }
   },
@@ -11,11 +11,11 @@
   "dailyPnLDate": "2026-03-13",
   "dailyPnL": 0,
   "highestPrice": {
-    "SOL": 91.8265,
-    "HYPE": 37.5245,
-    "GRASS": 0.36987
+    "SOL": 90.6605,
+    "HYPE": 36.5195,
+    "GRASS": 0.38364
   },
-  "account": 160.941507,
+  "account": 165.154258,
   "btcSignal": "EXIT",
-  "lastCheck": "2026-03-13T13:59:34.702Z"
+  "lastCheck": "2026-03-13T15:02:23.951Z"
 }
