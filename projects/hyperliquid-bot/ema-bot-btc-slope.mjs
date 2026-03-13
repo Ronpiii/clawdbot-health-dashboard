@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * BTC 5m Slope Bot
- * Strategy: 200 EMA 5m + 0.01% slope filter + 2% profit take
+ * Strategy: 200 EMA 5m + 0.01% slope filter + 5% profit take / 2% stop loss
  * API: Same as main bot (ema-bot-v2.mjs)
  */
 
