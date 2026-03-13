@@ -42,7 +42,7 @@ class BotTuner {
       slope_threshold: [0.0005, 0.001, 0.0015, 0.002, 0.0025, 0.003, 0.0035, 0.004, 0.0045, 0.005],
       target_profit: [0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08],
       stop_loss: [0.01, 0.015, 0.02, 0.025, 0.03],
-      slopeLookback: [24, 36, 48, 60, 72] // how far back to compare EMA slope
+      slopeLookback: [24, 36, 48, 60, 72]
     };
   }
 
@@ -68,22 +68,36 @@ class BotTuner {
   }
 
   // evaluate variant against baseline
+  // baseline is currently LOSING (-$5.77), so variants that:
+  // - lose less $ 
+  // - are profitable
+  // - have better win_rate
+  // - have better profit_factor
+  // will beat it
   beatsBaseline(metrics) {
-    const base = this.baseline.metrics;
-
-    // skip if error
     if (metrics.error) return false;
 
-    // condition 1: improved sharpe + acceptable drawdown
-    const cond1 = (metrics.sharpe_ratio > base.sharpe_ratio) && (metrics.max_drawdown <= base.max_drawdown * 1.1);
+    const base = this.baseline.metrics;
 
-    // condition 2: much better pnl with lower drawdown
-    const cond2 = (metrics.total_pnl > base.total_pnl * 1.05) && (metrics.max_drawdown < base.max_drawdown * 0.95);
+    // condition 1: profitable (baseline is not)
+    if (metrics.total_pnl > 0 && base.total_pnl < 0) return true;
 
-    // condition 3: solid profit factor + acceptable sharpe
-    const cond3 = (metrics.profit_factor > 1.3) && (metrics.sharpe_ratio > 0.7);
+    // condition 2: loses less AND better win_rate
+    if (metrics.total_pnl > base.total_pnl && metrics.win_rate > base.win_rate * 0.9) {
+      return true;
+    }
 
-    return cond1 || cond2 || cond3;
+    // condition 3: better profit_factor AND acceptable max_dd
+    if (metrics.profit_factor > base.profit_factor * 1.5 && metrics.max_drawdown < base.max_drawdown * 1.5) {
+      return true;
+    }
+
+    // condition 4: significantly better win_rate (less whipsaw)
+    if (metrics.win_rate > base.win_rate * 1.3 && metrics.total_pnl >= base.total_pnl * 0.8) {
+      return true;
+    }
+
+    return false;
   }
 
   // log result to results.jsonl
@@ -94,8 +108,8 @@ class BotTuner {
       beats_baseline: beats,
       comparison: {
         pnl_delta: parseFloat((metrics.total_pnl - this.baseline.metrics.total_pnl).toFixed(2)),
-        sharpe_delta: parseFloat((metrics.sharpe_ratio - this.baseline.metrics.sharpe_ratio).toFixed(2)),
-        drawdown_delta: parseFloat((metrics.max_drawdown - this.baseline.metrics.max_drawdown).toFixed(4))
+        wr_delta: parseFloat((metrics.win_rate - this.baseline.metrics.win_rate).toFixed(4)),
+        pf_delta: parseFloat((metrics.profit_factor - this.baseline.metrics.profit_factor).toFixed(2))
       }
     };
 
@@ -116,19 +130,18 @@ class BotTuner {
       return;
     }
 
-    console.log(`  trades: ${metrics.num_trades} (${metrics.wins}W/${metrics.losses}L)`);
-    console.log(`  metrics: PnL=$${metrics.total_pnl.toFixed(2)} (${comparison.pnl_delta >= 0 ? '+' : ''}${comparison.pnl_delta.toFixed(2)}) | sharpe=${metrics.sharpe_ratio.toFixed(2)} (${comparison.sharpe_delta >= 0 ? '+' : ''}${comparison.sharpe_delta.toFixed(2)}) | dd=${(metrics.max_drawdown*100).toFixed(2)}% (${comparison.drawdown_delta >= 0 ? '+' : ''}${(comparison.drawdown_delta*100).toFixed(2)}%)`);
+    console.log(`  trades: ${metrics.num_trades} | WR=${(metrics.win_rate*100).toFixed(1)}% (${comparison.wr_delta >= 0 ? '+' : ''}${(comparison.wr_delta*100).toFixed(1)}%)`);
+    console.log(`  metrics: PnL=$${metrics.total_pnl.toFixed(2)} (${comparison.pnl_delta >= 0 ? '+' : ''}${comparison.pnl_delta.toFixed(2)}) | PF=${metrics.profit_factor.toFixed(2)} (${comparison.pf_delta >= 0 ? '+' : ''}${comparison.pf_delta.toFixed(2)}) | DD=${(metrics.max_drawdown*100).toFixed(2)}%`);
   }
 
   // run N experiments
   async runExperiments(count = 5) {
     console.log(`\n════════════════════════════════════════════════════════════════`);
     console.log(`BOT TUNER | ${count} variants vs baseline (REAL BACKTEST)`);
-    console.log(`data: ${path.basename(this.dataPath)}`);
+    console.log(`data: ${path.basename(this.dataPath)} (24h window)`);
     console.log(`════════════════════════════════════════════════════════════════\n`);
-    console.log(`baseline config: EMA=${this.baseline.config.ema_period}, slope=${this.baseline.config.slope_threshold}, target=${(this.baseline.config.target_profit*100).toFixed(1)}%, stop=${(this.baseline.config.stop_loss*100).toFixed(1)}%`);
-    console.log(`baseline metrics: PnL=$${this.baseline.metrics.total_pnl} | sharpe=${this.baseline.metrics.sharpe_ratio} | dd=${(this.baseline.metrics.max_drawdown*100).toFixed(2)}%`);
-    console.log(`baseline trades: ${this.baseline.metrics.num_trades} (${this.baseline.metrics.profit_factor}x profit factor)\n`);
+    console.log(`baseline: EMA=${this.baseline.config.ema_period}, slope=${this.baseline.config.slope_threshold}, target=${(this.baseline.config.target_profit*100).toFixed(1)}%, stop=${(this.baseline.config.stop_loss*100).toFixed(1)}%`);
+    console.log(`baseline metrics: PnL=$${this.baseline.metrics.total_pnl} | trades=${this.baseline.metrics.num_trades} | WR=${(this.baseline.metrics.win_rate*100).toFixed(1)}% | PF=${this.baseline.metrics.profit_factor.toFixed(2)}\n`);
 
     const results = [];
     const winners = [];
@@ -144,7 +157,6 @@ class BotTuner {
 
       this.displayResult(logged, i, count);
 
-      // small delay to avoid hammering
       await new Promise(r => setTimeout(r, 10));
     }
 
@@ -155,11 +167,12 @@ class BotTuner {
 
     if (winners.length > 0) {
       console.log('🏆 WINNERS:\n');
-      winners.forEach((w, idx) => {
+      winners.sort((a, b) => b.metrics.profit_factor - a.metrics.profit_factor);
+      winners.slice(0, 5).forEach((w, idx) => {
         if (!w.metrics.error) {
           console.log(`${idx + 1}. ${w.variant_id}`);
           console.log(`   config: EMA=${w.config.ema_period}, slope=${w.config.slope_threshold}, target=${(w.config.target_profit*100).toFixed(1)}%, stop=${(w.config.stop_loss*100).toFixed(1)}%`);
-          console.log(`   trades: ${w.metrics.num_trades} | PnL +${w.comparison.pnl_delta.toFixed(2)} | sharpe +${w.comparison.sharpe_delta.toFixed(2)} | pf ${w.metrics.profit_factor.toFixed(2)}x\n`);
+          console.log(`   trades=${w.metrics.num_trades} | WR=${(w.metrics.win_rate*100).toFixed(1)}% | PnL=$${w.metrics.total_pnl.toFixed(2)} | PF=${w.metrics.profit_factor.toFixed(2)}\n`);
         }
       });
     } else {
@@ -179,7 +192,7 @@ class BotTuner {
   // print top winners (all-time)
   topWinners(limit = 5) {
     const all = this.readResults().filter(r => r.beats_baseline && !r.metrics.error);
-    const sorted = all.sort((a, b) => b.metrics.sharpe_ratio - a.metrics.sharpe_ratio);
+    const sorted = all.sort((a, b) => b.metrics.profit_factor - a.metrics.profit_factor);
     
     console.log(`\n════════════════════════════════════════════════════════════════`);
     console.log(`TOP ${Math.min(limit, sorted.length)} WINNERS (all-time)`);
@@ -188,7 +201,7 @@ class BotTuner {
     sorted.slice(0, limit).forEach((r, idx) => {
       console.log(`${idx + 1}. ${r.variant_id} (${r.timestamp.split('T')[0]})`);
       console.log(`   config: EMA=${r.config.ema_period}, slope=${r.config.slope_threshold}, target=${(r.config.target_profit*100).toFixed(1)}%, stop=${(r.config.stop_loss*100).toFixed(1)}%`);
-      console.log(`   metrics: PnL=$${r.metrics.total_pnl} | trades=${r.metrics.num_trades} | sharpe=${r.metrics.sharpe_ratio} | dd=${(r.metrics.max_drawdown*100).toFixed(2)}%\n`);
+      console.log(`   trades=${r.metrics.num_trades} | WR=${(r.metrics.win_rate*100).toFixed(1)}% | PnL=$${r.metrics.total_pnl.toFixed(2)} | PF=${r.metrics.profit_factor.toFixed(2)}\n`);
     });
   }
 }

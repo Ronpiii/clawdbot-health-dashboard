@@ -7,10 +7,11 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /**
- * BACKTEST HARNESS: load historical data, simulate variant trading, measure performance
+ * SIMPLIFIED BACKTEST HARNESS
  * 
- * Position sizing: 5x leverage on 2% of account = ~0.67% notional per trade
- * e.g., account=$150, pos=0.67%*150=$1 notional, with 5x = effective $5 exposure
+ * Core: signal generation + stop/target logic, fixed notional position sizing
+ * Measure: win_rate, profit_factor, total_pnl, max_drawdown, sharpe
+ * No leverage complexity — just $ in / $ out
  */
 
 class BacktestEngine {
@@ -68,7 +69,7 @@ class BacktestEngine {
     return emaArray;
   }
 
-  // generate trend signal
+  // generate signal: LONG / SHORT / HOLD
   generateSignal(prices, config) {
     const { ema_period, slope_threshold, slopeLookback = 48 } = config;
 
@@ -91,36 +92,50 @@ class BacktestEngine {
     const emaRising = slopePercent > slope_threshold;
     const emaFalling = slopePercent < -slope_threshold;
 
+    // LONG: price > EMA AND EMA rising
     if (aboveEMA && emaRising) {
       return { signal: 'LONG', ema: currentEMA, slope: slopePercent, price: currentPrice };
-    } else if (!aboveEMA && emaFalling) {
+    }
+    // SHORT: price < EMA AND EMA falling
+    else if (!aboveEMA && emaFalling) {
       return { signal: 'SHORT', ema: currentEMA, slope: slopePercent, price: currentPrice };
-    } else {
+    }
+    // HOLD
+    else {
       return { signal: 'HOLD', ema: currentEMA, slope: slopePercent, price: currentPrice };
     }
   }
 
-  // simulate trades
+  // simulate trades with fixed notional position size
   async simulate(config) {
     if (this.candles.length < config.ema_period + 100) {
-      return { error: 'insufficient candles', num_trades: 0, total_pnl: 0, win_rate: 0, sharpe_ratio: 0, max_drawdown: 0, profit_factor: 0 };
+      return {
+        num_trades: 0,
+        total_pnl: 0,
+        win_rate: 0,
+        sharpe_ratio: 0,
+        max_drawdown: 0,
+        profit_factor: 0,
+        error: 'insufficient candles'
+      };
     }
 
     const prices = this.candles.map(c => c.close);
     const trades = [];
-    const leverage = 5;
-    const positionSizePercent = 0.02; // 2% of account per trade
+
+    // Fixed position: $3 per trade (2% of $150 account)
+    const notionalPerTrade = 3;
 
     let position = null;
-    let positionSize = 0;
-    let equity = 150;
     let entryPrice = null;
     let entryIndex = null;
+    let equity = 150;
     let peakEquity = equity;
     let equityCurve = [equity];
 
     const minDataIdx = config.ema_period + Math.max(48, config.slopeLookback || 48);
 
+    // main loop
     for (let i = minDataIdx; i < this.candles.length; i++) {
       const currentPrice = prices[i];
       const windowPrices = prices.slice(Math.max(0, i - config.ema_period - 60), i + 1);
@@ -128,93 +143,61 @@ class BacktestEngine {
 
       if (!signal) continue;
 
-      // UPDATE POSITION P&L
+      // UPDATE: check for exit conditions if in position
       if (position) {
-        const priceChange = currentPrice - entryPrice;
-        const pnl = positionSize * priceChange * leverage;
+        let exitPrice = null;
+        let exitReason = null;
 
-        // STOP-LOSS
-        if (position === 'LONG' && currentPrice <= entryPrice * (1 - config.stop_loss)) {
-          equity += positionSize * (entryPrice * (1 - config.stop_loss) - entryPrice) * leverage;
-          trades.push({
-            entry: entryPrice,
-            exit: entryPrice * (1 - config.stop_loss),
-            pnl: trades.length > 0 ? positionSize * (entryPrice * (1 - config.stop_loss) - entryPrice) * leverage : 0,
-            direction: 'LONG',
-            bars: i - entryIndex,
-            win: false,
-            reason: 'stop'
-          });
-          position = null;
+        if (position === 'LONG') {
+          // TARGET: price >= entry * (1 + target_profit)
+          if (currentPrice >= entryPrice * (1 + config.target_profit)) {
+            exitPrice = entryPrice * (1 + config.target_profit);
+            exitReason = 'target';
+          }
+          // STOP: price <= entry * (1 - stop_loss)
+          else if (currentPrice <= entryPrice * (1 - config.stop_loss)) {
+            exitPrice = entryPrice * (1 - config.stop_loss);
+            exitReason = 'stop';
+          }
+          // SIGNAL: SHORT signal triggers exit
+          else if (signal.signal === 'SHORT') {
+            exitPrice = currentPrice;
+            exitReason = 'opposite_signal';
+          }
+        } else if (position === 'SHORT') {
+          // TARGET: price <= entry * (1 - target_profit)
+          if (currentPrice <= entryPrice * (1 - config.target_profit)) {
+            exitPrice = entryPrice * (1 - config.target_profit);
+            exitReason = 'target';
+          }
+          // STOP: price >= entry * (1 + stop_loss)
+          else if (currentPrice >= entryPrice * (1 + config.stop_loss)) {
+            exitPrice = entryPrice * (1 + config.stop_loss);
+            exitReason = 'stop';
+          }
+          // SIGNAL: LONG signal triggers exit
+          else if (signal.signal === 'LONG') {
+            exitPrice = currentPrice;
+            exitReason = 'opposite_signal';
+          }
         }
-        // TAKE-PROFIT
-        else if (position === 'LONG' && currentPrice >= entryPrice * (1 + config.target_profit)) {
-          equity += positionSize * (entryPrice * (1 + config.target_profit) - entryPrice) * leverage;
-          trades.push({
-            entry: entryPrice,
-            exit: entryPrice * (1 + config.target_profit),
-            pnl: positionSize * (entryPrice * (1 + config.target_profit) - entryPrice) * leverage,
-            direction: 'LONG',
-            bars: i - entryIndex,
-            win: true,
-            reason: 'tp'
-          });
-          position = null;
-        }
-        // SHORT STOP
-        else if (position === 'SHORT' && currentPrice >= entryPrice * (1 + config.stop_loss)) {
-          equity += positionSize * (entryPrice - entryPrice * (1 + config.stop_loss)) * leverage;
-          trades.push({
-            entry: entryPrice,
-            exit: entryPrice * (1 + config.stop_loss),
-            pnl: positionSize * (entryPrice - entryPrice * (1 + config.stop_loss)) * leverage,
-            direction: 'SHORT',
-            bars: i - entryIndex,
-            win: false,
-            reason: 'stop'
-          });
-          position = null;
-        }
-        // SHORT TAKE-PROFIT
-        else if (position === 'SHORT' && currentPrice <= entryPrice * (1 - config.target_profit)) {
-          equity += positionSize * (entryPrice - entryPrice * (1 - config.target_profit)) * leverage;
-          trades.push({
-            entry: entryPrice,
-            exit: entryPrice * (1 - config.target_profit),
-            pnl: positionSize * (entryPrice - entryPrice * (1 - config.target_profit)) * leverage,
-            direction: 'SHORT',
-            bars: i - entryIndex,
-            win: true,
-            reason: 'tp'
-          });
-          position = null;
-        }
-        // EXIT SIGNAL
-        else if (position === 'LONG' && signal.signal === 'SHORT') {
-          const pnl = positionSize * (currentPrice - entryPrice) * leverage;
+
+        // Process exit
+        if (exitPrice) {
+          const priceDiff = position === 'LONG' ? exitPrice - entryPrice : entryPrice - exitPrice;
+          const pnl = notionalPerTrade * (priceDiff / entryPrice);
           equity += pnl;
+
           trades.push({
             entry: entryPrice,
-            exit: currentPrice,
-            pnl,
-            direction: 'LONG',
+            exit: exitPrice,
+            pnl: parseFloat(pnl.toFixed(2)),
+            direction: position,
             bars: i - entryIndex,
             win: pnl > 0,
-            reason: 'signal'
+            reason: exitReason
           });
-          position = null;
-        } else if (position === 'SHORT' && signal.signal === 'LONG') {
-          const pnl = positionSize * (entryPrice - currentPrice) * leverage;
-          equity += pnl;
-          trades.push({
-            entry: entryPrice,
-            exit: currentPrice,
-            pnl,
-            direction: 'SHORT',
-            bars: i - entryIndex,
-            win: pnl > 0,
-            reason: 'signal'
-          });
+
           position = null;
         }
       }
@@ -222,31 +205,29 @@ class BacktestEngine {
       peakEquity = Math.max(peakEquity, equity);
       equityCurve.push(equity);
 
-      // ENTER
+      // ENTER new position if signal and no current position
       if (!position && signal.signal === 'LONG') {
         position = 'LONG';
-        positionSize = equity * positionSizePercent;
         entryPrice = signal.price;
         entryIndex = i;
       } else if (!position && signal.signal === 'SHORT') {
         position = 'SHORT';
-        positionSize = equity * positionSizePercent;
         entryPrice = signal.price;
         entryIndex = i;
       }
     }
 
-    // CLOSE OPEN POSITION
+    // CLOSE any open position at end of data
     if (position) {
       const lastPrice = prices[prices.length - 1];
-      const pnl = position === 'LONG'
-        ? positionSize * (lastPrice - entryPrice) * leverage
-        : positionSize * (entryPrice - lastPrice) * leverage;
+      const priceDiff = position === 'LONG' ? lastPrice - entryPrice : entryPrice - lastPrice;
+      const pnl = notionalPerTrade * (priceDiff / entryPrice);
       equity += pnl;
+
       trades.push({
         entry: entryPrice,
         exit: lastPrice,
-        pnl,
+        pnl: parseFloat(pnl.toFixed(2)),
         direction: position,
         bars: this.candles.length - entryIndex,
         win: pnl > 0,
@@ -259,7 +240,15 @@ class BacktestEngine {
 
   calculateMetrics(trades, finalEquity, peakEquity, equityCurve) {
     if (trades.length === 0) {
-      return { error: 'no trades', num_trades: 0, total_pnl: 0, win_rate: 0, sharpe_ratio: 0, max_drawdown: 0, profit_factor: 0 };
+      return {
+        num_trades: 0,
+        total_pnl: 0,
+        win_rate: 0,
+        sharpe_ratio: 0,
+        max_drawdown: 0,
+        profit_factor: 0,
+        error: 'no trades'
+      };
     }
 
     const initialEquity = 150;
@@ -268,28 +257,46 @@ class BacktestEngine {
     const losses = trades.filter(t => !t.win).length;
     const winRate = wins / trades.length;
 
+    // Profit factor
     const winPnL = trades.filter(t => t.win).reduce((sum, t) => sum + t.pnl, 0);
     const lossPnL = Math.abs(trades.filter(t => !t.win).reduce((sum, t) => sum + t.pnl, 0));
-    const profitFactor = lossPnL > 0.001 ? Math.min(999, winPnL / lossPnL) : (winPnL > 0 ? 999 : 0);
+    const profitFactor = lossPnL > 0.01 ? (winPnL / lossPnL) : (winPnL > 0 ? 999 : 0.01);
 
+    // Sharpe ratio from equity curve returns
     const returns = [];
     for (let i = 1; i < equityCurve.length; i++) {
-      returns.push((equityCurve[i] - equityCurve[i - 1]) / equityCurve[i - 1]);
+      if (equityCurve[i - 1] > 0) {
+        returns.push((equityCurve[i] - equityCurve[i - 1]) / equityCurve[i - 1]);
+      }
     }
-    const avgReturn = returns.length > 0 ? returns.reduce((a, b) => a + b, 0) / returns.length : 0;
-    const variance = returns.length > 0 ? returns.reduce((sum, r) => sum + Math.pow(r - avgReturn, 2), 0) / returns.length : 0;
-    const stdDev = Math.sqrt(variance);
-    const sharpeRatio = stdDev > 0.0001 ? (avgReturn / stdDev) * Math.sqrt(252 * 24 / 5) : 0;
 
-    const maxDD = peakEquity > initialEquity ? ((peakEquity - finalEquity) / peakEquity) : 0;
+    let sharpeRatio = 0;
+    if (returns.length > 1) {
+      const avgReturn = returns.reduce((a, b) => a + b, 0) / returns.length;
+      const variance = returns.reduce((sum, r) => sum + Math.pow(r - avgReturn, 2), 0) / returns.length;
+      const stdDev = Math.sqrt(variance);
+      if (stdDev > 0.0001) {
+        sharpeRatio = (avgReturn / stdDev) * Math.sqrt(252 * 24 / 5);
+        sharpeRatio = Math.min(999, Math.max(-999, sharpeRatio)); // clamp outliers
+      }
+    }
+
+    // Max drawdown
+    let maxDD = 0;
+    let runningMax = initialEquity;
+    for (const eq of equityCurve) {
+      runningMax = Math.max(runningMax, eq);
+      const dd = (runningMax - eq) / runningMax;
+      maxDD = Math.max(maxDD, dd);
+    }
 
     return {
+      num_trades: trades.length,
       total_pnl: parseFloat(totalPnL.toFixed(2)),
       win_rate: parseFloat(winRate.toFixed(4)),
-      profit_factor: parseFloat(profitFactor.toFixed(2)),
-      sharpe_ratio: parseFloat(Math.min(999, sharpeRatio).toFixed(2)),
-      max_drawdown: parseFloat(Math.max(maxDD, 0).toFixed(4)),
-      num_trades: trades.length,
+      sharpe_ratio: parseFloat(sharpeRatio.toFixed(2)),
+      max_drawdown: parseFloat(maxDD.toFixed(4)),
+      profit_factor: parseFloat(Math.min(999, profitFactor).toFixed(2)),
       wins,
       losses,
       final_equity: parseFloat(finalEquity.toFixed(2))
