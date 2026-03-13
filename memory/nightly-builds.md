@@ -10,13 +10,41 @@ Ron wants me to build something small but helpful every night while he sleeps.
 
 _Add new ideas here. Pick one per night._
 
-- [x] Voice memo transcription — process voice notes into actionable items
-- [x] Email preview component for anivia — see how emails look before sending
-- [x] Bulk email drafting UI for anivia — select leads → draft all
+- [ ] Lead score explainer — show why a lead has a specific numeric score
+- [ ] Email template library — save/retrieve common email templates for follow-ups
+- [ ] Contact timeline visualizer — show relationship history for each prospect
+- [ ] Meeting notes sync — pull from daily logs, link to relevant leads
+- [ ] Arc command explorer — interactive help with examples for all `arc` tools
 
 ---
 
 ## Completed Builds
+
+### 2026-03-13: Email Follow-up Reminder
+**What:** `node scripts/follow-up-reminders.mjs` — identify leads that have been silent for N days after email, surface follow-up opportunities ranked by urgency
+**File:** `scripts/follow-up-reminders.mjs` (115 lines)
+**Features:**
+- Scans memory logs (last 10 days) for email activity using heuristic patterns
+- Deduplicates by contact, keeps latest email date
+- Scores follow-ups by urgency (hot=3-7d, due=7-14d, overdue=14+d, stale=14+d)
+- Text output with urgency grouping + day-count bars, or JSON for piping
+**Commands:** `node scripts/follow-up-reminders.mjs [--days N] [--hot] [--all] [--json]`
+- `--days 3` (threshold, default 3)
+- `--hot` (only hot+due contacts, skip overdue)
+- `--all` (include fresh contacts, skip default)
+- `--json` (machine-readable output with suggested actions)
+**Sample output:**
+```
+📧 Follow-up Reminders (5 contacts)
+🔥 HOT — 2
+  Acme Corp                 ▓▓░░░░░ 4d ago
+  Startup XYZ              ▓▓░░░░░ 5d ago
+⚠️ DUE — 1
+  Big Client               ▓▓▓▓░░░ 10d ago
+```
+**Why:** Sales follow-ups are the difference between closed deals and forgotten leads. Currently that tracking lives in Ron's head. This tool makes it visible + actionable. Pairs with anivia's email tracking — as soon as anivia logs sends, this command surfaces follow-up opportunities. Designed to be run before daily planning: `node scripts/follow-up-reminders.mjs --hot` to see who needs attention TODAY.
+**Integration path:** Next step is anivia logging emails sent (timestamp + recipient), then this tool becomes automatic radar for follow-ups. Until then, manual tracking via memory log entries using the heuristic patterns.
+**Size:** 115 lines, single self-contained script, no dependencies
 
 ### 2026-03-12: Bulk Email Drafting UI for Anivia
 **What:** `<BulkEmailModal>` component — select leads → AI drafts emails → review/edit → send batch
