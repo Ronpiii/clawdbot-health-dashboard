@@ -3,18 +3,24 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { BacktestEngine } from './backtest.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // ============================================================================
-// BOT TUNER: autonomous variant generation + backtest evaluation
+// BOT TUNER: autonomous variant generation + real backtest evaluation
 // ============================================================================
 
 class BotTuner {
-  constructor(baselineFile = 'baseline.json') {
+  constructor(baselineFile = 'baseline.json', dataPath = null) {
     this.baselinePath = path.join(__dirname, baselineFile);
     this.resultsPath = path.join(__dirname, 'results.jsonl');
+    
+    // use provided data path or default to hyperliquid backtest data
+    this.dataPath = dataPath || path.join(__dirname, '../hyperliquid-bot/backtest-data/BTCUSDT_5m.jsonl');
+    
     this.baseline = this.loadBaseline();
+    this.backtest = new BacktestEngine(this.dataPath);
     this.ensureResultsFile();
   }
 
@@ -35,7 +41,8 @@ class BotTuner {
       ema_period: [100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300],
       slope_threshold: [0.0005, 0.001, 0.0015, 0.002, 0.0025, 0.003, 0.0035, 0.004, 0.0045, 0.005],
       target_profit: [0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08],
-      stop_loss: [0.01, 0.015, 0.02, 0.025, 0.03]
+      stop_loss: [0.01, 0.015, 0.02, 0.025, 0.03],
+      slopeLookback: [24, 36, 48, 60, 72] // how far back to compare EMA slope
     };
   }
 
@@ -55,33 +62,17 @@ class BotTuner {
     };
   }
 
-  // mock backtest (replace with real backtest harness)
+  // real backtest using historical data
   async backtest(config) {
-    // TODO: hook this to real historical data + ema-bot-v2 logic
-    // for now: simulated results with variance
-
-    const baseline = this.baseline.metrics;
-    const variance = (Math.random() - 0.5) * 0.15; // ±7.5% random variance
-
-    // construct a plausible result
-    const total_pnl = baseline.total_pnl * (1 + variance);
-    const win_rate = Math.min(0.85, Math.max(0.25, baseline.win_rate + (Math.random() - 0.5) * 0.15));
-    const max_dd = Math.max(0.008, baseline.max_drawdown * (1 + (Math.random() - 0.5) * 0.4));
-    const profit_factor = total_pnl > 0 ? 1.05 + Math.random() * 0.5 : 0.9 + Math.random() * 0.3;
-    const sharpe = profit_factor > 1.2 ? baseline.sharpe_ratio * 1.1 : baseline.sharpe_ratio * (0.8 + Math.random() * 0.4);
-
-    return {
-      total_pnl: parseFloat(total_pnl.toFixed(2)),
-      win_rate: parseFloat(win_rate.toFixed(4)),
-      sharpe_ratio: parseFloat(sharpe.toFixed(2)),
-      max_drawdown: parseFloat(max_dd.toFixed(4)),
-      profit_factor: parseFloat(profit_factor.toFixed(2))
-    };
+    return await this.backtest.simulate(config);
   }
 
   // evaluate variant against baseline
   beatsBaseline(metrics) {
     const base = this.baseline.metrics;
+
+    // skip if error
+    if (metrics.error) return false;
 
     // condition 1: improved sharpe + acceptable drawdown
     const cond1 = (metrics.sharpe_ratio > base.sharpe_ratio) && (metrics.max_drawdown <= base.max_drawdown * 1.1);
@@ -89,7 +80,10 @@ class BotTuner {
     // condition 2: much better pnl with lower drawdown
     const cond2 = (metrics.total_pnl > base.total_pnl * 1.05) && (metrics.max_drawdown < base.max_drawdown * 0.95);
 
-    return cond1 || cond2;
+    // condition 3: solid profit factor + acceptable sharpe
+    const cond3 = (metrics.profit_factor > 1.3) && (metrics.sharpe_ratio > 0.7);
+
+    return cond1 || cond2 || cond3;
   }
 
   // log result to results.jsonl
@@ -116,23 +110,32 @@ class BotTuner {
 
     console.log(`\n[${index}/${total}] ${status} ${variant_id}`);
     console.log(`  config: EMA=${config.ema_period}, slope=${config.slope_threshold}, target=${(config.target_profit*100).toFixed(1)}%, stop=${(config.stop_loss*100).toFixed(1)}%`);
+    
+    if (metrics.error) {
+      console.log(`  ERROR: ${metrics.error}`);
+      return;
+    }
+
+    console.log(`  trades: ${metrics.num_trades} (${metrics.wins}W/${metrics.losses}L)`);
     console.log(`  metrics: PnL=$${metrics.total_pnl.toFixed(2)} (${comparison.pnl_delta >= 0 ? '+' : ''}${comparison.pnl_delta.toFixed(2)}) | sharpe=${metrics.sharpe_ratio.toFixed(2)} (${comparison.sharpe_delta >= 0 ? '+' : ''}${comparison.sharpe_delta.toFixed(2)}) | dd=${(metrics.max_drawdown*100).toFixed(2)}% (${comparison.drawdown_delta >= 0 ? '+' : ''}${(comparison.drawdown_delta*100).toFixed(2)}%)`);
   }
 
   // run N experiments
   async runExperiments(count = 5) {
     console.log(`\n════════════════════════════════════════════════════════════════`);
-    console.log(`BOT TUNER | ${count} variants vs baseline`);
+    console.log(`BOT TUNER | ${count} variants vs baseline (REAL BACKTEST)`);
+    console.log(`data: ${path.basename(this.dataPath)}`);
     console.log(`════════════════════════════════════════════════════════════════\n`);
     console.log(`baseline config: EMA=${this.baseline.config.ema_period}, slope=${this.baseline.config.slope_threshold}, target=${(this.baseline.config.target_profit*100).toFixed(1)}%, stop=${(this.baseline.config.stop_loss*100).toFixed(1)}%`);
-    console.log(`baseline metrics: PnL=$${this.baseline.metrics.total_pnl} | sharpe=${this.baseline.metrics.sharpe_ratio} | dd=${(this.baseline.metrics.max_drawdown*100).toFixed(2)}%\n`);
+    console.log(`baseline metrics: PnL=$${this.baseline.metrics.total_pnl} | sharpe=${this.baseline.metrics.sharpe_ratio} | dd=${(this.baseline.metrics.max_drawdown*100).toFixed(2)}%`);
+    console.log(`baseline trades: ${this.baseline.metrics.num_trades} (${this.baseline.metrics.profit_factor}x profit factor)\n`);
 
     const results = [];
     const winners = [];
 
     for (let i = 1; i <= count; i++) {
       const variant = this.generateVariant(i);
-      const metrics = await this.backtest(variant.config);
+      const metrics = await this.backtest.simulate(variant.config);
       const beats = this.beatsBaseline(metrics);
       const logged = this.logResult(variant, metrics, beats);
 
@@ -140,6 +143,9 @@ class BotTuner {
       if (beats) winners.push(logged);
 
       this.displayResult(logged, i, count);
+
+      // small delay to avoid hammering
+      await new Promise(r => setTimeout(r, 10));
     }
 
     // summary
@@ -150,9 +156,11 @@ class BotTuner {
     if (winners.length > 0) {
       console.log('🏆 WINNERS:\n');
       winners.forEach((w, idx) => {
-        console.log(`${idx + 1}. ${w.variant_id}`);
-        console.log(`   EMA=${w.config.ema_period}, slope=${w.config.slope_threshold}, target=${(w.config.target_profit*100).toFixed(1)}%, stop=${(w.config.stop_loss*100).toFixed(1)}%`);
-        console.log(`   → PnL +${w.comparison.pnl_delta.toFixed(2)} | sharpe +${w.comparison.sharpe_delta.toFixed(2)} | dd ${(w.comparison.drawdown_delta*100).toFixed(2)}%\n`);
+        if (!w.metrics.error) {
+          console.log(`${idx + 1}. ${w.variant_id}`);
+          console.log(`   config: EMA=${w.config.ema_period}, slope=${w.config.slope_threshold}, target=${(w.config.target_profit*100).toFixed(1)}%, stop=${(w.config.stop_loss*100).toFixed(1)}%`);
+          console.log(`   trades: ${w.metrics.num_trades} | PnL +${w.comparison.pnl_delta.toFixed(2)} | sharpe +${w.comparison.sharpe_delta.toFixed(2)} | pf ${w.metrics.profit_factor.toFixed(2)}x\n`);
+        }
       });
     } else {
       console.log('no variants beat baseline this round.\n');
@@ -170,7 +178,7 @@ class BotTuner {
 
   // print top winners (all-time)
   topWinners(limit = 5) {
-    const all = this.readResults().filter(r => r.beats_baseline);
+    const all = this.readResults().filter(r => r.beats_baseline && !r.metrics.error);
     const sorted = all.sort((a, b) => b.metrics.sharpe_ratio - a.metrics.sharpe_ratio);
     
     console.log(`\n════════════════════════════════════════════════════════════════`);
@@ -178,9 +186,9 @@ class BotTuner {
     console.log(`════════════════════════════════════════════════════════════════\n`);
 
     sorted.slice(0, limit).forEach((r, idx) => {
-      console.log(`${idx + 1}. ${r.variant_id} (${r.timestamp})`);
+      console.log(`${idx + 1}. ${r.variant_id} (${r.timestamp.split('T')[0]})`);
       console.log(`   config: EMA=${r.config.ema_period}, slope=${r.config.slope_threshold}, target=${(r.config.target_profit*100).toFixed(1)}%, stop=${(r.config.stop_loss*100).toFixed(1)}%`);
-      console.log(`   metrics: PnL=$${r.metrics.total_pnl} | sharpe=${r.metrics.sharpe_ratio} | dd=${(r.metrics.max_drawdown*100).toFixed(2)}%\n`);
+      console.log(`   metrics: PnL=$${r.metrics.total_pnl} | trades=${r.metrics.num_trades} | sharpe=${r.metrics.sharpe_ratio} | dd=${(r.metrics.max_drawdown*100).toFixed(2)}%\n`);
     });
   }
 }
@@ -202,7 +210,7 @@ async function main() {
     tuner.topWinners(count);
   } else if (mode === 'results') {
     const all = tuner.readResults();
-    const winners = all.filter(r => r.beats_baseline);
+    const winners = all.filter(r => r.beats_baseline && !r.metrics.error);
     console.log(`\ntotal experiments: ${all.length}`);
     console.log(`winners: ${winners.length}`);
     console.log(`win rate: ${(winners.length / all.length * 100).toFixed(1)}%\n`);

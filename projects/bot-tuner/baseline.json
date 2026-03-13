@@ -6,7 +6,7 @@
     "slope_threshold": 0.001,
     "target_profit": 0.05,
     "stop_loss": 0.02,
-    "leverage": 5
+    "slopeLookback": 48
   },
   "account_snapshot": {
     "balance": 150.97,
@@ -20,7 +20,7 @@
     "total_pnl": 1.02,
     "total_pnl_pct": 0.0068,
     "win_rate": 0.52,
-    "total_trades": 50,
+    "num_trades": 50,
     "winning_trades": 26,
     "losing_trades": 24,
     "avg_win": 48.5,
@@ -31,5 +31,5 @@
     "max_drawdown_pct": 1.5,
     "regime_accuracy": 1.0
   },
-  "notes": "stable baseline: holds positions within regime constraint, consistent ~0.7% daily volatility, regime filter at 100% accuracy (never violated). slightly underfunded (barely profitable). seeking: tighter stop-loss + higher target, or better slope threshold for entry quality."
+  "notes": "stable baseline: holds positions within regime constraint, consistent ~0.7% daily volatility, regime filter at 100% accuracy (never violated). slightly profitable. seeking: better entry/exit logic."
 }
